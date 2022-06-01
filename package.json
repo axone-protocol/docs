@@ -1,7 +1,19 @@
 {
-  "name": "docs-2",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@okp4/docs",
+  "version": "1.0.0",
+  "private": false,
+  "repository": "git@github.com:okp4/docs.git",
+  "license": "BSD-3-Clause",
+  "description": "OKP4 procotol documentation",
+  "homepage": "https://okp4.github.io/docs",
+  "author": {
+    "name": "OKP4",
+    "web": "https://okp4.network"
+  },
+  "engines": {
+    "node": "~16.14.0",
+    "yarn": "~1.22.17"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
