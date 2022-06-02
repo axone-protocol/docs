@@ -87,6 +87,10 @@ const config = {
                         title: "More",
                         items: [
                             {
+                                label: "Medium",
+                                href: "https://medium.com/okp4",
+                            },
+                            {
                                 label: "OKP4.network",
                                 href: "https://okp4.network",
                             },
