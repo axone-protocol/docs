@@ -15,6 +15,7 @@ const config = {
     organizationName: "okp4",
     projectName: "docs",
     deploymentBranch: "gh-pages",
+    trailingSlash: false,
 
     presets: [
         [
