@@ -6,3 +6,9 @@ updates:
       interval: "daily"
     reviewers:
       - "maintainers"
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "maintainers"
