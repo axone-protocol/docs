@@ -14,6 +14,7 @@ const config = {
     favicon: "img/favicon.ico",
     organizationName: "okp4",
     projectName: "docs",
+    deploymentBranch: "gh-pages",
 
     presets: [
         [

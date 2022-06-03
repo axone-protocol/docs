@@ -1,0 +1,29 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish-gh-pages:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup node environment (for building)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+
+      - name: Deploy to GitHub pages
+        run: |
+          yarn deploy
+        env:
+          CURRENT_BRANCH: main
+          GIT_USER: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
+          GIT_PASS: ${{ secrets.OKP4_TOKEN }}
