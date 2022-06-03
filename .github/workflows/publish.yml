@@ -20,6 +20,10 @@ jobs:
         with:
           node-version: 16.14.0
 
+      - name: Fetch dependencies
+        run: |
+          yarn --frozen-lockfile
+
       - name: Deploy to GitHub pages
         run: |
           yarn deploy
