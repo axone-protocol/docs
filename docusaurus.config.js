@@ -8,7 +8,7 @@ const config = {
     title: "ØKP4",
     tagline: "Open Knoledge Protocol For",
     url: "https://okp4.github.io",
-    baseUrl: "/",
+    baseUrl: "/docs/",
     onBrokenLinks: "warn",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
