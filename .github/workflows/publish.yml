@@ -28,6 +28,7 @@ jobs:
         run: |
           yarn deploy
         env:
+          USE_SSH: false
           CURRENT_BRANCH: main
           GIT_USER: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
           GIT_PASS: ${{ secrets.OKP4_TOKEN }}
