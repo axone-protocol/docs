@@ -24,6 +24,8 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
+                    sidebarCollapsed: false,
+                    editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
                 },
                 theme: {
                     customCss: require.resolve("./src/scss/custom.scss"),
@@ -35,6 +37,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            
             navbar: {
                 title: "ØKP4",
                 logo: {
