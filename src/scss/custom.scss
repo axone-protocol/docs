@@ -1,30 +1,83 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import "community";
 
-/* You can override the default Infima variables here. */
+@font-face {
+  font-family: "Gotham book";
+  src: url("/static/fonts/Gotham/Gotham-Book.otf");
+}
+
+@font-face {
+  font-family: "Noto regular";
+  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto bold";
+  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Noto black";
+  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Black.ttf");
+}
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #181c49;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Gotham book", sans-serif;
+  --ifm-heading-font-family: "Noto bold", sans-serif;
+  --ifm-font-color-base: #181c49;
+  --ifm-menu-color: #181c49;
+  --ifm-heading-color: #181c49;
+  --ifm-background-color-main: transparent linear-gradient(180deg, #faf8f4 0%, white 100%) 0% 0%
+    no-repeat padding-box;
+  --ifm-footer-background-color-main: transparent linear-gradient(212deg, #181c49 0%, #343869 100%)
+    0% 0% no-repeat padding-box;
+  --ifm-navbar-background-color: white;
+  --ifm-background-image-url: url("/static/img/universe-light.png");
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: white;
+  --ifm-font-color-base: #ced2d9;
+  --ifm-menu-color: #ced2d9;
+  --ifm-heading-color: white;
+  --ifm-background-color-main: transparent linear-gradient(180deg, #0c1529 0%, #0f224a 100%) 0% 0%
+    no-repeat padding-box;
+  --ifm-footer-background-color-main: transparent linear-gradient(180deg, #102040 0%, #061126 100%)
+    0% 0% no-repeat padding-box;
+  --ifm-navbar-background-color: #0f1e3d;
+  --ifm-background-image-url: url("/static/img/universe-dark.png");
+}
+
+html {
+  background: var(--ifm-background-color-main);
+
+  .navbar__link--active,
+  .menu__link--active {
+    font-family: "Noto black", sans-serif;
+  }
+
+  .pagination-nav__label {
+    font-family: "Noto bold", sans-serif;
+  }
+
+  .footer {
+    background: var(--ifm-footer-background-color-main);
+
+    .footer__link-item {
+      color: #ced2d9;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  main {
+    background-image: var(--ifm-background-image-url);
+    background-repeat: no-repeat;
+  }
 }
 
 .docusaurus-highlight-code-line {

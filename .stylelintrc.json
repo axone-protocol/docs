@@ -7,6 +7,8 @@
     "color-named": ["always-where-possible"],
     "max-nesting-depth": 6,
     "color-no-invalid-hex": true,
-    "function-parentheses-space-inside": ["never-single-line"]
+    "function-parentheses-space-inside": ["never-single-line"],
+    "declaration-colon-newline-after": null,
+    "selector-class-pattern": null
   }
 }
