@@ -53,9 +53,10 @@ const config = {
                         label: "Whitepaper",
                     },
                     {
-                        href: "https://github.com/okp4",
-                        label: "GitHub",
-                        position: "right",
+                        href: 'https://github.com/okp4',
+                        position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
                     },
                 ],
             },
