@@ -1,3 +1,5 @@
+@import "community";
+
 @font-face {
   font-family: "Gotham book";
   src: url("/static/fonts/Gotham/Gotham-Book.otf");
@@ -18,13 +20,6 @@
   src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Black.ttf");
 }
 
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #181c49;
   --ifm-code-font-size: 95%;
@@ -95,5 +90,3 @@ html {
 [data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgb(0 0 0 / 30%);
 }
-
-@import 'community';

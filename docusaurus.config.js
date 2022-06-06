@@ -53,6 +53,12 @@ const config = {
                         label: "Whitepaper",
                     },
                     {
+                        href: 'https://discord.gg/GHNZh4SaJ3',
+                        position: 'right',
+                        className: 'header-discord-link',
+                        'aria-label': 'Discord',
+                    },
+                    {
                         href: 'https://github.com/okp4',
                         position: 'right',
                         className: 'header-github-link',
