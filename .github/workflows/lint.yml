@@ -4,10 +4,10 @@ on:
   workflow_call:
 
   push:
-    branches: [ main ]
+    branches: [main]
 
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 concurrency:
   group: lint-${{ github.ref }}
@@ -103,3 +103,21 @@ jobs:
           message: 🙅 Closing the PR because it does not respect naming conventions. Edit the branch name and submit a new PR.
     env:
       GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
+
+  lint-scss:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup node environment (for building)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+
+      - name: Fetch dependencies
+        run: |
+          yarn
+      - name: Lint scss
+        run: |
+          yarn lint
