@@ -25,3 +25,12 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Code Quality
+
+The coding style rules are enforced by the followint tools:
+
+- [Commitlint](https://commitlint.js.org/#/)
+- [Markdownlint](https://github.com/igorshubovych/markdownlint-cli)
+- [Prettier](https://prettier.io/)
+- [Stylelint](https://stylelint.io/)

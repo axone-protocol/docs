@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "indentation": 2,
+    "color-hex-length": "long",
+    "color-named": ["always-where-possible"],
+    "max-nesting-depth": 6,
+    "color-no-invalid-hex": true,
+    "function-parentheses-space-inside": ["never-single-line"]
+  }
+}
