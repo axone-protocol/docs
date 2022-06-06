@@ -110,7 +110,9 @@ const config = {
             },
         }),
 
-    plugins: ["docusaurus-plugin-sass"],
+    plugins: [
+        "docusaurus-plugin-sass", ['drawio', {}],
+    ],
 };
 
 module.exports = config;
