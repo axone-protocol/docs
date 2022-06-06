@@ -24,6 +24,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
+                    sidebarCollapsed: false
                 },
                 theme: {
                     customCss: require.resolve("./src/scss/custom.scss"),
@@ -35,6 +36,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            
             navbar: {
                 title: "ØKP4",
                 logo: {
