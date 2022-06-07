@@ -28,7 +28,7 @@ This command generates static content into the `build` directory and can be serv
 
 ## Code Quality
 
-The coding style rules are enforced by the followint tools:
+The coding style rules are enforced by the following tools:
 
 - [Commitlint](https://commitlint.js.org/#/)
 - [Markdownlint](https://github.com/igorshubovych/markdownlint-cli)
