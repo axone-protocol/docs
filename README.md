@@ -4,6 +4,7 @@
 
 [![lint](https://img.shields.io/github/workflow/status/okp4/docs/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/workflow/status/okp4/docs/Build?label=build&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/build.yml)
+[![publish](https://img.shields.io/github/workflow/status/okp4/docs/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/publish.yml)
 
 ## Developing & contributing
 
