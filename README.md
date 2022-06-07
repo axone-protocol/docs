@@ -2,12 +2,7 @@
 
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![build](https://github.com/okp4/docs/actions/workflows/build.yml/badge.svg)](https://github.com/okp4/docs/actions/workflows/build.yml)
-[![lint](https://github.com/okp4/docs/actions/workflows/lint.yml/badge.svg)](https://github.com/okp4/docs/actions/workflows/lint.yml)
-[![publish](https://github.com/okp4/docs/actions/workflows/publish.yml/badge.svg)](https://github.com/okp4/docs/actions/workflows/publish.yml)
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![lint](https://img.shields.io/github/workflow/status/okp4/docs/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/lint.yml)
 
 ## Developing & contributing
 
