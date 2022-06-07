@@ -2,6 +2,8 @@
 
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 ## Developing & contributing
 
 ### Installation
