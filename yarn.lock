@@ -3674,6 +3674,13 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
+docusaurus-plugin-drawio@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-drawio/-/docusaurus-plugin-drawio-0.1.7.tgz#a8b5a9d733b566562f067b12593ab224275c2183"
+  integrity sha512-0aq9/1yU+NmZ0gzRnsXEwWnc7c4jhos4AXuGxd3GIXNSCdgZuJkFnZn1tBfJ+a4WrL6PTdN71y2A3AGuVQ8wfA==
+  dependencies:
+    raw-loader "^4.0.2"
+
 docusaurus-plugin-sass@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/docusaurus-plugin-sass/-/docusaurus-plugin-sass-0.2.2.tgz#9b7f8c6fbe833677064ec05b09b98d90b50be324"
@@ -6431,6 +6438,14 @@ raw-body@2.4.3:
     http-errors "1.8.1"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+raw-loader@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-4.0.2.tgz#1aac6b7d1ad1501e66efdac1522c73e59a584eb6"
+  integrity sha512-ZnScIV3ag9A4wPX/ZayxL/jZH+euYb6FcUinPcgiQW0+UBtEv0O6Q3lGd3cqJ+GHH+rksEv3Pj99oxJ3u3VIKA==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
 
 rc@^1.2.8:
   version "1.2.8"
