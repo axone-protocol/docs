@@ -8,7 +8,7 @@ const config = {
     title: "ØKP4",
     tagline: "Open Knoledge Protocol For",
     url: "https://okp4.github.io",
-    baseUrl: "/docs/",
+    baseUrl: "/",
     onBrokenLinks: "warn",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
@@ -37,6 +37,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+
             navbar: {
                 title: "ØKP4",
                 logo: {
