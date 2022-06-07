@@ -3,6 +3,7 @@
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 [![lint](https://img.shields.io/github/workflow/status/okp4/docs/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/lint.yml)
+[![build](https://img.shields.io/github/workflow/status/okp4/docs/Build?label=build&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/build.yml)
 
 ## Developing & contributing
 
