@@ -37,7 +37,6 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            
             navbar: {
                 title: "ØKP4",
                 logo: {
@@ -115,6 +114,9 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
+            colorMode: {
+                defaultMode: "dark",
+            }
         }),
 
     plugins: [
