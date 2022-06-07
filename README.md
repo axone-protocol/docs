@@ -3,6 +3,7 @@
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Developing & contributing
 
