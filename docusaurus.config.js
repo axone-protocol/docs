@@ -120,7 +120,12 @@ const config = {
         }),
 
     plugins: [
-        "docusaurus-plugin-sass", ['drawio', {}],
+        "docusaurus-plugin-sass",
+        ['drawio', {}],
+        ["@easyops-cn/docusaurus-search-local",
+        {
+            hashed: true,
+        }],
     ],
 };
 
