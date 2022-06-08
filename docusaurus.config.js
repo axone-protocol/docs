@@ -73,7 +73,7 @@ const config = {
                         items: [
                             {
                                 label: "Whitepaper",
-                                to: "/docs/whitepaper",
+                                to: "whitepaper/abstract",
                             },
                         ],
                     },
