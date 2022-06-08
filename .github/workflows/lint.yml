@@ -118,6 +118,7 @@ jobs:
       - name: Fetch dependencies
         run: |
           yarn
+
       - name: Lint scss
         run: |
-          yarn lint
+          yarn stylelint '**/*.scss'
