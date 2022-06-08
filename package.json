@@ -53,6 +53,7 @@
   "devDependencies": {
     "@okp4/eslint-config": "^1.1.0",
     "docusaurus-plugin-drawio": "^0.1.7",
+    "markdownlint": "^0.25.1",
     "prettier": "^2.6.2",
     "stylelint": "^14.8.5",
     "stylelint-config-standard": "^25.0.0",
