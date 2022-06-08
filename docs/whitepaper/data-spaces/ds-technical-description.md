@@ -8,8 +8,6 @@ The OKP4 protocol allows to build highly customized Data Spaces and to manage th
 
 Thanks to the OKP4 development kit, anyone can create and design Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules. 
 
-:::
-
 :::tip  
 OKP4 Development Kit is designed to give as much freedom as possible for developers, data scientists and communities at large. Freedom of development, freedom of business models, freedoms of standards... freedom of innovation.
 
