@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_okp4_docs=self.webpackChunk_okp4_docs||[]).push([[4195],{2841:function(e,t,c){c.r(t),c.d(t,{default:function(){return r}});var n=c(7294),o=c(6775);function r(){return n.createElement(o.l_,{to:"/docs/docs/whitepaper/abstract"})}}}]);
