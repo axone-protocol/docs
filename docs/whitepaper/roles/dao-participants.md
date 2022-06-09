@@ -4,4 +4,8 @@ sidebar_position: 4
 
 # DAO Participants
 
-Modi voluptatem quaerat quisquam labore eius ipsum ipsum. Tempora neque quaerat amet sit. Dolore neque consectetur consectetur eius est ut quisquam. Tempora aliquam etincidunt modi porro sed. Eius porro magnam dolor voluptatem. Consectetur velit voluptatem etincidunt. Quaerat quiquia ipsum quisquam amet magnam dolor quaerat. Modi labore voluptatem dolor.
+Anyone with staked KNOW tokens can participate in governance. It is possible to:
+- Make a proposal: costs KNOW tokens
+- Vote on a proposal: doesn't costs KNOW tokens, but each token gives a vote right on each proposal, and each KNOW gives 1 voting power
+
+For more information on governance please click here.
