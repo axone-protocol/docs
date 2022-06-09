@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
 
       - name: Lint markdown files
         uses: avto-dev/markdown-lint@v1.5.0
