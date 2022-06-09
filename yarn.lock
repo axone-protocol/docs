@@ -4330,6 +4330,20 @@ docusaurus-plugin-sass@^0.2.2:
   dependencies:
     sass-loader "^10.1.1"
 
+docusaurus-protobuffet-plugin@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-protobuffet-plugin/-/docusaurus-protobuffet-plugin-0.3.2.tgz#09ede681475c881bff804fb652f7497b63347dad"
+  integrity sha512-LPu+ah2uy53//q6QN8IYSYH6DHUOz2MxvOzk8JRMsUDUF2sTxIvobFqj3/BctlLM15kBWbWnI2zHaAZQlZodqA==
+  dependencies:
+    "@docusaurus/utils" "^2.0.0-alpha.72"
+
+docusaurus-protobuffet@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-protobuffet/-/docusaurus-protobuffet-0.3.2.tgz#55cda95e4da413bbf7f680b7eac616760bed2aac"
+  integrity sha512-RsTPoyUDW6efG8PyRa9bg1L0W7fvEQLYI/W6Mk96DVr01DnUagiHFmAHkAKCpVAZi7KggCbiDHmCJSRykm63+g==
+  dependencies:
+    docusaurus-protobuffet-plugin "^0.3.2"
+
 dom-converter@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
