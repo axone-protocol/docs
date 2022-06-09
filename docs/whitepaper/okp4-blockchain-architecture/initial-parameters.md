@@ -11,6 +11,7 @@ Block reward: For more details click here
 Token release: daily
 
 Slashing:
+
 - Signed block window: 20,000
 - Minimum signed per window: 5%
 - Downtime jail duration: 600s

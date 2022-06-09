@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Data Providers
 
-Data providers are members of the community who have deposited one or more datasets in the catalog and/or in one or more data spaces. Their role is to offer datasets in order to give the possibility to builders to create new knowledges. 
+Data providers are members of the community who have deposited one or more datasets in the catalog and/or in one or more data spaces. Their role is to offer datasets in order to give the possibility to builders to create new knowledges.
 
 They are paid by the builders for each use of their data set.
 
