@@ -86,7 +86,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: '@OKP4_Protocol'
+                href: 'https://twitter.com/OKP4_Protocol'
               },
               {
                 label: 'GitHub',
