@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Canonical Services
 
+A large number of blockchains in the Cosmos ecosystem share a common set of services, either because they are provided by layer 0 of the Cosmos SDK or because they are standard in the ecosystem.
+
+This section lists the main services that are available in the OKP4 blockchain.
+
 ## From the Cosmos SDK
 
 The OKP4 blockchain is based on the [Cosmos SDK](https://cosmos.network) layer 0 and, as such, comes with a set of functionalities any blockchain application needs. These functionalities are grouped into _modules_, each module being responsible for a well-defined functional scope.
