@@ -26,6 +26,7 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     sidebarCollapsed: false,
                     editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
+                    remarkPlugins: [require('mdx-mermaid')],
                 },
                 theme: {
                     customCss: require.resolve("./src/scss/custom.scss"),
