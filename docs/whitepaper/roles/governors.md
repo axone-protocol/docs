@@ -14,7 +14,7 @@ This is why we have decided to let each Data Space choose between different gove
 
 As an example, it will be able to add fees for the use of its Data Space in order to create or develop a treasury; because each Data Space can have its own treasury if needed.
 
-</br>
+<br/>
 
 For more informations about the rules, please clic here. (lien vers DS rules)
 

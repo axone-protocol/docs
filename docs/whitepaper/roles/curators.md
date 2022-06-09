@@ -8,7 +8,7 @@ IMAGE (à faire pour tous les rôles)
 
 Technical skills: Intermediate   |   Time investment: Low to High   |   Risk level: High
 
-</br>
+<br/>
 
 ### Curation Markets
 
@@ -26,7 +26,7 @@ Core Components of Curation Markets:
 - Communal: a communal deposit is created to keep the amount paid for minted tokens
 - Proportional: curators curate information with their proportional backing of tokens bonded to them
 
-</br>
+<br/>
 
 ### Curators
 
@@ -47,7 +47,7 @@ When signaling, Curators can decide to signal a specific version of a dataset/se
 
 Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the token model section.
 
-</br>
+<br/>
 
 ### Auto-Curation Priority
 
@@ -57,7 +57,7 @@ Data & Algorithm/Infrastructure Operation: When the provider will deposit his da
 
 Once the first purchase is made, the burn & mint system opens to the whole community. The provider who curates will of course receive the associated rewards, in proportion to his number of shares (at the very beginning if he is alone, he will receive 100% of the curation royalties).
 
-</br>
+<br/>
 
 #faire un petit cadre#
 Note: The first address to signal a particular item is considered the first curator and will have to do much more gas-intensive work than the rest of the following curators because the first curator initializes the curation share tokens, initializes the bonding curve, and also transfers tokens into OKP4 proxy.
