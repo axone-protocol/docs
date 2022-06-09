@@ -7,8 +7,9 @@ sidebar_position: 3
 2 key concepts to understand:
 
 **Data Space**: Abstraction that comprises
+
 - Bundle of rights & rules that regulates interactions between data, algorithms and resources* shared by participants
-- Governance mechanisms to adapt these 
+- Governance mechanisms to adapt these
 
 In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Data Spaces can be nested and overlapping, so that a data provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
 
@@ -22,12 +23,12 @@ In a Data Space, datasets and algorithms are not stored centrally but at source 
 
 **Data silos**: A data silo is a repository of data that's controlled by one party and is isolated from the rest. It is typically stored in a standalone system and often is incompatible with other data sets. While "data silos" is a term usually used to only talk about data inside an organization, we use it also to qualify data that does not provide value outside the organization.
 
-**Information**: Contextualized, aggregated and interpreted data. 
+**Information**: Contextualized, aggregated and interpreted data.
 
-**Knowledge**: Output from data sharing that is used and valuable for the end-user. 
+**Knowledge**: Output from data sharing that is used and valuable for the end-user.
 
-**Resources**: Storage or computation connected to the rest of the OKP4 ecosystem. 
+**Resources**: Storage or computation connected to the rest of the OKP4 ecosystem.
 
-**SDK**: A Software Development Kit is a set of developments tools that facilitate the creation of applications on a platform. 
+**SDK**: A Software Development Kit is a set of developments tools that facilitate the creation of applications on a platform.
 
 **Trustless data sharing**: To let data contribute to valuable knowledge and applications without ever losing control of the data itself, through a trustless network and privacy-preserving techniques so that other parties never access the raw shared data.

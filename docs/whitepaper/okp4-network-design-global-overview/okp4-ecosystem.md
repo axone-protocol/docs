@@ -9,12 +9,14 @@ OKP4 is a public blockchain protocol deploying a suite of data applications wher
 [ IMAGE Protocol ]
 
 On the macro level, there is 4 key concepts to understand:
+
 - OKP4 blockchain (protocol layer)
 - data spaces (contribution & governance layer)
 - data applications (user layer)
 - datasets & services
 
-**OKP4 blockchain** is the decentralized layer that: 
+**OKP4 blockchain** is the decentralized layer that:
+
 - indexes (any) data and services
 - exposes metadata of indexed data and services
 - initiates data workflows

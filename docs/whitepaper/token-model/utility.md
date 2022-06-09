@@ -10,7 +10,7 @@ KNOW is the native token of the OKP4 blockchain and are the only staking token o
 
 ### Rewards
 
-According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, algorithms and resource providers). 
+According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, algorithms and resource providers).
 
 <br/>
 
@@ -25,7 +25,6 @@ In addition, each Data Space will be able to add an additional transaction fee f
 <br/>
 
 ### Micropayments
-
 
 <br/>
 
