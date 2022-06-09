@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Canonical Modules
+# Canonical Services
 
 ## From the Cosmos SDK
 
