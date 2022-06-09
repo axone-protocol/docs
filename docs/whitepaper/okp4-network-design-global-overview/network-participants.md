@@ -4,4 +4,8 @@ sidebar_position: 2
 
 # Network participants
 
-Ut porro non velit est velit dolor eius. Sed non neque ipsum ut quaerat amet dolor. Dolore numquam aliquam neque. Neque neque sed neque. Modi eius voluptatem magnam velit. Eius voluptatem quiquia quiquia dolore adipisci est numquam. Dolore labore quisquam aliquam consectetur eius non est. Velit labore dolor quisquam voluptatem quisquam sed quaerat.
+On the **blockchain layer**, there is Validators, Delegators and DAO participants.
+
+On the **Data Space layer**, there is Data providers and Service providers who agree to share based on Data Space's rules. There is Curators who can signal promising data and services. There is also Governors who can change these rules.
+
+On the **Data Application layer**, there is builders who develop and maintain the application, and also end-users who benefit from knowledge created through the whole OKP4 ecosystem.
