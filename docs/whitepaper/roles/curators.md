@@ -10,7 +10,7 @@ Technical skills: Intermediate   |   Time investment: Low to High   |   Risk lev
 
 <br/>
 
-### Curation Markets
+## Curation Markets
 
 With the establishment of curation markets in OKP4 ecosystem, a whole new world of possibilities will be opening up. The new opportunity to participate in the network as a curator comes with many exciting adventures but also with potential risks.
 
@@ -29,7 +29,7 @@ Core Components of Curation Markets:
 
 <br/>
 
-### Curators
+## Curators
 
 Curators do not need to possess complex technical skills or knowledge. All it takes is the ability to do transactions via Keplr. Similarly, Curators are not required to stake a minimum amount of KNOW. Depending on the individual's risk tolerance, Curation may be especially attractive for those who are able to accurately evaluate items and have a good understanding of Web3 and of the underlying mechanics of bonding curves.
 
@@ -50,7 +50,7 @@ Curation is risky. Do your due diligence to ensure that you only curate datasets
 
 <br/>
 
-### Auto-Curation Priority
+## Auto-Curation Priority
 
 Any provider can stake KNOW tokens on their data/service as a curation to oneself. It follows the same rules as any curator. The only change is that the provider will always have the first hand before the others.
 
@@ -60,5 +60,6 @@ Once the first purchase is made, the burn & mint system opens to the whole commu
 
 <br/>
 
-# faire un petit cadre #
+## faire un petit cadre
+
 Note: The first address to signal a particular item is considered the first curator and will have to do much more gas-intensive work than the rest of the following curators because the first curator initializes the curation share tokens, initializes the bonding curve, and also transfers tokens into OKP4 proxy.

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Curation
 
-### Curation Shares
+## Curation Shares
 
 Curation Shares are the continuous tokens OKP4 uses to incentivize curators towards the shared goal of identifying quality data sources. They are managed by OKP4 bonding curve contract.
 
@@ -19,13 +19,13 @@ OKP4 Ecosystem uses a bonding curve to coordinate the work of curators to achiev
 
 <br/>
 
-### Curation Fees
+## Curation Fees
 
 It should be noted that there is an entry fee of 2% for the mint of shares. These fees will go directly into the DAO's treasury.
 
 <br/>
 
-### Burn & Mint Process
+## Burn & Mint Process
 
 It is possible at any time to buy shares. This process is called "mint".
 
@@ -39,7 +39,7 @@ Note: It is important to note that as a Curator, you are confronted with the ris
 
 <br/>
 
-### Bonding Curve 101 Model
+## Bonding Curve 101 Model
 
 A bonding curve describes the relationship between the price and supply of an asset. It is a mathematical concept modelling the idea that the price of an asset (with a limited quantity) increases slightly for subsequent buyers with each purchase. The reasoning behind the increase in price is that the freely available supply is reduced with every unit that is acquired. The mechanism of a bonding curve rewards the earliest investors with higher profits. The basic idea behind the concept of a bonding curve is quite intuitive: the supply of a token determine its price. The price increases when the number of distributed tokens increases and vice versa.
 
@@ -53,7 +53,7 @@ The KNOW valuation of curation shares is determined by the bonding curve and can
 
 <br/>
 
-### Risks
+## Risks
 
 Being a Curator in our ecosystem comes with certain risks. Let’s have a look at the risks Curators are confronted with.
 
