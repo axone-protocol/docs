@@ -4,4 +4,17 @@ sidebar_position: 6
 
 # Initial Parameters
 
-Quiquia adipisci modi adipisci modi modi velit. Magnam ut labore amet labore quaerat. Quaerat modi velit neque. Numquam velit eius consectetur etincidunt. Dolor eius quisquam sed dolor porro. Aliquam porro ipsum amet numquam. Dolore consectetur sit quisquam eius tempora neque.
+Bloc time: 6.5s
+
+Block reward: For more details click here
+
+Token release: daily
+
+Slashing:
+- Signed block window: 20,000
+- Minimum signed per window: 5%
+- Downtime jail duration: 600s
+- Slash fraction doublesign: 5%
+- Slash fraction downtime: 0.01%
+
+Unbounding time: 14 days
