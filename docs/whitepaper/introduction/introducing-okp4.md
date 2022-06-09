@@ -17,17 +17,19 @@ We have designed the OKP4 protocol to be open, decentralized and auditable. Our 
 ### **OKP4 Blockchain** the layer 1 for data sharing
 A public blockchain protocol designed specifically to handle the complexity of trustless data sharing and value sharing
 
-   - Decentralization and trust is guaranteed by the Tendermint Consensus & our native token $KNOW
-   - An open-source network controlled by its stakeholders
-   - A vibrant Smart Contract Hub powered by CosmWasm
-   - IBC (Inter-Blockchain Protocol) enables seamless communication with other blockchains
+- Decentralization and trust is guaranteed by the Tendermint Consensus & our native token $KNOW
+- An open-source network controlled by its stakeholders
+- A vibrant Smart Contract Hub powered by CosmWasm
+- IBC (Inter-Blockchain Protocol) enables seamless communication with other blockchains
 
 ### **OKP4 Ecosystem**: empower the dataverse
 Anyone can plug its own infrastructure into the ecosystem and connect it through the blockchain. OKP4 ecosystem enables XaaS (anything as a service). Agnostic by design!
 
-### **OKP4 Development Kit**: it allows anyone to create and design Data Space with as much freedom as possible. For developers, data scientists and communities at large :
-    - Customize Data Space governance with no-code tools & templates
-    - Build dApps from software to interfaces
-    - Use or provide components & resources in the OKP4 Ecosystem
+### **OKP4 Development Kit**
+It allows anyone to create and design Data Space with as much freedom as possible. For developers, data scientists and communities at large :
+- Customize Data Space governance with no-code tools & templates
+- Build dApps from software to interfaces
+- Use or provide components & resources in the OKP4 Ecosystem
 
-### **OKP4 Dataverse**: user-friendly tools to share, contribute, benefit and earn. (wallet / browser extension, blockchain explorer, dataverse portal, catalog of dApps, governance interfaces, etc.)
+### **OKP4 Dataverse**
+User-friendly tools to share, contribute, benefit and earn. (wallet / browser extension, blockchain explorer, dataverse portal, catalog of dApps, governance interfaces, etc.)
