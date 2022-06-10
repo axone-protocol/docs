@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Staking
 
-### Staking Validators & Delegators
+## Staking Validators & Delegators
 
 Following our dPoS (delegated proof-of-stake) blockchain model, it is possible to stake tokens to validate the network and receive associated rewards. A validator wishing to withdraw will have to wait a period of 14 days before his decision is executed (unbounding period).
 
@@ -16,7 +16,7 @@ For more information, please click here [lien:Delegators]
 
 <br/>
 
-### Staking Algorithm & Infrastructure
+## Staking Algorithm & Infrastructure
 
 As saif previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this algorithm/infrastructure, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
 

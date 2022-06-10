@@ -6,6 +6,7 @@ sidebar_position: 4
 
 Governance will be done in KNOW. Staked KNOW holders can vote. All proposals require a minimum KNOW deposit. For each proposal (if the minimum deposit amount is reached), voters may vote to accept or decline.
 Several cases:
+
 - If the proposal is accepted by the majority, the deposited KNOWs will be returned to their owners
 - If the proposal is rejected by the majority, the deposited KNOWs will be returned to their owners
 - If the proposal is rejected with a veto (33%), the deposited KNOWs will be burned
