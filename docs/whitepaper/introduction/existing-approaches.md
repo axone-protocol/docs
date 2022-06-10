@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Existing approaches
 
-![Degree of federation in data-sharing models](https://docs.okp4.network/static/img/content/Degree of federation in data-sharing models.png)
+![Degree of federation in data-sharing models](https://docs.okp4.network/static/img/content/data-sharing-models.png)
 
 Since data is everywhere and knowledge is essential to the common good, the issue of sharing data and maximizing knowledge creation is far from being a new topic for individuals and organizations.
 
