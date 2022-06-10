@@ -11,19 +11,31 @@ Since data is everywhere and knowledge is essential to the common good, the issu
 Among the existing approaches:
 
 ## Data sharing
+
 ### Bilateral agreement
+
 ### Multilateral agreement
+
 ### Data Marketplace
+
 ### Data Space
+
 ### Dataverse
 
 ## Knowledge creation
+
 ### Data Visualisation
+
 ### Business Intelligence
+
 ### Complex distributed workflows
 
 ## Governance
+
 ### Bilateral Governance
+
 ### Centralized Governance
+
 ### Federated Governance
+
 ### Decentralized Governance

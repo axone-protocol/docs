@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Purpose of Data Spaces
 
-Governance and fair business model are the key to overcome data sharing brakes. 
+Governance and fair business model are the key to overcome data sharing brakes.
 
 Data Spaces are ecosystems for the seamless sharing of data and services that interact according to common governance rules, guaranteeing the trust and interest of stakeholders in contributing. These Data Spaces are the source of new value chains in the knowledge economy.
 

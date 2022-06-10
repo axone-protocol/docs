@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Use case 2
 
-There are many opportunities to build community-focused usecases. 
+There are many opportunities to build community-focused usecases.
 For exemple:
 
 1. Data can be used towards a common community-based goal and share value based on the results.
@@ -23,6 +23,7 @@ More data volume and diversity mean enables greater depth and breadth of analysi
 What if we could know and compare VCs profiles to know what they usually do with unlocked tokens and tactically adapt investment strategies?
 
 By combining many data feeds and services (a mix of many data providers and sources - including proprietary data) such as:
+
 - Dove metrics (fundraising database)
 - Unlocks Calendar (token unlocks database)
 - Nansen (on-chain wallet tracking)
