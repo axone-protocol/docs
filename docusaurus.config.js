@@ -32,6 +32,19 @@ const config = {
           customCss: require.resolve('./src/scss/custom.scss')
         }
       })
+    ],
+    [
+      'docusaurus-protobuffet',
+      {
+        protobuffet: {
+          fileDescriptorsPath: './fixtures/proto_workspace.json',
+          protoDocsPath: './protodocs',
+          sidebarPath: './generatedSidebarsProtodocs.js'
+        },
+        docs: {
+          sidebarPath: './sidebarsProtodocs.js',
+        }
+      }
     ]
   ],
 
@@ -51,6 +64,12 @@ const config = {
             docId: 'whitepaper/abstract',
             position: 'left',
             label: 'Whitepaper'
+          },
+          {
+            to: 'protodocs/cosmos/app/module/v1alpha1/module.proto',
+            activeBasePath: 'protodocs',
+            label: 'Protodocs',
+            position: 'left',
           },
           {
             href: 'https://discord.gg/GHNZh4SaJ3',
@@ -126,7 +145,10 @@ const config = {
     [
       '@easyops-cn/docusaurus-search-local',
       {
-        hashed: true
+        hashed: true,
+        docsRouteBasePath: ['docs', 'protodocs'],
+        docsDir: ['docs', 'protodocs'],
+        indexBlog: false
       }
     ]
   ]
