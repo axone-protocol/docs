@@ -21,6 +21,7 @@ For more information, please click here [lien:Delegators]
 As saif previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this algorithm/infrastructure, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
 
 Therefore, the amount of KNOW to stake will depend on the price that the provider asks for. And this for several reasons:
+
 - Economic security: KNOW that is staked can be slashed (same principle as for validators but with different rules). It provides security for builders in case they pay for a service that is not available or stops in the middle of a treatment. It also prevents service providers to deposit wrong services and operate bad computation.
 - Sybil resistance: Only providers who are willing to invest resources can participate. This will prevent deposits of inefficient and useless services.
 
