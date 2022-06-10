@@ -108,13 +108,13 @@ The rules are written in the Governance section of the Token model, click here.
 
 <br/>
 
-***Proposal Pool***
+### Proposal Pool
 
 In order to offer the possibility to anyone to make a voting proposal, we introduce the concept of proposal pool. If someone has a proposal to make but does not have enough tokens to launch the proposal alone, it is possible to launch a proposal pool. Over a given period of time (before the voting period), anyone who thinks the proposal is a good idea and deserves to be voted on can come and deposit KNOW in this pool. If the amount of KNOW tokens is reached before the end of the period, the proposal passes as a classic proposal and is governed by classic rules; if the period is exceeded and the total amount is not met, the contributors are refunded.
 
 <br/>
 
-***Voting Parameters***
+### Voting Parameters
 
 - Minimum deposit: 600 KNOW. Subject to change depending on the price of the token and the choices of the DAO
 - Maximum deposit period: 14 days. After this period, if the minimum deposit is not reached, the proposal is rejected
