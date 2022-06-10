@@ -6,8 +6,8 @@
 [![build](https://img.shields.io/github/workflow/status/okp4/docs/Build?label=build&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/build.yml)
 [![publish](https://img.shields.io/github/workflow/status/okp4/docs/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/publish.yml)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
-[![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=for-the-badge)](https://opensource.org/licenses/BSD-3-Clause)
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)](https://github.com/prettier/prettier)
+[![license][bsd-3-clause-image]][bsd-3-clause]
 
 ## Developing & contributing
 
@@ -43,3 +43,14 @@ The coding style rules are enforced by the following tools:
 - [Markdownlint](https://github.com/igorshubovych/markdownlint-cli)
 - [Prettier](https://prettier.io/)
 - [Stylelint](https://stylelint.io/)
+
+## License
+
+The OKP4 documentation portal is open source and [3-Clause BSD][bsd-3-clause] licensed.
+
+The contents of the documentation (e.g. the `.md` files in the `/docs` folder) is [Creative Commons Attribution-ShareAlike 4.0 International][cc-by-sa] licensed.
+
+[bsd-3-clause]: https://opensource.org/licenses/BSD-3-Clause
+[bsd-3-clause-image]: https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=for-the-badge
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
