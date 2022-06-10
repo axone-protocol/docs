@@ -1,8 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 12
 ---
 
-# Distribution
+# Tokenomics
+
+## Overview
+
+Velit sed labore eius numquam consectetur numquam dolore. Aliquam labore magnam dolore quiquia quaerat est consectetur. Sed sed velit dolore eius. Numquam est labore quiquia ut voluptatem. Dolor consectetur voluptatem quaerat eius dolor amet labore. Amet neque est quiquia. Non quaerat adipisci numquam labore consectetur. Ipsum aliquam dolor dolore ut numquam. Adipisci sed sed labore ut ipsum amet dolorem. Sit quisquam dolorem dolorem quiquia sed consectetur.
+
+## Distribution
 
 [SHEME camembert TGE + over 3 years]
 
@@ -35,3 +41,11 @@ Airdrops:
 
 - Airdrop 1 (50%): This airdrop will be distributed at the time of the token's release under certain conditions. Objective to create a crypto community, a community of suppliers and builders, in order to incentivize them to come to our ecosystem.
 - Airdrop 2 (50%): This airdrop will take place at least one year after the first one under certain conditions, such as staked airdrop 1 during one year.
+
+## Vesting
+
+Eius amet consectetur labore consectetur quiquia. Velit etincidunt adipisci voluptatem ut velit. Numquam sit dolor neque non. Sed quaerat consectetur consectetur eius. Sed dolor est quaerat dolore voluptatem voluptatem velit. Velit neque sed magnam non labore dolore porro. Amet quisquam neque est quaerat sed magnam dolorem. Dolor dolorem numquam amet etincidunt quisquam ut est. Neque aliquam sed quaerat est. Magnam eius quiquia eius etincidunt.
+
+## Emission
+
+Non eius non amet quisquam adipisci porro. Quaerat dolore labore modi sed porro tempora labore. Velit consectetur ipsum porro adipisci adipisci voluptatem. Etincidunt amet modi est quisquam sed labore magnam. Dolor est velit adipisci magnam. Dolorem dolore dolor quisquam modi. Dolor quaerat aliquam quaerat magnam eius est etincidunt. Sed tempora ut voluptatem. Etincidunt adipisci tempora labore non sit modi. Quiquia tempora ipsum neque aliquam ipsum.
