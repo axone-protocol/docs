@@ -4,4 +4,8 @@ sidebar_position: 5
 
 # Liquidity
 
-Ipsum modi eius non porro numquam. Labore aliquam dolore labore amet aliquam. Velit dolore quisquam velit dolore non quaerat voluptatem. Aliquam ipsum porro eius adipisci quaerat. Est porro quisquam est tempora aliquam. Dolore quisquam est eius labore. Quiquia magnam quiquia labore adipisci voluptatem numquam. Quisquam est magnam ut ut. Dolore tempora tempora porro sed velit. Amet sed dolor consectetur numquam ut quaerat.
+When the token is launched, the liquidity associated supply will be locked. This liquidity will be used for decentralized exchanges and for centralized exchanges in order to have a KNOW/ATOM & KNOW/OSMO pair at first.
+
+In order to ensure our back-up we have a part of the DAO treasury wallet that can be used to provide liquidity for a given period of time if needed.
+
+In addition we will be able to provide liquidity for all new Data Space governance tokens on OKPSwap so that they can be traded under the best conditions.
