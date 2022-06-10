@@ -31,3 +31,19 @@ The `governance` module enables the OKP4 blockchain to establish a governance on
 ## Wasm
 
 `wasm` is a module plugable into the [Cosmos SDK](https://cosmos.network), provided by the [CosmWasm](https://docs.cosmwasm.com) project, that enables the OKP4 blockchain to provide a smart contracting platform through which the functionalities of the OKP4 blockchain is implemented, operated.
+
+## CosmWasm Plus
+
+The [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) repository is a collection of specification and contracts within [CosmWasm](https://docs.cosmwasm.com) virtual machine.
+
+In the context of the OKP4 blockchain, the following smart contracts (and/or specifications) are considered (non exhaustive and subject to evolve):
+
+- `cw20-base`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing a standard API for tokens, with the following functionalities: transfer tokens from one account to another, get the current token balance of an account, get the total supply of the token available on the network...
+
+- `cw20-atomic-swap`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing atomic swaps for both native and `cw20` tokens.
+
+- `cw20-staking`:  A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) provides staking derivatives.
+
+- `cw3-multisig`: A smart contract (compliant with [cw3](https://crates.io/crates/cw3) specification) for multiSig/voting.
+
+- `cw4-group`: A smart contract (compliant with [cw4](https://crates.io/crates/cw4) specification) for storing group membership, which can be combined with `cw3` multisigs.
