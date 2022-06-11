@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Abstract
 
-![OKP4 Logo](https://docs.okp4.network/img/content/OKP4.jpg)
+![OKP4 Logo](/img/content/OKP4.jpg)
 
 OKP4 is a revolutionary public PoS layer 1 specifically designed to enable communities to trustlessly share data, algorithms and resources to build the Dataverse
 
@@ -14,4 +14,4 @@ The OKP4 protocol uses Blockchain technology to manage the sovereignty within th
 
 The whole system is decentralized since there is no dominant third party who dictates the rules. The authority is created by the community, thanks to the auditable, inviolable and inclusive code of smart contracts. The decision making is collective and the individual and collective interests are aligned.
 
-![Workflow process OKP4](https://docs.okp4.network/img/content/schematic.png)
+![Workflow process OKP4](/img/content/schematic.png)

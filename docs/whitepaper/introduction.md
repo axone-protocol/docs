@@ -34,7 +34,7 @@ Which means underutilization of data, market failures, repression of innovation 
 
 ## Existing approaches
 
-![Degree of federation in data-sharing models](https://docs.okp4.network/img/content/data-sharing-models.png)
+![Degree of federation in data-sharing models](/img/content/data-sharing-models.png)
 
 Since data is everywhere and knowledge is essential to the common good, the issue of sharing data and maximizing knowledge creation is far from being a new topic for individuals and organizations.
 
@@ -72,7 +72,7 @@ Among the existing approaches:
 
 ## Introducing – OKP4
 
-The previous mentioned reasons ([see Motivation](https://docs.okp4.network/docs/whitepaper/introduction/motivation-why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized. Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
+The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized. Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
 
 Our OKP4 protocol not only enables the creation of Data Spaces. It also maximizes data sharing, based on Web 3.0 value chain, where providers and consumers get optimal compensation for their contribution, in a trustworthy environment. The OKP4 protocol is a community-run technology using blockchain, smart contracts and the KNOW cryptocurrency which we will discuss in later articles.
 
