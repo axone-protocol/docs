@@ -18,17 +18,17 @@ Different data sharing and marketplace business models can be implemented using 
 
 ## Generic templates description
 
-# Data sharing template
+### Data sharing template
 
 The generic template for the data sharing business models considers that the value associated to the new created data is a consequence of the different workflows of services which operate, or happened to operate, on shared data.  Therefore, the value of the created dataset is considered to be a function of the cost of these workflows.  The rewards of the data providers are based on the considered importance of their shared datasets in these workflows. 
 
-# Data marketplace template
+### Data marketplace template
 The generic template for the data marketplace models allows users to implement different dataset pricing algorithms.  Fixed price, first price sealed-bid and second price sealed-bid auctions are proposed among the different algorithms of the template.
 The templates are available here : https://github.com/okp4/kg-comput/blob/docs/theory/kg_comput_latex/kg-comput.pdf
 
 ## Parameters
 
-# Data sharing template parameters
+### Data sharing template parameters
 
 This template has the following parameters:
 
@@ -36,7 +36,7 @@ This template has the following parameters:
 - weights (alphas >=0), which characterize the importance of each shared dataset in the workflows of services linked to the created dataset 
 - a last rewarded rank (N>=0), which allows the computation of rewards for data providers, across the different workflows, up to this rank
 
-# Data marketplace template parameters
+### Data marketplace template parameters
 
 This template has the following parameters:
 
