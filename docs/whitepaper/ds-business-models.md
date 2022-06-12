@@ -24,6 +24,8 @@ The generic template for the data sharing business models considers that the val
 
 ### Data marketplace template
 The generic template for the data marketplace models allows users to implement different dataset pricing algorithms.  Fixed price, first price sealed-bid and second price sealed-bid auctions are proposed among the different algorithms of the template.
+
+### Link to OKP4 templates
 The templates are available here : https://github.com/okp4/kg-comput/blob/docs/theory/kg_comput_latex/kg-comput.pdf
 
 ## Parameters
