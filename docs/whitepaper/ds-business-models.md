@@ -31,15 +31,20 @@ The templates are available here : https://github.com/okp4/kg-comput/blob/docs/t
 # Data sharing template parameters
 
 This template has the following parameters:
-    • an offset (xi > 0), which allows the computation of the knowledge value, i.e created dataset value, as a function of the cost of the associated workflow of services operating on shared datasets
-    • weights (alphas >=0), which characterize the importance of each shared dataset in the workflows of services linked to the created dataset 
-    • a last rewarded rank (N>=0), which allows the computation of rewards for data providers, across the different workflows, up to this rank
+
+    - an offset (xi > 0), which allows the computation of the knowledge value, i.e created dataset value, as a function of the cost of the associated workflow of services operating on shared datasets
+    
+    - weights (alphas >=0), which characterize the importance of each shared dataset in the workflows of services linked to the created dataset 
+    
+    - a last rewarded rank (N>=0), which allows the computation of rewards for data providers, across the different workflows, up to this rank
 
 # Data marketplace template parameters
 
 This template has the following parameters:
-    • auction time-interval, which sets the start and end of the auction bidding process
-    • dataset reserved price, which set a price threshold under which a dataset will not be sold
+
+    - auction time-interval, which sets the start and end of the auction bidding process
+    
+    - dataset reserved price, which set a price threshold under which a dataset will not be sold
     
 ## Token inflows and outflows
 
