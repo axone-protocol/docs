@@ -86,6 +86,24 @@ The data application will be the medium through which tokens flow into the OKP4 
 
 Data Applications have dedicated identities and may have dedicated application treasury to pay for services on behalf of end-users, if enabled. This enables some web3-enabled applications to have seamless, web2-like UX.
 
-## Other interfaces : block explorer, dedicated data space interfaces, etc
+## Other interfaces
 
-Quisquam dolorem sit amet. Voluptatem dolor aliquam labore eius. Magnam consectetur porro voluptatem modi ut ut sed. Neque amet quisquam quiquia quaerat. Numquam consectetur neque modi non dolore. Neque aliquam numquam adipisci.
+### OKP4 Block explorer
+
+### OKP4 Design System
+
+The [OKP4 Design System](https://github.com/okp4/ui) is a set of components and resources created to facilitate the design and development of web interfaces in the OKP4 ecosystem for everyone. This design system serves as a reference for teams working around the OKP4 ecosystem, enabling them to design and develop web interfaces with speed, consistency and quality.
+
+![OKP4 Design System](/img/content/okp4-design-system-overview-1.png)
+
+![OKP4 Design System](/img/content/okp4-design-system-overview-2.png)
+
+The OKP4 Design System follows the [Atomic Design methodology](https://atomicdesign.bradfrost.com/), a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.
+
+<div class="text--center">
+  <p><img src="/img/content/atomic-design.png" alt="Atomic Design" width="600"/></p>
+</div>
+
+- **Atoms**: Atoms are the smallest possible components. The OKP4 Design System offers the basic building blocks for building interfaces such as: [typography](https://github.com/okp4/ui/issues/98), [themes](https://github.com/okp4/ui/issues/96), language, [buttons](https://github.com/okp4/ui/issues/119), [toaster](https://github.com/okp4/ui/issues/179), [cards](https://github.com/okp4/ui/issues/120), etc.
+- **Molecules**:  Molecules are the composition of one or more components of atoms.
+- **Organisms**: Organisms are the combination of molecules that work together or, if necessary, with atoms, to form more elaborate interfaces. The OKP4 Design System offers advanced organisms for the OKP4 ecosystem like a Token Faucet, a Web Wallet, a Dataverse Explorer...
