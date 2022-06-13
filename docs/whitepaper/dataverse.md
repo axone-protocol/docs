@@ -54,11 +54,9 @@ The catalog includes a search engine and a recommendation system.
 
 The catalog is available in several visualizations:
 
-- Cards
-- List
-- Knowledge Graph
-
-The knowledge graph represents the link between the entities (datasets and services) to create knowledge. It allows to visualize the contribution of datasets and services in the generation of new knowledge.
+- **Cards**
+- **List**
+- **Knowledge Graph**: The knowledge graph represents the link between the entities (datasets and services) to create knowledge. It allows to visualize the contribution of datasets and services in the generation of new knowledge. This knownledge is expressed by a [formal ontology](okp4-blockchain-architecture#ontology).
 
 According to the attached consents an element and its metadata will be visible or not.
 
