@@ -28,6 +28,21 @@ html {
   main {
     background-image: var(--ifm-background-image-url);
     background-repeat: no-repeat;
+
+    article {
+      > *:not(footer) {
+        a,
+        a:hover {
+          color: var(--ifm-article-anchor-color);
+          font-weight: bold;
+        }
+      }
+
+      table {
+        display: table;
+        margin: var(--ifm-spacing-vertical) auto;
+      }
+    }
   }
 }
 
