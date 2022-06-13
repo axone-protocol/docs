@@ -86,9 +86,19 @@ The data application will be the medium through which tokens flow into the OKP4 
 
 Data Applications have dedicated identities and may have dedicated application treasury to pay for services on behalf of end-users, if enabled. This enables some web3-enabled applications to have seamless, web2-like UX.
 
-## Other interfaces
+## Other applications
 
 ### OKP4 Block explorer
+
+Block explorers are tools that help you understand what is happening on a blockchain. The OKP4 explorer goes further than other explorers in the Cosmos ecosystem by making it possible for everyone to discover, understand and visualise all transactions that have been committed on the OKP4 mainnet network according to their business dimension:
+
+- Data Space creation
+- Data deposit and registration
+- Data service executions
+- Workflow executions
+- metadata (ontology)
+- Rule book
+- ...
 
 ### OKP4 Design System
 
