@@ -128,17 +128,9 @@ For the OKP4 blockchain, we consider a Smart Contract (CosmWasm) implementation 
 
 The smart contract `data space` is in charge of managing the Data Spaces. The smart contract manages the entire life cycle of a Data Space, from its creation to its destruction.
 
-#### Entities
-
-#### Messages
-
 ### Rule
 
 The smart contract `rule` ensures strict compliance with the governance rules established for each Data Space and extensively for the entire dataverse.
-
-#### Entities
-
-#### Messages
 
 ### Exec
 
@@ -146,25 +138,13 @@ The smart contract `exec` is in charge of "orchestrating" the execution of the d
 
 The smart contract does not interact directly with the services, but maintains in the blockchain an order book of the different executions to be carried out, as well as the history of all the executions to form a knowledge graph of all the processings.
 
-#### Entities
-
-#### Messages
-
 ### Pay
 
 The smart contract `pay` is responsible for maintaining a policy of paying for data and services defined by the governance rules.
 
-#### Entities
-
-#### Messages
-
 ### Logic
 
-The module `logic` introduces into the blockchain an interpretation mechanism that is powerful enough to interpret and guarantee the correct execution of the dataspaces' governance rules.
-
-#### Entities
-
-#### Messages
+The module `logic` introduces into the blockchain an "engine" that is powerful enough to interpret and guarantee the correct execution of the dataspaces' governance rules.
 
 ## Governance / DAO
 
@@ -217,17 +197,46 @@ Slashing:
 
 Unbounding time: 14 days
 
-## Ontology
+## OKP4 Ontology
 
-Ontology is the most general and fundamental concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). Ontologies are linked to various data elements representing conceptualized information about these data items. This allows for unambiguous identification, understanding, navigation and usage of this information.
+### A formal model of the information
 
-OKP4 uses an ontology to formalise all the information that is managed by the protocol in the form of simple and explicit concepts linked together. The aim is to capture the description of data spaces, data and services, but also all the data processing by these services, resulting in a Knowledge Graph.
+[Ontology](https://www.w3.org/standards/semanticweb/ontology) is the most general and fundamental concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). Ontologies are linked to various data elements representing conceptualized information about these data items. This allows for unambiguous identification, understanding, navigation and usage of this information.
 
-The following diagram reveals the key concepts and relationships used in the OKP4 protocol.
+OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_ (data spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
+
+The following 
 
 <div class="text--center graph-svg-container">
   <OntologySvg />
 </div>
+
+The ontology also provides a complete living understanding and knowledge of the datasets within a data space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules). From that perspective, it provides the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the different processings, resulting in a Knowledge Graph of any data in the dataverse.
+
+### Ontology is at the heart of the blockchain
+
+Ontology has a special place in the OKP4 protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. Therefore, the blockchain is the only source of truth and any dApp can consult the semantic information that has been added, modified or deleted in the system.
+
+For example, the creation of a new data space requires a metadata profile that describes and characterises the data space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
+
+```turtle title="data-metadata.ttl"
+@prefix : <https://ontology.okp4.space/core/> .
+@prefix exif-system: <http://ns.exiftool.org/File/System/1.0/> .
+@prefix exif-file: <http://ns.exiftool.org/File/1.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ontology.okp4.com/world/0cc88f43-849a-41ce-bdee-0ba45907f456>
+  rdf:type owl:NamedIndividual, :Metadata ;
+  exif-system:FileName "hw_25000.csv" ;
+  exif-system:FileSize "619 KiB" ;
+  exif-system:FileModifyDate "2021:09:24 20:29:15+02:00" ;
+  exif-file:FileType "CSV" ;
+  exif-file:FileTypeExtension "csv" ;
+  exif-file:MIMEType "text/csv" ;
+  exif-file:MIMEEncoding "us-ascii" ;
+  :describes <https://ontology.okp4.com/world/5d792b01-6e7a-4837-80ad-a8516c184bae> .
+```
 
 ## Oracles? Identity/Consent?
 
