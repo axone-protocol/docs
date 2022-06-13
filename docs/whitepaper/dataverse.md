@@ -25,7 +25,9 @@ This enables anyone to:
 - Create and interact with smart contracts
 
 Cosmos-native wallets such as [Keplr](https://wallet.keplr.app) will be able to perform most of these functions.
+
 But functional doesn't mean optimal.
+
 In terms of UX, many OKP4-specific actions and features will be necessary.
 
 What if you could automatically import web2 platform data into your sovereign wallet while you interact with apps and pages in your browser? What if you could watch your data usage and token analytics in real time in your wallet? What if you could navigate across the graphs of your contributions? And many other data-specific features that generic-purpose wallets can't cover.
@@ -34,7 +36,7 @@ The OKP4 wallet will take the form of a web page and a dedicated browser extensi
 
 ## Portal
 
-The OKP4 portal allows to interact with dataverse. It aggregates the dataverse services such as wallets, catalog, files deposit, dapps, block explorer and more.
+The OKP4 portal is a Web App which allows to exokire the dataverse. It aggregates the dataverse services such as wallets, catalog, files deposit, dapps, block explorer and more.
 
 Although parts of the portal is open (especially for content and support), each user can log in to get access to all the services.
 
@@ -44,7 +46,7 @@ The portal is customized according to the membership of the different Data Space
 
 ## Catalogs
 
-The catalog lists the datasets and services declared in the protocol.
+The catalog is a Web App lists the datasets and services declared in the protocol.
 
 As a reminder, a dataset or a service can participate in several Data Spaces by being stored at the source.
 
@@ -54,21 +56,25 @@ The catalog includes a search engine and a recommendation system.
 
 The catalog is available in several visualizations:
 
-- **Cards**
-- **List**
-- **Knowledge Graph**: The knowledge graph represents the link between the entities (datasets and services) to create knowledge. It allows to visualize the contribution of datasets and services in the generation of new knowledge. This knownledge is expressed by a [formal ontology](okp4-blockchain-architecture#ontology).
+### Card view
 
-According to the attached consents an element and its metadata will be visible or not.
+### List view
+
+### Knowledge Graph
+
+The knowledge graph represents the link between the entities (datasets and services) to create knowledge. It allows to visualize the contribution of datasets and services in the generation of new knowledge. This knownledge is expressed by a [formal ontology](okp4-blockchain-architecture#ontology).
+
+Depending on the governance rules of the Data Set, and depending on the rights of the user exploring the knowledge graph, some elements and the metadata may be visible or not.
 
 ## Files Deposit
 
-OKP4 Files Deposit allows data providers to declare a dataset into the OKP4 Protocol.  
+OKP4 Files Deposit is a Web App that allows Data Providers to register a dataset into the OKP4 Protocol.  
 
-The data provider can fill in the contextual metadata of the dataset. This information will allow other users to understand how the dataset is constructed. The completion of the metadata will improve the ranking of a dataset in the search engine of the catalog.
+The Data Provider can fill in the contextual metadata of the dataset. This information will allow other users to understand how the dataset is constructed, the nature of the information it contains, the application domain it refers to, and the licence that applies. Filling in this metadata will improve the ranking of a dataset in the search engine of the catalog.
 
-A data provider is not necessarily the owner of the dataset if it has permission to declare it in the protocole.
+Note that a Data Provider is not necessarily the owner of the dataset if it has permission to declare it in the protocol.
 
-Each file deposit is a transaction that must be signed by a wallet. The data provider pays a transaction fee.
+Each file deposit is a transaction submitted to the protocol that must be signed by a wallet, and it is the responsibility of the Data Provider to pay the fees related to the execution of this transaction.
 
 ## Metadata extraction
 
