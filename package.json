@@ -58,7 +58,7 @@
     "docusaurus-plugin-drawio": "^0.1.7",
     "markdownlint": "^0.25.1",
     "prettier": "^2.6.2",
-    "stylelint": "^14.9.0",
+    "stylelint": "^14.9.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^4.0.0",
     "stylelint-scss": "^4.2.0"
