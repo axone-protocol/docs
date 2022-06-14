@@ -8,7 +8,9 @@ sidebar_position: 2
 
 Digital innovation has tremendously impacted the way we do business, the way we exchange and consume information. Data has become a resource upon which many businesses have been built. It altered our everyday life in every possible way. The amount of generated data keeps increasing and over the next decade, data collection and analysis will be at the core of every business model.
 
-And yet, data exploitation remains within a handful of companies and organisations. How could we make the exploitation and sharing of data accessible to the greatest number of organisations and people ?
+But value from data remains within a handful of companies and organisations, in data silos, isolated and protected. These companies are incentivized to build gated data lakes as big as possible, to keep their users captive and to restrict access to data and information.
+
+We need to open these gates.
 
 ### From Data to Knowledge
 
@@ -71,6 +73,10 @@ Among the existing approaches:
 #### Decentralized Governance
 
 ## Introducing – OKP4
+
+Gated data lakes are the norm today because we lacked the economic incentives to fund, the technology to build, and the organizational structures to manage an open Dataverse.
+
+It is changing now, with OKP4.
 
 The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized. Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
 
