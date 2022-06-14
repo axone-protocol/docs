@@ -72,6 +72,12 @@ The catalog is available in several visualizations:
 
 The knowledge graph represents the link between the entities (datasets and services) to create knowledge. It allows to visualize the contribution of datasets and services in the generation of new knowledge. This knownledge is expressed by a [formal ontology](okp4-blockchain-architecture#ontology).
 
+The key features of the Knowledge Graph visualization is to:
+
+- visualise all the datasets and services registered in a Data Space and more extensively in the dataverse;
+- visualise and understand the interaction between them and the _genealogy_ of a dataset from other datasets and services;
+- explore the contribution of each dataset and service in the creation of a knowledge.
+
 Depending on the governance rules of the Data Set, and depending on the rights of the user exploring the knowledge graph, some elements and the metadata may be visible or not.
 
 ## Files Deposit
