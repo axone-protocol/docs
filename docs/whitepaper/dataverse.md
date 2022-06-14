@@ -92,11 +92,11 @@ Different services extract the general metadata, provided by OKP4 or tiers.
 
 Examples of general metadata :
 
->Name of the dataset
->Author
->Date of creation
->Format
->Size
+>Name of the dataset  
+>Author  
+>Date of creation  
+>Format  
+>Size  
 
 ## Data Applications
 
