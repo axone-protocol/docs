@@ -44,7 +44,7 @@ The OKP4 wallet will take the form of a web page and a dedicated browser extensi
 
 ## Portal
 
-The OKP4 portal is a Web App which allows to exokire the dataverse. It aggregates the dataverse services such as wallets, catalog, files deposit, dapps, block explorer and more.
+The OKP4 portal is a Web App which allows to explore the dataverse. It aggregates the dataverse services such as wallets, catalog, files deposit, dapps, block explorer and more.
 
 Although parts of the portal is open (especially for content and support), each user can log in to get access to all the services.
 
@@ -86,25 +86,7 @@ Each file deposit is a transaction submitted to the protocol that must be signed
 
 ## Metadata extraction
 
-Each dataset declared in the OKP4 protocol is described with metadata registered in the ontology.
-
-These general metadata allow users to have a description of the datasets. Besides, the metadata are part of the traceability of the knowledge creation.
-
-General metadata can be :
-
-- Public (by default)
-- Authorized to particular users
-- Private
-
-Different services extract the general metadata, provided by OKP4 or tiers.
-
-Examples of general metadata :
-
->Name of the dataset  
->Author  
->Date of creation  
->Format  
->Size  
+Neque eius labore ipsum velit dolorem. Etincidunt est etincidunt velit modi dolore magnam adipisci. Neque est velit adipisci dolore est ipsum dolor. Quiquia sed porro quaerat dolore tempora sit. Eius est adipisci velit magnam quiquia.
 
 ## Data Applications
 
