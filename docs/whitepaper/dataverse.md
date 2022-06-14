@@ -78,7 +78,25 @@ Each file deposit is a transaction submitted to the protocol that must be signed
 
 ## Metadata extraction
 
-Neque eius labore ipsum velit dolorem. Etincidunt est etincidunt velit modi dolore magnam adipisci. Neque est velit adipisci dolore est ipsum dolor. Quiquia sed porro quaerat dolore tempora sit. Eius est adipisci velit magnam quiquia.
+Each dataset declared in the OKP4 protocol is described with metadata registered in the ontology.
+
+These general metadata allow users to have a description of the datasets. Besides, the metadata are part of the traceability of the knowledge creation.
+
+General metadata can be :
+- Public (by default)
+- Authorized to particular users
+- Private
+
+Different services extract the general metadata, provided by OKP4 or tiers. 
+
+Examples of general metadata :
+
+>Name of the dataset
+>Author
+>Date of creation
+>Format
+>Size
+
 
 ## Data Applications
 
