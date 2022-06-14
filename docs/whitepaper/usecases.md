@@ -4,9 +4,14 @@ sidebar_position: 13
 
 # Usecases
 
-## Use case 1
+All sectors are concerned at different scales.
+•	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers.
+•	Communities can leverage collective intelligence and crowdsource data.
 
-Sit neque porro consectetur quisquam voluptatem neque adipisci. Velit tempora quaerat numquam neque eius. Quaerat porro quisquam quisquam sed porro eius. Porro sed quaerat consectetur dolore velit labore. Numquam tempora sit eius magnam. Quiquia quisquam eius neque porro sed neque dolorem. Voluptatem modi velit dolorem sed. Numquam sit labore numquam quiquia quiquia non. Aliquam porro consectetur voluptatem dolore. Dolor eius sed amet labore tempora sit adipisci.
+
+## Use case 1 : Agriculture 
+
+Pool technical and accounting data from multiple providers to generate unique insights sold to industries, brands, retail and local authorities.
 
 ## Use case 2
 
