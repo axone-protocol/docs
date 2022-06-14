@@ -6,8 +6,21 @@ html {
   .navbar__link--active,
   .menu__link--active,
   .table-of-contents__link--active,
-  .pagination-nav__label {
-    font-family: "Montserrat bold", sans-serif;
+  .pagination-nav__label,
+  .footer__title {
+    font-family: var(--ifm-heading-font-family);
+  }
+
+  .navbar__items {
+    .navbar__search {
+      input {
+        font-family: var(--ifm-font-family-base);
+      }
+
+      > button {
+        cursor: pointer;
+      }
+    }
   }
 
   .footer {
