@@ -83,11 +83,12 @@ Each dataset declared in the OKP4 protocol is described with metadata registered
 These general metadata allow users to have a description of the datasets. Besides, the metadata are part of the traceability of the knowledge creation.
 
 General metadata can be :
+
 - Public (by default)
 - Authorized to particular users
 - Private
 
-Different services extract the general metadata, provided by OKP4 or tiers. 
+Different services extract the general metadata, provided by OKP4 or tiers.
 
 Examples of general metadata :
 
@@ -96,7 +97,6 @@ Examples of general metadata :
 >Date of creation
 >Format
 >Size
-
 
 ## Data Applications
 
