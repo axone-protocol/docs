@@ -2,6 +2,8 @@
 sidebar_position: 8
 ---
 
+import { Graphviz } from 'graphviz-react';
+
 # Dataverse tools
 
 OKP4 Dataverse tools enable anyone to:
@@ -78,6 +80,106 @@ The key features of the Knowledge Graph visualization is to:
 - visualise and understand the interaction between them and the _genealogy_ of a dataset from other datasets and services;
 - explore the contribution of each dataset and service in the creation of a knowledge.
 
+For instance:
+
+<Graphviz
+  options={{
+    width: "90%",
+    height: "auto"
+  }}
+  className="text--center graph-svg-container"
+  dot={`
+digraph {
+    rankdir=LR
+    nodesep=0.6
+    bgcolor="none"
+    edge [minlen="3"]
+    graph [class="knowledge-graph"]
+    
+    s01 [shape="circle" xlabel="RPG_2015 Occitanie" label=""]
+    s02 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s03 [shape="circle" xlabel="RPG_2015 Occitanie\nNormalized" label=""]
+    s04 [shape="circle" xlabel="RPG_2016 Occitanie" label=""]
+    s05 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s06 [shape="circle" xlabel="RPG_2016 Occitanie\nNormalized" label=""]
+    s07 [shape="circle" xlabel="RPG_2017 Occitanie" label=""]
+    s08 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s09 [shape="circle" xlabel="RPG_2017 Occitanie\nNormalized" label=""]
+    s61 [shape="circle" xlabel="RPG_2018 Occitanie" label=""]
+    s62 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s63 [shape="circle" xlabel="RPG_2018 Occitanie\nNormalized" label=""]
+    s64 [shape="circle" xlabel="RPG_2019 Occitanie" label=""]
+    s65 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s66 [shape="circle" xlabel="RPG_2019 Occitanie\nNormalized" label=""]
+    s10 [shape="circle" xlabel="France Geo (GEOJSON)" label=""]
+    s11 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
+    s12 [shape="circle" xlabel="France Geo Normalized" label=""]
+    s13 [shape="rectangle" style="rounded,filled" xlabel="Agregate" label=""]
+    s14 [shape="circle" xlabel="RPG Geo Normalized" label=""]
+    s15 [shape="circle" xlabel="Surface data Bio" label=""]
+    s16 [shape="rectangle" style="rounded,filled" xlabel="Data processs" label=""]
+    s17 [shape="circle" xlabel="Surface data Bio\nnormalized" label=""]
+    s18 [shape="circle" xlabel="SIREN DB" label=""]
+    s19 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
+    s20 [shape="circle" xlabel="SIREN DB Occitanie\nNormalized" label=""]
+    s21 [shape="circle" xlabel="Soil organic carbon\nmap (WMS)" label=""]
+    s22 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
+    s23 [shape="circle" xlabel="Soil organic carbon\nmap Occitanie\n(WMS)" label=""]
+    s24 [shape="rectangle" style="rounded,filled" xlabel="Normalize" label=""]
+    s25 [shape="circle" xlabel="Soil organic carbon\nmap normalized" label=""]
+    s26 [shape="circle" xlabel="AGRESTE" label=""]
+    s27 [shape="rectangle" style="rounded,filled" xlabel="Data process" label=""]
+    s28 [shape="circle" xlabel="AGRESTE\nNormalized" label=""]
+    s29 [shape="circle" xlabel="GISsol (WMS)" label=""]
+    s30 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
+    s31 [shape="circle" xlabel="Carte GISsol\nOccitanie (WMS)" label=""]
+    s32 [shape="rectangle" style="rounded,filled" xlabel="Normalize" label=""]
+    s33 [shape="circle" xlabel="Carte GISsol\nOccitanie Normalized" label=""]
+    s34 [shape="rectangle" style="rounded,filled" xlabel="Join" label=""]
+    s35 [shape="circle" xlabel="Knowledge" label=""]
+    s01 -> s02
+    s02 -> s03
+    s03 -> s13
+    s04 -> s05
+    s05 -> s06
+    s06 -> s13
+    s07 -> s08
+    s08 -> s09
+    s09 -> s13
+    s61 -> s62
+    s62 -> s63
+    s63 -> s13
+    s64 -> s65
+    s65 -> s66
+    s66 -> s13
+    s10 -> s11
+    s11 -> s12
+    s12 -> s13
+    s13 -> s14
+    s14 -> s34
+    s15 -> s16
+    s16 -> s17
+    s17 -> s34
+    s18 -> s19
+    s19 -> s20
+    s20 -> s34
+    s21 -> s22
+    s22 -> s23
+    s23 -> s24
+    s24 -> s25
+    s25 -> s34
+    s26 -> s27
+    s27 -> s28
+    s28 -> s34
+    s29 -> s30
+    s30 -> s31
+    s31 -> s32
+    s32 -> s33
+    s33 -> s34
+    s34 -> s35
+}
+`} />
+
 Depending on the governance rules of the Data Set, and depending on the rights of the user exploring the knowledge graph, some elements and the metadata may be visible or not.
 
 ## Files Deposit
@@ -92,7 +194,25 @@ Each file deposit is a transaction submitted to the protocol that must be signed
 
 ## Metadata extraction
 
-Neque eius labore ipsum velit dolorem. Etincidunt est etincidunt velit modi dolore magnam adipisci. Neque est velit adipisci dolore est ipsum dolor. Quiquia sed porro quaerat dolore tempora sit. Eius est adipisci velit magnam quiquia.
+Each dataset declared in the OKP4 protocol is described with metadata registered in the ontology.
+
+These general metadata allow users to have a description of the datasets. Besides, the metadata are part of the traceability of the knowledge creation.
+
+General metadata can be :
+
+- Public (by default)
+- Authorized to particular users
+- Private
+
+Different services extract the general metadata, provided by OKP4 or tiers.
+
+Examples of general metadata :
+
+>Name of the dataset  
+>Author  
+>Date of creation  
+>Format  
+>Size
 
 ## Data Applications
 
