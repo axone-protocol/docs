@@ -26,6 +26,7 @@
   --ifm-navbar-background-color: white;
   --ifm-background-image-url: url("/static/img/universe-light.png");
   --ifm-article-anchor-color: #877b65;
+  --ifm-graph-svg-background-color: #ecf0f1;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -53,5 +54,5 @@
 }
 
 .graph-svg-container {
-  background-color: #ecf0f1;
+  background-color: var(--ifm-graph-svg-background-color);
 }
