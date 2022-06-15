@@ -56,6 +56,7 @@
   "devDependencies": {
     "@okp4/eslint-config": "^1.1.0",
     "docusaurus-plugin-drawio": "^0.1.7",
+    "graphviz-react": "^1.2.0",
     "markdownlint-cli": "^0.31.1",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
