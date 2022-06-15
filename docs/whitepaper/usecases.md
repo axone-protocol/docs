@@ -8,8 +8,7 @@ All sectors are concerned at different scales.
 •	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers.
 •	Communities can leverage collective intelligence and crowdsource data.
 
-
-## Use case 1 : Agriculture 
+## Use case 1 : Agriculture
 
 Pool technical and accounting data from multiple providers to generate unique insights sold to industries, brands, retail and local authorities.
 
