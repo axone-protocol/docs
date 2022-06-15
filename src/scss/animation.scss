@@ -1,0 +1,9 @@
+svg .knowledge-graph {
+  animation: dashdraw 0.8s linear infinite;
+}
+
+@keyframes dashdraw {
+  0% {
+    stroke-dashoffset: 20;
+  }
+}

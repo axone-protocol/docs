@@ -82,5 +82,19 @@ svg {
         fill: var(--ifm-knowledge-graph-text-color);
       }
     }
+
+    g.edge {
+      path {
+        stroke: var(--ifm-knowledge-graph-edge-stroke-color);
+        stroke-dasharray: 10;
+        stroke-width: 4px;
+      }
+
+      polygon {
+        stroke: var(--ifm-knowledge-graph-edge-stroke-color);
+        fill: var(--ifm-knowledge-graph-edge-stroke-color);
+        stroke-width: 2px;
+      }
+    }
   }
 }
