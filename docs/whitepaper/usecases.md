@@ -10,12 +10,11 @@ All sectors are concerned at different scales.
 
 ## Agriculture
 
-The agriculture supply chain relies on several inter-dependent actors, from the field to the fork. They need efficient information systems to better evaluate, manage and value the efforts made and the agri-environmental benefits associated to the practices. Moreover, they need to share data to create knowledge valuable at each link of the chain. 
+The agriculture supply chain relies on several inter-dependent actors, from the field to the fork. They need efficient information systems to better evaluate, manage and value the efforts made and the agri-environmental benefits associated to the practices. Moreover, they need to share data to create knowledge valuable at each link of the chain.
 
-Crossing technical and accounting data from multiple providers (farmers, accountants, cooperatives, advisors...) can generate unique insights sold to industries, brands, retail and local authorities and provide transparency to end-consumers. 
+Crossing technical and accounting data from multiple providers (farmers, accountants, cooperatives, advisors...) can generate unique insights sold to industries, brands, retail and local authorities and provide transparency to end-consumers.
 
-But knowledge created from these data also has the power to move things forward in terms of climate smart agriculture and agro-ecological practices. It is much valuable for the actors upstream of the supply chain.   
-
+But knowledge created from these data also has the power to move things forward in terms of climate smart agriculture and agro-ecological practices. It is much valuable for the actors upstream of the supply chain.
 
 ## Use case 2
 
