@@ -12,7 +12,7 @@ KNOW is the native token of the OKP4 blockchain and are the only staking token o
 
 ### Rewards
 
-According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, algorithms and resource providers).
+According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, services and resource providers).
 
 <br/>
 
@@ -30,25 +30,23 @@ In addition, each Data Space will be able to add an additional transaction fee f
 
 <br/>
 
-### Knowledge Pricing
-
 ## Staking
 
 ### Staking Validators & Delegators
 
 Following our dPoS (delegated proof-of-stake) blockchain model, it is possible to stake tokens to validate the network and receive associated rewards. A validator wishing to withdraw will have to wait a period of 14 days before his decision is executed (unbounding period).
 
-For more information, please click here [lien:Validators]
+For more information, please click [here](/docs/whitepaper/roles#validators).
 
 If you don't want to or can't run nodes, it is possible to delegate your tokens to validators to earn rewards.
 
-For more information, please click here [lien:Delegators]
+For more information, please click [here](/docs/whitepaper/roles#delegators).
 
 <br/>
 
-### Staking Algorithm & Infrastructure
+### Staking Services
 
-As saif previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this algorithm/infrastructure, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
+As saif previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
 
 Therefore, the amount of KNOW to stake will depend on the price that the provider asks for. And this for several reasons:
 
@@ -94,7 +92,11 @@ In the same way, it is possible to sell shares at any time. This process is call
 
 [Burn SHEME]
 
-Note: It is important to note that as a Curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares decrease substantially I value so that you receive only a tiny fraction of the KNOW back that you initially deposited.
+:::note
+
+It is important to note that as a Curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares decrease substantially I value so that you receive only a tiny fraction of the KNOW back that you initially deposited.
+
+:::
 
 <br/>
 
@@ -133,7 +135,7 @@ Several cases:
 - If the proposal is rejected with a veto (33%), the deposited KNOWs will be burned
 - If the deposit amount is not reached (by passing the proposal pool), the deposited KNOWs are returned to their owners
 
-For more information on the governance of the protocol and its parameters, please click here. [lien:Blockchain architecture governance]
+For more information on the governance of the protocol and its parameters, please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
 
 ## Liquidity
 

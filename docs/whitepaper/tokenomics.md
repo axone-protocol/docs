@@ -4,13 +4,11 @@ sidebar_position: 12
 
 # Tokenomics
 
-## Overview
-
-Velit sed labore eius numquam consectetur numquam dolore. Aliquam labore magnam dolore quiquia quaerat est consectetur. Sed sed velit dolore eius. Numquam est labore quiquia ut voluptatem. Dolor consectetur voluptatem quaerat eius dolor amet labore. Amet neque est quiquia. Non quaerat adipisci numquam labore consectetur. Ipsum aliquam dolor dolore ut numquam. Adipisci sed sed labore ut ipsum amet dolorem. Sit quisquam dolorem dolorem quiquia sed consectetur.
-
 ## Distribution
 
-[SHEME camembert TGE + over 3 years]
+![Token Allocation](/img/content/Token-Allocation.png)
+
+![Supply after 3 years](/img/content/Supply-after-3-years.png)
 
 Total initial supply: 200,000,000 KNOW
 
@@ -44,8 +42,26 @@ Airdrops:
 
 ## Vesting
 
-Eius amet consectetur labore consectetur quiquia. Velit etincidunt adipisci voluptatem ut velit. Numquam sit dolor neque non. Sed quaerat consectetur consectetur eius. Sed dolor est quaerat dolore voluptatem voluptatem velit. Velit neque sed magnam non labore dolore porro. Amet quisquam neque est quaerat sed magnam dolorem. Dolor dolorem numquam amet etincidunt quisquam ut est. Neque aliquam sed quaerat est. Magnam eius quiquia eius etincidunt.
+|              |  TGE |   Cliff   |          Vesting         |
+|--------------|:----:|:---------:|:------------------------:|
+| Seed         |  5%  |  6 months | 24 months linear vesting |
+| Public Sale  |  10% |     /     |  6 months linear vesting |
+| Foundation   |  10% |     /     | 60 months linear vesting |
+| Advisors     |  0%  | 12 months | 36 months linear vesting |
+| Team         |  0%  | 12 months | 36 months linear vesting |
+| Airdrop      |  50% | 12 months |             /            |
+| Liquidity    | 100% |     /     |       locked at TGE      |
+| DAO Treasury |  10% |     /     | 60 months linear vesting |
 
 ## Emission
 
-Non eius non amet quisquam adipisci porro. Quaerat dolore labore modi sed porro tempora labore. Velit consectetur ipsum porro adipisci adipisci voluptatem. Etincidunt amet modi est quisquam sed labore magnam. Dolor est velit adipisci magnam. Dolorem dolore dolor quisquam modi. Dolor quaerat aliquam quaerat magnam eius est etincidunt. Sed tempora ut voluptatem. Etincidunt adipisci tempora labore non sit modi. Quiquia tempora ipsum neque aliquam ipsum.
+![Supply Schedule](/img/content/Supply-schedule.png)
+
+Inflation: Reduction factor 20%
+- Year 1: 15%
+- Year 2: 12%
+- Year 3: 9.6%
+- Year 4: 7.68%
+- Year X: X-1 * 0.8
+
+### Block Reward Calculation

@@ -24,7 +24,7 @@ DAO participants: Protocol governance. Anyone with staked KNOW tokens can partic
 
 Data providers: It is someone who deposits one or more datasets on the protocol so that builders can use it to create knowledge. They are paid for the use of their dataset.
 
-Algorithm & Infrastructure providers: It is someone who deposits an algorithm, a service, or any other processing or calculation software that requires a working time. It is thanks to them that data sets can be assembled and processed to create knowledge. They are paid on an hourly rate.
+Service providers: It is someone who deposits an algorithm, a software, a storage system, or any other processing or calculation software that requires a working time. It is thanks to them that data sets can be assembled and processed to create knowledge. They are paid on an hourly rate.
 
 Builders: They are the creators of knowledge. They contribute to the functioning of the network by creating knowledge thanks to the data and algorithms/infrastructure deposited by the providers.
 
@@ -59,7 +59,7 @@ Anyone with staked KNOW tokens can participate in governance. It is possible to:
 - Make a proposal: costs KNOW tokens
 - Vote on a proposal: doesn't costs KNOW tokens, but each token gives a vote right on each proposal, and each KNOW gives 1 voting power
 
-For more information on governance please click here.
+For more information on governance please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
 
 ## Data Providers
 
@@ -69,27 +69,23 @@ They are paid by the builders for each use of their data set.
 
 It is particularly recommended to deposit quality datasets, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
 
-## Algorithm & Infrastructure Providers
+## Service Providers
 
-Algorithms & Infrastructure providers are members of the community who have deposited and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the builders on an hourly rate that they define themselves according to the duration of use.
+Service providers are members of the community who have deposited and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the builders on an hourly rate that they define themselves according to the duration of use.
 
-It is particularly recommended to deposit quality algorithms & infrastructure softwares, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
+It is particularly recommended to deposit quality service software, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
 
-The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this algorithm/infrastructure, he will have to stake KNOW in proportion to the hourly fee that he will define himself.
+The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself.
 
 ## Builders
 
-Builders are members of the community who will consume/use the resources given by the data providers and by the algorithm & infrastructure providers in order to create one or more knowledge.
+Builders are members of the community who will consume/use the resources given by the data providers and by the service providers in order to create one or more knowledge.
 
 They are the ones who will pay in KNOW tokens for the data sets and services used.
 
 Overall, they are the ones who are behind the creation of the Data Spaces (with of course the participation of all stakeholders). However, they can also decide to build on an existing Data Space.
 
 ## Curators
-
-IMAGE (à faire pour tous les rôles)
-
-Technical skills: Intermediate   |   Time investment: Low to High   |   Risk level: High
 
 <br/>
 
@@ -137,15 +133,16 @@ Curation is risky. Do your due diligence to ensure that you only curate datasets
 
 Any provider can stake KNOW tokens on their data/service as a curation to oneself. It follows the same rules as any curator. The only change is that the provider will always have the first hand before the others.
 
-Data & Algorithm/Infrastructure Operation: When the provider will deposit his dataset/service, he will have to choose if he accepts or not the curators. If he has accepted them, when he makes his dataset/service available for use, the provider can, if he wants, buy shares before anyone else.
+Data & Service Operation: When the provider will deposit his dataset/service, he will have to choose if he accepts or not the curators. If he has accepted them, when he makes his dataset/service available for use, the provider can, if he wants, buy shares before anyone else.
 
 Once the first purchase is made, the burn & mint system opens to the whole community. The provider who curates will of course receive the associated rewards, in proportion to his number of shares (at the very beginning if he is alone, he will receive 100% of the curation royalties).
 
 <br/>
 
-### faire un petit cadre
+:::note
 
-Note: The first address to signal a particular item is considered the first curator and will have to do much more gas-intensive work than the rest of the following curators because the first curator initializes the curation share tokens, initializes the bonding curve, and also transfers tokens into OKP4 proxy.
+The first address to signal a particular item is considered the first curator and will have to do much more gas-intensive work than the rest of the following curators because the first curator initializes the curation share tokens, initializes the bonding curve, and also transfers tokens into OKP4 proxy.
+:::
 
 ## Governors
 
@@ -162,4 +159,4 @@ As an example, it will be able to add fees for the use of its Data Space in orde
 
 <br/>
 
-For more informations about the rules, please clic here. (lien vers DS rules)
+For more informations about the rules, please clic [here](/docs/whitepaper/data-spaces#ds-governance).
