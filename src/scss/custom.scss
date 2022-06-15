@@ -2,30 +2,20 @@
 @import "main";
 
 @font-face {
-  font-family: "Gotham book";
-  src: url("/static/fonts/Gotham/Gotham-Book.otf");
+  font-family: "Barlow regular";
+  src: url("/static/fonts/Barlow/Barlow-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Noto regular";
-  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Noto bold";
-  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Noto black";
-  src: url("/static/fonts/Noto_Sans_Mono/NotoSansMono-Black.ttf");
+  font-family: "Montserrat bold";
+  src: url("/static/fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 
 :root {
   --ifm-color-primary: #181c49;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Gotham book", sans-serif;
-  --ifm-heading-font-family: "Noto bold", sans-serif;
+  --ifm-font-family-base: "Barlow regular", sans-serif;
+  --ifm-heading-font-family: "Montserrat bold", sans-serif;
   --ifm-font-color-base: #181c49;
   --ifm-menu-color: #181c49;
   --ifm-heading-color: #181c49;
