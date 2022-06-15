@@ -58,6 +58,7 @@ Airdrops:
 ![Supply Schedule](/img/content/Supply-schedule.png)
 
 Inflation: Reduction factor 20%
+
 - Year 1: 15%
 - Year 2: 12%
 - Year 3: 9.6%
