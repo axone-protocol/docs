@@ -62,3 +62,25 @@ html {
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+svg {
+  .knowledge-graph {
+    g.node {
+      ellipse {
+        fill: var(--ifm-knowledge-graph-data-fill-color);
+        stroke: var(--ifm-knowledge-graph-data-stroke-color);
+        stroke-width: 3px;
+      }
+
+      path {
+        fill: var(--ifm-knowledge-graph-service-fill-color);
+        stroke: var(--ifm-knowledge-graph-service-stroke-color);
+        stroke-width: 3px;
+      }
+
+      text {
+        fill: var(--ifm-knowledge-graph-text-color);
+      }
+    }
+  }
+}

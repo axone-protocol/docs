@@ -1,5 +1,6 @@
 @import "community";
 @import "main";
+@import "animation";
 
 @font-face {
   font-family: "Barlow regular";
@@ -27,6 +28,11 @@
   --ifm-background-image-url: url("/static/img/universe-light.png");
   --ifm-article-anchor-color: #877b65;
   --ifm-graph-svg-background-color: #ecf0f1;
+  --ifm-knowledge-graph-data-fill-color: #877b65;
+  --ifm-knowledge-graph-data-stroke-color: #433d32;
+  --ifm-knowledge-graph-service-fill-color: white;
+  --ifm-knowledge-graph-service-stroke-color: #7f7f7f;
+  --ifm-knowledge-graph-text-color: black;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
