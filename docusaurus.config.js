@@ -50,7 +50,7 @@ const config = {
             type: 'doc',
             docId: 'whitepaper/abstract',
             position: 'left',
-            label: 'Whitepaper'
+            label: 'Whitepaper (Work in progress)'
           },
           {
             href: 'https://discord.gg/GHNZh4SaJ3',
