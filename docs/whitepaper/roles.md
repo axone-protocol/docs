@@ -63,27 +63,28 @@ For more information on governance please click [here](/docs/whitepaper/okp4-blo
 
 ## Data Providers
 
-Data providers are members of the community who have deposited one or more datasets in the catalog and/or in one or more data spaces. Their role is to offer datasets in order to give the possibility to builders to create new knowledges.
+Data providers are users who deposits one or more datasets in the catalog and/or in one or more data spaces. Their role is to offer datasets in order to used by services and data applications to create valuable knowledge.
 
-They are paid by the builders for each use of their data set.
+They are paid by the consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
 It is particularly recommended to deposit quality datasets, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
 
 ## Service Providers
 
-Service providers are members of the community who have deposited and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the builders on an hourly rate that they define themselves according to the duration of use.
+Service providers are users who deposits and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the consumers based on a fixed query fee or an hourly rate or that they define themselves according to the duration of use.
 
 It is particularly recommended to deposit quality service software, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
 
-The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself.
+The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake $KNOW in proportion to the hourly fee that he will define himself.
 
-## Builders
+## Consumers
 
-Builders are members of the community who will consume/use the resources given by the data providers and by the service providers in order to create one or more knowledge.
+Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to retribute pay for transaction fees, and eventually data providers, service providers, curator fees and data space taxes if applicable.
 
-They are the ones who will pay in KNOW tokens for the data sets and services used.
+Consumers can be: 
+- People, sending transactions to the blockchain to initiate specific actions & workflows directly  
+- Data applications, sending transactions on behalf of their users and serving as a middleman between OKP4 outputs and the end-user. This is pretty usefull for data applications willing to use a SaaS model for example.
 
-Overall, they are the ones who are behind the creation of the Data Spaces (with of course the participation of all stakeholders). However, they can also decide to build on an existing Data Space.
 
 ## Curators
 

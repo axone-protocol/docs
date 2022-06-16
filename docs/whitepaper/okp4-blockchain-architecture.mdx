@@ -6,11 +6,11 @@ import Drawio from '@theme/Drawio';
 import blockchainServicesSvg from '!!raw-loader!./blockchain-services.xml';
 import OntologySvg from './okp4-ontology.svg';
 
-# OKP4 Blockchain Architecture
+# OKP4 Blockchain
 
 ## Overview
 
-Ut numquam neque sed dolor neque est quiquia. Adipisci neque sit dolore non est. Sit labore magnam modi non. Quiquia dolorem velit magnam. Porro quaerat ipsum consectetur. Magnam non aliquam est amet magnam sed sed.
+The blockchain is the single source of truth that is used to coordinate participants of the Dataverse.
 
 ## Consensus : Tendermint
 
@@ -95,6 +95,12 @@ In the context of the OKP4 blockchain, the following smart contracts (and/or spe
 - `cw4-group`: A smart contract (compliant with [cw4](https://crates.io/crates/cw4) specification) for storing group membership, which can be combined with `cw3` multisigs.
 
 - `cw721-base`: A smart contract (compliant with [cw721](https://github.com/CosmWasm/cw-nfts) specification) for managing Non-fungible tokens (NFT).
+
+### Oracles
+
+Similar to the [Terra blockchain](https://www.terra.money/) and its [Oracle module](https://docs.wcdc.me/docs/dev-spec-oracle), the Oracle module provides the OKP4 blockchain with an up-to-date and accurate price feed of exchange rates of $KNOW against other currencies.
+
+Some other Oracles networks may be used in the future for enhanced functionalities (e.g. Chainlink, Band...)
 
 ## OKP4 Services
 
@@ -239,10 +245,6 @@ For example, the creation of a new data space requires a metadata profile that d
   exif-file:MIMEEncoding "us-ascii" ;
   :describes <https://ontology.okp4.com/world/5d792b01-6e7a-4837-80ad-a8516c184bae> .
 ```
-
-## Oracles? Identity/Consent?
-
-Quiquia ut amet ipsum sit quaerat numquam. Amet voluptatem numquam consectetur non. Amet quisquam voluptatem ipsum labore dolor modi modi. Dolore ut tempora dolorem ut etincidunt. Voluptatem tempora dolore neque tempora modi neque consectetur. Quisquam labore porro labore dolore. Dolor labore dolor labore est magnam tempora. Etincidunt porro consectetur dolore dolorem labore. Eius adipisci tempora sed voluptatem sit eius ut. Numquam amet aliquam adipisci.
 
 ## Concerns
 

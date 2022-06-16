@@ -2,7 +2,15 @@
 sidebar_position: 8
 ---
 
-# Dataverse
+# Dataverse tools
+
+OKP4 Dataverse tools enable anyone to:
+- Interact with
+- Build into
+- Share & Contribute to
+- Benefit & earn from
+
+the Dataverse.
 
 ## Wallets/ID
 
@@ -100,7 +108,7 @@ Examples of general metadata :
 
 ## Data Applications
 
-Data applications are a suite of software that leverages outputs from a (or many) Data Space.
+Data applications are a suite of software that leverages outputs from one (or many) Data Space.
 
 It can take many forms. For exemple it could be a BI software that enables data visualization, a push API, a script that performs actions automatically (e.g. a bot), etc.
 

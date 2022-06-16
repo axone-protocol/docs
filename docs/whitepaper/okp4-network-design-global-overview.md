@@ -2,20 +2,20 @@
 sidebar_position: 4
 ---
 
-# OKP4 Network Design – Global Overview
+# What is OKP4? – Global Overview
 
 ## OKP4 Ecosystem
 
 OKP4 is a public blockchain protocol deploying a suite of data applications where communities are incentivized to share data and services confidently. OKP4 is a layer 1 customized for the knowledge economy where anyone, any group, any company, can join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful data applications.
 
-[ IMAGE Protocol ]
+
 
 On the macro level, there is 4 key concepts to understand:
 
-- OKP4 blockchain (protocol layer)
-- data spaces (contribution & governance layer)
-- data applications (user layer)
-- datasets & services
+- **OKP4 blockchain** (protocol)
+- **Data Spaces** (coordination mechanisms, rules & governance)
+- **Data Applications** (value for the end-users)
+- **Datasets & Services** (contribor layer)
 
 **OKP4 blockchain** is the decentralized layer that:
 
@@ -34,7 +34,7 @@ Datasets and services provide the elementary building blocks and tools that will
 
 ## Network participants
 
-On the **blockchain layer**, there is Validators, Delegators and DAO participants.
+On the **Blockchain layer**, there is Validators, Delegators and DAO participants.
 
 On the **Data Space layer**, there is Data providers and Service providers who agree to share based on Data Space's rules. There is Curators who can signal promising data and services. There is also Governors who can change these rules.
 
@@ -48,9 +48,9 @@ But web3 also has its own sets of problems, its pretty wild and self-reliant, UX
 
 To build the best data sharing infrastructure, we need to combine web2 and web3 strengths through multi-layered modular governance:
 
-- OKP4 blockchain is decentralized by design, with its set of token holders that propose and vote on governance proposals.
-- Data Spaces have custom governance. Data space governance can be centralized (one or few accounts are designated to have the ability to design rules) or decentralized (through token-based voting power).
-- Data applications also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more complex community-run applications can be considered.
-- Datasets and services are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the data spaces (and align with the data space's rules) in which they want to contribute.
+- **OKP4 blockchain** is decentralized by design, with its set of token holders that propose and vote on governance proposals.
+- **Data Spaces** have custom governance. Data space governance can be centralized (one or few accounts are designated to have the ability to design rules) or decentralized (through token-based voting power).
+- **Data applications** also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more complex community-run applications can be considered.
+- **Datasets and services** are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the data spaces (and align with the data space's rules) in which they want to contribute.
 
-This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be build on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design for the data providers and users.
+This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design for the data providers and users.
