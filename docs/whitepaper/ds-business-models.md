@@ -23,10 +23,10 @@ Different data sharing and marketplace business models can be implemented using 
 The generic template for the data sharing business models considers that the value associated to the new created data is a consequence of the different workflows of services which operate, or happened to operate, on shared data.  Therefore, the value of the created dataset is considered to be a function of the cost of these workflows.  The rewards of the data providers are based on the considered importance of their shared datasets in these workflows. 
 
 ### Data marketplace template
-The generic template for the data marketplace models allows users to implement different dataset pricing algorithms.  Fixed price, first price sealed-bid and second price sealed-bid auctions are proposed among the different algorithms of the template.
+The generic template for the data marketplace models allows users to implement different dataset pricing algorithms.  Fixed price, first and second price sealed-bid auctions, and price defined as a function of time and usage are proposed among the different algorithms of the template.
 
 ### Link to OKP4 templates
-The templates are available here : https://github.com/okp4/kg-comput/blob/docs/theory/kg_comput_latex/kg-comput.pdf
+The templates are available here : [https://github.com/okp4/kg-comput/blob/docs/theory/kg_comput_latex/kg-comput.pdf](https://github.com/okp4/kg-comput/blob/docs/theory-fr/kg_comput_latex/kg-comput.pdf)
 
 ## Parameters
 
@@ -44,7 +44,4 @@ This template has the following parameters:
 
 - auction time-interval, which sets the start and end of the auction bidding process
 - dataset reserved price, which set a price threshold under which a dataset will not be sold
-    
-## Token inflows and outflows
-
-Sit dolorem quiquia quaerat dolorem. Tempora consectetur amet ut amet eius aliquam dolor. Quiquia dolor numquam neque. Dolorem velit ut sit dolorem velit. Porro magnam velit est dolor ut voluptatem. Non velit tempora velit aliquam magnam neque amet. Sed adipisci amet ut consectetur aliquam quisquam. Aliquam sed quiquia labore neque magnam quaerat adipisci. Tempora neque adipisci dolore ipsum adipisci.
+- weight parameters (psi and phi > 1), which allows dataset price to be defined as a function of time and usage
