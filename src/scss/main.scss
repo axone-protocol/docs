@@ -68,18 +68,18 @@ svg {
     g.node {
       ellipse {
         fill: var(--ifm-knowledge-graph-data-fill-color);
-        stroke: var(--ifm-knowledge-graph-data-stroke-color);
-        stroke-width: 3px;
+        stroke: var(--ifm-knowledge-graph-base-stroke-color);
+        stroke-width: var(--ifm-knowledge-graph-base-stroke-width);
       }
 
       path {
         fill: var(--ifm-knowledge-graph-service-fill-color);
-        stroke: var(--ifm-knowledge-graph-service-stroke-color);
-        stroke-width: 3px;
+        stroke: var(--ifm-knowledge-graph-base-stroke-color);
+        stroke-width: var(--ifm-knowledge-graph-base-stroke-width);
       }
 
       text {
-        fill: var(--ifm-knowledge-graph-text-color);
+        fill: var(--ifm-color-primary);
         font-family: var(--ifm-font-family-base);
       }
     }
@@ -88,13 +88,13 @@ svg {
       path {
         stroke: var(--ifm-knowledge-graph-edge-stroke-color);
         stroke-dasharray: 10;
-        stroke-width: 4px;
+        stroke-width: calc(var(--ifm-knowledge-graph-base-stroke-width) + 1px);
       }
 
       polygon {
         stroke: var(--ifm-knowledge-graph-edge-stroke-color);
         fill: var(--ifm-knowledge-graph-edge-stroke-color);
-        stroke-width: 2px;
+        stroke-width: calc(var(--ifm-knowledge-graph-base-stroke-width) - 1px);
         transform: translateX(-3px);
       }
     }
