@@ -84,4 +84,3 @@ In a nutshell, the governance of a Data Space defines the following :
 -	Mechanisms to change the rules
 
 :::
-

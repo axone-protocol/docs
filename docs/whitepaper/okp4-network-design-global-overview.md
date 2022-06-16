@@ -8,8 +8,6 @@ sidebar_position: 4
 
 OKP4 is a public blockchain protocol deploying a suite of data applications where communities are incentivized to share data and services confidently. OKP4 is a layer 1 customized for the knowledge economy where anyone, any group, any company, can join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful data applications.
 
-
-
 On the macro level, there is 4 key concepts to understand:
 
 - **OKP4 blockchain** (protocol)

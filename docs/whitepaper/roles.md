@@ -81,10 +81,10 @@ The provider will be able to create a descriptive page for his repository at any
 
 Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to retribute pay for transaction fees, and eventually data providers, service providers, curator fees and data space taxes if applicable.
 
-Consumers can be: 
+Consumers can be:
+
 - People, sending transactions to the blockchain to initiate specific actions & workflows directly  
 - Data applications, sending transactions on behalf of their users and serving as a middleman between OKP4 outputs and the end-user. This is pretty usefull for data applications willing to use a SaaS model for example.
-
 
 ## Curators
 
