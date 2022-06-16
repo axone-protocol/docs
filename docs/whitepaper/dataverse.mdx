@@ -96,87 +96,63 @@ digraph {
     edge [minlen="3"]
     graph [class="knowledge-graph"]
     
-    s01 [shape="circle" xlabel="RPG_2015 Occitanie" label=""]
-    s02 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s03 [shape="circle" xlabel="RPG_2015 Occitanie\nNormalized" label=""]
-    s04 [shape="circle" xlabel="RPG_2016 Occitanie" label=""]
-    s05 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s06 [shape="circle" xlabel="RPG_2016 Occitanie\nNormalized" label=""]
-    s07 [shape="circle" xlabel="RPG_2017 Occitanie" label=""]
-    s08 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s09 [shape="circle" xlabel="RPG_2017 Occitanie\nNormalized" label=""]
-    s61 [shape="circle" xlabel="RPG_2018 Occitanie" label=""]
-    s62 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s63 [shape="circle" xlabel="RPG_2018 Occitanie\nNormalized" label=""]
-    s64 [shape="circle" xlabel="RPG_2019 Occitanie" label=""]
-    s65 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s66 [shape="circle" xlabel="RPG_2019 Occitanie\nNormalized" label=""]
-    s10 [shape="circle" xlabel="France Geo (GEOJSON)" label=""]
-    s11 [shape="rectangle" style="rounded,filled" xlabel="Normalize\n" label=""]
-    s12 [shape="circle" xlabel="France Geo Normalized" label=""]
-    s13 [shape="rectangle" style="rounded,filled" xlabel="Agregate" label=""]
-    s14 [shape="circle" xlabel="RPG Geo Normalized" label=""]
-    s15 [shape="circle" xlabel="Surface data Bio" label=""]
-    s16 [shape="rectangle" style="rounded,filled" xlabel="Data processs" label=""]
-    s17 [shape="circle" xlabel="Surface data Bio\nnormalized" label=""]
-    s18 [shape="circle" xlabel="SIREN DB" label=""]
-    s19 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
-    s20 [shape="circle" xlabel="SIREN DB Occitanie\nNormalized" label=""]
-    s21 [shape="circle" xlabel="Soil organic carbon\nmap (WMS)" label=""]
-    s22 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
-    s23 [shape="circle" xlabel="Soil organic carbon\nmap Occitanie\n(WMS)" label=""]
-    s24 [shape="rectangle" style="rounded,filled" xlabel="Normalize" label=""]
-    s25 [shape="circle" xlabel="Soil organic carbon\nmap normalized" label=""]
-    s26 [shape="circle" xlabel="AGRESTE" label=""]
-    s27 [shape="rectangle" style="rounded,filled" xlabel="Data process" label=""]
-    s28 [shape="circle" xlabel="AGRESTE\nNormalized" label=""]
-    s29 [shape="circle" xlabel="GISsol (WMS)" label=""]
-    s30 [shape="rectangle" style="rounded,filled" xlabel="Regionalize" label=""]
-    s31 [shape="circle" xlabel="Carte GISsol\nOccitanie (WMS)" label=""]
-    s32 [shape="rectangle" style="rounded,filled" xlabel="Normalize" label=""]
-    s33 [shape="circle" xlabel="Carte GISsol\nOccitanie Normalized" label=""]
-    s34 [shape="rectangle" style="rounded,filled" xlabel="Join" label=""]
-    s35 [shape="circle" xlabel="Knowledge" label=""]
-    s01 -> s02
-    s02 -> s03
-    s03 -> s13
-    s04 -> s05
-    s05 -> s06
-    s06 -> s13
+    s01 [shape="circle" xlabel="Graphic Parcel Register 2015 \n (shapefile)" label=""]
+    s02 [shape="circle" xlabel="Graphic Parcel Register 2016 \n (shapefile)" label=""]
+    s03 [shape="circle" xlabel="Graphic Parcel Register 2017 \n (shapefile)" label=""]
+    s04 [shape="circle" xlabel="Graphic Parcel Register 2018 \n (shapefile)" label=""]
+    s05 [shape="circle" xlabel="Graphic Parcel Register 2019 \n (shapefile)" label=""]
+    s07 [shape="rectangle" style="rounded,filled" xlabel="Data merging" label=""]
+    s08 [shape="circle" xlabel="Graphic Parcel Register \n 2015-2019 \n (.csv)" label=""]
+    s09 [shape="circle" xlabel="French administrative divisions\n (.geojson)" label=""]
+    s10 [shape="rectangle" style="rounded,filled" xlabel="Spatial Join" label=""]
+    s11 [shape="circle" xlabel="Soil Carbon Stock\n(WMS webservice)" label=""]
+    s12 [shape="circle" xlabel="Soil typology\n (WMS webservice)" label=""]
+    s13 [shape="rectangle" style="rounded,filled" xlabel="Vectorisation" label=""]
+    s14 [shape="rectangle" style="rounded,filled" xlabel="Vectorisation" label=""]
+    s15 [shape="circle" xlabel="Soil typology\n(shapefile)" label=""]
+    s16 [shape="circle" xlabel="Soil Carbon Stock\n(shapefile)" label=""]
+    s17 [shape="circle" xlabel="Dataset\n(.csv)" label=""]
+    s20 [shape="circle" xlabel="Organic crop areas and Livestock\n(.xlsx)" label=""]
+    s22 [shape="circle" xlabel="French agricultural statistics\n (.csv)" label=""]
+    s21 [shape="circle" xlabel="Company Identification database\n(API)" label=""]
+    s23 [shape="rectangle" style="rounded,filled" xlabel="Data Processing" label=""]
+    s24 [shape="rectangle" style="rounded,filled" xlabel="Agricultural companies \nrequest" label=""]
+    s25 [shape="rectangle" style="rounded,filled" xlabel="Data Processing" label=""]
+    s26 [shape="circle" xlabel="French agricultural statistics\n(.csv)" label=""]
+    s27 [shape="circle" xlabel="Agricultural companies\n(.csv)" label=""]
+    s28 [shape="circle" xlabel="Organic crop areas and Livestock\n(.csv)" label=""]
+    s29 [shape="rectangle" style="rounded,filled" xlabel="Data Join" label=""]
+    s30 [shape="circle" xlabel="Dataset\n(.csv)" label=""]
+    s31 [shape="rectangle" style="rounded,filled" xlabel="Data integration" label=""]
+    s32 [shape="circle" xlabel="Knowledge" label=""]
+    s01 -> s07
+    s02 -> s07
+    s03 -> s07
+    s04 -> s07
+    s05 -> s07
     s07 -> s08
-    s08 -> s09
-    s09 -> s13
-    s61 -> s62
-    s62 -> s63
-    s63 -> s13
-    s64 -> s65
-    s65 -> s66
-    s66 -> s13
-    s10 -> s11
-    s11 -> s12
-    s12 -> s13
-    s13 -> s14
-    s14 -> s34
-    s15 -> s16
-    s16 -> s17
-    s17 -> s34
-    s18 -> s19
-    s19 -> s20
-    s20 -> s34
-    s21 -> s22
-    s22 -> s23
-    s23 -> s24
-    s24 -> s25
-    s25 -> s34
-    s26 -> s27
-    s27 -> s28
-    s28 -> s34
+    s11 -> s13
+    s12 -> s14
+    s14 -> s15
+    s13 -> s16
+    s09 -> s10
+    s08 -> s10
+    s10 -> s17
+    s15 -> s10
+    s16 -> s10
+    s20 -> s23
+    s21 -> s24
+    s22 -> s25
+    s25 -> s26
+    s24 -> s27
+    s23 -> s28
+    s27 -> s29
+    s28 -> s29
+    s26 -> s29
     s29 -> s30
-    s30 -> s31
+    s17 -> s31
     s31 -> s32
-    s32 -> s33
-    s33 -> s34
-    s34 -> s35
+    s30 -> s31
 }
 `}
 />
