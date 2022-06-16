@@ -62,3 +62,41 @@ html {
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+svg {
+  .knowledge-graph {
+    g.node {
+      ellipse {
+        fill: var(--ifm-knowledge-graph-data-fill-color);
+        stroke: var(--ifm-knowledge-graph-base-stroke-color);
+        stroke-width: var(--ifm-knowledge-graph-base-stroke-width);
+      }
+
+      path {
+        fill: var(--ifm-knowledge-graph-service-fill-color);
+        stroke: var(--ifm-knowledge-graph-base-stroke-color);
+        stroke-width: var(--ifm-knowledge-graph-base-stroke-width);
+      }
+
+      text {
+        fill: var(--ifm-color-primary);
+        font-family: var(--ifm-font-family-base);
+      }
+    }
+
+    g.edge {
+      path {
+        stroke: var(--ifm-knowledge-graph-edge-stroke-color);
+        stroke-dasharray: 10;
+        stroke-width: calc(var(--ifm-knowledge-graph-base-stroke-width) + 1px);
+      }
+
+      polygon {
+        stroke: var(--ifm-knowledge-graph-edge-stroke-color);
+        fill: var(--ifm-knowledge-graph-edge-stroke-color);
+        stroke-width: calc(var(--ifm-knowledge-graph-base-stroke-width) - 1px);
+        transform: translateX(-3px);
+      }
+    }
+  }
+}

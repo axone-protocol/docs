@@ -1,5 +1,6 @@
 @import "community";
 @import "main";
+@import "animation";
 
 @font-face {
   font-family: "Barlow regular";
@@ -26,6 +27,12 @@
   --ifm-navbar-background-color: white;
   --ifm-background-image-url: url("/static/img/universe-light.png");
   --ifm-article-anchor-color: #877b65;
+  --ifm-graph-svg-background-color: #ecf0f1;
+  --ifm-knowledge-graph-data-fill-color: #f3a83f;
+  --ifm-knowledge-graph-service-fill-color: #bf0000;
+  --ifm-knowledge-graph-base-stroke-color: #433d32;
+  --ifm-knowledge-graph-edge-stroke-color: #b5b5b5;
+  --ifm-knowledge-graph-base-stroke-width: 3px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -41,6 +48,7 @@
   --ifm-navbar-background-color: #0f1e3d;
   --ifm-background-image-url: url("/static/img/universe-dark.png");
   --search-local-highlight-color: #877b65;
+  --ifm-knowledge-graph-base-stroke-color: white;
 }
 
 [data-theme="dark"] .docusaurus-highlight-code-line {
@@ -53,5 +61,5 @@
 }
 
 .graph-svg-container {
-  background-color: #ecf0f1;
+  margin-bottom: var(--ifm-leading);
 }
