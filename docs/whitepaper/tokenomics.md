@@ -22,7 +22,7 @@ The additionnal 150M tokens are released as block rewards (also called stacking 
 
 These tokens are distributed to investors in the seed round and the public sale who enabled to finance the development of OKP4.
 
-### Team 
+### Team
 
 In order to build a world-class team, these tokens will reward the work investment into the project. These tokens will be split between founders, associates and current and future team members. It is also a way to increase the retention of the 30 employees over the distribution period so that the roadmap goes on as planned.
 
@@ -73,12 +73,13 @@ This strategic reserve will be controlled by a multisig comprised of foundation 
 
 ### Stacking rewards
 
-Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing and verification. 
+Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing and verification.
 The roles of validators could expand to provide oracles, secure bridges, provide rollup services and over protocol-related services, making them critical participants.
 
 At launch there will be a cap of 100 possible validators but this number is subject to governance and can be adjusted.
 
 Block reward for validators and delegators will depend on the inflation number that starts at 15% of total supply excluding block rewards (15% of 200M tokens) on the first year and then decreases by 20% each year:
+
 - Year 1: 15%
 - Year 2: 12%
 - Year 3: 9.6%
