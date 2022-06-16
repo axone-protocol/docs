@@ -80,6 +80,7 @@ svg {
 
       text {
         fill: var(--ifm-knowledge-graph-text-color);
+        font-family: var(--ifm-font-family-base);
       }
     }
 
@@ -94,6 +95,7 @@ svg {
         stroke: var(--ifm-knowledge-graph-edge-stroke-color);
         fill: var(--ifm-knowledge-graph-edge-stroke-color);
         stroke-width: 2px;
+        transform: translateX(-3px);
       }
     }
   }

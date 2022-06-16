@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-import { Graphviz } from 'graphviz-react';
+import { Graphviz } from 'graphviz-react'
 
 # Dataverse tools
 
@@ -50,7 +50,7 @@ The OKP4 portal is a Web App which allows to explore the dataverse. It aggregate
 
 Although parts of the portal is open (especially for content and support), each user can log in to get access to all the services.
 
-Through the OKP4 portal, a user is informed in real time of the activities related to the Data Space of which he is a member and the datasets or services he provides. Thus, users follow their contribution to the Knowledge creation and the associated retributions.  
+Through the OKP4 portal, a user is informed in real time of the activities related to the Data Space of which he is a member and the datasets or services he provides. Thus, users follow their contribution to the Knowledge creation and the associated retributions.
 
 The portal is customized according to the membership of the different Data Spaces and the roles of the user in them.
 
@@ -84,8 +84,8 @@ For instance:
 
 <Graphviz
   options={{
-    width: "90%",
-    height: "auto"
+    width: '90%',
+    height: '100%'
   }}
   className="text--center graph-svg-container"
   dot={`
@@ -178,13 +178,14 @@ digraph {
     s33 -> s34
     s34 -> s35
 }
-`} />
+`}
+/>
 
 Depending on the governance rules of the Data Set, and depending on the rights of the user exploring the knowledge graph, some elements and the metadata may be visible or not.
 
 ## Files Deposit
 
-OKP4 Files Deposit is a Web App that allows Data Providers to register a dataset into the OKP4 Protocol.  
+OKP4 Files Deposit is a Web App that allows Data Providers to register a dataset into the OKP4 Protocol.
 
 The Data Provider can fill in the contextual metadata of the dataset. This information will allow other users to understand how the dataset is constructed, the nature of the information it contains, the application domain it refers to, and the licence that applies. Filling in this metadata will improve the ranking of a dataset in the search engine of the catalog.
 
@@ -208,11 +209,11 @@ Different services extract the general metadata, provided by OKP4 or tiers.
 
 Examples of general metadata :
 
->Name of the dataset  
->Author  
->Date of creation  
->Format  
->Size
+> Name of the dataset  
+> Author  
+> Date of creation  
+> Format  
+> Size
 
 ## Data Applications
 
@@ -248,12 +249,14 @@ The [OKP4 Design System](https://github.com/okp4/ui) is an open-source set of co
 
 The OKP4 Design System follows the [Atomic Design methodology](https://atomicdesign.bradfrost.com/), a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.
 
-<div class="text--center">
-  <p><img src="/img/content/atomic-design.png" alt="Atomic Design" width="600"/></p>
+<div className="text--center">
+  <p>
+    <img src="/img/content/atomic-design.png" alt="Atomic Design" width="600" />
+  </p>
 </div>
 
 - **Atoms**: Atoms are the smallest possible components. The OKP4 Design System offers the basic building blocks for building interfaces such as: [typography](https://github.com/okp4/ui/issues/98), [themes](https://github.com/okp4/ui/issues/96), language, [buttons](https://github.com/okp4/ui/issues/119), [toaster](https://github.com/okp4/ui/issues/179), [cards](https://github.com/okp4/ui/issues/120), etc.
-- **Molecules**:  Molecules are the composition of one or more components of atoms.
+- **Molecules**: Molecules are the composition of one or more components of atoms.
 - **Organisms**: Organisms are the combination of molecules that work together or, if necessary, with atoms, to form more elaborate interfaces. The OKP4 Design System offers advanced organisms for the OKP4 ecosystem like a Token Faucet, a Web Wallet, a Dataverse Explorer...
 
 ### OKP4 Discord bot
@@ -267,7 +270,7 @@ For instance:
 ```text
 ■ John — Today 16:14
 $request okp41nc75uehak9a5f5slexfpxrxy5vh8e8phzmrq6e
- 
+
 ■ okp4-discord-bot — Today 16:15
 @John, ✅ $tx_info 5737BD7D25F0E4C6900412B06945722C664F1AD5A58BD8CFBDEB499B8B0A0602
 ```
@@ -281,7 +284,7 @@ Other features are also supported including:
 ```text
 ■ John — Today 16:14
 $tx_info 5737BD7D25F0E4C6900412B06945722C664F1AD5A58BD8CFBDEB499B8B0A0602
- 
+
 ■ okp4-discord-bot — Today 16:15
 --------  ----------------------------------------------------------------
 txhash	  5737BD7D25F0E4C6900412B06945722C664F1AD5A58BD8CFBDEB499B8B0A0602
