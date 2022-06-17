@@ -6,17 +6,21 @@ sidebar_position: 12
 
 ## Distribution
 
+**Total initial supply: 200,000,000 $KNOW**
+
+These 200M tokens are minted at launch and subject to cliff and vesting terms, detailed below.
+
+The distribution is the following:
+
 ![Token Allocation](/img/content/Token-Allocation.png)
+
+**Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
+The additionnal 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
 
 ![Supply after 3 years](/img/content/Supply-after-3-years.png)
 
-*Total supply (excluding block rewards): 200,000,000 $KNOW*
-These 200M tokens are minted at launch and subject to cliff and vesting terms.
-
-*Supply cap including block rewards: 350,000,000 $KNOW (after over 80 years)*
-The additionnal 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
-
 <br/>
+Here are the details regarding the different allocations:
 
 ### Seed & Public sale
 
@@ -38,7 +42,7 @@ These tokens are reserved for advisors who accompany us throughout the developme
 
 ### Liquidity
 
-Owned by the DAO & OKP4 Foundation to provide liquidity on DEXs and CEXs.
+Owned by the DAO to provide liquidity on DEXs and distributed to the foundation to provide liquidity on CEXs through market makers.
 
 ### Foundation (strategic reserve)
 
