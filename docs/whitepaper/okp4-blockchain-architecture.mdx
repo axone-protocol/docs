@@ -78,9 +78,9 @@ The `governance` module enables the OKP4 blockchain to establish a governance on
 
 `wasm` is a module plugable into the [Cosmos SDK](https://cosmos.network), provided by the [CosmWasm](https://docs.cosmwasm.com) project, that enables the OKP4 blockchain to provide a smart contracting platform through which the functionalities of the OKP4 blockchain is implemented, operated.
 
-### CosmWasm Plus
+### CosmWasm contracts
 
-The [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) repository is a collection of specification and contracts within [CosmWasm](https://docs.cosmwasm.com) virtual machine.
+The [CosmWasm Token](https://github.com/CosmWasm/cw-tokens) and [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) repositories are a collection of specification and contracts within [CosmWasm](https://docs.cosmwasm.com) virtual machine.
 
 In the context of the OKP4 blockchain, the following smart contracts (and/or specifications) are considered (non exhaustive and subject to evolve):
 
@@ -89,6 +89,10 @@ In the context of the OKP4 blockchain, the following smart contracts (and/or spe
 - `cw20-atomic-swap`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing atomic swaps for both native and `cw20` tokens.
 
 - `cw20-staking`:  A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) provides staking derivatives.
+
+- `cw20-streams`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) allowing a cw20 payment to be vested continuously over time.
+
+- `cw20-bonding`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) that demonstrate extensibility of cw20-base contract by adding [bonding curves functions](https://yos.io/2018/11/10/bonding-curves/).
 
 - `cw3-multisig`: A smart contract (compliant with [cw3](https://crates.io/crates/cw3) specification) for multiSig/voting.
 
