@@ -17,11 +17,11 @@ A Data Space is an abstraction that comprises:
 
 A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need. The Rulebook describes a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
 
-Added by the features of the OKP4 ecosystem, the customized Data Space’s governance brings confidence and also widens the scope of possibilities to innovate with economic models to align participants’ interest.  
+Added by the features of the OKP4 ecosystem, the customized Data Space’s governance brings confidence and also widens the scope of possibilities to innovate with economic models to align participants’ interest.
 
 In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have participants, data and algorithms in common and are in fact overlapping. We call Dataverse the endless combination of interoperable Data Spaces where participants, assets and resources can interact freely.
 
-## Data Space Technical description
+## Data Space technical description
 
 The OKP4 protocol allows to build highly customized Data Spaces and to manage them.
 
@@ -57,7 +57,7 @@ The rules can refer to data management, retribution and business model or techni
 **Business models**
 
 - Retribution of the contributors according to the template XXX : Open data are not retributed and other datasets are retributed in function of the service consumption
-- Retribution of the contributor according to the template “Data Marketplace” : each provider evaluate the price of its data or services.
+- Retribution of the contributor according to the template “Data Marketplace” : each provider evaluates the price of its data or services.
 
 Governance mechanisms allow to adapt these rules (See next section).
 

@@ -46,7 +46,7 @@ For more information, please click [here](/docs/whitepaper/roles#delegators).
 
 ### Staking Services
 
-As saif previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
+As said previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
 
 Therefore, the amount of KNOW to stake will depend on the price that the provider asks for. And this for several reasons:
 
@@ -57,7 +57,7 @@ Calculation: Price per hour (KNOW) * 50 = amount of KNOW to stake
 
 What if I want to remove my service from use, without being slashed?
 
-If you delete a service that is not in use by builders, it disappears instantly (but still ramains visible on its page and on the catalog as a "non-usable service"; marked with a flag). However, if this service is in full use and/or have a waiting list, you will not be able to remove it immediately as this would cut off current usage. You can on the service page, take a closing order that will have the effect of closing access to the waiting list for the use of the service. Once the waiting list is over, the service will close automatically so that the provider has nothing else to do. Everything that follows will also be done automatically. If the provider does not respect these rules, it will be slashed. The staked tokens will then be available for withdrawal once it is closed.
+If you delete a service that is not in use by builders, it disappears instantly (but still remains visible on its page and on the catalog as a "non-usable service"; marked with a flag). However, if this service is in full use and/or have a waiting list, you will not be able to remove it immediately as this would cut off current usage. You can on the service page, take a closing order that will have the effect of closing access to the waiting list for the use of the service. Once the waiting list is over, the service will close automatically so that the provider has nothing else to do. Everything that follows will also be done automatically. If the provider does not respect these rules, it will be slashed. The staked tokens will then be available for withdrawal once it is closed.
 
 ## Curation
 
@@ -94,7 +94,7 @@ In the same way, it is possible to sell shares at any time. This process is call
 
 :::note
 
-It is important to note that as a Curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares decrease substantially I value so that you receive only a tiny fraction of the KNOW back that you initially deposited.
+It is important to note that as a Curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares value decreases substantially so that you receive only a tiny fraction of the KNOW back that you initially deposited.
 
 :::
 
@@ -102,7 +102,7 @@ It is important to note that as a Curator, you are confronted with the risk of w
 
 ### Bonding Curve 101 Model
 
-A bonding curve describes the relationship between the price and supply of an asset. It is a mathematical concept modelling the idea that the price of an asset (with a limited quantity) increases slightly for subsequent buyers with each purchase. The reasoning behind the increase in price is that the freely available supply is reduced with every unit that is acquired. The mechanism of a bonding curve rewards the earliest investors with higher profits. The basic idea behind the concept of a bonding curve is quite intuitive: the supply of a token determine its price. The price increases when the number of distributed tokens increases and vice versa.
+A bonding curve describes the relationship between the price and supply of an asset. It is a mathematical concept modelling the idea that the price of an asset (with a limited quantity) increases slightly for subsequent buyers with each purchase. The reasoning behind the increase in price is that the freely available supply is reduced with every unit that is acquired. The mechanism of a bonding curve rewards the earliest investors with higher profits. The basic idea behind the concept of a bonding curve is quite intuitive: the supply of a token determines its price. The price increases when the number of distributed tokens increases and vice versa.
 
 Each dataset or service has a bonding curve on which curation shares are minted when a Curator decides to add a signal. The bonding curve is the same for all items. These curves are designed in such a way that the mint price of a curation share increases linearly with the number of shares left to mint. Which means that for each share minted, it will get more expensive to purchase a share (conversely, for each share burned, the price will be lower).
 
@@ -110,7 +110,7 @@ Here is an example of what we mean, see the bonding curve below:
 
 [SHEME]
 
-The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means you put in less KNOW for each share. By extension, this means you earn more Curator royalties/KNOW than later Curators for the same item.
+The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less KNOW. By extension, this means you earn more Curator royalties/KNOW than later Curators for the same item.
 
 <br/>
 
@@ -121,7 +121,7 @@ Being a Curator in our ecosystem comes with certain risks. Let’s have a look a
 1. New market risk: The query market is inherently young and there is risk that your %APY may be lower than you expect due to nascent market dynamics
 2. Bonding curve risk: Asset depreciation as a result of depositing into the bonding curve of an item whose curation shares are being burned by other Curators.
 3. Non-functional risk: An item can fail due to a bug. A failed item does not accrue royalties. As a result, you will have to wait until the developer fixes the bug and deploys a new version.
-4. Item assessment risk: Marking false judgements about the attractiveness of an item.
+4. Item assessment risk: Marking false judgments about the attractiveness of an item.
 5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stack of KNOW.
 6. Curation taxes risk: 2% curation fee. This can become costly if Curators often switch to another subgraph or have to commit to the latest version of the subgraph. It is not a "risk", but it is something to keep in mind.
 
