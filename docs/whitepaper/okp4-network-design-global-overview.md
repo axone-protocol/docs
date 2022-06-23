@@ -27,7 +27,9 @@ It is the single source of truth that is used to build autonomous and decentrali
 
 **Data applications** are built on top of data spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For exemple, private companies may use outputs from a decentralized Data Space to build their own applications.
 
-**Datasets** are bytes of information stored on a device (IPFS, or custom private cloud), indexed on the protocol and accessible through a dedicated gateway. **Services** are software associated with computation/storage resources accessible through an API that ensure an unlimited number of data-treatment operations such as data processing services, automatic description of data, knowledge graph query services, etc.
+**Datasets** are bytes of information stored on a device (IPFS, or custom private cloud), indexed on the protocol and accessible through a dedicated gateway.
+
+**Services** are software associated with computation/storage resources accessible through an API that ensure an unlimited number of data-treatment operations such as data processing services, automatic description of data, knowledge graph query services, etc.
 Datasets and services provide the elementary building blocks and tools that will interact within data applications according to the orders specified in the blockchain protocol. In other words, each dataset and service is linked to one or more data applications (rules), and interacts with other data sources when called by the protocol.
 
 ## Network participants

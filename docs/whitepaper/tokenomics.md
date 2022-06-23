@@ -15,7 +15,7 @@ The distribution is the following:
 ![Token Allocation](/img/content/Token-Allocation.png)
 
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
-The additionnal 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
+The additional 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
 
 ![Supply after 3 years](/img/content/Supply-after-3-years.png)
 
