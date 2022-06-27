@@ -4,23 +4,37 @@ sidebar_position: 12
 
 # Tokenomics
 
-## Distribution
+## Overview
 
 **Total initial supply: 200,000,000 $KNOW**
 
-These 200M tokens are minted at launch and subject to cliff and vesting terms, detailed below.
+200M $KNOW are minted at launch and subject to cliff and vesting terms, detailed below.
 
 The distribution is the following:
 
 ![Token Allocation](/img/content/Token-Allocation.png)
 
+The cliff and vesting terms are the following:
+
+|              |  TGE |   Cliff   |          Vesting         |
+|--------------|:----:|:---------:|:------------------------:|
+| Seed         |  5%  |  6 months | 24 months linear vesting |
+| Public Sale  |  10% |     /     |  6 months linear vesting |
+| Foundation   |  10% |     /     | 60 months linear vesting |
+| Advisors     |  0%  | 12 months | 36 months linear vesting |
+| Team         |  0%  | 12 months | 36 months linear vesting |
+| Airdrop      |  50% | 12 months |             /            |
+| Liquidity    | 100% |     /     |       locked at TGE      |
+| DAO Treasury |  10% |     /     | 60 months linear vesting |
+
+
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
+
 The additional 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
 
-![Supply after 3 years](/img/content/Supply-after-3-years.png)
-
-<br/>
 Here are the details regarding the different allocations:
+
+## Distribution
 
 ### Seed & Public sale
 
@@ -58,29 +72,17 @@ This strategic reserve will be controlled by a multisig comprised of foundation 
 - Airdrop 1 (50%): This airdrop will be distributed at the time of the token release under certain conditions. The objective is to create awareness in the crypto community, a community of suppliers and builders, in order to incentivize them to come, be interested and involved into the OKP4 ecosystem.
 - Airdrop 2 (50%): This airdrop will take place at least one year after the first one under certain conditions.
 
-## Vesting
-
-|              |  TGE |   Cliff   |          Vesting         |
-|--------------|:----:|:---------:|:------------------------:|
-| Seed         |  5%  |  6 months | 24 months linear vesting |
-| Public Sale  |  10% |     /     |  6 months linear vesting |
-| Foundation   |  10% |     /     | 60 months linear vesting |
-| Advisors     |  0%  | 12 months | 36 months linear vesting |
-| Team         |  0%  | 12 months | 36 months linear vesting |
-| Airdrop      |  50% | 12 months |             /            |
-| Liquidity    | 100% |     /     |       locked at TGE      |
-| DAO Treasury |  10% |     /     | 60 months linear vesting |
-
 ## Emission
 
 ![Supply Schedule](/img/content/Supply-schedule.png)
 
 ### Stacking rewards
 
-Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing and verification.
-The roles of validators could expand to provide oracles, secure bridges, provide rollup services and over protocol-related services, making them critical participants.
+Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing, verification and validation.
 
-At launch there will be a cap of 100 possible validators but this number is subject to governance and can be adjusted.
+The roles of validators could expand to provide oracles, secure bridges, provide rollup services and other protocol-related services, making them critical participants.
+
+At launch there will be a cap of 100 validators but this number is subject to governance and will increase as the ecosystem matures.
 
 Block reward for validators and delegators will depend on the inflation number that starts at 15% of total supply excluding block rewards (15% of 200M tokens) on the first year and then decreases by 20% each year:
 
@@ -93,6 +95,8 @@ Block reward for validators and delegators will depend on the inflation number t
 
 Stacking APR will obviously be higher than the numbers quoted above, depending on the circulating supply and percentage of the circulating supply stacked.
 
-### Block Reward Calculation
+## Overview after 3 years
 
-Block rewards parameters will change every year (every 365 epochs).
+Following these calculations, the circulating supply will be 243M $KNOW after 3 years, distributed according to the following:
+
+![Supply after 3 years](/img/content/Supply-after-3-years.png)
