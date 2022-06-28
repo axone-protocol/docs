@@ -78,9 +78,9 @@ Note that the decentralized governance of the OKP4 protocol still allows users t
 
 In a nutshell, the governance of a Data Space defines the following :
 
--	Nature of the Data Space (public, private, secret)
--	Nature of participants
--	Conditions of access to the Data Space
--	Mechanisms to change the rules
+- The visibility of the Data Space (public, private, secret).
+- The nature of participants.
+- A set of rules that organizes _life_ in the Data Space (the conditions of access, the operations that are allowed or prohibited).
+- A rules amendment process.
 
 :::
