@@ -27,7 +27,6 @@ The cliff and vesting terms are the following:
 | Liquidity    | 100% |     /     |       locked at TGE      |
 | DAO Treasury |  10% |     /     | 60 months linear vesting |
 
-
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
 
 The additional 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
