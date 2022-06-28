@@ -86,11 +86,11 @@ It should be noted that there is an entry fee of 2% for the mint of shares. Thes
 
 It is possible at any time to buy shares. This process is called "mint".
 
-[Mint SHEME]
+_Work in progress_
 
 In the same way, it is possible to sell shares at any time. This process is called "burn".
 
-[Burn SHEME]
+_Work in progress_
 
 :::note
 
@@ -108,7 +108,7 @@ Each dataset or service has a bonding curve on which curation shares are minted 
 
 Here is an example of what we mean, see the bonding curve below:
 
-[SHEME]
+_Work in progress_
 
 The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less KNOW. By extension, this means you earn more Curator royalties/KNOW than later Curators for the same item.
 
