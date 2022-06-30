@@ -29,7 +29,7 @@ The cliff and vesting terms are the following:
 
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
 
-The additional 150M tokens are released as block rewards (also called stacking rewards) for validators and delegators over the 80 years following the launch.
+The additional 150M tokens are released as block rewards (also called staking rewards) for validators and delegators over the 80 years following the launch.
 
 Here are the details regarding the different allocations:
 
@@ -75,7 +75,7 @@ This strategic reserve will be controlled by a multisig comprised of foundation 
 
 ![Supply Schedule](/img/content/Supply-schedule.png)
 
-### Stacking rewards
+### Staking rewards
 
 Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing, verification and validation.
 
@@ -92,7 +92,7 @@ Block reward for validators and delegators will depend on the inflation number t
 - Year 5: 6.144%
 - Year X: X-1 * 0.8
 
-Stacking APR will obviously be higher than the numbers quoted above, depending on the circulating supply and percentage of the circulating supply stacked.
+Staking APR will obviously be higher than the numbers quoted above, depending on the circulating supply and percentage of the circulating supply staked.
 
 ## Overview after 3 years
 
