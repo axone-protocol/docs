@@ -67,15 +67,20 @@ Data providers are users who deposit one or more datasets in the catalog and/or 
 
 They are paid by the consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
-It is particularly recommended to deposit quality datasets, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
-
 ## Service Providers
 
 Service providers are users who deposits and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the consumers based on a fixed query fee or an hourly rate or that they define themselves according to the duration of use.
 
-It is particularly recommended to deposit quality service software, on the one hand because it will be much more likely to be used many times (and to be well curated), on the other hand it will give the provider a well known reputation that he can use in his favor for other deposits or if he decides to curate.
-
 The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake $KNOW in proportion to the hourly fee that he will define himself.
+
+:::note
+It is particularly recommended to deposit quality datasets and services because:
+
+- It will be much more likely to be used many times and to be well curated.
+- It will give the provider a well known reputation that can be profitable on other deposits.
+- The provider will have the possibility to be the first to curate hence maximizing the profits.
+
+:::
 
 ## Consumers
 
