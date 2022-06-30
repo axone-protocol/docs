@@ -122,7 +122,7 @@ Being a Curator in our ecosystem comes with certain risks. Let’s have a look a
 2. Bonding curve risk: Asset depreciation as a result of depositing into the bonding curve of an item whose curation shares are being burned by other Curators.
 3. Non-functional risk: An item can fail due to a bug. A failed item does not accrue royalties. As a result, you will have to wait until the developer fixes the bug and deploys a new version.
 4. Item assessment risk: Marking false judgments about the attractiveness of an item.
-5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stack of KNOW.
+5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stake of KNOW.
 6. Curation taxes risk: 2% curation fee. This can become costly if Curators often switch to another subgraph or have to commit to the latest version of the subgraph. It is not a "risk", but it is something to keep in mind.
 
 ## Governance
