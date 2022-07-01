@@ -13,19 +13,20 @@ On the macro level, there is 4 key concepts to understand:
 - **OKP4 blockchain** (protocol)
 - **Data Spaces** (coordination mechanisms, rules & governance)
 - **Data Applications** (value for the end-users)
-- **Datasets & Services** (contribor layer)
+- **Datasets & Services** (contributor layer)
 
 **OKP4 blockchain** is the decentralized layer that:
 
-- indexes (any) data and services
-- exposes metadata of indexed data and services
-- initiates data workflows
-- enforce governance rules, including access rights and value transfers
+- Indexes (any) data and services,
+- Exposes metadata of indexed data and services
+- Initiates data workflows
+- Enforce governance rules, including access rights and value transfers.
+
 It is the single source of truth that is used to build autonomous and decentralized data applications.
 
-**Data spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a data space, with conditions specific to that data space. They can share their data in multiple data spaces. Data Space have their own customizable governance mechanisms. The OKP4 blockchain can host an endless number of data spaces.
+**Data Spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a Data Space, with conditions specific to it. They can share their data in multiple Data Spaces. Data Space have their own customizable governance mechanisms. The OKP4 blockchain can host an endless number of Data Spaces.
 
-**Data applications** are built on top of data spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For exemple, private companies may use outputs from a decentralized Data Space to build their own applications.
+**Data applications** are built on top of data spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
 
 **Datasets** are bytes of information stored on a device (IPFS, or custom private cloud), indexed on the protocol and accessible through a dedicated gateway.
 
@@ -53,4 +54,4 @@ To build the best data sharing infrastructure, we need to combine web2 and web3 
 - **Data applications** also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more complex community-run applications can be considered.
 - **Datasets and services** are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the data spaces (and align with the data space's rules) in which they want to contribute.
 
-This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design for the data providers and users.
+This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design.

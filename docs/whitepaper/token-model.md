@@ -8,13 +8,9 @@ sidebar_position: 10
 
 KNOW is the native token of the OKP4 blockchain and are the only staking token of our ecosystem. They are a license for the holder to validate, delegate to other validators or vote. KNOW tokens can also be used to pay for transaction fees. Additional inflationary KNOW and block transaction fees are rewarded to validators and delegators.
 
-<br/>
-
 ### Rewards
 
 According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, services and resource providers).
-
-<br/>
 
 ### Transaction Fees
 
@@ -23,8 +19,6 @@ Transaction fees on the OKP4 blockchain will be paid in KNOW. These fees will go
 Transaction fees will be relatively low as validators are fairly incentivized thanks to the block reward. They will be variable, depending on the size and type of the transaction.
 
 In addition, each Data Space will be able to add an additional transaction fee for each transaction within that Data Space if it wishes (governance).
-
-<br/>
 
 ### Micropayments
 
@@ -41,8 +35,6 @@ For more information, please click [here](/docs/whitepaper/roles#validators).
 If you don't want to or can't run nodes, it is possible to delegate your tokens to validators to earn rewards.
 
 For more information, please click [here](/docs/whitepaper/roles#delegators).
-
-<br/>
 
 ### Staking Services
 
@@ -63,24 +55,20 @@ If you delete a service that is not in use by builders, it disappears instantly 
 
 ### Curation Shares
 
-Curation Shares are the continuous tokens OKP4 uses to incentivize curators towards the shared goal of identifying quality data sources. They are managed by OKP4 bonding curve contract.
+Curation Shares are the continuous tokens OKP4 uses to incentivize curators towards the shared goal of identifying quality data & service sources. They are managed by OKP4 bonding curve contract.
 
 Properties:
 
-- Limitless: the supply of curation shares is limitless. There’s no hard cap to the number of shares that curators can mint
-- Deterministic: The utilization of a bonding curve facilitates a predetermined and fixed price discovery mechanism for the curation shares
-- Continuous: The smart contract continuously determines the price depending on the purchase and sale of curation shares
-- Liquidity: The bonding curve acts as automated market maker, which allows curators to buy or sell curation shares instantly and at any time
+- Limitless: the supply of curation shares is limitless. There’s no hard cap to the number of shares that curators can mint.
+- Deterministic: The utilization of a bonding curve facilitates a predetermined and fixed price discovery mechanism for the curation shares.
+- Continuous: The smart contract continuously determines the price depending on the purchase and sale of curation shares.
+- Liquidity: The bonding curve acts as automated market maker, which allows curators to buy or sell curation shares instantly and at any time.
 
 OKP4 Ecosystem uses a bonding curve to coordinate the work of curators to achieve the shared goal of indexing the contents of quality items. Curators are incentivized in an economic game to identify high-quality items with attractive earning potentials and try signal on these subgraphs early on.
-
-<br/>
 
 ### Curation Fees
 
 It should be noted that there is an entry fee of 2% for the mint of shares. These fees will go directly into the DAO's treasury.
-
-<br/>
 
 ### Burn & Mint Process
 
@@ -94,46 +82,42 @@ _Work in progress_
 
 :::note
 
-It is important to note that as a Curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares value decreases substantially so that you receive only a tiny fraction of the KNOW back that you initially deposited.
+It is important to note that as a curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares value decreases substantially so that you receive only a tiny fraction of the KNOW back that you initially deposited.
 
 :::
-
-<br/>
 
 ### Bonding Curve 101 Model
 
 A bonding curve describes the relationship between the price and supply of an asset. It is a mathematical concept modelling the idea that the price of an asset (with a limited quantity) increases slightly for subsequent buyers with each purchase. The reasoning behind the increase in price is that the freely available supply is reduced with every unit that is acquired. The mechanism of a bonding curve rewards the earliest investors with higher profits. The basic idea behind the concept of a bonding curve is quite intuitive: the supply of a token determines its price. The price increases when the number of distributed tokens increases and vice versa.
 
-Each dataset or service has a bonding curve on which curation shares are minted when a Curator decides to add a signal. The bonding curve is the same for all items. These curves are designed in such a way that the mint price of a curation share increases linearly with the number of shares left to mint. Which means that for each share minted, it will get more expensive to purchase a share (conversely, for each share burned, the price will be lower).
+Each dataset or service has a bonding curve on which curation shares are minted when a curator decides to add a signal. The bonding curve is the same for all items. These curves are designed in such a way that the mint price of a curation share increases linearly with the number of shares left to mint. Which means that for each share minted, it will get more expensive to purchase a share (conversely, for each share burned, the price will be lower).
 
 Here is an example of what we mean, see the bonding curve below:
 
 _Work in progress_
 
-The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less KNOW. By extension, this means you earn more Curator royalties/KNOW than later Curators for the same item.
-
-<br/>
+The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less KNOW. By extension, this means you earn more curator royalties/KNOW than later curators for the same item.
 
 ### Risks
 
-Being a Curator in our ecosystem comes with certain risks. Let’s have a look at the risks Curators are confronted with.
+Being a curator in our ecosystem comes with certain risks. Let’s have a look at the risks curators are confronted with.
 
 1. New market risk: The query market is inherently young and there is risk that your %APY may be lower than you expect due to nascent market dynamics
-2. Bonding curve risk: Asset depreciation as a result of depositing into the bonding curve of an item whose curation shares are being burned by other Curators.
+2. Bonding curve risk: Asset depreciation as a result of depositing into the bonding curve of an item whose curation shares are being burned by other curators.
 3. Non-functional risk: An item can fail due to a bug. A failed item does not accrue royalties. As a result, you will have to wait until the developer fixes the bug and deploys a new version.
 4. Item assessment risk: Marking false judgments about the attractiveness of an item.
 5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stake of KNOW.
-6. Curation taxes risk: 2% curation fee. This can become costly if Curators often switch to another subgraph or have to commit to the latest version of the subgraph. It is not a "risk", but it is something to keep in mind.
+6. Curation taxes risk: 2% curation fee. This can become costly if curators often switch to another subgraph or have to commit to the latest version of the subgraph. It is not a "risk", but it is something to keep in mind.
 
 ## Governance
 
 Governance will be done in KNOW. Staked KNOW holders can vote. All proposals require a minimum KNOW deposit. For each proposal (if the minimum deposit amount is reached), voters may vote to accept or decline.
 Several cases:
 
-- If the proposal is accepted by the majority, the deposited KNOWs will be returned to their owners
-- If the proposal is rejected by the majority, the deposited KNOWs will be returned to their owners
-- If the proposal is rejected with a veto (33%), the deposited KNOWs will be burned
-- If the deposit amount is not reached (by passing the proposal pool), the deposited KNOWs are returned to their owners
+- If the proposal is accepted by the majority, the deposited KNOWs will be returned to their owners.
+- If the proposal is rejected by the majority, the deposited KNOWs will be returned to their owners.
+- If the proposal is rejected with a veto (33%), the deposited KNOWs will be burned.
+- If the deposit amount is not reached (by passing the proposal pool), the deposited KNOWs are returned to their owners.
 
 For more information on the governance of the protocol and its parameters, please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
 

@@ -8,17 +8,13 @@ sidebar_position: 9
 
 Across the vibrant ecosystem of OKP4, participants can choose from several different functional roles in the protocol - depending on their technical skills, risk tolerance, desired activity level and resources at their disposal. In this section we will quickly introduce you to the various roles in just a few words, for more details please select the following sections.
 
-<br/>
-
 ***Blockchain Layer Participants***
 
-Validators: Validator can self-bond KNOW to increase their probability to validate a block and get rewards. They also have an obligation to vote on the DAO's proposals
+Validators: Validator can self-bond KNOW to increase their probability to validate a block and get rewards. They also have an obligation to vote on the DAO's proposals.
 
 Delegators: Stakeholders can delegate their KNOW tokens to validator nodes in order to collect rewards. Their votes are automatically delegated to validators with the tokens; can be changed manually.
 
 DAO participants: Protocol governance. Anyone with staked KNOW tokens can participate in on-chain governance. It is possible to make a proposal and vote on a proposal.
-
-<br/>
 
 ***Data Spaces Participants***
 
@@ -36,7 +32,7 @@ Governors: Each Data Space can have its own governance mechanisms. Governors are
 
 Our validator network is based on the Tendermint consensus system which relies on a group of validators in charge of committing new blocks to our blockchain. They participate in the consensus protocol by broadcasting votes that contain cryptographic signatures signed by the private key of each validator. Applicants to this group can have KNOW tokens delegated to them by the token holders (delegators).
 
-Anyone can become validator at any time, except when the size of the current validator set is greater than the maximum number of validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of KNOW tokens staked by the validator plus those delegated. Our network will initially contain a set of 125 validators (with an increase over time based on a growth rate). The 125 best candidates with more voting power will then be the approved validators of our network; the other candidates are on a waiting list. If a validator is replaced by a new validator, the existing validator becomes inactive (back on the waiting list) and all his KNOW and delegated KNOW enter the unbounding state.
+Anyone can become validator at any time, except when the size of the current validator set is greater than the maximum number of validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of KNOW tokens staked by the validator plus those delegated. Our network will initially contain a set of 100 validators (with an increase over time based on a growth rate). The 100 best candidates with more voting power will then be the approved validators of our network; the other candidates are on a waiting list. If a validator is replaced by a new validator, the existing validator becomes inactive (back on the waiting list) and all his KNOW and delegated KNOW enter the unbounding state.
 
 Validators (and their delegates) earn KNOW tokens as a reward for running the Tendermint consensus protocol. These rewards come from inflation and transaction fees. Validators can choose to set a small commission percentage on the rewards received by their delegators as an additional incentive.
 
@@ -48,7 +44,7 @@ Delegators are KNOW holders who cannot, or do not want to, run a validator node 
 
 Delegators share revenue with their validators, but they also share risks. If a validator does not respect the described rules, he and each of his delegators will be partially deducted in proportion to their delegated stake. This is why each delegator must be careful about which validator they choose before deciding to delegate. It is possible to dilute the level of risk by delegating to several validators.
 
-Delegators play en essential role in the system since they are responsible for the selection of validators; they therefore play an active role in the ecosystem. They must actively monitor the actions of their validators and participate in governance.
+Delegators play an essential role in the system since they are responsible for the selection of validators; they therefore play an active role in the ecosystem. They must actively monitor the actions of their validators and participate in governance.
 
 About the governance of the DAO, the delegators give their voting power automatically to the validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
 
@@ -56,8 +52,8 @@ About the governance of the DAO, the delegators give their voting power automati
 
 Anyone with staked KNOW tokens can participate in governance. It is possible to:
 
-- Make a proposal: costs KNOW tokens
-- Vote on a proposal: doesn't cost KNOW tokens, but each token gives a vote right on each proposal, and each KNOW gives 1 voting power
+- Make a proposal: costs KNOW tokens.
+- Vote on a proposal: doesn't cost KNOW tokens, but each token gives a vote right on each proposal, and each KNOW gives 1 voting power.
 
 For more information on governance please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
 
@@ -93,8 +89,6 @@ Consumers can be:
 
 ## Curators
 
-<br/>
-
 ### Curation Markets
 
 With the establishment of curation markets in OKP4 ecosystem, a whole new world of possibilities will be opening up. The new opportunity to participate in the network as a curator comes with many exciting adventures but also with potential risks.
@@ -103,37 +97,33 @@ What are curation markets?
 
 A curation market is a model allowing actors in a network to effectively coordinate around shared goals, this is accomplished by coordinating the work around a token that is minted to incentivize specific results (they earn from the value they co-create). Curation markets are specifically designed to reduce information asymmetries and to curate valuable information.
 
-Decentralized Coordination of Labor and Capital: The establishment of curation markets allows network participants to mint and burn tokens (named shares) in accordance with predefined rules without involving a centralized third party. The process of creating these tokens of value is not controlled by a specific entity. Instead, the bonding curve contract of the curation market is responsible for distributing (minting) the shares.
+Decentralized Coordination of Labor and Capital: the establishment of curation markets allows network participants to mint and burn tokens (named shares) in accordance with predefined rules without involving a centralized third party. The process of creating these tokens of value is not controlled by a specific entity. Instead, the bonding curve contract of the curation market is responsible for distributing (minting) the shares.
 
 Core Components of Curation Markets:
 
-- Continuous: shares (tokens) can be minted and burned any time without time constraints
-- Autonomous: bonding curve contracts calculate token prizes autonomously
-- Communal: a communal deposit is created to keep the amount paid for minted tokens
-- Proportional: curators curate information with their proportional backing of tokens bonded to them
-
-<br/>
+- Continuous: shares (tokens) can be minted and burned any time without time constraints.
+- Autonomous: bonding curve contracts calculate token prizes autonomously.
+- Communal: a communal deposit is created to keep the amount paid for minted tokens.
+- Proportional: curators curate information with their proportional backing of tokens bonded to them.
 
 ### Curators
 
-Curators do not need to possess complex technical skills or knowledge. All it takes is the ability to do transactions via Keplr. Similarly, Curators are not required to stake a minimum amount of KNOW. Depending on the individual's risk tolerance, Curation may be especially attractive for those who are able to accurately evaluate items and have a good understanding of Web3 and of the underlying mechanics of bonding curves.
+Curators do not need to possess complex technical skills or knowledge. All it takes is the ability to do transactions via Keplr. Similarly, curators are not required to stake a minimum amount of KNOW. Depending on the individual's risk tolerance, curation may be especially attractive for those who are able to accurately evaluate items and have a good understanding of Web3 and of the underlying mechanics of bonding curves.
 
 In order for builders and Data Spaces to simply find an item, it must first be ranked. Ranking is a process in which items are put in competition with each other so that they can be found more quickly and it's easier to place trust in them.
 
 Thus, if users had to guess which items to use, they would be less likely to find quality items on the first try. This is where curators come in.
 
-Curators are essential to the decentralized economy on our protocol. They use their knowledge and common sense to analyze items to identify which ones are of the highest quality and which ones are likely to be used the most. Through the catalog, Curators can visualize the entirety of what is available in order to make signaling decisions and invest in it.
+Curators are essential to the decentralized economy on our protocol. They use their knowledge and common sense to analyze items to identify which ones are of the highest quality and which ones are likely to be used the most. Through the catalog, curators can visualize the entirety of what is available in order to make signaling decisions and invest in it.
 
 These people will be rewarded by earning a portion of the rewards that datasets and services generate. Curation is about identifying valuable pieces of information in a data stream (or in a service) and presenting it to the target audience in a way that adds value (mainly visibility and trust).
 
 OKP4 uses curation as an incentive mechanism to encourage network participants to identify items of a high-quality and to foster information sharing in the ecosystem.
 The curator role is ideal for all those that wish to become more active in the network than just being a Delegator. They can be community members, data consumers, developers, item providers...
 
-When signaling, Curators can decide to signal a specific version of a dataset/service, or they can decide to use automatic migration through updates to new versions. If you decide to signal on a specific version, despite the update, your shares will always remain on that specific version.
+When signaling, curators can decide to signal a specific version of a dataset/service, or they can decide to use automatic migration through updates to new versions. If you decide to signal on a specific version, despite the update, your shares will always remain on that specific version.
 
 Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the token model section.
-
-<br/>
 
 ### Auto-Curation Priority
 
@@ -142,8 +132,6 @@ Any provider can stake KNOW tokens on their data/service as a curation to onesel
 Data & Service Operation: When the provider will deposit his dataset/service, he will have to choose if he accepts or not the curators. If he has accepted them, when he makes his dataset/service available for use, the provider can, if he wants, buy shares before anyone else.
 
 Once the first purchase is made, the burn & mint system opens to the whole community. The provider who curates will of course receive the associated rewards, in proportion to his number of shares (at the very beginning if he is alone, he will receive 100% of the curation royalties).
-
-<br/>
 
 :::note
 
@@ -159,10 +147,8 @@ This is why we have decided to let each Data Space choose between different gove
 - Governance via a newly created token. This token will have value, a market...
 - Governance via whitelist. The creators of the Data Space will be able to choose themselves which wallet will have the right to vote, what is the voting weight per wallet, if there is the possibility to add/remove people from the list or if they don't want the list to change...
 - Governance via the $KNOW token.
-- Under development, the possibility to have a governance token from other chains (ETH, BNB...)
+- Under development, the possibility to have a governance token from other chains (ETH, BNB...).
 
 As an example, it will be able to add fees for the use of its Data Space in order to create or develop a treasury; because each Data Space can have its own treasury if needed.
-
-<br/>
 
 For more informations about the rules, please click [here](/docs/whitepaper/data-spaces#ds-governance).

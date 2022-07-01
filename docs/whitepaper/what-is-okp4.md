@@ -29,8 +29,9 @@ Onboard builders, contributors and users to create new use cases and share value
 
 Let anyone build and contribute by minimizing trust and technical issues.
 
-- **Design for sovereignty**: raw data is never stored on-chain. Some metadata is but only for features such as discoverability, value sharing & security. In some applications, data can be shared through privacy-preserving algorithms to provide a valuable output without transferring the data to another participant/user. That way, data providers can be rewarded without any risk of losing sovereignty over their data.
-- **Design for trustlessness**: every rule, rights and governance mechanism can be enforced on-chain by the decentralized network of validators. Coordination between providers (data, algorithms, storage, computation), builders, users, curators and governance participants is autonomous, fluid and unstoppable.
+- **Design for sovereignty**: raw data is never stored on-chain. Some metadata is, but only for features such as discoverability, value sharing & security. In some applications, data can be shared through privacy-preserving algorithms to provide a valuable output without transferring the data to another participant/user. That way, data providers can be rewarded without any risk of losing sovereignty over their data.
+
+- **Design for trustlessness**: every rule, rights and governance mechanisms can be enforced on-chain by the decentralized network of validators. Coordination between providers (data, algorithms, storage, computation), builders, users, curators and governance participants is autonomous, fluid and unstoppable.
 
 ### Cost-minimization
 
@@ -40,11 +41,11 @@ Let anyone build and contribute by minimizing trust and technical issues.
 
 ### Generic
 
-OKP4 is a general-purpose communication infrastructure that enables XaaS - Anything as a Service. The protocol enable anyone to share any data, any algorithm, any storage, any cloud, any SSI, etc. Anyone can earn from these assets and services and make them valuable for the community.
+OKP4 is a general-purpose communication infrastructure that enables XaaS - Anything as a Service. The protocol enables anyone to share any data, any algorithm, any storage, any cloud, any SSI, etc. Anyone can earn from these assets and services and make them valuable for the community.
 
 ### Customizable
 
-Besides, WHAT you can share, OKP4 is highly customizable in terms of HOW you can share. Smart contracts that govern Data Space can be copied, edited, reinvented in infinite ways. Customization is applied to the rules (business models, access mechanisms, constraints on service providers...) and also the mechanisms to change the rules (who can vote, weight of their vote, fixed or dynamic through a token, etc).
+Besides, WHAT you can share, OKP4 is highly customizable in terms of HOW you can share. Smart contracts that govern Data Spaces can be copied, edited, reinvented in infinite ways. Customization is applied to the rules (business models, access mechanisms, constraints on service providers...) and also the mechanisms to change the rules (who can vote, weight of their vote, fixed or dynamic through a token, etc.).
 
 ### Scalable
 
@@ -61,11 +62,11 @@ Anyone can become a validator, delegator, governance participant, data, algorith
 
 ### Secure
 
-OKP4 is designed for security at the blockchain level (due to its decentralized nature and robust consensus mechanism), but also at the data level. The blockchain enforces rules such as access control that are immutable (except if consensus is reached to change these rules of course). That way, vulnerability will never be on the blockchain side, but on the user/provider side (if there's a breach in his own cloud infrastructure for a self-hosted data provider, or if a user gets his private keys stolen for exemple).
+OKP4 is designed for security at the blockchain level (due to its decentralized nature and robust consensus mechanism), but also at the data level. The blockchain enforces rules such as access control that are immutable (except if consensus is reached to change these rules of course). That way, vulnerability will never be on the blockchain side, but on the user/provider side (if there's a breach in his own cloud infrastructure for a self-hosted data provider, or if a user gets his private keys stolen for example).
 
 ### Complex workflows
 
-A user/builder can design complex workflows such as thousands of datasets interact with hundreds of services to produce a single product or application. A set of tools is provided to enable anyone to easily build such workflows and innovate on how data can be used and shared trustlessly.
+A user/builder can design complex workflows such as thousands of datasets interact with hundreds of services to produce a single product or application. A set of tools is provided to enable anyone to easily build such workflows and innovate on how data can be used and shared with confidence.
 
 ### Synergetic
 
@@ -79,10 +80,10 @@ To ensure that high-value applications can rely on the network to keep all of it
 
 2 key concepts to understand:
 
-**Data Space**: Abstraction that comprises
+**Data Space**: Abstraction that comprises:
 
-- Bundle of rights & rules that regulates interactions between data, tokens and any service (storage, algorithms, computation...) shared by participants
-- Governance mechanisms to adapt these rights and rules
+- Bundle of rights & rules that regulates interactions between data, tokens and any service (storage, algorithms, computation...) shared by participants,
+- Governance mechanisms to adapt these rights and rules.
 
 In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Data Spaces can be nested and overlapping, so that a data provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
 

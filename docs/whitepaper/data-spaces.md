@@ -13,9 +13,9 @@ Data Spaces are ecosystems for the seamless sharing of data and services that in
 A Data Space is an abstraction that comprises:
 
 - Bundle of rights & rules that regulates interactions between data, algorithms and resources shared by participants,
-- Governance mechanisms to adapt these rules
+- Governance mechanisms to adapt these rules.
 
-A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need. The Rulebook describes a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
+A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need. 
 
 Added by the features of the OKP4 ecosystem, the customized Data Space’s governance brings confidence and also widens the scope of possibilities to innovate with economic models to align participants’ interest.
 
@@ -32,13 +32,13 @@ OKP4 Development Kit is designed to give as much freedom as possible for develop
 
 :::
 
-The Rulebook describes a set of rules, standards and tools based on 5 pillars: ethics, legal, data management, technical requirements & business models.
+The Rulebook describes a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
 
 Once the Data Space is created through the Development Kit, the governance rules of this Data Space it is encoded into a [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) allowing the rules to be expressed as code interpretable by a smart contract in a fully decentralized and autonomous way. For any transaction sent to the OKP4 blockchain, this smart contract ensures that the transaction complies with the rights established by the Data Space governance rules. If not, the transaction is rejected.
 
 ## Data Space Rules
 
-A data space is governed by a bundle of rights and rules that define the permitted interactions between data, algorithms, resources and users.
+A Data Space is governed by a bundle of rights and rules that define the permitted interactions between data, algorithms, resources and users.
 
 The rules can refer to data management, retribution and business model or technical requirements for instance. All the rules are totally customizable.
 
@@ -46,22 +46,22 @@ The rules can refer to data management, retribution and business model or techni
 
 **Data management**
 
-- All metadata of datasets and services must be described
-- Restrictions on the licence of the dataset
-- Only one type of actors has access to the raw data
+- All metadata of datasets and services must be described.
+- Restrictions on the license of the dataset.
+- Only one type of actors has access to the raw data.
 
 **Technical requirements**
 
-- Each data provider stores its own data
+- Each data provider stores its own data.
 
 **Business models**
 
-- Retribution of the contributors according to the template XXX : Open data are not retributed and other datasets are retributed in function of the service consumption
-- Retribution of the contributor according to the template “Data Marketplace” : each provider evaluates the price of its data or services.
+- Retribution of the contributors according to the template XXX : Open data are not retributed and other datasets are retributed in function of the service consumption.
+- Retribution of the contributor according to the template “Data Marketplace”: each provider evaluates the price of its data or services.
 
 Governance mechanisms allow to adapt these rules (See next section).
 
-## DS Governance
+## Data Space Governance
 
 Data Spaces are commons governed in a decentralized way.
 
@@ -76,7 +76,7 @@ Note that the decentralized governance of the OKP4 protocol still allows users t
 
 :::note
 
-In a nutshell, the governance of a Data Space defines the following :
+In a nutshell, the governance of a Data Space defines the following:
 
 - The visibility of the Data Space (public, private, secret).
 - The nature of participants.

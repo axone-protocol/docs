@@ -26,8 +26,8 @@ Tendermint is a partially synchronous BFT consensus protocol derived from the DL
 Tendermint's security derives from its use of optimal Byzantine fault-tolerance via super-majority (>2/3) voting power and a locking mechanism.
 Together, they ensure that:
 
-- ≥1/3 voting power must be Byzantine to cause a violation of safety, where more than two values are committed
-- If any set of validators ever succeeds in violating safety, or even attempts to do so, they can be identified by the protocol. This includes both voting for conflicting blocks and broadcasting unjustified votes
+- ≥1/3 voting power must be Byzantine to cause a violation of safety, where more than two values are committed.
+- If any set of validators ever succeeds in violating safety, or even attempts to do so, they can be identified by the protocol. This includes both voting for conflicting blocks and broadcasting unjustified votes.
 
 Despite its strong guarantees, Tendermint provides exceptional performance by providing thousands transactions per second, with commit latencies on the order of 1 to 2 seconds. Notably, performance of well over a thousand transactions per second is maintained even in harsh adversarial conditions, with validators crashing or broadcasting maliciously crafted votes.
 
@@ -42,8 +42,6 @@ Tendermint has protective measures for preventing certain notable attacks, like 
 ### ABCI (Application BlockChain Interface)
 
 Tendermint consensus algorithm is implemented in a program called Tendermint Core. Tendermint BFT connects to blockchain applications via the ABCI. ABCI in an interface that defines the boundary between the replication engine (the blockchain), and the state machine (the application). By using a socket protocol, we enable a consensus engine running in one process to manage an application state running in another.
-
-<br/>
 
 For more informations:
 <https://docs.tendermint.com/master/introduction/what-is-tendermint.html>
@@ -82,7 +80,7 @@ The `governance` module enables the OKP4 blockchain to establish a governance on
 
 The [CosmWasm Token](https://github.com/CosmWasm/cw-tokens) and [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) repositories are a collection of specification and contracts within [CosmWasm](https://docs.cosmwasm.com) virtual machine.
 
-In the context of the OKP4 blockchain, the following smart contracts (and/or specifications) are considered (non exhaustive and subject to evolve):
+In the context of the OKP4 blockchain, the following smart contracts (and/or specifications) are considered (non-exhaustive and subject to evolve):
 
 - `cw20-base`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing a standard API for tokens, with the following functionalities: transfer tokens from one account to another, get the current token balance of an account, get the total supply of the token available on the network...
 
@@ -144,13 +142,13 @@ The smart contract is a factory in such a way that at each new instance, a new D
 
 ### Rule
 
-The smart contract `rule` ensures strict compliance with the governance rules established for each Data Space and extensively for the entire dataverse.
+The smart contract `rule` ensures strict compliance with the governance rules established for each Data Space and extensively for the entire Dataverse.
 
 ### Exec
 
 The smart contract `exec` is in charge of "orchestrating" the execution of the different services.
 
-The smart contract does not interact directly with the services, but maintains in the blockchain an order book of the different executions to be carried out, as well as the history of all the executions to form a knowledge graph of all the processings.
+The smart contract does not interact directly with the services, but maintains in the blockchain an order book of the different executions to be carried out, as well as the history of all the executions to form a knowledge graph of all processes.
 
 ### Pay
 
@@ -162,13 +160,13 @@ The module `logic` introduces into the blockchain an "engine" that is powerful e
 
 ## Governance / DAO
 
-The DAO and governance space has seen rapid and drastic changes in recent years. OKP4 will need to be flexible to learn and keep up with the trend. OKP4 DAO is operated by a distributed organization that requieres a well-defined governance mechanism in order to coordinate various changes to the blockchain such as software upgrades and constitutional amendments. The protocol's operating rules allow for cohesion between stakeholders on all types of issues such as theft, bugs, management, etc., allowing for faster and cleaner resolution or management.
+The DAO and governance space has seen rapid and drastic changes in recent years. OKP4 will need to be flexible to learn and keep up with the trend. OKP4 DAO is operated by a distributed organization that requires a well-defined governance mechanism in order to coordinate various changes to the blockchain such as software upgrades and constitutional amendments. The protocol's operating rules allow for cohesion between stakeholders on all types of issues such as theft, bugs, management, etc., allowing for faster and cleaner resolution or management.
 
 Validators and any staked KNOW holders are eligible to vote on all governance proposals that may change predefined system parameters, vote on changes to the rules that govern DAO policies, coordinate upgrades, propose improvements, extensions or changes for the protocol. In addition, ALL validators are responsible for voting on ALL proposals.
 
 If the validator does not vote on a proposal within the time limit, he/she will be automatically disabled for a period of time (1 week by default). Delegators automatically inherit the vote of the delegated validator. This vote can be changed manually.
 
-Each Data Space can also have its own rules (Rulebook) and its own governance mechanism that allows users to have freedom and potential to experiment without permissions. For more information please click here.
+Each Data Space can also have its own rules (Rulebook) and its own governance mechanism that allows users to have freedom and potential to experiment without permissions. For more information please click [here](/docs/whitepaper/data-spaces#ds-governance).
 
 The DAO will have its own treasury in order to encourage development and improvements of the protocol (grants), to encourage liquidity providing, to deposit more liquidity on an exchanges if needed, provide insurance to users...
 
@@ -235,13 +233,13 @@ The following diagram gives a graphical overview of the ontology currently desig
   <OntologySvg />
 </div>
 
-The ontology also provides a complete living understanding and knowledge of the datasets within a data space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules). From that perspective, it provides the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the different processings, resulting in a Knowledge Graph of any data in the dataverse.
+The ontology also provides a complete living understanding and knowledge of the datasets within a Data Space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules). From that perspective, it provides the Data Lineage (allowing the traceability) of each piece of data in the data spaces during different processings, resulting in a Knowledge Graph of any data in the Dataverse.
 
 ### Ontology is at the heart of the blockchain
 
 Ontology has a special place in the OKP4 protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. Therefore, the blockchain is the only source of truth and any dApp can consult the semantic information that has been added, modified or deleted in the system.
 
-For example, the creation of a new data space requires a metadata profile that describes and characterises the data space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
+For example, the creation of a new data space requires a metadata profile that describes and characterizes the Data Space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
 
 ```turtle title="data-metadata.ttl"
 @prefix : <https://ontology.okp4.space/core/> .

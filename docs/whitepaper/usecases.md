@@ -18,7 +18,7 @@ But knowledge created from these data also has the power to move things forward 
 
 ## Use case 2
 
-There are many opportunities to build community-focused usecases.
+There are many opportunities to build community-focused use cases.
 For example:
 
 1. Data can be used towards a common community-based goal and share value based on the results.
@@ -48,7 +48,7 @@ The Data Space could provide a service where users trustlessly share their walle
 
 In addition to providing users the opportunity to contribute data, use new services and receive tokens, data space governors can use dsTokens (Data Space Tokens) to incentivize a specific data connection with web2 services (like Facebook or Google data) or with domain-related data (such as weather or annotated car images). Investors can then value the dsTokens of the various communities based on how valuable they view that specific data-pool to evolve and provide value.
 
-Curation can also be done at the dataset and service level (not at the Data Space level), as explained in Curation.
+Curation can also be done at the dataset and service level (not at the Data Space level), as explained in [Curators](/docs/whitepaper/roles#curators).
 
 The curation games will make new markets that will work as signals to show which data sets, services, data applications or even communities are or may be the most valuable in the future.
 As an example, Bob can speculate that a particular Data Space has reached a certain level of data maturity and will soon attract many users and builders, while shorting another declining/overvalued Data Space.

@@ -6,9 +6,9 @@ sidebar_position: 1
 
 ![OKP4 Logo](/img/content/OKP4.jpg)
 
-OKP4 is a revolutionary public PoS layer 1 specifically designed to enable communities to trustlessly share data, algorithms and resources to build the *Dataverse*
+OKP4 is a revolutionary public PoS layer 1 specifically designed to enable communities to trustlessly share data, algorithms and resources to build the *Dataverse*.
 
-The OKP4 protocol enables anyone to create Data Spaces where communities can agree on rules and contribute with any data source, algorithm, storage or computation resource to create new data applications. Anything can be indexed and orchestrated by the protocol according to defined rules to minimize risks and costs & maximize opportunities and data sovereignty.
+The OKP4 protocol enables anyone to create Data Spaces where communities can agree on rules and contribute with any data source, algorithm, storage or computation resource to create new data applications. Anything can be indexed and orchestrated by the protocol according to defined rules to minimize risks, costs, and to maximize opportunities as well as data sovereignty.
 
 OKP4 is designed to become a vibrant hub of incentivized data providers, developers, data scientists & users designed for maximal, tangible value creation & real-world coordination.
 
