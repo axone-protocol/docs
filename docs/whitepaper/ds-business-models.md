@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# DS Business Models
+# Data Space Business Models
 
 ## How to price data, services & knowledge?
 
@@ -16,7 +16,7 @@ At OKP4, we propose generic templates, for both the data sharing and marketplace
 
 ## Introducing: business model templates
 
-Different data sharing business models can be implemented using generic templates proposed by OKP4.  These generic templates are fully parameterisable according to users needs such as : depth of (non)operating workflow of services considered for rewarding data providers, the importance of datasets for new data creation, the pricing algorithms of the data marketplaces, etc.
+Different data sharing business models can be implemented using generic templates proposed by OKP4.  These generic templates are fully parameterisable according to users needs such as: depth of (non)operating workflow of services considered for rewarding data providers, the importance of datasets for new data creation, the pricing algorithms of the data marketplaces, etc.
 
 ## Generic templates description
 

@@ -6,15 +6,15 @@ sidebar_position: 10
 
 ## Utility
 
-KNOW is the native token of the OKP4 blockchain and are the only staking token of our ecosystem. They are a license for the holder to validate, delegate to other validators or vote. KNOW tokens can also be used to pay for transaction fees. Additional inflationary KNOW and block transaction fees are rewarded to validators and delegators.
+$KNOW is the native token of the OKP4 blockchain and are the only staking token of our Ecosystem. They are a license for the holder to validate, delegate to other validators or vote. $KNOW tokens can also be used to pay for transaction fees. Additional inflationary $KNOW and block transaction fees are rewarded to validators and delegators.
 
 ### Rewards
 
-According to the adopted business model, KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all builders to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, services and resource providers).
+According to the adopted business model, $KNOW tokens are at the center of our economy and will be the common currency. Indeed, they allow first of all consumers to pay for the creation of knowledge as well as to remunerate all providers to the creation of this knowledge (data, services and resource providers).
 
 ### Transaction Fees
 
-Transaction fees on the OKP4 blockchain will be paid in KNOW. These fees will go to reward the validators and delegators who keep the network running.
+Transaction fees on the OKP4 blockchain will be paid in $KNOW. These fees will go to reward the validators and delegators who keep the network running.
 
 Transaction fees will be relatively low as validators are fairly incentivized thanks to the block reward. They will be variable, depending on the size and type of the transaction.
 
@@ -38,18 +38,18 @@ For more information, please click [here](/docs/whitepaper/roles#delegators).
 
 ### Staking Services
 
-As said previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a builder to be able to invoke and use this service, he will have to stake KNOW in proportion to the hourly fee that he will define himself."
+As said previously: "The provider will be able to create a descriptive page for his repository at any time. However, in order for a consumer to be able to invoke and use this service, he will have to stake $KNOW in proportion to the hourly fee that he will define himself."
 
-Therefore, the amount of KNOW to stake will depend on the price that the provider asks for. And this for several reasons:
+Therefore, the amount of $KNOW to stake will depend on the price that the provider asks for. And this for several reasons:
 
-- Economic security: KNOW that is staked can be slashed (same principle as for validators but with different rules). It provides security for builders in case they pay for a service that is not available or stops in the middle of a treatment. It also prevents service providers to deposit wrong services and operate bad computation.
+- Economic security: $KNOW that is staked can be slashed (same principle as for validators but with different rules). It provides security for consumers in case they pay for a service that is not available or stops in the middle of a treatment. It also prevents service providers to deposit wrong services and operate bad computation.
 - Sybil resistance: Only providers who are willing to invest resources can participate. This will prevent deposits of inefficient and useless services.
 
-Calculation: Price per hour (KNOW) * 50 = amount of KNOW to stake
+Calculation: Price per hour ($KNOW) * 50 = amount of $KNOW to stake
 
 What if I want to remove my service from use, without being slashed?
 
-If you delete a service that is not in use by builders, it disappears instantly (but still remains visible on its page and on the catalog as a "non-usable service"; marked with a flag). However, if this service is in full use and/or have a waiting list, you will not be able to remove it immediately as this would cut off current usage. You can on the service page, take a closing order that will have the effect of closing access to the waiting list for the use of the service. Once the waiting list is over, the service will close automatically so that the provider has nothing else to do. Everything that follows will also be done automatically. If the provider does not respect these rules, it will be slashed. The staked tokens will then be available for withdrawal once it is closed.
+If you delete a service that is not in use by consumers, it disappears instantly (but still remains visible on its page and on the catalog as a "non-usable service"; marked with a flag). However, if this service is in full use and/or have a waiting list, you will not be able to remove it immediately as this would cut off current usage. You can on the service page, take a closing order that will have the effect of closing access to the waiting list for the use of the service. Once the waiting list is over, the service will close automatically so that the provider has nothing else to do. Everything that follows will also be done automatically. If the provider does not respect these rules, it will be slashed. The staked tokens will then be available for withdrawal once it is closed.
 
 ## Curation
 
@@ -82,7 +82,7 @@ _Work in progress_
 
 :::note
 
-It is important to note that as a curator, you are confronted with the risk of withdrawing less KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares value decreases substantially so that you receive only a tiny fraction of the KNOW back that you initially deposited.
+It is important to note that as a curator, you are confronted with the risk of withdrawing less $KNOW from the bounding curve than you started with. In the worst-case scenario, your curation shares value decreases substantially so that you receive only a tiny fraction of the $KNOW back that you initially deposited.
 
 :::
 
@@ -96,22 +96,22 @@ Here is an example of what we mean, see the bonding curve below:
 
 _Work in progress_
 
-The KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less KNOW. By extension, this means you earn more curator royalties/KNOW than later curators for the same item.
+The $KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less $KNOW. By extension, this means you earn more curator royalties/$KNOW than later curators for the same item.
 
 ### Risks
 
-Being a curator in our ecosystem comes with certain risks. Let’s have a look at the risks curators are confronted with.
+Being a curator in our Ecosystem comes with certain risks. Let’s have a look at the risks curators are confronted with.
 
 1. New market risk: The query market is inherently young and there is risk that your %APY may be lower than you expect due to nascent market dynamics
 2. Bonding curve risk: Asset depreciation as a result of depositing into the bonding curve of an item whose curation shares are being burned by other curators.
 3. Non-functional risk: An item can fail due to a bug. A failed item does not accrue royalties. As a result, you will have to wait until the developer fixes the bug and deploys a new version.
 4. Item assessment risk: Marking false judgments about the attractiveness of an item.
-5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stake of KNOW.
+5. Gas price risk: High gas prices could reduce your profit margin, especially if you are curating with a smaller stake of $KNOW.
 6. Curation taxes risk: 2% curation fee. This can become costly if curators often switch to another subgraph or have to commit to the latest version of the subgraph. It is not a "risk", but it is something to keep in mind.
 
 ## Governance
 
-Governance will be done in KNOW. Staked KNOW holders can vote. All proposals require a minimum KNOW deposit. For each proposal (if the minimum deposit amount is reached), voters may vote to accept or decline.
+Governance will be done in $KNOW. Staked $KNOW holders can vote. All proposals require a minimum $KNOW deposit. For each proposal (if the minimum deposit amount is reached), voters may vote to accept or decline.
 Several cases:
 
 - If the proposal is accepted by the majority, the deposited KNOWs will be returned to their owners.
@@ -123,7 +123,7 @@ For more information on the governance of the protocol and its parameters, pleas
 
 ## Liquidity
 
-When the token is launched, the liquidity associated supply will be locked. This liquidity will be used for decentralized exchanges and for centralized exchanges in order to have a KNOW/ATOM & KNOW/OSMO pair at first.
+When the token is launched, the liquidity associated supply will be locked. This liquidity will be used for decentralized exchanges and for centralized exchanges in order to have a $KNOW/$ATOM & $KNOW/$OSMO pair at first.
 
 In order to ensure our back-up we have a part of the DAO treasury wallet that can be used to provide liquidity for a given period of time if needed.
 
@@ -133,7 +133,7 @@ In addition we will be able to provide liquidity for all new Data Space governan
 
 ### Insurance
 
-We will provide insurance to all builders in case of interrupted workflow during knowledge creation. In case a service/dataset is instantly withdrawn, the knowledge creator will be reimbursed on the full amount he paid.
+We will provide insurance to all consumers in case of interrupted workflow during knowledge creation. In case a service/dataset is instantly withdrawn, the knowledge creator will be reimbursed on the full amount he paid.
 
 ### Sybil control
 

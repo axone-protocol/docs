@@ -84,7 +84,7 @@ Our objective is to allow data sharing and processing services in a secure, tran
 
 OKP4 protocol not only enables the creation of Data Spaces. It also maximizes data sharing, based on Web 3.0 value chain, where providers and consumers get optimal compensation for their contribution, in a trustworthy environment. The OKP4 protocol is a community-run technology using blockchain, smart contracts and the $KNOW cryptocurrency.
 
-The traditional business models based upon data exchange need to evolve. As a society we need to let go of the dominant model of selling data sets and access to data flows at fixed prices. The OKP4 protocol enables data sharing without exchange. In other words, only insights coming from different services (algorithms, tools, visualization…) is accessible to the users, not the raw data; but according to the rules and usage this is still possible. Added to the customized Data Space’s governance, this brings confidence and also widens the scope of possibilities to innovate with economic models.
+The traditional business models based upon data exchange need to evolve. As a society we need to let go of the dominant model of selling datasets and access to data flows at fixed prices. The OKP4 protocol enables data sharing without exchange. In other words, only insights coming from different services (algorithms, tools, visualization…) is accessible to the users, not the raw data; but according to the rules and usage this is still possible. Added to the customized Data Space’s governance, this brings confidence and also widens the scope of possibilities to innovate with economic models.
 
 ### The features of the OKP4 Protocol
 
@@ -101,7 +101,7 @@ A public blockchain protocol designed specifically to handle the complexity of t
 
 #### **OKP4 Ecosystem**: Empower the Dataverse
 
-Anyone can plug its own infrastructure into the ecosystem and connect it through the blockchain. OKP4 ecosystem enables XaaS (anything as a service). Agnostic by design!
+Anyone can plug its own infrastructure into the Ecosystem and connect it through the blockchain. OKP4 Ecosystem enables XaaS (anything as a service). Agnostic by design!
 
 #### **OKP4 Development Kit**
 

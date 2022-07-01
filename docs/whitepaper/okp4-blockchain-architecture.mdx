@@ -12,7 +12,7 @@ import OntologySvg from './okp4-ontology.svg';
 
 The blockchain is the single source of truth that is used to coordinate participants of the Dataverse.
 
-## Consensus : Tendermint
+## Consensus: Tendermint
 
 In this section we briefly describe the Tendermint consensus protocol.
 
@@ -48,7 +48,7 @@ For more informations:
 
 ## Canonical Services
 
-A large number of blockchains in the Cosmos ecosystem share a common set of services, either because they are provided by layer 0 of the Cosmos SDK or because they are standard in the ecosystem.
+A large number of blockchains in the Cosmos Ecosystem share a common set of services, either because they are provided by layer 0 of the Cosmos SDK or because they are standard in the Ecosystem.
 
 This section lists the main services that are available in the OKP4 blockchain.
 
@@ -136,7 +136,7 @@ For the OKP4 blockchain, we consider a Smart Contract (CosmWasm) implementation 
 
 ### Data Space
 
-The smart contract `data space` is in charge of managing the Data Spaces. The smart contract manages the entire life cycle of a Data Space, from its creation to its destruction.
+The smart contract `Data Space` is in charge of managing the Data Spaces. The smart contract manages the entire life cycle of a Data Space, from its creation to its destruction.
 
 The smart contract is a factory in such a way that at each new instance, a new Data Space is created in the blockchain.
 
@@ -156,13 +156,13 @@ The smart contract `pay` is responsible for maintaining a policy of paying for d
 
 ### Logic
 
-The module `logic` introduces into the blockchain an "engine" that is powerful enough to interpret and guarantee the correct execution of the dataspaces' governance rules.
+The module `logic` introduces into the blockchain an "engine" that is powerful enough to interpret and guarantee the correct execution of the Data Spaces' governance rules.
 
 ## Governance / DAO
 
 The DAO and governance space has seen rapid and drastic changes in recent years. OKP4 will need to be flexible to learn and keep up with the trend. OKP4 DAO is operated by a distributed organization that requires a well-defined governance mechanism in order to coordinate various changes to the blockchain such as software upgrades and constitutional amendments. The protocol's operating rules allow for cohesion between stakeholders on all types of issues such as theft, bugs, management, etc., allowing for faster and cleaner resolution or management.
 
-Validators and any staked KNOW holders are eligible to vote on all governance proposals that may change predefined system parameters, vote on changes to the rules that govern DAO policies, coordinate upgrades, propose improvements, extensions or changes for the protocol. In addition, ALL validators are responsible for voting on ALL proposals.
+Validators and any staked $KNOW holders are eligible to vote on all governance proposals that may change predefined system parameters, vote on changes to the rules that govern DAO policies, coordinate upgrades, propose improvements, extensions or changes for the protocol. In addition, ALL validators are responsible for voting on ALL proposals.
 
 If the validator does not vote on a proposal within the time limit, he/she will be automatically disabled for a period of time (1 week by default). Delegators automatically inherit the vote of the delegated validator. This vote can be changed manually.
 
@@ -174,17 +174,13 @@ In order to discuss and work on the proposals, a forum will be made available on
 
 The rules are written in the Governance section of the Token model, click [here](/docs/whitepaper/token-model#governance).
 
-<br/>
-
 ### Proposal Pool
 
-In order to offer the possibility to anyone to make a voting proposal, we introduce the concept of proposal pool. If someone has a proposal to make but does not have enough tokens to launch the proposal alone, it is possible to launch a proposal pool. Over a given period of time (before the voting period), anyone who thinks the proposal is a good idea and deserves to be voted on can come and deposit KNOW in this pool. If the amount of KNOW tokens is reached before the end of the period, the proposal passes as a classic proposal and is governed by classic rules; if the period is exceeded and the total amount is not met, the contributors are refunded.
-
-<br/>
+In order to offer the possibility to anyone to make a voting proposal, we introduce the concept of proposal pool. If someone has a proposal to make but does not have enough tokens to launch the proposal alone, it is possible to launch a proposal pool. Over a given period of time (before the voting period), anyone who thinks the proposal is a good idea and deserves to be voted on can come and deposit $KNOW in this pool. If the amount of $KNOW tokens is reached before the end of the period, the proposal passes as a classic proposal and is governed by classic rules; if the period is exceeded and the total amount is not met, the contributors are refunded.
 
 ### Voting Parameters
 
-- Minimum deposit: 600 KNOW. Subject to change depending on the price of the token and the choices of the DAO.
+- Minimum deposit: 600 $KNOW. Subject to change depending on the price of the token and the choices of the DAO.
 - Maximum deposit period: 14 days. After this period, if the minimum deposit is not reached, the proposal is rejected.
 - Voting period: 5 days.
 - Quorum: 30%. Minimum participation depending on the number of tokens staked by the validators.
@@ -223,7 +219,7 @@ Ontologies can be used for a wider range of purpose, such interoperability, know
 
 :::
 
-OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_  (data spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
+OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
 
 The knowledge representation language chosen for the OKP4 is [RDF Schema](http://www.w3.org/TR/rdf-schema/) and [Web Ontology Language](http://www.w3.org/TR/owl2-overview/) on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
 
@@ -233,13 +229,13 @@ The following diagram gives a graphical overview of the ontology currently desig
   <OntologySvg />
 </div>
 
-The ontology also provides a complete living understanding and knowledge of the datasets within a Data Space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules). From that perspective, it provides the Data Lineage (allowing the traceability) of each piece of data in the data spaces during different processings, resulting in a Knowledge Graph of any data in the Dataverse.
+The ontology also provides a complete living understanding and knowledge of the datasets within a Data Space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules). From that perspective, it provides the Data Lineage (allowing the traceability) of each piece of data in the Data Spaces during different processings, resulting in a Knowledge Graph of any data in the Dataverse.
 
 ### Ontology is at the heart of the blockchain
 
 Ontology has a special place in the OKP4 protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. Therefore, the blockchain is the only source of truth and any dApp can consult the semantic information that has been added, modified or deleted in the system.
 
-For example, the creation of a new data space requires a metadata profile that describes and characterizes the Data Space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
+For example, the creation of a new Data Space requires a metadata profile that describes and characterizes the Data Space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
 
 ```turtle title="data-metadata.ttl"
 @prefix : <https://ontology.okp4.space/core/> .

@@ -17,13 +17,13 @@ To do that, we follow 7 principles to maximize opportunities and minimize risks 
 
 Onboard consumers, contributors and users to create new use cases and share value.
 
-- **Design for consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate on-boarding of consumers though SDKs and docs, fast deployment through tools & templates, and community empowerment to create a thriving ecosystem.
+- **Design for consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate on-boarding of consumers though SDKs and docs, fast deployment through tools & templates, and community empowerment to create a thriving Ecosystem.
 
 - **Design for contributors**: to maximize value created by data application by onboarding contributors. Value-sharing models and easy to use tools will incentivize participants in infinite ways, encouraging them to share data, algorithms, storage and computation towards a common goal.
 
 - **Design for freedom**: to maximize opportunities by aligning interest between providers, consumers and users through freedom of innovation and customization.
 
-- **Design for interoperability**: to maximize synergies at the blockchain level through cross-chain communication, at the ecosystem level thanks to agnosticism, at the Data Space level through interoperability of standards or governance synergies, and also at the application level enabling applications to leverage multiple Data Spaces (or multiple applications leveraging the same Data Space).
+- **Design for interoperability**: to maximize synergies at the blockchain level through cross-chain communication, at the Ecosystem level thanks to agnosticism, at the Data Space level through interoperability of standards or governance synergies, and also at the application level enabling applications to leverage multiple Data Spaces (or multiple applications leveraging the same Data Space).
 
 ### Risk-minimization
 
@@ -49,11 +49,11 @@ Besides, WHAT you can share, OKP4 is highly customizable in terms of HOW you can
 
 ### Scalable
 
-Its generic infrastructure makes it scalable by design, as workflow orchestration, computation and storage is done off-chain and is theoretically unlimited. Nevertheless, indexation, rule enforcement, governance and value-sharing is done on-chain. With a capacity of 10 000 TPS (Transactions Per Second), limits may be reached when dozens to hundreds of highly used data apps coexist on the OKP4 ecosystem. That is one of the reasons a roll-up strategy is implemented to enable layer-2 scalability and even more roll-up-specific functionalities (such as on-chain privacy features).
+Its generic infrastructure makes it scalable by design, as workflow orchestration, computation and storage is done off-chain and is theoretically unlimited. Nevertheless, indexation, rule enforcement, governance and value-sharing is done on-chain. With a capacity of 10 000 TPS (Transactions Per Second), limits may be reached when dozens to hundreds of highly used data apps coexist on the OKP4 Ecosystem. That is one of the reasons a roll-up strategy is implemented to enable layer-2 scalability and even more roll-up-specific functionalities (such as on-chain privacy features).
 
 ### Decentralized
 
-The OKP4 network has no trusted parties or single points of failure for any function. Many centralized components can intervene in data workflows but are not mandatory. As said before, the infrastructure is generic and its thriving ecosystem will be composed of many centralized & decentralized independent components.
+The OKP4 network has no trusted parties or single points of failure for any function. Many centralized components can intervene in data workflows but are not mandatory. As said before, the infrastructure is generic and its thriving Ecosystem will be composed of many centralized & decentralized independent components.
 OKP4 blockchain is decentralized thanks to the Tendermint consensus and many validator nodes that find consensus on the state of the network. Its governance is also decentralized through a DAO. Eventually, as with every PoS networks and token-based DAOs, its decentralization is dependent on the distribution of the token and the ability of one stakeholder to acquire a "dangerous" stake in the network. Eventually, it all comes down to the value and liquidity of its token on the market. The more distributed and expensive to acquire the token is, the more it can be and stay decentralized.
 
 ### Permissionless
@@ -74,7 +74,7 @@ OKP4 is modular in terms of infrastructure, but also in terms of governance. Whi
 
 ### Incentivized
 
-To ensure that high-value applications can rely on the network to keep all of its functionalities listed above, OKP4 incentivizes validators, delegators, providers, curators, consumers to ensure development, maintenance, involvement into the ecosystem. Incentives are designed to align individual interest with public interest through low inflation, fair value distribution and punishment of detrimental behaviors.
+To ensure that high-value applications can rely on the network to keep all of its functionalities listed above, OKP4 incentivizes validators, delegators, providers, curators, consumers to ensure development, maintenance, involvement into the Ecosystem. Incentives are designed to align individual interest with public interest through low inflation, fair value distribution and punishment of detrimental behaviors.
 
 ## Concepts & definitions
 

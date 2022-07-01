@@ -26,7 +26,7 @@ It is the single source of truth that is used to build autonomous and decentrali
 
 **Data Spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a Data Space, with conditions specific to it. They can share their data in multiple Data Spaces. Data Space have their own customizable governance mechanisms. The OKP4 blockchain can host an endless number of Data Spaces.
 
-**Data applications** are built on top of data spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
+**Data applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
 
 **Datasets** are bytes of information stored on a device (IPFS, or custom private cloud), indexed on the protocol and accessible through a dedicated gateway.
 
@@ -50,8 +50,8 @@ But web3 also has its own sets of problems, its pretty wild and self-reliant, UX
 To build the best data sharing infrastructure, we need to combine web2 and web3 strengths through multi-layered modular governance:
 
 - **OKP4 blockchain** is decentralized by design, with its set of token holders that propose and vote on governance proposals.
-- **Data Spaces** have custom governance. Data space governance can be centralized (one or few accounts are designated to have the ability to design rules) or decentralized (through token-based voting power).
+- **Data Spaces** have custom governance. Data Space governance can be centralized (one or few accounts are designated to have the ability to design rules) or decentralized (through token-based voting power).
 - **Data applications** also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more complex community-run applications can be considered.
-- **Datasets and services** are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the data spaces (and align with the data space's rules) in which they want to contribute.
+- **Datasets and services** are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the Data Spaces (and align with the Data Space's rules) in which they want to contribute.
 
 This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design.

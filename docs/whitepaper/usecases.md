@@ -25,7 +25,7 @@ For example:
 1. Data can be used towards a common community-based goal and share value based on the results.
 2. Data can be bought directly from the data provider.
 3. Data can be shared to access a decentralized custom service.
-4. Data-curation and data space governance can provide many new opportunities for communities to thrive.
+4. Data-curation and Data Space governance can provide many new opportunities for communities to thrive.
 Some Data Space will combine all theses strategies and opportunities. But of the sake of simplicity, let's give examples for every category mentioned above.
 
 ### 1. DAO-powered hedge fund
@@ -47,9 +47,9 @@ The Data Space could provide a service where users trustlessly share their walle
 
 ### 4. Curation Games
 
-In addition to providing users the opportunity to contribute data, use new services and receive tokens, data space governors can use dsTokens (Data Space Tokens) to incentivize a specific data connection with web2 services (like Facebook or Google data) or with domain-related data (such as weather or annotated car images). Investors can then value the dsTokens of the various communities based on how valuable they view that specific data-pool to evolve and provide value.
+In addition to providing users the opportunity to contribute data, use new services and receive tokens, Data Space governors can use dsTokens (Data Space Tokens) to incentivize a specific data connection with web2 services (like Facebook or Google data) or with domain-related data (such as weather or annotated car images). Investors can then value the dsTokens of the various communities based on how valuable they view that specific data-pool to evolve and provide value.
 
 Curation can also be done at the dataset and service level (not at the Data Space level), as explained in [Curators](/docs/whitepaper/roles#curators).
 
-The curation games will make new markets that will work as signals to show which data sets, services, data applications or even communities are or may be the most valuable in the future.
+The curation games will make new markets that will work as signals to show which datasets, services, data applications or even communities are or may be the most valuable in the future.
 As an example, Bob can speculate that a particular Data Space has reached a certain level of data maturity and will soon attract many users and builders, while shorting another declining/overvalued Data Space.

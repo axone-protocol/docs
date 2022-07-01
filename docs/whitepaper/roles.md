@@ -6,15 +6,15 @@ sidebar_position: 9
 
 ## Overview
 
-Across the vibrant ecosystem of OKP4, participants can choose from several different functional roles in the protocol - depending on their technical skills, risk tolerance, desired activity level and resources at their disposal. In this section we will quickly introduce you to the various roles in just a few words, for more details please select the following sections.
+Across the vibrant Ecosystem of OKP4, participants can choose from several different functional roles in the protocol - depending on their technical skills, risk tolerance, desired activity level and resources at their disposal. In this section we will quickly introduce you to the various roles in just a few words, for more details please select the following sections.
 
 ***Blockchain Layer Participants***
 
-Validators: Validator can self-bond KNOW to increase their probability to validate a block and get rewards. They also have an obligation to vote on the DAO's proposals.
+Validators: Validator can self-bond $KNOW to increase their probability to validate a block and get rewards. They also have an obligation to vote on the DAO's proposals.
 
-Delegators: Stakeholders can delegate their KNOW tokens to validator nodes in order to collect rewards. Their votes are automatically delegated to validators with the tokens; can be changed manually.
+Delegators: Stakeholders can delegate their $KNOW tokens to validator nodes in order to collect rewards. Their votes are automatically delegated to validators with the tokens; can be changed manually.
 
-DAO participants: Protocol governance. Anyone with staked KNOW tokens can participate in on-chain governance. It is possible to make a proposal and vote on a proposal.
+DAO participants: Protocol governance. Anyone with staked $KNOW tokens can participate in on-chain governance. It is possible to make a proposal and vote on a proposal.
 
 ***Data Spaces Participants***
 
@@ -30,36 +30,36 @@ Governors: Each Data Space can have its own governance mechanisms. Governors are
 
 ## Validators
 
-Our validator network is based on the Tendermint consensus system which relies on a group of validators in charge of committing new blocks to our blockchain. They participate in the consensus protocol by broadcasting votes that contain cryptographic signatures signed by the private key of each validator. Applicants to this group can have KNOW tokens delegated to them by the token holders (delegators).
+Our validator network is based on the Tendermint consensus system which relies on a group of validators in charge of committing new blocks to our blockchain. They participate in the consensus protocol by broadcasting votes that contain cryptographic signatures signed by the private key of each validator. Applicants to this group can have $KNOW tokens delegated to them by the token holders (delegators).
 
-Anyone can become validator at any time, except when the size of the current validator set is greater than the maximum number of validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of KNOW tokens staked by the validator plus those delegated. Our network will initially contain a set of 100 validators (with an increase over time based on a growth rate). The 100 best candidates with more voting power will then be the approved validators of our network; the other candidates are on a waiting list. If a validator is replaced by a new validator, the existing validator becomes inactive (back on the waiting list) and all his KNOW and delegated KNOW enter the unbounding state.
+Anyone can become validator at any time, except when the size of the current validator set is greater than the maximum number of validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of $KNOW tokens staked by the validator plus those delegated. Our network will initially contain a set of 100 validators (with an increase over time based on a growth rate). The 100 best candidates with more voting power will then be the approved validators of our network; the other candidates are on a waiting list. If a validator is replaced by a new validator, the existing validator becomes inactive (back on the waiting list) and all his $KNOW and delegated $KNOW enter the unbounding state.
 
-Validators (and their delegates) earn KNOW tokens as a reward for running the Tendermint consensus protocol. These rewards come from inflation and transaction fees. Validators can choose to set a small commission percentage on the rewards received by their delegators as an additional incentive.
+Validators (and their delegates) earn $KNOW tokens as a reward for running the Tendermint consensus protocol. These rewards come from inflation and transaction fees. Validators can choose to set a small commission percentage on the rewards received by their delegators as an additional incentive.
 
 There must be some penalty imposed if validators do not respect the protocol rules whether intentional or unintentional (double sign, offline too long...). This will cause the validator to lose his good reputation and his proportional share of bonded token that will get slashed. The penalty depends on the severity of the violation.
 
 ## Delegators
 
-Delegators are KNOW holders who cannot, or do not want to, run a validator node themselves. They can delegate KNOW to a validator and obtain a part of their revenue in exchange.
+Delegators are $KNOW holders who cannot, or do not want to, run a validator node themselves. They can delegate $KNOW to a validator and obtain a part of their revenue in exchange.
 
 Delegators share revenue with their validators, but they also share risks. If a validator does not respect the described rules, he and each of his delegators will be partially deducted in proportion to their delegated stake. This is why each delegator must be careful about which validator they choose before deciding to delegate. It is possible to dilute the level of risk by delegating to several validators.
 
-Delegators play an essential role in the system since they are responsible for the selection of validators; they therefore play an active role in the ecosystem. They must actively monitor the actions of their validators and participate in governance.
+Delegators play an essential role in the system since they are responsible for the selection of validators; they therefore play an active role in the Ecosystem. They must actively monitor the actions of their validators and participate in governance.
 
 About the governance of the DAO, the delegators give their voting power automatically to the validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
 
 ## DAO Participants
 
-Anyone with staked KNOW tokens can participate in governance. It is possible to:
+Anyone with staked $KNOW tokens can participate in governance. It is possible to:
 
-- Make a proposal: costs KNOW tokens.
-- Vote on a proposal: doesn't cost KNOW tokens, but each token gives a vote right on each proposal, and each KNOW gives 1 voting power.
+- Make a proposal: costs $KNOW tokens.
+- Vote on a proposal: doesn't cost $KNOW tokens, but each token gives a vote right on each proposal, and each $KNOW gives 1 voting power.
 
 For more information on governance please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
 
 ## Data Providers
 
-Data providers are users who deposit one or more datasets in the catalog and/or in one or more data spaces. Their role is to offer datasets to be used by services and data applications to create valuable knowledge.
+Data providers are users who deposit one or more datasets in the catalog and/or in one or more Data Spaces. Their role is to offer datasets to be used by services and data applications to create valuable knowledge.
 
 They are paid by the consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
@@ -80,7 +80,7 @@ It is particularly recommended to deposit quality datasets and services because:
 
 ## Consumers
 
-Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to pay transaction fees, and possibly data providers, service providers, curator fees and data space taxes if applicable.
+Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to pay transaction fees, and possibly data providers, service providers, curator fees and Data Space taxes if applicable.
 
 Consumers can be:
 
@@ -91,7 +91,7 @@ Consumers can be:
 
 ### Curation Markets
 
-With the establishment of curation markets in OKP4 ecosystem, a whole new world of possibilities will be opening up. The new opportunity to participate in the network as a curator comes with many exciting adventures but also with potential risks.
+With the establishment of curation markets in OKP4 Ecosystem, a whole new world of possibilities will be opening up. The new opportunity to participate in the network as a curator comes with many exciting adventures but also with potential risks.
 
 What are curation markets?
 
@@ -108,9 +108,9 @@ Core Components of Curation Markets:
 
 ### Curators
 
-Curators do not need to possess complex technical skills or knowledge. All it takes is the ability to do transactions via Keplr. Similarly, curators are not required to stake a minimum amount of KNOW. Depending on the individual's risk tolerance, curation may be especially attractive for those who are able to accurately evaluate items and have a good understanding of Web3 and of the underlying mechanics of bonding curves.
+Curators do not need to possess complex technical skills or knowledge. All it takes is the ability to do transactions via Keplr. Similarly, curators are not required to stake a minimum amount of $KNOW. Depending on the individual's risk tolerance, curation may be especially attractive for those who are able to accurately evaluate items and have a good understanding of Web3 and of the underlying mechanics of bonding curves.
 
-In order for builders and Data Spaces to simply find an item, it must first be ranked. Ranking is a process in which items are put in competition with each other so that they can be found more quickly and it's easier to place trust in them.
+In order for Consumers and Data Spaces to simply find an item, it must first be ranked. Ranking is a process in which items are put in competition with each other so that they can be found more quickly and it's easier to place trust in them.
 
 Thus, if users had to guess which items to use, they would be less likely to find quality items on the first try. This is where curators come in.
 
@@ -118,7 +118,7 @@ Curators are essential to the decentralized economy on our protocol. They use th
 
 These people will be rewarded by earning a portion of the rewards that datasets and services generate. Curation is about identifying valuable pieces of information in a data stream (or in a service) and presenting it to the target audience in a way that adds value (mainly visibility and trust).
 
-OKP4 uses curation as an incentive mechanism to encourage network participants to identify items of a high-quality and to foster information sharing in the ecosystem.
+OKP4 uses curation as an incentive mechanism to encourage network participants to identify items of a high-quality and to foster information sharing in the Ecosystem.
 The curator role is ideal for all those that wish to become more active in the network than just being a Delegator. They can be community members, data consumers, developers, item providers...
 
 When signaling, curators can decide to signal a specific version of a dataset/service, or they can decide to use automatic migration through updates to new versions. If you decide to signal on a specific version, despite the update, your shares will always remain on that specific version.
@@ -127,7 +127,7 @@ Curation is risky. Do your due diligence to ensure that you only curate datasets
 
 ### Auto-Curation Priority
 
-Any provider can stake KNOW tokens on their data/service as a curation to oneself. It follows the same rules as any curator. The only change is that the provider will always have the first hand before the others.
+Any provider can stake $KNOW tokens on their data/service as a curation to oneself. It follows the same rules as any curator. The only change is that the provider will always have the first hand before the others.
 
 Data & Service Operation: When the provider will deposit his dataset/service, he will have to choose if he accepts or not the curators. If he has accepted them, when he makes his dataset/service available for use, the provider can, if he wants, buy shares before anyone else.
 
