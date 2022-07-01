@@ -6,9 +6,9 @@ sidebar_position: 4
 
 ## OKP4 Ecosystem
 
-OKP4 is a public blockchain protocol deploying a suite of data applications where communities are incentivized to share data and services confidently. OKP4 is a layer 1 customized for the knowledge economy where anyone, any group, any company, can join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful data applications.
+OKP4 is a public blockchain protocol deploying a suite of tools & data applications where communities are incentivized to share data and services confidently. OKP4 is a layer 1 customized for the knowledge economy where anyone, any group, any company, can join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful data applications.
 
-On the macro level, there is 4 key concepts to understand:
+On the macro level, there are key concepts to understand:
 
 - **OKP4 blockchain** (protocol)
 - **Data Spaces** (coordination mechanisms, rules & governance)
@@ -20,7 +20,7 @@ On the macro level, there is 4 key concepts to understand:
 - Indexes (any) data and services,
 - Exposes metadata of indexed data and services
 - Initiates data workflows
-- Enforce governance rules, including access rights and value transfers.
+- Enforces governance rules, including access rights and value transfers.
 
 It is the single source of truth that is used to build autonomous and decentralized data applications.
 
@@ -35,11 +35,11 @@ Datasets and services provide the elementary building blocks and tools that will
 
 ## Network participants
 
-On the **Blockchain layer**, there is Validators, Delegators and DAO participants.
+On the **Blockchain layer**, there are [Validators](/docs/whitepaper/roles#validators), [Delegators](/docs/whitepaper/roles#delegators) and [DAO Participants](/docs/whitepaper/roles#dao-participants).
 
-On the **Data Space layer**, there is Data providers and Service providers who agree to share based on Data Space's rules. There is Curators who can signal promising data and services. There is also Governors who can change these rules.
+On the **Data Space layer**, there are [Data & Service Providers](/docs/whitepaper/roles#data-providers) who agree to share based on Data Space's rules and [Consumers](/docs/whitepaper/roles#data-providers) who pay tokens to initiate workflows in order to create knowledge. There are also [Curators](/docs/whitepaper/roles#curators) who can signal promising data/services and [Governors](/docs/whitepaper/roles#curators) who can change these rules.
 
-On the **Data Application layer**, there is builders who develop and maintain the application, and also end-users who benefit from knowledge created through the whole OKP4 ecosystem.
+On the **Data Application layer**, there are Builders who develop and maintain the application, and also End-users who benefit from knowledge created through the whole OKP4 Ecosystem.
 
 ## Multi-layered governance
 

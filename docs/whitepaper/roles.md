@@ -80,7 +80,7 @@ It is particularly recommended to deposit quality datasets and services because:
 
 ## Consumers
 
-Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to retribute pay for transaction fees, and eventually data providers, service providers, curator fees and data space taxes if applicable.
+Consumers are users who will sign the transactions and pay the network in order to process workflows. They spend $KNOW to pay transaction fees, and possibly data providers, service providers, curator fees and data space taxes if applicable.
 
 Consumers can be:
 
@@ -123,7 +123,7 @@ The curator role is ideal for all those that wish to become more active in the n
 
 When signaling, curators can decide to signal a specific version of a dataset/service, or they can decide to use automatic migration through updates to new versions. If you decide to signal on a specific version, despite the update, your shares will always remain on that specific version.
 
-Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the token model section.
+Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the [Token Model section](/docs/whitepaper/token-model#risks).
 
 ### Auto-Curation Priority
 

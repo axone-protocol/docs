@@ -11,19 +11,19 @@ Decentralized data intermediaries will dominate centralized alternatives.
 
 OKP4's goal is to be the leading decentralized data intermediary by enabling a new wave of innovation & use cases through unique coordination features.
 
-To do that, we followed 7 principles to maximize opportunities and minimize risks & costs:
+To do that, we follow 7 principles to maximize opportunities and minimize risks & costs:
 
 ### Opportunity-maximization
 
-Onboard builders, contributors and users to create new use cases and share value.
+Onboard consumers, contributors and users to create new use cases and share value.
 
-- **Design for builders**: to maximize adoption through valuable data applications. Builders will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate on-boarding of builders though SDKs and docs, fast deployment through tools & templates, and community empowerment to create a thriving ecosystem.
+- **Design for consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate on-boarding of consumers though SDKs and docs, fast deployment through tools & templates, and community empowerment to create a thriving ecosystem.
 
 - **Design for contributors**: to maximize value created by data application by onboarding contributors. Value-sharing models and easy to use tools will incentivize participants in infinite ways, encouraging them to share data, algorithms, storage and computation towards a common goal.
 
-- **Design for freedom**: to maximize opportunities by aligning interest between providers, builders and users through freedom of innovation and customization.
+- **Design for freedom**: to maximize opportunities by aligning interest between providers, consumers and users through freedom of innovation and customization.
 
-- **Design for interoperability**: to maximize synergies at the blockchain level through cross-chain communication, at the ecosystem level thanks to agnosticism, and also at the Data Space level through interoperability of standards and governance synergies, and at the application level enabling applications to leverage multiple Data Spaces, or multiple applications leveraging the same Data Space.
+- **Design for interoperability**: to maximize synergies at the blockchain level through cross-chain communication, at the ecosystem level thanks to agnosticism, at the Data Space level through interoperability of standards or governance synergies, and also at the application level enabling applications to leverage multiple Data Spaces (or multiple applications leveraging the same Data Space).
 
 ### Risk-minimization
 
@@ -31,7 +31,7 @@ Let anyone build and contribute by minimizing trust and technical issues.
 
 - **Design for sovereignty**: raw data is never stored on-chain. Some metadata is, but only for features such as discoverability, value sharing & security. In some applications, data can be shared through privacy-preserving algorithms to provide a valuable output without transferring the data to another participant/user. That way, data providers can be rewarded without any risk of losing sovereignty over their data.
 
-- **Design for trustlessness**: every rule, rights and governance mechanisms can be enforced on-chain by the decentralized network of validators. Coordination between providers (data, algorithms, storage, computation), builders, users, curators and governance participants is autonomous, fluid and unstoppable.
+- **Design for trustlessness**: every rule, rights and governance mechanisms can be enforced on-chain by the decentralized network of validators. Coordination between providers (data, algorithms, storage, computation), consumers, users, curators and governance participants is autonomous, fluid and unstoppable.
 
 ### Cost-minimization
 
@@ -49,7 +49,7 @@ Besides, WHAT you can share, OKP4 is highly customizable in terms of HOW you can
 
 ### Scalable
 
-Its generic infrastructure makes it scalable by design, as workflow orchestration, computation and storage is done off-chain and is theoretically unlimited. Nevertheless, indexation, rule enforcement, governance and value-sharing is done on-chain. With a capacity of 10 000TPS, limits may be reached when dozens to hundreds of highly used data apps coexist on the OKP4 ecosystem. That is one of the reasons a roll-up strategy is implemented to enable layer-2 scalability and even more roll-up-specific functionalities (such as on-chain privacy features).
+Its generic infrastructure makes it scalable by design, as workflow orchestration, computation and storage is done off-chain and is theoretically unlimited. Nevertheless, indexation, rule enforcement, governance and value-sharing is done on-chain. With a capacity of 10 000 TPS (Transactions Per Second), limits may be reached when dozens to hundreds of highly used data apps coexist on the OKP4 ecosystem. That is one of the reasons a roll-up strategy is implemented to enable layer-2 scalability and even more roll-up-specific functionalities (such as on-chain privacy features).
 
 ### Decentralized
 
@@ -58,7 +58,7 @@ OKP4 blockchain is decentralized thanks to the Tendermint consensus and many val
 
 ### Permissionless
 
-Anyone can become a validator, delegator, governance participant, data, algorithm, storage and computation provider, builder, curator or user. Some Data Spaces may be restricted on the user & provider sides, but the infrastructure will always be open and permissionless, ensuring censorship-resistance at the foundation of the technology stack.
+Anyone can become a validator, delegator, governance participant, consumer, curator or a provider of data, algorithm, storage, or even computational power. Some Data Spaces may be restricted on the user & provider sides, but the infrastructure will always be open and permissionless, ensuring censorship-resistance at the foundation of the technology stack.
 
 ### Secure
 
@@ -66,7 +66,7 @@ OKP4 is designed for security at the blockchain level (due to its decentralized 
 
 ### Complex workflows
 
-A user/builder can design complex workflows such as thousands of datasets interact with hundreds of services to produce a single product or application. A set of tools is provided to enable anyone to easily build such workflows and innovate on how data can be used and shared with confidence.
+A user/consumer can design complex workflows such as thousands of datasets interact with hundreds of services to produce a single product or application. A set of tools is provided to enable anyone to easily build such workflows and innovate on how data can be used and shared with confidence.
 
 ### Synergetic
 
@@ -74,7 +74,7 @@ OKP4 is modular in terms of infrastructure, but also in terms of governance. Whi
 
 ### Incentivized
 
-To ensure that high-value applications can rely on the network to keep all of its functionalities listed above, OKP4 incentivizes validators, delegators, providers, curators, builders to ensure development, maintenance, involvement into the ecosystem. Incentives are designed to align individual interest with public interest through low inflation, fair value distribution and punishment of detrimental behaviors.
+To ensure that high-value applications can rely on the network to keep all of its functionalities listed above, OKP4 incentivizes validators, delegators, providers, curators, consumers to ensure development, maintenance, involvement into the ecosystem. Incentives are designed to align individual interest with public interest through low inflation, fair value distribution and punishment of detrimental behaviors.
 
 ## Concepts & definitions
 
@@ -85,7 +85,7 @@ To ensure that high-value applications can rely on the network to keep all of it
 - Bundle of rights & rules that regulates interactions between data, tokens and any service (storage, algorithms, computation...) shared by participants,
 - Governance mechanisms to adapt these rights and rules.
 
-In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Data Spaces can be nested and overlapping, so that a data provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
+In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via [semantic interoperability](https://en.wikipedia.org/wiki/Semantic_interoperability)) when necessary. Data Spaces can be nested and overlapping, so that a data provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
 
 **Dataverse**: Endless combination of interoperable, sometimes nested and overlapping Data Spaces where participants, assets and resources can interact and be used in applications.
 
@@ -97,7 +97,7 @@ And many more definitions:
 
 **Data lake**: A data lake is a centralized repository designed to store, process, and secure large amounts of structured, semi structured, and unstructured data.
 
-**Data silos**: A data silo is a repository of data that's controlled by one party and is isolated from the rest. It is typically stored in a standalone system and often is incompatible with other data sets. While "data silos" is a term usually used to only talk about data inside an organization, we use it also to qualify data that does not provide value outside the organization.
+**Data silos**: A data silo is a repository of data that is controlled by one party and is isolated from the rest. It is typically stored in a standalone system and often is incompatible with other datasets. While "data silos" is a term usually used to only talk about data inside an organization, we use it also to qualify data that does not provide value outside the organization.
 
 **Information**: Contextualized, aggregated and interpreted data.
 

@@ -22,7 +22,7 @@ In classical Byzantine Fault-Tolerant (BFT) algorithms, each node has the same w
 
 ### Consensus
 
-Tendermint is a partially synchronous BFT consensus protocol derived from the DLS consensus algorithm. It is notable for its simplicity, performance, and fork-accountability (the processes that caused the consensus to fail can be identified and punished according to the rules). The protocol requires a fixed known set of validators, where each validator is identified by their public key. Validators attempt to come to consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round-leader, or proposer, who proposes a block. The validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of validators, in proportion to their voting power.
+Tendermint is notable for its simplicity, performance, and fork-accountability (the processes that caused the consensus to fail can be identified and punished according to the rules). The protocol requires a fixed known set of validators, where each validator is identified by their public key. Validators attempt to come to consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round-leader, or proposer, who proposes a block. The validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of validators, in proportion to their voting power.
 Tendermint's security derives from its use of optimal Byzantine fault-tolerance via super-majority (>2/3) voting power and a locking mechanism.
 Together, they ensure that:
 
@@ -223,7 +223,7 @@ Ontologies can be used for a wider range of purpose, such interoperability, know
 
 :::
 
-OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_ (data spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
+OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_  (data spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
 
 The knowledge representation language chosen for the OKP4 is [RDF Schema](http://www.w3.org/TR/rdf-schema/) and [Web Ontology Language](http://www.w3.org/TR/owl2-overview/) on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
 

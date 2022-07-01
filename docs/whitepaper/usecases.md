@@ -5,6 +5,7 @@ sidebar_position: 13
 # Usecases
 
 All sectors are concerned at different scales.
+
 •	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers.
 •	Communities can leverage collective intelligence and crowdsource data.
 
@@ -30,7 +31,7 @@ Some Data Space will combine all theses strategies and opportunities. But of the
 ### 1. DAO-powered hedge fund
 
 The Data Space incentivize users to share data in order to predict price action. Shared data enables to gain an edge in the market by training a DAO-owned algorithm. The algorithm takes decisions on the market on how to manage the Data Space treasury. Data providers take a performance fee according to their performance.
-More data volume and diversity mean enables greater depth and breadth of analysis, enhanced originality and better signal/noise ratio.
+More data volume and diversity mean enables greater depth and breadth of analysis as well as enhanced originality.
 
 ### 2. & 3. Crypto-native Bloomberg terminal
 
