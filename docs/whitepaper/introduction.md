@@ -78,7 +78,7 @@ Gated data lakes are the norm today because we lacked the economic incentives t
 
 It is changing now, with OKP4.
 
-The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized. 
+The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized.
 
 Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
 

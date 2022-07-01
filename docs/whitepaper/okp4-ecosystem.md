@@ -42,20 +42,20 @@ Secondly, decentralization is also achieved by the ability of the protocol to be
 
 ## Data / Algorithms
 
-_Work in progress_
+*Work in progress*
 
 ## Storage, computation
 
-_Work in progress_
+*Work in progress*
 
 ## Mechanisms to connect/disconnect
 
-_Work in progress_
+*Work in progress*
 
 ## Datasets / algorithms / resource governance – sovereignty
 
-_Work in progress_
+*Work in progress*
 
 ## Security & Risks
 
-_Work in progress_
+*Work in progress*
