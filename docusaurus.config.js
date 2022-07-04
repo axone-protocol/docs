@@ -123,7 +123,12 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark'
-      }
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
     }),
 
   plugins: [
