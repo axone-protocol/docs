@@ -46,16 +46,16 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'whitepaper/abstract',
+            to: '/docs/whitepaper/abstract',
             position: 'left',
-            label: 'Whitepaper (Work in progress)'
+            label: 'Whitepaper (Work in progress)',
+            activeBasePath: "/docs/whitepaper"
           },
           {
-            type: 'doc',
-            docId: 'qna/qna',
+            to: '/docs/qna',
             position: 'left',
-            label: 'Q&A'
+            label: 'Q&A',
+            activeBasePath: "/docs/qna"
           },
           {
             href: 'https://discord.gg/GHNZh4SaJ3',
