@@ -53,6 +53,12 @@ const config = {
             label: 'Whitepaper (Work in progress)'
           },
           {
+            type: 'doc',
+            docId: 'qna/qna',
+            position: 'left',
+            label: 'Q&A'
+          },
+          {
             href: 'https://discord.gg/GHNZh4SaJ3',
             position: 'right',
             className: 'header-discord-link',
