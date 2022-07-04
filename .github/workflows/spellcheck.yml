@@ -2,8 +2,6 @@ name: Spell checking
 on:
   pull_request_target:
   push:
-  issue_comment:
-    types: [created]
 
 jobs:
   spelling:
