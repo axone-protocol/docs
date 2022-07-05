@@ -10,10 +10,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      - uses: check-spelling/check-spelling@main
+      - uses: check-spelling/check-spelling@v0.0.20-alpha7
         id: spelling
         with:
-          experimental_apply_changes_via_bot: 1
           experimental_path: docs/whitepaper
           extra_dictionaries:
             cspell:cpp/cpp.txt
