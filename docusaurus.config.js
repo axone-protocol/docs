@@ -24,7 +24,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          sidebarCollapsed: false,
           editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
           remarkPlugins: [require('mdx-mermaid')]
         },
@@ -47,10 +46,16 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'whitepaper/abstract',
+            to: '/docs/whitepaper/abstract',
             position: 'left',
-            label: 'Whitepaper (Work in progress)'
+            label: 'Whitepaper (Work in progress)',
+            activeBasePath: "/docs/whitepaper"
+          },
+          {
+            to: '/docs/faq',
+            position: 'left',
+            label: 'FAQ',
+            activeBasePath: "/docs/faq"
           },
           {
             href: 'https://discord.gg/GHNZh4SaJ3',
@@ -117,7 +122,13 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark'
-      }
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
     }),
 
   plugins: [
