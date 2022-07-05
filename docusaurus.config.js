@@ -52,10 +52,10 @@ const config = {
             activeBasePath: "/docs/whitepaper"
           },
           {
-            to: '/docs/qna',
+            to: '/docs/faq',
             position: 'left',
-            label: 'Q&A',
-            activeBasePath: "/docs/qna"
+            label: 'FAQ',
+            activeBasePath: "/docs/faq"
           },
           {
             href: 'https://discord.gg/GHNZh4SaJ3',

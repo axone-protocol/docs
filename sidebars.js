@@ -13,7 +13,11 @@ const sidebars = {
         }
       ]
     },
-    'qna/qna'
+    {
+      type: 'doc',
+      id: 'faq/faq',
+      label: 'FAQ'
+    }
   ]
 }
 

@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Question & Answers
+# Frequently Asked Questions
 
 _Work in progress_
