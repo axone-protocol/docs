@@ -19,7 +19,7 @@ The cliff and vesting terms are the following:
 |              |  TGE |   Cliff   |          Vesting         |
 |--------------|:----:|:---------:|:------------------------:|
 | Seed         |  5%  |  6 months | 24 months linear vesting |
-| Public Sale  |  10% |     /     |  6 months linear vesting |
+| Public Sale  |  10% |     /     | 12 months linear vesting |
 | Foundation   |  10% |     /     | 60 months linear vesting |
 | Advisors     |  0%  | 12 months | 36 months linear vesting |
 | Team         |  0%  | 12 months | 36 months linear vesting |
