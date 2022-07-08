@@ -14,7 +14,7 @@ The OKP4 protocol enables anyone to create Data Spaces where communities can agr
 
 OKP4 aims to provide the perfect environment for developer to build the next generation of data applications that will bring million of users to web3.
 
-Through trust-minimized data sharing, a new land of opportunities emerge for people and companies, where there is no trusted third party designed to extract value from its participants or who can unilaterally change rules. 
+Through trust-minimized data sharing, a new land of opportunities emerge for people and companies, where there is no trusted third party designed to extract value from its participants or who can unilaterally change rules.
 
 The technology: the blockchain (Proof of Stake layer 1 in the Cosmos ecosystem), the ecosystem, the smart contracts and the development kits enable builders and communities to seize new opportunities, way beyond Decentralized Finance!
 
