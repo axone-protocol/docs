@@ -2,6 +2,8 @@
 sidebar_position: 6
 ---
 
+import { Mermaid } from 'mdx-mermaid/Mermaid'
+
 # OKP4 Ecosystem
 
 ## Overview
@@ -25,6 +27,42 @@ The Ecosystem is based on a fully decentralized open and agnostic architecture, 
 ### The workflow engine
 
 The workflow engine is a special service of the protocol which orchestrates the invocations of other services. It is a reflex component of the Ecosystem that listens to the transactions of the blockchain and is triggered on command, when a particular transaction of execution request is registered in the blockchain.
+
+The following diagram describes the different possible interactions during the execution of a workflow with a single service.
+
+<Mermaid chart={`sequenceDiagram
+    autonumber
+    actor A as Alice
+    participant O as OKP4 blockchain
+    participant W as Workflow Engine
+    participant S as Service
+    par
+        A-)O: tx: execute-workflow(params)
+    and processing loop
+        loop
+            W->>O: query next tx
+            O-->>W: tx
+            alt tx is execute-workflow
+                W->>O: retrieve service metadata
+                O-->>W: service metadata
+                W-)O: tx: report-workflow-state
+                W->>W: process service
+                W->>S: call service(params)
+                S-->>W: result
+                W-)O: tx: report-workflow-state
+            else
+            end
+        end
+    end
+    
+`} />
+
+- (1) - The use case starts with the submission of a transaction requesting to execute a workflow.
+- (2) & (3) - In parallel, the workflow engine regularly queries the blockchain to retrieve the latest validated transactions.
+- (4) & (5) - If the transaction is a request to execute a workflow, the workflow engine retrieves the metadata describing the service to invoke. For simplicity, we consider here that the invoked workflow consists of a single service.
+- (6) - Before invoking the service, the workflow engine records a status transaction in the blockchain. This information is important because it helps to ensure that the contract established between the customer and the various suppliers (data, services, infrastructure, etc.) is honored.
+- (7), (8) & (9) - Based on the service metadata, the workflow engine is able to call the service.
+- (10) - After invoking the service, the workflow engine records a status transaction (success, failure) in the blockchain.
 
 ### The knowledge graph
 
