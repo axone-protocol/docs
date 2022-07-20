@@ -16,7 +16,7 @@ At OKP4, we propose generic templates, for both the data sharing and marketplace
 
 ## Introducing: business model templates
 
-Different data sharing business models can be implemented using generic templates proposed by OKP4. These generic templates are fully parameterisable according to users needs such as: depth of (non)operating workflow of services considered for rewarding data providers, the importance of datasets for new data creation, the pricing algorithms of the data marketplaces, etc.
+Different data sharing business models can be implemented using generic templates proposed by OKP4. These generic templates are fully customizable according to users needs such as: depth of (non)operating workflow of services considered for rewarding data providers, the importance of datasets for new data creation, the pricing algorithms of the data marketplaces, etc.
 
 ## Generic templates description
 
@@ -32,9 +32,9 @@ The generic template for service-based pricing considers that the value associat
 
 This template has the following parameters:
 
-- an offset (&xi; > 0), which allows the computation of the knowledge value, i.e created dataset value, as a function of the cost of the associated workflow of services operating on shared datasets
-- weights (&alpha;<sub>in</sub> >=0), which characterize the importance of each shared dataset in the workflows of services linked to the created dataset
-- a last rewarded rank (N >=0), which allows the computation of rewards for data providers, across the different workflows, up to this rank
+- An offset (&xi; > 0), which allows the computation of the knowledge value, i.e created dataset value, as a function of the cost of the associated workflow of services operating on shared datasets
+- Weights (&alpha;<sub>in</sub> >=0), which characterize the importance of each shared dataset in the workflows of services linked to the created dataset
+- A last rewarded rank (N >=0), which allows the computation of rewards for data providers, across the different workflows, up to this rank
 
 ### Data-based pricing template
 
@@ -44,6 +44,6 @@ Another approach to price data is to consider datasets and services as atomic un
 
 This template has the following parameters:
 
-- auction time-interval, which sets the start and end of the auction bidding process
-- dataset reserved price, which set a price threshold under which a dataset will not be sold
-- weight parameters (&psi; and &#632; > 1), which allows dataset price to be defined as a function of time and number of purchases.
+- Auction time-interval, which sets the start and end of the auction bidding process
+- Dataset reserved price, which set a price threshold under which a dataset will not be sold
+- Weight parameters (&psi; and &#632; > 1), which allows dataset price to be defined as a function of time and number of purchases

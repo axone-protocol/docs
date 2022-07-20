@@ -8,28 +8,24 @@ import OntologySvg from './okp4-ontology.svg';
 
 # OKP4 Blockchain
 
-## Overview
-
-The blockchain is the single source of truth that is used to coordinate participants of the Dataverse.
-
 ## Consensus: Tendermint
 
 In this section we briefly describe the Tendermint consensus protocol.
 
 ### Validators
 
-In classical Byzantine Fault-Tolerant (BFT) algorithms, each node has the same weight. In Tendermint, nodes have an amount of voting power, and are called validators. Validators participate in the consensus protocol by broadcasting cryptographic signatures, or votes, to agree upon the next block. According to our model, the voting power of each validator is determined by the amount of staking tokens bonded as collateral.
+In classical Byzantine Fault-Tolerant (BFT) algorithms, each node has the same weight. In Tendermint, nodes have an amount of voting power, and are called Validators. Validators participate in the consensus protocol by broadcasting cryptographic signatures, or votes, to agree upon the next block. According to our model, the voting power of each validator is determined by the amount of staking tokens bonded as collateral.
 
 ### Consensus
 
-Tendermint is notable for its simplicity, performance, and fork-accountability (the processes that caused the consensus to fail can be identified and punished according to the rules). The protocol requires a fixed known set of validators, where each validator is identified by their public key. Validators attempt to come to consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round-leader, or proposer, who proposes a block. The validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of validators, in proportion to their voting power.
+Tendermint is notable for its simplicity, performance, and fork-accountability (the processes that caused the consensus to fail can be identified and punished according to the rules). The Protocol requires a fixed known set of Validators, where each Validator is identified by their public key. Validators attempt to come to consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round-leader, or proposer, who proposes a block. The Validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of Validators, in proportion to their voting power.
 Tendermint's security derives from its use of optimal Byzantine fault-tolerance via super-majority (>2/3) voting power and a locking mechanism.
 Together, they ensure that:
 
-- ≥1/3 voting power must be Byzantine to cause a violation of safety, where more than two values are committed.
-- If any set of validators ever succeeds in violating safety, or even attempts to do so, they can be identified by the protocol. This includes both voting for conflicting blocks and broadcasting unjustified votes.
+- ≥1/3 voting power must be Byzantine to cause a violation of safety, where more than two values are committed
+- If any set of validators ever succeeds in violating safety, or even attempts to do so, they can be identified by the protocol. This includes both voting for conflicting blocks and broadcasting unjustified votes
 
-Despite its strong guarantees, Tendermint provides exceptional performance by providing thousands transactions per second, with commit latencies on the order of 1 to 2 seconds. Notably, performance of well over a thousand transactions per second is maintained even in harsh adversarial conditions, with validators crashing or broadcasting maliciously crafted votes.
+Despite its strong guarantees, Tendermint provides exceptional performance by providing thousands transactions per second, with commit latencies on the order of 1 to 2 seconds. Notably, performance of well over a thousand transactions per second is maintained even in harsh adversarial conditions, with Validators crashing or broadcasting maliciously crafted votes.
 
 ### Light Clients
 
@@ -50,11 +46,11 @@ For more informations:
 
 A large number of blockchains in the Cosmos Ecosystem share a common set of services, either because they are provided by layer 0 of the Cosmos SDK or because they are standard in the Ecosystem.
 
-This section lists the main services that are available in the OKP4 blockchain.
+This section lists the main services that are available in the OKP4 Blockchain.
 
 ### From the Cosmos SDK
 
-The OKP4 blockchain is based on the [Cosmos SDK](https://cosmos.network) layer 0 and, as such, comes with a set of functionalities any blockchain application needs. These functionalities are grouped into _modules_, each module being responsible for a well-defined functional scope.
+The OKP4 Blockchain is based on the [Cosmos SDK](https://cosmos.network) layer 0 and, as such, comes with a set of functionalities any blockchain application needs. These functionalities are grouped into _modules_, each module being responsible for a well-defined functional scope.
 
 The list of integrated modules available in the OKP4 blockchain can be found in the [Cosmos SDK documentation](https://docs.cosmos.network/main/modules/). The main ones are briefly described hereafter.
 
@@ -64,35 +60,35 @@ The `bank` module is responsible for handling multi-asset coin transfers between
 
 #### Staking
 
-The `staking` module enables the OKP4 blockchain to support an advanced Proof-of-Stake (PoS) system where holders of KNOWs can become validators and delegate tokens to validators.
+The `staking` module enables the OKP4 Blockchain to support an advanced Proof-of-Stake (PoS) system where holders of $KNOWs can become Validators or delegate tokens to Validators.
 
 #### Governance
 
-The `governance` module enables the OKP4 blockchain to establish a governance on-chain. In this system, holders of KNOWs can vote on proposals on a 1 token 1 vote basis.
+The `governance` module enables the OKP4 Blockchain to establish a governance on-chain. In this system, holders of $KNOWs can vote on proposals on a 1 token 1 vote basis.
 
 ### From the Cosmos Ecosystem
 
 ### Wasm
 
-`wasm` is a module plugable into the [Cosmos SDK](https://cosmos.network), provided by the [CosmWasm](https://docs.cosmwasm.com) project, that enables the OKP4 blockchain to provide a smart contracting platform through which the functionalities of the OKP4 blockchain is implemented, operated.
+`wasm` is a module plugable into the [Cosmos SDK](https://cosmos.network), provided by the [CosmWasm](https://docs.cosmwasm.com) project, that enables the OKP4 Blockchain to provide a smart contracting platform through which the functionalities of the OKP4 Blockchain is implemented, operated.
 
 ### CosmWasm contracts
 
 The [CosmWasm Token](https://github.com/CosmWasm/cw-tokens) and [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) repositories are a collection of specification and contracts within [CosmWasm](https://docs.cosmwasm.com) virtual machine.
 
-In the context of the OKP4 blockchain, the following smart contracts (and/or specifications) are considered (non-exhaustive and subject to evolve):
+In the context of the OKP4 Blockchain, the following smart contracts (and/or specifications) are considered (non-exhaustive and subject to evolve):
 
 - `cw20-base`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing a standard API for tokens, with the following functionalities: transfer tokens from one account to another, get the current token balance of an account, get the total supply of the token available on the network...
 
 - `cw20-atomic-swap`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) implementing atomic swaps for both native and `cw20` tokens.
 
-- `cw20-staking`:  A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) provides staking derivatives.
+- `cw20-staking`:  A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) that provides staking derivatives.
 
-- `cw20-streams`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) allowing a cw20 payment to be vested continuously over time.
+- `cw20-streams`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) allowing a `cw20` payment to be vested continuously over time.
 
-- `cw20-bonding`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) that demonstrate extensibility of cw20-base contract by adding [bonding curves functions](https://yos.io/2018/11/10/bonding-curves/).
+- `cw20-bonding`: A smart contract (compliant with [cw20](https://crates.io/crates/cw20) specification) that demonstrate extensibility of `cw20-base` contract by adding [bonding curves functions](https://yos.io/2018/11/10/bonding-curves/).
 
-- `cw3-multisig`: A smart contract (compliant with [cw3](https://crates.io/crates/cw3) specification) for multiSig/voting.
+- `cw3-multisig`: A smart contract (compliant with [cw3](https://crates.io/crates/cw3) specification) for multisig/voting.
 
 - `cw4-group`: A smart contract (compliant with [cw4](https://crates.io/crates/cw4) specification) for storing group membership, which can be combined with `cw3` multisigs.
 
@@ -100,23 +96,23 @@ In the context of the OKP4 blockchain, the following smart contracts (and/or spe
 
 ### Oracles
 
-Similar to the [Terra blockchain](https://www.terra.money/) and its [Oracle module](https://docs.wcdc.me/docs/dev-spec-oracle), the Oracle module provides the OKP4 blockchain with an up-to-date and accurate price feed of exchange rates of $KNOW against other currencies.
+Similar to the [Terra blockchain](https://www.terra.money/) and its [Oracle module](https://docs.wcdc.me/docs/dev-spec-oracle), the Oracle module provides the OKP4 Blockchain with an up-to-date and accurate price feed of exchange rates of $KNOW against other currencies.
 
-Some other Oracles networks may be used in the future for enhanced functionalities (e.g. Chainlink, Band...)
+Some other Oracles networks may be used in the future for enhanced functionalities (e.g. Chainlink, Band...).
 
 ## OKP4 Services
 
 ### Overview
 
-The functionalities of the OKP4 blockchain are divided by nature according to their responsibility and functional scope.
+The functionalities of the OKP4 Blockchain are divided by nature according to their responsibility and functional scope.
 
-The following diagram shows the different specific parts of the OKP4 blockchain, which are detailed in the following sections.
+The following diagram shows the different specific parts of the OKP4 Blockchain, which are detailed in the following sections.
 
 <Drawio content={blockchainServicesSvg} />
 
 #### The question of implementation
 
-A choice arises as to how services are implemented in the OKP4 blockchain. There are two choices:
+A choice arises as to how services are implemented in the OKP4 Blockchain. There are two choices:
 
 - Use a _module_, a powerful extension mechanism provided by the Cosmos SDK that allows to implement features natively in the blockchain.
 - Use a (stateful) _Smart Contract_, an extension mechanism offered by a Virtual Machine capable of interpreting an assembly-like language in the blockchain. For this, [CosmWasm](https://cosmwasm.com/) is the option.
@@ -127,12 +123,12 @@ The following table compares the two approaches according to different criteria:
 |-------------------------|------------|----------|
 | Speed of Development    | +          | - ([Rust](https://www.rust-lang.org/)) |
 | Customization           | +          | -        |
-| Performance             | +          | ?        |
+| Performance             | +          | ~        |
 | Strict Resource Control | -          | +        |
 | Ease of maintenance     | -          | +        |
 | Modularity              | -          | +        |
 
-For the OKP4 blockchain, we consider a Smart Contract (CosmWasm) implementation strategy by default, and for specific cases, a native implementation per module in the blockchain.
+For the OKP4 Blockchain, we consider a Smart Contract (CosmWasm) implementation strategy by default, and for specific cases, a native implementation per module in the blockchain.
 
 ### Data Space
 
@@ -160,17 +156,17 @@ The module `logic` introduces into the blockchain an "engine" that is powerful e
 
 ## Governance / DAO
 
-The DAO and governance space has seen rapid and drastic changes in recent years. OKP4 will need to be flexible to learn and keep up with the trend. OKP4 DAO is operated by a distributed organization that requires a well-defined governance mechanism in order to coordinate various changes to the blockchain such as software upgrades and constitutional amendments. The protocol's operating rules allow for cohesion between stakeholders on all types of issues such as theft, bugs, management, etc., allowing for faster and cleaner resolution or management.
+The DAO and governance space has seen rapid and drastic changes in recent years. OKP4 will need to be flexible to learn and keep up with the trend. OKP4 DAO is operated by a distributed organization that requires a well-defined governance mechanism in order to coordinate various changes to the blockchain such as software upgrades and constitutional amendments. The Protocol's operating rules allow for cohesion between stakeholders on all types of issues such as theft, bugs, management, etc., allowing for faster and cleaner resolution or management.
 
-Validators and any staked $KNOW holders are eligible to vote on all governance proposals that may change predefined system parameters, vote on changes to the rules that govern DAO policies, coordinate upgrades, propose improvements, extensions or changes for the protocol. In addition, ALL validators are responsible for voting on ALL proposals.
+Validators and any staked $KNOW holders are eligible to vote on all governance proposals that may change predefined system parameters, vote on changes to the rules that govern DAO policies, coordinate upgrades, propose improvements, extensions or changes for the Protocol. In addition, ALL Validators are responsible for voting on ALL proposals.
 
-If the validator does not vote on a proposal within the time limit, he/she will be automatically disabled for a period of time (1 week by default). Delegators automatically inherit the vote of the delegated validator. This vote can be changed manually.
+If the validator does not vote on a proposal within the time limit, he/she will be automatically disabled for a period of time (1 week by default). Delegators automatically inherit the vote of the delegated Validator. This vote can be changed manually.
 
 Each Data Space can also have its own rules (Rulebook) and its own governance mechanism that allows users to have freedom and potential to experiment without permissions. For more information please click [here](/docs/whitepaper/data-spaces#ds-governance).
 
-The DAO will have its own treasury in order to encourage development and improvements of the protocol (grants), to encourage liquidity providing, to deposit more liquidity on an exchanges if needed, provide insurance to users...
+The DAO will have its own treasury in order to encourage development and improvements of the Protocol (grants), to encourage liquidity providing, to deposit more liquidity on an exchanges if needed, provide insurance to users...
 
-In order to discuss and work on the proposals, a forum will be made available on the block explorer. Once they are well constructed and the required amount has been deposited, they will be submitted to a vote.
+In order to discuss and work on the proposals, a forum will be made available on the Block Explorer. Once they are well constructed and the required amount has been deposited, they will be submitted to a vote.
 
 The rules are written in the Governance section of the Token model, click [here](/docs/whitepaper/token-model#governance).
 
@@ -180,18 +176,18 @@ In order to offer the possibility to anyone to make a voting proposal, we introd
 
 ### Voting Parameters
 
-- Minimum deposit: 600 $KNOW. Subject to change depending on the price of the token and the choices of the DAO.
-- Maximum deposit period: 14 days. After this period, if the minimum deposit is not reached, the proposal is rejected.
-- Voting period: 5 days.
-- Quorum: 30%. Minimum participation depending on the number of tokens staked by the validators.
-- Threshold: 50%. Validating majority.
-- Veto threshold: 33%. Option in the vote to reduce the threshold.
+- Minimum deposit: 600 $KNOW. Subject to change depending on the price of the token and the choices of the DAO
+- Maximum deposit period: 14 days. After this period, if the minimum deposit is not reached, the proposal is rejected
+- Voting period: 5 days
+- Quorum: 30%. Minimum participation depending on the number of tokens staked by Validators
+- Threshold: 50%. Validating majority
+- Veto threshold: 33%. Option in the vote to reduce the threshold
 
 ## Initial Parameters
 
 Bloc time: 6.5s
 
-Block reward: For more details click [here](/docs/whitepaper/tokenomics#emission).
+Block reward: For more details click [here](/docs/whitepaper/tokenomics#emission)
 
 Token release: daily
 
@@ -219,7 +215,7 @@ Ontologies can be used for a wider range of purpose, such interoperability, know
 
 :::
 
-OKP4 uses an ontology to describe and define the different forms of vocabularies used in the protocol in a standard format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
+OKP4 uses an ontology to describe and define the different forms of vocabularies used in the Protocol in a standard format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.   
 
 The knowledge representation language chosen for the OKP4 is [RDF Schema](http://www.w3.org/TR/rdf-schema/) and [Web Ontology Language](http://www.w3.org/TR/owl2-overview/) on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
 
@@ -233,7 +229,7 @@ The ontology also provides a complete living understanding and knowledge of the 
 
 ### Ontology is at the heart of the blockchain
 
-Ontology has a special place in the OKP4 protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. Therefore, the blockchain is the only source of truth and any dApp can consult the semantic information that has been added, modified or deleted in the system.
+Ontology has a special place in the OKP4 Protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. Therefore, the blockchain is the only source of truth and any dApp can consult the semantic information that has been added, modified or deleted in the system.
 
 For example, the creation of a new Data Space requires a metadata profile that describes and characterizes the Data Space created. This creation is performed by a blockchain transaction containing the encoded RDF description conforming to the formal model: 
 

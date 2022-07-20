@@ -12,8 +12,8 @@ Data Spaces are ecosystems for the seamless sharing of data and services that in
 
 A Data Space is an abstraction that comprises:
 
-- Bundle of rights & rules that regulates interactions between data, algorithms and resources shared by participants,
-- Governance mechanisms to adapt these rules.
+- Bundle of rights & rules that regulates interactions between data, algorithms and resources shared by participants
+- Governance mechanisms to adapt these rules
 
 A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
 
@@ -23,9 +23,9 @@ In a Data Space, datasets and algorithms are not stored centrally but at source 
 
 ## Data Space technical description
 
-The OKP4 protocol allows to build highly customized Data Spaces and to manage them.
+The OKP4 Protocol allows to build highly customized Data Spaces and to manage them.
 
-Thanks to the OKP4 development kit, anyone can create and design Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules.
+Thanks to the OKP4 Development Kit, anyone can create and design Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules.
 
 :::tip  
 OKP4 Development Kit is designed to give as much freedom as possible for developers, data scientists and communities at large. Freedom of development, freedom of business models, freedoms of standards... freedom of innovation.
@@ -40,24 +40,24 @@ Once the Data Space is created through the Development Kit, the governance rules
 
 A Data Space is governed by a bundle of rights and rules that define the permitted interactions between data, algorithms, resources and users.
 
-The rules can refer to data management, retribution and business model or technical requirements for instance. All the rules are totally customizable.
+The rules can refer to data management, retribution, business model or technical requirements for instance. All the rules are totally customizable.
 
 ### Examples of rules
 
 **Data management**
 
-- All metadata of datasets and services must be described.
-- Restrictions on the license of the dataset.
-- Only one type of actors has access to the raw data.
+- All metadata of datasets and services must be described
+- Restrictions on the license of the dataset
+- Only one type of actors has access to the raw data
 
 **Technical requirements**
 
-- Each data provider stores its own data.
+- Each data provider stores its own data
 
 **Business models**
 
-- Retribution of the contributors according to the template XXX: Open data are not retributed and other datasets are retributed in function of the service consumption.
-- Retribution of the contributor according to the template “Data Marketplace”: each provider evaluates the price of its data or services.
+- Retribution of contributors according to the template XXX: Open data are not retributed and other datasets are retributed in function of the service consumption
+- Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its data or services
 
 Governance mechanisms allow to adapt these rules (See next section).
 
@@ -72,15 +72,15 @@ The governance precises the public or private nature of a Data Space. A public D
 
 Besides, each Data Space decides what are the governance mechanism to change the rules. For instance, it can be a process of proposition and vote by all the members of the Data Space.
 
-Note that the decentralized governance of the OKP4 protocol still allows users to create centralized Data Spaces. Indeed, the governance of a DS can be in the hands of one or several chosen or elected members.
+Note that the decentralized governance of the OKP4 Protocol still allows users to create centralized Data Spaces. Indeed, the governance of a Data Space can be in the hands of one or several chosen or elected members.
 
 :::note
 
 In a nutshell, the governance of a Data Space defines the following:
 
-- The visibility of the Data Space (public, private, secret).
-- The nature of participants.
-- A set of rules that organizes _life_ in the Data Space (the conditions of access, the operations that are allowed or prohibited).
-- A rules amendment process.
+- The visibility of the Data Space (public or private)
+- The nature of participants
+- A set of rules that organizes _life_ in the Data Space (the conditions of access, the operations that are allowed or prohibited)
+- A rules amendment process
 
 :::

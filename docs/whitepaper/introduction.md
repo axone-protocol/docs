@@ -22,7 +22,7 @@ Data is a non-rival immaterial asset; it can easily be used and infinitely dupli
 
 At OKP4, we strongly believe that knowledge is essential to common good and that it should be accessible to everyone with minimum constraint. Data must be shared to multiply aggregations and contextualizations to create value-added and usable knowledge for all.
 
-Though they have enhanced our live in many ways, traditional trusted third parties have also created a dependency that limits us. The Web 2.0 value chain is based on providers and consumers who enrich platform aggregators with their data, without really getting much in return. The interests of all parties are not aligned and so it becomes an obstacle to data sharing.
+Though they have enhanced our lives in many ways, traditional trusted third parties have also created a dependency that limits us. The web 2.0 value chain is based on providers and consumers who enrich platform aggregators with their data, without really getting much in return. The interests of all parties are not aligned and so it becomes an obstacle to data sharing.
 
 Companies want to use Big Data, they produce data, but they don’t know how to exploit it properly. They lack technical skills, they don’t trust the aggregators and the data they contribute with is not rewarded at its fair value.
 
@@ -82,22 +82,22 @@ The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-
 
 Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
 
-OKP4 protocol not only enables the creation of Data Spaces. It also maximizes data sharing, based on Web 3.0 value chain, where providers and consumers get optimal compensation for their contribution, in a trustworthy environment. The OKP4 protocol is a community-run technology using blockchain, smart contracts and the $KNOW cryptocurrency.
+OKP4 protocol not only enables the creation of Data Spaces. It also maximizes data sharing, based on web 3.0 value chain, where providers and consumers get optimal compensation for their contribution, in a trustworthy environment. The OKP4 Protocol is a community-run technology using blockchain, smart contracts and the $KNOW cryptocurrency.
 
 The traditional business models based upon data exchange need to evolve. As a society we need to let go of the dominant model of selling datasets and access to data flows at fixed prices. The OKP4 protocol enables data sharing without exchange. In other words, only insights coming from different services (algorithms, tools, visualization…) is accessible to the users, not the raw data; but according to the rules and usage this is still possible. Added to the customized Data Space’s governance, this brings confidence and also widens the scope of possibilities to innovate with economic models.
 
 ### The features of the OKP4 Protocol
 
-We have designed the OKP4 protocol to be open, decentralized and auditable. Our solution is based on 4 products:
+We have designed the OKP4 Protocol to be open, decentralized and auditable. Our solution is based on 4 products:
 
 #### **OKP4 Blockchain**: The layer 1 for data sharing
 
 A public blockchain protocol designed specifically to handle the complexity of trustless data sharing and value sharing.
 
-- Decentralization and trust guaranteed by the Tendermint Consensus & our native token $KNOW.
-- An open-source network controlled by its stakeholders.
-- A vibrant Smart Contract Hub powered by CosmWasm.
-- IBC (Inter-Blockchain Protocol) enabling seamless communication with other blockchains.
+- Decentralization and trust guaranteed by the Tendermint Consensus & our native token $KNOW
+- An open-source network controlled by its stakeholders
+- A vibrant Smart Contract Hub powered by CosmWasm
+- IBC (Inter-Blockchain Protocol) enabling seamless communication with other blockchains
 
 #### **OKP4 Ecosystem**: Empower the Dataverse
 
@@ -107,10 +107,10 @@ Anyone can plug its own infrastructure into the Ecosystem and connect it through
 
 It allows anyone to create and design Data Space with as much freedom as possible. For developers, data scientists and communities at large:
 
-- Customize Data Space governance with no-code tools & templates.
-- Build dApps from softwares to interfaces.
-- Use or provide components & resources in the OKP4 Ecosystem.
+- Customize Data Space governance with no-code tools & templates
+- Build dApps from softwares to interfaces
+- Use or provide components & resources in the OKP4 Ecosystem
 
 #### **OKP4 Dataverse**
 
-User-friendly tools to share, contribute, benefit and earn (wallet/browser extension, blockchain explorer, Dataverse portal, catalog of dApps, governance interfaces, etc.). These tools will allow to interact with the blockchain and with the Ecosystem
+User-friendly tools to share, contribute, benefit and earn (wallet/browser extension, blockchain explorer, Dataverse portal, catalog of dApps, governance interfaces, etc.). These tools will allow to interact with the blockchain and with the Ecosystem.

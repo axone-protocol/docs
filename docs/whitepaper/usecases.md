@@ -6,8 +6,8 @@ sidebar_position: 13
 
 All sectors are concerned at different scales.
 
-•	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers.
-•	Communities can leverage collective intelligence and crowdsource data.
+•	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers
+•	Communities can leverage collective intelligence and crowdsource data
 
 ## Agriculture
 

@@ -29,7 +29,7 @@ The cliff and vesting terms are the following:
 
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
 
-The additional 150M tokens are released as block rewards (also called staking rewards) for validators and delegators over the 80 years following the launch.
+The additional 150M tokens are released as block rewards (also called staking rewards) for Validators and Delegators over the 80 years following the launch.
 
 Here are the details regarding the different allocations:
 
@@ -41,7 +41,7 @@ These tokens are distributed to investors in the seed round and the public sale 
 
 ### Team
 
-In order to build a world-class team, these tokens will reward the work investment into the project. These tokens will be split between founders, associates and current and future team members. It is also a way to increase the retention of the 30 employees over the distribution period so that the roadmap goes on as planned.
+In order to build a world-class team, these tokens will reward the work investment into the project. These tokens will be split between founders, associates, current and future team members. It is also a way to increase the retention of the employees over the distribution period so that the roadmap goes on as planned.
 
 ### Advisors
 
@@ -49,9 +49,9 @@ These tokens are reserved for advisors who accompany us throughout the developme
 
 ### DAO Treasury
 
-- Grants: Our open-source protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
+- Grants: our open-source Protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the Protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
 - LP incentives: Liquidity Deposit Incentive Program offering a number of tokens in monthly rewards for liquidity providers. Liquidity providers earn rewards based on their percentage share of the overall liquidity pool.
-- Liquidity DEXs: In a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
+- Liquidity DEXs: in a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
 
 ### Liquidity
 
@@ -61,14 +61,14 @@ Owned by the DAO to provide liquidity on DEXs and distributed to the foundation 
 
 This strategic reserve will be controlled by a multisig comprised of foundation members. Initially composed of members from the development team and Cosmos community, it is subject to expansion and transparent decision-making. The funds will focus on many initiatives, including:
 
-- Research: Research will be investigated by the foundation (or by scientists working for the foundation), with a view to finding new areas of improvement and creation for the protocol and its surroundings. Most of what will be funded will be proposed as grants via the foundation.
-- Development: In a similar way than DAO Grants, these will be proposed by the foundation and the proposals will be reviewed by internal teams and multisig holders. The grants will be a little more oriented towards the financing of projects on the Ecosystem, interfaces... for development teams for the Ecosystem. Validators support could also be provided through delegation for providing relayer services, building out explorers, maintaining open source tooling and deploying dashboards...
-- Marketing: A part will be reserved for marketing to make known the OKP4 protocol and to create a worldwide community. The marketing and communication activities are mainly focused on building a network of data providers, services providers and builders, but will also be geared towards a crypto community. We will focus the campaign mainly on two axes: one towards the traditional industry, and the other on the blockchain and cryptocurrency industry.
-- Ecosystem incentives: Any kind of incentive to develop the Ecosystem. For example, hackatons, events, conferences, on-chain competitions...
+- Research: research will be investigated by the foundation (or by scientists working for the foundation), with a view to finding new areas of improvement and creation for the Protocol and its surroundings. Most of what will be funded will be proposed as grants via the foundation.
+- Development: in a similar way than DAO Grants, these will be proposed by the foundation and the proposals will be reviewed by internal teams and multisig holders. The grants will be a little more oriented towards the financing of projects on the Ecosystem, interfaces... for development teams for the Ecosystem. Validators support could also be provided through delegation for providing relayer services, building out explorers, maintaining open source tooling and deploying dashboards...
+- Marketing: a part will be reserved for marketing to make known the OKP4 Protocol and to create a worldwide community. The marketing and communication activities are mainly focused on building a network of Data Providers, Services Providers, Consumers and Builders, but will also be geared towards a crypto community. We will focus the campaign mainly on two axes: one towards the traditional industry, and the other on the blockchain and cryptocurrency industry.
+- Ecosystem incentives: any kind of incentive to develop the Ecosystem. For example, hackatons, events, conferences, on-chain competitions...
 
 ### Airdrops
 
-- Airdrop 1 (50%): This airdrop will be distributed at the time of the token release under certain conditions. The objective is to create awareness in the crypto community, a community of suppliers and builders, in order to incentivize them to come, be interested and involved into the OKP4 Ecosystem.
+- Airdrop 1 (50%): This airdrop will be distributed at the time of the token release under certain conditions. The objective is to create awareness in the crypto community, a community of Providers, Consumers and Builders, in order to incentivize them to come, be interested and involved into the OKP4 Ecosystem.
 - Airdrop 2 (50%): This airdrop will take place at least one year after the first one under certain conditions.
 
 ## Emission
@@ -77,13 +77,11 @@ This strategic reserve will be controlled by a multisig comprised of foundation 
 
 ### Staking rewards
 
-Validators and delegators are crucial to ensuring security of the OKP4 blockchain and help with block proposing, verification and validation.
+Validators and Delegators are crucial to ensuring security of the OKP4 Blockchain and help with block proposing, verification and validation.
 
-The roles of validators could expand to provide oracles, secure bridges, provide rollup services and other protocol-related services, making them critical participants.
+The roles of Validators could expand to provide oracles, secure bridges, provide rollup services and other protocol-related services, making them critical participants.
 
-At launch there will be a cap of 100 validators but this number is subject to governance and will increase as the Ecosystem matures.
-
-Block reward for validators and delegators will depend on the inflation number that starts at 15% of total supply excluding block rewards (15% of 200M tokens) on the first year and then decreases by 20% each year:
+Block reward for Validators and Delegators will depend on the inflation number that starts at 15% of total supply excluding block rewards (15% of 200M tokens) on the first year and then decreases by 20% each year:
 
 - Year 1: 15%
 - Year 2: 12%
