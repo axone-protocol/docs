@@ -58,7 +58,7 @@ const config = {
             activeBasePath: "/docs/faq"
           },
           {
-            href: 'https://discord.gg/GHNZh4SaJ3',
+            href: 'https://discord.gg/okp4',
             position: 'right',
             className: 'header-discord-link',
             'aria-label': 'Discord'
