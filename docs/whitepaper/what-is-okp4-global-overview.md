@@ -39,7 +39,7 @@ On the **Blockchain layer**, there are [Validators](/docs/whitepaper/roles#valid
 
 On the **Data Space layer**, there are [Data & Service Providers](/docs/whitepaper/roles#data-providers) who agree to share based on Data Space's rules and [Consumers](/docs/whitepaper/roles#data-providers) who pay tokens to initiate workflows in order to create knowledge. There are also [Curators](/docs/whitepaper/roles#curators) who can signal promising data/services and [Governors](/docs/whitepaper/roles#curators) who can change these rules.
 
-On the **Data Application layer**, there are Builders who develop and maintain the application, and also End-users who benefit from knowledge created through the whole OKP4 Ecosystem.
+On the **Data Application layer**, there are [Builders](/docs/whitepaper/roles#builders) who develop and maintain applications, and also end-users who benefit from knowledge created through the whole OKP4 Ecosystem. End-users can be directly Consumers, or just a user of the Data Application.
 
 ## Multi-layered governance
 
