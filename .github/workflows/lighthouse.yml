@@ -1,0 +1,89 @@
+name: Lighthouse CI
+on: pull_request
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup node environment (for building)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+
+      - name: Fetch dependencies
+        run: |
+          yarn --frozen-lockfile
+
+      - name: Build project
+        run: |
+          yarn build
+
+      - name: Build Storybook
+        run: |
+          yarn build-storybook
+
+      - name: Audit URLs using Lighthouse
+        id: lighthouse_audit
+        uses: treosh/lighthouse-ci-action@b4dfae3eb959c5226e2c5c6afd563d493188bfaf # 9.3.0
+        with:
+          budgetPath: ./.github/lighthouse-budget.json
+          configPath: ./.github/lighthouserc.json
+          uploadArtifacts: true
+
+      - name: Set context
+        id: output_context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          LOCAL_RUN_ID=`echo $GITHUB_CONTEXT | jq '.run_id'`
+          echo "action_run_id=$LOCAL_RUN_ID" >> $GITHUB_ENV
+
+      - name: Format lighthouse score
+        id: format_lighthouse_score
+        uses: actions/github-script@7a5c598405937d486b0331594b5da2b14db670da # v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const scoreEntry = (rawScore) => {
+              const score = Math.round(rawScore * 100);
+              const scoreIcon = score >= 90 ? '🟢' : score >= 50 ? '🟠' : '🔴';
+              return `${scoreIcon} ${score}`;
+            };
+
+            const run_id = ${{ env.action_run_id }};
+            const linkToActionPage = `[link](https://github.com/okp4/ui/actions/runs/${run_id})`;
+            
+            const formatIndicators = (summary) => {
+              const performance = scoreEntry(summary.performance);
+              const accessibility = scoreEntry(summary.accessibility);
+              const bestPractices = scoreEntry(summary['best-practices']);
+              const seo = scoreEntry(summary.seo);
+              const pwa = scoreEntry(summary.pwa);
+              return [performance,accessibility,bestPractices,seo,pwa,linkToActionPage];
+            };
+            
+            const formatRow = (items) => '| '+items.join(' | ')+' |';
+            
+            const results = ${{ steps.lighthouse_audit.outputs.manifest }};
+
+            const rows = results.map(result => {
+              const summary = result.summary;
+              const indicators = formatIndicators(summary);
+              return formatRow(indicators);
+            });
+            
+            const header = formatRow(['Performance','Accessibility','Best Practices','SEO','PWA','Action Page']);
+            const separator = formatRow(['---','---','---','---','---','---']);
+            const comment = [ header, separator, ...rows ].join('\n');
+            core.setOutput("comment", comment);
+
+      - name: Add Lighthouse stats as comment
+        id: comment_to_pr
+        uses: marocchino/sticky-pull-request-comment@39c5b5dc7717447d0cba270cd115037d32d28443 # v2.2.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          header: lighthouse
+          message: ${{ steps.format_lighthouse_score.outputs.comment }}
