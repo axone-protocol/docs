@@ -2,7 +2,7 @@ name: Lighthouse CI
 on: pull_request
 jobs:
   lighthouse:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -20,10 +20,6 @@ jobs:
         run: |
           yarn build
 
-      - name: Build Storybook
-        run: |
-          yarn build-storybook
-
       - name: Audit URLs using Lighthouse
         id: lighthouse_audit
         uses: treosh/lighthouse-ci-action@b4dfae3eb959c5226e2c5c6afd563d493188bfaf # 9.3.0
@@ -37,7 +33,11 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
+          LOCAL_SERVER_URL=`echo $GITHUB_CONTEXT | jq '.server_url'`
+          LOCAL_REPOSITORY=`echo $GITHUB_CONTEXT | jq '.repository'`
           LOCAL_RUN_ID=`echo $GITHUB_CONTEXT | jq '.run_id'`
+          echo "action_server_url=$LOCAL_SERVER_URL" >> $GITHUB_ENV
+          echo "action_repository=$LOCAL_REPOSITORY" >> $GITHUB_ENV
           echo "action_run_id=$LOCAL_RUN_ID" >> $GITHUB_ENV
 
       - name: Format lighthouse score
@@ -52,9 +52,11 @@ jobs:
               return `${scoreIcon} ${score}`;
             };
 
+            const server_url = ${{ env.action_server_url }};
+            const repository = ${{ env.action_repository }};
             const run_id = ${{ env.action_run_id }};
-            const linkToActionPage = `[link](https://github.com/okp4/ui/actions/runs/${run_id})`;
-            
+            const linkToActionPage = `[link](${server_url}/${repository}/actions/runs/${run_id})`;
+
             const formatIndicators = (summary) => {
               const performance = scoreEntry(summary.performance);
               const accessibility = scoreEntry(summary.accessibility);
@@ -63,9 +65,9 @@ jobs:
               const pwa = scoreEntry(summary.pwa);
               return [performance,accessibility,bestPractices,seo,pwa,linkToActionPage];
             };
-            
+
             const formatRow = (items) => '| '+items.join(' | ')+' |';
-            
+
             const results = ${{ steps.lighthouse_audit.outputs.manifest }};
 
             const rows = results.map(result => {
@@ -73,7 +75,7 @@ jobs:
               const indicators = formatIndicators(summary);
               return formatRow(indicators);
             });
-            
+
             const header = formatRow(['Performance','Accessibility','Best Practices','SEO','PWA','Action Page']);
             const separator = formatRow(['---','---','---','---','---','---']);
             const comment = [ header, separator, ...rows ].join('\n');
