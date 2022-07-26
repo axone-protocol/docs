@@ -34,6 +34,10 @@ _Work in progress_
 
 ## What is the purpose of the $KNOW token?
 
+## Is there a decentralized wallet for the $KNOW token?
+
+You can manage your $KNOW tokens with the [Keplr](https://www.keplr.app/) Chrome extension. Keplr is a non-custodial blockchain wallet for webpages that allow users to interact with our OKP4 blockchain applications.
+
 ## How do you manage data privacy? And privacy of my interactions with the blockchain?
 
 ## How do you align with GDPR or other privacy-concerned compliance?
