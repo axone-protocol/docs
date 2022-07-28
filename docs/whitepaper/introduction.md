@@ -30,6 +30,8 @@ Companies want to use Big Data, they produce data, but they don’t know how to 
 
 All these issues are all, eventually, governance issues. You must agree on the rules, on how they are enforced and on how rules are changed. The key is to reach consensus and build the best tools to enforce it.
 
+![Frictionless](/img/content/frictionless.png)
+
 Then, comes the lack of incentives to share data that never outweigh the risks and costs associated with data sharing. This results in exclusive private data lakes operated by third parties that are unwilling to share data.
 
 Which means underutilization of data, market failures, repression of innovation and an immeasurable opportunity-cost for them and for society at large.
@@ -38,47 +40,17 @@ Which means underutilization of data, market failures, repression of innovation 
 
 ## Existing approaches
 
-![Degree of federation in data-sharing models](/img/content/data-sharing-models.png)
+![Degree of federation in data-sharing models](/img/content/degree_of_federation.png)
 
 Since data is everywhere and knowledge is essential to the common good, the issue of sharing data and maximizing knowledge creation is far from being a new topic for individuals and organizations.
-
-Among the existing approaches:
-
-### Data sharing
-
-#### Bilateral agreement
-
-#### Multilateral agreement
-
-#### Data Marketplace
-
-#### Data Space
-
-#### Dataverse
-
-### Knowledge creation
-
-#### Data Visualisation
-
-#### Business Intelligence
-
-#### Complex distributed workflows
-
-### Governance
-
-#### Bilateral Governance
-
-#### Centralized Governance
-
-#### Federated Governance
-
-#### Decentralized Governance
 
 ## Introducing – OKP4
 
 Gated data lakes are the norm today because we lacked the economic incentives to fund, the technology to build, and the organizational structures to manage an open Dataverse.
 
 It is changing now, with OKP4.
+
+![OKP4_banner](/img/content/banner_okp4.png)
 
 The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized.
 
