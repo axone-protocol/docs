@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  mySidebar: [
+  whitepaperSidebar: [
     {
       type: 'category',
       label: 'Whitepaper',
