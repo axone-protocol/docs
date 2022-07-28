@@ -18,4 +18,4 @@ Through trust-minimized data sharing, a new land of opportunities emerge for peo
 
 The technology: the blockchain (Proof of Stake layer 1 in the Cosmos ecosystem), the Ecosystem, the smart contracts and the development kits enable builders and communities to seize new opportunities, way beyond Decentralized Finance!
 
-![Workflow process OKP4](/img/content/schematic.png)
+![Workflow process OKP4](/img/content/whitepaper/schematic.png)

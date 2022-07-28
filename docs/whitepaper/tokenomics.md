@@ -12,7 +12,7 @@ sidebar_position: 12
 
 The distribution is the following:
 
-![Token Allocation](/img/content/Token-Allocation.png)
+![Token Allocation](/img/content/whitepaper/Token-Allocation.png)
 
 The cliff and vesting terms are the following:
 
@@ -73,7 +73,7 @@ This strategic reserve will be controlled by a multisig comprised of foundation 
 
 ## Emission
 
-![Supply Schedule](/img/content/Supply-schedule.png)
+![Supply Schedule](/img/content/whitepaper/Supply-schedule.png)
 
 ### Staking rewards
 
@@ -96,4 +96,4 @@ Staking APR will obviously be higher than the numbers quoted above, depending on
 
 Following these calculations, the circulating supply will be 243M $KNOW after 3 years, distributed according to the following:
 
-![Supply after 3 years](/img/content/Supply-after-3-years.png)
+![Supply after 3 years](/img/content/whitepaper/Supply-after-3-years.png)

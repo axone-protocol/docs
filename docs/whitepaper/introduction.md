@@ -16,7 +16,7 @@ We need to open these gates.
 
 Data is an objective and elementary description of reality, an observation, facts intended to be processed and interpreted by humans. From data we create information. It is the signifier attached to the data or to a set of data by association. Information is usually subjective and defined by context. When we combine information, rules, reasoning, and experience, we create knowledge. Knowledge is THE limiting factor to common good. Thus, in order to improve common good, we need data.
 
-![From data to knowledge](/img/content/Data_to_Knowledge.png)
+![From data to knowledge](/img/content/whitepaper/Data_to_Knowledge.png)
 
 Data is a non-rival immaterial asset; it can easily be used and infinitely duplicated without altering its nature nor its quality. The production of knowledge from data is therefore theoretically infinite. However today, trusted third parties coordinate and govern the data flux in the world.
 
@@ -30,7 +30,7 @@ Companies want to use Big Data, they produce data, but they don’t know how to 
 
 All these issues are all, eventually, governance issues. You must agree on the rules, on how they are enforced and on how rules are changed. The key is to reach consensus and build the best tools to enforce it.
 
-![Frictionless](/img/content/frictionless.png)
+![Frictionless](/img/content/whitepaper/frictionless.png)
 
 Then, comes the lack of incentives to share data that never outweigh the risks and costs associated with data sharing. This results in exclusive private data lakes operated by third parties that are unwilling to share data.
 
@@ -40,7 +40,7 @@ Which means underutilization of data, market failures, repression of innovation 
 
 ## Existing approaches
 
-![Degree of federation in data-sharing models](/img/content/degree_of_federation.png)
+![Degree of federation in data-sharing models](/img/content/whitepaper/degree_of_federation.png)
 
 Since data is everywhere and knowledge is essential to the common good, the issue of sharing data and maximizing knowledge creation is far from being a new topic for individuals and organizations.
 
@@ -62,7 +62,7 @@ The traditional business models based upon data exchange need to evolve. As a so
 
 ### The features of the OKP4 Protocol
 
-![combine_web2_web3](/img/content/combine_web2_web3.png)
+![combine_web2_web3](/img/content/whitepaper/combine_web2_web3.png)
 
 We have designed the OKP4 Protocol to be open, decentralized and auditable. Our solution is based on 4 products:
 
