@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Join mainnet
+# Join Mainnet
 
 ## Hardware recomendations
 
@@ -11,3 +11,5 @@ sidebar_position: 7
 ### Genesis
 
 ### Peers
+
+## Upgrades

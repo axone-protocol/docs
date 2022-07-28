@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Join testnet
+# Join Testnet
 
 ## Hardware recomendations
 
@@ -13,3 +13,5 @@ sidebar_position: 6
 ### Peers
 
 ## Getting tokens
+
+## Upgrades
