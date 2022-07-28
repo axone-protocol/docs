@@ -31,7 +31,7 @@ As a prerequisite, the `okp4d` binary shall be installed, please find the instru
 A network is identified by its chain id, when initializing a node's configuration it is recommended to provide it so the `client.toml` configuration will be properly set, this will ease CLI commands.
 
 ```sh
-CHAIN_ID=okp4-1
+CHAIN_ID=okp4-testnet-1
 ```
 
 :::tip
