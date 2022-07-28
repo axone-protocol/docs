@@ -16,6 +16,8 @@ We need to open these gates.
 
 Data is an objective and elementary description of reality, an observation, facts intended to be processed and interpreted by humans. From data we create information. It is the signifier attached to the data or to a set of data by association. Information is usually subjective and defined by context. When we combine information, rules, reasoning, and experience, we create knowledge. Knowledge is THE limiting factor to common good. Thus, in order to improve common good, we need data.
 
+![From data to knowledge](/img/content/Data_to_Knowledge.png)
+
 Data is a non-rival immaterial asset; it can easily be used and infinitely duplicated without altering its nature nor its quality. The production of knowledge from data is therefore theoretically infinite. However today, trusted third parties coordinate and govern the data flux in the world.
 
 ### Knowledge is essential to common good
