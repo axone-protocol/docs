@@ -10,6 +10,6 @@ Validator candidates can bond their own staking tokens and have the tokens "dele
 
 :::danger
 
-If validators double sign, are frequently offline or do not participate in governance, their staked Evmos (including Evmos of users that delegated to them) can be slashed. The penalty depends on the severity of the violation.
+If validators double sign, are frequently offline or do not participate in governance, their staked KNOWs (including KNOWs of users that delegated to them) can be slashed. The penalty depends on the severity of the violation.
 
 :::
