@@ -8,9 +8,15 @@ sidebar_position: 2
 
 ## Prérequis
 
-Vous avez acheter des BSJ OKP4 et pour vous remercier, une adresse [$STARS](https://www.stargaze.zone/) vous a été livrée avec un [mnémonique](https://journalducoin.com/actualites/phrases-mnemoniques/).
+Pour vous remercier d'avoir investi dans OKP4, l'équipe a décidé de vous offrir un [NFT](https://en.wikipedia.org/wiki/Non-fungible_token) unique !
 
-Cette adresse est associée à un [NFT](https://fr.wikipedia.org/wiki/Jeton_non_fongible) ce tutoriel va vous expliquer comment le transférer sur un wallet personnel.
+Ce NFT fait partie d'une collection de 75 NFTs qui créés pour la première édition du BSJ. Il s'agit d'une preuve de participation au projet à ses débuts. Il n'a aucune valeur légale. Il peut être échangé, et vous êtes libre d'en faire ce que vous voulez. Il peut, ou non, vous donner droit à des avantages futurs.
+
+Ce NFT est conservé sur une adresse personnelle [Stargaze](https://www.stargaze.zone/) que nous avons créée spécialement pour vous. Cette adresse est contrôlée par une clé privée qui prend la forme d'un [mnémonique](https://journalducoin.com/actualites/phrases-mnemoniques/).
+
+Mais rien ne vous prouve que nous nous débarrasserons de cette clé privée une fois que nous vous l'aurons partagée, vous devez donc transférer le NFT dans un portefeuille que vous avez créé vous-même.
+
+Ce tutoriel vous aidera à trouver votre NFT et à le transférer dans votre portefeuille personnel.
 
 ## Installer Keplr
 
