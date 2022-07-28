@@ -62,6 +62,8 @@ The traditional business models based upon data exchange need to evolve. As a so
 
 ### The features of the OKP4 Protocol
 
+![combine_web2_web3](img/content/combine_web2_web3.png)
+
 We have designed the OKP4 Protocol to be open, decentralized and auditable. Our solution is based on 4 products:
 
 #### **OKP4 Blockchain**: The layer 1 for data sharing
