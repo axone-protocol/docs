@@ -6,7 +6,7 @@ sidebar_position: 4
 
 :::note
 
-For public networks, it is recommended to use Cosmovisor to run your node.
+For public networks, it is recommended to use [Cosmovisor](https://docs.cosmos.network/main/run-node/cosmovisor.html) to run your node.
 
 :::
 
