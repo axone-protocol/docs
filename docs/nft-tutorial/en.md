@@ -8,14 +8,20 @@ sidebar_position: 1
 
 ## Prerequisites
 
-You've purchased OKP4 SAFT and to thank you, you've been given a [$STARS](https://www.stargaze.zone/) address and a [mnemonic](https://en.bitcoin.it/wiki/Seed_phrase).
+To thank you for investing in OKP4, the team has decided to offer you a unique [NFT](https://en.wikipedia.org/wiki/Non-fungible_token)!
 
-This address is associated with an [NFT](https://en.wikipedia.org/wiki/Non-fungible_token) this tutorial is about how to transfer it to your personal wallet.
+This NFT is part of a collection of 75 NFTs that represent the first SAFT edition. It is a proof of involvement in the project at its beginning. It has no legal value. It can be exchanged, and you are free to do what you want with it. It may or may not entitle you to future benefits.
+
+This NFT is held in a personal [Stargaze](https://www.stargaze.zone/) address we created specifically for you. This address is controlled by a private key that takes the form of a [mnemonic](https://en.bitcoin.it/wiki/Seed_phrase).
+
+But nothing proves you that we will get rid of that private key once we shared it to you, you must transfer it to a wallet you created yourself.
+
+This tutorial will help you find you're NFT and transfer it to your personal wallet.
 
 ## Get Keplr
 
 If it's not already done you should get Keplr : <https://www.keplr.app/>
-Un can use either of this following solutions:
+You can use either of this following solutions:
 
 - [Keplr Extension](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap) for [Google chrome](https://www.google.com/chrome/index.html) or [Brave](https://brave.com/) browsers.
 - [Keplr wallet for Iphone](https://apps.apple.com/us/app/keplr-wallet)
@@ -58,7 +64,7 @@ If you already have one you can skip this part.
 - Click on the user icon (up right)
 - `+ Add account`
 - Create new account
-- Follow the instructions : give a name to your wallet and remember the mnemonic and prove you can retrieve it.
+- Follow the instructions : give a name to your wallet, remember the mnemonic and prove you can retrieve it.
 
 ## Transfer the NFT to your address
 
