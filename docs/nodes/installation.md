@@ -32,7 +32,7 @@ Coming soon: the mentioned image isn't published yet.
 
 The `okp4d` binary can be invoked directly through the following docker image:
 
-```sh
+```bash
 docker run -ti --rm okp4/okp4d:latest --help
 ```
 
@@ -47,19 +47,19 @@ The docker image is a multi-arch build supporting both `amd64` and `arm64`.
 
 OKP4 is built using [Go](https://go.dev/dl/) version 18.
 
-```sh
+```bash
 go version
 ```
 
 You can install `okp4d` with:
 
-```sh
+```bash
 go install github.com/okp4/okp4d@latest
 ```
 
 Or by manually building the sources:
 
-```sh
+```bash
 git clone git@github.com/okp4/okp4d
 cd okp4d
 make install
