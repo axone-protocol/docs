@@ -52,6 +52,12 @@ const config = {
             activeBasePath: "/docs/whitepaper"
           },
           {
+            to: '/docs/nodes/introduction',
+            position: 'left',
+            label: 'Nodes & Validators',
+            activeBasePath: "/docs/nodes"
+          },
+          {
             to: '/docs/faq',
             position: 'left',
             label: 'FAQ',
