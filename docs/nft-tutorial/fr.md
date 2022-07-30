@@ -66,6 +66,15 @@ Si vous en avez déjà un, vous pouvez sauter cette partie
 - `Create new account`
 - Suivez les instructions : donnez un nom à votre portefeuille et notez le mnémonique puis prouvez que vous pouvez le retrouver.
 
+:::danger
+
+Attention, le mnémonique généré et lui seul permet de contrôler votre portefeuille. Prenez soin de le garder en lieu sûr afin de :
+
+- De pouvoir le retrouver
+- Que personne d'autre ne puisse y accéder
+
+:::
+
 ## Transférer le NFT vers votre adresse
 
 - Allez sur la page : <https://app.stargaze.zone/profile>

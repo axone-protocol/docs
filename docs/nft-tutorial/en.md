@@ -66,6 +66,15 @@ If you already have one you can skip this part.
 - Create new account
 - Follow the instructions : give a name to your wallet, remember the mnemonic and prove you can retrieve it.
 
+:::danger
+
+Watch out, the generated mnemonic and only it can give control on your wallet. Make sure to keep it safe so that:
+
+- You'll be able to recover it
+- Nobody else can access it
+
+:::
+
 ## Transfer the NFT to your address
 
 - Go back to your NFT page : <https://app.stargaze.zone/profile>
