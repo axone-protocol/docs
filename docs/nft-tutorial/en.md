@@ -16,7 +16,7 @@ This NFT is held in a personal [Stargaze](https://www.stargaze.zone/) address we
 
 But nothing proves you that we will get rid of that private key once we shared it to you, you must transfer it to a wallet you created yourself.
 
-This tutorial will help you find you're NFT and transfer it to your personal wallet.
+This tutorial will help you find your NFT and transfer it to your personal wallet.
 
 ## Get Keplr
 
@@ -40,7 +40,7 @@ Connect with the address supplied by OKP4
 - Enter an account name like `temporary okp4 wallet`
 - Choose a password for Keplr is requested
   
-Now when you can click on the Keplr extension icon
+Now you can click on the Keplr extension icon
 
 - Select the previously configure account if you have several ones
 - Select the `Stargaze` blockchain ![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
@@ -79,7 +79,7 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 
 - Go back to your NFT page : <https://app.stargaze.zone/profile>
 - Check that your wallet is still connected
-- Select you NFT
+- Select your NFT
 - Click on `Transfer`
 - Enter your address
 - Validate the transaction with Keplr
