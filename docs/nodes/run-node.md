@@ -30,7 +30,7 @@ As a prerequisite, the `okp4d` binary shall be installed, please find the instru
 
 A network is identified by its chain id, when initializing a node's configuration it is recommended to provide it so the `client.toml` configuration will be properly set, this will ease CLI commands.
 
-```sh
+```bash
 CHAIN_ID=okp4-testnet-1
 ```
 
@@ -44,7 +44,7 @@ The `chain-id` values for each networks are detailed in the corresponding sectio
 
 The moniker helps identifying your node on the explorer interfaces, this is more human readable than a node ID.
 
-```sh
+```bash
 MONIKER="MiKnowTor"
 ```
 
@@ -52,7 +52,7 @@ MONIKER="MiKnowTor"
 
 At this point, the node can be initialized:
 
-```sh
+```bash
 okp4d init $MONIKER --chain-id $CHAIN_ID
 ```
 
@@ -87,7 +87,7 @@ Joining a network is first of all being part of the P2P protocol. To do so your 
 
 Let's invoke the `start` command:
 
-```sh
+```bash
 okp4d start
 ```
 
@@ -101,7 +101,7 @@ Running a validator node being critical, consider [automate upgrades](upgrade.md
 
 Your node will start beginning by syncing to the network, this step can take a long time depending on the blockchain size, you can query the sync status with the following command:
 
-```sh
+```bash
 # Query via the RPC (default port: 26657)
 curl http://localhost:26657/status | jq .result.sync_info.catching_up
 ```
@@ -118,7 +118,7 @@ Your node shall be fully synced before upgrading it to a validator. It can't tak
 
 To make your node validator you need to submit a `create-validator` transaction referencing it by its public key:
 
-```sh
+```bash
 PUB_KEY=$(okp4d tendermint show-validator)
 okp4d tx staking create-validator \
   --amount 1000000uknow \
@@ -138,7 +138,7 @@ okp4d tx staking create-validator \
 
 This is an example transaction, to customize your validator explore the available flags:
 
-```sh
+```bash
 okp4d tx staking create-validator --help
 ```
 
