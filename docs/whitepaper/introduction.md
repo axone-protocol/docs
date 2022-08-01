@@ -4,61 +4,92 @@ sidebar_position: 2
 
 # Introduction
 
-## Motivation - Why we need data sharing?
+## Motivation
 
-Digital innovation has tremendously impacted the way we do business, the way we exchange and consume information. Data has become a resource upon which many businesses have been built. It altered our everyday life in every possible way. The amount of generated data keeps increasing and over the next decade, data collection and analysis will be at the core of every business model.
-
-But value from data remains within a handful of companies and organisations, in data silos, isolated and protected. These companies are incentivized to build gated data lakes as big as possible, to keep their users captive and to restrict access to data and information.
-
-We need to open these gates.
+Digital innovation has tremendously impacted the way we do business, the way we exchange and consume information. Data has become a resource upon which many businesses have been built. It altered our society and everyday life in every possible way.
 
 ### From Data to Knowledge
 
-Data is an objective and elementary description of reality, an observation, facts intended to be processed and interpreted by humans. From data we create information. It is the signifier attached to the data or to a set of data by association. Information is usually subjective and defined by context. When we combine information, rules, reasoning, and experience, we create knowledge. Knowledge is THE limiting factor to common good. Thus, in order to improve common good, we need data.
+Data is an objective and elementary description of reality. It has no value by itself. It needs to be processed and interpreted to create valuable information and knowledge. Knowledge is usually subjective and context-dependant. 
 
 ![From data to knowledge](/img/content/whitepaper/Data_to_Knowledge.png)
 
-Data is a non-rival immaterial asset; it can easily be used and infinitely duplicated without altering its nature nor its quality. The production of knowledge from data is therefore theoretically infinite. However today, trusted third parties coordinate and govern the data flux in the world.
+### Why we need data sharing
 
-### Knowledge is essential to common good
+We don’t *know* how to go to Mars, we don’t *know* how to predict cancer, we don’t *know* how to farm in a desert, and we don’t *know* what present would please our mother for her birthday. 
 
-At OKP4, we strongly believe that knowledge is essential to common good and that it should be accessible to everyone with minimum constraint. Data must be shared to multiply aggregations and contextualizations to create value-added and usable knowledge for all.
+Knowledge is the limiting factor to common good, for individuals, companies and society at large.
 
-Though they have enhanced our lives in many ways, traditional trusted third parties have also created a dependency that limits us. The web 2.0 value chain is based on providers and consumers who enrich platform aggregators with their data, without really getting much in return. The interests of all parties are not aligned and so it becomes an obstacle to data sharing.
+In our digitalized world, one of the most efficient way to unlock knowledge is through data sharing.
 
-Companies want to use Big Data, they produce data, but they don’t know how to exploit it properly. They lack technical skills, they don’t trust the aggregators and the data they contribute with is not rewarded at its fair value.
+But data is rarely shared. It stays in silos, isolated and protected. As such, data is under-used and under-valued. Indeed, data is a [non-rival good](https://en.wikipedia.org/wiki/Rivalry_(economics)), which means that I can share it many times without changing my ability to use it. The generation of knowledge from data is then theoretically infinite. That's why an incommensurable amount of value could be unlocked through data sharing.
 
-All these issues are all, eventually, governance issues. You must agree on the rules, on how they are enforced and on how rules are changed. The key is to reach consensus and build the best tools to enforce it.
+### Why is data sharing not the norm then?
+
+Today's problem is that individuals and companies are incentivized to build gated data lakes, to keep their users captive and to restrict access to data and information, mosty because of:
+- Risk (lack of trust between participants, the fear of loss of competitive advantage)
+- Complexity (interoperability & governance issues)
+- Costs (lack of infrastructures, R&D) 
+- Lack of incentives (bad business models, bad incentives, unclear benefits)
 
 ![Frictionless](/img/content/whitepaper/frictionless.png)
 
-Then, comes the lack of incentives to share data that never outweigh the risks and costs associated with data sharing. This results in exclusive private data lakes operated by third parties that are unwilling to share data.
-
-Which means underutilization of data, market failures, repression of innovation and an immeasurable opportunity-cost for them and for society at large.
-
-**But what if we could enable trustless data sharing and unlock this untapped potential?**
+**But what if we could enable trust-minimized data sharing and unlock this untapped potential?**
 
 ## Existing approaches
 
+Since data is everywhere and knowledge is valuable, the issues related to data sharing and knowledge creation are far from being new topics for individuals and organizations.
+
+Many approaches already exist to share data between entities:
+
 ![Degree of federation in data-sharing models](/img/content/whitepaper/degree_of_federation.png)
 
-Since data is everywhere and knowledge is essential to the common good, the issue of sharing data and maximizing knowledge creation is far from being a new topic for individuals and organizations.
+As you can see, the decentralized approach seem to be the most promizing. In fact, it will enable data sharing without trusted third parties, without moving data from its existing place and even enable decentralized governance on data sharing rules.
 
-## Introducing – OKP4
+
+### Technology is getting more mature by the day
 
 Gated data lakes are the norm today because we lacked the economic incentives to fund, the technology to build, and the organizational structures to manage an open Dataverse.
 
-It is changing now, with OKP4.
+It is changing now.
+
+Through technology and governance innovation, public blockchain technology will be the key infrastructure opening the gates of trust-minimized data sharing. Thus providing opportunities to unlock new sources of valuable knowledge that will solve humanity's problems, from small to existencial ones, thanks to the next generation of Data Applications.
+
+### But the perfect technology doesn't exist, yet
+
+Ethereum initiated a wave of decentralized applications thanks to smart contracts.
+Following Ethereum steps, many other [layer-1](https://academy.binance.com/en/articles/what-is-layer-1-in-blockchain) blockchains emerged. Some offering "more scalable versions" through bigger blocksize or higher block frequency, some offering other smart contract programming languages such as [Rust](https://docs.solana.com/developing/on-chain-programs/developing-rust) or [Javascript](https://agoric.com/documentation/guides/js-programming/), some offering privacy-preserving technologies such as [zk-SNARKs](https://z.cash/technology/zksnarks/).
+
+Then, which infrastructure should we choose to build applications based on trust-minimized data sharing?
+
+By asking ourselves this question, we quickly realized that:
+- There is no such applications designed on public blockchains, so no existing network effect to benefit from.
+- General-purpose chains are not specifically designed for such complex apps: multiple layers of smart contracts generate increased risks and complexity.
+- Developers are restrained by smart contracts programming languages & virtual machines of these blockchains.
+- These infrastructures are not designed to enable data network effects.
+
+To sum up, trust-minimized data sharing may need its own layer-1.
+
+## Introducing – OKP4
+
+The previously mentioned reasons led us to create OKP4 (Open Knowledge Protocol For...).
 
 ![OKP4_banner](/img/content/banner_okp4.png)
 
-The previous mentioned reasons ([see Motivation](#motivation---why-we-need-data-sharing)) led us to create the Open Knowledge Protocol (OKP4). Indeed, we believe that the only option is to propose a better alternative to knowledge creation, based on digital commons that are non-extractive and decentralized.
+### What is OKP4?
 
-Our objective is to allow data sharing and processing services in a secure, transparent, reliable and easy way to generate the maximum amount of new knowledge.
+OKP4 is a public PoS layer 1 specifically designed to build the Dataverse, which will be the foundation of the next generation of Data Applications powered by trust-minimized data sharing. 
 
-OKP4 protocol not only enables the creation of Data Spaces. It also maximizes data sharing, based on web 3.0 value chain, where providers and consumers get optimal compensation for their contribution, in a trustworthy environment. The OKP4 Protocol is a community-run technology using blockchain, smart contracts and the $KNOW cryptocurrency.
+Anyone can create custom ecosystems called [Data Spaces](https://gaia-x.eu/what-is-gaia-x/core-elements/data-spaces/). In each Data Space, people & companies can share data, algorithms, software, storage and computation according to Data Space's rules.
 
-The traditional business models based upon data exchange need to evolve. As a society we need to let go of the dominant model of selling datasets and access to data flows at fixed prices. The OKP4 protocol enables data sharing without exchange. In other words, only insights coming from different services (algorithms, tools, visualization…) is accessible to the users, not the raw data; but according to the rules and usage this is still possible. Added to the customized Data Space’s governance, this brings confidence and also widens the scope of possibilities to innovate with economic models.
+OKP4 is designed to become the commons for builders, data providers, communities, data scientists & users to unlock tangible value creation thanks to data sharing, enabling many new usecases for web3, way beyond Decentralized Finance.
+
+Our ambition is to design the open infrastructure that builders will go to in order to quickly set-up governance rules (access rules, business models...) and governance mechanisms that will power distributed data-based applications.
+
+The goal is simple: let anyone contribute with sovereign data, generate value from many applications and be retributed for contribution. 
+Low risks, low costs, high incentives.
+
+### What is the Dataverse?
 
 ### The features of the OKP4 Protocol
 
