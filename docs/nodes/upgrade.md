@@ -25,7 +25,7 @@ curl --fail --progress-bar -L https://github.com/cosmos/cosmos-sdk/releases/down
     | tar -zxf - -C /usr/local/bin
 ```
 
-To find out the binary that'll fits your platform:
+To find out the binary that'll fit your platform:
 
 ```bash
 # find OS
@@ -119,7 +119,7 @@ Cosmovisor doesn't verify in advance if a binary is available before downloading
 
 #### Download binaries
 
-If the auto-download of binary updates is disabled, which is recomended, all the binaries shall be manually downloaded uphill by node operators, and placed in the `$DAEMON_HOME` respecting the following structure:
+If the auto-download of binary updates is disabled, which is recommended, all the binaries shall be manually downloaded uphill by node operators, and placed in the `$DAEMON_HOME` respecting the following structure:
 
 ```bash
 cosmovisor/
@@ -136,7 +136,7 @@ cosmovisor/
 
 :::info
 
-The network's upgrades can be found in their respective sections (i.e. [Join Testnet](join-testnet.md#upgrades) & [Join Mainnet](join-mainnet.md#upgrades).
+The network's upgrades can be found in their respective sections (i.e. [Join Testnet](join-testnet.md#upgrades) & [Join Mainnet](join-mainnet.md#upgrades)).
 
 :::
 
