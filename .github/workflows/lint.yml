@@ -144,7 +144,7 @@ jobs:
 
       - name: Audit URLs using Lighthouse
         id: lighthouse_audit
-        uses: treosh/lighthouse-ci-action@b4dfae3eb959c5226e2c5c6afd563d493188bfaf # 9.3.0
+        uses: treosh/lighthouse-ci-action@v9
         with:
           budgetPath: ./.github/lighthouse-budget.json
           configPath: ./.github/lighthouserc.json
@@ -164,7 +164,7 @@ jobs:
 
       - name: Format lighthouse score
         id: format_lighthouse_score
-        uses: actions/github-script@7a5c598405937d486b0331594b5da2b14db670da # v6
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -205,7 +205,7 @@ jobs:
 
       - name: Add Lighthouse stats as comment
         id: comment_to_pr
-        uses: marocchino/sticky-pull-request-comment@39c5b5dc7717447d0cba270cd115037d32d28443 # v2.2.0
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ github.event.pull_request.number }}
