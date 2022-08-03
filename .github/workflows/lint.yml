@@ -156,40 +156,46 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const scoreEntry = (rawScore) => {
+            const scoreLabel = (rawScore) => {
               const score = Math.round(rawScore * 100);
-              const scoreIcon = score >= 90 ? '🟢' : score >= 50 ? '🟠' : '🔴';
+              const scoreIcon = score >= 90
+                ? '🟢'
+                : score >= 50
+                  ? '🟠'
+                  : '🔴';
               return `${scoreIcon} ${score}`;
             };
 
             const server_url = '${{ github.server_url }}';
             const repository = '${{ github.repository }}';
             const run_id = '${{ github.run_id }}';
-            const linkToActionPage = `[link](${server_url}/${repository}/actions/runs/${run_id})`;
+            const linkToActionPage = `[Link to Actions Page](${server_url}/${repository}/actions/runs/${run_id})`;
 
             const formatIndicators = (summary) => {
-              const performance = scoreEntry(summary.performance);
-              const accessibility = scoreEntry(summary.accessibility);
-              const bestPractices = scoreEntry(summary['best-practices']);
-              const seo = scoreEntry(summary.seo);
-              const pwa = scoreEntry(summary.pwa);
-              return [performance,accessibility,bestPractices,seo,pwa,linkToActionPage];
+              const performance = scoreLabel(summary.performance);
+              const accessibility = scoreLabel(summary.accessibility);
+              const bestPractices = scoreLabel(summary['best-practices']);
+              const seo = scoreLabel(summary.seo);
+              const pwa = scoreLabel(summary.pwa);
+              return [performance,accessibility,bestPractices,seo,pwa];
             };
 
             const formatRow = (items) => '| '+items.join(' | ')+' |';
 
+            const header = ['Performance','Accessibility','Best Practices','SEO','PWA'];
+            const separator = ['---','---','---','---','---'];
             const results = ${{ steps.lighthouse_audit.outputs.manifest }};
-
             const rows = results.map(result => {
               const summary = result.summary;
               const indicators = formatIndicators(summary);
-              return formatRow(indicators);
+              return indicators;
             });
 
-            const header = formatRow(['Performance','Accessibility','Best Practices','SEO','PWA','Action Page']);
-            const separator = formatRow(['---','---','---','---','---','---']);
-            const comment = [ header, separator, ...rows ].join('\n');
-            core.setOutput("comment", comment);
+            const table = [ header, separator, ...rows ]
+              .map(formatRow)
+              .join('\n');
+            const content = linkToActionPage + '\n\n' + table;
+            core.setOutput("comment", content);
 
       - name: Add Lighthouse stats as comment
         id: comment_to_pr
