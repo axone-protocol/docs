@@ -92,6 +92,15 @@ Low risks, low costs, high incentives.
 
 ### What is the Dataverse?
 
+The Dataverse is inspired from the term Metaverse, a growing buzzword that embodies the next generation of internet experiences combining virtual reality and digital ownership. The challenge with the Metaverse is to build it on an open infrastructure, so that users are not captive of the companies and siloed environments produced by companies.
+
+The Dataverse is an open world where users become owners. They own their data, the algorithms & resources they provide. They can even own the infrastructure and can be involved in it governance.
+
+The Dataverse is a collection of interoperable ecosystems of shared rules (Data Spaces) in which assets are shared to build applications. 
+It is relationship between Dataverse participants, not a common technical infrastructure. The Dataverse is not a datalake or a cloud where data is stored centrally. Everything can stay at the source, that's why Dataverse participants are always sovereign about what they share.
+
+The Data Spaces that compose the Dataverse can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space.
+
 ### The features of the OKP4 Protocol
 
 ![combine_web2_web3](/img/content/whitepaper/combine_web2_web3.png)
@@ -100,25 +109,26 @@ We have designed the OKP4 Protocol to be open, decentralized and auditable. Our 
 
 #### **OKP4 Blockchain**: The layer 1 for data sharing
 
-A public blockchain protocol designed specifically to handle the complexity of trustless data sharing and value sharing.
+A public blockchain protocol designed specifically to handle the complexity of trust-minimized data sharing and value sharing.
+The blockchain is the single source of truth, it orchestrates everything that is shared to the Dataverse.
 
-- Decentralization and trust guaranteed by the Tendermint Consensus & our native token $KNOW
+- Decentralization and trust guaranteed by the Tendermint Consensus & the native token $KNOW
 - An open-source network controlled by its stakeholders
-- A vibrant Smart Contract Hub powered by CosmWasm
-- IBC (Inter-Blockchain Protocol) enabling seamless communication with other blockchains
+- A vibrant Smart Contract Hub powered by [CosmWasm](https://cosmwasm.com/)
+- [IBC](https://ibcprotocol.org/) enabling seamless communication with other blockchains
 
-#### **OKP4 Ecosystem**: Empower the Dataverse
+#### **OKP4 Dataverse**: Empower the Dataverse
 
-Anyone can plug its own infrastructure into the Ecosystem and connect it through the blockchain. OKP4 Ecosystem enables XaaS (anything as a service). Agnostic by design!
+We designed OKP4 to enable maximum customization. Anyone can share any kind of data, algorithms, software, storage and computation into the Dataverse, you can even implement any standard or DID provider. Anyone can plug its own infrastructure, define/agree on rules to make it available, and let it be utilized through the blockchain. OKP4 Dataverse enables XaaS (anything as a service) by design.
 
 #### **OKP4 Development Kit**
 
-It allows anyone to create and design Data Space with as much freedom as possible. For developers, data scientists and communities at large:
+It allows anyone to create and design Data Spaces and Data Applications with as much freedom as possible. For developers, data scientists and communities at large:
 
 - Customize Data Space governance with no-code tools & templates
-- Build dApps from softwares to interfaces
+- Build data apps from software to interfaces
 - Use or provide components & resources in the OKP4 Ecosystem
 
-#### **OKP4 Dataverse**
+#### **OKP4 tools**
 
-User-friendly tools to share, contribute, benefit and earn (wallet/browser extension, blockchain explorer, Dataverse portal, catalog of dApps, governance interfaces, etc.). These tools will allow to interact with the blockchain and with the Ecosystem.
+User-friendly tools & interfaces to share, contribute, benefit and earn (wallet/browser extension, blockchain explorer, dataverse portal, catalog of data apps, Data Space governance interfaces, etc.). These tools will allow anyone to interact with the Dataverse.

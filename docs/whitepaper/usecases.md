@@ -9,15 +9,15 @@ All sectors are concerned at different scales.
 •	B2B & B2C can share data to unlock new insights and opportunities for businesses and customers
 •	Communities can leverage collective intelligence and crowdsource data
 
-## Agriculture
+## Already in production: agriculture farm-to-fork insights
 
-The agriculture supply chain relies on several inter-dependent actors, from the field to the fork. They need efficient information systems to better evaluate, manage and value the efforts made and the agri-environmental benefits associated to the practices. Moreover, they need to share data to create knowledge valuable at each link of the chain.
+The agriculture supply chain relies on several interdependent actors, from the field to the fork. They need efficient information systems to better evaluate, manage and value the efforts made and the agri-environmental benefits associated to the practices. Moreover, they need to share data to create knowledge valuable at each link of the chain.
 
 Crossing technical and accounting data from multiple providers (farmers, accountants, cooperatives, advisors...) can generate unique insights sold to industries, brands, retail and local authorities and provide transparency to end-consumers.
 
-But knowledge created from these data also has the power to move things forward in terms of climate smart agriculture and agri-ecological practices. It is much valuable for the actors upstream of the supply chain.
+But knowledge created from these data can go way beyond traceability of practices. It can provide valuable insights for companies, public authorities or even new opportunities to develop new applications on top of the shared data. For exemple to feed agro-ecological machine learning models or business intelligence tools.
 
-## Use case 2
+## Other use cases
 
 There are many opportunities to build community-focused use cases.
 For example:
