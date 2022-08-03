@@ -122,7 +122,7 @@ jobs:
       - name: Lint scss
         run: |
           yarn stylelint '**/*.scss'
-          
+
   lighthouse:
     runs-on: ubuntu-20.04
     steps:
