@@ -96,7 +96,7 @@ The Dataverse is inspired from the term Metaverse, a growing buzzword that embod
 
 The Dataverse is an open world where users become owners. They own their data, the algorithms & resources they provide. They can even own the infrastructure and can be involved in it governance.
 
-The Dataverse is a collection of interoperable ecosystems of shared rules (Data Spaces) in which assets are shared to build applications. 
+The Dataverse is a collection of interoperable ecosystems of shared rules (Data Spaces) in which assets are shared to build applications.
 It is relationship between Dataverse participants, not a common technical infrastructure. The Dataverse is not a datalake or a cloud where data is stored centrally. Everything can stay at the source, that's why Dataverse participants are always sovereign about what they share.
 
 The Data Spaces that compose the Dataverse can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space.
