@@ -116,12 +116,11 @@ The Services deployed in the OKP4 ecosystem are responsible for all the data the
 
 In the protocol, Service Providers are encouraged to make security a primary issue, as Providers have value at stake that they can lose if they fail to meet their obligations. We therefore consider that the obligation of means in terms of security must be guaranteed by the service provider.
 
-### Data services
+### Interactions flow
 
+We consider here internal services interaction, i.e. the interactions that take place between the different components of the ecosystem, and more specifically the interactions between a service and the [Workflow Service](okp4-ecosystem#the-workflow-engine) in charge of the orchestration.
 
-#### Internal interactions
-
-Internal interactions are the interactions that take place between the different components of the ecosystem, and more specifically the interactions between a data service and the workflow service. In this situation, the workflow service must have the legitimacy to access the data, or be able to provide the authorization to another service (typically an algorithm service) to access the data. The pain point is that for several services to cooperate together they must share secrets that allow them to access certain resources, under certain conditions.
+In this situation, the workflow service must have the legitimacy to access the data, or be able to provide the authorization to another service (typically an algorithm service) to access the data. The pain point is that for several services to cooperate together they must share secrets that allow them to access certain resources, under certain conditions.
  
 In the framework of the OKP4 protocol, services dedicated to the management of identity-based secrets and encryptions can be used: those are the Secrets Vaults.
 
@@ -133,6 +132,5 @@ The sequence is the following:
 
 - a. First, the data provider deposits the data and secures it with an appropriate means, including a secret. 
 - b. To allow access to this data to the protocol, the provider stores the secret in the Secret Vault. It should be noted that different instances of this service can be deployed in the protocol and operated by different providers, contributing to the decentralization of secret management.
-
-- 1. As soon as a workflow request is submitted to the protocol, the workflow service is triggered. The Workflow Engine then retrieves the metadata describing the services to invoke. To operate, the workflow engine makes a request to retrieve the secrets from the Secret Vault. After verification in the blockchain of the legitimacy of the request, the Secret Vault grants client access to secrets, keys.
-- 2. Having the secret, the Workflow service is allowed to invoke the service.
+- 1\. As soon as a workflow request is submitted to the protocol, the workflow service is triggered. The Workflow Engine then retrieves the metadata describing the services to invoke. To operate, the workflow engine makes a request to retrieve the secrets from the Secret Vault. After verification in the blockchain of the legitimacy of the request, the Secret Vault grants client access to secrets, keys.
+- 2\. Having the secret, the Workflow service is allowed to invoke the service.
