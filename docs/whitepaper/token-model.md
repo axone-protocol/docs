@@ -119,7 +119,7 @@ Several cases:
 - If the proposal is rejected with a veto (33%), the deposited $KNOWs will be burned
 - If the deposit amount is not reached (by passing the proposal pool), the deposited $KNOWs are returned to their owners
 
-For more information on the governance of the protocol and its parameters, please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
+For more information on the governance of the protocol and its parameters, please click [here](okp4-blockchain#governance--dao).
 
 ## Liquidity
 
