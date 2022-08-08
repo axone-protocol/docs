@@ -2,7 +2,9 @@
 sidebar_position: 6
 ---
 
-import { Mermaid } from 'mdx-mermaid/Mermaid'
+import Drawio from '@theme/Drawio';
+import { Mermaid } from 'mdx-mermaid/Mermaid';
+import internalInteractionsSvg from '!!raw-loader!./internal-interactions.xml';
 
 # OKP4 Ecosystem
 
@@ -61,7 +63,7 @@ The following diagram describes the different possible interactions during the e
 
 - (1) - The use case starts with the submission of a transaction requesting to execute a workflow.
 - (2) & (3) - In parallel, the Workflow Engine regularly queries the blockchain to retrieve the latest validated transactions.
-- (4) & (5) - If the transaction is a request to execute a workflow, the Workflow Engine retrieves the metadata describing the service to invoke. For simplicity, we consider here that the invoked workflow consists of a single service.
+- (4) & (5) - If the transaction is a request to execute a workflow, the Workflow Engine retrieves the metadata describing the services to invoke. For simplicity, we consider here that the invoked workflow consists of a single service.
 - (6) - Before invoking the service, the Workflow Engine records a status transaction in the blockchain. This information is important because it helps to ensure that the contract established between the customer and the various suppliers (data, services, infrastructure, etc.) is honored.
 - (7), (8) & (9) - Based on the service metadata, the Workflow Engine is able to call the service.
 - (10) - After invoking the service, the Workflow Engine records a status transaction (success, failure) in the blockchain.
@@ -100,6 +102,36 @@ Secondly, decentralization is also achieved by the ability of the Protocol to be
 
 *Work in progress*
 
-## Security & Risks
+## Security
 
-*Work in progress*
+The purpose of this protocol is to allow the implementation of applications dedicated to data sharing within data spaces governed by a customizable governance. In this context, which involves several different systems, from different providers, in different runtime environments, security is a major concern.
+
+The means used to guarantee the security of the protocol and its ecosystem are varied and depend on the nature of each component and the way they are used and exposed.
+
+In the following chapters, we describe the main security principles on which the protocol is based.
+
+### Data services
+
+#### The responsability of data providers
+
+Data services are responsible for all the data they host and distribute. This means that data at rest and in transit must be protected from unauthorized access. Clients must be authenticated and appropriately authorized to access data. Ideally, all interactions must be auditable and uniquely traceable to the originating entity. The system must be robust against intentional attempts to circumvent any of its access controls.
+
+In the protocol, service providers are encouraged to make security a primary issue, as providers have value at stake that they can lose if they fail to meet their obligations. We therefore consider that the obligation of means in terms of security must be guaranteed by the service provider.
+
+#### Internal interactions
+
+Internal interactions are the interactions that take place between the different components of the ecosystem, and more specifically the interactions between a data service and the workflow service. In this situation, the workflow service must have the legitimacy to access the data, or be able to provide the authorization to another service (typically an algorithm service) to access the data. The pain point is that for several services to cooperate together they must share secrets that allow them to access certain resources, under certain conditions.
+ 
+In the framework of the OKP4 protocol, services dedicated to the management of identity-based secrets and encryptions can be used: those are the Secrets Vaults.
+
+To better understand the case, the following example illustrates the access to a data provided by a secured service to the orchestration service.
+
+<Drawio content={internalInteractionsSvg} />
+
+The sequence is the following:
+
+- a. First, the data provider deposits the data and secures it with an appropriate means, including a secret. 
+- b. To allow access to this data to the protocol, the provider stores the secret in the Secret Vault. It should be noted that different instances of this service can be deployed in the protocol and operated by different providers, contributing to the decentralization of secret management.
+
+- 1. As soon as a workflow request is submitted to the protocol, the workflow service is triggered. The Workflow Engine then retrieves the metadata describing the services to invoke. To operate, the workflow engine makes a request to retrieve the secrets from the Secret Vault. After verification in the blockchain of the legitimacy of the request, the Secret Vault grants client access to secrets, keys.
+- 2. Having the secret, the Workflow service is allowed to invoke the service.
