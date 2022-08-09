@@ -60,7 +60,7 @@
     "markdownlint-cli": "^0.32.1",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
-    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard": "^26.0.0",
     "stylelint-config-standard-scss": "^4.0.0",
     "stylelint-scss": "^4.3.0"
   }
