@@ -59,7 +59,7 @@ Anyone with staked $KNOW tokens can participate in governance. It is possible to
 - Make a proposal: costs $KNOW tokens
 - Vote on a proposal: doesn't cost $KNOW tokens, but each token gives a vote right on each proposal, and each $KNOW gives 1 voting power
 
-For more information on governance please click [here](/docs/whitepaper/okp4-blockchain-architecture#governance--dao).
+For more information on governance please click [here](okp4-blockchain#governance--dao).
 
 ## Data Providers
 
