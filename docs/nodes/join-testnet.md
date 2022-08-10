@@ -6,9 +6,8 @@ sidebar_position: 6
 
 ## Hardware recommendations
 
-It is recommended to at least provide **10Go** of storage (SSD is a plus but not mandatory), **500Mo** of RAM and **500m** of CPU for a single validator node.
-
-> In case of a sentry node architecture each sentry should have at least **5Go** of storage plus the other requirements for a single node.
+It is recommended to at least provide **200Go** of storage (SSD is a plus but not mandatory), **8Gb** of memory and **2 cores** (modern CPU's) for a single node.
+Regarding the OS, it is recommended to use **Linux AMD64**.
 
 ## Node configuration
 
