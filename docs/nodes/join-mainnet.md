@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Join Mainnet
 
-:::info COMMING SOON
+:::info COMING SOON
 
 ✍️ _Under active writing..._
 

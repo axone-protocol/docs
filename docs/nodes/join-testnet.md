@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Join Testnet
 
-:::info COMMING SOON
+:::info COMING SOON
 
 ✍️ _Under active writing..._
 

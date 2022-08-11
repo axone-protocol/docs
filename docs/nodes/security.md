@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Security
 
-:::info COMMING SOON
+:::info COMING SOON
 
 ✍️ _Under active writing..._
 

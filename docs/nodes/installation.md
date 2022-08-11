@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Installation
 
-You'll find below the available ways of getting needed the `okp4d` binary to start a node.
+You'll find below the available ways of getting the needed the `okp4d` binary to start a node.
 
 ## Supported platforms
 
@@ -38,8 +38,7 @@ docker run -ti --rm okp4/okp4d:latest --help
 
 :::tip
 
-_Build once, deploy anywhere_
-The docker image is a multi-arch build supporting both `amd64` and `arm64`.
+_Build once, deploy anywhere_: The docker image is a multi-arch build supporting both `amd64` and `arm64`.
 
 :::
 
