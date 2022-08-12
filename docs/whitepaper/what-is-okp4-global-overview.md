@@ -4,22 +4,27 @@ sidebar_position: 4
 
 # What is OKP4? – Global Overview
 
-## OKP4 Ecosystem
+OKP4 is a public layer-1 blockchain designed for the coordination of off-chain and on-chain assets such as datasets, algorithms, software, storage or computation. This on-chain coordination unlocks new possibilities to generate value from data without exchanging it with other parties, thus bringing trust and incentives to share it and build new, better applications.
+By enabling trust-minimized data sharing, OKP4 gives the opportunity for anyone, any group, any company, to join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful and constantly improving data applications.
 
-OKP4 is a public Blockchain Protocol deploying a suite of tools & data applications where communities are incentivized to share data and services confidently. OKP4 is a layer 1 customized for the knowledge economy where anyone, any group, any company, can join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful data applications.
+OKP4 ambition is to bring many new use cases to web3, while onboarding many web2 users and companies.
 
-On the macro level, there are key concepts to understand:
+## OKP4 explained
 
-- **OKP4 blockchain** (Protocol)
-- **Data Spaces** (coordination mechanisms, rules & governance)
-- **Data Applications** (value for the end-users)
-- **Datasets & Services** (contributor layer)
+To sum up, OKP4 is a **blockchain**, enabling anyone to build and join **Data Spaces** and share **data & services** within these to create **Data Applications**.
+
+On the macro level, it is important to understand these 4 key concepts:
+- **OKP4 blockchain** (consensus & execution layer)
+- **Data Spaces** (rights and rules enabling coordination & governance mechanisms to change these rules)
+- **Data Applications** (off-chain apps leveraging data outputs and bringing value for the end-users)
+- **Datasets & Services** (off-chain assets coordinated by the blockchain according to Data Space's rules)
 
 **OKP4 blockchain** is the decentralized layer that:
 
-- Indexes (any) data and services
-- Exposes metadata of indexed data and services
-- Initiates data workflows
+- Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource
+- Exposes metadata of indexed data and services to make it findable, accessible and interoperable
+- Defines Data Spaces rules through CosmWasm smart-contracts
+- Orchestrates off-chain data & services and initiates off-chain workflows
 - Enforces governance rules, including access rights and value transfers
 
 It is the single source of truth that is used to build autonomous and decentralized data applications.
