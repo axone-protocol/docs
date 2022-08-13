@@ -44,22 +44,35 @@ _Build once, deploy anywhere_: The docker image is a multi-arch build supporting
 
 ## Build from source
 
-OKP4 is built using [Go](https://go.dev/dl/) version 18.
+### Prerequisites
+
+- `go` — OKP4 is built using [Go](https://go.dev/dl/) version 18+. Install `Go` `1.18+` following instructions from the [official Go documentation](https://golang.org/doc/install).
+- `make` — the project comes with a convenient `Makefile` so verify that [`make`](https://fr.wikipedia.org/wiki/Make) is properly installed.
+- `git` — in order to clone the project you need to have [`git`](https://git-scm.com/) installed.
+
+### Steps
+
+Clone the [okp4/okp4d](https://github.com/okp4/okp4d) repo:
 
 ```bash
-go version
-```
-
-You can install `okp4d` with:
-
-```bash
-go install github.com/okp4/okp4d@latest
-```
-
-Or by manually building the sources:
-
-```bash
-git clone git@github.com/okp4/okp4d
+git clone git@github.com:okp4/okp4d.git
 cd okp4d
+```
+
+Install `okp4d` using the provided `Makefile`:
+
+```bash
 make install
+```
+
+You can verify that everything is OK:
+
+```bash
+okp4d version
+```
+
+You should get an output similar to:
+
+```text
+1.3.0
 ```
