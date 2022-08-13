@@ -24,7 +24,7 @@ On the macro level, it is important to understand these 4 key concepts:
 
 - Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource
 - Exposes metadata of indexed data and services to make it findable, accessible and interoperable
-- Defines Data Spaces rules through CosmWasm smart-contracts
+- Defines Data Spaces rules through [CosmWasm](http://cosmwasm.com) smart-contracts
 - Orchestrates off-chain data & services and initiates off-chain workflows
 - Enforces governance rules, including access rights and value transfers
 
@@ -34,7 +34,7 @@ It is the single source of truth that is used to build autonomous and decentrali
 
 **Data applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
 
-**Datasets** are bytes of information stored on a device (IPFS, or custom private cloud), indexed on the Protocol and accessible through a dedicated gateway.
+**Datasets** are bytes of information stored on a device ([IPFS](https://ipfs.io), or custom private cloud), indexed on the Protocol and accessible through a dedicated gateway.
 
 **Services** are software associated with computation/storage resources accessible through an API that ensure an unlimited number of data-treatment operations such as data processing services, automatic description of data, knowledge graph query services, etc.
 Datasets and services provide the elementary building blocks and tools that will interact within data applications according to the orders specified in the Blockchain Protocol. In other words, each dataset and service is linked to one or more data applications (rules), and interacts with other data sources when called by the Protocol.
