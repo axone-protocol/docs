@@ -14,6 +14,7 @@ OKP4 ambition is to bring many new use cases to web3, while onboarding many web2
 To sum up, OKP4 is a **blockchain**, enabling anyone to build and join **Data Spaces** and share **data & services** within these to create **Data Applications**.
 
 On the macro level, it is important to understand these 4 key concepts:
+
 - **OKP4 blockchain** (consensus & execution layer)
 - **Data Spaces** (rights and rules enabling coordination & governance mechanisms to change these rules)
 - **Data Applications** (off-chain apps leveraging data outputs and bringing value for the end-users)
