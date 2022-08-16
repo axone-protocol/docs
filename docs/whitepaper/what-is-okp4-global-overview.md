@@ -2,37 +2,58 @@
 sidebar_position: 4
 ---
 
-# What is OKP4? – Global Overview
+# What is OKP4?
 
-OKP4 is a public layer-1 blockchain designed for the coordination of off-chain and on-chain assets such as datasets, algorithms, software, storage or computation. This on-chain coordination unlocks new possibilities to generate value from data without exchanging it with other parties, thus bringing trust and incentives to share it and build new, better applications.
-By enabling trust-minimized data sharing, OKP4 gives the opportunity for anyone, any group, any company, to join or create an ecosystem of contributors with custom rules, governance mechanisms and business models to build useful and constantly improving data applications.
+## Overview
 
-OKP4 ambition is to bring many new use cases to web3, while onboarding many web2 users and companies.
+OKP4 is a blockchain built for distributed applications.
 
-## OKP4 explained
+OKP4 is the only public layer-1 blockchain designed for coordination of distributed components such as datasets, algorithms, software, storage or computation. Developers can find development kits, governance templates and easy-to-integrate applications to design their own applications and data sharing ecosystems.
+Participants can provide any off-chain component they want to make it findable, available and interoperable with other components of the ecosystem. This on-chain coordination unlocks revolutionary possibilities to generate applications leveraging data and services from many businesses and individuals without any trusted third party accessing the datasets and services. It enables new opportunities to generate value from data without exchanging it with other parties, thus bringing trust and incentives to share it and build new, better applications.
 
-To sum up, OKP4 is a **blockchain**, enabling anyone to build and join **Data Spaces** and share **data & services** within these to create **Data Applications**.
+By enabling trust-minimized data sharing, OKP4 gives the opportunity for anyone, any group, any company, to join or create an ecosystem of contributors. OKP4 is an open interoperable smart contracts platform for highly customized rules, governance mechanisms and business models to align interests between participants and build useful distributed applications.
 
-On the macro level, it is important to understand these 4 key concepts:
+OKP4 ambition is to (1) bring many new use cases to web3 and (2) onboard many web2 users and companies by enabling real-world coordination of off-chain components, thus attracting developers to design value-adding applications in any vertical, way beyond decentralized finance.
 
-- **OKP4 blockchain** (consensus & execution layer)
-- **Data Spaces** (rights and rules enabling coordination & governance mechanisms to change these rules)
-- **Data Applications** (off-chain apps leveraging data outputs and bringing value for the end-users)
-- **Datasets & Services** (off-chain assets coordinated by the blockchain according to Data Space's rules)
+OKP4 is built using the Cosmos SDK and is able to attain instant transaction finality using the Tendermint proof-of-state consensus framework. 
+
+OKP4 is fundamentally a multichain infrastructure project. Our core value proposition relies on interchain applications leveraging existing networks inside and outside of the Cosmos ecosystem, such as Akash, Cheqd, Stargaze, Filecoin, Arweave, Ethereum and many more...
+
+## OKP4 described
+
+To sum up, OKP4 is a **blockchain** for anyone to build and join **Data Spaces**, share **data & services** within these, and build and use **Data Applications** which will leverage what has been shared.
+
+It is important to understand these 4 key concepts:
+
+- **OKP4 blockchain** (consensus & execution layer, enabling the coordination of network participants)
+- **Data Spaces** (rights and rules enabling data & services interactions + governance mechanisms to change these rules)
+- **Data Applications** (off-chain apps leveraging outputs from the distributed network and bringing value for the end-users)
+- **Datasets & Services** (off-chain components connected via APIs and coordinated by the blockchain according to Data Space's rules)
+
+Let's dive into each of these.
+
+### OKP4 Blockchain
 
 **OKP4 blockchain** is the decentralized layer that:
 
-- Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource
+- Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource and even on-chain services from other IBC-enabled networks
 - Exposes metadata of indexed data and services to make it findable, accessible and interoperable
-- Defines Data Spaces rules through [CosmWasm](http://cosmwasm.com) smart-contracts
+- Defines Data Spaces rules in [Prolog](https://en.wikipedia.org/wiki/Prolog) 
+- Is an open smart contracts platform powered by [CosmWasm](http://cosmwasm.com) for maximum governance customization.
 - Orchestrates off-chain data & services and initiates off-chain workflows
 - Enforces governance rules, including access rights and value transfers
 
-It is the single source of truth that is used to build autonomous and decentralized data applications.
+It is the single source of truth that is used to build autonomous and distributed data applications.
+
+### Data Spaces
 
 **Data Spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a Data Space, with conditions specific to it. They can share their data in multiple Data Spaces. Data Space have their own customizable governance mechanisms. The OKP4 Blockchain can host an endless number of Data Spaces.
 
+### Data Applications
+
 **Data applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
+
+### Datasets & Services
 
 **Datasets** are bytes of information stored on a device ([IPFS](https://ipfs.io), or custom private cloud), indexed on the Protocol and accessible through a dedicated gateway.
 
