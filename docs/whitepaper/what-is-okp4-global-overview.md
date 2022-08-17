@@ -15,7 +15,7 @@ By enabling trust-minimized data sharing, OKP4 gives the opportunity for anyone,
 
 OKP4 ambition is to (1) bring many new use cases to web3 and (2) onboard many web2 users and companies by enabling real-world coordination of off-chain components, thus attracting developers to design value-adding applications in any vertical, way beyond decentralized finance.
 
-OKP4 is built using the Cosmos SDK and is able to attain instant transaction finality using the Tendermint proof-of-state consensus framework. 
+OKP4 is built using the Cosmos SDK and is able to attain instant transaction finality using the Tendermint proof-of-state consensus framework.
 
 OKP4 is fundamentally a multichain infrastructure project. Our core value proposition relies on interchain applications leveraging existing networks inside and outside of the Cosmos ecosystem, such as Akash, Cheqd, Stargaze, Filecoin, Arweave, Ethereum and many more...
 
@@ -38,7 +38,7 @@ Let's dive into each of these.
 
 - Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource and even on-chain services from other IBC-enabled networks
 - Exposes metadata of indexed data and services to make it findable, accessible and interoperable
-- Defines Data Spaces rules in [Prolog](https://en.wikipedia.org/wiki/Prolog) 
+- Defines Data Spaces rules in [Prolog](https://en.wikipedia.org/wiki/Prolog)
 - Is an open smart contracts platform powered by [CosmWasm](http://cosmwasm.com) for maximum governance customization.
 - Orchestrates off-chain data & services and initiates off-chain workflows
 - Enforces governance rules, including access rights and value transfers
