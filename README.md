@@ -2,10 +2,10 @@
 
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-[![lint](https://img.shields.io/github/workflow/status/okp4/docs/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/lint.yml)
-[![build](https://img.shields.io/github/workflow/status/okp4/docs/Build?label=build&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/build.yml)
-[![publish](https://img.shields.io/github/workflow/status/okp4/docs/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/docs/actions/workflows/publish.yml)
-[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
+[![lint](https://img.shields.io/github/workflow/status/okp4/docs/Lint?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/lint.yml)
+[![build](https://img.shields.io/github/workflow/status/okp4/docs/Build?label=build&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/build.yml)
+[![publish](https://img.shields.io/github/workflow/status/okp4/docs/Publish?label=publish&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/publish.yml)
+[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge&logo=conventionalcommits)](https://conventionalcommits.org)
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)](https://github.com/prettier/prettier)
 [![license][bsd-3-clause-image]][bsd-3-clause]
 [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
