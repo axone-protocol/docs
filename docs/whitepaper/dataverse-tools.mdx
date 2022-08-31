@@ -106,25 +106,31 @@ Each dataset deposit is a transaction submitted to the protocol that must be sig
 
 ## Metadata extraction
 
-Each dataset declared in the OKP4 Protocol is described with metadata registered in the ontology.
+Each dataset referenced in the OKP4 protocol is described by a set of metadata in the form of an [ontology](/docs/whitepaper/okp4-blockchain#okp4-ontology) that is recorded on-chain.
 
-These general metadata allow users to have a description of the datasets. Besides, the metadata are part of the traceability of the knowledge creation.
+This metadata set is fundamental in the protocol since it allows anyone to have a precise and complete description of the datasets registered in the protocol, according to multiple facets: descriptive, administrative, structural... Moreover, the different processing applied to the datasets through the services materializes, in the ontology, a [knowledge graph](/docs/whitepaper/dataverse-tools#knowledge-graph) giving a complete understanding of the way the knowledge is created.
 
-General metadata can be:
+When a new dataset is registered, the protocol takes care of the execution of the metadata extraction in order to qualify and characterize the dataset automatically. For this, different specialized services are invoked to perform the metadata extraction. These services are provided by OKP4, but can also be completed by any Service Provider.
+
+For instance:
+
+**Descriptive metadata**
+> - Name of the dataset
+> - Date of creation  
+> - Keywords
+
+**Structural metadata**
+> - Files list part of the dataset
+> - Name, Size and Type of files 
+> - Structure of the files, for instance:
+>   - Headers with their types for CSV files
+>   - Width, Height, Bits per pixels, etc. for Image files
+
+All metadata are public by default and freely accessible by the simple fact that they are stored in the OKP4 blockchain which is public and permissionless. However, the protocol provides for the expression of visibility rights that are interpreted by the various Web3.0 apps (e.g. [the Portal](/docs/whitepaper/dataverse-tools#portal)) to filter the information displayed to users. These rights are:
 
 - Public (by default)
 - Authorized to particular users
 - Private
-
-Different services extract the general metadata, provided by OKP4 or third parties.
-
-Examples of general metadata:
-
-> Name of the dataset  
-> Author  
-> Date of creation  
-> Format  
-> Size
 
 ## Data Applications
 
