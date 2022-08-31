@@ -25,10 +25,10 @@ To sum up, OKP4 is a **blockchain** for anyone to build and join **Data Spaces**
 
 It is important to understand these 4 key concepts:
 
-- **OKP4 blockchain** (consensus & execution layer, enabling the coordination of network participants)
+- **OKP4 Blockchain** (consensus & execution layer, enabling the coordination of network participants)
+- **OKP4 Dataverse** comprised of **Data & Services** (off-chain data & services referenced via metadata and APIs; coordinated by the blockchain according to Data Space's rules)
 - **Data Spaces** (rights and rules enabling data & services interactions + governance mechanisms to change these rules)
 - **Data Applications** (off-chain apps leveraging outputs from the distributed network and bringing value for the end-users)
-- **Datasets & Services** (off-chain components connected via APIs and coordinated by the blockchain according to Data Space's rules)
 
 Let's dive into each of these.
 
@@ -45,6 +45,14 @@ Let's dive into each of these.
 
 It is the single source of truth that is used to build autonomous and distributed data applications.
 
+### Dataverse
+
+The Dataverse is comprised of datasets and services that are shared by sovereign network participants - they don't have to copy the data or the service somewhere else to make it available.
+
+**Datasets** are bytes of information stored on a server (any data storage, either decentralized like [IPFS](https://ipfs.io) or [Arweave](https://www.arweave.org/), or centralized like [AWS](https://aws.amazon.com/) or [Azure](https://azure.microsoft.com/)), indexed on the Blockchain and accessible through a dedicated gateway.
+
+**Services** are software associated with computation/storage resources accessible through an API that ensure an unlimited number of data-treatment operations such as data processing services, automatic description of data, knowledge graph query services, etc.
+
 ### Data Spaces
 
 **Data Spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a Data Space, with conditions specific to it. They can share their data in multiple Data Spaces. Data Space have their own customizable governance mechanisms. The OKP4 Blockchain can host an endless number of Data Spaces.
@@ -53,12 +61,12 @@ It is the single source of truth that is used to build autonomous and distribute
 
 **Data applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
 
-### Datasets & Services
+### To sum up
 
-**Datasets** are bytes of information stored on a device ([IPFS](https://ipfs.io), or custom private cloud), indexed on the Protocol and accessible through a dedicated gateway.
-
-**Services** are software associated with computation/storage resources accessible through an API that ensure an unlimited number of data-treatment operations such as data processing services, automatic description of data, knowledge graph query services, etc.
-Datasets and services provide the elementary building blocks and tools that will interact within data applications according to the orders specified in the Blockchain Protocol. In other words, each dataset and service is linked to one or more data applications (rules), and interacts with other data sources when called by the Protocol.
+Datasets and services provide the elementary building blocks that will interact in a distributed fashion according to the workflows initiated in the Blockchain.
+Each workflow initiated in the blockchain refers to one specific Data Space with its own explicit rules.
+Each dataset and service interacts within to one or many Data Spaces according to the access given by the data and service providers.
+The outputs of the distributed workflows are leveraged by Data Applications to provide value to the end users.
 
 ## Network participants
 
@@ -70,15 +78,18 @@ On the **Data Application layer**, there are [Builders](/docs/whitepaper/roles#b
 
 ## Multi-layered governance
 
-The main critics we can address at web2 companies and especially tech giants is their extractive nature, their willingness to keep users captive on their platforms, and their increasing power controlled by a centralized governance.
+The main criticisms we can address at web2 companies and especially tech giants are their extractive nature, their willingness to keep users captive on their platforms, and their increasing power controlled by centralized governance.
 
-But web3 also has its own sets of problems, its pretty wild and self-reliant, UX is bad, allocation of capital can be messy and coordination is often suboptimal.
+But web3 also has its own sets of problems; pretty wild and self-reliant, UX is bad, allocation of capital can be messy and coordination is often suboptimal.
 
-To build the best data sharing infrastructure, we need to combine web2 and web3 strengths through multi-layered modular governance:
+To build the best data sharing infrastructure, we need to enable the best of both web2 and web3 worlds through multi-layered governance:
 
-- **OKP4 Blockchain** is decentralized by design, with its set of token holders that propose and vote on governance proposals
-- **Data Spaces** have custom governance. Data Space governance can be centralized (one or few accounts are designated to have the ability to design rules) or decentralized (through token-based voting power)
-- **Data applications** also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more complex community-run applications can be considered
-- **Datasets & services** are sovereign to their owners. Providers (individuals or companies) can define general permissions/requirements for their data and services, but also can hand-pick the Data Spaces (and align with the Data Space's rules) in which they want to contribute
+- **OKP4 Blockchain** is decentralized by design, with its set of token holders that propose and vote on governance proposals - it's a trustless and censorship-resistant infrastructure.
+- **Data Spaces** have custom governance. Data Space governance can be centralized (one or few accounts have the ability to design rules through monosig or multisig) or decentralized (through token-based voting power)
 
-This mixture of governance layers enable the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design.
+This design can be ideal for some companies who want to have control over the Data Space rules, while leveraging the decentralized infrastructure that guarantees data & services providers complete ownership over what they shared. They can remove their consents at any time and can verify that the system acted accordingly to the rules they agreed on.
+
+- **Data applications** also have custom governance. Many of them will be centralized as it can be as simple as a front-end to consume data products, but more decentralized community-run applications can be considered.
+- **Datasets & services** are sovereign to the data and services providers. Providers (individuals or companies) can define general permissions/requirements for their data and services to be used in many Data Spaces, but also can hand-pick the Data Spaces (and align themselves with the Data Space's rules) in which they want to contribute.
+
+This mixture of governance layers enables the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design.
