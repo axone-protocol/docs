@@ -47,7 +47,7 @@ Connectez vous avec l'adresse fournie par OKP4 en utilisant le fichier fournit d
 
 Maintenant, vous pouvez cliquer sur l’icône de l’extension Keplr
 
-- Sélectionnez la blockchain `Stargaze` 
+- Sélectionnez la blockchain `Stargaze`
 
 ![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
 
@@ -87,9 +87,9 @@ Attention, le mnémonique généré et lui seul permet de contrôler votre porte
 
 ## Transférez le NFT de l'adresse fournie par OKP4 vers votre adresse personnelle
 
-- Dans Keplr, quand vous êtes connectés à votre wallet personnel (cliquez sur l'icone en haut à droite si vous n'y êtes pas), copiez l'adresse Stargaze commençant "stars1..." en cliquant ici 
+- Dans Keplr, quand vous êtes connectés à votre wallet personnel (cliquez sur l'icone en haut à droite si vous n'y êtes pas), copiez l'adresse Stargaze commençant "stars1..." en cliquant ici
 
-![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG) 
+![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
 
 - Dans Keplr, repassez sur le wallet temporaire OKP4 en cliquant sur l'icone en haut à droite.
 - Allez sur la page : <https://app.stargaze.zone/profile>
