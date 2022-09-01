@@ -82,7 +82,7 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 
 ## Transfer the NFT from the address provided by OKP4 to your personal address
 
-- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here ![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.png)
+- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here ![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
 - In Keplr, switch back to the temporary OKP4 wallet by clicking on the icon on the top right.
 - Go back to your NFT page : <https://app.stargaze.zone/profile>
 - Select your NFT
