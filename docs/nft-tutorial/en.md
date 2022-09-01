@@ -39,15 +39,15 @@ Connect with the address provided by OKP4
 - Click on the Keplr icon on your browser :  
    ![keplr icon](/img/content/nft-tutorial/keplr-icon.png)
 - You should see the following screen:  
-![create account](/img/content/nft-tutorial/account-creation-keplr.png)
+  ![create account](/img/content/nft-tutorial/account-creation-keplr.png)
 - Click on `Import existing account`
 - Enter your 24 words mnemonic (copy/paste of all words at once is possible)
 - Enter an account name like `temporary okp4 wallet`
 - Choose a password for Keplr
-  
+
 Now you can click on the Keplr extension icon
 
-- Select the `Stargaze` blockchain 
+- Select the `Stargaze` blockchain
 
 ![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
 The Stargaze blockchain is dedicated to NFTs and is part of the Cosmos ecosystem.
@@ -86,7 +86,7 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 
 ## Transfer the NFT from the address provided by OKP4 to your personal address
 
-- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here 
+- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here
 
 ![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
 
