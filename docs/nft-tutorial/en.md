@@ -47,10 +47,13 @@ Connect with the address provided by OKP4
   
 Now you can click on the Keplr extension icon
 
-- Select the `Stargaze` blockchain ![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
+- Select the `Stargaze` blockchain 
+
+![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
 The Stargaze blockchain is dedicated to NFTs and is part of the Cosmos ecosystem.
 
 You should see something like this:
+
 ![keplr account](/img/content/nft-tutorial/keplr-account.png)
 
 You can then go to <https://app.stargaze.zone>
@@ -59,6 +62,7 @@ You can then go to <https://app.stargaze.zone>
 - Once connected click on the user icon : ![stargaze user](/img/content/nft-tutorial/stargaze-account.png)
 
 You should be redirected to your NFT:
+
 ![Stargaze NFT](/img/content/nft-tutorial/stargaze-nft.png)
 
 ## Get a wallet of your own
@@ -82,7 +86,10 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 
 ## Transfer the NFT from the address provided by OKP4 to your personal address
 
-- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here ![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
+- In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here 
+
+![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
+
 - In Keplr, switch back to the temporary OKP4 wallet by clicking on the icon on the top right.
 - Go back to your NFT page : <https://app.stargaze.zone/profile>
 - Select your NFT
