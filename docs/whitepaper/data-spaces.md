@@ -4,22 +4,32 @@ sidebar_position: 7
 
 # Data Spaces
 
+To recap, OKP4 enables the Dataverse, an ever-expanding universe coordinated by the blockchain.
+
+But how are the resources coordinated? According to which rules?
+
+This is where Data Space matters!
+
 ## Purpose of Data Spaces
 
-Governance and fair business model are the key to overcome data sharing brakes.
+Rights and rules such as secure access rights and fair business model are the key to bring trust and align interests between participants.
 
-Data Spaces are ecosystems for the seamless sharing of data and services that interact according to common governance rules, guaranteeing the trust and interest of stakeholders in contributing. These Data Spaces are the source of new value chains in the knowledge economy.
+OKP4 enables anyone to build and join an infinite number of highly customizable Data Spaces.
+
+Data Spaces refer to an agreement between data and services providers according to a clearly defined set of rules. Each data & service provider can adhere or not on letting some of his resources participate in a Data Space.
 
 A Data Space is an abstraction that comprises:
 
-- Bundle of rights & rules that regulates interactions between data, algorithms and resources shared by participants
+- Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants
 - Governance mechanisms to adapt these rules
 
-A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
+A Data Space is highly customizable regarding every aspect of data sharing: access control, data & service management, business models, governance frameworks...
 
-Added by the features of the OKP4 Ecosystem, the customized Data Space’s governance brings confidence and also widens the scope of possibilities to innovate with economic models to align participants’ interest.
+Governance mechanisms can also be customized to satisfy businesses and small teams (monosigs & multisigs) or decentralized communities (through a custom Data Space token).
 
-In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have participants, data and algorithms in common and are in fact overlapping. We call Dataverse the endless combination of interoperable Data Spaces where participants, assets and resources can interact freely.
+In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have data and algorithms in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants, assets and resources can interact freely and create value.
+
+These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilites way beyond what exists today with transactional data marketplaces.
 
 ## Data Space technical description
 
