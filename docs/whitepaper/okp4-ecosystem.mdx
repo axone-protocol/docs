@@ -9,7 +9,7 @@ import securityRetrieveCredentialsSvg from '!!raw-loader!./security-retrieve-cre
 import securityUseCredentialsSvg from '!!raw-loader!./security-use-credentials.xml';
 import securitySecuredDataspaceSvg from '!!raw-loader!./security-secured-dataspace.xml';
 
-# OKP4 Ecosystem
+# The Dataverse
 
 ## Overview
 
@@ -23,13 +23,19 @@ There is a large possible typology of services already supported by the Protocol
 - *Infrastructure* as a Service - Services that offer computation, storage and networking resources.
 - *Identity* as a Service - Services that offer a decentralized management of identities.
 
-The Ecosystem is based on a fully decentralized open and agnostic architecture, which is:
+The Ecosystem is based on a fully decentralized, open and agnostic architecture, which is:
 
 - *Scalable* - designed to scale to infinity.
 - *Interoperable* - ensure maximum integration with existing and future services.
 - *Auditable* - provide a complete topology of the Ecosystem recorded as an [ontology](okp4-blockchain#okp4-ontology) on-chain.
 
-## Decentralized Orchestration / Workflow Engine
+**The Dataverse is an ever-extanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, Workflow Engines, and other resources referenced in the Blockchain**
+
+![Dataverse](/img/content/whitepaper/Dataverse.PNG)
+
+Let's dive into each kind of resource that can be shared into the Dataverse and how to coordinate them together.
+
+## Decentralized Orchestration
 
 ### The Workflow Engine
 
@@ -89,41 +95,59 @@ Decentralization comes first and foremost through the Protocol's ability to brin
 
 Secondly, decentralization is also achieved by the ability of the Protocol to be agnostic: indeed, each service can be described by any language and thus interpreted by any Workflow Engine. By this principle, it is possible to have services invocable by different Workflow Engines.
 
-## Data / Algorithms
+## Datasets
 
-*Work in progress*
+Any Datasets can be shared and used in the Dataverse. 
 
-## Storage, computation
+Because all datasets and services are stored off-chain, OKP4 can support any volume, variety and velocity of data.
 
-*Work in progress*
+If your data is stored locally, you need to make it available to the network. You can upload it on your own local server to make it available, or into a cloud provider, or into a decentralized storage network... anything is possible.
 
-## Mechanisms to connect/disconnect
+## Algorithms
 
-*Work in progress*
+Any Algorithm can be shared and used in the Dataverse. Either as code without the computation infrastructure or as an API.
 
-## Datasets / algorithms / resource governance – sovereignty
+## Infrastructure
 
-*Work in progress*
+Any Infrastructure can be shared and used in the Dataverse.
+
+### Storage
+
+All storage options can be considered: from local storage to company-operated cloud storage (i.e. AWS, Azure, Google Cloud...), to decentralized storage networks (i.e. IPFS, Filecoin, Arweave...)
+
+### Computation
+
+All computation options can be considered: many services will be provided as API with their own computation resources, but others can also be executed on company-operated cloud services or decentralized computation (i.e. Akash, Ankr, Cudos...)
+
+## Identity solutions
+
+Identity management services or identity standards can be used, depending on the needs.
+
+## Personal sovereignty in the Dataverse 
+
+What matters in the Dataverse design is the ability of any provider to be sovereign about what they shared in the Dataverse.
+
+For example, because Data Space governance is highly customizable, it can be defined as quite centralized (operated by a single company for example). But the Dataverse is open, trustless, and censorship-resistant, so anyone can remove access rights from what he shared in Data Spaces, and even dereference from the Dataverse completely without asking anyone for permission to do so.
 
 ## Security
 
-The purpose of the OKP4 protocol is to allow the deployment of applications dedicated to data sharing within data spaces governed by a customizable governance. In this context, which involves several different systems, from different providers, in different runtime environments, security is a major concern.
+The purpose of the OKP4 protocol is to allow the deployment of applications dedicated to data sharing within data spaces governed by customizable governance. In this context, which involves several different systems, from different providers, in different runtime environments, security is a major concern.
 
 The means used to guarantee the security of the protocol and its ecosystem are varied and depend on the nature of each component and the way they are used and exposed.
 
 In the following chapters, we describe the main security principles on which the protocol is based.
 
-### The responsability of Service Providers
+### The responsibility of Service Providers
 
 The Services deployed in the OKP4 ecosystem are responsible for all the data they host, process and distribute. This means that data at rest and in transit must be protected from unauthorized access. Clients must be authenticated and appropriately authorized to access data. Ideally, all interactions must be auditable and uniquely traceable to the originating entity. The system must be robust against intentional attempts to circumvent any of its access controls.
 
-In the protocol, Service Providers are encouraged to make security a primary issue, as Service Providers have value at stake that they can lose if they fail to meet their obligations. We therefore consider that the obligation of means in terms of security must be guaranteed by the Service Provider.
+In the protocol, Service Providers are encouraged to make security a primary issue, as Service Providers have value at stake that they can lose if they fail to meet their obligations. We, therefore, consider that the obligation of means in terms of security must be guaranteed by the Service Provider.
 
 ### Interactions flow
 
 We consider here internal services interaction, i.e. the interactions that take place between the different components of the ecosystem, and more specifically the interactions between a service and the [Workflow Service](okp4-ecosystem#the-workflow-engine) in charge of the orchestration.
 
-In this situation, the workflow service must have the legitimacy to access the data, or be able to provide the authorization to another service (typically an algorithm service) to access the data. The pain point is that for several services to cooperate together they must share secrets that allow them to access certain resources, under certain conditions.
+In this situation, the workflow service must have the legitimacy to access the data or be able to provide the authorization to another service (typically an algorithm service) to access the data. The pain point is that for several services to cooperate together they must share secrets that allow them to access certain resources, under certain conditions.
  
 In the framework of the OKP4 protocol, services dedicated to the management of identity-based secrets and encryptions can be used: those are the Secrets Vaults.
 
@@ -154,7 +178,7 @@ Having the secret, the Workflow Service is now allowed to invoke the service.
 For very sensitive data where security must be very high, the OKP4 protocol supports the deployment of a private and secure ecosystem for a Data Space.
 
 In this Data Space, all declared resources are private and used only within the Data Space. In particular:
-- Services have been audited to ensure security and compliance. These services are deployed and operated in a secure infrastructure and have no exposure to the outside world.
-- The data is hosted in-situ, and never leaves the dataspace.
+- Services have been audited to ensure security and compliance. These services are deployed and operated on a secure infrastructure and have no exposure to the outside world.
+- The data is hosted in-situ, and never leaves the Data Space.
 
 <Drawio content={securitySecuredDataspaceSvg} />
