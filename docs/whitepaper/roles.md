@@ -175,6 +175,6 @@ There is 2 kind of end-users:
 
 - Off-chain end-users in applications which only leverage outputs from OKP4. These applications can have web2-like UX and business models such as a subscription-based one like mainstream SaaS platforms. In this case, companies or individuals operating the Data Application are responsible to handle operations in a way that is sustainable for them and for the users.
 
-- On-chain end-users where tyhey can leverage their on-chain identity and perform on-chain actions. This is mandatory to benefit from personal data that may be shared in a Data Space to access some personalized features in a Data Application for example.
+- On-chain end-users where they can leverage their on-chain identity and perform on-chain actions. This is mandatory to benefit from personal data that may be shared in a Data Space to access some personalized features in a Data Application for example.
 
 These 2 kinds of end-users will coexist.
