@@ -8,7 +8,7 @@ sidebar_position: 9
 
 Across the vibrant Ecosystem of OKP4, participants can choose from several different functional roles in the protocol - depending on their technical skills, risk tolerance, desired activity level and resources at their disposal. In this section we will quickly introduce you to the various roles in just a few words, for more details please select the following sections.
 
-***Blockchain Participants***
+### Blockchain Participants
 
 **Validators** run nodes and participate in consensus by broadcasting votes. They can self-bond $KNOW to increase their probability to validate a block and get rewards. They also have an obligation to vote on the DAO's proposals.
 
@@ -16,7 +16,7 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 **DAO Participants** are anyone with staked $KNOW tokens can participate in on-chain governance. It is possible to make a proposal and vote on a proposal.
 
-***Dataverse & Data Space Participants***
+### Dataverse & Data Space Participants
 
 **Data providers** are users who deposit/registers one or more datasets into one or more Data Spaces. They are retributed with tokens when their datasets are used according to the Data Space business model of the workflow in which it is used.
 
@@ -28,7 +28,7 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 **Governors** each Data Space can have its own governance mechanisms. Governors are the ones who enforce them. The ability to become a governor depends on the Data Space, some will have a specific governance token (fungible or non fungible), some will have multisigs, some will have single self-designated entities defining the rules.
 
-***Data Application Participants***
+### Data Application Participants
 
 **Builders** are the ones who develop and update applications which consume knowledge (any web or mobile application that consume data). These applications are external to the Protocol.
 
@@ -169,9 +169,10 @@ The end-users have the possibility to go directly through an external applicatio
 
 ## End-users
 
-They are the ones using Data Applications. 
+They are the ones using Data Applications.
 
 There is 2 kind of end-users:
+
 - Off-chain end-users in applications which only leverage outputs from OKP4. These applications can have web2-like UX and business models such as a subscription-based one like mainstream SaaS platforms. In this case, companies or individuals operating the Data Application are responsible to handle operations in a way that is sustainable for them and for the users.
 
 - On-chain end-users where tyhey can leverage their on-chain identity and perform on-chain actions. This is mandatory to benefit from personal data that may be shared in a Data Space to access some personalized features in a Data Application for example.
