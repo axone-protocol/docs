@@ -100,3 +100,9 @@ svg {
     }
   }
 }
+
+.docs-doc-id-faq\/faq {
+  .markdown > h2 {
+    font-size: var(--ifm-h3-font-size);
+  }
+}
