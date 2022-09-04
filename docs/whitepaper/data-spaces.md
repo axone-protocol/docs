@@ -44,13 +44,16 @@ OKP4 Development Kit is designed to give as much freedom as possible for develop
 
 The Rulebook describes a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
 
-Once the Data Space is created through the Development Kit, the governance rules of this Data Space it is encoded into a [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) allowing the rules to be expressed as code interpretable by a smart contract in a fully decentralized and autonomous way. For any transaction sent to the OKP4 blockchain, this smart contract ensures that the transaction complies with the rights established by the Data Space governance rules. If not, the transaction is rejected.
+Once the Data Space is created through the Development Kit, the governance rules of this Data Space it is encoded into a [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) allowing the rules to be expressed as a formal code which is:
+
+- stored on-chain and is freely auditable by anyone,
+- interpretable by a smart contract in a fully decentralized and autonomous way. Thus, for any transaction sent to the OKP4 blockchain, this smart contract ensures that the transaction complies with the rights established by the Data Space governance rules. If not, the transaction is rejected.
 
 ## Data Space Rules
 
 A Data Space is governed by a bundle of rights and rules that define the permitted interactions between data, algorithms, resources and users.
 
-The rules can refer to data management, retribution, business model or technical requirements for instance. All the rules are totally customizable.
+The rules can refer to data management, retribution, business model or technical requirements for instance. All the rules are totally customizable and in particular can be amended provided that specific provisions have been made. By amendments, we mean an addition or modification to the governance rules, provided that they are compatible with the rules already defined (consistency).
 
 ### Examples of rules
 
