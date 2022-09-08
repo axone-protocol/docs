@@ -146,6 +146,9 @@ const config = {
         hashed: true
       }
     ]
+  ],
+  scripts: [
+    "/js/matomo.js",
   ]
 }
 
