@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 # Roles
@@ -38,7 +38,7 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 Our Validator network is based on the Tendermint consensus system which relies on a group of Validators in charge of committing new blocks to our blockchain. They participate in the consensus protocol by broadcasting votes that contain cryptographic signatures signed by the private key of each Validator. Applicants to this group can have $KNOW tokens delegated to them by the token holders (Delegators).
 
-Anyone can become Validator at any time, except when the size of the current Validator set is greater than the maximum number of Validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of $KNOW tokens staked by the Validator plus those delegated. Our network will initially contain a set of 100 Validators (with an increase over time based on a growth rate). The 100 best candidates with more voting power will then be the approved Validators of our network; the other candidates are on a waiting list. If a Validator is replaced by a new Validator, the existing Validator becomes inactive (back on the waiting list) and all his $KNOW and delegated $KNOW enter the unbounding state.
+Anyone can become Validator at any time, except when the size of the current Validator set is greater than the maximum number of Validators allowed. Validators will be automatically selected according to their voting power, which is determined by the number of $KNOW tokens staked by the Validator plus those delegated. Our network will initially contain a set of 100 Validators (which may increase over time based on governance votes). The 100 best candidates with more voting power will then be the approved Validators of our network; the other candidates are on a waiting list. If a Validator is replaced by a new Validator, the existing Validator becomes inactive (back on the waiting list) and all his $KNOW and delegated $KNOW enter the unbounding state.
 
 Validators (and their delegates) earn $KNOW tokens as a reward for running the Tendermint consensus protocol. These rewards come from inflation and transaction fees. Validators can choose to set a small commission percentage on the rewards received by their Delegators as an additional incentive.
 

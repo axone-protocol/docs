@@ -20,9 +20,9 @@ We don’t *know* how to go to Mars, we don’t *know* how to predict cancer, we
 
 Knowledge is the limiting factor to common good, for individuals, companies and society at large.
 
-In our digitalized world, one of the most efficient way to unlock knowledge is through data sharing.
+In our digitalized world, one of the most efficient way to unlock knowledge is through data.
 
-But data is rarely shared. It stays in silos, isolated and protected. As such, data is under-used and under-valued. Indeed, data is a [non-rival good](https://en.wikipedia.org/wiki/Rivalry_(economics)), which means that I can share it many times without changing my ability to use it. The generation of knowledge from data is then theoretically infinite. That's why an incommensurable amount of value could be unlocked through data sharing.
+But data is rarely shared. It stays in silos, isolated and protected. As such, data is under-used and under-valued. Indeed, data is a [non-rival good](https://en.wikipedia.org/wiki/Rivalry_(economics)), which means that I can share it many times without changing my ability to use it. Generating knowledge from data is theoretically infinite. That's why an incommensurable amount of value could be unlocked through data sharing.
 
 ### Why is data sharing not the norm then?
 
@@ -39,13 +39,15 @@ Today's problem is that individuals and companies are incentivized to build gate
 
 ## Existing approaches
 
-Since data is everywhere and knowledge is valuable, the issues related to data sharing and knowledge creation are far from being new topics for individuals and organizations.
+Since data is everywhere and knowledge is valuable, the issues related to data sharing and knowledge creation are far from being new concepts for individuals and organizations.
 
 Many approaches already exist to share data between entities:
 
 ![Degree of federation in data-sharing models](/img/content/whitepaper/degree_of_federation.png)
 
-As you can see, the decentralized approach seem to be the most promizing. In fact, it will enable data sharing without trusted third parties, without moving data from its existing place and even enable decentralized governance on data sharing rules.
+Data exchange is the most common model today, while a decentralized approach to data sharing seems to be the most promizing. In fact, it will enable data sharing without trusted third parties, without moving data from its existing place and even enable decentralized governance on data sharing rules.
+
+Game theory applied to governance issues with tokens as tools for interest alignment is a field in which we've just scratched the surface. The future looks bright.
 
 ### Technology is getting more mature by the day
 
@@ -73,62 +75,114 @@ To sum up, trust-minimized data sharing may need its own layer-1.
 
 ## Introducing – OKP4
 
-The previously mentioned reasons led us to create OKP4 (Open Knowledge Protocol For...).
+The previously mentioned reasons led us to create OKP4 (Open Knowledge Protocol For... everything and everyone).
 
 ![OKP4_banner](/img/content/banner_okp4.png)
 
 ### What is OKP4?
 
-OKP4 is a public PoS layer 1 specifically designed to build the Dataverse, which will be the foundation of the next generation of Data Applications powered by trust-minimized data sharing.
+OKP4 is a public PoS layer 1 blockchain built to enable applications based on distributed digital assets shared by participants (datasets, algorithms, storage, computation...). These shared digital assets constitute the Dataverse, an ever-expanding universe of resources that can interact with each other through custom ecosystems of shared rules.
 
 Anyone can create custom ecosystems called [Data Spaces](https://gaia-x.eu/what-is-gaia-x/core-elements/data-spaces/). In each Data Space, people & companies can share data, algorithms, software, storage and computation according to Data Space's rules.
 
-OKP4 is designed to become the commons for builders, data providers, communities, data scientists & users to unlock tangible value creation thanks to data sharing, enabling many new usecases for web3, way beyond Decentralized Finance.
+OKP4 is an open interoperable smart contracts platform for highly customized rules, governance mechanisms and business models to align interests between participants and build useful distributed applications.
 
-Our ambition is to design the open infrastructure that builders will go to in order to quickly set-up governance rules (access rules, business models...) and governance mechanisms that will power distributed data-based applications.
+With OKP4, builders can find development kits, governance templates and easy-to-integrate applications to design their own applications and Data Spaces. Participants can provide any off-chain digital asset they want to make it findable, available and interoperable with other components of the ecosystem. This on-chain coordination unlocks revolutionary possibilities to generate applications leveraging data and services from many businesses and individuals without any trusted third party accessing the datasets and services. It enables new opportunities to generate value from data without exchanging it with other parties, thus bringing trust and incentives to share it and build new, better applications.
 
-The goal is simple: let anyone contribute with sovereign data, generate value from many applications and be retributed for contribution.
-Low risks, low costs, high incentives.
+OKP4 is designed to become the commons for builders, data providers, communities, businesses, data scientists & users to unlock tangible value creation through a new generation of web3 "real-life" use cases, way beyond Decentralized Finance.
+
+OKP4 is built using the Cosmos SDK and is fundamentally a multichain infrastructure project. Our core value proposition relies on interchain applications leveraging existing networks inside and outside of the Cosmos ecosystem, such as Akash, Juno, Osmosis, Cheqd, Stargaze, Filecoin, Arweave, Ethereum and many more...
 
 ### What is the Dataverse?
 
 The Dataverse is inspired from the term Metaverse, a growing buzzword that embodies the next generation of internet experiences combining virtual reality and digital ownership. The challenge with the Metaverse is to build it on an open infrastructure, so that users are not captive of the companies and siloed environments produced by companies.
 
-The Dataverse is an open world where users become owners. They own their data, the algorithms & resources they provide. They can even own the infrastructure and can be involved in it governance.
+The Dataverse is an open world where users become owners. They own their data, the algorithms & resources they provide. They can even own the blockchain infrastructure and can be involved in its governance.
 
-The Dataverse is a collection of interoperable ecosystems of shared rules (Data Spaces) in which assets are shared to build applications.
-It is relationship between Dataverse participants, not a common technical infrastructure. The Dataverse is not a datalake or a cloud where data is stored centrally. Everything can stay at the source, that's why Dataverse participants are always sovereign about what they share.
+The Dataverse is not a datalake or a cloud where data is stored centrally. Everything can stay at the source, that's why Dataverse participants are always sovereign about what they share. The Data Spaces leveraging the Dataverse can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space.
 
-The Data Spaces that compose the Dataverse can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space.
+## OKP4 described
 
-### The features of the OKP4 Protocol
+To sum up, OKP4 is a **blockchain** for anyone to build and join **Data Spaces**, share **data & services** within these, and build and use **Data Applications** which will leverage what has been shared.
+
+It is important to understand these 4 key concepts:
+
+- **OKP4 Blockchain** (consensus & execution layer, enabling the coordination of network participants)
+- **OKP4 Dataverse** comprised of **Data & Services** (off-chain data & services referenced via metadata and APIs; coordinated by the blockchain according to Data Space's rules)
+- **Data Spaces** (rights and rules enabling data & services interactions + governance mechanisms to change these rules)
+- **Data Applications** (off-chain apps leveraging outputs from the distributed network and bringing value for the end-users)
+
+Let's dive into each of these.
+
+### OKP4 Blockchain
+
+**OKP4 blockchain** is the decentralized layer that:
+
+- Guarantees trust through decentralization by the Tendermint Consensus & the native token $KNOW
+- Indexes anything as a service (as long as it is accessible via an API) - any off-chain dataset, algorithm, software, storage or computation resource and even on-chain services from other IBC-enabled networks
+- Exposes metadata of indexed data and services to make it findable, accessible and interoperable
+- Defines Data Spaces rules in [Prolog](https://en.wikipedia.org/wiki/Prolog)
+- Is an open smart contracts platform powered by [CosmWasm](http://cosmwasm.com) for maximum governance customization.
+- Orchestrates off-chain data & services and initiates workflows which power applications
+- Enforces governance rules, including access rights and value transfers
+- Connects seamlessly to other blockchain networks using [IBC](https://ibcprotocol.org/)
+
+It is the single source of truth that is used to build autonomous and distributed data applications.
+
+### Dataverse
+
+The Dataverse is comprised of datasets and services that are shared by sovereign network participants - they don't have to copy the data or the service somewhere else to make it available.
+
+**Datasets** are bytes of information stored on a server (any data storage is possible, either decentralized like [IPFS](https://ipfs.io) or [Arweave](https://www.arweave.org/), or centralized like [AWS](https://aws.amazon.com/) or [Azure](https://azure.microsoft.com/)), indexed on the Blockchain and accessible through a dedicated gateway.
+
+**Services** are algorithms, software, computation, storage, or any digital asset accessible through an API. This comprises algorithms such as data processing services, automatic description of datasets, knowledge graph query services, etc.
+
+We designed OKP4 to enable maximum customization. Anyone can share any kind of data, algorithms, software, storage and computation into the Dataverse, you can even implement any standard or DID provider. OKP4 Dataverse enables XaaS (anything as a service) by design.
+
+### Data Spaces
+
+**Data Spaces** are sets of rules and governance mechanisms set in smart contracts, designed to optimize data and services sharing within a community. It is not a common database but an abstraction that defines the interaction between datasets and services, from access rights and business models. Providers share data and services within a Data Space, according to specific conditions explicitly mentionned. They can share their data in multiple Data Spaces. Each Data Space can have its own customizable governance mechanisms, from multi-sig to a custom Data Space token. The OKP4 Blockchain can host an endless number of Data Spaces.
+
+### Data Applications
+
+**Data applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in data applications that provides information, knowledge, initializes actions, etc. Data applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
+
+### To sum up
+
+Datasets and services provide the elementary building blocks that will interact in a distributed fashion according to the workflows initiated in the Blockchain.
+Each workflow initiated in the blockchain refers to one specific Data Space with its own explicit rules.
+Each dataset and service interacts within to one or many Data Spaces according to the access given by the data and service providers.
+The outputs of the distributed workflows are leveraged by Data Applications to provide value to the end users.
+
+Anyone can create or customize Data Spaces and Applications using **OKP4 Development Kit**. It allows anyone to build and design with as much freedom as possible, as simply as possible. Developers, data scientists and communities at large can:
+- Customize Data Space governance with no-code tools & templates
+- Easily build applications from software to interfaces
+- Use or provide digital assets in the Dataverse
+
+## Network participants
+
+On the **Blockchain layer**, there are [Validators](/docs/whitepaper/roles#validators), [Delegators](/docs/whitepaper/roles#delegators) and [DAO Participants](/docs/whitepaper/roles#dao-participants).
+
+On the **Data Space layer**, there are [Data & Service Providers](/docs/whitepaper/roles#data-providers) who agree to share based on Data Space's rules and [Consumers](/docs/whitepaper/roles#data-providers) who pay tokens to initiate workflows in order to create knowledge. There are also [Curators](/docs/whitepaper/roles#curators) who can signal promising data/services and [Governors](/docs/whitepaper/roles#curators) who can change these rules.
+
+On the **Data Application layer**, there are [Builders](/docs/whitepaper/roles#builders) who develop and maintain applications, and also end-users who benefit from knowledge created through the whole OKP4 Ecosystem. End-users can be directly Consumers, or just a user of the Data Application.
+
+## Multi-layered governance
 
 ![combine_web2_web3](/img/content/whitepaper/combine_web2_web3.png)
 
-We have designed the OKP4 Protocol to be open, decentralized and auditable. Our solution is based on 4 products:
+The main criticisms we can address at web2 companies and especially tech giants are their extractive nature, their willingness to keep users captive on their platforms, and their increasing power controlled by centralized governance.
 
-#### **OKP4 Blockchain**: The layer 1 for data sharing
+But web3 also has its own sets of problems; pretty wild and self-reliant, UX is bad, allocation of capital can be messy and coordination is often suboptimal.
 
-A public blockchain protocol designed specifically to handle the complexity of trust-minimized data sharing and value sharing.
-The blockchain is the single source of truth, it orchestrates everything that is shared to the Dataverse.
+To build the best data sharing infrastructure, we need to enable the best of both web2 and web3 worlds through multi-layered governance:
 
-- Decentralization and trust guaranteed by the Tendermint Consensus & the native token $KNOW
-- An open-source network controlled by its stakeholders
-- A vibrant Smart Contract Hub powered by [CosmWasm](https://cosmwasm.com/)
-- [IBC](https://ibcprotocol.org/) enabling seamless communication with other blockchains
+- **OKP4 Blockchain** is decentralized by design, with its set of token holders that propose and vote on governance proposals - it's a trustless and censorship-resistant infrastructure.
+- **Data Spaces** have custom governance. Data Space governance can be centralized (one or few accounts have the ability to design rules through monosig or multisig) or decentralized (through token-based voting power)
 
-#### **OKP4 Dataverse**: Empower the Dataverse
+This design can be ideal for some companies who want to have control over the Data Space rules, while leveraging the decentralized infrastructure that guarantees data & services providers complete ownership over what they shared. They can remove their consents at any time and can verify that the system acted accordingly to the rules they agreed on.
 
-We designed OKP4 to enable maximum customization. Anyone can share any kind of data, algorithms, software, storage and computation into the Dataverse, you can even implement any standard or DID provider. Anyone can plug its own infrastructure, define/agree on rules to make it available, and let it be utilized through the blockchain. OKP4 Dataverse enables XaaS (anything as a service) by design.
+- **Data applications** also have custom governance. It can be as simple as a centralized front-end to consume workflow outputs, or more decentralized through community-run applications using only decentralized storage and computation resources.
+- **Datasets & services** are sovereign to the data and services providers. Providers (individuals or companies) can define general permissions/requirements for their data and services to be used in many Data Spaces, but also can hand-pick the Data Spaces (and align themselves with the Data Space's rules) in which they want to contribute.
 
-#### **OKP4 Development Kit**
-
-It allows anyone to create and design Data Spaces and Data Applications with as much freedom as possible. For developers, data scientists and communities at large:
-
-- Customize Data Space governance with no-code tools & templates
-- Build data apps from software to interfaces
-- Use or provide components & resources in the OKP4 Ecosystem
-
-#### **OKP4 tools**
-
-User-friendly tools & interfaces to share, contribute, benefit and earn (wallet/browser extension, blockchain explorer, dataverse portal, catalog of data apps, Data Space governance interfaces, etc.). These tools will allow anyone to interact with the Dataverse.
+This mixture of governance layers enables the Dataverse to combine strengths from web2 and web3 worlds: where centralized governance models can be built on top of an open decentralized infrastructure, enabling interoperability and sovereignty by design.
