@@ -155,6 +155,7 @@ Each dataset and service interacts within to one or many Data Spaces according t
 The outputs of the distributed workflows are leveraged by Data Applications to provide value to the end users.
 
 Anyone can create or customize Data Spaces and Applications using **OKP4 Development Kit**. It allows anyone to build and design with as much freedom as possible, as simply as possible. Developers, data scientists and communities at large can:
+
 - Customize Data Space governance with no-code tools & templates
 - Easily build applications from software to interfaces
 - Use or provide digital assets in the Dataverse

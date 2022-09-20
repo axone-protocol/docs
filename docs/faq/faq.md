@@ -12,7 +12,7 @@ OKP4 is an ever-expanding Dataverse powering the next generation of Applications
 
 ## Why would someone want to build an application on OKP4 when there are many other blockchains available?
 
-OKP4 is specifically designed for scalable trust minimized data sharing. 
+OKP4 is specifically designed for scalable trust minimized data sharing.
 
 Unlike other general-purpose layer-1s and layer-2s (Ethereum, Solana, Cardano, Avalanche, Polygon, Arbitrum...), it is the perfect environment for developers to build Data Spaces & Applications based on digital resources of any kind shared by participants.
 
@@ -43,7 +43,6 @@ OKP4's goal is to be the leading decentralized data intermediary by enabling a n
 It is the ability to let data contribute to valuable knowledge and applications without ever exposing the data itself to other participants. Through a trustless network and privacy-preserving techniques, other parties never access the raw data that has been shared. End-users will access only the output (the indicator, the graph, the application...), not the data itself.
 Enabling value creation, value sharing, without the risks associated to exposing data.
 
-
 ## What is the Dataverse?
 
 The Dataverse is an ever-expanding combination of digital resources shared by participants: datasets, algorithms, softwares, storage resources, computation resources, identity solutions... Anything can be considered a service as long as it is accessible via an API.
@@ -58,9 +57,7 @@ A Data Space is a set of rules shared by Data Space participants:
 
 In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via [semantic interoperability](https://en.wikipedia.org/wiki/Semantic_interoperability)) when necessary. Data Spaces can be nested and overlapping, so that a Data Provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
 
-
 ## How exactly does OKP4 increases trust between Data Space participants?
-
 
 ## How does governance work within OKP4?
 
