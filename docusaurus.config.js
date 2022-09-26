@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ØKP4',
+  title: 'OKP4',
   tagline: 'Open Knoledge Protocol For',
   url: 'https://okp4.github.io',
   baseUrl: '/',
@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
-          remarkPlugins: [require('mdx-mermaid')]
+          remarkPlugins: [require('mdx-mermaid')],
         },
         theme: {
           customCss: require.resolve('./src/scss/custom.scss')
@@ -38,7 +38,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'ØKP4',
+        title: 'OKP4',
         logo: {
           alt: 'OKP4 Logo',
           src: '/img/logotype-okp4-light.svg',
