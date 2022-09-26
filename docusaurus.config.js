@@ -5,14 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OKP4',
-  tagline: 'Open Knoledge Protocol For',
+  title: 'OKP4 Docs',
+  tagline: 'Unleash the Knowledge Economy 🚀',
   url: 'https://okp4.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'okp4',
+  organizationName: 'OKP4',
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
