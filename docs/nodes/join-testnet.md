@@ -4,48 +4,60 @@ sidebar_position: 6
 
 # Join Testnet
 
+## Current testnet
+
+You'll find below the list of okp4 active testnets with the `okp4d` version they run, it is worth noting the source of truth on current networks is the [networks repository](https://github.com/okp4/networks).
+
+The [networks repository](https://github.com/okp4/networks) will also contains details regarding upgrades and syncing informations.
+
+:::info COMING SOON
+
+🧪 _The **Nemeton** testnet isn't ready yet, but stay tuned it is definitely coming soon 🚀_
+
+:::
+
+|    chain id    | `okp4d` version |
+|:--------------:|:---------------:|
+| okp4-nemeton |     `v2.0.0`    |
+
 ## Hardware recommendations
 
-It is recommended to at least provide **200Go** of storage (SSD is a plus but not mandatory), **8Gb** of memory and **2 cores** (modern CPU's) for a single node.
-Regarding the OS, it is recommended to use **Linux AMD64**.
+Please fin below the minimum recommended hardware configuration for running a testnet `okp4d` node:
+
+- **2 cores** (modern CPU's)
+- **8Gb** of RAM
+- **200Gb** of disk space
 
 ## Node configuration
 
 ### Genesis
 
-The genesis file is provided [here](https://github.com/okp4/okp4d/blob/main/chains/devnet-1/genesis.json).
+Here are the links to the different testnet's genesis:
 
-:::caution
-
-This genesis is only related to the testnet.
-
-:::
+- [`okp4-nemeton`](https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/genesis.json)
 
 ### Peers
 
-A node should have his external address set to the `ip:port` he is exposed from (ex: `192.0.1.1:26656`).
-The network will then register this address and broadcast it to other peers.
+Here are the links to the different testnet's peers list:
 
-It should also have a persistent peer set to an already registered and running node on the network.
+- [`okp4-nemeton`](https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/peers.txt)
 
-### API
+:::tip
 
-A node should expose the RPC port related to the API (by default: `26657`).
-It will allow the node to process requests made on the blockchain.
+Don't hesitate to ask for other peers on our discord.
+
+:::
 
 ## Getting tokens
 
-There is some ways to get tokens on the testnet:
+You'll find below testnet's faucets:
 
-- Using the [faucet](https://github.com/okp4/faucet-web)
-- Validating blocks with a personnal node registered as validator on the network
-- Random drops on [Dicord](https://discord.gg/okp4)
-- Direct transfert between wallets
+- [`okp4-nemeton`](https://faucet.nemeton.okp4.network)
 
-## Upgrades
+:::tip
 
-:::info COMMING SOON
-
-✍️ _Under active writing..._
+Don't hesitate to ask for tokens on our discord.
 
 :::
+
+## Upgrades
