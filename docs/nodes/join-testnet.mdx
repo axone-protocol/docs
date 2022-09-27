@@ -1,6 +1,8 @@
 ---
 sidebar_position: 6
 ---
+import data from "./data.json";
+import CodeBlock from '@theme/CodeBlock';
 
 # Join Testnet
 
@@ -16,9 +18,22 @@ The [networks repository](https://github.com/okp4/networks) will also contains d
 
 :::
 
-|    chain id    | `okp4d` version |
-|:--------------:|:---------------:|
-| okp4-nemeton |     `v2.0.0`    |
+<table>
+  <thead>
+    <tr>
+      <th align="center">chain id</th>
+      <th align="center">
+        <code>okp4d</code> version
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">okp4-nemeton</td>
+      <td align="center">{data.okp4dVersion}</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Hardware recommendations
 
