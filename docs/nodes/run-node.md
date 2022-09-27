@@ -22,7 +22,7 @@ Joining a network require at least 3 elements:
 
 :::note
 
-As a prerequisite, the `okp4d` binary shall be installed, please find the instructions [here](installation.md).
+As a prerequisite, the `okp4d` binary shall be installed, please find the instructions [here](installation.mdx).
 
 :::
 
@@ -36,7 +36,7 @@ CHAIN_ID=okp4-testnet-1
 
 :::tip
 
-The `chain-id` values for each networks are detailed in the corresponding sections (i.e. [Join Testnet](join-testnet.md#node-configuration) & [Join Mainnet](join-mainnet.md#node-configuration)).
+The `chain-id` values for each networks are detailed in the corresponding sections (i.e. [Join Testnet](join-testnet.mdx#node-configuration) & [Join Mainnet](join-mainnet.md#node-configuration)).
 
 :::
 
@@ -77,11 +77,11 @@ The generated `config/priv_validator_key` and `config/node_key.json` are very se
 
 Inside the network all the nodes share the same chain configuration and state, the genesis file providing the configuration and the base state all the nodes shall share it.
 
-The `config/genesis.json` file shall be replaced with the one corresponding to the targeted network (i.e. [Join Testnet](join-testnet.md#genesis) & [Join Mainnet](join-mainnet.md#genesis)).
+The `config/genesis.json` file shall be replaced with the one corresponding to the targeted network (i.e. [Join Testnet](join-testnet.mdx#genesis) & [Join Mainnet](join-mainnet.md#genesis)).
 
 ### Add peers
 
-Joining a network is first of all being part of the P2P protocol. To do so your node must connect with others by specifying persistent peers, either in the `config/config.toml`, or through the `p2p.persistent_peers` argument of the `start` command. Depending on the chosen network, refer to its section to find peers (i.e. [Join Testnet](join-testnet.md#peers) & [Join Mainnet](join-mainnet.md#peers)).
+Joining a network is first of all being part of the P2P protocol. To do so your node must connect with others by specifying persistent peers, either in the `config/config.toml`, or through the `p2p.persistent_peers` argument of the `start` command. Depending on the chosen network, refer to its section to find peers (i.e. [Join Testnet](join-testnet.mdx#peers) & [Join Mainnet](join-mainnet.md#peers)).
 
 ## 🚀 Run
 
@@ -106,7 +106,7 @@ Your node will start beginning by syncing to the network, this step can take a l
 curl http://localhost:26657/status | jq .result.sync_info.catching_up
 ```
 
-During the sync process the node will apply each block on its state, you'll need to install binary upgrades at the correct heights (i.e. only on breaking upgrade cases) in order to sync your node. Please refer to your targeted network upgrades history (i.e. [Join Testnet](join-testnet.md#upgrades) & [Join Mainnet](join-mainnet.md#upgrades)).
+During the sync process the node will apply each block on its state, you'll need to install binary upgrades at the correct heights (i.e. only on breaking upgrade cases) in order to sync your node. Please refer to your targeted network upgrades history (i.e. [Join Testnet](join-testnet.mdx#upgrades) & [Join Mainnet](join-mainnet.md#upgrades)).
 
 ## 👨‍⚖️ Becoming validator
 

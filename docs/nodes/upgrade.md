@@ -136,7 +136,7 @@ cosmovisor/
 
 :::info
 
-The network's upgrades can be found in their respective sections (i.e. [Join Testnet](join-testnet.md#upgrades) & [Join Mainnet](join-mainnet.md#upgrades)).
+The network's upgrades can be found in their respective sections (i.e. [Join Testnet](join-testnet.mdx#upgrades) & [Join Mainnet](join-mainnet.md#upgrades)).
 
 :::
 
