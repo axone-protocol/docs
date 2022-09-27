@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
+description: OKP4 is a public blockchain specifically designed to build the Dataverse, the foundation of Data Applications.
 ---
 
 # Abstract
+
+<head>
+  <title>OKP4 Whitepaper</title>
+</head>
 
 ![OKP4 Logo](/img/content/OKP4.jpg)
 
