@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import data from "./data.json";
+import CodeBlock from '@theme/CodeBlock';
 
 # Installation
 
@@ -20,13 +22,13 @@ You'll find below the available ways of getting the needed `okp4d` binary to sta
 
 ## Release binary
 
-You'll find the released binaries on the [GitHub repository](https://github.com/okp4/okp4d/releases). Those are statically linked builds, pay attention to choose the right binary for your system (i.e. `linux/amd64` or `linux/arm64`), their checksums are also provided to help you check them.
+You'll find the released binaries on the [GitHub repository](https://github.com/okp4/okp4d/releases). These are statically linked builds, so be careful to choose the right binary for your system (i.e. `linux/amd64` or `linux/arm64`). Checksums are also provided if you wish to verify the integrity of the download.
 
 To easily install `okp4d` from a GitHub release you can use this [oneliner script](https://github.com/jpillora/installer):
 
-```bash
-curl https://i.jpillora.com/okp4/okp4d@v2.0.0! | bash
-```
+<CodeBlock language="bash">
+curl https://i.jpillora.com/okp4/okp4d@v{data.okp4dVersion}! | bash
+</CodeBlock>
 
 :::caution
 
@@ -38,9 +40,9 @@ By principle, take the time to verify the checksum manually.
 
 The `okp4d` binary can be invoked directly through the following docker image:
 
-```bash
-docker run -ti --rm okp4/okp4d:2.0.0 --help
-```
+<CodeBlock language="bash">
+docker run -ti --rm okp4/okp4d:{data.okp4dVersion} --help
+</CodeBlock>
 
 :::tip
 
@@ -79,6 +81,6 @@ okp4d version
 
 You should get an output similar to:
 
-```text
-2.0.0
-```
+<CodeBlock language="text">
+{data.okp4dVersion}
+</CodeBlock>
