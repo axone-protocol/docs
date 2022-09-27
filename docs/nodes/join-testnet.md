@@ -22,7 +22,7 @@ The [networks repository](https://github.com/okp4/networks) will also contains d
 
 ## Hardware recommendations
 
-Please fin below the minimum recommended hardware configuration for running a testnet `okp4d` node:
+Please find below the minimum recommended hardware configuration for running a testnet `okp4d` node:
 
 - **2 cores** (modern CPU's)
 - **8Gb** of RAM
