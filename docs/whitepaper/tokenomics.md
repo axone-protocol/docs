@@ -88,7 +88,7 @@ Block reward for Validators and Delegators will depend on the inflation number t
 - Year 3: 9.6%
 - Year 4: 7.68%
 - Year 5: 6.144%
-- Year X: X-1 * 0.8
+- Year X: 15 * 0.8^(X-1)
 
 Staking APR will obviously be higher than the numbers quoted above, depending on the circulating supply and percentage of the circulating supply staked.
 
