@@ -5229,10 +5229,10 @@ graphlib@^2.1.8:
   dependencies:
     lodash "^4.17.15"
 
-graphviz-react@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/graphviz-react/-/graphviz-react-1.2.1.tgz#eef9c1d074dfdaa7afe844f78e96cd131e41d228"
-  integrity sha512-hb/CNfe/r51kMBh+VEMd+1FUh3PMmiUaGO1lgkkz70vbTNB8VYS5ecTlKBJg8zeToxWyQjV++f65HOH6i20hQA==
+graphviz-react@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/graphviz-react/-/graphviz-react-1.2.2.tgz#a80d75df43cde2cc39adc3b1cbf63c9c6086ba53"
+  integrity sha512-fGw7NaZpXYFrRSZTGh6ZlSOZW60COUVFePC+dLnuquuBBHmn4VVMEER6BGCcknzA3jMxvfG+LrDvYS9sRl/GGA==
   dependencies:
     d3-graphviz "^2.6.1"
     react "^16.13.1"
