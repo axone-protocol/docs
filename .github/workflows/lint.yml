@@ -69,6 +69,18 @@ jobs:
             fi
           ' sh {} +
 
+  report-new-dependencies:
+    runs-on: ubuntu-20.04
+    if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Check for new dependencies
+        uses: hiwelo/new-dependencies-action@1.0.1
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+
   lint-branch-name:
     runs-on: ubuntu-20.04
     if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
