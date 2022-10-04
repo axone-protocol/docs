@@ -83,12 +83,15 @@ The roles of Validators could expand to provide oracles, secure bridges, provide
 
 Block reward for Validators and Delegators will depend on the inflation number that starts at 15% of total supply excluding block rewards (15% of 200M tokens) on the first year and then decreases by 20% each year:
 
-- Year 1: 15%
-- Year 2: 12%
-- Year 3: 9.6%
-- Year 4: 7.68%
-- Year 5: 6.144%
-- Year X: 15 * 0.8^(X-1)
+| Year     |  Inflation (for the year) |
+|:--------:|:-------------------------:|
+| 1        |  15%                      |
+| 2        |  12%                      |
+| 3        |  9.6%                     |
+| 4        |  7.68%                    |
+| 5        |  6.144%                   |
+| $\vdots$ |  $\vdots$                 |
+| $n$      |  $15\%\cdotp(1-20\%)^{n-1}$       |
 
 Staking APR will obviously be higher than the numbers quoted above, depending on the circulating supply and percentage of the circulating supply staked.
 
