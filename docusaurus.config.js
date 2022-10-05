@@ -25,13 +25,24 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
-          remarkPlugins: [require('mdx-mermaid')],
+          remarkPlugins: [require('remark-math'), require('mdx-mermaid')],
+          rehypePlugins: [require('rehype-katex')],
         },
         theme: {
           customCss: require.resolve('./src/scss/custom.scss')
         }
       })
     ]
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig:
@@ -145,7 +156,7 @@ const config = {
       {
         hashed: true
       }
-    ]
+    ],
   ],
   scripts: [
     "/js/matomo.js",
