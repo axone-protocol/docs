@@ -125,6 +125,12 @@ sudo systemctl enable okp4d
 sudo systemctl restart okp4d
 ```
 
+Check logs
+
+```bash
+journalctl -fo cat -u okp4d -n 100
+```
+
 :::info
 
 Running a validator node being critical, consider [automate upgrades](upgrade.md) and [secure your node](security.md).
