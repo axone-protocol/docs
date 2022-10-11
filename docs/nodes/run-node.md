@@ -83,12 +83,46 @@ The `config/genesis.json` file shall be replaced with the one corresponding to t
 
 Joining a network is first of all being part of the P2P protocol. To do so your node must connect with others by specifying persistent peers, either in the `config/config.toml`, or through the `p2p.persistent_peers` argument of the `start` command. Depending on the chosen network, refer to its section to find peers (i.e. [Join Testnet](join-testnet.mdx#peers) & [Join Mainnet](join-mainnet.md#peers)).
 
+Add some peers using regex
+
+```bash
+PEERS="ADD_SOME_PEERS_HERE"
+sed -i -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.okp4d/config/config.toml
+
+# Example
+# PEERS="3111059714ccbaa09f0b3647bc2fb94fd9d117d0@1.11.1.1:23656,09abd86a01bfcd35ab8c503868179b70fe9a1801@2.2.2.2:23656"
+# sed -i -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.okp4d/config/config.toml
+```
 ## 🚀 Run
 
-Let's invoke the `start` command:
+Run with `start` command:
 
 ```bash
 okp4d start
+```
+
+Run with daemon service **(recommended)**
+
+```bash
+sudo tee <<EOF >/dev/null /etc/systemd/system/okp4d.service
+[Unit]
+Description=okp4d daemon
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$(which okp4d) start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable okp4d
+sudo systemctl restart okp4d
 ```
 
 :::info
@@ -110,6 +144,34 @@ During the sync process the node will apply each block on its state, you'll need
 
 ## 👨‍⚖️ Becoming validator
 
+:::info
+
+You will create a new wallet with the [Create key](#Create-key) step.
+Save your keys/mnemonics and never share them with anyone!
+
+:::
+
+### Create key
+
+```bash
+okp4d keys add <KEY_NAME>
+
+# Example
+# okp4d keys add validator
+```
+
+Or can recover the existing one
+
+```bash
+okp4d keys add <KEY_NAME> --recover
+
+# Example
+# okp4d keys add validator --recover
+```
+
+### Create validator
+
+
 :::danger
 
 Your node shall be fully synced before upgrading it to a validator. It can't take part in the validation consensus without sharing the same state than the others, and risk thus to be slashed and jailed.
@@ -119,19 +181,24 @@ Your node shall be fully synced before upgrading it to a validator. It can't tak
 To make your node validator you need to submit a `create-validator` transaction referencing it by its public key:
 
 ```bash
-PUB_KEY=$(okp4d tendermint show-validator)
+AMOUNT="AMOUNT_OF_TOKEN"
+DENOM=uknow
+WALLET="YOUR_KEY_NAME"
+IDENTITY="YOUR_KEYBASE_ID" #optional
+
 okp4d tx staking create-validator \
-  --amount 1000000uknow \
+  --amount $AMOUNT$DENOM \
   --commission-max-change-rate "0.1" \
   --commission-max-rate "0.20" \
   --commission-rate "0.1" \
   --min-self-delegation "1" \
-  --details "Don't stop me KNOW" \
-  --pubkey=$PUB_KEY \
+  --details "Details of your validator" \
+  --pubkey=$(okp4d tendermint show-validator) \
   --moniker "$MONIKER_NAME" \
   --chain-id $CHAIN_ID \
   --gas-prices 0.025uknow \
-  --from <key-name>
+  --identity=$IDENTITY \
+  --from $WALLET
 ```
 
 :::info
@@ -143,3 +210,23 @@ okp4d tx staking create-validator --help
 ```
 
 :::
+
+## Additional Commands
+
+Learn your valoper address
+
+```bash
+okp4d keys show $WALLET -a --bech val
+```
+
+Delegate additional stake
+
+```bash
+okp4d tx staking delegate [VALOPER_ADDRESS] [STAKE_AMOUNT]uknow --from $WALLET --chain-id $CHAIN_ID
+```
+
+Unjail
+
+```bash
+okp4d tx slashing unjail --chain-id $CHAIN_ID --from [your-key-name]
+```

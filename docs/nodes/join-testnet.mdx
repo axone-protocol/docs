@@ -48,11 +48,22 @@ Here are the links to the different testnet's genesis:
 
 - [`okp4-nemeton`](https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/genesis.json)
 
+```bash
+URL="https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/genesis.json"
+wget -O $HOME/.okp4d/config/genesis.json $URL
+````
+
 ### Peers
 
 Here are the links to the different testnet's peers list:
 
 - [`okp4-nemeton`](https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/peers.txt)
+
+```bash
+URL="https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/peers.txt"
+wget $URL -O $HOME/.okp4d/config/seeds.txt
+sed -i.bak 's/seeds = \"\"/seeds = \"'$(cat $HOME/.okpd4/config/seeds.txt)'\"/g' $HOME/.okpd4/config/config.toml
+````
 
 :::tip
 

@@ -81,7 +81,7 @@ You'll need to keep the process always running in background, on Linux you can c
 
 :::info
 
-A description of the different environment variables can be found [here](https://docs.cosmos.network/master/run-node/cosmovisor.html#command-line-arguments-and-environment-variables).
+A description of the different environment variables can be found [here](https://docs.cosmos.network/main/run-node/cosmovisor.html#command-line-arguments-and-environment-variables).
 
 :::
 
