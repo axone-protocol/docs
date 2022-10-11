@@ -61,8 +61,8 @@ Here are the links to the different testnet's peers list:
 
 ```bash
 URL="https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/peers.txt"
-wget $URL -O $HOME/.okp4d/config/seeds.txt
-sed -i.bak 's/seeds = \"\"/seeds = \"'$(cat $HOME/.okpd4/config/seeds.txt)'\"/g' $HOME/.okpd4/config/config.toml
+wget $URL -O $HOME/.okp4d/config/peers.txt
+sed -i.bak 's/persistent_peers = \"\"/persistent_peers = \"'$(cat $HOME/.okp4d/config/peers.txt)'\"/g' $HOME/.okp4d/config/config.toml
 ````
 
 :::tip
