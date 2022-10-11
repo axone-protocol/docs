@@ -101,7 +101,7 @@ Run with `start` command:
 okp4d start
 ```
 
-Run with daemon service **(recommended)**
+Run with daemon service
 
 ```bash
 sudo tee <<EOF >/dev/null /etc/systemd/system/okp4d.service
