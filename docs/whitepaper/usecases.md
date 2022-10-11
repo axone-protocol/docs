@@ -51,5 +51,5 @@ In addition to providing users the opportunity to contribute data, use new servi
 
 Curation can also be done at the dataset and service level (not at the Data Space level), as explained in [Curators](/docs/whitepaper/roles#curators).
 
-The curation games will make new markets that will work as signals to show which datasets, services, data applications or even communities are or may be the most valuable in the future.
+The curation games will make new markets that will work as signals to show which datasets, services, applications or even communities are or may be the most valuable in the future.
 As an example, Bob can speculate that a particular Data Space has reached a certain level of data maturity and will soon attract many users and builders, while shorting another declining/overvalued Data Space.

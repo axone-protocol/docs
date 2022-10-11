@@ -27,7 +27,7 @@ A Data Space is highly customizable regarding every aspect of data sharing: acce
 
 Governance mechanisms can also be customized to satisfy businesses and small teams (monosigs & multisigs) or decentralized communities (through a custom Data Space token).
 
-In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have data and algorithms in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants, assets and resources can interact freely and create value.
+In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have digital resources in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants, assets and digital resources can interact freely and create value.
 
 These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilites way beyond what exists today with transactional data marketplaces.
 
@@ -59,7 +59,7 @@ The rules can refer to data management, retribution, business model or technical
 
 **Data management**
 
-- All metadata of datasets and services must be described
+- All metadata of digital resources must be described
 - Restrictions on the license of the dataset
 - Only one type of actors has access to the raw data
 
@@ -70,7 +70,7 @@ The rules can refer to data management, retribution, business model or technical
 **Business models**
 
 - Retribution of contributors according to the template XXX: Open data are not retributed and other datasets are retributed in function of the service consumption
-- Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its data or services
+- Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its digital resource
 
 Governance mechanisms allow to adapt these rules (See next section).
 
@@ -84,7 +84,7 @@ Other approaches for dynamic data pricing such as the one enabled by [Ocean Prot
 
 These pricing models are usually suboptimal, benefiting few large players who have an overview of the data market. These price models also benefit larger players who can derive more value from data than a smaller players due to economies of scale (more data) and economies of scope (more variety of data). Finally, negotiations due to data non-fungibility are very inefficient and create a lot of friction that prevents the data market to be scalable.
 
-We envision a world where data (proprietary or not) is readily available for data applications, where knowledge can flow seamlessly from data provider to applications, providing value to the knowledge consumer without exposing the data. Given the issues mentioned above and the ambition of OKP4, it's fair to say that we need new mechanisms for the data economy.
+We envision a world where data (proprietary or not) is readily available for applications, where knowledge can flow seamlessly from data provider to applications, providing value to the knowledge consumer without exposing the data. Given the issues mentioned above and the ambition of OKP4, it's fair to say that we need new mechanisms for the data economy.
 
 At OKP4, we propose generic templates, for both the data sharing and marketplace models, which allow the implementation of different business model templates based on user requirements.
 

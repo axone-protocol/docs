@@ -55,7 +55,7 @@ If you delete a service that is not in use by Consumers, it disappears instantly
 
 ### Curation Shares
 
-Curation Shares are the continuous tokens OKP4 uses to incentivize Curators towards the shared goal of identifying quality data & service sources. They are managed by OKP4 bonding curve contract.
+Curation Shares are the continuous tokens OKP4 uses to incentivize Curators towards the shared goal of identifying quality digital resources. They are managed by OKP4 bonding curve contract.
 
 Properties:
 
@@ -133,7 +133,7 @@ In addition we will be able to provide liquidity for all new Data Space governan
 
 ### Insurance
 
-We will provide insurance to all Consumers in case of interrupted workflow during knowledge creation. In case a service/dataset is instantly withdrawn, the knowledge creator will be reimbursed on the full amount he paid.
+We will provide insurance to all Consumers in case of interrupted workflow during knowledge creation. In case a digital resource is instantly withdrawn, the knowledge creator will be reimbursed on the full amount he paid.
 
 ### Sybil control
 
