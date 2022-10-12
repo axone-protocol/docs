@@ -59,6 +59,8 @@ A Data Space consists of three elements:
 2.	**Governance mechanisms** to make these rules evolve
 3.	**Interfaces** to create, modify and interact with the Data Space 
 
+A new knowledge created from different shared resources within a data space can then feed any applications. These applications are not part of the data space and have there own governance. They can be either a web2.0 or web3.0 application. 
+
 ### 1. A bundle of rights and rules
 
 A Data Space is highly customizable regarding every aspect of data sharing: access control, data & service management, business models, governance frameworks...
