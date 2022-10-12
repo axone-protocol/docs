@@ -95,7 +95,7 @@ Note that the decentralized governance of the OKP4 Protocol still allows users t
 
 ### 3. Interfaces to create, modify and interact with the Data Space 
 
-Thanks to the OKP4 SDK, anyone can create and design a Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules.
+Anyone can create and design a Data Space with as much freedom as possible. OKP4 provides templates and no-code tools to set the governance rules.
 OKP4 SDK is designed to give as much freedom as possible for developers, data scientists and communities at large. Freedom of development, freedom of business models, freedoms of standards... freedom of innovation.
 
 In this way, an interface has been designed to interact easily with the OKP4 protocol and, more specifically, create a data space. As far as the interface is concerned, it allows for an access to datasets and services and to create a new dataspace. Through the creation process of a new dataspace, besides the name, description, and tags, one can either use an existing governance template or create its authority using a current token (i.e., the KNOW) or not.
