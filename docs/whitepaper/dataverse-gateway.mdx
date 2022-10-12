@@ -45,25 +45,38 @@ The OKP4 Wallet will take the form of a web page and a dedicated browser extensi
 
 ## Portal
 
-The OKP4 Portal is a web app which allows to explore the Dataverse. It aggregates the Dataverse services such as wallets, catalog, files deposit, dApps, block explorer and more.
+The OKP4 Portal is a web app which allows to navigate between all the OKP4 ecosystem. It aggregates the Dataverse gateways such as wallets, explorers, dataset deposit, workflow builder, block explorer and more.
 
-Although parts of the portal is open (especially for content and support), each user can log in to get access to all services.
+The portal is open (especially for content and support) and the identification of users is enabled by the wallet. 
 
-Through the OKP4 Portal, a user is informed in real time of the activities related to the Data Space of which he is a member and the digital resources he provides. Thus, users follow their contribution to the knowledge creation and the associated retributions.
+Through the OKP4 Portal, a user is informed in real time of the activities related to the Data Space of which he is a member and the digital resources he shares. Thus, users follow their contribution to the knowledge creation and the associated retributions.
 
 The Portal is customized according to membership in different Data Spaces and the user's roles in those spaces.
 
-## Catalog
+## Data Space editor
 
-The Catalog is a web app who lists the digital resources declared in the protocol.
+The Data Space editor allows to create his own Data Space easily. 
 
-As a reminder, a dataset or a service can participate in several Data Spaces by being stored at source.
+Through the creation process of a new dataspace, besides the name, description, and tags, one can either use an existing governance template or create its authority using a current token (i.e., the KNOW) or not.
 
-A user can see digital resources of the Data Spaces in which he participates but also those of the public Data Spaces. The user can apply different filters such as type (dataset or service), date of declaration, tags, spatial or temporal coverage.
+![Governance_interface_1](/img/content/whitepaper/Governance_interface1.png)
 
-The Catalog includes a search engine and a recommendation system.
+![Governance_interface_2](/img/content/whitepaper/Governance_interface2.png)
 
-The Catalog is available in several visualizations:
+The governance rules of a dataspace can be built using a public template, its own library of dataspaces or custom blocks. For example, it is possible to define the rules of access control of data spaces, datasets and services, the token used, or the token amount. Data management can also be defined depending on the format, size or sectors desired. Other elements such as services management, business model, and governance can be set up. Once created, the data space is available on the OKP4 Explorer. A search tool is used to look for datasets, services, and data spaces.
+ 
+
+## Explorer
+
+The OKP4 Explorer is a feature of the portal which lists the digital resources declared in the protocol.
+
+As a reminder, a dataset or a service can participate in several Data Spaces while being stored at source.
+
+A user can see all digital resources of all the Data Spaces, that is to say of the Dataverse. The user can apply different filters such as type (dataset or service), date of declaration, tags, spatial or temporal coverage.
+
+The Explorer includes a search engine and a recommendation system.
+
+Several visualizations are available:
 
 ### Card view
 
@@ -94,11 +107,11 @@ Depending on the governance rules of the Data Space, and depending on the rights
 
 ## Datasets Deposit
 
-OKP4 Datasets Deposit is a Web3.0 App that allows Data Providers to register datasets into the OKP4 Protocol.
+OKP4 Datasets Deposit is a Web3.0 interface that allows Data Providers to register datasets into the OKP4 Protocol. 
 
-Data Providers are asked to fill in the contextual metadata of the dataset referenced in the blockchain. This information is essential to explain how a dataset is produced, the nature of the information it contains, the application domain it refers to, and the license that applies. Filling in this metadata will improve the ranking of a dataset in the search engine of the catalog.
+Data Providers are asked to fill in the contextual metadata of the dataset referenced in the blockchain. This information is essential to explain how a dataset is produced, the nature of the information it contains, the application domain it refers to, and the license that applies. Filling in this metadata will improve the ranking of a dataset in the search engine of the Explorer.
 
-Note that a Data Provider is not necessarily the owner of the data set. He acts as a publisher if it has permission to reference it in the protocol.
+Note that a Data Provider is not necessarily the creator of the dataset. He acts as a publisher if it has permission to reference it in the protocol.
 
 Each dataset deposit is a transaction submitted to the protocol that must be signed by a wallet, and it is the responsibility of the Data Provider to pay fees related to the execution of this transaction.
 
@@ -130,12 +143,18 @@ All metadata are public by default and freely accessible by the simple fact that
 - Authorized to particular users
 - Private
 
+## Workflow builder
+
+The workflow builder is a dataverse gateway to set a workflow between several digital resources shared within a data space so as to create a new knowledge. 
+Before running the workflow, the OKP4 protocol checks if all the rules are respected. If so, the knowledge is created and automatically registered in the protocol. 
+
+
 
 ## Other applications
 
 ### OKP4 Block Explorer
 
-Block explorers are tools that help you understand what is happening in a blockchain. The OKP4 open-source Explorer goes further than other explorers in the Cosmos Ecosystem by making it possible for everyone to discover, understand and visualize all transactions that have been committed on the OKP4 mainnet network according to their business dimension:
+Block explorers are tools that help you understand what is happening in a blockchain. The OKP4 open-source Blockchain Explorer goes further than other explorers in the Cosmos Ecosystem by making it possible for everyone to discover, understand and visualize all transactions that have been committed on the OKP4 mainnet network according to their business dimension:
 
 - Data Space creation
 - Data deposit and registration
