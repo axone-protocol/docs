@@ -103,7 +103,7 @@ The Dataverse is not a datalake or a cloud where data is stored centrally. Every
 
 ## OKP4 described
 
-To sum up, OKP4 is a **blockchain** for anyone to build and join **Data Spaces**, share **data & services** within these, and build and use **Applications** which will leverage what has been shared.
+To sum up, OKP4 is a **blockchain** for anyone to build and join **Data Spaces**, share **data & services** within these, and build and use **applications** which will leverage what has been shared.
 
 It is important to understand these 4 key concepts:
 
