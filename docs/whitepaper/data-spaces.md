@@ -4,75 +4,112 @@ sidebar_position: 4
 
 # Data Spaces
 
-To recap, OKP4 enables the Dataverse, an ever-expanding universe coordinated by the blockchain.
+Data is the limiting factor in the creation of knowledge. Thus, data sharing will help finding answers to societal, policy, and legal objectives that are in the public interest.
 
-But how are the resources coordinated? According to which rules?
+Organizations will not be able to maintain their competitiveness by innovating alone. It is necessary to think about models that allow collaboration and innovation that respond to the collective and individual interests. These new models must be intimately linked to trust between actors and data sovereignty. 
 
-This is where Data Space matters!
-
-## Purpose of Data Spaces
-
-Rights and rules such as secure access rights and fair business model are the key to bring trust and align interests between participants.
+Data sovereignty - which is a guarantee of transparency and sustainability of data sharing ecosystems - refers to the ability of natural or legal person to determine and enforce the rights to use its data. 
 
 OKP4 enables anyone to build and join an infinite number of highly customizable Data Spaces.
 
-Data Spaces refer to an agreement between data and services providers according to a clearly defined set of rules. Each data & service provider can adhere or not on letting some of his resources participate in a Data Space.
 
-A Data Space is an abstraction that comprises:
+## What is a Data Space ? 
 
-- Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants
-- Governance mechanisms to adapt these rules
+First, what is not a Data Space? It is not a platform, not a hub, not a data lake neither a data warehouse.
+
+In *Designing Data Spaces*, Lars Nagel and Douwe Lycklama define six mandatory principles to be introduced in all data space implementations:
+
+-	Decentralization 
+-	Scalability 
+-	Collaboration
+-	Interoperability
+-	Evaluation (audit)
+-	Trust
+
+Four key European organizations, have formed in 2021 an initiative – the **Data Space Business Alliance** (DSBA) – creating a common framework to accelerate business transformation in the data economy and make data spaces happen.
+
+According to the **International Data Spaces Association**, Data spaces “comprise relationships between trusted partners that are governed by the IDSA standard for secure and sovereign data exchange, certification and governance for business and industry across Europe and around the world”.
+
+As for **GAIA-X Association**, they define the term data space as “a type of data relationship between trusted partners who adhere to the same high level standards and guidelines in relation to data storage and sharing within one or many Vertical Ecosystems”.
+
+From **FIWARE** point of view, a data space can be defined as a decentralized data ecosystem built around commonly agreed building blocks enabling an effective and trusted sharing of data among participants.
+
+And in the **BDVA** (Big Data Value Association) perspective, five pillars (data, governance, people, organization and technology) are needed to create value in data with trust as a central concept, together with the tools and mechanisms for strategic stakeholders to create data sharing spaces jointly.
+
+It appears from these definitions that **Data Spaces are commercial collaborative environments between various actors around the sharing and or exchange of data based on fundamental and non-transferable principles that are trust, security, interoperability and data sovereignty in order to reach common goals**. 
+
+In Europe, Data spaces are governed by European Data Governance Act adopted in May 2022 and are a declination of the European Data Strategy.
+
+## A Data Space with OKP4 protocol
+
+**Definition of digital commons** :
+"A common is a resource produced and/or maintained collectively by a community of heterogeneous actors, and governed by rules that ensure its collective and shared character. It is said to be digital when the resource is dematerialized: software, database, digital content (text, image, video and/or sound), etc." according to Labo Société Numérique. 
+
+**Definition of OKP4 Data Spaces** :
+A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance garantees the individual and collective interests of the participants, who retain the sovereignty of their resources. Trust is brought by the decentralized infrastructure which orchestrates the interactions between differents resources.  
+
+**Digital resources can be shared without being exchanged**. In an OKP4 Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have data and algorithms in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants and digital resources can interact freely and create value.
+
+In short, a data space is a digital common, totally decentralized, that enables the knowledge economy. All the rules are defined by the participants and the community. These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilites way beyond what exists today with transactional data marketplaces.
+
+The OKP4 protocol acts as a clearing house that enables clearing and settlement services for all financial and digital resource sharing transactions. Based on the business model chosen by the participants, the retribution of the participants is then automated by the decentralized protocol.
+
+A Data Space consists of three elements:
+1.	**Bundle of rights & rules** that regulates interactions between data and services shared by participants
+2.	**Governance mechanisms** to make these rules evolve
+3.	**Interfaces** to create, modify and interact with the Data Space 
+
+### 1. A bundle of rights and rules
 
 A Data Space is highly customizable regarding every aspect of data sharing: access control, data & service management, business models, governance frameworks...
 
-Governance mechanisms can also be customized to satisfy businesses and small teams (monosigs & multisigs) or decentralized communities (through a custom Data Space token).
-
-In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have digital resources in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants, assets and digital resources can interact freely and create value.
-
-These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilites way beyond what exists today with transactional data marketplaces.
-
-## Data Space functional description
-
-The OKP4 Protocol allows to build highly customized Data Spaces and to manage them.
-
-Thanks to the OKP4 Development Kit, anyone can create and design Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules.
-
-:::tip  
-OKP4 Development Kit is designed to give as much freedom as possible for developers, data scientists and communities at large. Freedom of development, freedom of business models, freedoms of standards... freedom of innovation.
-
-:::
-
-The Rulebook describes a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
-
-Once the Data Space is created through the Development Kit, the governance rules of this Data Space it is encoded into a [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) allowing the rules to be expressed as a formal code which is:
-
-- stored on-chain and is freely auditable by anyone,
-- interpretable by a smart contract in a fully decentralized and autonomous way. Thus, for any transaction sent to the OKP4 blockchain, this smart contract ensures that the transaction complies with the rights established by the Data Space governance rules. If not, the transaction is rejected.
-
-## Data Space Rules
-
-A Data Space is governed by a bundle of rights and rules that define the permitted interactions between data, algorithms, resources and users.
+The governance rules of a Data Space   describe a set of rules, standards and tools shared with Data Space participants, based on 5 pillars: ethics, legal, data management, technical requirements & business models.
 
 The rules can refer to data management, retribution, business model or technical requirements for instance. All the rules are totally customizable and in particular can be amended provided that specific provisions have been made. By amendments, we mean an addition or modification to the governance rules, provided that they are compatible with the rules already defined (consistency).
 
-### Examples of rules
+Examples of rules
+-	Data management
+    - All metadata of datasets and services must be described
+    - Restrictions on the license of the dataset
+    - Only one type of actor has access to the raw data
+    - No member of the Data Space has access to raw data but only to aggregated and anonymized data 
+-	Technical requirements 
+    - Each data provider stores its own data
+    - ...
+-	Business models
+    - Retribution of contributors according to the template XXX : Open data are not retributed and other datasets are retributed in function of the service consumption
+    - Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its data or services
+- ...
 
-**Data management**
+### 2. Governance mechanisms to make these rules evolve
 
-- All metadata of digital resources must be described
-- Restrictions on the license of the dataset
-- Only one type of actors has access to the raw data
+Each Data Space decides what are the governance mechanism to change the rules. For instance, it can be a process of proposition and vote by all the members of the Data Space.
 
-**Technical requirements**
+Governance mechanisms can also be customized to satisfy businesses and small teams (monosigs & multisigs) or decentralized communities (through a custom Data Space token).
 
-- Each data provider stores its own data
+Note that the decentralized governance of the OKP4 Protocol still allows users to create centralized Data Spaces. Indeed, the governance of a Data Space can be in the hands of one or several chosen or elected members.
 
-**Business models**
+(WIP)
 
-- Retribution of contributors according to the template XXX: Open data are not retributed and other datasets are retributed in function of the service consumption
-- Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its digital resource
+### 3. Interfaces to create, modify and interact with the Data Space 
 
-Governance mechanisms allow to adapt these rules (See next section).
+Thanks to the OKP4 SDK, anyone can create and design a Data Space with as much freedom as possible. This development kit comprises Rulebook templates and no-code tools to set the governance rules.
+OKP4 SDK is designed to give as much freedom as possible for developers, data scientists and communities at large. Freedom of development, freedom of business models, freedoms of standards... freedom of innovation.
+
+In this way, an interface has been designed to interact easily with the OKP4 protocol and, more specifically, create a data space. As far as the interface is concerned, it allows for an access to datasets and services and to create a new dataspace. Through the creation process of a new dataspace, besides the name, description, and tags, one can either use an existing governance template or create its authority using a current token (i.e., the KNOW) or not.
+
+![Governance_interface_1](/img/content/whitepaper/Governance_interface1.png)
+
+![Governance_interface_2](/img/content/whitepaper/Governance_interface2.png)
+
+The governance rules of a dataspace can be built using a public template, its own library of dataspaces or custom blocks. For example, it is possible to define the rules of access control of data spaces, datasets and services, the token used, or the token amount. Data management can also be defined depending on the format, size or sectors desired. Other elements such as services management, business model, and governance can be set up. Once created, the data space is available on the OKP4 Explorer. A search tool is used to look for datasets, services, and data spaces.
+
+Once the Data Space is created through the interface, the governance rules of this Data Space are encoded into a Domain Specific Language allowing the rules to be expressed as a formal code which 
+-	is stored on-chain and is freely auditable by anyone, 
+-	interpretable by a smart contract in a fully decentralized and autonomous way. 
+
+Thus, for any transaction sent to the OKP4 blockchain, this smart contract ensures that the transaction complies with the rights established by the Data Space governance rules. If not, the transaction is rejected.
+
 
 ## Data Space Business Models
 
@@ -114,21 +151,4 @@ This template has the following parameters:
 - Dataset reserved price, which set a price threshold under which a dataset will not be sold
 - Weight parameters (&psi; and &#632; > 1), which allows dataset price to be defined as a function of time and number of purchases
 
-## Data Space Governance
 
-The governance precises the public or private nature of a Data Space. A public Data Space is reachable by anybody and a private one needs mechanisms of invitation or request of adhesion.
-
-Besides, each Data Space decides what are the governance mechanism to change the rules. For instance, it can be a process of proposition and vote by all the members of the Data Space.
-
-Note that the decentralized governance of the OKP4 Protocol still allows users to create centralized Data Spaces. Indeed, the governance of a Data Space can be in the hands of one or several chosen or elected members.
-
-:::note
-
-In a nutshell, the governance of a Data Space defines the following:
-
-- The visibility of the Data Space (public or private)
-- The nature of participants
-- A set of rules that organizes _life_ in the Data Space (the conditions of access, the operations that are allowed or prohibited)
-- A rules amendment process
-
-:::
