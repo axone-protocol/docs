@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # OKP4 SDK
 
-### OKP4 Design System
+## OKP4 Design System
 
 The [OKP4 Design System](https://github.com/okp4/ui) is an open-source set of components and resources created to facilitate the design and development of web interfaces in the OKP4 Ecosystem for everyone. This design system serves as a reference for teams working around the OKP4 Ecosystem, enabling them to design and develop web interfaces with speed, consistency and quality.
 
@@ -24,7 +24,14 @@ The OKP4 Design System follows the [Atomic Design methodology](https://atomicdes
 - **Molecules**: are the composition of one or more components of atoms.
 - **Organisms**: are the combination of molecules that work together or, if necessary, with atoms, to form more elaborate interfaces. The OKP4 Design System offers advanced organisms for the OKP4 Ecosystem like a Token Faucet, a Web Wallet, a Dataverse Explorer...
 
-### OKP4 Discord Bot
+
+## Data Space governance templates
+
+As the Dataverse will contain more and more Data Spaces, governance templates will be more and more available to create a Data Space quickly. 
+
+A user will able to use a template and create his own library of templates. 
+
+## OKP4 Discord Bot
 
 The OKP4 Discord Bot is a general-purpose open-source bot that facilitates the integration of any blockchain of the Cosmos Ecosystem into a [Discord](https://discord.com/) server.
 
