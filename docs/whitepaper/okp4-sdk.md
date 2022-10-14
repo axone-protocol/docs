@@ -24,12 +24,11 @@ The OKP4 Design System follows the [Atomic Design methodology](https://atomicdes
 - **Molecules**: are the composition of one or more components of atoms.
 - **Organisms**: are the combination of molecules that work together or, if necessary, with atoms, to form more elaborate interfaces. The OKP4 Design System offers advanced organisms for the OKP4 Ecosystem like a Token Faucet, a Web Wallet, a Dataverse Explorer...
 
-
 ## Data Space governance templates
 
-As the Dataverse will contain more and more Data Spaces, governance templates will be more and more available to create a Data Space quickly. 
+As the Dataverse will contain more and more Data Spaces, governance templates will be more and more available to create a Data Space quickly.
 
-A user will able to use a template and create his own library of templates. 
+A user will able to use a template and create his own library of templates.
 
 ## OKP4 Discord Bot
 

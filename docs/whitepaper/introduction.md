@@ -81,7 +81,7 @@ The previously mentioned reasons led us to create OKP4 (Open Knowledge Protocol 
 
 ### What is OKP4?
 
-OKP4 is a public PoS layer 1 blockchain built for trust-minimized data sharing. 
+OKP4 is a public PoS layer 1 blockchain built for trust-minimized data sharing.
 
 OKP4 is an open interoperable smart contracts platform for highly customized rules, governance mechanisms and business models to align interests between participants and build useful distributed applications.
 
@@ -95,15 +95,15 @@ OKP4 is designed to become the commons for builders, data providers, communities
 
 OKP4 is built using the Cosmos SDK and is fundamentally a multichain infrastructure project. Our core value proposition relies on interchain applications leveraging existing networks inside and outside of the Cosmos ecosystem, such as Akash, Juno, Osmosis, Cheqd, Stargaze, Filecoin, Arweave, Ethereum and many more...
 
-### What is a Data Space ? 
+### What is a Data Space ?
 
 A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance garantees the individual and collective interests of the participants, who retain the sovereignty of their resources.
 
 A Data Space consists of three elements:
+
 1.	Bundle of rights & rules that regulates interactions between data and services (algorithms, infrastructure and every other resources shared by participants)
 2.	Governance mechanisms to make these rules evolve
-3.	Interfaces to create, modify and interact with the Data Space 
-
+3.	Interfaces to create, modify and interact with the Data Space
 
 ### What is the Dataverse?
 
