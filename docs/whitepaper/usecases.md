@@ -13,20 +13,19 @@ All sectors are concerned at different scales.
 
 The agriculture supply chain relies on several interdependent actors, from the field to the fork. They need efficient information systems to better evaluate, manage and value the efforts made and the agri-environmental benefits associated to the practices. Moreover, they need to share data to create knowledge valuable at each link of the chain.
 
-Crossing technical and accounting data from multiple providers (farmers, accountants, cooperatives, advisors...) can generate unique insights sold to industries, brands, retail and local authorities and provide transparency to end-consumers. 
+Crossing technical and accounting data from multiple providers (farmers, accountants, cooperatives, advisors...) can generate unique insights sold to industries, brands, retail and local authorities and provide transparency to end-consumers.
 
-But knowledge created from these data can go way beyond traceability of practices. It can provide valuable insights for companies, public authorities or even new opportunities to develop new applications on top of the shared data. For exemple to feed agro-ecological machine learning models or business intelligence tools. Moreover, data sharing between these actors is able to lead to new indicators and thus a greater knowledge of what is produced on a farm and how. 
+But knowledge created from these data can go way beyond traceability of practices. It can provide valuable insights for companies, public authorities or even new opportunities to develop new applications on top of the shared data. For exemple to feed agro-ecological machine learning models or business intelligence tools. Moreover, data sharing between these actors is able to lead to new indicators and thus a greater knowledge of what is produced on a farm and how.
 
-For instance, accountants of farmers can share, with the consent of farmers, economical data with other actors such as cooperatives and technical advisors who can share, on their side, technical data of those farmers. A data space can guarantee that accountants will never see the technical data and reversely. The authorized actors see only the insights resulting from data treatment and calculation services. These actors, the knowledge consumers, use the new insights to provide consulting service to farmers. The members of the data space decide the policies to share the value. The business model described in the data space makes sure that the value created by the service is shared between all the contributors (data and services providers). 
+For instance, accountants of farmers can share, with the consent of farmers, economical data with other actors such as cooperatives and technical advisors who can share, on their side, technical data of those farmers. A data space can guarantee that accountants will never see the technical data and reversely. The authorized actors see only the insights resulting from data treatment and calculation services. These actors, the knowledge consumers, use the new insights to provide consulting service to farmers. The members of the data space decide the policies to share the value. The business model described in the data space makes sure that the value created by the service is shared between all the contributors (data and services providers).
 
-To go further, public institution can integrate the Data Space to have access to indicators they are not able to get otherwise. For instance, water authorities need to pilot the quality of fresh water. Knowing that agriculture is one of the main factors of pollution and eutrophication, it would be profitable for water agencies to follow indicators of farming practices that reduce chemical fertilizers use and limit nitrate leaching such as the share of legumes in the rotations or the implantation of intermediate crops. 
+To go further, public institution can integrate the Data Space to have access to indicators they are not able to get otherwise. For instance, water authorities need to pilot the quality of fresh water. Knowing that agriculture is one of the main factors of pollution and eutrophication, it would be profitable for water agencies to follow indicators of farming practices that reduce chemical fertilizers use and limit nitrate leaching such as the share of legumes in the rotations or the implantation of intermediate crops.
 
-
-## Gaming and Metaverse 
+## Gaming and Metaverse
 
 The Metaverse, seen as the future of our digital interactions, is merely updating old aspirations. The risk of the Metaverse, however, is the expansion of data collection (in volume and type of data) which could prove problematic if its development is not mastered. The Metaverse is inextricably linked to Big Data.
 
-Facebook has taken the first shot at the Metaverse market, but it is already not alone in this project as the gradual transformation of Fortnite into a virtual living space shows. There is no doubt that other major digital players will position themselves on these new access modes. This innovation could well be the starting point of a new digital era. 
+Facebook has taken the first shot at the Metaverse market, but it is already not alone in this project as the gradual transformation of Fortnite into a virtual living space shows. There is no doubt that other major digital players will position themselves on these new access modes. This innovation could well be the starting point of a new digital era.
 
 Metaverses present a risk of technological lock-in and data sovereignty. If we had total control over this data collection, according to rules defined by the participants, the Metaverse could then interconnect, passing information and data between them (one can think of one's avatar, which would have the same properties in several of these worlds).
 
@@ -46,7 +45,7 @@ It is almost certain that if private laboratories as well as many hospitals were
 
 Thus, this Data Space would enable the sharing of medical data between private and public actors by guaranteeing trust, security and respect for patients' consents throughout the ecosystem, but also by aligning the interests of the various stakeholders. And all this to create life-saving knowledge.
 
-## Supply chain 
+## Supply chain
 
 Between 2015 and 2022, the volume of data created annually has increased more than sixfold. Data sharing is at the heart of tomorrow's Industry 4.0. Preventive maintenance or production automation: many industrial processes today depend on their analysis. However, it is necessary to look beyond the walls of the factory. By restricting themselves to analysing their own data, supply chain actors limit the scope of their possibilities. Data sharing is a major lever for performance and competitiveness. Reactivity of the production chain, innovation, precise monitoring, risk management are only some of the possibilities. How can companies take advantage of this data? In what context can data sharing be used? And above all, what are the benefits?
 
@@ -56,17 +55,16 @@ Between 2015 and 2022, the volume of data created annually has increased more th
 - Risk management. GPS control of deliveries, real-time evaluation of equipment performance, stock levels, traceability of resources, predictive maintenance... Players now have the necessary monitoring means to identify threatening risks and provide the necessary solutions before suffering the repercussions.
 
 A Data Space would provide a framework of trust for supply chain actors to share data and create value by reducing costs, improving efficiency and productivity and having better risk management. The actors must first define the governance of their Data Space and therefore the rules including those ones :
+
 - data management: where the data is stored, who has access to which indicators and/or raw data
 - data security: whether data should be encrypted or not
 - business model: each data or service provider is paid each time the processing workflow is launched (i.e. the indicators are updated)
-
-
 
 ## Public sanitation in developping countries
 
 The construction of toilets and hand-washing facilities in schools in Vietnam's rural provinces is helping students develop better hygiene habits and have a better chance of staying healthy. According to UNICEF, inadequate access to water, sanitation and hygiene such as this remains a major problem for many children in rural Vietnam (a problem that extends to any other region of the world in the same situation). Many families do not have toilets at home and are therefore forced to defecate in their backyards. Without access to a toilet at home, for some children, school is their only access to a toilet.
 
-But when schools also lack adequate sanitation facilities, this contributes to poor learning outcomes, school absenteeism and an increased risk of diarrhoeal or gastrointestinal diseases (which are one of the top ten causes of death worldwide according to Oxford University, and account for 12% of deaths of children under five in Vietnam). 
+But when schools also lack adequate sanitation facilities, this contributes to poor learning outcomes, school absenteeism and an increased risk of diarrhoeal or gastrointestinal diseases (which are one of the top ten causes of death worldwide according to Oxford University, and account for 12% of deaths of children under five in Vietnam).
 
 For several years, NGOs have been trying to help these regions to have better access to water and hygiene. Their actions have led to the development of new hygienic habits by children to better protect their health since then. During these projects, many photos and other information are taken in order to send maintenance personnel, initiate repairs or new constructions. These photos and information are stored by several organizations, in different storages, in very heterogeneous formats.
 
