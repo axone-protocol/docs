@@ -157,7 +157,9 @@ We designed OKP4 to enable maximum customization. Anyone can share any kind of d
 
 ### Applications
 
-**Applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in applications that provides information, knowledge, initializes actions, etc. Applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
+**Applications** are built on top of Data Spaces and their inherent rules. They use the data-products (outputs from OKP4) as inputs in applications that provides information, knowledge, initializes actions, etc. Applications are not considered as resources in the Dataverse but final consumers. However, they appear in the protocol to be allowed to access the data.
+
+Applications can have their own governance mechanisms. For example, private companies may use outputs from a decentralized Data Space to build their own applications.
 
 ### To sum up
 

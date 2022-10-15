@@ -10,7 +10,7 @@ Organizations will not be able to maintain their competitiveness by innovating a
 
 Data sovereignty - which is a guarantee of transparency and sustainability of data sharing ecosystems - refers to the ability of natural or legal person to determine and enforce the rights to use its data.
 
-OKP4 enables anyone to build and join an infinite number of highly customizable Data Spaces.
+OKP4 enables anyone (organizations, individuals, public administrations, NGO or communities) to build and join an infinite number of highly customizable Data Spaces.
 
 ## What is a Data Space ?
 
@@ -45,11 +45,11 @@ In Europe, Data spaces are governed by European Data Governance Act adopted in M
 "A common is a resource produced and/or maintained collectively by a community of heterogeneous actors, and governed by rules that ensure its collective and shared character. It is said to be digital when the resource is dematerialized: software, database, digital content (text, image, video and/or sound), etc." according to Labo Société Numérique.
 
 **Definition of OKP4 Data Spaces** :
-A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance garantees the individual and collective interests of the participants, who retain the sovereignty of their resources. Trust is brought by the decentralized infrastructure which orchestrates the interactions between differents resources.  
+A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance guarantees the individual and collective interests of the participants, who retain the sovereignty of their resources. Trust is brought by the decentralized infrastructure which orchestrates the interactions between different resources.  
 
 **Digital resources can be shared without being exchanged**. In an OKP4 Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via semantic interoperability) when necessary. Several Data Spaces can have data and algorithms in common and can be nested and overlapping. There is then an endless combination of oftentimes interoperable Data Spaces where participants and digital resources can interact freely and create value.
 
-In short, a data space is a digital common, totally decentralized, that enables the knowledge economy. All the rules are defined by the participants and the community. These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilites way beyond what exists today with transactional data marketplaces.
+In short, a data space is a digital common, totally decentralized, that enables the knowledge economy. All the rules are defined by the participants and the community. These Data Spaces are the source of new value chains in the knowledge economy by enabling trust-minimized data sharing, offering possibilities way beyond what exists today with transactional data marketplaces.
 
 The OKP4 protocol acts as a clearing house that enables clearing and settlement services for all financial and digital resource sharing transactions. Based on the business model chosen by the participants, the retribution of the participants is then automated by the decentralized protocol.
 
@@ -59,7 +59,7 @@ A Data Space consists of three elements:
 2.	**Governance mechanisms** to make these rules evolve
 3.	**Interfaces** to create, modify and interact with the Data Space
 
-A new knowledge created from different shared resources within a data space can then feed any applications. These applications are not part of the data space and have there own governance. They can be either a web2.0 or web3.0 application.
+A new knowledge created from different shared resources within a data space can then feed any applications. These applications are not part of the data space and have their own governance. They can be either a web2.0 or web3.0 application.
 
 ### 1. A bundle of rights and rules
 
@@ -77,8 +77,12 @@ Examples of rules
   - Only one type of actor has access to the raw data
   - No member of the Data Space has access to raw data but only to aggregated and anonymized data
 - Technical requirements
-  - Each data provider stores its own data
-  - ...
+  - Minimum x GB of available disk space
+  - Minimum upstream bandwidth of x Mbps
+  - Minimum download bandwidth of x Mbps
+  - Minimum of x TB of available bandwidth a month
+  - Availability x nines
+  - Security
 - Business models
   - Retribution of contributors according to the template XXX : Open data are not retributed and other datasets are retributed in function of the service consumption
   - Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its data or services
