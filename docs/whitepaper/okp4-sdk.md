@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# OKP4 SDK
+# OKP4 Development Kit
 
 ## OKP4 Design System
 
