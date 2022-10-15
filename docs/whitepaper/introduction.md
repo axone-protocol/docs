@@ -97,7 +97,7 @@ OKP4 is built using the Cosmos SDK and is fundamentally a multichain infrastruct
 
 ### What is a Data Space ?
 
-A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance garantees the individual and collective interests of the participants, who retain the sovereignty of their resources.
+A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance guarantees the individual and collective interests of the participants, who retain the sovereignty of their resources.
 
 A Data Space consists of three elements:
 
