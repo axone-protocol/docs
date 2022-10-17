@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import Drawio from '@theme/Drawio';
@@ -10,6 +10,9 @@ import securityUseCredentialsSvg from '!!raw-loader!./security-use-credentials.x
 import securitySecuredDataspaceSvg from '!!raw-loader!./security-secured-dataspace.xml';
 
 # The Dataverse
+
+Data Spaces can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space.
+The whole is greater than the sum of its parts : this is the Dataverse. 
 
 ## Overview
 
@@ -22,6 +25,9 @@ There is a large possible typology of services already supported by the Protocol
 - *Algorithm* as a Service - Services that process data to produce meaningful information (i.e. knowledge), for instance: machine learning algorithms.
 - *Infrastructure* as a Service - Services that offer computation, storage and networking resources.
 - *Identity* as a Service - Services that offer a decentralized management of identities.
+
+The applications that are leveraging outputs from one (or many) Data Space are not considered as resources in the Dataverse as they are not referenced in the OKP4 protocol. 
+
 
 The Ecosystem is based on a fully decentralized, open and agnostic architecture, which is:
 
