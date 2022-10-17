@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 # Tokenomics
@@ -49,9 +49,9 @@ These tokens are reserved for advisors who accompany us throughout the developme
 
 ### DAO Treasury
 
-- Grants: our open-source Protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the Protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
-- LP incentives: Liquidity Deposit Incentive Program offering a number of tokens in monthly rewards for liquidity providers. Liquidity providers earn rewards based on their percentage share of the overall liquidity pool.
-- Liquidity DEXs: in a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
+- **Grants**: our open-source Protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the Protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
+- **LP incentives**: Liquidity Deposit Incentive Program offering a number of tokens in monthly rewards for liquidity providers. Liquidity providers earn rewards based on their percentage share of the overall liquidity pool.
+- **Liquidity DEXs**: in a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
 
 ### Liquidity
 
