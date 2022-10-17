@@ -93,6 +93,7 @@ sed -i -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.okp4d
 # PEERS="3111059714ccbaa09f0b3647bc2fb94fd9d117d0@1.11.1.1:23656,09abd86a01bfcd35ab8c503868179b70fe9a1801@2.2.2.2:23656"
 # sed -i -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.okp4d/config/config.toml
 ```
+
 ## 🚀 Run
 
 Run with `start` command:
@@ -152,7 +153,7 @@ During the sync process the node will apply each block on its state, you'll need
 
 :::info
 
-You will create a new wallet with the [Create key](#Create-key) step.
+You will create a new wallet with the ["Create key"](run-node#Create-key) step.
 Save your keys/mnemonics and never share them with anyone!
 
 :::
@@ -176,7 +177,6 @@ okp4d keys add <KEY_NAME> --recover
 ```
 
 ### Create validator
-
 
 :::danger
 
