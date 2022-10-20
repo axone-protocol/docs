@@ -1,0 +1,53 @@
+name: Update contracts docs
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version of contracts repository"
+        required: true
+
+jobs:
+  bumpd-okp4-version:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.version }}
+          repository: okp4/contracts
+          token: ${{ secrets.OKP4_TOKEN }}
+          path: tmp
+
+      - name: Copy updated docs
+        run: |
+          rm -rf contracts/docs/*
+          cp -R tmp/docs/* contracts/docs  
+
+      - name: Setup node environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+
+      - name: Bump new version
+        run: |
+          yarn run docusaurus docs:version:contracts ${{ github.event.inputs.version }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "docs(contracts): add contracts ${{ github.event.inputs.version }} version"
+          committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          branch: docs/contracts-${{ github.event.inputs.version }}
+          title: 📜 Add ${{ github.event.inputs.version }} contracts documentation version
+          body: |
+            #### 📜 Contract documentation update
+            🎉 A new version of [contracts](https://github.com/okp4/contract/releases/tag/${{ github.event.inputs.version }}) is available. 
+            This PR add this new ${{ github.event.inputs.version }} version into the documentation.
+          assignees: ccamel,amimart
+          reviewers: ccamel,amimart,bdeneux
