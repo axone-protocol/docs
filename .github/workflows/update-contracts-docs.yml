@@ -26,7 +26,7 @@ jobs:
       - name: Copy updated docs
         run: |
           rm -rf contracts/docs/*
-          cp -R tmp/docs/* contracts/docs  
+          cp -R tmp/docs/* contracts/docs
 
       - name: Setup node environment
         uses: actions/setup-node@v3
@@ -47,7 +47,7 @@ jobs:
           title: 📜 Add ${{ github.event.inputs.version }} contracts documentation version
           body: |
             #### 📜 Contract documentation update
-            🎉 A new version of [contracts](https://github.com/okp4/contract/releases/tag/${{ github.event.inputs.version }}) is available. 
+            🎉 A new version of [contracts](https://github.com/okp4/contract/releases/tag/${{ github.event.inputs.version }}) is available.
             This PR add this new ${{ github.event.inputs.version }} version into the documentation.
           assignees: ccamel,amimart
           reviewers: ccamel,amimart,bdeneux
