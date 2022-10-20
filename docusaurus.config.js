@@ -157,6 +157,14 @@ const config = {
         hashed: true
       }
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'contracts',
+        path: 'contracts',
+        routeBasePath: 'contracts',
+      },
+    ],
   ],
   scripts: [
     "/js/matomo.js",
