@@ -91,7 +91,14 @@ const config = {
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository'
-          }
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/contracts/docs', label: 'Latest version'}],
+            docsPluginId: 'contracts',
+            dropdownActiveClassDisabled: true,
+          },
         ]
       },
       footer: {
