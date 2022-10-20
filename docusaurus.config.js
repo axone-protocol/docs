@@ -69,6 +69,12 @@ const config = {
             activeBasePath: "/docs/nodes"
           },
           {
+            to: '/contracts/docs',
+            position: 'left',
+            label: 'Contracts',
+            activeBasePath: "/contracts/docs"
+          },
+          {
             to: '/docs/faq',
             position: 'left',
             label: 'FAQ',
