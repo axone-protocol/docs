@@ -2,6 +2,11 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+
+  okp4Sidebar: [
+    "index",
+      ],
+
   whitepaperSidebar: [
     {
       type: 'category',
