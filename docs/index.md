@@ -1,5 +1,4 @@
 ---
-slug: "/"
 hidden: false
 sidebar_position: 0
 hide_table_of_contents: true
@@ -16,22 +15,22 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="whitepaper/abstract/"
+          href="/docs/whitepaper/abstract/"
           class="card-title card-link stretched-link"
         >
-          <h2>Abstract</h2></a
-        >
+          <h2>Abstract</h2>
+        </a>
         <p class="card-text">OKP4 in 5 minutes.</p>
       </div>
     </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="whitepaper/introduction/"
+          href="/docs/whitepaper/introduction/"
           class="card-title card-link stretched-link"
         >
-          <h2>Introduction</h2></a
-        >
+          <h2>Introduction</h2>
+        </a>
         <p class="card-text">
           What is OKP4 and what is the difference between Dataverse and Data
           Space?
@@ -48,11 +47,9 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="nodes/introduction"
+          href="/docs/nodes/introduction"
           class="card-title card-link stretched-link"
-        >
-          <h2>Tutorials</h2></a
-        >
+        ><h2>Tutorials</h2></a>
         <p class="card-text">
           Learn how to set up a node for the testnet and later on for the
           mainnet.
@@ -68,9 +65,9 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
   <div class="row row-cols-1 row-cols-md-2a g-4">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="/faq/faq" class="card-title card-link stretched-link">
-          <h2>FAQ</h2></a
-        >
+        <a href="/docs/faq" class="card-title card-link stretched-link">
+          <h2>FAQ</h2>
+        </a>
         <p class="card-text">Get to know more about OKP4.</p>
       </div>
     </div>
@@ -87,6 +84,3 @@ We are excited that you are here, and we look forward to getting to know you. We
 * [Telegram](https://t.me/okp4network)
 * [Twitter](https://twitter.com/OKP4_Protocol)
 * [GitHub](https://github.com/okp4)
-
-</div>
-</div>
