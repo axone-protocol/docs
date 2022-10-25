@@ -19,3 +19,7 @@ indent_size = 2
 [*.json]
 trim_trailing_whitespace = false
 indent_size = 2
+
+[*.scss]
+trim_trailing_whitespace = false
+indent_size = 2
