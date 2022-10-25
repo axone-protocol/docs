@@ -4,14 +4,14 @@ sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-# OKP4 Developer Documentation
+# OKP4 Documentation
 
 Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data sharing. OKP4 is an open interoperable smart contracts platform for highly customized rules, governance mechanisms and business models to align interests between participants and build useful distributed applications.
 
 ## Learn OKP4 concepts
 
 <div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-3a g-4">
+  <div class="row row-cols-1 row-cols-md-3a g-3">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
@@ -43,7 +43,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
 ## Run OKP4 Nodes
 
 <div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-2a g-4">
+  <div class="row row-cols-1 row-cols-md-3a g-3">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
@@ -53,6 +53,17 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <p class="card-text">
           Learn how to set up a node for the testnet and later on for the
           mainnet.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-body h-100 d-flex flex-column">
+        <a
+          href="/docs/nodes/join-testnet"
+          class="card-title card-link stretched-link"
+        ><h2>Join Testnet</h2></a>
+        <p class="card-text">
+          Learn how to become a validator and join the testnet.
         </p>
       </div>
     </div>
@@ -74,9 +85,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
   </div>
 </div>
 
-Join [OKP4 Discord](https://discord.gg/aptoslabs) to speak with developers and hop into the Aptos community. It's the best way to keep up to date with news and developments in the Aptos universe. Be sure to check pinned messages in the channels - this is where we like to keep topic-specific links, events, and more.
-
-We are excited that you are here, and we look forward to getting to know you. Welcome to the Aptos community! Find out more about us at:
+Welcome to the OKP4 community! Find out more about us at:
 
 * [Website](https://okp4.network/)
 * [Discord](https://discord.gg/okp4)
