@@ -2,12 +2,8 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-
-  okp4Sidebar: [
-    "index",
-      ],
-
-  whitepaperSidebar: [
+  mainSidebar: [
+    'index',
     {
       type: 'category',
       label: 'Whitepaper',
@@ -19,13 +15,6 @@ const sidebars = {
       ]
     },
     {
-      type: 'doc',
-      id: 'faq/faq',
-      label: 'FAQ'
-    }
-  ],
-  nodesSidebar: [
-    {
       type: 'category',
       label: 'Nodes & Validators',
       items: [
@@ -34,6 +23,11 @@ const sidebars = {
           dirName: 'nodes'
         }
       ]
+    },
+    {
+      type: 'doc',
+      id: 'faq/faq',
+      label: 'FAQ'
     }
   ]
 }
