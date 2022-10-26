@@ -4,7 +4,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-# OKP4 Documentation
+# OKP4 Whitepaper & Documentation
 
 Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data sharing. OKP4 is an open interoperable smart contracts platform for highly customized rules, governance mechanisms and business models to align interests between participants and build useful distributed applications.
 
