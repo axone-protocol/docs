@@ -36,7 +36,7 @@ jobs:
         uses: avto-dev/markdown-lint@v1.5.0
         with:
           args: "**/*.md"
-          ignore: contracts/**/*.md contracts_versioned/**/*.md modules/**/*.md modules_versioned/**/*.md
+          ignore: contracts/**/*.md contracts_versioned_docs/**/*.md modules/**/*.md modules_versioned_docs/**/*.md
 
   lint-yaml:
     runs-on: ubuntu-20.04
