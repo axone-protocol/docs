@@ -99,6 +99,13 @@ const config = {
             docsPluginId: 'contracts',
             dropdownActiveClassDisabled: true,
           },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/modules/docs', label: 'Latest version'}],
+            docsPluginId: 'modules',
+            dropdownActiveClassDisabled: true,
+          },
         ]
       },
       footer: {
@@ -176,6 +183,14 @@ const config = {
         id: 'contracts',
         path: 'contracts',
         routeBasePath: 'contracts',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'modules',
+        path: 'modules',
+        routeBasePath: 'modules',
       },
     ],
   ],
