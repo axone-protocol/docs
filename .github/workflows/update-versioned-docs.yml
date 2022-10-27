@@ -63,3 +63,6 @@ jobs:
             This PR add this new ${{ github.event.inputs.version }} version into the documentation.
           assignees: ccamel,amimart
           reviewers: ccamel,amimart,bdeneux
+          add-paths: |
+            *.json
+            *.md
