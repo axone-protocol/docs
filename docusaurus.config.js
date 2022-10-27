@@ -69,10 +69,23 @@ const config = {
             activeBasePath: "/docs/nodes"
           },
           {
-            to: '/contracts/docs',
+            type: 'dropdown',
+            label: 'API',
             position: 'left',
-            label: 'Contracts',
-            activeBasePath: "/contracts/docs"
+            items: [
+              {
+                type: 'doc',
+                label: 'Contracts',
+                docId: 'docs/README',
+                docsPluginId: 'contracts'
+              },
+              {
+                type: 'doc',
+                label: 'Modules',
+                docId: 'docs/logic',
+                docsPluginId: 'modules',
+              },
+            ],
           },
           {
             to: '/docs/faq',
