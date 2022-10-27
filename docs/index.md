@@ -49,7 +49,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
   </div>
 </div>
 
-
 ## Learn OKP4 concepts
 
 <div class="docs-card-container">
@@ -188,7 +187,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     </div>
   </div>
 </div>
-
 
 Welcome to the OKP4 community! Find out more about us at:
 
