@@ -11,6 +11,10 @@ on:
       section:
         description: "Which section will be update (contracts | modules)"
         required: true
+      docs_directory:
+        description: "On which directory documentation is located (docs/* | docs/proto/*)"
+        required: false
+        default: "docs/*"
 
 jobs:
   update-versioned-doc:
@@ -32,7 +36,7 @@ jobs:
       - name: Copy updated docs
         run: |
           rm -rf ${{ github.event.inputs.section }}/docs/*
-          cp -R tmp/docs/* ${{ github.event.inputs.section }}/docs
+          cp -R tmp/${{ github.event.inputs.docs_directory }} ${{ github.event.inputs.section }}/docs
 
       - name: Setup node environment
         uses: actions/setup-node@v3
