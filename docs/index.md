@@ -34,8 +34,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         </p>
       </div>
     </div>
-  </div>
-</div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
@@ -50,7 +48,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     </div>
   </div>
 </div>
-
 
 ## Learn OKP4 concepts
 
@@ -152,8 +149,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <p class="card-text">Get to know more about OKP4.</p>
       </div>
     </div>
-  </div>
-</div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a href="https://linktr.ee/okp4" class="card-title card-link stretched-link">
@@ -162,8 +157,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <p class="card-text">Follow our different social networks.</p>
       </div>
     </div>
-  </div>
-</div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a href="https://github.com/okp4/" class="card-title card-link stretched-link">
@@ -184,8 +177,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <p class="card-text">Know more about our vision.</p>
       </div>
     </div>
-  </div>
-</div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a href="https://okp4.network" class="card-title card-link stretched-link">
@@ -196,7 +187,6 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     </div>
   </div>
 </div>
-
 
 Welcome to the OKP4 community! Find out more about us at:
 
