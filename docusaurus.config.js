@@ -27,7 +27,9 @@ const config = {
           editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
           remarkPlugins: [require('remark-math'), require('mdx-mermaid')],
           rehypePlugins: [require('rehype-katex')],
+          routeBasePath: "/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/scss/custom.scss')
         }
