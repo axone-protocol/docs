@@ -115,7 +115,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{to: '/modules/docs', label: 'Latest version'}],
+            dropdownItemsAfter: [{to: '/modules/docs/logic', label: 'Latest version'}],
             docsPluginId: 'modules',
             dropdownActiveClassDisabled: true,
           },
