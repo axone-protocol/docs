@@ -129,7 +129,7 @@ The Curator role is ideal for all those that wish to become more active in the n
 
 When signaling, Curators can decide to signal a specific version of a dataset/service, or they can decide to use automatic migration through updates to new versions. If you decide to signal on a specific version, despite the update, your shares will always remain on that specific version.
 
-Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the [Token Model section](/docs/whitepaper/token-model#risks).
+Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the [Token Model section](/whitepaper/token-model#risks).
 
 ### Auto-Curation Priority
 
@@ -157,7 +157,7 @@ This is why we have decided to let each Data Space choose between different gove
 
 As an example, it will be able to add fees for the use of its Data Space in order to create or develop a treasury; because each Data Space can have its own treasury if needed.
 
-For more informations about the rules, please click [here](/docs/whitepaper/data-spaces#ds-governance).
+For more informations about the rules, please click [here](/whitepaper/data-spaces#ds-governance).
 
 ## Builders
 

@@ -30,11 +30,11 @@ In addition, each Data Space will be able to add an additional transaction fee f
 
 Following our dPoS (delegated proof-of-stake) blockchain model, it is possible to stake tokens to validate the network and receive associated rewards. A Validator wishing to withdraw will have to wait a period of 14 days before his decision is executed (unbounding period).
 
-For more information, please click [here](/docs/whitepaper/roles#validators).
+For more information, please click [here](/whitepaper/roles#validators).
 
 If you don't want to or can't run nodes, it is possible to delegate your tokens to Validators to earn rewards.
 
-For more information, please click [here](/docs/whitepaper/roles#delegators).
+For more information, please click [here](/whitepaper/roles#delegators).
 
 ### Staking Services
 

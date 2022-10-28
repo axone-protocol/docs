@@ -14,7 +14,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/whitepaper/abstract/"
+          href="/whitepaper/abstract/"
           class="card-title card-link stretched-link"
         >
           <h2>Whitepaper</h2>
@@ -26,7 +26,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/nodes/introduction"
+          href="/nodes/introduction"
           class="card-title card-link stretched-link"
         >
           <h2>Nodes & Validators</h2>
@@ -38,7 +38,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/faq"
+          href="/faq"
           class="card-title card-link stretched-link"
         >
           <h2>FAQ</h2>
@@ -57,7 +57,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/whitepaper/abstract/"
+          href="/whitepaper/abstract/"
           class="card-title card-link stretched-link"
         >
           <h2>Abstract</h2>
@@ -68,7 +68,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/whitepaper/introduction/"
+          href="/whitepaper/introduction/"
           class="card-title card-link stretched-link"
         >
           <h2>OKP4 BLockchain</h2>
@@ -85,7 +85,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/whitepaper/data-spaces/"
+          href="/whitepaper/data-spaces/"
           class="card-title card-link stretched-link"
         >
           <h2>Data Space</h2>
@@ -96,7 +96,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/whitepaper/dataverse/"
+          href="/whitepaper/dataverse/"
           class="card-title card-link stretched-link"
         >
           <h2>Dataverse</h2>
@@ -115,7 +115,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/nodes/introduction"
+          href="/nodes/introduction"
           class="card-title card-link stretched-link"
         ><h2>Tutorials</h2></a>
         <p class="card-text">
@@ -127,7 +127,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/docs/nodes/join-testnet"
+          href="/nodes/join-testnet"
           class="card-title card-link stretched-link"
         ><h2>Join Testnet</h2></a>
         <p class="card-text">
@@ -144,7 +144,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
   <div class="row row-cols-1 row-cols-md-2a g-4">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="/docs/faq" class="card-title card-link stretched-link">
+        <a href="/faq" class="card-title card-link stretched-link">
           <h2>FAQ</h2>
         </a>
         <p class="card-text">Get to know more about OKP4.</p>
