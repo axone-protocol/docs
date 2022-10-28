@@ -211,6 +211,7 @@ const config = {
   ],
   scripts: [
     "/js/matomo.js",
+    "/js/redirect.js",
   ]
 }
 
