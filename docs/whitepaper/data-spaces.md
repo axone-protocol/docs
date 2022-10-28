@@ -88,15 +88,34 @@ Examples of rules
   - Retribution of contributors according to the template “Data Marketplace”: each provider evaluates the price of its data or services
 - ...
 
-### 2. Governance mechanisms to make these rules evolve
+### 2. Governance mechanisms to change rules
 
-Each Data Space decides what are the governance mechanism to change the rules. For instance, it can be a process of proposition and vote by all the members of the Data Space.
+Each Data Space can have its own governance mechanism to change the rules.
 
-Governance mechanisms can also be customized to satisfy businesses and small teams (monosigs & multisigs) or decentralized communities (through a custom Data Space token).
+#### Centralized Data Space Governance
 
-Note that the decentralized governance of the OKP4 Protocol still allows users to create centralized Data Spaces. Indeed, the governance of a Data Space can be in the hands of one or several chosen or elected members.
+When a Data Space is created, the creator can decide to keep the ability to change the rules for himself through a monosig mechanism. It enables him to keep maximum control over the rules. The participants can still make propositions and suggestions, but they can’t vote.
 
-(WIP)
+This mechanism can be useful for early communities or for companies who want to keep maximum control.
+
+In this case, the Data Space governance rights holder make sure that participants are still aligned with the Data Space rules and find their own personal interest. The decentralized infrastructure enables participants to stay sovereign over everything they share, they can remove their consents at any moment, within asking the permission from the governance right owner. A period of time can also be defined between a rule change and the effective change, enabling participants to anticipate changes.
+
+#### Permissionned Data Space Governance
+
+In this case, the Data Space governance rights are shared by multiples participants using a multisig mechanism. This brings the possibility for two or more users to change rules as a group in a n-of-n design.
+For instance, a 2-of-2 would require the 2 governance rights holders to agree on the same proposal. A 2-of-3 would require 2 of the 3 governance right holders to agree. Mechanisms like a 7-of-10 are also possible in consortiums contexts.
+
+#### Open Data Space Governance
+
+Governance is open when governance rights can be earned or acquired through a publicly traded token. The more stake someone has in the Data Space, the more he has the ability to influence how rules change.
+
+Tokens can also be delegated to trusted leaders if enabled.
+
+**Each Data Space can have its own native token**, which can take a fungible or non-fungible format.
+
+A Data Space can also inherit from an existing token for governance, may it be OKP4 $KNOW token, or another token in the Cosmos ecosystem or beyond.
+
+This brings the ability to have community-governed Data Space with dynamic mechanisms, ideal for decentralized communities.
 
 ### 3. Interfaces to create, modify and interact with the Data Space
 
