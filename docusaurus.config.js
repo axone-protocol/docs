@@ -84,7 +84,7 @@ const config = {
               {
                 type: 'doc',
                 label: 'Modules',
-                docId: 'docs/logic',
+                docId: 'logic',
                 docsPluginId: 'modules',
               },
             ],
@@ -117,7 +117,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{to: '/modules/docs/logic', label: 'Latest version'}],
+            dropdownItemsAfter: [{to: '/modules/logic', label: 'Latest version'}],
             docsPluginId: 'modules',
             dropdownActiveClassDisabled: true,
           },
