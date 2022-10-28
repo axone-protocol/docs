@@ -78,7 +78,7 @@ const config = {
               {
                 type: 'doc',
                 label: 'Contracts',
-                docId: 'docs/README',
+                docId: 'README',
                 docsPluginId: 'contracts'
               },
               {
@@ -110,7 +110,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{to: '/contracts/docs', label: 'Latest version'}],
+            dropdownItemsAfter: [{to: '/contracts/', label: 'Latest version'}],
             docsPluginId: 'contracts',
             dropdownActiveClassDisabled: true,
           },
@@ -197,7 +197,7 @@ const config = {
       {
         id: 'contracts',
         path: 'contracts',
-        routeBasePath: 'contracts',
+        routeBasePath: 'contracts/'
       },
     ],
     [
@@ -205,7 +205,7 @@ const config = {
       {
         id: 'modules',
         path: 'modules',
-        routeBasePath: 'modules',
+        routeBasePath: 'modules/'
       },
     ],
   ],
