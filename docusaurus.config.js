@@ -59,16 +59,16 @@ const config = {
         },
         items: [
           {
-            to: '/docs/whitepaper/abstract',
+            to: '/whitepaper/abstract',
             position: 'left',
             label: 'Whitepaper (Work in progress)',
-            activeBasePath: "/docs/whitepaper"
+            activeBasePath: "/whitepaper"
           },
           {
-            to: '/docs/nodes/introduction',
+            to: '/nodes/introduction',
             position: 'left',
             label: 'Nodes & Validators',
-            activeBasePath: "/docs/nodes"
+            activeBasePath: "/nodes"
           },
           {
             type: 'dropdown',
@@ -90,10 +90,10 @@ const config = {
             ],
           },
           {
-            to: '/docs/faq',
+            to: '/faq',
             position: 'left',
             label: 'FAQ',
-            activeBasePath: "/docs/faq"
+            activeBasePath: "/faq"
           },
           {
             href: 'https://discord.gg/okp4',
@@ -131,7 +131,7 @@ const config = {
             items: [
               {
                 label: 'Whitepaper',
-                to: '/docs/whitepaper/abstract'
+                to: '/whitepaper/abstract'
               }
             ]
           },
