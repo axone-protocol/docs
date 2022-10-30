@@ -42,7 +42,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         >
           <h2>FAQ</h2>
         </a>
-        <p class="card-text">Get to know more about OKP4
+        <p class="card-text">Get to know more about OKP4.
         </p>
       </div>
     </div>
@@ -89,7 +89,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         >
           <h2>Data Space</h2>
         </a>
-        <p class="card-text">Everything about Data Spaces : the ecosystems of data and service sharing</p>
+        <p class="card-text">Everything about Data Spaces : the ecosystems of data and service sharing.</p>
       </div>
     </div>
     <div class="col">
@@ -100,7 +100,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         >
           <h2>Dataverse</h2>
         </a>
-        <p class="card-text">Everything about Dataverse : the ever-extanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, and other resources referenced in the Blockchain
+        <p class="card-text">Everything about Dataverse : the ever-extanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, and other resources referenced in the Blockchain.
         </p>
       </div>
     </div>
@@ -162,7 +162,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <a href="https://github.com/okp4/" class="card-title card-link stretched-link">
           <h2>GitHub</h2>
         </a>
-        <p class="card-text">Contribute to the OKP4 protocol and gateways</p>
+        <p class="card-text">Contribute to the OKP4 protocol and gateways.</p>
       </div>
     </div>
   </div>
@@ -182,7 +182,7 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
         <a href="https://okp4.network" class="card-title card-link stretched-link">
           <h2>Website</h2>
         </a>
-        <p class="card-text">OKP4 in a nutshell</p>
+        <p class="card-text">OKP4 in a nutshell.</p>
       </div>
     </div>
   </div>
