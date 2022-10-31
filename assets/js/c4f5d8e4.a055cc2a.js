@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_okp4_docs=self.webpackChunk_okp4_docs||[]).push([[4195],{2841:function(e,n,t){t.r(n),t.d(n,{default:function(){return o}});var c=t(7294),u=t(6775);function o(){return c.createElement(u.l_,{to:"/docs"})}}}]);
