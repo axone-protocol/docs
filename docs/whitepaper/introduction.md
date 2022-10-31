@@ -176,11 +176,11 @@ Anyone can create or customize Data Spaces and Applications using **OKP4 Develop
 
 ## Network participants
 
-On the **Blockchain layer**, there are [Validators](/docs/whitepaper/roles#validators), [Delegators](/docs/whitepaper/roles#delegators) and [DAO Participants](/docs/whitepaper/roles#dao-participants).
+On the **Blockchain layer**, there are [Validators](/whitepaper/roles#validators), [Delegators](/whitepaper/roles#delegators) and [DAO Participants](/whitepaper/roles#dao-participants).
 
-On the **Data Space layer**, there are [Data & Service Providers](/docs/whitepaper/roles#data-providers) who agree to share based on Data Space's rules and [Consumers](/docs/whitepaper/roles#data-providers) who pay tokens to initiate workflows in order to create knowledge. There are also [Curators](/docs/whitepaper/roles#curators) who can signal promising data/services and [Governors](/docs/whitepaper/roles#curators) who can change these rules.
+On the **Data Space layer**, there are [Data & Service Providers](/whitepaper/roles#data-providers) who agree to share based on Data Space's rules and [Consumers](/whitepaper/roles#data-providers) who pay tokens to initiate workflows in order to create knowledge. There are also [Curators](/whitepaper/roles#curators) who can signal promising data/services and [Governors](/whitepaper/roles#curators) who can change these rules.
 
-On the **Application layer**, there are [Builders](/docs/whitepaper/roles#builders) who develop and maintain applications, and also end-users who benefit from knowledge created through the whole OKP4 Ecosystem. End-users can be directly Consumers, or just a user of the Application.
+On the **Application layer**, there are [Builders](/whitepaper/roles#builders) who develop and maintain applications, and also end-users who benefit from knowledge created through the whole OKP4 Ecosystem. End-users can be directly Consumers, or just a user of the Application.
 
 ## Multi-layered governance
 

@@ -27,7 +27,9 @@ const config = {
           editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
           remarkPlugins: [require('remark-math'), require('mdx-mermaid')],
           rehypePlugins: [require('rehype-katex')],
+          routeBasePath: "/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/scss/custom.scss')
         }
@@ -57,16 +59,16 @@ const config = {
         },
         items: [
           {
-            to: '/docs/whitepaper/abstract',
+            to: '/whitepaper/abstract',
             position: 'left',
             label: 'Whitepaper (Work in progress)',
-            activeBasePath: "/docs/whitepaper"
+            activeBasePath: "/whitepaper"
           },
           {
-            to: '/docs/nodes/introduction',
+            to: '/nodes/introduction',
             position: 'left',
             label: 'Nodes & Validators',
-            activeBasePath: "/docs/nodes"
+            activeBasePath: "/nodes"
           },
           {
             type: 'dropdown',
@@ -76,22 +78,22 @@ const config = {
               {
                 type: 'doc',
                 label: 'Contracts',
-                docId: 'docs/README',
+                docId: 'README',
                 docsPluginId: 'contracts'
               },
               {
                 type: 'doc',
                 label: 'Modules',
-                docId: 'docs/logic',
+                docId: 'logic',
                 docsPluginId: 'modules',
               },
             ],
           },
           {
-            to: '/docs/faq',
+            to: '/faq',
             position: 'left',
             label: 'FAQ',
-            activeBasePath: "/docs/faq"
+            activeBasePath: "/faq"
           },
           {
             href: 'https://discord.gg/okp4',
@@ -108,14 +110,14 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{to: '/contracts/docs', label: 'Latest version'}],
+            dropdownItemsAfter: [{to: '/contracts/', label: 'Latest version'}],
             docsPluginId: 'contracts',
             dropdownActiveClassDisabled: true,
           },
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{to: '/modules/docs/logic', label: 'Latest version'}],
+            dropdownItemsAfter: [{to: '/modules/logic', label: 'Latest version'}],
             docsPluginId: 'modules',
             dropdownActiveClassDisabled: true,
           },
@@ -129,7 +131,7 @@ const config = {
             items: [
               {
                 label: 'Whitepaper',
-                to: '/docs/whitepaper/abstract'
+                to: '/whitepaper/abstract'
               }
             ]
           },
@@ -195,7 +197,7 @@ const config = {
       {
         id: 'contracts',
         path: 'contracts',
-        routeBasePath: 'contracts',
+        routeBasePath: 'contracts/'
       },
     ],
     [
@@ -203,12 +205,13 @@ const config = {
       {
         id: 'modules',
         path: 'modules',
-        routeBasePath: 'modules',
+        routeBasePath: 'modules/'
       },
     ],
   ],
   scripts: [
     "/js/matomo.js",
+    "/js/redirect.js",
   ]
 }
 
