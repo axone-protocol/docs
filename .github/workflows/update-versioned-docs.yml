@@ -1,0 +1,68 @@
+name: Update versioned docs
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "New docs version (repository tag)"
+        required: true
+      repository:
+        description: "Set the repository that docs has been updated (okp4/contracts | okp4/okp4d)"
+        required: true
+      section:
+        description: "Which section will be update (contracts | modules)"
+        required: true
+      docs_directory:
+        description: "On which directory documentation is located (docs/* | docs/proto/*)"
+        required: false
+        default: "docs/*"
+
+jobs:
+  update-versioned-doc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.version }}
+          repository: ${{ github.event.inputs.repository }}
+          token: ${{ secrets.OKP4_TOKEN }}
+          path: tmp
+
+      - name: Copy updated docs
+        run: |
+          rm -rf ${{ github.event.inputs.section }}/docs/*
+          cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}/docs
+          rm -rf tmp/*
+
+      - name: Setup node environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+
+      - name: Bump new version
+        run: |
+          yarn
+          yarn run docusaurus docs:version:${{ github.event.inputs.section }} ${{ github.event.inputs.version }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "docs(${{ github.event.inputs.section }}): add ${{ github.event.inputs.section }} ${{ github.event.inputs.version }} version"
+          committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          branch: docs/${{ github.event.inputs.section }}-${{ github.event.inputs.version }}
+          title: 📜 Add ${{ github.event.inputs.version }} ${{ github.event.inputs.section }} documentation version
+          body: |
+            #### 📜 Documentation update
+            🎉 A new version of [${{ github.event.inputs.repository }}](https://github.com/${{ github.event.inputs.repository }}/releases/tag/${{ github.event.inputs.version }}) is available.
+            This PR add this new ${{ github.event.inputs.version }} version into the documentation.
+          assignees: ccamel,amimart
+          reviewers: ccamel,amimart,bdeneux
+          add-paths: |
+            *.json
+            *.md

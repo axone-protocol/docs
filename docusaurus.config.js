@@ -69,6 +69,25 @@ const config = {
             activeBasePath: "/docs/nodes"
           },
           {
+            type: 'dropdown',
+            label: 'API',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                label: 'Contracts',
+                docId: 'docs/README',
+                docsPluginId: 'contracts'
+              },
+              {
+                type: 'doc',
+                label: 'Modules',
+                docId: 'docs/logic',
+                docsPluginId: 'modules',
+              },
+            ],
+          },
+          {
             to: '/docs/faq',
             position: 'left',
             label: 'FAQ',
@@ -85,7 +104,21 @@ const config = {
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository'
-          }
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/contracts/docs', label: 'Latest version'}],
+            docsPluginId: 'contracts',
+            dropdownActiveClassDisabled: true,
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/modules/docs/logic', label: 'Latest version'}],
+            docsPluginId: 'modules',
+            dropdownActiveClassDisabled: true,
+          },
         ]
       },
       footer: {
@@ -156,6 +189,22 @@ const config = {
       {
         hashed: true
       }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'contracts',
+        path: 'contracts',
+        routeBasePath: 'contracts',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'modules',
+        path: 'modules',
+        routeBasePath: 'modules',
+      },
     ],
   ],
   scripts: [
