@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_okp4_docs=self.webpackChunk_okp4_docs||[]).push([[1761],{7795:function(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"contracts"}')}}]);
