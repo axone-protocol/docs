@@ -19,7 +19,7 @@ OKP4 protocol allows the creation of fully customizable **[Data Spaces](/whitepa
 
 Data Spaces can be nested and overlapping, as one dataset can participate in many Data Spaces, and many applications can be built on top of one Data Space. The whole is greater than the sum of its parts: this is the **[Dataverse](/whitepaper/dataverse)**. Thus, the Dataverse is an ever-extanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, Workflow Engines, and other resources referenced in the Blockchain.
 
-Users can interact with OKP4 Blockchain through **[Dataverse Gateways](/whitepaper/dataverse-gateway)** designed with the best user experience. Especially, the Portal and the Explorer are the ultimate way to navigate into the Dataverse while the workflow builder facilitates the creation of new knowledge.
+Users can interact with OKP4 Blockchain through **[Dataverse Gateways](/whitepaper/dataverse-gateways)** designed with the best user experience. Especially, the Portal and the Explorer are the ultimate way to navigate into the Dataverse while the workflow builder facilitates the creation of new knowledge.
 
 Anyone can create or customize Data Spaces and Applications using **[OKP4 Development Kit](/whitepaper/okp4-development-kit)**. It allows anyone to build and design with as much freedom as possible, as simply as possible.
 
