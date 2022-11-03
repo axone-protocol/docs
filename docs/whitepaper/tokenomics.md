@@ -13,15 +13,15 @@ sidebar_position: 10
 
 The distribution, cliff and vesting terms are the following:
 
-|                 | Allocation |  TGE |   Cliff   |          Vesting         |
-|-----------------|            |:----:|:---------:|:------------------------:|
+|                 | Allocation | TGE  |   Cliff   |         Vesting          |
+|-----------------|:----------:|:----:|:---------:|:------------------------:|
 | Investors*      |    22,5%   |  5%  |  6 months | 30 months linear vesting |
 | Foundation      |     26%    |  10% |     /     | 60 months linear vesting |
 | Team & Advisors |     19%    |  10% | 12 months | 36 months linear vesting |
 | Airdrops        |      8%    |  TBD |    TBD    |            TBD           |
 | DAO Treasury    |    24,5%   |  10% |     /     |             /            |
 
-* Most of the tokenomics is indicative and is subject to changes
+* Tokenomics are indicative and are subject to changes before mainnet launches
 
 **Maximum supply: 350,000,000 $KNOW** (including block rewards, reached after 80 years)
 
