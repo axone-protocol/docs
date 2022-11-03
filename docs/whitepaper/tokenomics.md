@@ -10,7 +10,6 @@ sidebar_position: 10
 
 200M $KNOW are minted at launch and subject to cliff and vesting terms, detailed below.
 
-
 The distribution, cliff and vesting terms are the following:
 
 |                 | Allocation | TGE  |   Cliff   |         Vesting          |
@@ -39,11 +38,11 @@ These tokens are distributed to investors in the differents rounds from pre-seed
 
 This strategic reserve will be controlled by a multisig comprised of foundation members. Initially composed of members from the core team and Cosmos community, it is subject to expansion and transparent decision-making. The funds will focus on many initiatives, including:
 
-- Development: the foundation will lead the protocol development strategy with OKP4 core team. In addition to that, opportunities will be given outside of the core team through initiatives such as grants. These will be proposed by the foundation and the proposals will be reviewed by the foundation's governance body. 
-- Validators support: Vested tokens will be delegated to the validators whose contribution is most impactful, such as integrations, specific developments, relayer services, open source tooling and dashboards, community engagement...
-- Research: research will be investigated by the foundation, with a view to finding new areas of improvement and innovation for the Protocol and its ecosystem.
-- Marketing & Incentives: Through events (hackathons, conferences, on-chain competitions...), communication, these activities will focus on building a network of Builders, Data Providers, Services Providers and Users.
-- Listing, Market-making, Additional liquidity provision
+* Development: the foundation will lead the protocol development strategy with OKP4 core team. In addition to that, opportunities will be given outside of the core team through initiatives such as grants. These will be proposed by the foundation and the proposals will be reviewed by the foundation's governance body.
+* Validators support: Vested tokens will be delegated to the validators whose contribution is most impactful, such as integrations, specific developments, relayer services, open source tooling and dashboards, community engagement...
+* Research: research will be investigated by the foundation, with a view to finding new areas of improvement and innovation for the Protocol and its ecosystem.
+* Marketing & Incentives: Through events (hackathons, conferences, on-chain competitions...), communication, these activities will focus on building a network of Builders, Data Providers, Services Providers and Users.
+* Listing, Market-making, Additional liquidity provision
 
 ### Team & Advisors
 
@@ -55,9 +54,9 @@ In order to build a world-class team, these tokens will reward the core team and
 
 ### DAO Treasury
 
-- **Grants**: our open-source Protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the Protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
-- **LP incentives**: Liquidity Deposit Incentive Program offering a number of tokens in monthly rewards for liquidity providers. Liquidity providers earn rewards based on their percentage share of the overall liquidity pool.
-- **Liquidity DEXs**: in a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
+* **Grants**: our open-source Protocol advocates rapid technological progress thanks to the many paid contributors. On the one hand, the DAO will propose on-chain tasks to be done for a certain remuneration in $KNOW tokens. On the other hand, if you have an idea to improve the Protocol, you can propose your idea to the DAO. They will be voted according to their relevance to the success of the network, the technical design and the overall quality of the team. By the community, for the community.
+* **LP incentives**: Liquidity Deposit Incentive Program offering a number of tokens in monthly rewards for liquidity providers. Liquidity providers earn rewards based on their percentage share of the overall liquidity pool.
+* **Liquidity DEXs**: in a situation where we need more liquidity than initially planned (especially if many Data Spaces decide to create their token), a part of this wallet is reserved for additional liquidity.
 
 ## Emission
 
