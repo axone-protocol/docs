@@ -31,7 +31,7 @@
     "@docusaurus/core": "2.1.0",
     "@docusaurus/preset-classic": "2.1.0",
     "@easyops-cn/docusaurus-search-local": "^0.33.5",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "^2.1.5",
     "clsx": "^1.2.1",
     "docusaurus-plugin-sass": "^0.2.2",
     "hast-util-is-element": "1.1.0",
