@@ -41,7 +41,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rehype-katex": "5",
-    "remark-math": "3",
+    "remark-math": "5",
     "sass": "^1.55.0"
   },
   "browserslist": {
