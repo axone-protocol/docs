@@ -96,7 +96,7 @@ Here is an example of what we mean, see the bonding curve below:
 
 _Work in progress_
 
-The $KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less $KNOW. By extension, this means you earn more Curator royalties/$KNOW than later Curators for the same item.
+The $KNOW valuation of curation shares is determined by the bonding curve and can be volatile. It is possible to suffer big losses (or make big gains). Signaling early means each share costs less $KNOW. By extension, this means you earn more Curator royalties / $KNOW than later Curators for the same item.
 
 ### Risks
 
