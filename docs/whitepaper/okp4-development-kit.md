@@ -30,6 +30,9 @@ As the Dataverse will contain more and more Data Spaces, governance templates wi
 
 A user will able to use a template and create his own library of templates.
 
+![Data Space Governance](/img/content/whitepaper/Governance_templates.png)
+
+
 ## OKP4 Kafka Components
 
 The traditional approach to data processing is to save all the data in a data warehouse and analyze it using a nightly batch process. If we consider blockchains as a data source, then the classical approach would be to regularly extract this information and store it in a data warehouse. This works, but has many limitations: reactivity, scalability, extensibility, to name a few.
@@ -42,6 +45,8 @@ Instead, at OKP4, we believe in real-time data processing in the form of event s
 - routing the event streams to different destination technologies as needed: database, cloud services...
 
 We adoped [Kafka](https://kafka.apache.org/) as our distributed event streaming platform for high-performance data pipelines, streaming analytics and data integration, and [Kafka Connect](https://docs.confluent.io/platform/current/connect/index.html) as a free, open-source framework for connecting Kafka with external systems such as databases, key-value stores, search indexes, and file systems, using so-called Connectors.
+
+![Kafka Components](/img/content/whitepaper/Kafka.png)
 
 As part of its Development Kit, OKP4 provides a set of open-source bricks allowing the data processing in real-time from a Cosmos blockchain, integrated in a Kafka platform:
 
