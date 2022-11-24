@@ -69,6 +69,8 @@ Data providers are users who deposit one or more datasets in the catalog and/or 
 
 They are paid by the Consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
+![Data Providers](/img/content/whitepaper/Data Providers.png)
+
 ## Service Providers
 
 Service providers are users who deposits and are able to run what is called a service. A service can be an algorithm, a processing software, a tool... requiring a processing time. They are paid by the Consumers based on a fixed query fee or an hourly rate or that they define themselves according to the duration of use.
