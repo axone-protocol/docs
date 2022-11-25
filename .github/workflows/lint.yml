@@ -84,7 +84,7 @@ jobs:
 
   lint-branch-name:
     runs-on: ubuntu-22.04
-    if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
+    if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened')
     steps:
       - name: Check branch name conventions
         uses: AlbertHernandez/branch-name-action@v1.0.2
