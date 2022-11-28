@@ -78,7 +78,7 @@ jobs:
 
       - name: Lint image files
         run: |
-          find "$FOLDER" -regextype posix-egrep -regex '.+\.(jpg|jpeg|png|webp)' -exec sh -c '
+          find "$FOLDER" -regextype posix-egrep -regex '.+\.(ico|jpg|jpeg|png|svg|webp)' -exec sh -c '
             for file do
               if ! identify "$file" >/dev/null; then
                 echo "❌ $file"
