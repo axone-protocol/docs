@@ -97,7 +97,7 @@ OKP4 is built using the Cosmos SDK and is fundamentally a multichain infrastruct
 
 ### What is a Data Space ?
 
-![Data Spaces](/img/content/Illustration_dataspace.png)
+![Data Spaces](/img/content/whitepaper/Illustration_dataspace.png)
 
 A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance guarantees the individual and collective interests of the participants, who retain the sovereignty of their resources.
 
@@ -108,7 +108,6 @@ A Data Space consists of three elements:
 3.	Interfaces to create, modify and interact with the Data Space
 
 ### What is the Dataverse?
-
 
 The Dataverse is inspired from the term Metaverse, a growing buzzword that embodies the next generation of internet experiences combining virtual reality and digital ownership. The challenge with the Metaverse is to build it on an open infrastructure, so that users are not captive of the companies and siloed environments produced by companies.
 
