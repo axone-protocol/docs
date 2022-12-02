@@ -28,6 +28,8 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 **Governors** each Data Space can have its own governance mechanisms. Governors are the ones who enforce them. The ability to become a governor depends on the Data Space, some will have a specific governance token (fungible or non fungible), some will have multisigs, some will have single self-designated entities defining the rules.
 
+![Blockchain Participants](/img/content/whitepaper/Blockchain_Participant.png)
+
 ### Application Participants
 
 **Builders** are the ones who develop and update applications which consume knowledge (any web or mobile application that consume data). These applications are external to the Protocol.
@@ -44,6 +46,8 @@ Validators (and their delegates) earn $KNOW tokens as a reward for running the T
 
 There must be some penalty imposed if Validators do not respect the protocol rules whether intentional or unintentional (double sign, offline too long...). This will cause the Validator to lose his good reputation and his proportional share of bonded token that will get slashed. The penalty depends on the severity of the violation.
 
+![Validators](/img/content/whitepaper/Validator.png)
+
 ## Delegators
 
 Delegators are $KNOW holders who cannot, or do not want to, run a Validator node themselves. They can delegate $KNOW to a Validator and obtain a part of their revenue in exchange.
@@ -53,6 +57,8 @@ Delegators share revenue with their Validators, but they also share risks. If a 
 Delegators play an essential role in the system since they are responsible for the selection of Validators; they therefore play an active role in the Ecosystem. They must actively monitor the actions of their Validators and participate in governance.
 
 About the governance of the DAO, the Delegators give their voting power automatically to the Validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
+
+![Delegators](/img/content/whitepaper/Delegators.png)
 
 ## DAO Participants
 
@@ -68,6 +74,8 @@ For more information on governance please click [here](okp4-blockchain#governanc
 Data providers are users who deposit one or more datasets in the catalog and/or in one or more Data Spaces. Their role is to offer datasets to be used by services and applications to create valuable knowledge.
 
 They are paid by the Consumers each time their data is used or bought, depending on governance rules of the Data Space.
+
+![Data Providers](/img/content/whitepaper/Data_Providers.png)
 
 ## Service Providers
 

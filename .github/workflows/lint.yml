@@ -70,6 +70,30 @@ jobs:
             fi
           ' sh {} +
 
+  lint-image:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Lint image files
+        run: |
+          find "$FOLDER" -regextype posix-egrep -regex '.+\.(ico|jpg|jpeg|png|svg|webp)' -exec sh -c '
+            for file do
+              if ! identify "$file" >/dev/null; then
+                echo "❌ $file"
+                export FAILED=1
+              else
+                echo "✅ $file"
+              fi
+            done
+            if [ "${FAILED}" = "1" ]; then
+              exit 1
+            fi
+          ' sh {} +
+        env:
+          FOLDER: ./static
+
   report-new-dependencies:
     runs-on: ubuntu-22.04
     if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
@@ -84,7 +108,7 @@ jobs:
 
   lint-branch-name:
     runs-on: ubuntu-22.04
-    if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
+    if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened')
     steps:
       - name: Check branch name conventions
         uses: AlbertHernandez/branch-name-action@v1.0.2
