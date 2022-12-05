@@ -28,7 +28,7 @@
     "lint:fix": "stylelint '**/*.scss' --fix && markdownlint -i node_modules -i 'contracts' -i 'modules'  --fix '**/*.md'"
   },
   "dependencies": {
-    "@docusaurus/core": "2.1.0",
+    "@docusaurus/core": "2.2.0",
     "@docusaurus/preset-classic": "2.1.0",
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1.6.22",
