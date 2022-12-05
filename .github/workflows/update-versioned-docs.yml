@@ -35,8 +35,8 @@ jobs:
 
       - name: Copy updated docs
         run: |
-          rm -rf ${{ github.event.inputs.section }}/docs/*
-          cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}/docs
+          rm -rf ${{ github.event.inputs.section }}/*
+          cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}
           rm -rf tmp/*
 
       - name: Setup node environment
