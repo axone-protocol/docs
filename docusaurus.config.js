@@ -87,6 +87,12 @@ const config = {
                 docId: 'logic',
                 docsPluginId: 'modules',
               },
+              {
+                type: 'doc',
+                label: 'Commands',
+                docId: 'okp4d',
+                docsPluginId: 'commands',
+              },
             ],
           },
           {
@@ -119,6 +125,13 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [{to: '/modules/logic', label: 'Latest version'}],
             docsPluginId: 'modules',
+            dropdownActiveClassDisabled: true,
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/commands/okp4d', label: 'Latest version'}],
+            docsPluginId: 'commands',
             dropdownActiveClassDisabled: true,
           },
         ]
@@ -207,6 +220,14 @@ const config = {
         id: 'modules',
         path: 'modules',
         routeBasePath: 'modules/'
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'commands',
+        path: 'commands',
+        routeBasePath: 'commands/'
       },
     ],
   ],
