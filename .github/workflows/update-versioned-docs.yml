@@ -9,10 +9,10 @@ on:
         description: "Set the repository that docs has been updated (okp4/contracts | okp4/okp4d)"
         required: true
       section:
-        description: "Which section will be update (contracts | modules)"
+        description: "Which section will be update (contracts | modules | commands)"
         required: true
       docs_directory:
-        description: "On which directory documentation is located (docs/* | docs/proto/*)"
+        description: "On which directory documentation is located (docs/* | docs/proto/* | docs/command/*)"
         required: false
         default: "docs/*"
 
