@@ -9,7 +9,7 @@ description: OKP4 is a public blockchain specifically designed to build the Data
   <title>OKP4 Whitepaper</title>
 </head>
 
-![OKP4 Logo](/img/content/OKP4.jpg)
+![OKP4 Logo](/img/content/OKP4.webp)
 
 In our digitalized world, one of the most efficient way to unlock knowledge is through data. But data is rarely shared. It stays in silos, isolated and protected. As such, data is under-used and under-valued. Generating knowledge from data is theoretically infinite. That's why an incommensurable amount of value could be unlocked through data sharing. Today's problem is that individuals and companies restrict access to data and information, mostly because of risk, complexity, costs and lack of incentive.
 
@@ -29,4 +29,4 @@ $KNOW is the native **[token](/whitepaper/token-model)** of the OKP4 Blockchain 
 
 Multiple **[use cases](/whitepaper/usecases)** are now possible in all verticals and geographical scales. Through trust-minimized data sharing, a new land of opportunities emerges for people and companies, where there is no trusted third party designed to extract value from its participants or who can unilaterally change rules.
 
-![Workflow process OKP4](/img/content/whitepaper/schematic.png)
+![Workflow process OKP4](/img/content/whitepaper/schematic.webp)

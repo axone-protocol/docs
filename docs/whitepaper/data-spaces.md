@@ -124,9 +124,9 @@ OKP4 SDK is designed to give as much freedom as possible for developers, data sc
 
 In this way, an interface has been designed to interact easily with the OKP4 protocol and, more specifically, create a data space. As far as the interface is concerned, it allows for an access to datasets and services and to create a new dataspace. Through the creation process of a new dataspace, besides the name, description, and tags, one can either use an existing governance template or create its authority using a current token (i.e., the KNOW) or not.
 
-![Governance_interface_1](/img/content/whitepaper/Governance_interface1.png)
+![Governance_interface_1](/img/content/whitepaper/Governance_interface1.webp)
 
-![Governance_interface_2](/img/content/whitepaper/Governance_interface2.png)
+![Governance_interface_2](/img/content/whitepaper/Governance_interface2.webp)
 
 The governance rules of a dataspace can be built using a public template, its own library of dataspaces or custom blocks. For example, it is possible to define the rules of access control of data spaces, datasets and services, the token used, or the token amount. Data management can also be defined depending on the format, size or sectors desired. Other elements such as services management, business model, and governance can be set up. Once created, the data space is available on the OKP4 Explorer. A search tool is used to look for datasets, services, and data spaces.
 

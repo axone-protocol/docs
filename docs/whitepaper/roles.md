@@ -28,7 +28,7 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 **Governors** each Data Space can have its own governance mechanisms. Governors are the ones who enforce them. The ability to become a governor depends on the Data Space, some will have a specific governance token (fungible or non fungible), some will have multisigs, some will have single self-designated entities defining the rules.
 
-![Blockchain Participants](/img/content/whitepaper/Blockchain_Participant.png)
+![Blockchain Participants](/img/content/whitepaper/Blockchain_Participant.webp)
 
 ### Application Participants
 
@@ -46,7 +46,7 @@ Validators (and their delegates) earn $KNOW tokens as a reward for running the T
 
 There must be some penalty imposed if Validators do not respect the protocol rules whether intentional or unintentional (double sign, offline too long...). This will cause the Validator to lose his good reputation and his proportional share of bonded token that will get slashed. The penalty depends on the severity of the violation.
 
-![Validators](/img/content/whitepaper/Validator.png)
+![Validators](/img/content/whitepaper/Validator.webp)
 
 ## Delegators
 
@@ -58,7 +58,7 @@ Delegators play an essential role in the system since they are responsible for t
 
 About the governance of the DAO, the Delegators give their voting power automatically to the Validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
 
-![Delegators](/img/content/whitepaper/Delegators.png)
+![Delegators](/img/content/whitepaper/Delegators.webp)
 
 ## DAO Participants
 
@@ -75,7 +75,7 @@ Data providers are users who deposit one or more datasets in the catalog and/or 
 
 They are paid by the Consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
-![Data Providers](/img/content/whitepaper/Data_Providers.png)
+![Data Providers](/img/content/whitepaper/Data_Providers.webp)
 
 ## Service Providers
 
