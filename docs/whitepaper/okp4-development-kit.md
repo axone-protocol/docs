@@ -8,9 +8,9 @@ sidebar_position: 7
 
 The [OKP4 Design System](https://github.com/okp4/ui) is an open-source set of components and resources created to facilitate the design and development of web interfaces in the OKP4 Ecosystem for everyone. This design system serves as a reference for teams working around the OKP4 Ecosystem, enabling them to design and develop web interfaces with speed, consistency and quality.
 
-![OKP4 Design System](/img/content/whitepaper/okp4-design-system-overview-1.png)
+![OKP4 Design System](/img/content/whitepaper/okp4-design-system-overview-1.webp)
 
-![OKP4 Design System](/img/content/whitepaper/okp4-design-system-overview-2.png)
+![OKP4 Design System](/img/content/whitepaper/okp4-design-system-overview-2.webp)
 
 The OKP4 Design System follows the [Atomic Design methodology](https://atomicdesign.bradfrost.com/), a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.
 
@@ -30,7 +30,7 @@ As the Dataverse will contain more and more Data Spaces, governance templates wi
 
 A user will able to use a template and create his own library of templates.
 
-![Data Space Governance](/img/content/whitepaper/Governance_templates.png)
+![Data Space Governance](/img/content/whitepaper/Governance_templates.webp)
 
 ## OKP4 Kafka Components
 
@@ -45,7 +45,7 @@ Instead, at OKP4, we believe in real-time data processing in the form of event s
 
 We adoped [Kafka](https://kafka.apache.org/) as our distributed event streaming platform for high-performance data pipelines, streaming analytics and data integration, and [Kafka Connect](https://docs.confluent.io/platform/current/connect/index.html) as a free, open-source framework for connecting Kafka with external systems such as databases, key-value stores, search indexes, and file systems, using so-called Connectors.
 
-![Kafka Components](/img/content/whitepaper/Kafka.png)
+![Kafka Components](/img/content/whitepaper/Kafka.webp)
 
 As part of its Development Kit, OKP4 provides a set of open-source bricks allowing the data processing in real-time from a Cosmos blockchain, integrated in a Kafka platform:
 

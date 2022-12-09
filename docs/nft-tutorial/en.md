@@ -37,9 +37,9 @@ Connect with the address provided by OKP4
 
 - Decrypt the file received by email using the password accessible through the temporary link provided in the same email
 - Click on the Keplr icon on your browser :  
-   ![keplr icon](/img/content/nft-tutorial/keplr-icon.png)
+   ![keplr icon](/img/content/nft-tutorial/keplr-icon.webp)
 - You should see the following screen:  
-  ![create account](/img/content/nft-tutorial/account-creation-keplr.png)
+  ![create account](/img/content/nft-tutorial/account-creation-keplr.webp)
 - Click on `Import existing account`
 - Enter your 24 words mnemonic (copy/paste of all words at once is possible)
 - Enter an account name like `temporary okp4 wallet`
@@ -49,21 +49,21 @@ Now you can click on the Keplr extension icon
 
 - Select the `Stargaze` blockchain
 
-![block chain selection](/img/content/nft-tutorial/block-chain-select.png)
+![block chain selection](/img/content/nft-tutorial/block-chain-select.webp)
 The Stargaze blockchain is dedicated to NFTs and is part of the Cosmos ecosystem.
 
 You should see something like this:
 
-![keplr account](/img/content/nft-tutorial/keplr-account.png)
+![keplr account](/img/content/nft-tutorial/keplr-account.webp)
 
 You can then go to <https://app.stargaze.zone>
 
 - Click on `Connect Wallet`
-- Once connected click on the user icon : ![stargaze user](/img/content/nft-tutorial/stargaze-account.png)
+- Once connected click on the user icon : ![stargaze user](/img/content/nft-tutorial/stargaze-account.webp)
 
 You should be redirected to your NFT:
 
-![Stargaze NFT](/img/content/nft-tutorial/stargaze-nft.png)
+![Stargaze NFT](/img/content/nft-tutorial/stargaze-nft.webp)
 
 ## Get a wallet of your own
 
@@ -88,7 +88,7 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 
 - In Keplr, when you are connected to your personal wallet (click on the icon in the upper right corner if you are not), copy the Stargaze address starting "stars1..." by clicking here
 
-![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.PNG)
+![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.webp)
 
 - In Keplr, switch back to the temporary OKP4 wallet by clicking on the icon on the top right.
 - Go back to your NFT page : <https://app.stargaze.zone/profile>
