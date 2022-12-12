@@ -42,7 +42,7 @@
     "react-dom": "^17.0.1",
     "rehype-katex": "5",
     "remark-math": "3",
-    "sass": "^1.56.1"
+    "sass": "^1.56.2"
   },
   "browserslist": {
     "production": [
