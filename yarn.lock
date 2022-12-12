@@ -3919,9 +3919,9 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-drawio@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.npmjs.org/docusaurus-plugin-drawio/-/docusaurus-plugin-drawio-0.1.7.tgz"
+docusaurus-plugin-drawio@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-drawio/-/docusaurus-plugin-drawio-0.2.0.tgz#043f04b30a36815f52572ab371ae65014a14a3d5"
   dependencies:
     raw-loader "^4.0.2"
 
