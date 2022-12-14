@@ -12,7 +12,7 @@ Digital innovation has tremendously impacted the way we do business, the way we 
 
 Data is an objective and elementary description of reality. It has no value by itself. It needs to be processed and interpreted to create valuable information and knowledge. Knowledge is usually subjective and context-dependant.
 
-![From data to knowledge](/img/content/whitepaper/Data_to_Knowledge.png)
+![From data to knowledge](/img/content/whitepaper/Data_to_Knowledge.webp)
 
 ### Why we need data sharing
 
@@ -33,7 +33,7 @@ Today's problem is that individuals and companies are incentivized to build gate
 - Costs (lack of infrastructures, R&D)
 - Lack of incentives (bad business models, bad incentives, unclear benefits)
 
-![Frictionless](/img/content/whitepaper/frictionless.png)
+![Frictionless](/img/content/whitepaper/frictionless.webp)
 
 **But what if we could enable trust-minimized data sharing and unlock this untapped potential?**
 
@@ -43,7 +43,7 @@ Since data is everywhere and knowledge is valuable, the issues related to data s
 
 Many approaches already exist to share data between entities:
 
-![Degree of federation in data-sharing models](/img/content/whitepaper/degree_of_federation.png)
+![Degree of federation in data-sharing models](/img/content/whitepaper/degree_of_federation.webp)
 
 Data exchange is the most common model today, while a decentralized approach to data sharing seems to be the most promizing. In fact, it will enable data sharing without trusted third parties, without moving data from its existing place and even enable decentralized governance on data sharing rules.
 
@@ -77,7 +77,7 @@ To sum up, trust-minimized data sharing may need its own layer-1.
 
 The previously mentioned reasons led us to create OKP4 (Open Knowledge Protocol For... everything and everyone).
 
-![OKP4_banner](/img/content/banner_okp4.png)
+![OKP4_banner](/img/content/banner_okp4.webp)
 
 ### What is OKP4?
 
@@ -97,7 +97,7 @@ OKP4 is built using the Cosmos SDK and is fundamentally a multichain infrastruct
 
 ### What is a Data Space ?
 
-![Data Spaces](/img/content/whitepaper/Illustration_dataspace.png)
+![Data Spaces](/img/content/whitepaper/Illustration_dataspace.webp)
 
 A Data Space is a digital common that makes data and services (algorithms, computing resources, etc.) available to the community, based on shared governance, for the creation of knowledge. The governance guarantees the individual and collective interests of the participants, who retain the sovereignty of their resources.
 
@@ -186,7 +186,7 @@ On the **Application layer**, there are [Builders](/whitepaper/roles#builders) w
 
 ## Multi-layered governance
 
-![combine_web2_web3](/img/content/whitepaper/combine_web2_web3.png)
+![combine_web2_web3](/img/content/whitepaper/combine_web2_web3.webp)
 
 The main criticisms we can address at web2 companies and especially tech giants are their extractive nature, their willingness to keep users captive on their platforms, and their increasing power controlled by centralized governance.
 
