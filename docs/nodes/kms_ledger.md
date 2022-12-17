@@ -116,13 +116,13 @@ Now start `okp4d`. You should see that the KMS connects and receives a signature
 
 Once the Ledger device receives the first message, it will ask for confirmation that the values are adequate.
 
-![Tendermint Ledger app "Init Validation"](./../../img/kms_tm_ledger_01.jpg)
+![Tendermint Ledger app "Init Validation"](./../../static/img/content/kms_tm_ledger_01.webp)
 
 Click the right button, if the height and round are correct.
 
 After that, you will see that the KMS will start forwarding all signature requests to the Ledger app:
 
-![Tendermint Ledger app "Proposal"](./../../img/kms_tm_ledger_02.jpg)
+![Tendermint Ledger app "Proposal"](./../../static/img/content/kms_tm_ledger_02.webp)
 
 ::: warning
 The word `TEST` in the second picture, second line appears because they were taken on a pre-release version.
