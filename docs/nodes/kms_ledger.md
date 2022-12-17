@@ -48,12 +48,12 @@ You can find other configuration examples [here](https://github.com/iqlusioninc/
   # Example KMS configuration file
   [[validator]]
   addr = "tcp://localhost:26658"                  # or "unix:///path/to/socket"
-  chain_id = "evmos_9001-1"
+  chain_id = "okp4-nemeton-1"
   reconnect = true                                # true is the default
   secret_key = "~/.tmkms/secret_connection.key"
 
   [[providers.ledger]]
-  chain_ids = ["evmos_9001-1"]
+  chain_ids = ["okp4-nemeton-1"]
   ```
 
 - Edit `addr` to point to your `okp4d` instance.
@@ -72,7 +72,7 @@ tmkms keygen ~/.tmkms/secret_connection.key
 
 ### Retrieve validator key
 
-The last step is to retrieve the validator key that you will use in `evmosd`.
+The last step is to retrieve the validator key that you will use in `okp4d`.
 
 Start the KMS:
 
@@ -94,7 +94,7 @@ Take note of the validator pubkey that appears in your screen. *We will use it i
 
 ## Okp4d configuration
 
-You need to enable KMS access by editing `.okp4d/config/config.toml`. In this file, modify `priv_validator_laddr` to create a listening address/port or a unix socket in `evmosd`.
+You need to enable KMS access by editing `.okp4d/config/config.toml`. In this file, modify `priv_validator_laddr` to create a listening address/port or a unix socket in `okp4d`.
 
 For example:
 
