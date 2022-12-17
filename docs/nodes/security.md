@@ -7,7 +7,9 @@ sidebar_position: 5
 
 # Validator Security Checklist
 
- Conduct a security checklist survey to go through the security measures of a validator {synopsis}
+:::info 
+ Conduct a security checklist survey to go through the security measures of a validator
+:::
 
 ## Conduct Survey on General Controls of Hosting Data Centre
 
@@ -51,7 +53,10 @@ Perform a survey on your current status of node setup, and compare your result w
 
 
 ## Backup
-Learn how to backup your validator. {synopsis}
+
+:::info 
+Learn how to backup your validator.
+:::
 
 It is ***crucial*** to backup your validator's private key. It's the only way to restore your validator in the event of a disaster.
 
