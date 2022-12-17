@@ -106,7 +106,7 @@ priv_validator_laddr = "tcp://127.0.0.1:26658"
 ...
 ```
 
-Let's assume that you have set up your validator account and called it `kmsval`. You can tell evmosd the key that we've got in the previous section.
+Let's assume that you have set up your validator account and called it `kmsval`. You can tell okp4d the key that we've got in the previous section.
 
 ```bash
 okp4d gentx --name kmsval --pubkey <pub_key>
