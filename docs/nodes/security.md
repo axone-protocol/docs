@@ -2,12 +2,9 @@
 sidebar_position: 5
 ---
 
-# Security
-
-
 # Validator Security Checklist
 
-:::info 
+:::info
  Conduct a security checklist survey to go through the security measures of a validator
 :::
 
@@ -51,10 +48,9 @@ Perform a survey on your current status of node setup, and compare your result w
 | Key Management                   | Setup [Tendermint KMS](./kms.md) with HSM or equivalent online service, which should replace the static key file.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | DDOS                             | Setup validator in accordance with sentry architecture. Kindly refer to the setup [instruction](https://docs.tendermint.com/master/nodes/validators.html#setting-up-a-validator) and [detailed description](https://forum.cosmos.network/t/sentry-node-architecture-overview/454).                                                                                                                                                                                                                                                      |
 
-
 ## Backup
 
-:::info 
+:::info
 Learn how to backup your validator.
 :::
 
@@ -64,25 +60,26 @@ The validator private key is a Tendermint Key: a unique key used to sign consens
 
 To backup everything you need to restore your validator, note that if you are using the "software sign" (the default signing method of Tendermint), your Tendermint key is located at:
 
-```bash
+```
+#!/bin/bash
 ~/.okp4d/config/priv_validator_key.json
 ```
 
 To see your validator's associated public key:
 
-```bash
+```
+#!/bin/bash
 okp4d tendermint show-validator
 ```
 
 To see your validator's associated bech32 address:
 
-```bash
+```
+#!/bin/bash
 okp4d tendermint show-address
 ```
 
 You can also use hardware to store your Tendermint Key much more safely, such as [YubiHSM2](https://developers.yubico.com/YubiHSM2/).
-
-
 
 ### Alerting and monitoring
 
@@ -148,6 +145,7 @@ WantedBy=multi-user.target
 4\. Enable and start the service.
 
 ```
+#!/bin/bash
 sudo -S systemctl daemon-reload
 sudo -S systemctl enable prometheus
 sudo systemctl start prometheus
@@ -155,13 +153,10 @@ sudo systemctl start prometheus
 
 5\. Import a dashboard to your Grafana. Search for 'Cosmos Validator' to find several options. You should see logs arriving in the dashboard after a couple of minutes.
 
-
 For more info:
 
 * [https://grafana.com/docs/grafana-cloud/quickstart/noagent\_linuxnode/](https://grafana.com/docs/grafana-cloud/quickstart/noagent\_linuxnode/)
 * [https://forum.cosmos.network/t/monitoring-alerting-for-your-validator/446/28](https://forum.cosmos.network/t/monitoring-alerting-for-your-validator/446/28)
-
-
 
 ## Sentry Nodes (DDOS Protection)
 
@@ -181,7 +176,8 @@ To setup your sentry node architecture you can follow the instructions below:
 
 Validators nodes should edit their `config.toml`:
 
-```bash
+```
+#!/bin/bash
 # Comma separated list of nodes to keep persistent connections to
 # Do not add private peers to this list if you don't want them advertised
 persistent_peers =[list of sentry nodes]
@@ -192,7 +188,8 @@ pex = false
 
 Sentry Nodes should edit their config.toml:
 
-```bash
+```
+#!/bin/bash
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
 # Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
 
