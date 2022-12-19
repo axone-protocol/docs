@@ -124,7 +124,7 @@ After that, you will see that the KMS will start forwarding all signature reques
 
 ![Tendermint Ledger app "Proposal"](./../../static/img/content/kms_tm_ledger_02.webp)
 
-::: warning
+:::warning
 The word `TEST` in the second picture, second line appears because they were taken on a pre-release version.
 Once the app as been released in Ledger's app store, this word should NOT appear.
 :::
