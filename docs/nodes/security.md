@@ -60,22 +60,19 @@ The validator private key is a Tendermint Key: a unique key used to sign consens
 
 To backup everything you need to restore your validator, note that if you are using the "software sign" (the default signing method of Tendermint), your Tendermint key is located at:
 
-```
-#!/bin/bash
+```bash
 ~/.okp4d/config/priv_validator_key.json
 ```
 
 To see your validator's associated public key:
 
-```
-#!/bin/bash
+```bash
 okp4d tendermint show-validator
 ```
 
 To see your validator's associated bech32 address:
 
-```
-#!/bin/bash
+```bash
 okp4d tendermint show-address
 ```
 
@@ -105,7 +102,7 @@ Using only the raw metrics endpoint provided by `okp4d` you can get a working da
 2. Download Prometheus - this is needed to ship logs to Grafana Cloud.
 3. Create a `prometheus.yml` file with your [Grafana Cloud credentials](https://grafana.com/docs/grafana-cloud/reference/create-api-key/) in the Prometheus folder. You can get these via the Grafana UI. Click 'details' on the Prometheus card:
 
-```
+```bash
 global:
   scrape_interval: 15s
 
@@ -125,7 +122,7 @@ remote_write:
 
 3\. Set up a service file, with `sudo nano /etc/systemd/system/prometheus.service`, replacing `<your-user>` and `<prometheus-folder>` with the location of Prometheus. This sets the Prometheus port to `6666`
 
-```
+```bash
 [Unit]
 Description=prometheus
 After=network-online.target
@@ -144,8 +141,7 @@ WantedBy=multi-user.target
 
 4\. Enable and start the service.
 
-```
-#!/bin/bash
+```bash
 sudo -S systemctl daemon-reload
 sudo -S systemctl enable prometheus
 sudo systemctl start prometheus
@@ -176,8 +172,7 @@ To setup your sentry node architecture you can follow the instructions below:
 
 Validators nodes should edit their `config.toml`:
 
-```
-#!/bin/bash
+```bash
 # Comma separated list of nodes to keep persistent connections to
 # Do not add private peers to this list if you don't want them advertised
 persistent_peers =[list of sentry nodes]
@@ -188,8 +183,7 @@ pex = false
 
 Sentry Nodes should edit their config.toml:
 
-```
-#!/bin/bash
+```bash
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
 # Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
 
