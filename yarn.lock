@@ -3030,13 +3030,13 @@ comma-separated-tokens@^1.0.0:
   version "1.0.8"
   resolved "https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-1.0.8.tgz"
 
-commander@2, commander@^2.20.0:
-  version "2.20.3"
-  resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
-
 commander@7, commander@^7.2.0:
   version "7.2.0"
   resolved "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz"
+
+commander@^2.20.0:
+  version "2.20.3"
+  resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
 
 commander@^5.1.0:
   version "5.1.0"
@@ -3336,33 +3336,21 @@ csstype@^3.0.2:
   version "3.0.11"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.11.tgz"
 
-d3-array@1, d3-array@^1.1.1, d3-array@^1.2.0:
-  version "1.2.4"
-  resolved "https://registry.npmjs.org/d3-array/-/d3-array-1.2.4.tgz"
-
 "d3-array@2 - 3", "d3-array@2.10.0 - 3", "d3-array@2.5.0 - 3", d3-array@3:
   version "3.1.6"
   resolved "https://registry.npmjs.org/d3-array/-/d3-array-3.1.6.tgz"
   dependencies:
     internmap "1 - 2"
 
-d3-axis@1:
-  version "1.0.12"
-  resolved "https://registry.npmjs.org/d3-axis/-/d3-axis-1.0.12.tgz"
+d3-array@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.2.1.tgz#39331ea706f5709417d31bbb6ec152e0328b39b3"
+  dependencies:
+    internmap "1 - 2"
 
 d3-axis@3:
   version "3.0.0"
   resolved "https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz"
-
-d3-brush@1:
-  version "1.1.6"
-  resolved "https://registry.npmjs.org/d3-brush/-/d3-brush-1.1.6.tgz"
-  dependencies:
-    d3-dispatch "1"
-    d3-drag "1"
-    d3-interpolate "1"
-    d3-selection "1"
-    d3-transition "1"
 
 d3-brush@3:
   version "3.0.0"
@@ -3374,22 +3362,11 @@ d3-brush@3:
     d3-selection "3"
     d3-transition "3"
 
-d3-chord@1:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/d3-chord/-/d3-chord-1.0.6.tgz"
-  dependencies:
-    d3-array "1"
-    d3-path "1"
-
 d3-chord@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-chord/-/d3-chord-3.0.1.tgz"
   dependencies:
     d3-path "1 - 3"
-
-d3-collection@1:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/d3-collection/-/d3-collection-1.0.7.tgz"
 
 d3-color@1:
   version "1.4.1"
@@ -3399,17 +3376,11 @@ d3-color@1:
   version "3.1.0"
   resolved "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz"
 
-d3-contour@1:
-  version "1.3.2"
-  resolved "https://registry.npmjs.org/d3-contour/-/d3-contour-1.3.2.tgz"
+d3-contour@4:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/d3-contour/-/d3-contour-4.0.0.tgz#5a1337c6da0d528479acdb5db54bc81a0ff2ec6b"
   dependencies:
-    d3-array "^1.1.1"
-
-d3-contour@3:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/d3-contour/-/d3-contour-3.0.1.tgz"
-  dependencies:
-    d3-array "2 - 3"
+    d3-array "^3.2.0"
 
 d3-delaunay@6:
   version "6.0.2"
@@ -3439,14 +3410,6 @@ d3-drag@1:
     d3-dispatch "1 - 3"
     d3-selection "3"
 
-d3-dsv@1:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/d3-dsv/-/d3-dsv-1.2.0.tgz"
-  dependencies:
-    commander "2"
-    iconv-lite "0.4"
-    rw "1"
-
 "d3-dsv@1 - 3", d3-dsv@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz"
@@ -3463,26 +3426,11 @@ d3-ease@1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz"
 
-d3-fetch@1:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/d3-fetch/-/d3-fetch-1.2.0.tgz"
-  dependencies:
-    d3-dsv "1"
-
 d3-fetch@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz"
   dependencies:
     d3-dsv "1 - 3"
-
-d3-force@1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/d3-force/-/d3-force-1.2.1.tgz"
-  dependencies:
-    d3-collection "1"
-    d3-dispatch "1"
-    d3-quadtree "1"
-    d3-timer "1"
 
 d3-force@3:
   version "3.0.0"
@@ -3492,19 +3440,13 @@ d3-force@3:
     d3-quadtree "1 - 3"
     d3-timer "1 - 3"
 
-d3-format@1, d3-format@^1.2.0:
-  version "1.4.5"
-  resolved "https://registry.npmjs.org/d3-format/-/d3-format-1.4.5.tgz"
-
 "d3-format@1 - 3", d3-format@3:
   version "3.1.0"
   resolved "https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz"
 
-d3-geo@1:
-  version "1.12.1"
-  resolved "https://registry.npmjs.org/d3-geo/-/d3-geo-1.12.1.tgz"
-  dependencies:
-    d3-array "1"
+d3-format@^1.2.0:
+  version "1.4.5"
+  resolved "https://registry.npmjs.org/d3-format/-/d3-format-1.4.5.tgz"
 
 d3-geo@3:
   version "3.0.1"
@@ -3526,10 +3468,6 @@ d3-graphviz@^2.6.1:
     d3-zoom "^1.5.0"
     viz.js "^1.8.2"
 
-d3-hierarchy@1:
-  version "1.1.9"
-  resolved "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-1.1.9.tgz"
-
 d3-hierarchy@3:
   version "3.1.2"
   resolved "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz"
@@ -3546,44 +3484,25 @@ d3-interpolate@1, d3-interpolate@^1.1.5:
   dependencies:
     d3-color "1 - 3"
 
-d3-path@1, d3-path@^1.0.5:
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz"
-
 "d3-path@1 - 3", d3-path@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-path/-/d3-path-3.0.1.tgz"
 
-d3-polygon@1:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/d3-polygon/-/d3-polygon-1.0.6.tgz"
+d3-path@^1.0.5:
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz"
 
 d3-polygon@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz"
 
-d3-quadtree@1:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-1.0.7.tgz"
-
 "d3-quadtree@1 - 3", d3-quadtree@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-3.0.1.tgz"
 
-d3-random@1:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/d3-random/-/d3-random-1.1.2.tgz"
-
 d3-random@3:
   version "3.0.1"
   resolved "https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz"
-
-d3-scale-chromatic@1:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-1.5.0.tgz"
-  dependencies:
-    d3-color "1"
-    d3-interpolate "1"
 
 d3-scale-chromatic@3:
   version "3.0.0"
@@ -3591,17 +3510,6 @@ d3-scale-chromatic@3:
   dependencies:
     d3-color "1 - 3"
     d3-interpolate "1 - 3"
-
-d3-scale@2:
-  version "2.2.2"
-  resolved "https://registry.npmjs.org/d3-scale/-/d3-scale-2.2.2.tgz"
-  dependencies:
-    d3-array "^1.2.0"
-    d3-collection "1"
-    d3-format "1"
-    d3-interpolate "1"
-    d3-time "1"
-    d3-time-format "2"
 
 d3-scale@4:
   version "4.0.2"
@@ -3621,33 +3529,17 @@ d3-selection@1, d3-selection@^1.1.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/d3-selection/-/d3-selection-3.0.0.tgz"
 
-d3-shape@1:
-  version "1.3.7"
-  resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz"
-  dependencies:
-    d3-path "1"
-
 d3-shape@3:
   version "3.1.0"
   resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-3.1.0.tgz"
   dependencies:
     d3-path "1 - 3"
 
-d3-time-format@2:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/d3-time-format/-/d3-time-format-2.3.0.tgz"
-  dependencies:
-    d3-time "1"
-
 "d3-time-format@2 - 4", d3-time-format@4:
   version "4.1.0"
   resolved "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz"
   dependencies:
     d3-time "1 - 3"
-
-d3-time@1:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/d3-time/-/d3-time-1.1.0.tgz"
 
 "d3-time@1 - 3", "d3-time@2.1.1 - 3", d3-time@3:
   version "3.0.0"
@@ -3684,20 +3576,6 @@ d3-transition@1, d3-transition@^1.1.1:
     d3-interpolate "1 - 3"
     d3-timer "1 - 3"
 
-d3-voronoi@1:
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-1.1.4.tgz"
-
-d3-zoom@1, d3-zoom@^1.5.0:
-  version "1.8.3"
-  resolved "https://registry.npmjs.org/d3-zoom/-/d3-zoom-1.8.3.tgz"
-  dependencies:
-    d3-dispatch "1"
-    d3-drag "1"
-    d3-interpolate "1"
-    d3-selection "1"
-    d3-transition "1"
-
 d3-zoom@3:
   version "3.0.0"
   resolved "https://registry.npmjs.org/d3-zoom/-/d3-zoom-3.0.0.tgz"
@@ -3708,52 +3586,26 @@ d3-zoom@3:
     d3-selection "2 - 3"
     d3-transition "2 - 3"
 
-d3@^5.14:
-  version "5.16.0"
-  resolved "https://registry.npmjs.org/d3/-/d3-5.16.0.tgz"
+d3-zoom@^1.5.0:
+  version "1.8.3"
+  resolved "https://registry.npmjs.org/d3-zoom/-/d3-zoom-1.8.3.tgz"
   dependencies:
-    d3-array "1"
-    d3-axis "1"
-    d3-brush "1"
-    d3-chord "1"
-    d3-collection "1"
-    d3-color "1"
-    d3-contour "1"
     d3-dispatch "1"
     d3-drag "1"
-    d3-dsv "1"
-    d3-ease "1"
-    d3-fetch "1"
-    d3-force "1"
-    d3-format "1"
-    d3-geo "1"
-    d3-hierarchy "1"
     d3-interpolate "1"
-    d3-path "1"
-    d3-polygon "1"
-    d3-quadtree "1"
-    d3-random "1"
-    d3-scale "2"
-    d3-scale-chromatic "1"
     d3-selection "1"
-    d3-shape "1"
-    d3-time "1"
-    d3-time-format "2"
-    d3-timer "1"
     d3-transition "1"
-    d3-voronoi "1"
-    d3-zoom "1"
 
-d3@^7.0.0:
-  version "7.4.4"
-  resolved "https://registry.npmjs.org/d3/-/d3-7.4.4.tgz"
+d3@^7.0.0, d3@^7.7.0:
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-7.7.0.tgz#e7779a74ea7c807b432fdfd8128de062b19c62eb"
   dependencies:
     d3-array "3"
     d3-axis "3"
     d3-brush "3"
     d3-chord "3"
     d3-color "3"
-    d3-contour "3"
+    d3-contour "4"
     d3-delaunay "6"
     d3-dispatch "3"
     d3-drag "3"
@@ -3779,21 +3631,12 @@ d3@^7.0.0:
     d3-transition "3"
     d3-zoom "3"
 
-dagre-d3@^0.6.4:
-  version "0.6.4"
-  resolved "https://registry.npmjs.org/dagre-d3/-/dagre-d3-0.6.4.tgz"
+dagre-d3-es@7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/dagre-d3-es/-/dagre-d3-es-7.0.6.tgz#8cab465ff95aca8a1ca2292d07e1fb31b5db83f2"
   dependencies:
-    d3 "^5.14"
-    dagre "^0.8.5"
-    graphlib "^2.1.8"
-    lodash "^4.17.15"
-
-dagre@^0.8.5:
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/dagre/-/dagre-0.8.5.tgz"
-  dependencies:
-    graphlib "^2.1.8"
-    lodash "^4.17.15"
+    d3 "^7.7.0"
+    lodash-es "^4.17.21"
 
 debug@2.6.9, debug@^2.6.0:
   version "2.6.9"
@@ -3969,9 +3812,9 @@ domhandler@^5.0.1, domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/dompurify/-/dompurify-2.4.0.tgz"
+dompurify@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.1.tgz#f9cb1a275fde9af6f2d0a2644ef648dd6847b631"
 
 domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
@@ -4219,10 +4062,6 @@ extend-shallow@^2.0.1:
 extend@^3.0.0:
   version "3.0.2"
   resolved "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz"
-
-fast-clone@^1.5.13:
-  version "1.5.13"
-  resolved "https://registry.yarnpkg.com/fast-clone/-/fast-clone-1.5.13.tgz#7fe17542ae1c872e71bf80d177d00c11f51c2ea7"
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -4586,12 +4425,6 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
   version "4.2.10"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
 
-graphlib@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.npmjs.org/graphlib/-/graphlib-2.1.8.tgz"
-  dependencies:
-    lodash "^4.17.15"
-
 graphviz-react@^1.2.5:
   version "1.2.5"
   resolved "https://registry.npmjs.org/graphviz-react/-/graphviz-react-1.2.5.tgz"
@@ -4869,7 +4702,7 @@ human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
 
-iconv-lite@0.4, iconv-lite@0.4.24:
+iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz"
   dependencies:
@@ -5335,6 +5168,10 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+
 lodash.curry@^4.0.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/lodash.curry/-/lodash.curry-4.1.1.tgz"
@@ -5359,7 +5196,7 @@ lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz"
 
-lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
+lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
 
@@ -5538,19 +5375,16 @@ merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
 
-mermaid@^9.2.2:
-  version "9.2.2"
-  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-9.2.2.tgz#73cca1f0b74e7e674c0de3519d7e7e8ea83bea4a"
+mermaid@^9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-9.3.0.tgz#8bd7c4a44b53e4e85c53a0a474442e9c273494ae"
   dependencies:
     "@braintree/sanitize-url" "^6.0.0"
     d3 "^7.0.0"
-    dagre "^0.8.5"
-    dagre-d3 "^0.6.4"
-    dompurify "2.4.0"
-    fast-clone "^1.5.13"
-    graphlib "^2.1.8"
+    dagre-d3-es "7.0.6"
+    dompurify "2.4.1"
     khroma "^2.0.0"
-    lodash "^4.17.21"
+    lodash-es "^4.17.21"
     moment-mini "^2.24.0"
     non-layered-tidy-tree-layout "^2.0.2"
     stylis "^4.1.2"
