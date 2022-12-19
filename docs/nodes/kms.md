@@ -4,7 +4,8 @@ order: 2
 
 # Tendermint KMS
 
-Set up a Key Management System for okp4 {synopsis}
+## Synopsis
+Set up a Key Management System for okp4
 
 [Tendermint KMS](https://github.com/iqlusioninc/tmkms) is a Key Management Service (KMS) that allows separating key management from Tendermint nodes. In addition it provides other advantages such as:
 
@@ -43,7 +44,7 @@ You will need the following prerequisites:
     brew install libusb
     ```
 
-::: tip
+:::tip
 For `x86_64` architecture only:
 
 Configure `RUSTFLAGS` environment variable:

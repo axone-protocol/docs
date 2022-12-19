@@ -8,12 +8,12 @@ Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
 
 ## Pre-requisites
 
-- [Ledger device](https://shop.ledger.com/) {prereq}
+- [Ledger device](https://shop.ledger.com/)
 - [Install Ledger Live](https://www.ledger.com/ledger-live) {prereq}
 
 ## Checklist
 
-::: warning
+:::warning
 🚧  The following instructions are a brief walkthrough and not a comprehensive guideline. You should consider and research more about the [security implications](./security.md) of activating an external KMS.
 :::
 
@@ -24,13 +24,13 @@ Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
 
 ## Tendermint Validator app (for Ledger devices)
 
-::: danger
+:::danger
 🚨**IMPORTANT**: KMS and Ledger Tendermint app are currently work in progress. Details may vary. Use under **your own risk**
 :::
 
 You should be able to find the Tendermint app in Ledger Live.
 
-::: tip
+:::tip
 You will need to enable `Developer Mode` in Ledger Live `Settings` in order to find the app.
 :::
 
@@ -124,7 +124,7 @@ After that, you will see that the KMS will start forwarding all signature reques
 
 ![Tendermint Ledger app "Proposal"](./../../static/img/content/kms_tm_ledger_02.webp)
 
-::: warning
+:::warning
 The word `TEST` in the second picture, second line appears because they were taken on a pre-release version.
 Once the app as been released in Ledger's app store, this word should NOT appear.
 :::

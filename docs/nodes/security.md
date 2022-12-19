@@ -164,7 +164,7 @@ Validator nodes should only connect to full-nodes they trust because they operat
 
 Sentry nodes can be quickly spun up or change their IP addresses. Because the links to the sentry nodes are in private IP space, an internet based attacked cannot disturb them directly. This will ensure validator block proposals and votes always make it to the rest of the network.
 
-::: tip
+:::tip
 Read more about Sentry Nodes on the [forum](https://forum.cosmos.network/t/sentry-node-architecture-overview/454)
 :::
 
