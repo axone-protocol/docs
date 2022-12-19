@@ -24,7 +24,7 @@ Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
 
 ## Tendermint Validator app (for Ledger devices)
 
-::: danger
+:::danger
 🚨**IMPORTANT**: KMS and Ledger Tendermint app are currently work in progress. Details may vary. Use under **your own risk**
 :::
 
