@@ -18,7 +18,7 @@ It is recommended that the KMS service runs in a separate physical hosts.
 
 You will need the following prerequisites:
 
-- ✅ **Rust** (stable; **1.56+**): [rustup](https://rustup.rs/) 
+- ✅ **Rust** (stable; **1.56+**): [rustup](https://rustup.rs/)
 - ✅ **C compiler**: e.g. gcc, clang
 - ✅ **pkg-config**
 - ✅ **libusb** (1.0+). Install instructions for common platforms
@@ -30,7 +30,7 @@ You will need the following prerequisites:
     ```
 
   - ✅ RedHat/CentOS
- 
+
     ```bash
     #!/bin/bash
     yum install libusb1-devel
