@@ -43,7 +43,7 @@ You will need the following prerequisites:
     brew install libusb
     ```
 
-::: tip
+:::tip
 For `x86_64` architecture only:
 
 Configure `RUSTFLAGS` environment variable:
