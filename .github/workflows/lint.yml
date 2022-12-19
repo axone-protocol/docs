@@ -78,19 +78,18 @@ jobs:
 
       - name: Lint image files
         run: |
-          find "$FOLDER" -regextype posix-egrep -regex '.+\.(ico|jpg|jpeg|png|svg|webp)' -exec sh -c '
-            for file do
-              if ! identify "$file" >/dev/null; then
-                echo "❌ $file"
-                export FAILED=1
-              else
-                echo "✅ $file"
-              fi
-            done
-            if [ "${FAILED}" = "1" ]; then
-              exit 1
+          for file in $(find "$FOLDER" -regextype posix-egrep -regex '.+\.(bmp|ico|jpg|jpeg|png|svg|webp)'); do
+            type=$(identify $file | awk '{print $2}')
+            if [[ $type =~ ^(WEBP|SVG|ICO)$ ]]; then
+              echo "✅ $file"
+            else
+              >&2 echo "❌ $file please use only webp or svg format 🙏"
+              export FAILED=1
             fi
-          ' sh {} +
+          done
+          if [ "${FAILED}" = "1" ]; then
+            exit 1
+          fi
         env:
           FOLDER: ./static
 
