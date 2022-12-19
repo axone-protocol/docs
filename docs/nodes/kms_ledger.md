@@ -30,7 +30,7 @@ Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
 
 You should be able to find the Tendermint app in Ledger Live.
 
-::: tip
+:::tip
 You will need to enable `Developer Mode` in Ledger Live `Settings` in order to find the app.
 :::
 
