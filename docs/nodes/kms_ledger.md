@@ -13,7 +13,7 @@ Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
 
 ## Checklist
 
-::: warning
+:::warning
 🚧  The following instructions are a brief walkthrough and not a comprehensive guideline. You should consider and research more about the [security implications](./security.md) of activating an external KMS.
 :::
 
