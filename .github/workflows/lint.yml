@@ -78,13 +78,14 @@ jobs:
 
       - name: Lint image files
         run: |
+          FAILED=0
           for file in $(find "$FOLDER" -regextype posix-egrep -regex '.+\.(bmp|ico|jpg|jpeg|png|svg|webp)'); do
             type=$(identify $file | awk '{print $2}')
             if [[ $type =~ ^(WEBP|SVG|ICO)$ ]]; then
               echo "✅ $file"
             else
-              >&2 echo "❌ $file please use only webp or svg format 🙏"
-              export FAILED=1
+              >&2 echo "❌ $file incorrect. Please use only webp or svg format 🙏"
+              FAILED=1
             fi
           done
           if [ "${FAILED}" = "1" ]; then
