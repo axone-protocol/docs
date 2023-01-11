@@ -16,6 +16,7 @@ on:
         required: false
         default: "docs/*"
       draft:
+        type: boolean
         description: "Indicate if the publication of the documentation should be kept in draft and no new version should be released"
         required: false
         default: false
