@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "New docs version (repository tag)"
+        description: "New docs version (repository tag or repository ref)"
         required: true
       repository:
         description: "Set the repository that docs has been updated (okp4/contracts | okp4/okp4d)"
@@ -15,6 +15,11 @@ on:
         description: "On which directory documentation is located (docs/* | docs/proto/* | docs/command/*)"
         required: false
         default: "docs/*"
+      draft:
+        type: boolean
+        description: "Indicate if the publication of the documentation should be kept in draft and no new version should be released"
+        required: false
+        default: false
 
 jobs:
   update-versioned-doc:
@@ -54,12 +59,23 @@ jobs:
           node-version: 16.18
 
       - name: Bump new version
+        if: ${{ github.event.inputs.draft == false }}
         run: |
           yarn
           yarn run docusaurus docs:version:${{ github.event.inputs.section }} ${{ github.event.inputs.version }}
 
+      - name: Commit documentation draft
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ github.event.inputs.draft }}
+        with:
+          commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
+          commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
+          commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          commit_message: "docs: update draft docs for ${{ github.event.inputs.section }}"
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
+        if: ${{ github.event.inputs.draft == false }}
         with:
           commit-message: "docs(${{ github.event.inputs.section }}): add ${{ github.event.inputs.section }} ${{ github.event.inputs.version }} version"
           committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
