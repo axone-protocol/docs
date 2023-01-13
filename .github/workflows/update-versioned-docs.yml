@@ -64,9 +64,17 @@ jobs:
           yarn
           yarn run docusaurus docs:version:${{ github.event.inputs.section }} ${{ github.event.inputs.version }}
 
+      - name: Search for all modified files that involve the creation of PR or commit to main
+        id: changed-files
+        uses: tj-actions/changed-files@v34.5.4
+        with:
+          files: |
+            *.json
+            *.md
+
       - name: Commit documentation draft
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event.inputs.draft }}
+        if: ${{ github.event.inputs.draft && steps.changed-files.any_changed == 'true' }}
         with:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
@@ -75,7 +83,7 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
-        if: ${{ github.event.inputs.draft == false }}
+        if: ${{ github.event.inputs.draft == false && steps.changed-files.any_changed == 'true' }}
         with:
           commit-message: "docs(${{ github.event.inputs.section }}): add ${{ github.event.inputs.section }} ${{ github.event.inputs.version }} version"
           committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
