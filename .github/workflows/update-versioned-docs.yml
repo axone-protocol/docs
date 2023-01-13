@@ -1,4 +1,7 @@
 name: Update versioned docs
+
+concurrency: update-docs-${{ github.ref }}
+
 on:
   workflow_dispatch:
     inputs:
