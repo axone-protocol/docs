@@ -1,4 +1,4 @@
-# ØKP4 documentation
+# OKP4 documentation
 
 > OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
