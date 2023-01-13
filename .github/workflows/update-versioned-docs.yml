@@ -54,7 +54,7 @@ jobs:
         run: |
           rm -rf ${{ github.event.inputs.section }}/*
           cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}
-          rm -rf tmp/*
+          rm -rf tmp
 
       - name: Setup node environment
         uses: actions/setup-node@v3
