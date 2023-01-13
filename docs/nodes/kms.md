@@ -40,7 +40,7 @@ You will need the following prerequisites:
 
   - ✅ macOS (Homebrew)
   
-    ```
+    ```bash
     #!/bin/bash
     brew install libusb
     ```
