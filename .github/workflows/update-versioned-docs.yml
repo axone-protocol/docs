@@ -54,6 +54,8 @@ jobs:
         run: |
           rm -rf ${{ github.event.inputs.section }}/*
           cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}
+          git rm --cached tmp           
+          rm -rf .git/modules/tmp
           rm -rf tmp
 
       - name: Setup node environment
@@ -75,9 +77,13 @@ jobs:
             *.json
             *.md
 
+      - name: "Debug"
+        run: |
+          echo ${{ steps.changed-files.any_changed }}
+
       - name: Commit documentation draft
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event.inputs.draft && steps.changed-files.any_changed == 'true' }}
+        if: ${{ github.event.inputs.draft && steps.changed-files.any_changed }}
         with:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
