@@ -71,9 +71,9 @@ In a Data Space, datasets and algorithms are not stored centrally but at source 
 
 Our environment is a hybrid of "blockchain layer-1" & "data sharing solutions".
 
-Within the blockchain environment, we compete with generic layer-1s and layer-2s are "block-space providers". But, our technology is specifically designed for such use cases so we can optimize developer, contributor & user onboarding. Additionaly, we will provide value-generating use cases that are extremely complex to implement on other chains.
+Within the blockchain environment, we compete with generic layer-1s and layer-2s are "block-space providers". But, our technology is specifically designed for such use cases so we can optimize developer, contributor & user onboarding. Additionally, we will provide value-generating use cases that are extremely complex to implement on other chains.
 
-Within the data sharing environment, our technology is a genuine digital commons everyone can use (no trusted third party needed) designed for synergies between existing solutions. The world doesn't need another "let's build another closed ecosystem to extract value" platform, the world need a digital commons that is designed to break the silos.
+Within the data sharing environment, our technology is a genuine digital commons everyone can use (no trusted third party needed) designed for synergies between existing solutions. The world doesn't need another "let's build another closed ecosystem to extract value" platform, the world needs a digital commons that is designed to break the silos.
 
 Our ambition is to make it too painful NOT to open web2 silos. "Show me the incentives, I'll show you the outcomes".
 
@@ -109,7 +109,7 @@ To become the go-to solution for digital resources coordination, we follow 7 pri
 
 Onboard Consumers, contributors and users to create new use cases and share value.
 
-- **Designed for Consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate on-boarding of Consumers though SDKs & docs, fast deployment through tools & templates, and community empowerment to create a thriving Ecosystem.
+- **Designed for Consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate onboarding of Consumers through SDKs & docs, fast deployment through tools & templates, and community empowerment to create a thriving Ecosystem.
 
 - **Designed for contributors**: to maximize value created by data application by onboarding contributors. Value-sharing models and easy to use tools will incentivize participants in infinite ways, encouraging them to share data, algorithms, storage and computation towards a common goal.
 
