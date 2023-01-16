@@ -55,7 +55,7 @@ jobs:
         run: |
           rm -rf ${{ github.event.inputs.section }}/*
           cp -R tmp/${{ github.event.inputs.docs_directory }}.md ${{ github.event.inputs.section }}
-          git rm --cached tmp
+          git rm --ignore-unmatch --cached tmp
           rm -rf .git/modules/tmp
           rm -rf tmp
 
