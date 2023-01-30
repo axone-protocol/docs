@@ -4,6 +4,8 @@
 undefined#/query/oneOf/0/properties/get_count
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                           |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Forbidden             | none                | [cw-template.json\*](schema/cw-template.json "open original schema") |
