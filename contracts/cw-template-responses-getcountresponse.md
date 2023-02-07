@@ -22,15 +22,17 @@ We define a custom struct for each query response
 
 ## count
 
+
+
 `count`
 
-* is required
+*   is required
 
-* Type: `integer`
+*   Type: `integer`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-template](cw-template-responses-getcountresponse-properties-count.md "undefined#/responses/get_count/properties/count")
+*   defined in: [cw-template](cw-template-responses-getcountresponse-properties-count.md "undefined#/responses/get_count/properties/count")
 
 ### count Type
 
