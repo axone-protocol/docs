@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GetCountResponse",
+  "description": "We define a custom struct for each query response",
+  "type": "object",
+  "required": [
+    "count"
+  ],
+  "properties": {
+    "count": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "additionalProperties": false
+}
