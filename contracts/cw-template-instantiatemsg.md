@@ -22,15 +22,17 @@ Instantiate messages
 
 ## count
 
+
+
 `count`
 
-* is required
+*   is required
 
-* Type: `integer`
+*   Type: `integer`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-template](cw-template-instantiatemsg-properties-count.md "undefined#/instantiate/properties/count")
+*   defined in: [cw-template](cw-template-instantiatemsg-properties-count.md "undefined#/instantiate/properties/count")
 
 ### count Type
 
