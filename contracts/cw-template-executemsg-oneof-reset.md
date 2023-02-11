@@ -22,17 +22,15 @@ Reset counter to the specified value.
 
 ## reset
 
-
-
 `reset`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](cw-template-executemsg-oneof-reset-properties-reset.md))
+* Type: `object` ([Details](cw-template-executemsg-oneof-reset-properties-reset.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-template](cw-template-executemsg-oneof-reset-properties-reset.md "undefined#/execute/oneOf/1/properties/reset")
+* defined in: [cw-template](cw-template-executemsg-oneof-reset-properties-reset.md "undefined#/execute/oneOf/1/properties/reset")
 
 ### reset Type
 
