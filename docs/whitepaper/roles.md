@@ -46,7 +46,7 @@ Validators (and their delegates) earn $KNOW tokens as a reward for running the T
 
 There must be some penalty imposed if Validators do not respect the protocol rules whether intentional or unintentional (double sign, offline too long...). This will cause the Validator to lose his good reputation and his proportional share of bonded token that will get slashed. The penalty depends on the severity of the violation.
 
-![Validators](/img/content/whitepaper/Validator.webp)
+![Validators](/img/content/whitepaper/validators.webp)
 
 ## Delegators
 
@@ -58,7 +58,7 @@ Delegators play an essential role in the system since they are responsible for t
 
 About the governance of the DAO, the Delegators give their voting power automatically to the Validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
 
-![Delegators](/img/content/whitepaper/Delegators.webp)
+![Delegators](/img/content/whitepaper/delegators.webp)
 
 ## DAO Participants
 
@@ -69,13 +69,15 @@ Anyone with staked $KNOW tokens can participate in governance. It is possible to
 
 For more information on governance please click [here](okp4-blockchain#governance--dao).
 
+![DAO Participants](/img/content/whitepaper/dao-participants-2.webp)
+
 ## Data Providers
 
 Data providers are users who deposit one or more datasets in the catalog and/or in one or more Data Spaces. Their role is to offer datasets to be used by services and applications to create valuable knowledge.
 
 They are paid by the Consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
-![Data Providers](/img/content/whitepaper/Data_Providers.webp)
+![Data Providers](/img/content/whitepaper/data-providers-2.webp)
 
 ## Service Providers
 
@@ -90,6 +92,8 @@ It is particularly recommended to deposit quality datasets and services because:
 - It will give the Provider a well known reputation that can be profitable on other deposits
 - The Provider will have the possibility to be the first to curate hence maximizing the profits
 
+![Service Providers](/img/content/whitepaper/service-providers-2.webp)
+
 :::
 
 ## Consumers
@@ -100,6 +104,8 @@ Consumers can be:
 
 - People, sending transactions to the blockchain to initiate specific actions & workflows directly
 - Applications, sending transactions on behalf of their users and serving as a middleman between OKP4 outputs and the end-user. This is pretty useful for applications willing to use a SaaS model for example
+
+![Consumers](/img/content/whitepaper/consumers-2.webp)
 
 ## Curators
 
@@ -139,6 +145,8 @@ When signaling, Curators can decide to signal a specific version of a dataset/se
 
 Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the [Token Model section](/whitepaper/token-model#risks).
 
+![Curators](/img/content/whitepaper/curators.webp)
+
 ### Auto-Curation Priority
 
 Any Provider can stake $KNOW tokens on their data/service as a curation to oneself. It follows the same rules as any Curator. The only change is that the Provider will always have the first hand before the others.
@@ -167,6 +175,8 @@ As an example, it will be able to add fees for the use of its Data Space in orde
 
 For more informations about the rules, please click [here](/whitepaper/data-spaces#ds-governance).
 
+![Governors](/img/content/whitepaper/governors-2.webp)
+
 ## Builders
 
 Builders are essential to the proper functioning of our ecosystem. Indeed, they develop, update, and improve applications external to the protocol with the aim of consuming the knowledge created.
@@ -174,6 +184,8 @@ Builders are essential to the proper functioning of our ecosystem. Indeed, they 
 Consumers, after having received the desired knowledge, can call upon the Builders' applications in order, for example, to better visualize different elements of this knowledge in graphical form (Data Visualization service).
 
 The end-users have the possibility to go directly through an external application developed by a Builder to create the desired knowledge without going through the protocol. The Builder's application will therefore play an intermediary role (the application becomes a Consumer) to create the knowledge required by the end user. Then the application consumes the knowledge in order to provide its service to the client.
+
+![Builders](/img/content/whitepaper/builders.webp)
 
 ## End-users
 
@@ -186,3 +198,5 @@ There is 2 kind of end-users:
 - On-chain end-users where they can leverage their on-chain identity and perform on-chain actions. This is mandatory to benefit from personal data that may be shared in a Data Space to access some personalized features in an Application for example.
 
 These 2 kinds of end-users will coexist.
+
+![End-users](/img/content/whitepaper/end-users.webp)

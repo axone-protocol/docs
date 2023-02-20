@@ -4,6 +4,8 @@ sidebar_position: 9
 
 # Token Model
 
+![Token Model](/img/content/whitepaper/token-model-2.webp)
+
 ## Utility
 
 $KNOW is the native token of the OKP4 Blockchain and are the only staking token of our Ecosystem. They are a license for the holder to validate, delegate to other Validators or vote. $KNOW tokens can also be used to pay for transaction fees. Additional inflationary $KNOW and block transaction fees are rewarded to Validators and Delegators.
