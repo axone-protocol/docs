@@ -4,7 +4,9 @@ sidebar_position: 9
 
 # Token Model
 
-![Token Model](/img/content/whitepaper/token-model-2.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/token-model-2.webp" alt="Token Model" width="50%" />
+</div>
 
 ## Utility
 

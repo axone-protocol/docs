@@ -28,7 +28,9 @@ Across the vibrant Ecosystem of OKP4, participants can choose from several diffe
 
 **Governors** each Data Space can have its own governance mechanisms. Governors are the ones who enforce them. The ability to become a governor depends on the Data Space, some will have a specific governance token (fungible or non fungible), some will have multisigs, some will have single self-designated entities defining the rules.
 
-![Blockchain Participants](/img/content/whitepaper/Blockchain_Participant.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/Blockchain_Participant.webp" alt="Blockchain Participants" width="50%" />
+</div>
 
 ### Application Participants
 
@@ -46,7 +48,9 @@ Validators (and their delegates) earn $KNOW tokens as a reward for running the T
 
 There must be some penalty imposed if Validators do not respect the protocol rules whether intentional or unintentional (double sign, offline too long...). This will cause the Validator to lose his good reputation and his proportional share of bonded token that will get slashed. The penalty depends on the severity of the violation.
 
-![Validators](/img/content/whitepaper/validators.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/validators.webp" alt="Validators" width="50%" />
+</div>
 
 ## Delegators
 
@@ -58,7 +62,9 @@ Delegators play an essential role in the system since they are responsible for t
 
 About the governance of the DAO, the Delegators give their voting power automatically to the Validators to whom they delegate their tokens. However, if they wish to vote by themselves, they can manually "retrieve" the right to vote on their share of tokens and vote normally.
 
-![Delegators](/img/content/whitepaper/delegators.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/delegators.webp" alt="Delegators" width="50%" />
+</div>
 
 ## DAO Participants
 
@@ -69,7 +75,9 @@ Anyone with staked $KNOW tokens can participate in governance. It is possible to
 
 For more information on governance please click [here](okp4-blockchain#governance--dao).
 
-![DAO Participants](/img/content/whitepaper/dao-participants-2.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/dao-participants-2.webp" alt="DAO Participants" width="50%" />
+</div>
 
 ## Data Providers
 
@@ -77,7 +85,9 @@ Data providers are users who deposit one or more datasets in the catalog and/or 
 
 They are paid by the Consumers each time their data is used or bought, depending on governance rules of the Data Space.
 
-![Data Providers](/img/content/whitepaper/data-providers-2.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/data-providers-2.webp" alt="Data Providers" width="50%" />
+</div>
 
 ## Service Providers
 
@@ -92,9 +102,11 @@ It is particularly recommended to deposit quality datasets and services because:
 - It will give the Provider a well known reputation that can be profitable on other deposits
 - The Provider will have the possibility to be the first to curate hence maximizing the profits
 
-![Service Providers](/img/content/whitepaper/service-providers-2.webp)
-
 :::
+
+<div className="text--center">
+  <img src="/img/content/whitepaper/service-providers-2.webp" alt="Service Providers" width="50%" />
+</div>
 
 ## Consumers
 
@@ -105,7 +117,9 @@ Consumers can be:
 - People, sending transactions to the blockchain to initiate specific actions & workflows directly
 - Applications, sending transactions on behalf of their users and serving as a middleman between OKP4 outputs and the end-user. This is pretty useful for applications willing to use a SaaS model for example
 
-![Consumers](/img/content/whitepaper/consumers-2.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/consumers-2.webp" alt="Consumers" width="50%" />
+</div>
 
 ## Curators
 
@@ -145,7 +159,9 @@ When signaling, Curators can decide to signal a specific version of a dataset/se
 
 Curation is risky. Do your due diligence to ensure that you only curate datasets and services that you trust. A detailed list of the different risks is available in the [Token Model section](/whitepaper/token-model#risks).
 
-![Curators](/img/content/whitepaper/curators.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/curators.webp" alt="Curators" width="50%" />
+</div>
 
 ### Auto-Curation Priority
 
@@ -175,7 +191,9 @@ As an example, it will be able to add fees for the use of its Data Space in orde
 
 For more informations about the rules, please click [here](/whitepaper/data-spaces#ds-governance).
 
-![Governors](/img/content/whitepaper/governors-2.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/governors-2.webp" alt="Governors" width="50%" />
+</div>
 
 ## Builders
 
@@ -185,7 +203,9 @@ Consumers, after having received the desired knowledge, can call upon the Builde
 
 The end-users have the possibility to go directly through an external application developed by a Builder to create the desired knowledge without going through the protocol. The Builder's application will therefore play an intermediary role (the application becomes a Consumer) to create the knowledge required by the end user. Then the application consumes the knowledge in order to provide its service to the client.
 
-![Builders](/img/content/whitepaper/builders.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/builders.webp" alt="Builders" width="50%" />
+</div>
 
 ## End-users
 
@@ -199,4 +219,6 @@ There is 2 kind of end-users:
 
 These 2 kinds of end-users will coexist.
 
-![End-users](/img/content/whitepaper/end-users.webp)
+<div className="text--center">
+  <img src="/img/content/whitepaper/end-users.webp" alt="End Users" width="50%" />
+</div>
