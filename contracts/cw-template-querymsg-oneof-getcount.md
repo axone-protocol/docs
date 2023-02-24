@@ -22,15 +22,17 @@ GetCount returns the current count as a json-encoded number
 
 ## get\_count
 
+
+
 `get_count`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](cw-template-querymsg-oneof-getcount-properties-get_count.md))
+*   Type: `object` ([Details](cw-template-querymsg-oneof-getcount-properties-get_count.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-template](cw-template-querymsg-oneof-getcount-properties-get_count.md "undefined#/query/oneOf/0/properties/get_count")
+*   defined in: [cw-template](cw-template-querymsg-oneof-getcount-properties-get_count.md "undefined#/query/oneOf/0/properties/get_count")
 
 ### get\_count Type
 

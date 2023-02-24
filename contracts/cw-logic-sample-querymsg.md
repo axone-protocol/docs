@@ -16,4 +16,4 @@ merged type ([QueryMsg](cw-logic-sample-querymsg.md))
 
 one (and only one) of
 
-* [Ask](cw-logic-sample-querymsg-oneof-ask.md "check type definition")
+*   [Ask](cw-logic-sample-querymsg-oneof-ask.md "check type definition")
