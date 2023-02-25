@@ -22,17 +22,15 @@ PinObject pins the object in the bucket for the considered sender. If the object
 
 ## pin\_object
 
-
-
 `pin_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](cw-storage-executemsg-oneof-pinobject-properties-pin_object.md))
+* Type: `object` ([Details](cw-storage-executemsg-oneof-pinobject-properties-pin_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-executemsg-oneof-pinobject-properties-pin_object.md "undefined#/execute/oneOf/2/properties/pin_object")
+* defined in: [cw-storage](cw-storage-executemsg-oneof-pinobject-properties-pin_object.md "undefined#/execute/oneOf/2/properties/pin_object")
 
 ### pin\_object Type
 
