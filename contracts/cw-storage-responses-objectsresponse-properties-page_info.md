@@ -16,4 +16,4 @@ merged type ([Details](cw-storage-responses-objectsresponse-properties-page_info
 
 all of
 
-* [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")

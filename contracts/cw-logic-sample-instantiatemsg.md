@@ -22,15 +22,17 @@ Instantiate messages
 
 ## program
 
+
+
 `program`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-logic-sample](cw-logic-sample-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
+*   defined in: [cw-logic-sample](cw-logic-sample-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
 
 ### program Type
 

@@ -16,4 +16,4 @@ merged type ([Details](cw-storage-responses-objectsresponse-definitions-objectre
 
 all of
 
-* [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
