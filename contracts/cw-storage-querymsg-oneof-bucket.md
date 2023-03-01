@@ -22,15 +22,17 @@ Bucket returns the bucket information.
 
 ## bucket
 
+
+
 `bucket`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](cw-storage-querymsg-oneof-bucket-properties-bucket.md))
+*   Type: `object` ([Details](cw-storage-querymsg-oneof-bucket-properties-bucket.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-bucket-properties-bucket.md "undefined#/query/oneOf/0/properties/bucket")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-bucket-properties-bucket.md "undefined#/query/oneOf/0/properties/bucket")
 
 ### bucket Type
 
