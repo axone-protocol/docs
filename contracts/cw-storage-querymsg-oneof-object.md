@@ -22,17 +22,15 @@ Object returns the object information with the given id.
 
 ## object
 
-
-
 `object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](cw-storage-querymsg-oneof-object-properties-object.md))
+* Type: `object` ([Details](cw-storage-querymsg-oneof-object-properties-object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
+* defined in: [cw-storage](cw-storage-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
 
 ### object Type
 

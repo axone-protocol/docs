@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/3/properties/unpin_object
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [cw-storage.json\*](schema/cw-storage.json "open original schema") |
@@ -22,17 +20,15 @@ undefined#/execute/oneOf/3/properties/unpin_object
 
 ## id
 
-
-
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-executemsg-oneof-unpinobject-properties-unpin_object-properties-id.md "undefined#/execute/oneOf/3/properties/unpin_object/properties/id")
+* defined in: [cw-storage](cw-storage-executemsg-oneof-unpinobject-properties-unpin_object-properties-id.md "undefined#/execute/oneOf/3/properties/unpin_object/properties/id")
 
 ### id Type
 
