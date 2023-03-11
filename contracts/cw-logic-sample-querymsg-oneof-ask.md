@@ -22,17 +22,15 @@ Ask returns the evaluation of the query using the program context through the lo
 
 ## ask
 
-
-
 `ask`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](cw-logic-sample-querymsg-oneof-ask-properties-ask.md))
+* Type: `object` ([Details](cw-logic-sample-querymsg-oneof-ask-properties-ask.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-logic-sample](cw-logic-sample-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
+* defined in: [cw-logic-sample](cw-logic-sample-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
 
 ### ask Type
 
