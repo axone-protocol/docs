@@ -22,15 +22,17 @@ ObjectData returns the content of the object with the given id.
 
 ## object\_data
 
+
+
 `object_data`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](cw-storage-querymsg-oneof-objectdata-properties-object_data.md))
+*   Type: `object` ([Details](cw-storage-querymsg-oneof-objectdata-properties-object_data.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
 
 ### object\_data Type
 
