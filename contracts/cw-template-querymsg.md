@@ -16,4 +16,4 @@ merged type ([QueryMsg](cw-template-querymsg.md))
 
 one (and only one) of
 
-*   [GetCount](cw-template-querymsg-oneof-getcount.md "check type definition")
+* [GetCount](cw-template-querymsg-oneof-getcount.md "check type definition")
