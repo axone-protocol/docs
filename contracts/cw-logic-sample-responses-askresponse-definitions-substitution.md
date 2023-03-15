@@ -4,6 +4,8 @@
 undefined#/responses/ask/definitions/Substitution
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                   |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [cw-logic-sample.json\*](schema/cw-logic-sample.json "open original schema") |
@@ -21,15 +23,17 @@ undefined#/responses/ask/definitions/Substitution
 
 ## term
 
+
+
 `term`
 
-* is required
+*   is required
 
-* Type: unknown
+*   Type: unknown
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-logic-sample](cw-logic-sample-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
+*   defined in: [cw-logic-sample](cw-logic-sample-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
 
 ### term Type
 
@@ -37,15 +41,17 @@ unknown
 
 ## variable
 
+
+
 `variable`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-logic-sample](cw-logic-sample-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
+*   defined in: [cw-logic-sample](cw-logic-sample-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
 
 ### variable Type
 
