@@ -16,6 +16,6 @@ merged type ([Details](cw-storage-querymsg-oneof-objectpins-properties-object_pi
 
 any of
 
-*   [Untitled undefined type in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-0.md "check type definition")
+* [Untitled undefined type in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-0.md "check type definition")
 
-*   [Untitled null in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-1.md "check type definition")
+* [Untitled null in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-1.md "check type definition")
