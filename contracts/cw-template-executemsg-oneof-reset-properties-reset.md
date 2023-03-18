@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/1/properties/reset
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                           |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [cw-template.json\*](schema/cw-template.json "open original schema") |
@@ -22,17 +20,15 @@ undefined#/execute/oneOf/1/properties/reset
 
 ## count
 
-
-
 `count`
 
-*   is required
+* is required
 
-*   Type: `integer`
+* Type: `integer`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-template](cw-template-executemsg-oneof-reset-properties-reset-properties-count.md "undefined#/execute/oneOf/1/properties/reset/properties/count")
+* defined in: [cw-template](cw-template-executemsg-oneof-reset-properties-reset-properties-count.md "undefined#/execute/oneOf/1/properties/reset/properties/count")
 
 ### count Type
 
