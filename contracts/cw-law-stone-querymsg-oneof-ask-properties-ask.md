@@ -4,6 +4,8 @@
 undefined#/query/oneOf/0/properties/ask
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                             |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [cw-law-stone.json\*](schema/cw-law-stone.json "open original schema") |
@@ -20,15 +22,17 @@ undefined#/query/oneOf/0/properties/ask
 
 ## query
 
+
+
 `query`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-querymsg-oneof-ask-properties-ask-properties-query.md "undefined#/query/oneOf/0/properties/ask/properties/query")
+*   defined in: [cw-law-stone](cw-law-stone-querymsg-oneof-ask-properties-ask-properties-query.md "undefined#/query/oneOf/0/properties/ask/properties/query")
 
 ### query Type
 
