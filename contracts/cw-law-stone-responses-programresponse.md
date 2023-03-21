@@ -27,13 +27,13 @@ The program object id in the `cw-storage` contract.
 
 `object_id`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-programresponse-properties-object_id.md "undefined#/responses/program/properties/object_id")
+*   defined in: [cw-law-stone](cw-law-stone-responses-programresponse-properties-object_id.md "undefined#/responses/program/properties/object_id")
 
 ### object\_id Type
 
@@ -45,13 +45,13 @@ The `cw-storage` contract address on which the law program is stored.
 
 `storage_address`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-programresponse-properties-storage_address.md "undefined#/responses/program/properties/storage_address")
+*   defined in: [cw-law-stone](cw-law-stone-responses-programresponse-properties-storage_address.md "undefined#/responses/program/properties/storage_address")
 
 ### storage\_address Type
 

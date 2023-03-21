@@ -4,6 +4,8 @@
 undefined#/query/oneOf/2/properties/objects
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [cw-storage.json\*](schema/cw-storage.json "open original schema") |
@@ -14,11 +16,11 @@ undefined#/query/oneOf/2/properties/objects
 
 # objects Properties
 
-| Property            | Type     | Required | Nullable       | Defined by                                                                                                                                                |
-| :------------------ | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [address](#address) | `string` | Optional | can be null    | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address") |
-| [after](#after)     | `string` | Optional | can be null    | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")     |
-| [first](#first)     | Merged   | Optional | cannot be null | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")     |
+| Property            | Type      | Required | Nullable    | Defined by                                                                                                                                                |
+| :------------------ | :-------- | :------- | :---------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [address](#address) | `string`  | Optional | can be null | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address") |
+| [after](#after)     | `string`  | Optional | can be null | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")     |
+| [first](#first)     | `integer` | Optional | can be null | [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")     |
 
 ## address
 
@@ -26,13 +28,13 @@ The owner of the objects to get.
 
 `address`
 
-* is optional
+*   is optional
 
-* Type: `string`
+*   Type: `string`
 
-* can be null
+*   can be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
 
 ### address Type
 
@@ -44,13 +46,13 @@ The point in the sequence to start returning objects.
 
 `after`
 
-* is optional
+*   is optional
 
-* Type: `string`
+*   Type: `string`
 
-* can be null
+*   can be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
 
 ### after Type
 
@@ -62,20 +64,20 @@ The number of objects to return.
 
 `first`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md))
+*   Type: `integer`
 
-* cannot be null
+*   can be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
 
 ### first Type
 
-merged type ([Details](cw-storage-querymsg-oneof-objects-properties-objects-properties-first.md))
+`integer`
 
-any of
+### first Constraints
 
-* [Untitled undefined type in cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first-anyof-0.md "check type definition")
+**minimum**: the value of this number must greater than or equal to: `0`
 
-* [Untitled null in cw-storage](cw-storage-querymsg-oneof-objects-properties-objects-properties-first-anyof-1.md "check type definition")
+**unknown format**: the value of this string must follow the format: `uint32`

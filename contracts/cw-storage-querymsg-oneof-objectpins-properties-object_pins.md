@@ -4,6 +4,8 @@
 undefined#/query/oneOf/4/properties/object_pins
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [cw-storage.json\*](schema/cw-storage.json "open original schema") |
@@ -14,11 +16,11 @@ undefined#/query/oneOf/4/properties/object_pins
 
 # object\_pins Properties
 
-| Property        | Type     | Required | Nullable       | Defined by                                                                                                                                                       |
-| :-------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [after](#after) | `string` | Optional | can be null    | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after") |
-| [first](#first) | Merged   | Optional | cannot be null | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first") |
-| [id](#id)       | `string` | Required | cannot be null | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")       |
+| Property        | Type      | Required | Nullable       | Defined by                                                                                                                                                       |
+| :-------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [after](#after) | `string`  | Optional | can be null    | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after") |
+| [first](#first) | `integer` | Optional | can be null    | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first") |
+| [id](#id)       | `string`  | Required | cannot be null | [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")       |
 
 ## after
 
@@ -26,13 +28,13 @@ The point in the sequence to start returning pins.
 
 `after`
 
-* is optional
+*   is optional
 
-* Type: `string`
+*   Type: `string`
 
-* can be null
+*   can be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after")
 
 ### after Type
 
@@ -44,23 +46,23 @@ The number of pins to return.
 
 `first`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md))
+*   Type: `integer`
 
-* cannot be null
+*   can be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first")
 
 ### first Type
 
-merged type ([Details](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first.md))
+`integer`
 
-any of
+### first Constraints
 
-* [Untitled undefined type in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-0.md "check type definition")
+**minimum**: the value of this number must greater than or equal to: `0`
 
-* [Untitled null in cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-first-anyof-1.md "check type definition")
+**unknown format**: the value of this string must follow the format: `uint32`
 
 ## id
 
@@ -68,13 +70,13 @@ The id of the object to get the pins for.
 
 `id`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")
+*   defined in: [cw-storage](cw-storage-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")
 
 ### id Type
 

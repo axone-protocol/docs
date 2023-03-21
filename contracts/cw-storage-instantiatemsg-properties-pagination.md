@@ -1,13 +1,19 @@
-# Untitled null in cw-storage Schema
+# Untitled undefined type in cw-storage Schema
 
 ```txt
-undefined#/query/oneOf/2/properties/objects/properties/first/anyOf/1
+undefined#/instantiate/properties/pagination
 ```
+
+The configuration for paginated query.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [cw-storage.json\*](schema/cw-storage.json "open original schema") |
 
-## 1 Type
+## pagination Type
 
-`null`, the value must be null
+merged type ([Details](cw-storage-instantiatemsg-properties-pagination.md))
+
+all of
+
+*   [Untitled undefined type in cw-storage](cw-storage-instantiatemsg-properties-pagination-allof-0.md "check type definition")

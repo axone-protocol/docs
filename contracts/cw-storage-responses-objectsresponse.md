@@ -27,13 +27,13 @@ The list of objects in the bucket.
 
 `data`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-properties-data.md "undefined#/responses/objects/properties/data")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-properties-data.md "undefined#/responses/objects/properties/data")
 
 ### data Type
 
@@ -45,13 +45,13 @@ The page information.
 
 `page_info`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](cw-storage-responses-objectsresponse-properties-page_info.md))
+*   Type: merged type ([Details](cw-storage-responses-objectsresponse-properties-page_info.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-properties-page_info.md "undefined#/responses/objects/properties/page_info")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-properties-page_info.md "undefined#/responses/objects/properties/page_info")
 
 ### page\_info Type
 
@@ -59,7 +59,7 @@ merged type ([Details](cw-storage-responses-objectsresponse-properties-page_info
 
 all of
 
-* [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
 
 # ObjectsResponse Definitions
 
@@ -84,13 +84,13 @@ The id of the object.
 
 `id`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
 
 #### id Type
 
@@ -102,13 +102,13 @@ Tells if the object is pinned by at least one address.
 
 `is_pinned`
 
-* is required
+*   is required
 
-* Type: `boolean`
+*   Type: `boolean`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
 
 #### is\_pinned Type
 
@@ -120,13 +120,13 @@ The owner of the object.
 
 `owner`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
 
 #### owner Type
 
@@ -138,13 +138,13 @@ The size of the object.
 
 `size`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size.md))
+*   Type: merged type ([Details](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
 
 #### size Type
 
@@ -152,7 +152,7 @@ merged type ([Details](cw-storage-responses-objectsresponse-definitions-objectre
 
 all of
 
-* [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
 
 ## Definitions group PageInfo
 
@@ -162,28 +162,26 @@ Reference this group by using
 {"$ref":"undefined#/responses/objects/definitions/PageInfo"}
 ```
 
-| Property                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                               |
-| :---------------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [end\_cursor](#end_cursor)                | `string`  | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-end_cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/end_cursor")               |
-| [has\_next\_page](#has_next_page)         | `boolean` | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")         |
-| [has\_previous\_page](#has_previous_page) | `boolean` | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_previous_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_previous_page") |
-| [start\_cursor](#start_cursor)            | `string`  | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-start_cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/start_cursor")           |
+| Property                          | Type      | Required | Nullable       | Defined by                                                                                                                                                                       |
+| :-------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [cursor](#cursor)                 | `string`  | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")               |
+| [has\_next\_page](#has_next_page) | `boolean` | Required | cannot be null | [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page") |
 
-### end\_cursor
+### cursor
 
-The cursor to the previous page.
+The cursor to the next page.
 
-`end_cursor`
+`cursor`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-end_cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/end_cursor")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")
 
-#### end\_cursor Type
+#### cursor Type
 
 `string`
 
@@ -193,53 +191,17 @@ Tells if there is a next page.
 
 `has_next_page`
 
-* is required
+*   is required
 
-* Type: `boolean`
+*   Type: `boolean`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
+*   defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
 
 #### has\_next\_page Type
 
 `boolean`
-
-### has\_previous\_page
-
-Tells if there is a previous page.
-
-`has_previous_page`
-
-* is required
-
-* Type: `boolean`
-
-* cannot be null
-
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-has_previous_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_previous_page")
-
-#### has\_previous\_page Type
-
-`boolean`
-
-### start\_cursor
-
-The cursor to the next page.
-
-`start_cursor`
-
-* is required
-
-* Type: `string`
-
-* cannot be null
-
-* defined in: [cw-storage](cw-storage-responses-objectsresponse-definitions-pageinfo-properties-start_cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/start_cursor")
-
-#### start\_cursor Type
-
-`string`
 
 ## Definitions group Uint128
 

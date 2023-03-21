@@ -16,13 +16,13 @@ merged type ([ExecuteMsg](cw-storage-executemsg.md))
 
 one (and only one) of
 
-* [StoreObject](cw-storage-executemsg-oneof-storeobject.md "check type definition")
+*   [StoreObject](cw-storage-executemsg-oneof-storeobject.md "check type definition")
 
-* [ForgetObject](cw-storage-executemsg-oneof-forgetobject.md "check type definition")
+*   [ForgetObject](cw-storage-executemsg-oneof-forgetobject.md "check type definition")
 
-* [PinObject](cw-storage-executemsg-oneof-pinobject.md "check type definition")
+*   [PinObject](cw-storage-executemsg-oneof-pinobject.md "check type definition")
 
-* [UnpinObject](cw-storage-executemsg-oneof-unpinobject.md "check type definition")
+*   [UnpinObject](cw-storage-executemsg-oneof-unpinobject.md "check type definition")
 
 # ExecuteMsg Definitions
 
