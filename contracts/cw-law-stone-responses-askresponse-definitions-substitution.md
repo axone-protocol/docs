@@ -4,8 +4,6 @@
 undefined#/responses/ask/definitions/Substitution
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                             |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [cw-law-stone.json\*](schema/cw-law-stone.json "open original schema") |
@@ -23,17 +21,15 @@ undefined#/responses/ask/definitions/Substitution
 
 ## term
 
-
-
 `term`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
 
 ### term Type
 
@@ -41,17 +37,15 @@ unknown
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
 
 ### variable Type
 

@@ -16,6 +16,6 @@ merged type ([QueryMsg](cw-law-stone-querymsg.md))
 
 one (and only one) of
 
-*   [Ask](cw-law-stone-querymsg-oneof-ask.md "check type definition")
+* [Ask](cw-law-stone-querymsg-oneof-ask.md "check type definition")
 
-*   [Program](cw-law-stone-querymsg-oneof-program.md "check type definition")
+* [Program](cw-law-stone-querymsg-oneof-program.md "check type definition")
