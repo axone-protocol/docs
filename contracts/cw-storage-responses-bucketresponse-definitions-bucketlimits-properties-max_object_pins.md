@@ -16,6 +16,6 @@ merged type ([Details](cw-storage-responses-bucketresponse-definitions-bucketlim
 
 any of
 
-*   [Untitled undefined type in cw-storage](cw-storage-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in cw-storage](cw-storage-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in cw-storage](cw-storage-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in cw-storage](cw-storage-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
