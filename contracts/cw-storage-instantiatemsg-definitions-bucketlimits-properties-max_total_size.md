@@ -16,6 +16,6 @@ merged type ([Details](cw-storage-instantiatemsg-definitions-bucketlimits-proper
 
 any of
 
-* [Untitled undefined type in cw-storage](cw-storage-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-* [Untitled null in cw-storage](cw-storage-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+*   [Untitled null in cw-storage](cw-storage-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")

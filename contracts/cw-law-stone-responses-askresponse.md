@@ -4,6 +4,8 @@
 undefined#/responses/ask
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                             |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------- |
 | Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Allowed               | none                | [cw-law-stone.json\*](schema/cw-law-stone.json "open original schema") |
@@ -22,15 +24,17 @@ undefined#/responses/ask
 
 ## answer
 
+
+
 `answer`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](cw-law-stone-responses-askresponse-properties-answer.md))
+*   Type: merged type ([Details](cw-law-stone-responses-askresponse-properties-answer.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-answer.md "undefined#/responses/ask/properties/answer")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-answer.md "undefined#/responses/ask/properties/answer")
 
 ### answer Type
 
@@ -38,21 +42,23 @@ merged type ([Details](cw-law-stone-responses-askresponse-properties-answer.md))
 
 any of
 
-* [Untitled undefined type in cw-law-stone](cw-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
+*   [Untitled undefined type in cw-law-stone](cw-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
 
-* [Untitled null in cw-law-stone](cw-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
+*   [Untitled null in cw-law-stone](cw-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
 
 ## gas\_used
 
+
+
 `gas_used`
 
-* is required
+*   is required
 
-* Type: `integer`
+*   Type: `integer`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-gas_used.md "undefined#/responses/ask/properties/gas_used")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-gas_used.md "undefined#/responses/ask/properties/gas_used")
 
 ### gas\_used Type
 
@@ -66,15 +72,17 @@ any of
 
 ## height
 
+
+
 `height`
 
-* is required
+*   is required
 
-* Type: `integer`
+*   Type: `integer`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-height.md "undefined#/responses/ask/properties/height")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-properties-height.md "undefined#/responses/ask/properties/height")
 
 ### height Type
 
@@ -105,15 +113,17 @@ Reference this group by using
 
 ### has\_more
 
+
+
 `has_more`
 
-* is required
+*   is required
 
-* Type: `boolean`
+*   Type: `boolean`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
 
 #### has\_more Type
 
@@ -121,15 +131,17 @@ Reference this group by using
 
 ### results
 
+
+
 `results`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
 
 #### results Type
 
@@ -137,15 +149,17 @@ unknown\[]
 
 ### success
 
+
+
 `success`
 
-* is required
+*   is required
 
-* Type: `boolean`
+*   Type: `boolean`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
 
 #### success Type
 
@@ -153,15 +167,17 @@ unknown\[]
 
 ### variables
 
+
+
 `variables`
 
-* is required
+*   is required
 
-* Type: `string[]`
+*   Type: `string[]`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
 
 #### variables Type
 
@@ -181,15 +197,17 @@ Reference this group by using
 
 ### substitutions
 
+
+
 `substitutions`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
 
 #### substitutions Type
 
@@ -210,15 +228,17 @@ Reference this group by using
 
 ### term
 
+
+
 `term`
 
-* is required
+*   is required
 
-* Type: unknown
+*   Type: unknown
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
 
 #### term Type
 
@@ -226,15 +246,17 @@ unknown
 
 ### variable
 
+
+
 `variable`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
 
 #### variable Type
 
@@ -255,15 +277,17 @@ Reference this group by using
 
 ### arguments
 
+
+
 `arguments`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
 
 #### arguments Type
 
@@ -271,15 +295,17 @@ unknown\[]
 
 ### name
 
+
+
 `name`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
+*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
 
 #### name Type
 
