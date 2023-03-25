@@ -27,13 +27,13 @@ The list of addresses that pinned the object.
 
 `data`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-responses-objectpinsresponse-properties-data.md "undefined#/responses/object_pins/properties/data")
+* defined in: [cw-storage](cw-storage-responses-objectpinsresponse-properties-data.md "undefined#/responses/object_pins/properties/data")
 
 ### data Type
 
@@ -45,13 +45,13 @@ The page information.
 
 `page_info`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](cw-storage-responses-objectpinsresponse-properties-page_info.md))
+* Type: merged type ([Details](cw-storage-responses-objectpinsresponse-properties-page_info.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-responses-objectpinsresponse-properties-page_info.md "undefined#/responses/object_pins/properties/page_info")
+* defined in: [cw-storage](cw-storage-responses-objectpinsresponse-properties-page_info.md "undefined#/responses/object_pins/properties/page_info")
 
 ### page\_info Type
 
@@ -59,7 +59,7 @@ merged type ([Details](cw-storage-responses-objectpinsresponse-properties-page_i
 
 all of
 
-*   [Untitled undefined type in cw-storage](cw-storage-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
+* [Untitled undefined type in cw-storage](cw-storage-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
 
 # ObjectPinsResponse Definitions
 
@@ -82,13 +82,13 @@ The cursor to the next page.
 
 `cursor`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
+* defined in: [cw-storage](cw-storage-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
 
 #### cursor Type
 
@@ -100,13 +100,13 @@ Tells if there is a next page.
 
 `has_next_page`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-storage](cw-storage-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
+* defined in: [cw-storage](cw-storage-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
 
 #### has\_next\_page Type
 
