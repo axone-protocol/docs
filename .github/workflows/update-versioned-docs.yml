@@ -65,7 +65,7 @@ jobs:
           node-version: 16.18
 
       - name: Bump new version
-        if: ${{ github.event.inputs.draft == false }}
+        if: ${{ github.event.inputs.draft == 'false' }}
         run: |
           yarn
           yarn run docusaurus docs:version:${{ github.event.inputs.section }} ${{ github.event.inputs.version }}
@@ -80,7 +80,7 @@ jobs:
 
       - name: Commit documentation draft
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event.inputs.draft && steps.changed-files.outputs.any_changed }}
+        if: ${{ github.event.inputs.draft == 'true' && steps.changed-files.outputs.any_changed }}
         with:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
@@ -89,7 +89,7 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
-        if: ${{ github.event.inputs.draft == false && steps.changed-files.outputs.any_changed == 'true' }}
+        if: ${{ github.event.inputs.draft == 'false' && steps.changed-files.outputs.any_changed }}
         with:
           commit-message: "docs(${{ github.event.inputs.section }}): add ${{ github.event.inputs.section }} ${{ github.event.inputs.version }} version"
           committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
