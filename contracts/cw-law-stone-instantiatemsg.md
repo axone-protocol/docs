@@ -27,13 +27,13 @@ The Prolog program carrying law rules and facts.
 
 `program`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](cw-law-stone-instantiatemsg-properties-program.md))
+* Type: merged type ([Details](cw-law-stone-instantiatemsg-properties-program.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
+* defined in: [cw-law-stone](cw-law-stone-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
 
 ### program Type
 
@@ -41,7 +41,7 @@ merged type ([Details](cw-law-stone-instantiatemsg-properties-program.md))
 
 all of
 
-*   [Untitled undefined type in cw-law-stone](cw-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+* [Untitled undefined type in cw-law-stone](cw-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
 
 ## storage\_address
 
@@ -49,13 +49,13 @@ The `cw-storage` contract address on which to store the law program.
 
 `storage_address`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-instantiatemsg-properties-storage_address.md "undefined#/instantiate/properties/storage_address")
+* defined in: [cw-law-stone](cw-law-stone-instantiatemsg-properties-storage_address.md "undefined#/instantiate/properties/storage_address")
 
 ### storage\_address Type
 
