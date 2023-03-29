@@ -4,8 +4,6 @@
 undefined#/responses/ask/definitions/Answer
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                             |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [cw-law-stone.json\*](schema/cw-law-stone.json "open original schema") |
@@ -25,17 +23,15 @@ undefined#/responses/ask/definitions/Answer
 
 ## has\_more
 
-
-
 `has_more`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
 
 ### has\_more Type
 
@@ -43,17 +39,15 @@ undefined#/responses/ask/definitions/Answer
 
 ## results
 
-
-
 `results`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
 
 ### results Type
 
@@ -61,17 +55,15 @@ unknown\[]
 
 ## success
 
-
-
 `success`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
 
 ### success Type
 
@@ -79,17 +71,15 @@ unknown\[]
 
 ## variables
 
-
-
 `variables`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
+* defined in: [cw-law-stone](cw-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
 
 ### variables Type
 
