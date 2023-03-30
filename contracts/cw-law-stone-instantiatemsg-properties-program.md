@@ -16,4 +16,4 @@ merged type ([Details](cw-law-stone-instantiatemsg-properties-program.md))
 
 all of
 
-* [Untitled undefined type in cw-law-stone](cw-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-law-stone](cw-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")

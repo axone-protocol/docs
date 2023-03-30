@@ -22,15 +22,17 @@ ForgetObject first unpin the object from the bucket for the considered sender, t
 
 ## forget\_object
 
+
+
 `forget_object`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](cw-storage-executemsg-oneof-forgetobject-properties-forget_object.md))
+*   Type: `object` ([Details](cw-storage-executemsg-oneof-forgetobject-properties-forget_object.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [cw-storage](cw-storage-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
+*   defined in: [cw-storage](cw-storage-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
 
 ### forget\_object Type
 

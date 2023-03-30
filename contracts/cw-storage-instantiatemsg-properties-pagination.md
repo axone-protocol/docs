@@ -16,4 +16,4 @@ merged type ([Details](cw-storage-instantiatemsg-properties-pagination.md))
 
 all of
 
-* [Untitled undefined type in cw-storage](cw-storage-instantiatemsg-properties-pagination-allof-0.md "check type definition")
+*   [Untitled undefined type in cw-storage](cw-storage-instantiatemsg-properties-pagination-allof-0.md "check type definition")
