@@ -8,17 +8,17 @@ sidebar_position: 10
 
 **Total initial supply: 200,000,000 $KNOW**
 
-200M $KNOW are minted at launch and subject to cliff and vesting terms, detailed below.
+200M $KNOW are minted at launch and subject to cliff and vesting terms.
 
-The distribution, cliff and vesting terms are the following:
+The distribution is the following*:
 
-|                 | Allocation | TGE  |   Cliff   |         Vesting          |
-|-----------------|:----------:|:----:|:---------:|:------------------------:|
-| Investors*      |    23,7%   |  5%  |  6 months | 30 months linear vesting |
-| Foundation      |     30%    |  10% |     /     | 60 months linear vesting |
-| Team & Advisors |     19%    |  5% | 12 months | 36 months linear vesting |
-| Airdrops        |      5%    |  TBD |    TBD    |            TBD           |
-| DAO Treasury    |    22,3%   |  10% |     /     |             /            |
+|                 | Allocation |
+|-----------------|:----------:|
+| Investors       |    23,7%   |
+| Foundation      |     30%    |
+| Team & Advisors |     19%    |
+| Airdrops        |      5%    |
+| DAO Treasury    |    22,3%   |
 
 * Tokenomics are indicative and are subject to changes before mainnet launches
 
@@ -36,7 +36,7 @@ These tokens are distributed to investors in the differents rounds from pre-seed
 
 ### Foundation (strategic reserve)
 
-This strategic reserve will be controlled by a multisig comprised of foundation members. Initially composed of members from the core team and Cosmos community, it is subject to expansion and transparent decision-making. The funds will focus on many initiatives, including:
+This strategic reserve will be controlled by a multisig comprised of foundation members. Initially composed of members from the core team, Cosmos community, validators, builders and more. All the spending will be done according to transparent decision-making. The funds will focus on many initiatives, including:
 
 * Development: the foundation will lead the protocol development strategy with OKP4 core team. In addition to that, opportunities will be given outside of the core team through initiatives such as grants. These will be proposed by the foundation and the proposals will be reviewed by the foundation's governance body.
 * Validators support: Vested tokens will be delegated to the validators whose contribution is most impactful, such as integrations, specific developments, relayer services, open source tooling and dashboards, community engagement...
