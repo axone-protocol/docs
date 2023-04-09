@@ -16,12 +16,12 @@ merged type ([QueryMsg](okp4-objectarium-querymsg.md))
 
 one (and only one) of
 
-*   [Bucket](okp4-objectarium-querymsg-oneof-bucket.md "check type definition")
+* [Bucket](okp4-objectarium-querymsg-oneof-bucket.md "check type definition")
 
-*   [Object](okp4-objectarium-querymsg-oneof-object.md "check type definition")
+* [Object](okp4-objectarium-querymsg-oneof-object.md "check type definition")
 
-*   [Objects](okp4-objectarium-querymsg-oneof-objects.md "check type definition")
+* [Objects](okp4-objectarium-querymsg-oneof-objects.md "check type definition")
 
-*   [ObjectData](okp4-objectarium-querymsg-oneof-objectdata.md "check type definition")
+* [ObjectData](okp4-objectarium-querymsg-oneof-objectdata.md "check type definition")
 
-*   [ObjectPins](okp4-objectarium-querymsg-oneof-objectpins.md "check type definition")
+* [ObjectPins](okp4-objectarium-querymsg-oneof-objectpins.md "check type definition")
