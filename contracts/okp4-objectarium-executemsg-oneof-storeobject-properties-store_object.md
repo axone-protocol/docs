@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/0/properties/store_object
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-objectarium.json\*](schema/okp4-objectarium.json "open original schema") |
@@ -23,17 +21,15 @@ undefined#/execute/oneOf/0/properties/store_object
 
 ## data
 
-
-
 `data`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data.md "undefined#/execute/oneOf/0/properties/store_object/properties/data")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data.md "undefined#/execute/oneOf/0/properties/store_object/properties/data")
 
 ### data Type
 
@@ -41,17 +37,15 @@ unknown
 
 ## pin
 
-
-
 `pin`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-pin.md "undefined#/execute/oneOf/0/properties/store_object/properties/pin")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-pin.md "undefined#/execute/oneOf/0/properties/store_object/properties/pin")
 
 ### pin Type
 
