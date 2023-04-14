@@ -22,17 +22,15 @@ Object returns the object information with the given id.
 
 ## object
 
-
-
 `object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-object-properties-object.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-object-properties-object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
 
 ### object Type
 
