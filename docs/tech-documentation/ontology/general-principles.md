@@ -12,12 +12,11 @@ In computer science, ontology is a formal and structured representation of the c
 
 Some definitions:
 
-- Concepts: represent entities in the knowledge domain to be shared.
-- Relationships: represent links between concepts.
-- Properties: associated with concepts.
-- Axioms: logical rules that define relationships between concepts and properties.
-- Instances: specific examples of concepts.
-- Individuals: concrete instances of classes representing objects in the application domain. In OKP4, individuals are used to represent real-world datasets and services.
+- Concepts: represent the main formalized elements of the domain.
+- Relationships represent links between concepts.
+- Properties: represent specific attributes or characteristics of the concepts themselves.
+- Axioms: represent logical statements or rules that define relationships between concepts, properties, and instances, ensuring the consistency and coherence of the knowledge represented within the ontology..
+- Instances: the concrete instances of concepts representing objects in the application domain. In OKP4, instances are used to represent all the resources of the dataverse.
 
 Some examples of ontology:
 
@@ -138,7 +137,7 @@ A service consumes a resource and produces data.
 
 This ontology in OWL language is written as follows:
 
-```
+```text
 Class: example:Data
 Annotations:
 rdfs:label "Data"
