@@ -20,13 +20,77 @@ Some definitions:
 
 Some examples of ontology:
 
-An ontology of African wildlife :
+An ontology of sheep and goat (source : OKP4):
 
-![Ontology_equation](/img/content/whitepaper/ontology_example_animals.webp)
+%%{init: {'theme':'neutral'}}%%
+flowchart TD
+    A[Carnivore] -->|is| B[Animal]
+    A -->|eats| B
+    C[Herbivore] -->|is| B[Animal]
+    C -->|eats| D[Plants]
+    E[Sheep]-->|is| C
+    F[Wolf]-->|eats| E
+    F[Wolf]-->|is| B
+    F[Wolf]-.->|implies| A
 
-An ontology of geographical concepts :
+An ontology of water resources (source : OKP4 from SAREF extension for water) :
 
-![Ontology_equation](/img/content/whitepaper/ontology_example_geography.webp)
+classDiagram
+    class WaterAsset{
+        +hasName: string
+    }
+
+    class SourceAsset{
+        +hasName: string
+        +hasSurface: string
+    }
+
+    class SinkAsset{
+        +hasName: string
+        +hasSurface: string
+    }
+
+    class Glacier {
+        +hasName: string
+        +hasSurface: string
+    }
+
+    class Lake {
+        +hasName: string
+        +hasSurface: string
+        +hasLocation: string
+    }
+
+    class Lagoon {
+        +hasName: string
+        +hasSurface: string
+        +hasLocation: string
+    }
+
+    class Ocean {
+        +hasName: string
+        +hasSurface: string
+    }
+
+    class River {
+        +hasName: string
+        +hasSurface: string
+    }
+
+    class Sea {
+        +hasName: string
+        +hasSurface: string
+    }
+
+    SourceAsset --> WaterAsset : is
+    SinkAsset --> WaterAsset : is
+    Glacier --> SourceAsset : isType
+    Lake --> SourceAsset : isType
+    Lagoon --> SourceAsset : isType
+    Ocean --> SinkAsset : isType
+    River --> SinkAsset : isType
+    Sea --> SinkAsset : isType
+    Glacier --> Sea : isLocated
 
 ## Why ontologies ?
 
