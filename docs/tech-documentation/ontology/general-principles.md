@@ -8,7 +8,7 @@ sidebar_position: 1
 
 In computer science, ontology is a formal and structured representation of the concepts, relationships, and properties of a particular domain. An ontology generally comprises the following basic elements: concepts, relationships, properties, axioms, and instances. These can be graphically represented by the simplified equation shown below.
 
-![Ontology_equation](/img/content/whitepaper/ontology_equation.webp)
+![ontology_equation](/img/content/tech-doc/ontology_equation.webp)
 
 Some definitions:
 
@@ -22,6 +22,7 @@ Some examples of ontology:
 
 An ontology of sheep and goat (source : OKP4):
 
+```mermaid
 %%{init: {'theme':'neutral'}}%%
 flowchart TD
     A[Carnivore] -->|is| B[Animal]
@@ -32,9 +33,11 @@ flowchart TD
     F[Wolf]-->|eats| E
     F[Wolf]-->|is| B
     F[Wolf]-.->|implies| A
+````
 
 An ontology of water resources (source : OKP4 from SAREF extension for water) :
 
+```mermaid
 classDiagram
     class WaterAsset{
         +hasName: string
@@ -91,6 +94,7 @@ classDiagram
     River --> SinkAsset : isType
     Sea --> SinkAsset : isType
     Glacier --> Sea : isLocated
+```
 
 ## Why ontologies ?
 
