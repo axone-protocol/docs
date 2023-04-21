@@ -71,6 +71,12 @@ const config = {
             activeBasePath: "/nodes"
           },
           {
+            to: '/tech-documentation/ecosystem-overview',
+            position: 'left',
+            label: 'Technical documentation',
+            activeBasePath: "/tech-doc"
+          },
+          {
             type: 'dropdown',
             label: 'API',
             position: 'left',
