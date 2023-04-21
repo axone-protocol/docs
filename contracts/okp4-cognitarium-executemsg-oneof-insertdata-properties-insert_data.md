@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/0/properties/insert_data
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -22,17 +20,15 @@ undefined#/execute/oneOf/0/properties/insert_data
 
 ## input
 
-
-
 `input`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-input.md "undefined#/execute/oneOf/0/properties/insert_data/properties/input")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-input.md "undefined#/execute/oneOf/0/properties/insert_data/properties/input")
 
 ### input Type
 

@@ -28,13 +28,13 @@ The store limits.
 
 `limits`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limits.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limits.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits.md "undefined#/responses/store/properties/limits")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits.md "undefined#/responses/store/properties/limits")
 
 ### limits Type
 
@@ -42,7 +42,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limit
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
 
 ## owner
 
@@ -50,13 +50,13 @@ The store owner.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-owner.md "undefined#/responses/store/properties/owner")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-owner.md "undefined#/responses/store/properties/owner")
 
 ### owner Type
 
@@ -68,13 +68,13 @@ The store current usage.
 
 `stat`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat.md "undefined#/responses/store/properties/stat")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat.md "undefined#/responses/store/properties/stat")
 
 ### stat Type
 
@@ -82,7 +82,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
 
 # StoreResponse Definitions
 
@@ -110,13 +110,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
 
 #### max\_byte\_size Type
 
@@ -124,9 +124,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_byte\_size
 
@@ -134,13 +134,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 #### max\_insert\_data\_byte\_size Type
 
@@ -148,9 +148,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_triple\_count
 
@@ -158,13 +158,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 #### max\_insert\_data\_triple\_count Type
 
@@ -172,9 +172,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ### max\_query\_limit
 
@@ -182,13 +182,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
 
 #### max\_query\_limit Type
 
@@ -196,9 +196,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ### max\_query\_variable\_count
 
@@ -206,13 +206,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
 
 #### max\_query\_variable\_count Type
 
@@ -220,9 +220,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ### max\_triple\_byte\_size
 
@@ -230,13 +230,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
 
 #### max\_triple\_byte\_size Type
 
@@ -244,9 +244,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ### max\_triple\_count
 
@@ -254,13 +254,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
 
 #### max\_triple\_count Type
 
@@ -268,9 +268,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
 
 ## Definitions group StoreStat
 
@@ -292,13 +292,13 @@ The total triple size in the store, in bytes.
 
 `byte_size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
 
 #### byte\_size Type
 
@@ -306,7 +306,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
 
 ### namespace\_count
 
@@ -314,13 +314,13 @@ The total number of IRI namespace present in the store.
 
 `namespace_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
 
 #### namespace\_count Type
 
@@ -328,7 +328,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
 
 ### triple\_count
 
@@ -336,13 +336,13 @@ The total number of triple present in the store.
 
 `triple_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
 
 #### triple\_count Type
 
@@ -350,7 +350,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
 
 ## Definitions group Uint128
 

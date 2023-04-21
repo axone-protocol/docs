@@ -16,8 +16,8 @@ merged type ([ObjectPattern](okp4-cognitarium-querymsg-definitions-objectpattern
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "check type definition")
 
-*   [Node](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "check type definition")
+* [Node](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "check type definition")
 
-*   [Literal](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "check type definition")
+* [Literal](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "check type definition")

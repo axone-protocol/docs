@@ -22,17 +22,15 @@ Input in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/) format.
 
 ## rdf\_xml
 
-
-
 `rdf_xml`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml-properties-rdf_xml.md "undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml-properties-rdf_xml.md "undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml")
 
 ### rdf\_xml Type
 

@@ -16,6 +16,6 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
