@@ -32,13 +32,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
 
 ### max\_byte\_size Type
 
@@ -46,9 +46,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_byte\_size
 
@@ -56,13 +56,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 ### max\_insert\_data\_byte\_size Type
 
@@ -70,9 +70,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_triple\_count
 
@@ -80,13 +80,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 ### max\_insert\_data\_triple\_count Type
 
@@ -94,9 +94,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ## max\_query\_limit
 
@@ -104,13 +104,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
 
 ### max\_query\_limit Type
 
@@ -118,9 +118,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ## max\_query\_variable\_count
 
@@ -128,13 +128,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
 
 ### max\_query\_variable\_count Type
 
@@ -142,9 +142,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ## max\_triple\_byte\_size
 
@@ -152,13 +152,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
 
 ### max\_triple\_byte\_size Type
 
@@ -166,9 +166,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ## max\_triple\_count
 
@@ -176,13 +176,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
+*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
 
 ### max\_triple\_count Type
 
@@ -190,6 +190,6 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")

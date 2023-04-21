@@ -16,6 +16,6 @@ merged type ([SubjectPattern](okp4-cognitarium-querymsg-definitions-subjectpatte
 
 one (and only one) of
 
-* [Variable](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "check type definition")
+*   [Variable](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "check type definition")
 
-* [Node](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "check type definition")
+*   [Node](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "check type definition")

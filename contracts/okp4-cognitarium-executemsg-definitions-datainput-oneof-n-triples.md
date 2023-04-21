@@ -22,15 +22,17 @@ Input in [N-Triples](https://www.w3.org/TR/n-triples/) format.
 
 ## n\_triples
 
+
+
 `n_triples`
 
-* is required
+*   is required
 
-* Type: unknown
+*   Type: unknown
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples-properties-n_triples.md "undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples-properties-n_triples.md "undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples")
 
 ### n\_triples Type
 

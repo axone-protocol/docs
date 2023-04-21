@@ -16,6 +16,6 @@ merged type ([PredicatePattern](okp4-cognitarium-querymsg-definitions-predicatep
 
 one (and only one) of
 
-* [Variable](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "check type definition")
+*   [Variable](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "check type definition")
 
-* [Node](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "check type definition")
+*   [Node](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "check type definition")
