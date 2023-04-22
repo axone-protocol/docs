@@ -2,211 +2,212 @@
 
 ## Top-level Schemas
 
-*   [okp4-cognitarium](./okp4-cognitarium.md "TriplestoreOverviewThe okp4-cognitarium smart contract enables the storage of RDF graphs triples (i") – `-`
+* [okp4-cognitarium](./okp4-cognitarium.md "TriplestoreOverviewThe okp4-cognitarium smart contract enables the storage of RDF graphs triples (i") – `-`
 
-*   [okp4-law-stone](./okp4-law-stone.md "Law StoneOverviewThe okp4-law-stone smart contract aims to provide GaaS (i") – `-`
+* [okp4-law-stone](./okp4-law-stone.md "Law StoneOverviewThe okp4-law-stone smart contract aims to provide GaaS (i") – `-`
 
-*   [okp4-objectarium](./okp4-objectarium.md "ObjectariumOverviewThe okp4-objectarium smart contract enables the storage of arbitrary objects in any Cosmos blockchains using the CosmWasm framework") – `-`
+* [okp4-objectarium](./okp4-objectarium.md "ObjectariumOverviewThe okp4-objectarium smart contract enables the storage of arbitrary objects in any Cosmos blockchains using the CosmWasm framework") – `-`
 
 ## Other Schemas
 
 ### Objects
 
-*   [Ask](./okp4-law-stone-querymsg-oneof-ask.md "If not broken, ask the logic module the provided query with the law program loaded") – `undefined#/query/oneOf/0`
+* [Ask](./okp4-law-stone-querymsg-oneof-ask.md "If not broken, ask the logic module the provided query with the law program loaded") – `undefined#/query/oneOf/0`
 
-*   [AskResponse](./okp4-law-stone-responses-askresponse.md) – `undefined#/responses/ask`
+* [AskResponse](./okp4-law-stone-responses-askresponse.md) – `undefined#/responses/ask`
 
-*   [BlankNode](./okp4-cognitarium-querymsg-definitions-node-oneof-blanknode.md "An RDF blank node") – `undefined#/query/definitions/Node/oneOf/1`
+* [BlankNode](./okp4-cognitarium-querymsg-definitions-node-oneof-blanknode.md "An RDF blank node") – `undefined#/query/definitions/Node/oneOf/1`
 
-*   [BlankNode](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode.md "Represents a blank node") – `undefined#/responses/select/definitions/Value/oneOf/2`
+* [BlankNode](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode.md "Represents a blank node") – `undefined#/responses/select/definitions/Value/oneOf/2`
 
-*   [Bucket](./okp4-objectarium-querymsg-oneof-bucket.md "Bucket returns the bucket information") – `undefined#/query/oneOf/0`
+* [Bucket](./okp4-objectarium-querymsg-oneof-bucket.md "Bucket returns the bucket information") – `undefined#/query/oneOf/0`
 
-*   [BucketResponse](./okp4-objectarium-responses-bucketresponse.md "BucketResponse is the response of the Bucket query") – `undefined#/responses/bucket`
+* [BucketResponse](./okp4-objectarium-responses-bucketresponse.md "BucketResponse is the response of the Bucket query") – `undefined#/responses/bucket`
 
-*   [ForgetObject](./okp4-objectarium-executemsg-oneof-forgetobject.md "ForgetObject first unpin the object from the bucket for the considered sender, then remove it from the storage if it is not pinned anymore") – `undefined#/execute/oneOf/1`
+* [ForgetObject](./okp4-objectarium-executemsg-oneof-forgetobject.md "ForgetObject first unpin the object from the bucket for the considered sender, then remove it from the storage if it is not pinned anymore") – `undefined#/execute/oneOf/1`
 
-*   [Full](./okp4-cognitarium-querymsg-definitions-iri-oneof-full.md "A full IRI") – `undefined#/query/definitions/IRI/oneOf/1`
+* [Full](./okp4-cognitarium-querymsg-definitions-iri-oneof-full.md "A full IRI") – `undefined#/query/definitions/IRI/oneOf/1`
 
-*   [Full](./okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full.md "A full IRI") – `undefined#/responses/select/definitions/IRI/oneOf/1`
+* [Full](./okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full.md "A full IRI") – `undefined#/responses/select/definitions/IRI/oneOf/1`
 
-*   [Head](./okp4-cognitarium-responses-selectresponse-definitions-head.md "Represents the head of a \[SelectResponse]") – `undefined#/responses/select/definitions/Head`
+* [Head](./okp4-cognitarium-responses-selectresponse-definitions-head.md "Represents the head of a \[SelectResponse]") – `undefined#/responses/select/definitions/Head`
 
-*   [InsertData](./okp4-cognitarium-executemsg-oneof-insertdata.md "Insert the data as RDF triples in the store") – `undefined#/execute/oneOf/0`
+* [InsertData](./okp4-cognitarium-executemsg-oneof-insertdata.md "Insert the data as RDF triples in the store") – `undefined#/execute/oneOf/0`
 
-*   [InstantiateMsg](./okp4-cognitarium-instantiatemsg.md "Instantiate message") – `undefined#/instantiate`
+* [InstantiateMsg](./okp4-cognitarium-instantiatemsg.md "Instantiate message") – `undefined#/instantiate`
 
-*   [InstantiateMsg](./okp4-law-stone-instantiatemsg.md "Instantiate message") – `undefined#/instantiate`
+* [InstantiateMsg](./okp4-law-stone-instantiatemsg.md "Instantiate message") – `undefined#/instantiate`
 
-*   [InstantiateMsg](./okp4-objectarium-instantiatemsg.md "Instantiate messages") – `undefined#/instantiate`
+* [InstantiateMsg](./okp4-objectarium-instantiatemsg.md "Instantiate messages") – `undefined#/instantiate`
 
-*   [LanguageTaggedString](./okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring.md "A language-tagged string") – `undefined#/query/definitions/Literal/oneOf/1`
+* [LanguageTaggedString](./okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring.md "A language-tagged string") – `undefined#/query/definitions/Literal/oneOf/1`
 
-*   [Literal](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "An RDF literal, i") – `undefined#/query/definitions/ObjectPattern/oneOf/2`
+* [Literal](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "An RDF literal, i") – `undefined#/query/definitions/ObjectPattern/oneOf/2`
 
-*   [Literal](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal.md "Represents a literal S with optional language tag L or datatype IRI D") – `undefined#/responses/select/definitions/Value/oneOf/1`
+* [Literal](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal.md "Represents a literal S with optional language tag L or datatype IRI D") – `undefined#/responses/select/definitions/Value/oneOf/1`
 
-*   [N-Triples](./okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "Input in N-Triples format") – `undefined#/execute/definitions/DataInput/oneOf/2`
+* [N-Triples](./okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "Input in N-Triples format") – `undefined#/execute/definitions/DataInput/oneOf/2`
 
-*   [NamedNode](./okp4-cognitarium-querymsg-definitions-node-oneof-namednode.md "An RDF IRI") – `undefined#/query/definitions/Node/oneOf/0`
+* [NamedNode](./okp4-cognitarium-querymsg-definitions-node-oneof-namednode.md "An RDF IRI") – `undefined#/query/definitions/Node/oneOf/0`
 
-*   [Node](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "A node, i") – `undefined#/query/definitions/ObjectPattern/oneOf/1`
+* [Node](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "A node, i") – `undefined#/query/definitions/ObjectPattern/oneOf/1`
 
-*   [Node](./okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "A node, i") – `undefined#/query/definitions/PredicatePattern/oneOf/1`
+* [Node](./okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "A node, i") – `undefined#/query/definitions/PredicatePattern/oneOf/1`
 
-*   [Node](./okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "A node, i") – `undefined#/query/definitions/SubjectPattern/oneOf/1`
+* [Node](./okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "A node, i") – `undefined#/query/definitions/SubjectPattern/oneOf/1`
 
-*   [Object](./okp4-objectarium-querymsg-oneof-object.md "Object returns the object information with the given id") – `undefined#/query/oneOf/1`
+* [Object](./okp4-objectarium-querymsg-oneof-object.md "Object returns the object information with the given id") – `undefined#/query/oneOf/1`
 
-*   [ObjectData](./okp4-objectarium-querymsg-oneof-objectdata.md "ObjectData returns the content of the object with the given id") – `undefined#/query/oneOf/3`
+* [ObjectData](./okp4-objectarium-querymsg-oneof-objectdata.md "ObjectData returns the content of the object with the given id") – `undefined#/query/oneOf/3`
 
-*   [ObjectPins](./okp4-objectarium-querymsg-oneof-objectpins.md "ObjectPins returns the list of addresses that pinned the object with the given id with support for pagination") – `undefined#/query/oneOf/4`
+* [ObjectPins](./okp4-objectarium-querymsg-oneof-objectpins.md "ObjectPins returns the list of addresses that pinned the object with the given id with support for pagination") – `undefined#/query/oneOf/4`
 
-*   [ObjectPinsResponse](./okp4-objectarium-responses-objectpinsresponse.md "ObjectPinsResponse is the response of the GetObjectPins query") – `undefined#/responses/object_pins`
+* [ObjectPinsResponse](./okp4-objectarium-responses-objectpinsresponse.md "ObjectPinsResponse is the response of the GetObjectPins query") – `undefined#/responses/object_pins`
 
-*   [ObjectResponse](./okp4-objectarium-responses-objectresponse.md "ObjectResponse is the response of the Object query") – `undefined#/responses/object`
+* [ObjectResponse](./okp4-objectarium-responses-objectresponse.md "ObjectResponse is the response of the Object query") – `undefined#/responses/object`
 
-*   [ObjectResponse](./okp4-objectarium-responses-objectsresponse-definitions-objectresponse.md "ObjectResponse is the response of the Object query") – `undefined#/responses/objects/definitions/ObjectResponse`
+* [ObjectResponse](./okp4-objectarium-responses-objectsresponse-definitions-objectresponse.md "ObjectResponse is the response of the Object query") – `undefined#/responses/objects/definitions/ObjectResponse`
 
-*   [Objects](./okp4-objectarium-querymsg-oneof-objects.md "Objects returns the list of objects in the bucket with support for pagination") – `undefined#/query/oneOf/2`
+* [Objects](./okp4-objectarium-querymsg-oneof-objects.md "Objects returns the list of objects in the bucket with support for pagination") – `undefined#/query/oneOf/2`
 
-*   [ObjectsResponse](./okp4-objectarium-responses-objectsresponse.md "ObjectsResponse is the response of the Objects query") – `undefined#/responses/objects`
+* [ObjectsResponse](./okp4-objectarium-responses-objectsresponse.md "ObjectsResponse is the response of the Objects query") – `undefined#/responses/objects`
 
-*   [PageInfo](./okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo.md "PageInfo is the page information returned for paginated queries") – `undefined#/responses/object_pins/definitions/PageInfo`
+* [PageInfo](./okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo.md "PageInfo is the page information returned for paginated queries") – `undefined#/responses/object_pins/definitions/PageInfo`
 
-*   [PageInfo](./okp4-objectarium-responses-objectsresponse-definitions-pageinfo.md "PageInfo is the page information returned for paginated queries") – `undefined#/responses/objects/definitions/PageInfo`
+* [PageInfo](./okp4-objectarium-responses-objectsresponse-definitions-pageinfo.md "PageInfo is the page information returned for paginated queries") – `undefined#/responses/objects/definitions/PageInfo`
 
-*   [PinObject](./okp4-objectarium-executemsg-oneof-pinobject.md "PinObject pins the object in the bucket for the considered sender") – `undefined#/execute/oneOf/2`
+* [PinObject](./okp4-objectarium-executemsg-oneof-pinobject.md "PinObject pins the object in the bucket for the considered sender") – `undefined#/execute/oneOf/2`
 
-*   [Prefix](./okp4-cognitarium-querymsg-definitions-prefix.md "Represents a prefix in a \[SelectQuery]") – `undefined#/query/definitions/Prefix`
+* [Prefix](./okp4-cognitarium-querymsg-definitions-prefix.md "Represents a prefix in a \[SelectQuery]") – `undefined#/query/definitions/Prefix`
 
-*   [Prefixed](./okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed.md "An IRI prefixed with a prefix") – `undefined#/query/definitions/IRI/oneOf/0`
+* [Prefixed](./okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed.md "An IRI prefixed with a prefix") – `undefined#/query/definitions/IRI/oneOf/0`
 
-*   [Prefixed](./okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed.md "An IRI prefixed with a prefix") – `undefined#/responses/select/definitions/IRI/oneOf/0`
+* [Prefixed](./okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed.md "An IRI prefixed with a prefix") – `undefined#/responses/select/definitions/IRI/oneOf/0`
 
-*   [ProgramResponse](./okp4-law-stone-responses-programresponse.md "ProgramResponse carry elements to locate the program in a okp4-objectarium contract") – `undefined#/responses/program`
+* [ProgramResponse](./okp4-law-stone-responses-programresponse.md "ProgramResponse carry elements to locate the program in a okp4-objectarium contract") – `undefined#/responses/program`
 
-*   [RDF XML](./okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "Input in RDF/XML format") – `undefined#/execute/definitions/DataInput/oneOf/0`
+* [RDF XML](./okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "Input in RDF/XML format") – `undefined#/execute/definitions/DataInput/oneOf/0`
 
-*   [Results](./okp4-cognitarium-responses-selectresponse-definitions-results.md "Represents the results of a \[SelectResponse]") – `undefined#/responses/select/definitions/Results`
+* [Results](./okp4-cognitarium-responses-selectresponse-definitions-results.md "Represents the results of a \[SelectResponse]") – `undefined#/responses/select/definitions/Results`
 
-*   [Select](./okp4-cognitarium-querymsg-oneof-select.md "Returns the resources matching the criteria defined by the provided query") – `undefined#/query/oneOf/1`
+* [Select](./okp4-cognitarium-querymsg-oneof-select.md "Returns the resources matching the criteria defined by the provided query") – `undefined#/query/oneOf/1`
 
-*   [SelectQuery](./okp4-cognitarium-querymsg-definitions-selectquery.md "Represents a SELECT query over the triple store, allowing to select variables to return and to filter the results") – `undefined#/query/definitions/SelectQuery`
+* [SelectQuery](./okp4-cognitarium-querymsg-definitions-selectquery.md "Represents a SELECT query over the triple store, allowing to select variables to return and to filter the results") – `undefined#/query/definitions/SelectQuery`
 
-*   [SelectResponse](./okp4-cognitarium-responses-selectresponse.md "Represents the response of a \[QueryMsg::Select] query") – `undefined#/responses/select`
+* [SelectResponse](./okp4-cognitarium-responses-selectresponse.md "Represents the response of a \[QueryMsg::Select] query") – `undefined#/responses/select`
 
-*   [Simple](./okp4-cognitarium-querymsg-definitions-literal-oneof-simple.md "A simple literal without datatype or language form") – `undefined#/query/definitions/Literal/oneOf/0`
+* [Simple](./okp4-cognitarium-querymsg-definitions-literal-oneof-simple.md "A simple literal without datatype or language form") – `undefined#/query/definitions/Literal/oneOf/0`
 
-*   [Simple](./okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "Represents a simple condition") – `undefined#/query/definitions/WhereCondition/oneOf/0`
+* [Simple](./okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "Represents a simple condition") – `undefined#/query/definitions/WhereCondition/oneOf/0`
 
-*   [StoreLimits](./okp4-cognitarium-instantiatemsg-definitions-storelimits.md "Contains limitations regarding store usages") – `undefined#/instantiate/definitions/StoreLimits`
+* [StoreLimits](./okp4-cognitarium-instantiatemsg-definitions-storelimits.md "Contains limitations regarding store usages") – `undefined#/instantiate/definitions/StoreLimits`
 
-*   [StoreLimits](./okp4-cognitarium-responses-storeresponse-definitions-storelimits.md "Contains limitations regarding store usages") – `undefined#/responses/store/definitions/StoreLimits`
+* [StoreLimits](./okp4-cognitarium-responses-storeresponse-definitions-storelimits.md "Contains limitations regarding store usages") – `undefined#/responses/store/definitions/StoreLimits`
 
-*   [StoreObject](./okp4-objectarium-executemsg-oneof-storeobject.md "StoreObject store an object to the bucket and make the sender the owner of the object") – `undefined#/execute/oneOf/0`
+* [StoreObject](./okp4-objectarium-executemsg-oneof-storeobject.md "StoreObject store an object to the bucket and make the sender the owner of the object") – `undefined#/execute/oneOf/0`
 
-*   [StoreResponse](./okp4-cognitarium-responses-storeresponse.md "Contains information related to triple store") – `undefined#/responses/store`
+* [StoreResponse](./okp4-cognitarium-responses-storeresponse.md "Contains information related to triple store") – `undefined#/responses/store`
 
-*   [StoreStat](./okp4-cognitarium-responses-storeresponse-definitions-storestat.md "Contains usage information about the triple store") – `undefined#/responses/store/definitions/StoreStat`
+* [StoreStat](./okp4-cognitarium-responses-storeresponse-definitions-storestat.md "Contains usage information about the triple store") – `undefined#/responses/store/definitions/StoreStat`
 
-*   [TriplePattern](./okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "Represents a triple pattern, i") – `undefined#/query/definitions/SimpleWhereCondition/oneOf/0`
+* [TriplePattern](./okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "Represents a triple pattern, i") – `undefined#/query/definitions/SimpleWhereCondition/oneOf/0`
 
-*   [TriplePattern](./okp4-cognitarium-querymsg-definitions-triplepattern.md "Represents a triple pattern in a \[SimpleWhereCondition]") – `undefined#/query/definitions/TriplePattern`
+* [TriplePattern](./okp4-cognitarium-querymsg-definitions-triplepattern.md "Represents a triple pattern in a \[SimpleWhereCondition]") – `undefined#/query/definitions/TriplePattern`
 
-*   [Turtle](./okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "Input in Turtle format") – `undefined#/execute/definitions/DataInput/oneOf/1`
+* [Turtle](./okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "Input in Turtle format") – `undefined#/execute/definitions/DataInput/oneOf/1`
 
-*   [TypedValue](./okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue.md "A value with a datatype") – `undefined#/query/definitions/Literal/oneOf/2`
+* [TypedValue](./okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue.md "A value with a datatype") – `undefined#/query/definitions/Literal/oneOf/2`
 
-*   [URI](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri.md "Represents an IRI") – `undefined#/responses/select/definitions/Value/oneOf/0`
+* [URI](./okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri.md "Represents an IRI") – `undefined#/responses/select/definitions/Value/oneOf/0`
 
-*   [UnpinObject](./okp4-objectarium-executemsg-oneof-unpinobject.md "UnpinObject unpins the object in the bucket for the considered sender") – `undefined#/execute/oneOf/3`
+* [UnpinObject](./okp4-objectarium-executemsg-oneof-unpinobject.md "UnpinObject unpins the object in the bucket for the considered sender") – `undefined#/execute/oneOf/3`
 
-*   [Untitled object in okp4-cognitarium](./okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md) – `undefined#/execute/oneOf/0/properties/insert_data`
+* [Untitled object in okp4-cognitarium](./okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md) – `undefined#/execute/oneOf/0/properties/insert_data`
 
-*   [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-oneof-select-properties-select.md) – `undefined#/query/oneOf/1/properties/select`
+* [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-oneof-select-properties-select.md) – `undefined#/query/oneOf/1/properties/select`
 
-*   [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md) – `undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string`
+* [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md) – `undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string`
 
-*   [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md) – `undefined#/query/definitions/Literal/oneOf/2/properties/typed_value`
+* [Untitled object in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md) – `undefined#/query/definitions/Literal/oneOf/2/properties/typed_value`
 
-*   [Untitled object in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md) – `undefined#/responses/select/definitions/Results/properties/bindings/items`
+* [Untitled object in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md) – `undefined#/responses/select/definitions/Results/properties/bindings/items`
 
-*   [Untitled object in okp4-law-stone](./okp4-law-stone-querymsg-oneof-ask-properties-ask.md) – `undefined#/query/oneOf/0/properties/ask`
+* [Untitled object in okp4-law-stone](./okp4-law-stone-querymsg-oneof-ask-properties-ask.md) – `undefined#/query/oneOf/0/properties/ask`
 
-*   [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer.md) – `undefined#/responses/ask/definitions/Answer`
+* [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer.md) – `undefined#/responses/ask/definitions/Answer`
 
-*   [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-result.md) – `undefined#/responses/ask/definitions/Result`
+* [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-result.md) – `undefined#/responses/ask/definitions/Result`
 
-*   [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-substitution.md) – `undefined#/responses/ask/definitions/Substitution`
+* [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-substitution.md) – `undefined#/responses/ask/definitions/Substitution`
 
-*   [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-term.md) – `undefined#/responses/ask/definitions/Term`
+* [Untitled object in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-term.md) – `undefined#/responses/ask/definitions/Term`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-bucketconfig.md "BucketConfig is the type of the configuration of a bucket") – `undefined#/instantiate/definitions/BucketConfig`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-bucketconfig.md "BucketConfig is the type of the configuration of a bucket") – `undefined#/instantiate/definitions/BucketConfig`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-bucketlimits.md "BucketLimits is the type of the limits of a bucket") – `undefined#/instantiate/definitions/BucketLimits`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-bucketlimits.md "BucketLimits is the type of the limits of a bucket") – `undefined#/instantiate/definitions/BucketLimits`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-paginationconfig.md "PaginationConfig is the type carrying configuration for paginated queries") – `undefined#/instantiate/definitions/PaginationConfig`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-instantiatemsg-definitions-paginationconfig.md "PaginationConfig is the type carrying configuration for paginated queries") – `undefined#/instantiate/definitions/PaginationConfig`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md) – `undefined#/execute/oneOf/0/properties/store_object`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md) – `undefined#/execute/oneOf/0/properties/store_object`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md) – `undefined#/execute/oneOf/1/properties/forget_object`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md) – `undefined#/execute/oneOf/1/properties/forget_object`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md) – `undefined#/execute/oneOf/2/properties/pin_object`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md) – `undefined#/execute/oneOf/2/properties/pin_object`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md) – `undefined#/execute/oneOf/3/properties/unpin_object`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md) – `undefined#/execute/oneOf/3/properties/unpin_object`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md) – `undefined#/query/oneOf/0/properties/bucket`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md) – `undefined#/query/oneOf/0/properties/bucket`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-object-properties-object.md) – `undefined#/query/oneOf/1/properties/object`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-object-properties-object.md) – `undefined#/query/oneOf/1/properties/object`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objects-properties-objects.md) – `undefined#/query/oneOf/2/properties/objects`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objects-properties-objects.md) – `undefined#/query/oneOf/2/properties/objects`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md) – `undefined#/query/oneOf/3/properties/object_data`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md) – `undefined#/query/oneOf/3/properties/object_data`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md) – `undefined#/query/oneOf/4/properties/object_pins`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md) – `undefined#/query/oneOf/4/properties/object_pins`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-bucketconfig.md "BucketConfig is the type of the configuration of a bucket") – `undefined#/responses/bucket/definitions/BucketConfig`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-bucketconfig.md "BucketConfig is the type of the configuration of a bucket") – `undefined#/responses/bucket/definitions/BucketConfig`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-bucketlimits.md "BucketLimits is the type of the limits of a bucket") – `undefined#/responses/bucket/definitions/BucketLimits`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-bucketlimits.md "BucketLimits is the type of the limits of a bucket") – `undefined#/responses/bucket/definitions/BucketLimits`
 
-*   [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-paginationconfig.md "PaginationConfig is the type carrying configuration for paginated queries") – `undefined#/responses/bucket/definitions/PaginationConfig`
+* [Untitled object in okp4-objectarium](./okp4-objectarium-responses-bucketresponse-definitions-paginationconfig.md "PaginationConfig is the type carrying configuration for paginated queries") – `undefined#/responses/bucket/definitions/PaginationConfig`
 
-*   [Variable](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "A variable") – `undefined#/query/definitions/ObjectPattern/oneOf/0`
+* [Variable](./okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "A variable") – `undefined#/query/definitions/ObjectPattern/oneOf/0`
 
-*   [Variable](./okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "A variable") – `undefined#/query/definitions/PredicatePattern/oneOf/0`
+* [Variable](./okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "A variable") – `undefined#/query/definitions/PredicatePattern/oneOf/0`
 
-*   [Variable](./okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "Represents a variable") – `undefined#/query/definitions/SelectItem/oneOf/0`
+* [Variable](./okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "Represents a variable") – `undefined#/query/definitions/SelectItem/oneOf/0`
 
-*   [Variable](./okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "A variable") – `undefined#/query/definitions/SubjectPattern/oneOf/0`
+* [Variable](./okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "A variable") – `undefined#/query/definitions/SubjectPattern/oneOf/0`
 
 ### Arrays
 
-*   [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "The prefixes used in the query") – `undefined#/query/definitions/SelectQuery/properties/prefixes`
+* [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "The prefixes used in the query") – `undefined#/query/definitions/SelectQuery/properties/prefixes`
 
-*   [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "The items to select") – `undefined#/query/definitions/SelectQuery/properties/select`
+* [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "The items to select") – `undefined#/query/definitions/SelectQuery/properties/select`
 
-*   [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "The WHERE clause") – `undefined#/query/definitions/SelectQuery/properties/where`
+* [Untitled array in okp4-cognitarium](./okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "The WHERE clause") – `undefined#/query/definitions/SelectQuery/properties/where`
 
-*   [Untitled array in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "The variables selected in the query") – `undefined#/responses/select/definitions/Head/properties/vars`
+* [Untitled array in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "The variables selected in the query") – `undefined#/responses/select/definitions/Head/properties/vars`
 
-*   [Untitled array in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "The bindings of the results") – `undefined#/responses/select/definitions/Results/properties/bindings`
+* [Untitled array in okp4-cognitarium](./okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "The bindings of the results") – `undefined#/responses/select/definitions/Results/properties/bindings`
 
-*   [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md) – `undefined#/responses/ask/definitions/Answer/properties/results`
+* [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md) – `undefined#/responses/ask/definitions/Answer/properties/results`
 
-*   [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md) – `undefined#/responses/ask/definitions/Answer/properties/variables`
+* [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md) – `undefined#/responses/ask/definitions/Answer/properties/variables`
 
-*   [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md) – `undefined#/responses/ask/definitions/Result/properties/substitutions`
+* [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md) – `undefined#/responses/ask/definitions/Result/properties/substitutions`
 
-*   [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md) – `undefined#/responses/ask/definitions/Term/properties/arguments`
+* [Untitled array in okp4-law-stone](./okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md) – `undefined#/responses/ask/definitions/Term/properties/arguments`
 
-*   [Untitled array in okp4-objectarium](./okp4-objectarium-responses-objectpinsresponse-properties-data.md "The list of addresses that pinned the object") – `undefined#/responses/object_pins/properties/data`
+* [Untitled array in okp4-objectarium](./okp4-objectarium-responses-objectpinsresponse-properties-data.md "The list of addresses that pinned the object") – `undefined#/responses/object_pins/properties/data`
 
-*   [Untitled array in okp4-objectarium](./okp4-objectarium-responses-objectsresponse-properties-data.md "The list of objects in the bucket") – `undefined#/responses/objects/properties/data`
+* [Untitled array in okp4-objectarium](./okp4-objectarium-responses-objectsresponse-properties-data.md "The list of objects in the bucket") – `undefined#/responses/objects/properties/data`
 
 ## Version Note
 
 The schemas linked above follow the JSON Schema Spec version: `http://json-schema.org/draft-07/schema#`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -224,13 +225,12 @@ This is only needed as serde-json-{core,wasm} has a horrible encoding for <code>
 ## Binary Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -239,6 +239,7 @@ undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples
 ## n\_triples Type
 
 unknown
+
 # N-Triples Schema
 
 ```txt
@@ -263,28 +264,25 @@ Input in [N-Triples](https://www.w3.org/TR/n-triples/) format.
 
 ## n\_triples
 
-
-
 `n_triples`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples-properties-n_triples.md "undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples-properties-n_triples.md "undefined#/execute/definitions/DataInput/oneOf/2/properties/n_triples")
 
 ### n\_triples Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -293,6 +291,7 @@ undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml
 ## rdf\_xml Type
 
 unknown
+
 # RDF XML Schema
 
 ```txt
@@ -317,28 +316,25 @@ Input in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/) format.
 
 ## rdf\_xml
 
-
-
 `rdf_xml`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml-properties-rdf_xml.md "undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml-properties-rdf_xml.md "undefined#/execute/definitions/DataInput/oneOf/0/properties/rdf_xml")
 
 ### rdf\_xml Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/definitions/DataInput/oneOf/1/properties/turtle
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -347,6 +343,7 @@ undefined#/execute/definitions/DataInput/oneOf/1/properties/turtle
 ## turtle Type
 
 unknown
+
 # Turtle Schema
 
 ```txt
@@ -371,21 +368,20 @@ Input in [Turtle](https://www.w3.org/TR/turtle/) format.
 
 ## turtle
 
-
-
 `turtle`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle-properties-turtle.md "undefined#/execute/definitions/DataInput/oneOf/1/properties/turtle")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle-properties-turtle.md "undefined#/execute/definitions/DataInput/oneOf/1/properties/turtle")
 
 ### turtle Type
 
 unknown
+
 # DataInput Schema
 
 ```txt
@@ -404,18 +400,17 @@ merged type ([DataInput](okp4-cognitarium-executemsg-definitions-datainput.md))
 
 one (and only one) of
 
-*   [RDF XML](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "check type definition")
+* [RDF XML](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "check type definition")
 
-*   [Turtle](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "check type definition")
+* [Turtle](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "check type definition")
 
-*   [N-Triples](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "check type definition")
+* [N-Triples](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -424,13 +419,12 @@ undefined#/execute/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/oneOf/0/properties/insert_data/properties/input
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -439,13 +433,12 @@ undefined#/execute/oneOf/0/properties/insert_data/properties/input
 ## input Type
 
 unknown
+
 # Untitled object in okp4-cognitarium Schema
 
 ```txt
 undefined#/execute/oneOf/0/properties/insert_data
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -463,21 +456,20 @@ undefined#/execute/oneOf/0/properties/insert_data
 
 ## input
 
-
-
 `input`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-input.md "undefined#/execute/oneOf/0/properties/insert_data/properties/input")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-input.md "undefined#/execute/oneOf/0/properties/insert_data/properties/input")
 
 ### input Type
 
 unknown
+
 # InsertData Schema
 
 ```txt
@@ -504,21 +496,20 @@ Only the smart contract owner (i.e. the address who instantiated it) is authoriz
 
 ## insert\_data
 
-
-
 `insert_data`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md))
+* Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md "undefined#/execute/oneOf/0/properties/insert_data")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md "undefined#/execute/oneOf/0/properties/insert_data")
 
 ### insert\_data Type
 
 `object` ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md))
+
 # ExecuteMsg Schema
 
 ```txt
@@ -537,7 +528,7 @@ merged type ([ExecuteMsg](okp4-cognitarium-executemsg.md))
 
 one (and only one) of
 
-*   [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
+* [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
 
 # ExecuteMsg Definitions
 
@@ -562,13 +553,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -577,13 +567,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size/anyOf/0
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -592,6 +581,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size/anyOf/1
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -610,16 +600,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -628,13 +617,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_s
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -643,6 +631,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_s
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -661,16 +650,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -679,13 +667,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -694,6 +681,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -712,16 +700,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -730,13 +717,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit/anyOf/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -745,6 +731,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit/anyOf/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -763,16 +750,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -781,13 +767,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_cou
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -796,6 +781,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_cou
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -814,16 +800,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -832,13 +817,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size/a
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -847,6 +831,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size/a
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -865,16 +850,15 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -883,13 +867,12 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count/anyOf
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -898,6 +881,7 @@ undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count/anyOf
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -916,9 +900,10 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+
 # StoreLimits Schema
 
 ```txt
@@ -953,13 +938,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
 
 ### max\_byte\_size Type
 
@@ -967,9 +952,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_byte\_size
 
@@ -977,13 +962,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 ### max\_insert\_data\_byte\_size Type
 
@@ -991,9 +976,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_triple\_count
 
@@ -1001,13 +986,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 ### max\_insert\_data\_triple\_count Type
 
@@ -1015,9 +1000,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ## max\_query\_limit
 
@@ -1025,13 +1010,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
 
 ### max\_query\_limit Type
 
@@ -1039,9 +1024,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ## max\_query\_variable\_count
 
@@ -1049,13 +1034,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
 
 ### max\_query\_variable\_count Type
 
@@ -1063,9 +1048,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ## max\_triple\_byte\_size
 
@@ -1073,13 +1058,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
 
 ### max\_triple\_byte\_size Type
 
@@ -1087,9 +1072,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ## max\_triple\_count
 
@@ -1097,13 +1082,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
 
 ### max\_triple\_count Type
 
@@ -1111,9 +1096,10 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -1140,13 +1126,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1155,13 +1140,12 @@ undefined#/instantiate/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/instantiate/properties/limits/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1170,6 +1154,7 @@ undefined#/instantiate/properties/limits/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -1188,7 +1173,8 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-properties-limits.md))
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+
 # InstantiateMsg Schema
 
 ```txt
@@ -1217,13 +1203,13 @@ Limitations regarding store usage.
 
 `limits`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-properties-limits.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-properties-limits.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits.md "undefined#/instantiate/properties/limits")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits.md "undefined#/instantiate/properties/limits")
 
 ### limits Type
 
@@ -1231,7 +1217,7 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-properties-limits.md))
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
 
 # InstantiateMsg Definitions
 
@@ -1259,13 +1245,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_byte_size")
 
 #### max\_byte\_size Type
 
@@ -1273,9 +1259,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_byte\_size
 
@@ -1283,13 +1269,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 #### max\_insert\_data\_byte\_size Type
 
@@ -1297,9 +1283,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_triple\_count
 
@@ -1307,13 +1293,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 #### max\_insert\_data\_triple\_count Type
 
@@ -1321,9 +1307,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ### max\_query\_limit
 
@@ -1331,13 +1317,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_limit")
 
 #### max\_query\_limit Type
 
@@ -1345,9 +1331,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ### max\_query\_variable\_count
 
@@ -1355,13 +1341,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_query_variable_count")
 
 #### max\_query\_variable\_count Type
 
@@ -1369,9 +1355,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ### max\_triple\_byte\_size
 
@@ -1379,13 +1365,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_byte_size")
 
 #### max\_triple\_byte\_size Type
 
@@ -1393,9 +1379,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ### max\_triple\_count
 
@@ -1403,13 +1389,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count.md "undefined#/instantiate/definitions/StoreLimits/properties/max_triple_count")
 
 #### max\_triple\_count Type
 
@@ -1417,9 +1403,9 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
 
 ## Definitions group Uint128
 
@@ -1431,13 +1417,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/IRI/oneOf/1/properties/full
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1446,6 +1431,7 @@ undefined#/query/definitions/IRI/oneOf/1/properties/full
 ## full Type
 
 `string`
+
 # Full Schema
 
 ```txt
@@ -1470,28 +1456,25 @@ A full IRI.
 
 ## full
 
-
-
 `full`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-full-properties-full.md "undefined#/query/definitions/IRI/oneOf/1/properties/full")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-full-properties-full.md "undefined#/query/definitions/IRI/oneOf/1/properties/full")
 
 ### full Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/IRI/oneOf/0/properties/prefixed
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1500,6 +1483,7 @@ undefined#/query/definitions/IRI/oneOf/0/properties/prefixed
 ## prefixed Type
 
 `string`
+
 # Prefixed Schema
 
 ```txt
@@ -1524,21 +1508,20 @@ An IRI prefixed with a prefix. The prefixed IRI is expanded to a full IRI using 
 
 ## prefixed
 
-
-
 `prefixed`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/query/definitions/IRI/oneOf/0/properties/prefixed")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/query/definitions/IRI/oneOf/0/properties/prefixed")
 
 ### prefixed Type
 
 `string`
+
 # IRI Schema
 
 ```txt
@@ -1557,9 +1540,10 @@ merged type ([IRI](okp4-cognitarium-querymsg-definitions-iri.md))
 
 one (and only one) of
 
-*   [Prefixed](okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed.md "check type definition")
+* [Prefixed](okp4-cognitarium-querymsg-definitions-iri-oneof-prefixed.md "check type definition")
 
-*   [Full](okp4-cognitarium-querymsg-definitions-iri-oneof-full.md "check type definition")
+* [Full](okp4-cognitarium-querymsg-definitions-iri-oneof-full.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -1575,6 +1559,7 @@ The [language tag](https://www.w3.org/TR/rdf11-concepts/#dfn-language-tag).
 ## language Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -1590,13 +1575,12 @@ The [lexical form](https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form).
 ## value Type
 
 `string`
+
 # Untitled object in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1619,13 +1603,13 @@ The [language tag](https://www.w3.org/TR/rdf11-concepts/#dfn-language-tag).
 
 `language`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string-properties-language.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string/properties/language")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string-properties-language.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string/properties/language")
 
 ### language Type
 
@@ -1637,17 +1621,18 @@ The [lexical form](https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form).
 
 `value`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string-properties-value.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string-properties-value.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string/properties/value")
 
 ### value Type
 
 `string`
+
 # LanguageTaggedString Schema
 
 ```txt
@@ -1672,28 +1657,25 @@ A [language-tagged string](https://www.w3.org/TR/rdf11-concepts/#dfn-language-ta
 
 ## language\_tagged\_string
 
-
-
 `language_tagged_string`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md))
+* Type: `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md "undefined#/query/definitions/Literal/oneOf/1/properties/language_tagged_string")
 
 ### language\_tagged\_string Type
 
 `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring-properties-language_tagged_string.md))
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Literal/oneOf/0/properties/simple
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1702,6 +1684,7 @@ undefined#/query/definitions/Literal/oneOf/0/properties/simple
 ## simple Type
 
 `string`
+
 # Simple Schema
 
 ```txt
@@ -1726,28 +1709,25 @@ A [simple literal](https://www.w3.org/TR/rdf11-concepts/#dfn-simple-literal) wit
 
 ## simple
 
-
-
 `simple`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-simple-properties-simple.md "undefined#/query/definitions/Literal/oneOf/0/properties/simple")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-simple-properties-simple.md "undefined#/query/definitions/Literal/oneOf/0/properties/simple")
 
 ### simple Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/datatype/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1756,6 +1736,7 @@ undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/d
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -1774,7 +1755,8 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typed
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -1790,13 +1772,12 @@ The [lexical form](https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form).
 ## value Type
 
 `string`
+
 # Untitled object in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Literal/oneOf/2/properties/typed_value
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1819,13 +1800,13 @@ The [datatype IRI](https://www.w3.org/TR/rdf11-concepts/#dfn-datatype-iri).
 
 `datatype`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/datatype")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/datatype")
 
 ### datatype Type
 
@@ -1833,7 +1814,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typed
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
 
 ## value
 
@@ -1841,17 +1822,18 @@ The [lexical form](https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form).
 
 `value`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/value")
 
 ### value Type
 
 `string`
+
 # TypedValue Schema
 
 ```txt
@@ -1876,21 +1858,20 @@ A value with a datatype.
 
 ## typed\_value
 
-
-
 `typed_value`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md))
+* Type: `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value")
 
 ### typed\_value Type
 
 `object` ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value.md))
+
 # Literal Schema
 
 ```txt
@@ -1909,18 +1890,17 @@ merged type ([Literal](okp4-cognitarium-querymsg-definitions-literal.md))
 
 one (and only one) of
 
-*   [Simple](okp4-cognitarium-querymsg-definitions-literal-oneof-simple.md "check type definition")
+* [Simple](okp4-cognitarium-querymsg-definitions-literal-oneof-simple.md "check type definition")
 
-*   [LanguageTaggedString](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring.md "check type definition")
+* [LanguageTaggedString](okp4-cognitarium-querymsg-definitions-literal-oneof-languagetaggedstring.md "check type definition")
 
-*   [TypedValue](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue.md "check type definition")
+* [TypedValue](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Node/oneOf/1/properties/blank_node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1929,6 +1909,7 @@ undefined#/query/definitions/Node/oneOf/1/properties/blank_node
 ## blank\_node Type
 
 `string`
+
 # BlankNode Schema
 
 ```txt
@@ -1953,28 +1934,25 @@ An RDF [blank node](https://www.w3.org/TR/rdf11-concepts/#dfn-blank-node).
 
 ## blank\_node
 
-
-
 `blank_node`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode-properties-blank_node.md "undefined#/query/definitions/Node/oneOf/1/properties/blank_node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode-properties-blank_node.md "undefined#/query/definitions/Node/oneOf/1/properties/blank_node")
 
 ### blank\_node Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/Node/oneOf/0/properties/named_node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -1983,6 +1961,7 @@ undefined#/query/definitions/Node/oneOf/0/properties/named_node
 ## named\_node Type
 
 unknown
+
 # NamedNode Schema
 
 ```txt
@@ -2007,28 +1986,25 @@ An RDF [IRI](https://www.w3.org/TR/rdf11-concepts/#dfn-iri).
 
 ## named\_node
 
-
-
 `named_node`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-namednode-properties-named_node.md "undefined#/query/definitions/Node/oneOf/0/properties/named_node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-namednode-properties-named_node.md "undefined#/query/definitions/Node/oneOf/0/properties/named_node")
 
 ### named\_node Type
 
 unknown
+
 # Node Schema
 
 ```txt
 undefined#/query/definitions/Node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2040,16 +2016,15 @@ merged type ([Node](okp4-cognitarium-querymsg-definitions-node.md))
 
 one (and only one) of
 
-*   [NamedNode](okp4-cognitarium-querymsg-definitions-node-oneof-namednode.md "check type definition")
+* [NamedNode](okp4-cognitarium-querymsg-definitions-node-oneof-namednode.md "check type definition")
 
-*   [BlankNode](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode.md "check type definition")
+* [BlankNode](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/ObjectPattern/oneOf/2/properties/literal
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2058,6 +2033,7 @@ undefined#/query/definitions/ObjectPattern/oneOf/2/properties/literal
 ## literal Type
 
 unknown
+
 # Literal Schema
 
 ```txt
@@ -2082,28 +2058,25 @@ An RDF [literal](https://www.w3.org/TR/rdf11-concepts/#dfn-literal), i.e. a simp
 
 ## literal
 
-
-
 `literal`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal-properties-literal.md "undefined#/query/definitions/ObjectPattern/oneOf/2/properties/literal")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal-properties-literal.md "undefined#/query/definitions/ObjectPattern/oneOf/2/properties/literal")
 
 ### literal Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/ObjectPattern/oneOf/1/properties/node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2112,6 +2085,7 @@ undefined#/query/definitions/ObjectPattern/oneOf/1/properties/node
 ## node Type
 
 unknown
+
 # Node Schema
 
 ```txt
@@ -2136,28 +2110,25 @@ A node, i.e. an IRI or a blank node.
 
 ## node
 
-
-
 `node`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node-properties-node.md "undefined#/query/definitions/ObjectPattern/oneOf/1/properties/node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node-properties-node.md "undefined#/query/definitions/ObjectPattern/oneOf/1/properties/node")
 
 ### node Type
 
 unknown
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/ObjectPattern/oneOf/0/properties/variable
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2166,6 +2137,7 @@ undefined#/query/definitions/ObjectPattern/oneOf/0/properties/variable
 ## variable Type
 
 `string`
+
 # Variable Schema
 
 ```txt
@@ -2190,21 +2162,20 @@ A variable.
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable-properties-variable.md "undefined#/query/definitions/ObjectPattern/oneOf/0/properties/variable")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable-properties-variable.md "undefined#/query/definitions/ObjectPattern/oneOf/0/properties/variable")
 
 ### variable Type
 
 `string`
+
 # ObjectPattern Schema
 
 ```txt
@@ -2223,18 +2194,17 @@ merged type ([ObjectPattern](okp4-cognitarium-querymsg-definitions-objectpattern
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-variable.md "check type definition")
 
-*   [Node](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "check type definition")
+* [Node](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-node.md "check type definition")
 
-*   [Literal](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "check type definition")
+* [Literal](okp4-cognitarium-querymsg-definitions-objectpattern-oneof-literal.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/PredicatePattern/oneOf/1/properties/node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2243,6 +2213,7 @@ undefined#/query/definitions/PredicatePattern/oneOf/1/properties/node
 ## node Type
 
 unknown
+
 # Node Schema
 
 ```txt
@@ -2267,28 +2238,25 @@ A node, i.e. an IRI or a blank node.
 
 ## node
 
-
-
 `node`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node-properties-node.md "undefined#/query/definitions/PredicatePattern/oneOf/1/properties/node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node-properties-node.md "undefined#/query/definitions/PredicatePattern/oneOf/1/properties/node")
 
 ### node Type
 
 unknown
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/PredicatePattern/oneOf/0/properties/variable
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2297,6 +2265,7 @@ undefined#/query/definitions/PredicatePattern/oneOf/0/properties/variable
 ## variable Type
 
 `string`
+
 # Variable Schema
 
 ```txt
@@ -2321,21 +2290,20 @@ A variable.
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable-properties-variable.md "undefined#/query/definitions/PredicatePattern/oneOf/0/properties/variable")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable-properties-variable.md "undefined#/query/definitions/PredicatePattern/oneOf/0/properties/variable")
 
 ### variable Type
 
 `string`
+
 # PredicatePattern Schema
 
 ```txt
@@ -2354,9 +2322,10 @@ merged type ([PredicatePattern](okp4-cognitarium-querymsg-definitions-predicatep
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-variable.md "check type definition")
 
-*   [Node](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "check type definition")
+* [Node](okp4-cognitarium-querymsg-definitions-predicatepattern-oneof-node.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -2372,6 +2341,7 @@ The namespace associated with the prefix.
 ## namespace Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -2387,6 +2357,7 @@ The prefix.
 ## prefix Type
 
 `string`
+
 # Prefix Schema
 
 ```txt
@@ -2416,13 +2387,13 @@ The namespace associated with the prefix.
 
 `namespace`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
 
 ### namespace Type
 
@@ -2434,24 +2405,23 @@ The prefix.
 
 `prefix`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
 
 ### prefix Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SelectItem/oneOf/0/properties/variable
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2460,6 +2430,7 @@ undefined#/query/definitions/SelectItem/oneOf/0/properties/variable
 ## variable Type
 
 `string`
+
 # Variable Schema
 
 ```txt
@@ -2484,21 +2455,20 @@ Represents a variable.
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable-properties-variable.md "undefined#/query/definitions/SelectItem/oneOf/0/properties/variable")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable-properties-variable.md "undefined#/query/definitions/SelectItem/oneOf/0/properties/variable")
 
 ### variable Type
 
 `string`
+
 # SelectItem Schema
 
 ```txt
@@ -2517,7 +2487,8 @@ merged type ([SelectItem](okp4-cognitarium-querymsg-definitions-selectitem.md))
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -2539,13 +2510,12 @@ The maximum number of results to return. If `None`, there is no limit. Note: the
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint64`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SelectQuery/properties/prefixes/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2554,6 +2524,7 @@ undefined#/query/definitions/SelectQuery/properties/prefixes/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-cognitarium Schema
 
 ```txt
@@ -2569,13 +2540,12 @@ The prefixes used in the query.
 ## prefixes Type
 
 unknown\[]
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SelectQuery/properties/select/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2584,6 +2554,7 @@ undefined#/query/definitions/SelectQuery/properties/select/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-cognitarium Schema
 
 ```txt
@@ -2599,13 +2570,12 @@ The items to select. Note: the number of items to select cannot exceed the maxim
 ## select Type
 
 unknown\[]
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SelectQuery/properties/where/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2614,6 +2584,7 @@ undefined#/query/definitions/SelectQuery/properties/where/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-cognitarium Schema
 
 ```txt
@@ -2629,6 +2600,7 @@ The WHERE clause. If `None`, there is no WHERE clause, i.e. all triples are retu
 ## where Type
 
 unknown\[]
+
 # SelectQuery Schema
 
 ```txt
@@ -2660,13 +2632,13 @@ The maximum number of results to return. If `None`, there is no limit. Note: the
 
 `limit`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
 
 ### limit Type
 
@@ -2684,13 +2656,13 @@ The prefixes used in the query.
 
 `prefixes`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
 
 ### prefixes Type
 
@@ -2702,13 +2674,13 @@ The items to select. Note: the number of items to select cannot exceed the maxim
 
 `select`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
 
 ### select Type
 
@@ -2720,24 +2692,23 @@ The WHERE clause. If `None`, there is no WHERE clause, i.e. all triples are retu
 
 `where`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
 
 ### where Type
 
 unknown\[]
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_pattern
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2746,6 +2717,7 @@ undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_patt
 ## triple\_pattern Type
 
 unknown
+
 # TriplePattern Schema
 
 ```txt
@@ -2770,21 +2742,20 @@ Represents a triple pattern, i.e. a condition on a triple based on its subject, 
 
 ## triple\_pattern
 
-
-
 `triple_pattern`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern-properties-triple_pattern.md "undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_pattern")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern-properties-triple_pattern.md "undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_pattern")
 
 ### triple\_pattern Type
 
 unknown
+
 # SimpleWhereCondition Schema
 
 ```txt
@@ -2803,14 +2774,13 @@ merged type ([SimpleWhereCondition](okp4-cognitarium-querymsg-definitions-simple
 
 one (and only one) of
 
-*   [TriplePattern](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "check type definition")
+* [TriplePattern](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SubjectPattern/oneOf/1/properties/node
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2819,6 +2789,7 @@ undefined#/query/definitions/SubjectPattern/oneOf/1/properties/node
 ## node Type
 
 unknown
+
 # Node Schema
 
 ```txt
@@ -2843,28 +2814,25 @@ A node, i.e. an IRI or a blank node.
 
 ## node
 
-
-
 `node`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node-properties-node.md "undefined#/query/definitions/SubjectPattern/oneOf/1/properties/node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node-properties-node.md "undefined#/query/definitions/SubjectPattern/oneOf/1/properties/node")
 
 ### node Type
 
 unknown
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/SubjectPattern/oneOf/0/properties/variable
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2873,6 +2841,7 @@ undefined#/query/definitions/SubjectPattern/oneOf/0/properties/variable
 ## variable Type
 
 `string`
+
 # Variable Schema
 
 ```txt
@@ -2897,21 +2866,20 @@ A variable.
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable-properties-variable.md "undefined#/query/definitions/SubjectPattern/oneOf/0/properties/variable")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable-properties-variable.md "undefined#/query/definitions/SubjectPattern/oneOf/0/properties/variable")
 
 ### variable Type
 
 `string`
+
 # SubjectPattern Schema
 
 ```txt
@@ -2930,16 +2898,15 @@ merged type ([SubjectPattern](okp4-cognitarium-querymsg-definitions-subjectpatte
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-variable.md "check type definition")
 
-*   [Node](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "check type definition")
+* [Node](okp4-cognitarium-querymsg-definitions-subjectpattern-oneof-node.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/TriplePattern/properties/object/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2948,6 +2915,7 @@ undefined#/query/definitions/TriplePattern/properties/object/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -2966,14 +2934,13 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/TriplePattern/properties/predicate/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -2982,6 +2949,7 @@ undefined#/query/definitions/TriplePattern/properties/predicate/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -3000,14 +2968,13 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/TriplePattern/properties/subject/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3016,6 +2983,7 @@ undefined#/query/definitions/TriplePattern/properties/subject/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -3034,7 +3002,8 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+
 # TriplePattern Schema
 
 ```txt
@@ -3065,13 +3034,13 @@ The object of the triple pattern.
 
 `object`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
 
 ### object Type
 
@@ -3079,7 +3048,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
 
 ## predicate
 
@@ -3087,13 +3056,13 @@ The predicate of the triple pattern.
 
 `predicate`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
 
 ### predicate Type
 
@@ -3101,7 +3070,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
 
 ## subject
 
@@ -3109,13 +3078,13 @@ The subject of the triple pattern.
 
 `subject`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
 
 ### subject Type
 
@@ -3123,14 +3092,13 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions/WhereCondition/oneOf/0/properties/simple
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3139,6 +3107,7 @@ undefined#/query/definitions/WhereCondition/oneOf/0/properties/simple
 ## simple Type
 
 unknown
+
 # Simple Schema
 
 ```txt
@@ -3163,21 +3132,20 @@ Represents a simple condition.
 
 ## simple
 
-
-
 `simple`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple-properties-simple.md "undefined#/query/definitions/WhereCondition/oneOf/0/properties/simple")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple-properties-simple.md "undefined#/query/definitions/WhereCondition/oneOf/0/properties/simple")
 
 ### simple Type
 
 unknown
+
 # WhereCondition Schema
 
 ```txt
@@ -3196,14 +3164,13 @@ merged type ([WhereCondition](okp4-cognitarium-querymsg-definitions-whereconditi
 
 one (and only one) of
 
-*   [Simple](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "check type definition")
+* [Simple](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3212,13 +3179,12 @@ undefined#/query/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/oneOf/1/properties/select/properties/query/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3227,6 +3193,7 @@ undefined#/query/oneOf/1/properties/select/properties/query/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -3245,14 +3212,13 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+
 # Untitled object in okp4-cognitarium Schema
 
 ```txt
 undefined#/query/oneOf/1/properties/select
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3274,13 +3240,13 @@ The query to execute.
 
 `query`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md "undefined#/query/oneOf/1/properties/select/properties/query")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md "undefined#/query/oneOf/1/properties/select/properties/query")
 
 ### query Type
 
@@ -3288,7 +3254,8 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+
 # Select Schema
 
 ```txt
@@ -3313,21 +3280,20 @@ Returns the resources matching the criteria defined by the provided query.
 
 ## select
 
-
-
 `select`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select.md))
+* Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select.md "undefined#/query/oneOf/1/properties/select")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select.md "undefined#/query/oneOf/1/properties/select")
 
 ### select Type
 
 `object` ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select.md))
+
 # Store Schema
 
 ```txt
@@ -3351,6 +3317,7 @@ Returns information about the triple store.
 | Value     | Explanation |
 | :-------- | :---------- |
 | `"store"` |             |
+
 # QueryMsg Schema
 
 ```txt
@@ -3369,9 +3336,9 @@ merged type ([QueryMsg](okp4-cognitarium-querymsg.md))
 
 one (and only one) of
 
-*   [Store](okp4-cognitarium-querymsg-oneof-store.md "check type definition")
+* [Store](okp4-cognitarium-querymsg-oneof-store.md "check type definition")
 
-*   [Select](okp4-cognitarium-querymsg-oneof-select.md "check type definition")
+* [Select](okp4-cognitarium-querymsg-oneof-select.md "check type definition")
 
 # QueryMsg Definitions
 
@@ -3449,13 +3416,13 @@ The namespace associated with the prefix.
 
 `namespace`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
 
 #### namespace Type
 
@@ -3467,13 +3434,13 @@ The prefix.
 
 `prefix`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
 
 #### prefix Type
 
@@ -3511,13 +3478,13 @@ The maximum number of results to return. If `None`, there is no limit. Note: the
 
 `limit`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
 
 #### limit Type
 
@@ -3535,13 +3502,13 @@ The prefixes used in the query.
 
 `prefixes`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
 
 #### prefixes Type
 
@@ -3553,13 +3520,13 @@ The items to select. Note: the number of items to select cannot exceed the maxim
 
 `select`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
 
 #### select Type
 
@@ -3571,13 +3538,13 @@ The WHERE clause. If `None`, there is no WHERE clause, i.e. all triples are retu
 
 `where`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
 
 #### where Type
 
@@ -3625,13 +3592,13 @@ The object of the triple pattern.
 
 `object`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
 
 #### object Type
 
@@ -3639,7 +3606,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
 
 ### predicate
 
@@ -3647,13 +3614,13 @@ The predicate of the triple pattern.
 
 `predicate`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
 
 #### predicate Type
 
@@ -3661,7 +3628,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
 
 ### subject
 
@@ -3669,13 +3636,13 @@ The subject of the triple pattern.
 
 `subject`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
 
 #### subject Type
 
@@ -3683,7 +3650,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
 
 ## Definitions group WhereCondition
 
@@ -3695,13 +3662,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Head/properties/vars/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3710,6 +3676,7 @@ undefined#/responses/select/definitions/Head/properties/vars/items
 ## items Type
 
 `string`
+
 # Untitled array in okp4-cognitarium Schema
 
 ```txt
@@ -3725,6 +3692,7 @@ The variables selected in the query.
 ## vars Type
 
 `string[]`
+
 # Head Schema
 
 ```txt
@@ -3753,24 +3721,23 @@ The variables selected in the query.
 
 `vars`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
 
 ### vars Type
 
 `string[]`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/IRI/oneOf/1/properties/full
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3779,6 +3746,7 @@ undefined#/responses/select/definitions/IRI/oneOf/1/properties/full
 ## full Type
 
 `string`
+
 # Full Schema
 
 ```txt
@@ -3803,28 +3771,25 @@ A full IRI.
 
 ## full
 
-
-
 `full`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full-properties-full.md "undefined#/responses/select/definitions/IRI/oneOf/1/properties/full")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full-properties-full.md "undefined#/responses/select/definitions/IRI/oneOf/1/properties/full")
 
 ### full Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3833,6 +3798,7 @@ undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed
 ## prefixed Type
 
 `string`
+
 # Prefixed Schema
 
 ```txt
@@ -3857,21 +3823,20 @@ An IRI prefixed with a prefix. The prefixed IRI is expanded to a full IRI using 
 
 ## prefixed
 
-
-
 `prefixed`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed")
 
 ### prefixed Type
 
 `string`
+
 # IRI Schema
 
 ```txt
@@ -3890,16 +3855,15 @@ merged type ([IRI](okp4-cognitarium-responses-selectresponse-definitions-iri.md)
 
 one (and only one) of
 
-*   [Prefixed](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed.md "check type definition")
+* [Prefixed](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed.md "check type definition")
 
-*   [Full](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full.md "check type definition")
+* [Full](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-full.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Results/properties/bindings/items/additionalProperties
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3908,13 +3872,12 @@ undefined#/responses/select/definitions/Results/properties/bindings/items/additi
 ## additionalProperties Type
 
 unknown
+
 # Untitled object in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Results/properties/bindings/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -3934,19 +3897,18 @@ undefined#/responses/select/definitions/Results/properties/bindings/items
 
 Additional properties are allowed, as long as they follow this schema:
 
+* is optional
 
+* Type: unknown
 
-*   is optional
+* cannot be null
 
-*   Type: unknown
-
-*   cannot be null
-
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items-additionalproperties.md "undefined#/responses/select/definitions/Results/properties/bindings/items/additionalProperties")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items-additionalproperties.md "undefined#/responses/select/definitions/Results/properties/bindings/items/additionalProperties")
 
 ### additionalProperties Type
 
 unknown
+
 # Untitled array in okp4-cognitarium Schema
 
 ```txt
@@ -3962,6 +3924,7 @@ The bindings of the results.
 ## bindings Type
 
 `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+
 # Results Schema
 
 ```txt
@@ -3990,24 +3953,23 @@ The bindings of the results.
 
 `bindings`
 
-*   is required
+* is required
 
-*   Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+* Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
 
 ### bindings Type
 
 `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/2/properties/type
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4024,6 +3986,7 @@ undefined#/responses/select/definitions/Value/oneOf/2/properties/type
 | Value          | Explanation |
 | :------------- | :---------- |
 | `"blank_node"` |             |
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -4039,6 +4002,7 @@ The identifier of the blank node.
 ## value Type
 
 `string`
+
 # BlankNode Schema
 
 ```txt
@@ -4064,17 +4028,15 @@ Represents a blank node.
 
 ## type
 
-
-
 `type`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/type")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/type")
 
 ### type Type
 
@@ -4094,24 +4056,23 @@ The identifier of the blank node.
 
 `value`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/value")
 
 ### value Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4120,13 +4081,12 @@ undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype/anyOf/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4135,6 +4095,7 @@ undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype/anyOf/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4153,16 +4114,15 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/1/properties/type
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4179,6 +4139,7 @@ undefined#/responses/select/definitions/Value/oneOf/1/properties/type
 | Value       | Explanation |
 | :---------- | :---------- |
 | `"literal"` |             |
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -4194,6 +4155,7 @@ The value of the literal.
 ## value Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4209,6 +4171,7 @@ The language tag of the literal.
 ## xml:lang Type
 
 `string`
+
 # Literal Schema
 
 ```txt
@@ -4240,13 +4203,13 @@ The datatype of the literal.
 
 `datatype`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype")
 
 ### datatype Type
 
@@ -4254,23 +4217,21 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
 
 ## type
 
-
-
 `type`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/type")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/type")
 
 ### type Type
 
@@ -4290,13 +4251,13 @@ The value of the literal.
 
 `value`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/value")
 
 ### value Type
 
@@ -4308,24 +4269,23 @@ The language tag of the literal.
 
 `xml:lang`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-xmllang.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/xml:lang")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-xmllang.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/xml:lang")
 
 ### xml:lang Type
 
 `string`
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/0/properties/type
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4342,13 +4302,12 @@ undefined#/responses/select/definitions/Value/oneOf/0/properties/type
 | Value     | Explanation |
 | :-------- | :---------- |
 | `"u_r_i"` |             |
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions/Value/oneOf/0/properties/value/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4357,6 +4316,7 @@ undefined#/responses/select/definitions/Value/oneOf/0/properties/value/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4375,7 +4335,8 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
+
 # URI Schema
 
 ```txt
@@ -4401,17 +4362,15 @@ Represents an IRI.
 
 ## type
 
-
-
 `type`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/type")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/type")
 
 ### type Type
 
@@ -4431,13 +4390,13 @@ The value of the IRI.
 
 `value`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/value")
 
 ### value Type
 
@@ -4445,14 +4404,13 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
+
 # Value Schema
 
 ```txt
 undefined#/responses/select/definitions/Value
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4464,18 +4422,17 @@ merged type ([Value](okp4-cognitarium-responses-selectresponse-definitions-value
 
 one (and only one) of
 
-*   [URI](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri.md "check type definition")
+* [URI](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri.md "check type definition")
 
-*   [Literal](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal.md "check type definition")
+* [Literal](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal.md "check type definition")
 
-*   [BlankNode](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode.md "check type definition")
+* [BlankNode](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4484,13 +4441,12 @@ undefined#/responses/select/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/properties/head/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4499,6 +4455,7 @@ undefined#/responses/select/properties/head/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4517,14 +4474,13 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/select/properties/results/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4533,6 +4489,7 @@ undefined#/responses/select/properties/results/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4551,7 +4508,8 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-resu
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
+
 # SelectResponse Schema
 
 ```txt
@@ -4581,13 +4539,13 @@ The head of the response, i.e. the set of variables mentioned in the results.
 
 `head`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head.md "undefined#/responses/select/properties/head")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head.md "undefined#/responses/select/properties/head")
 
 ### head Type
 
@@ -4595,7 +4553,7 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
 
 ## results
 
@@ -4603,13 +4561,13 @@ The results of the select query.
 
 `results`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-results.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-results.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results.md "undefined#/responses/select/properties/results")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results.md "undefined#/responses/select/properties/results")
 
 ### results Type
 
@@ -4617,7 +4575,7 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-resu
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
 
 # SelectResponse Definitions
 
@@ -4639,13 +4597,13 @@ The variables selected in the query.
 
 `vars`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
 
 #### vars Type
 
@@ -4680,13 +4638,13 @@ The bindings of the results.
 
 `bindings`
 
-*   is required
+* is required
 
-*   Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+* Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
 
 #### bindings Type
 
@@ -4702,13 +4660,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4717,13 +4674,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size/anyO
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4732,6 +4688,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size/anyO
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4750,16 +4707,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4768,13 +4724,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_by
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4783,6 +4738,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_by
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4801,16 +4757,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4819,13 +4774,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_tr
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4834,6 +4788,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_tr
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4852,16 +4807,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4870,13 +4824,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit/an
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4885,6 +4838,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit/an
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4903,16 +4857,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4921,13 +4874,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4936,6 +4888,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -4954,16 +4907,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4972,13 +4924,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_si
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -4987,6 +4938,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_si
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5005,16 +4957,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5023,13 +4974,12 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count/a
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5038,6 +4988,7 @@ undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count/a
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5056,9 +5007,10 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+
 # StoreLimits Schema
 
 ```txt
@@ -5093,13 +5045,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
 
 ### max\_byte\_size Type
 
@@ -5107,9 +5059,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_byte\_size
 
@@ -5117,13 +5069,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 ### max\_insert\_data\_byte\_size Type
 
@@ -5131,9 +5083,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ## max\_insert\_data\_triple\_count
 
@@ -5141,13 +5093,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 ### max\_insert\_data\_triple\_count Type
 
@@ -5155,9 +5107,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ## max\_query\_limit
 
@@ -5165,13 +5117,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
 
 ### max\_query\_limit Type
 
@@ -5179,9 +5131,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ## max\_query\_variable\_count
 
@@ -5189,13 +5141,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
 
 ### max\_query\_variable\_count Type
 
@@ -5203,9 +5155,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ## max\_triple\_byte\_size
 
@@ -5213,13 +5165,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
 
 ### max\_triple\_byte\_size Type
 
@@ -5227,9 +5179,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ## max\_triple\_count
 
@@ -5237,13 +5189,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
 
 ### max\_triple\_count Type
 
@@ -5251,16 +5203,15 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreStat/properties/byte_size/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5269,6 +5220,7 @@ undefined#/responses/store/definitions/StoreStat/properties/byte_size/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5287,14 +5239,13 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreStat/properties/namespace_count/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5303,6 +5254,7 @@ undefined#/responses/store/definitions/StoreStat/properties/namespace_count/allO
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5321,14 +5273,13 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions/StoreStat/properties/triple_count/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5337,6 +5288,7 @@ undefined#/responses/store/definitions/StoreStat/properties/triple_count/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5355,7 +5307,8 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+
 # StoreStat Schema
 
 ```txt
@@ -5386,13 +5339,13 @@ The total triple size in the store, in bytes.
 
 `byte_size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
 
 ### byte\_size Type
 
@@ -5400,7 +5353,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
 
 ## namespace\_count
 
@@ -5408,13 +5361,13 @@ The total number of IRI namespace present in the store.
 
 `namespace_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
 
 ### namespace\_count Type
 
@@ -5422,7 +5375,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
 
 ## triple\_count
 
@@ -5430,13 +5383,13 @@ The total number of triple present in the store.
 
 `triple_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
 
 ### triple\_count Type
 
@@ -5444,7 +5397,8 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -5471,13 +5425,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5486,13 +5439,12 @@ undefined#/responses/store/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/properties/limits/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5501,6 +5453,7 @@ undefined#/responses/store/properties/limits/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5519,7 +5472,8 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limit
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
+
 # Untitled string in okp4-cognitarium Schema
 
 ```txt
@@ -5535,13 +5489,12 @@ The store owner.
 ## owner Type
 
 `string`
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses/store/properties/stat/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5550,6 +5503,7 @@ undefined#/responses/store/properties/stat/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
@@ -5568,7 +5522,8 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
+
 # StoreResponse Schema
 
 ```txt
@@ -5599,13 +5554,13 @@ The store limits.
 
 `limits`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limits.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limits.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits.md "undefined#/responses/store/properties/limits")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits.md "undefined#/responses/store/properties/limits")
 
 ### limits Type
 
@@ -5613,7 +5568,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-limit
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-limits-allof-0.md "check type definition")
 
 ## owner
 
@@ -5621,13 +5576,13 @@ The store owner.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-owner.md "undefined#/responses/store/properties/owner")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-owner.md "undefined#/responses/store/properties/owner")
 
 ### owner Type
 
@@ -5639,13 +5594,13 @@ The store current usage.
 
 `stat`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat.md "undefined#/responses/store/properties/stat")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat.md "undefined#/responses/store/properties/stat")
 
 ### stat Type
 
@@ -5653,7 +5608,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-properties-stat.
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-properties-stat-allof-0.md "check type definition")
 
 # StoreResponse Definitions
 
@@ -5681,13 +5636,13 @@ The maximum number of bytes the store can contains. The size of a triple is coun
 
 `max_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_byte_size")
 
 #### max\_byte\_size Type
 
@@ -5695,9 +5650,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_byte\_size
 
@@ -5705,13 +5660,13 @@ The maximum number of bytes an insert data query can contains. If `None`, there 
 
 `max_insert_data_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_byte_size")
 
 #### max\_insert\_data\_byte\_size Type
 
@@ -5719,9 +5674,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-anyof-1.md "check type definition")
 
 ### max\_insert\_data\_triple\_count
 
@@ -5729,13 +5684,13 @@ The maximum number of triples an insert data query can contains (after parsing).
 
 `max_insert_data_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_insert_data_triple_count")
 
 #### max\_insert\_data\_triple\_count Type
 
@@ -5743,9 +5698,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_triple_count-anyof-1.md "check type definition")
 
 ### max\_query\_limit
 
@@ -5753,13 +5708,13 @@ The maximum limit of a query, i.e. the maximum number of triples returned by a s
 
 `max_query_limit`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_limit")
 
 #### max\_query\_limit Type
 
@@ -5767,9 +5722,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_limit-anyof-1.md "check type definition")
 
 ### max\_query\_variable\_count
 
@@ -5777,13 +5732,13 @@ The maximum number of variables a query can select. If `None`, there is no limit
 
 `max_query_variable_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_query_variable_count")
 
 #### max\_query\_variable\_count Type
 
@@ -5791,9 +5746,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_query_variable_count-anyof-1.md "check type definition")
 
 ### max\_triple\_byte\_size
 
@@ -5801,13 +5756,13 @@ The maximum number of bytes the store can contains for a single triple. The size
 
 `max_triple_byte_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_byte_size")
 
 #### max\_triple\_byte\_size Type
 
@@ -5815,9 +5770,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_byte_size-anyof-1.md "check type definition")
 
 ### max\_triple\_count
 
@@ -5825,13 +5780,13 @@ The maximum number of triples the store can contains. If `None`, there is no lim
 
 `max_triple_count`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count.md "undefined#/responses/store/definitions/StoreLimits/properties/max_triple_count")
 
 #### max\_triple\_count Type
 
@@ -5839,9 +5794,9 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
 
 ## Definitions group StoreStat
 
@@ -5863,13 +5818,13 @@ The total triple size in the store, in bytes.
 
 `byte_size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size.md "undefined#/responses/store/definitions/StoreStat/properties/byte_size")
 
 #### byte\_size Type
 
@@ -5877,7 +5832,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-byte_size-allof-0.md "check type definition")
 
 ### namespace\_count
 
@@ -5885,13 +5840,13 @@ The total number of IRI namespace present in the store.
 
 `namespace_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count.md "undefined#/responses/store/definitions/StoreStat/properties/namespace_count")
 
 #### namespace\_count Type
 
@@ -5899,7 +5854,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-namespace_count-allof-0.md "check type definition")
 
 ### triple\_count
 
@@ -5907,13 +5862,13 @@ The total number of triple present in the store.
 
 `triple_count`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count.md "undefined#/responses/store/definitions/StoreStat/properties/triple_count")
 
 #### triple\_count Type
 
@@ -5921,7 +5876,7 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storestat-properties-triple_count-allof-0.md "check type definition")
 
 ## Definitions group Uint128
 
@@ -5933,13 +5888,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled undefined type in okp4-cognitarium Schema
 
 ```txt
 undefined#/responses
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -5948,6 +5902,7 @@ undefined#/responses
 ## responses Type
 
 unknown
+
 # okp4-cognitarium Schema
 
 ```txt
@@ -5967,6 +5922,7 @@ The `okp4-cognitarium` smart contract enables the storage of RDF graphs triples 
 ## okp4-cognitarium Type
 
 unknown ([okp4-cognitarium](okp4-cognitarium.md))
+
 # BreakStone Schema
 
 ```txt
@@ -5990,6 +5946,7 @@ Break the stone making this contract unusable, by clearing all the related resou
 | Value           | Explanation |
 | :-------------- | :---------- |
 | `"break_stone"` |             |
+
 # ExecuteMsg Schema
 
 ```txt
@@ -6008,7 +5965,8 @@ merged type ([ExecuteMsg](okp4-law-stone-executemsg.md))
 
 one (and only one) of
 
-*   [BreakStone](okp4-law-stone-executemsg-oneof-breakstone.md "check type definition")
+* [BreakStone](okp4-law-stone-executemsg-oneof-breakstone.md "check type definition")
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
@@ -6026,13 +5984,12 @@ This is only needed as serde-json-{core,wasm} has a horrible encoding for <code>
 ## Binary Type
 
 `string`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/instantiate/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6041,13 +5998,12 @@ undefined#/instantiate/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/instantiate/properties/program/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6056,6 +6012,7 @@ undefined#/instantiate/properties/program/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
@@ -6074,7 +6031,8 @@ merged type ([Details](okp4-law-stone-instantiatemsg-properties-program.md))
 
 all of
 
-*   [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
@@ -6090,6 +6048,7 @@ The `okp4-objectarium` contract address on which to store the law program.
 ## storage\_address Type
 
 `string`
+
 # InstantiateMsg Schema
 
 ```txt
@@ -6119,13 +6078,13 @@ The Prolog program carrying law rules and facts.
 
 `program`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-law-stone-instantiatemsg-properties-program.md))
+* Type: merged type ([Details](okp4-law-stone-instantiatemsg-properties-program.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
+* defined in: [okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program.md "undefined#/instantiate/properties/program")
 
 ### program Type
 
@@ -6133,7 +6092,7 @@ merged type ([Details](okp4-law-stone-instantiatemsg-properties-program.md))
 
 all of
 
-*   [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
 
 ## storage\_address
 
@@ -6141,13 +6100,13 @@ The `okp4-objectarium` contract address on which to store the law program.
 
 `storage_address`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-instantiatemsg-properties-storage_address.md "undefined#/instantiate/properties/storage_address")
+* defined in: [okp4-law-stone](okp4-law-stone-instantiatemsg-properties-storage_address.md "undefined#/instantiate/properties/storage_address")
 
 ### storage\_address Type
 
@@ -6165,13 +6124,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
 undefined#/query/oneOf/0/properties/ask/properties/query
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6180,13 +6138,12 @@ undefined#/query/oneOf/0/properties/ask/properties/query
 ## query Type
 
 `string`
+
 # Untitled object in okp4-law-stone Schema
 
 ```txt
 undefined#/query/oneOf/0/properties/ask
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6204,21 +6161,20 @@ undefined#/query/oneOf/0/properties/ask
 
 ## query
 
-
-
 `query`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask-properties-query.md "undefined#/query/oneOf/0/properties/ask/properties/query")
+* defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask-properties-query.md "undefined#/query/oneOf/0/properties/ask/properties/query")
 
 ### query Type
 
 `string`
+
 # Ask Schema
 
 ```txt
@@ -6243,21 +6199,20 @@ If not broken, ask the logic module the provided query with the law program load
 
 ## ask
 
-
-
 `ask`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-law-stone-querymsg-oneof-ask-properties-ask.md))
+* Type: `object` ([Details](okp4-law-stone-querymsg-oneof-ask-properties-ask.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
+* defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
 
 ### ask Type
 
 `object` ([Details](okp4-law-stone-querymsg-oneof-ask-properties-ask.md))
+
 # Program Schema
 
 ```txt
@@ -6281,6 +6236,7 @@ If not broken, returns the law program location information.
 | Value       | Explanation |
 | :---------- | :---------- |
 | `"program"` |             |
+
 # QueryMsg Schema
 
 ```txt
@@ -6299,16 +6255,15 @@ merged type ([QueryMsg](okp4-law-stone-querymsg.md))
 
 one (and only one) of
 
-*   [Ask](okp4-law-stone-querymsg-oneof-ask.md "check type definition")
+* [Ask](okp4-law-stone-querymsg-oneof-ask.md "check type definition")
 
-*   [Program](okp4-law-stone-querymsg-oneof-program.md "check type definition")
+* [Program](okp4-law-stone-querymsg-oneof-program.md "check type definition")
+
 # Untitled boolean in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/has_more
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6317,13 +6272,12 @@ undefined#/responses/ask/definitions/Answer/properties/has_more
 ## has\_more Type
 
 `boolean`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/results/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6332,13 +6286,12 @@ undefined#/responses/ask/definitions/Answer/properties/results/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/results
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6347,13 +6300,12 @@ undefined#/responses/ask/definitions/Answer/properties/results
 ## results Type
 
 unknown\[]
+
 # Untitled boolean in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/success
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6362,13 +6314,12 @@ undefined#/responses/ask/definitions/Answer/properties/success
 ## success Type
 
 `boolean`
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/variables/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6377,13 +6328,12 @@ undefined#/responses/ask/definitions/Answer/properties/variables/items
 ## items Type
 
 `string`
+
 # Untitled array in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer/properties/variables
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6392,13 +6342,12 @@ undefined#/responses/ask/definitions/Answer/properties/variables
 ## variables Type
 
 `string[]`
+
 # Untitled object in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Answer
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6419,17 +6368,15 @@ undefined#/responses/ask/definitions/Answer
 
 ## has\_more
 
-
-
 `has_more`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
 
 ### has\_more Type
 
@@ -6437,17 +6384,15 @@ undefined#/responses/ask/definitions/Answer
 
 ## results
 
-
-
 `results`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
 
 ### results Type
 
@@ -6455,17 +6400,15 @@ unknown\[]
 
 ## success
 
-
-
 `success`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
 
 ### success Type
 
@@ -6473,28 +6416,25 @@ unknown\[]
 
 ## variables
 
-
-
 `variables`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
 
 ### variables Type
 
 `string[]`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Result/properties/substitutions/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6503,13 +6443,12 @@ undefined#/responses/ask/definitions/Result/properties/substitutions/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Result/properties/substitutions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6518,13 +6457,12 @@ undefined#/responses/ask/definitions/Result/properties/substitutions
 ## substitutions Type
 
 unknown\[]
+
 # Untitled object in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Result
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6542,28 +6480,25 @@ undefined#/responses/ask/definitions/Result
 
 ## substitutions
 
-
-
 `substitutions`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
 
 ### substitutions Type
 
 unknown\[]
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Substitution/properties/term
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6572,13 +6507,12 @@ undefined#/responses/ask/definitions/Substitution/properties/term
 ## term Type
 
 unknown
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Substitution/properties/variable
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6587,13 +6521,12 @@ undefined#/responses/ask/definitions/Substitution/properties/variable
 ## variable Type
 
 `string`
+
 # Untitled object in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Substitution
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6612,17 +6545,15 @@ undefined#/responses/ask/definitions/Substitution
 
 ## term
 
-
-
 `term`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
 
 ### term Type
 
@@ -6630,28 +6561,25 @@ unknown
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
 
 ### variable Type
 
 `string`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Term/properties/arguments/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6660,13 +6588,12 @@ undefined#/responses/ask/definitions/Term/properties/arguments/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Term/properties/arguments
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6675,13 +6602,12 @@ undefined#/responses/ask/definitions/Term/properties/arguments
 ## arguments Type
 
 unknown\[]
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Term/properties/name
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6690,13 +6616,12 @@ undefined#/responses/ask/definitions/Term/properties/name
 ## name Type
 
 `string`
+
 # Untitled object in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions/Term
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6715,17 +6640,15 @@ undefined#/responses/ask/definitions/Term
 
 ## arguments
 
-
-
 `arguments`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
 
 ### arguments Type
 
@@ -6733,28 +6656,25 @@ unknown\[]
 
 ## name
 
-
-
 `name`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
 
 ### name Type
 
 `string`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6763,13 +6683,12 @@ undefined#/responses/ask/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/properties/answer/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6778,13 +6697,12 @@ undefined#/responses/ask/properties/answer/anyOf/0
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/properties/answer/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6793,13 +6711,12 @@ undefined#/responses/ask/properties/answer/anyOf/1
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/properties/answer
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6811,16 +6728,15 @@ merged type ([Details](okp4-law-stone-responses-askresponse-properties-answer.md
 
 any of
 
-*   [Untitled undefined type in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
+* [Untitled null in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
+
 # Untitled integer in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/properties/gas_used
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6835,13 +6751,12 @@ undefined#/responses/ask/properties/gas_used
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint64`
+
 # Untitled integer in okp4-law-stone Schema
 
 ```txt
 undefined#/responses/ask/properties/height
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6856,13 +6771,12 @@ undefined#/responses/ask/properties/height
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint64`
+
 # AskResponse Schema
 
 ```txt
 undefined#/responses/ask
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -6882,17 +6796,15 @@ undefined#/responses/ask
 
 ## answer
 
-
-
 `answer`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-law-stone-responses-askresponse-properties-answer.md))
+* Type: merged type ([Details](okp4-law-stone-responses-askresponse-properties-answer.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer.md "undefined#/responses/ask/properties/answer")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer.md "undefined#/responses/ask/properties/answer")
 
 ### answer Type
 
@@ -6900,23 +6812,21 @@ merged type ([Details](okp4-law-stone-responses-askresponse-properties-answer.md
 
 any of
 
-*   [Untitled undefined type in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
+* [Untitled null in okp4-law-stone](okp4-law-stone-responses-askresponse-properties-answer-anyof-1.md "check type definition")
 
 ## gas\_used
 
-
-
 `gas_used`
 
-*   is required
+* is required
 
-*   Type: `integer`
+* Type: `integer`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-gas_used.md "undefined#/responses/ask/properties/gas_used")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-gas_used.md "undefined#/responses/ask/properties/gas_used")
 
 ### gas\_used Type
 
@@ -6930,17 +6840,15 @@ any of
 
 ## height
 
-
-
 `height`
 
-*   is required
+* is required
 
-*   Type: `integer`
+* Type: `integer`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-height.md "undefined#/responses/ask/properties/height")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-properties-height.md "undefined#/responses/ask/properties/height")
 
 ### height Type
 
@@ -6971,17 +6879,15 @@ Reference this group by using
 
 ### has\_more
 
-
-
 `has_more`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-has_more.md "undefined#/responses/ask/definitions/Answer/properties/has_more")
 
 #### has\_more Type
 
@@ -6989,17 +6895,15 @@ Reference this group by using
 
 ### results
 
-
-
 `results`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-results.md "undefined#/responses/ask/definitions/Answer/properties/results")
 
 #### results Type
 
@@ -7007,17 +6911,15 @@ unknown\[]
 
 ### success
 
-
-
 `success`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-success.md "undefined#/responses/ask/definitions/Answer/properties/success")
 
 #### success Type
 
@@ -7025,17 +6927,15 @@ unknown\[]
 
 ### variables
 
-
-
 `variables`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-answer-properties-variables.md "undefined#/responses/ask/definitions/Answer/properties/variables")
 
 #### variables Type
 
@@ -7055,17 +6955,15 @@ Reference this group by using
 
 ### substitutions
 
-
-
 `substitutions`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
 
 #### substitutions Type
 
@@ -7086,17 +6984,15 @@ Reference this group by using
 
 ### term
 
-
-
 `term`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-term.md "undefined#/responses/ask/definitions/Substitution/properties/term")
 
 #### term Type
 
@@ -7104,17 +7000,15 @@ unknown
 
 ### variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-substitution-properties-variable.md "undefined#/responses/ask/definitions/Substitution/properties/variable")
 
 #### variable Type
 
@@ -7135,17 +7029,15 @@ Reference this group by using
 
 ### arguments
 
-
-
 `arguments`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-arguments.md "undefined#/responses/ask/definitions/Term/properties/arguments")
 
 #### arguments Type
 
@@ -7153,21 +7045,20 @@ unknown\[]
 
 ### name
 
-
-
 `name`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-term-properties-name.md "undefined#/responses/ask/definitions/Term/properties/name")
 
 #### name Type
 
 `string`
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
@@ -7183,6 +7074,7 @@ The program object id in the `okp4-objectarium` contract.
 ## object\_id Type
 
 `string`
+
 # Untitled string in okp4-law-stone Schema
 
 ```txt
@@ -7198,6 +7090,7 @@ The `okp4-objectarium` contract address on which the law program is stored.
 ## storage\_address Type
 
 `string`
+
 # ProgramResponse Schema
 
 ```txt
@@ -7227,13 +7120,13 @@ The program object id in the `okp4-objectarium` contract.
 
 `object_id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-programresponse-properties-object_id.md "undefined#/responses/program/properties/object_id")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-programresponse-properties-object_id.md "undefined#/responses/program/properties/object_id")
 
 ### object\_id Type
 
@@ -7245,24 +7138,23 @@ The `okp4-objectarium` contract address on which the law program is stored.
 
 `storage_address`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-programresponse-properties-storage_address.md "undefined#/responses/program/properties/storage_address")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-programresponse-properties-storage_address.md "undefined#/responses/program/properties/storage_address")
 
 ### storage\_address Type
 
 `string`
+
 # Untitled undefined type in okp4-law-stone Schema
 
 ```txt
 undefined#/responses
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
@@ -7271,6 +7163,7 @@ undefined#/responses
 ## responses Type
 
 unknown
+
 # okp4-law-stone Schema
 
 ```txt
@@ -7300,6 +7193,7 @@ To be able to free the underlying resources (i.e. objects in `okp4-objectarium`)
 ## okp4-law-stone Type
 
 unknown ([okp4-law-stone](okp4-law-stone.md))
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -7317,13 +7211,12 @@ This is only needed as serde-json-{core,wasm} has a horrible encoding for <code>
 ## Binary Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7332,13 +7225,12 @@ undefined#/execute/definitions
 ## definitions Type
 
 unknown
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/1/properties/forget_object/properties/id
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7347,13 +7239,12 @@ undefined#/execute/oneOf/1/properties/forget_object/properties/id
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/1/properties/forget_object
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7371,21 +7262,20 @@ undefined#/execute/oneOf/1/properties/forget_object
 
 ## id
 
-
-
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object-properties-id.md "undefined#/execute/oneOf/1/properties/forget_object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object-properties-id.md "undefined#/execute/oneOf/1/properties/forget_object/properties/id")
 
 ### id Type
 
 `string`
+
 # ForgetObject Schema
 
 ```txt
@@ -7410,28 +7300,25 @@ ForgetObject first unpin the object from the bucket for the considered sender, t
 
 ## forget\_object
 
-
-
 `forget_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
 
 ### forget\_object Type
 
 `object` ([Details](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md))
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/2/properties/pin_object/properties/id
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7440,13 +7327,12 @@ undefined#/execute/oneOf/2/properties/pin_object/properties/id
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/2/properties/pin_object
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7464,21 +7350,20 @@ undefined#/execute/oneOf/2/properties/pin_object
 
 ## id
 
-
-
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object-properties-id.md "undefined#/execute/oneOf/2/properties/pin_object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object-properties-id.md "undefined#/execute/oneOf/2/properties/pin_object/properties/id")
 
 ### id Type
 
 `string`
+
 # PinObject Schema
 
 ```txt
@@ -7503,28 +7388,25 @@ PinObject pins the object in the bucket for the considered sender. If the object
 
 ## pin\_object
 
-
-
 `pin_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md "undefined#/execute/oneOf/2/properties/pin_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md "undefined#/execute/oneOf/2/properties/pin_object")
 
 ### pin\_object Type
 
 `object` ([Details](okp4-objectarium-executemsg-oneof-pinobject-properties-pin_object.md))
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/0/properties/store_object/properties/data
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7533,13 +7415,12 @@ undefined#/execute/oneOf/0/properties/store_object/properties/data
 ## data Type
 
 unknown
+
 # Untitled boolean in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/0/properties/store_object/properties/pin
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7548,13 +7429,12 @@ undefined#/execute/oneOf/0/properties/store_object/properties/pin
 ## pin Type
 
 `boolean`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/0/properties/store_object
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7573,17 +7453,15 @@ undefined#/execute/oneOf/0/properties/store_object
 
 ## data
 
-
-
 `data`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data.md "undefined#/execute/oneOf/0/properties/store_object/properties/data")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data.md "undefined#/execute/oneOf/0/properties/store_object/properties/data")
 
 ### data Type
 
@@ -7591,21 +7469,20 @@ unknown
 
 ## pin
 
-
-
 `pin`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-pin.md "undefined#/execute/oneOf/0/properties/store_object/properties/pin")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-pin.md "undefined#/execute/oneOf/0/properties/store_object/properties/pin")
 
 ### pin Type
 
 `boolean`
+
 # StoreObject Schema
 
 ```txt
@@ -7630,28 +7507,25 @@ StoreObject store an object to the bucket and make the sender the owner of the o
 
 ## store\_object
 
-
-
 `store_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md "undefined#/execute/oneOf/0/properties/store_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md "undefined#/execute/oneOf/0/properties/store_object")
 
 ### store\_object Type
 
 `object` ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md))
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/3/properties/unpin_object/properties/id
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7660,13 +7534,12 @@ undefined#/execute/oneOf/3/properties/unpin_object/properties/id
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/execute/oneOf/3/properties/unpin_object
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7684,21 +7557,20 @@ undefined#/execute/oneOf/3/properties/unpin_object
 
 ## id
 
-
-
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object-properties-id.md "undefined#/execute/oneOf/3/properties/unpin_object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object-properties-id.md "undefined#/execute/oneOf/3/properties/unpin_object/properties/id")
 
 ### id Type
 
 `string`
+
 # UnpinObject Schema
 
 ```txt
@@ -7723,21 +7595,20 @@ UnpinObject unpins the object in the bucket for the considered sender. If the ob
 
 ## unpin\_object
 
-
-
 `unpin_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md "undefined#/execute/oneOf/3/properties/unpin_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md "undefined#/execute/oneOf/3/properties/unpin_object")
 
 ### unpin\_object Type
 
 `object` ([Details](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md))
+
 # ExecuteMsg Schema
 
 ```txt
@@ -7756,13 +7627,13 @@ merged type ([ExecuteMsg](okp4-objectarium-executemsg.md))
 
 one (and only one) of
 
-*   [StoreObject](okp4-objectarium-executemsg-oneof-storeobject.md "check type definition")
+* [StoreObject](okp4-objectarium-executemsg-oneof-storeobject.md "check type definition")
 
-*   [ForgetObject](okp4-objectarium-executemsg-oneof-forgetobject.md "check type definition")
+* [ForgetObject](okp4-objectarium-executemsg-oneof-forgetobject.md "check type definition")
 
-*   [PinObject](okp4-objectarium-executemsg-oneof-pinobject.md "check type definition")
+* [PinObject](okp4-objectarium-executemsg-oneof-pinobject.md "check type definition")
 
-*   [UnpinObject](okp4-objectarium-executemsg-oneof-unpinobject.md "check type definition")
+* [UnpinObject](okp4-objectarium-executemsg-oneof-unpinobject.md "check type definition")
 
 # ExecuteMsg Definitions
 
@@ -7776,13 +7647,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7791,13 +7661,12 @@ undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm/anyOf/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7806,6 +7675,7 @@ undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm/anyOf/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -7826,9 +7696,10 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -7861,13 +7732,13 @@ The default algorithm is Sha256 .
 
 `hash_algorithm`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm")
 
 ### hash\_algorithm Type
 
@@ -7875,16 +7746,15 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7893,13 +7763,12 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins/anyOf
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7908,6 +7777,7 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins/anyOf
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -7926,16 +7796,15 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_object_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7944,13 +7813,12 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_object_size/anyOf
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_object_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7959,6 +7827,7 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_object_size/anyOf
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -7977,16 +7846,15 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_objects/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -7995,13 +7863,12 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_objects/anyOf/0
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_objects/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8010,6 +7877,7 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_objects/anyOf/1
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8028,16 +7896,15 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_total_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8046,13 +7913,12 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_total_size/anyOf/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions/BucketLimits/properties/max_total_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8061,6 +7927,7 @@ undefined#/instantiate/definitions/BucketLimits/properties/max_total_size/anyOf/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8079,9 +7946,10 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -8115,13 +7983,13 @@ The maximum number of pins in the bucket for an object.
 
 `max_object_pins`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins")
 
 ### max\_object\_pins Type
 
@@ -8129,9 +7997,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
 
 ## max\_object\_size
 
@@ -8139,13 +8007,13 @@ The maximum size of the objects in the bucket.
 
 `max_object_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_size")
 
 ### max\_object\_size Type
 
@@ -8153,9 +8021,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
 
 ## max\_objects
 
@@ -8163,13 +8031,13 @@ The maximum number of objects in the bucket.
 
 `max_objects`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md "undefined#/instantiate/definitions/BucketLimits/properties/max_objects")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md "undefined#/instantiate/definitions/BucketLimits/properties/max_objects")
 
 ### max\_objects Type
 
@@ -8177,9 +8045,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
 
 ## max\_total\_size
 
@@ -8187,13 +8055,13 @@ The maximum total size of the objects in the bucket.
 
 `max_total_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_total_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_total_size")
 
 ### max\_total\_size Type
 
@@ -8201,9 +8069,10 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+
 # MD5 Schema
 
 ```txt
@@ -8231,6 +8100,7 @@ See [the MD5 Wikipedia page](https://en.wikipedia.org/wiki/MD5) for more informa
 | Value    | Explanation |
 | :------- | :---------- |
 | `"m_d5"` |             |
+
 # SHA1 Schema
 
 ```txt
@@ -8258,6 +8128,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha224"` |             |
+
 # SHA256 Schema
 
 ```txt
@@ -8285,6 +8156,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha256"` |             |
+
 # SHA384 Schema
 
 ```txt
@@ -8312,6 +8184,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha384"` |             |
+
 # SHA512 Schema
 
 ```txt
@@ -8339,6 +8212,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha512"` |             |
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8357,15 +8231,16 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-hashalgorithm
 
 one (and only one) of
 
-*   [MD5](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-md5.md "check type definition")
+* [MD5](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-md5.md "check type definition")
 
-*   [SHA1](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha1.md "check type definition")
+* [SHA1](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha1.md "check type definition")
 
-*   [SHA256](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha256.md "check type definition")
+* [SHA256](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha256.md "check type definition")
 
-*   [SHA384](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha384.md "check type definition")
+* [SHA384](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha384.md "check type definition")
 
-*   [SHA512](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha512.md "check type definition")
+* [SHA512](okp4-objectarium-instantiatemsg-definitions-hashalgorithm-oneof-sha512.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8389,6 +8264,7 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8412,6 +8288,7 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -8445,13 +8322,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
 
 ### default\_page\_size Type
 
@@ -8471,13 +8348,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
 
 ### max\_page\_size Type
 
@@ -8488,6 +8365,7 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -8514,13 +8392,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8529,6 +8406,7 @@ undefined#/instantiate/definitions
 ## definitions Type
 
 unknown
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -8544,13 +8422,12 @@ The name of the bucket. The name could not be empty or contains whitespaces. If 
 ## bucket Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/properties/config/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8559,6 +8436,7 @@ undefined#/instantiate/properties/config/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8577,14 +8455,13 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-config.md))
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/properties/limits/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8593,6 +8470,7 @@ undefined#/instantiate/properties/limits/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8611,14 +8489,13 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-limits.md))
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/instantiate/properties/pagination/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -8627,6 +8504,7 @@ undefined#/instantiate/properties/pagination/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -8645,7 +8523,8 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-pagination.md)
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination-allof-0.md "check type definition")
+
 # InstantiateMsg Schema
 
 ```txt
@@ -8677,13 +8556,13 @@ The name of the bucket. The name could not be empty or contains whitespaces. If 
 
 `bucket`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-bucket.md "undefined#/instantiate/properties/bucket")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-bucket.md "undefined#/instantiate/properties/bucket")
 
 ### bucket Type
 
@@ -8695,13 +8574,13 @@ The configuration of the bucket.
 
 `config`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-config.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-config.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config.md "undefined#/instantiate/properties/config")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config.md "undefined#/instantiate/properties/config")
 
 ### config Type
 
@@ -8709,7 +8588,7 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-config.md))
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-config-allof-0.md "check type definition")
 
 ## limits
 
@@ -8717,13 +8596,13 @@ The limits of the bucket.
 
 `limits`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-limits.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-limits.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits.md "undefined#/instantiate/properties/limits")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits.md "undefined#/instantiate/properties/limits")
 
 ### limits Type
 
@@ -8731,7 +8610,7 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-limits.md))
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-limits-allof-0.md "check type definition")
 
 ## pagination
 
@@ -8739,13 +8618,13 @@ The configuration for paginated query.
 
 `pagination`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-pagination.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-properties-pagination.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination.md "undefined#/instantiate/properties/pagination")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination.md "undefined#/instantiate/properties/pagination")
 
 ### pagination Type
 
@@ -8753,7 +8632,7 @@ merged type ([Details](okp4-objectarium-instantiatemsg-properties-pagination.md)
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-properties-pagination-allof-0.md "check type definition")
 
 # InstantiateMsg Definitions
 
@@ -8777,13 +8656,13 @@ The default algorithm is Sha256 .
 
 `hash_algorithm`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/instantiate/definitions/BucketConfig/properties/hash_algorithm")
 
 #### hash\_algorithm Type
 
@@ -8791,9 +8670,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
 
 ## Definitions group BucketLimits
 
@@ -8816,13 +8695,13 @@ The maximum number of pins in the bucket for an object.
 
 `max_object_pins`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_pins")
 
 #### max\_object\_pins Type
 
@@ -8830,9 +8709,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
 
 ### max\_object\_size
 
@@ -8840,13 +8719,13 @@ The maximum size of the objects in the bucket.
 
 `max_object_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_object_size")
 
 #### max\_object\_size Type
 
@@ -8854,9 +8733,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
 
 ### max\_objects
 
@@ -8864,13 +8743,13 @@ The maximum number of objects in the bucket.
 
 `max_objects`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md "undefined#/instantiate/definitions/BucketLimits/properties/max_objects")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects.md "undefined#/instantiate/definitions/BucketLimits/properties/max_objects")
 
 #### max\_objects Type
 
@@ -8878,9 +8757,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
 
 ### max\_total\_size
 
@@ -8888,13 +8767,13 @@ The maximum total size of the objects in the bucket.
 
 `max_total_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md))
+* Type: merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_total_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size.md "undefined#/instantiate/definitions/BucketLimits/properties/max_total_size")
 
 #### max\_total\_size Type
 
@@ -8902,9 +8781,9 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
 
 ## Definitions group HashAlgorithm
 
@@ -8938,13 +8817,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
 
 #### default\_page\_size Type
 
@@ -8964,13 +8843,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
 
 #### max\_page\_size Type
 
@@ -8992,13 +8871,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/query/oneOf/0/properties/bucket
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9007,6 +8885,7 @@ undefined#/query/oneOf/0/properties/bucket
 ## bucket Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md))
+
 # Bucket Schema
 
 ```txt
@@ -9031,21 +8910,20 @@ Bucket returns the bucket information.
 
 ## bucket
 
-
-
 `bucket`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md "undefined#/query/oneOf/0/properties/bucket")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md "undefined#/query/oneOf/0/properties/bucket")
 
 ### bucket Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-bucket-properties-bucket.md))
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -9061,13 +8939,12 @@ The id of the object to get.
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/query/oneOf/1/properties/object
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9089,17 +8966,18 @@ The id of the object to get.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object-properties-id.md "undefined#/query/oneOf/1/properties/object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object-properties-id.md "undefined#/query/oneOf/1/properties/object/properties/id")
 
 ### id Type
 
 `string`
+
 # Object Schema
 
 ```txt
@@ -9124,21 +9002,20 @@ Object returns the object information with the given id.
 
 ## object
 
-
-
 `object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-object-properties-object.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-object-properties-object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-object-properties-object.md "undefined#/query/oneOf/1/properties/object")
 
 ### object Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-object-properties-object.md))
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -9154,13 +9031,12 @@ The id of the object to get.
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/query/oneOf/3/properties/object_data
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9182,17 +9058,18 @@ The id of the object to get.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data-properties-id.md "undefined#/query/oneOf/3/properties/object_data/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data-properties-id.md "undefined#/query/oneOf/3/properties/object_data/properties/id")
 
 ### id Type
 
 `string`
+
 # ObjectData Schema
 
 ```txt
@@ -9217,21 +9094,20 @@ ObjectData returns the content of the object with the given id.
 
 ## object\_data
 
-
-
 `object_data`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
 
 ### object\_data Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md))
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9247,6 +9123,7 @@ The point in the sequence to start returning pins.
 ## after Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9268,6 +9145,7 @@ The number of pins to return.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -9283,13 +9161,12 @@ The id of the object to get the pins for.
 ## id Type
 
 `string`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/query/oneOf/4/properties/object_pins
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9313,13 +9190,13 @@ The point in the sequence to start returning pins.
 
 `after`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-after.md "undefined#/query/oneOf/4/properties/object_pins/properties/after")
 
 ### after Type
 
@@ -9331,13 +9208,13 @@ The number of pins to return.
 
 `first`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-first.md "undefined#/query/oneOf/4/properties/object_pins/properties/first")
 
 ### first Type
 
@@ -9355,17 +9232,18 @@ The id of the object to get the pins for.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins-properties-id.md "undefined#/query/oneOf/4/properties/object_pins/properties/id")
 
 ### id Type
 
 `string`
+
 # ObjectPins Schema
 
 ```txt
@@ -9390,21 +9268,20 @@ ObjectPins returns the list of addresses that pinned the object with the given i
 
 ## object\_pins
 
-
-
 `object_pins`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md "undefined#/query/oneOf/4/properties/object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md "undefined#/query/oneOf/4/properties/object_pins")
 
 ### object\_pins Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md))
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9420,6 +9297,7 @@ The owner of the objects to get.
 ## address Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9435,6 +9313,7 @@ The point in the sequence to start returning objects.
 ## after Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9456,13 +9335,12 @@ The number of objects to return.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
 undefined#/query/oneOf/2/properties/objects
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9486,13 +9364,13 @@ The owner of the objects to get.
 
 `address`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
 
 ### address Type
 
@@ -9504,13 +9382,13 @@ The point in the sequence to start returning objects.
 
 `after`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
 
 ### after Type
 
@@ -9522,13 +9400,13 @@ The number of objects to return.
 
 `first`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
 
 ### first Type
 
@@ -9539,6 +9417,7 @@ The number of objects to return.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Objects Schema
 
 ```txt
@@ -9563,21 +9442,20 @@ Objects returns the list of objects in the bucket with support for pagination.
 
 ## objects
 
-
-
 `objects`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objects-properties-objects.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objects-properties-objects.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects.md "undefined#/query/oneOf/2/properties/objects")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects.md "undefined#/query/oneOf/2/properties/objects")
 
 ### objects Type
 
 `object` ([Details](okp4-objectarium-querymsg-oneof-objects-properties-objects.md))
+
 # QueryMsg Schema
 
 ```txt
@@ -9596,15 +9474,16 @@ merged type ([QueryMsg](okp4-objectarium-querymsg.md))
 
 one (and only one) of
 
-*   [Bucket](okp4-objectarium-querymsg-oneof-bucket.md "check type definition")
+* [Bucket](okp4-objectarium-querymsg-oneof-bucket.md "check type definition")
 
-*   [Object](okp4-objectarium-querymsg-oneof-object.md "check type definition")
+* [Object](okp4-objectarium-querymsg-oneof-object.md "check type definition")
 
-*   [Objects](okp4-objectarium-querymsg-oneof-objects.md "check type definition")
+* [Objects](okp4-objectarium-querymsg-oneof-objects.md "check type definition")
 
-*   [ObjectData](okp4-objectarium-querymsg-oneof-objectdata.md "check type definition")
+* [ObjectData](okp4-objectarium-querymsg-oneof-objectdata.md "check type definition")
 
-*   [ObjectPins](okp4-objectarium-querymsg-oneof-objectpins.md "check type definition")
+* [ObjectPins](okp4-objectarium-querymsg-oneof-objectpins.md "check type definition")
+
 # Binary Schema
 
 ```txt
@@ -9622,13 +9501,12 @@ This is only needed as serde-json-{core,wasm} has a horrible encoding for <code>
 ## object\_data Type
 
 `string` ([Binary](okp4-objectarium-responses-binary.md))
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9637,13 +9515,12 @@ undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm/a
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9652,6 +9529,7 @@ undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm/a
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9672,9 +9550,10 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -9707,13 +9586,13 @@ The default algorithm is Sha256 .
 
 `hash_algorithm`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
 
 ### hash\_algorithm Type
 
@@ -9721,16 +9600,15 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9739,13 +9617,12 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9754,6 +9631,7 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9772,16 +9650,15 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9790,13 +9667,12 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size/
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9805,6 +9681,7 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size/
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9823,16 +9700,15 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9841,13 +9717,12 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects/anyO
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9856,6 +9731,7 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects/anyO
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9874,16 +9750,15 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size/anyOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9892,13 +9767,12 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size/a
 ## 0 Type
 
 unknown
+
 # Untitled null in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size/anyOf/1
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -9907,6 +9781,7 @@ undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size/a
 ## 1 Type
 
 `null`, the value must be null
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -9925,9 +9800,10 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -9961,13 +9837,13 @@ The maximum number of pins in the bucket for an object.
 
 `max_object_pins`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
 
 ### max\_object\_pins Type
 
@@ -9975,9 +9851,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
 
 ## max\_object\_size
 
@@ -9985,13 +9861,13 @@ The maximum size of the objects in the bucket.
 
 `max_object_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
 
 ### max\_object\_size Type
 
@@ -9999,9 +9875,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
 
 ## max\_objects
 
@@ -10009,13 +9885,13 @@ The maximum number of objects in the bucket.
 
 `max_objects`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
 
 ### max\_objects Type
 
@@ -10023,9 +9899,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
 
 ## max\_total\_size
 
@@ -10033,13 +9909,13 @@ The maximum total size of the objects in the bucket.
 
 `max_total_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
 
 ### max\_total\_size Type
 
@@ -10047,9 +9923,10 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+
 # MD5 Schema
 
 ```txt
@@ -10077,6 +9954,7 @@ See [the MD5 Wikipedia page](https://en.wikipedia.org/wiki/MD5) for more informa
 | Value    | Explanation |
 | :------- | :---------- |
 | `"m_d5"` |             |
+
 # SHA1 Schema
 
 ```txt
@@ -10104,6 +9982,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha224"` |             |
+
 # SHA256 Schema
 
 ```txt
@@ -10131,6 +10010,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha256"` |             |
+
 # SHA384 Schema
 
 ```txt
@@ -10158,6 +10038,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha384"` |             |
+
 # SHA512 Schema
 
 ```txt
@@ -10185,6 +10066,7 @@ See [the SHA-2 Wikipedia page](https://en.wikipedia.org/wiki/SHA-2) for more inf
 | Value      | Explanation |
 | :--------- | :---------- |
 | `"sha512"` |             |
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10203,15 +10085,16 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-has
 
 one (and only one) of
 
-*   [MD5](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-md5.md "check type definition")
+* [MD5](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-md5.md "check type definition")
 
-*   [SHA1](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha1.md "check type definition")
+* [SHA1](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha1.md "check type definition")
 
-*   [SHA256](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha256.md "check type definition")
+* [SHA256](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha256.md "check type definition")
 
-*   [SHA384](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha384.md "check type definition")
+* [SHA384](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha384.md "check type definition")
 
-*   [SHA512](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha512.md "check type definition")
+* [SHA512](okp4-objectarium-responses-bucketresponse-definitions-hashalgorithm-oneof-sha512.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10235,6 +10118,7 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10258,6 +10142,7 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled object in okp4-objectarium Schema
 
 ```txt
@@ -10291,13 +10176,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
 
 ### default\_page\_size Type
 
@@ -10317,13 +10202,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
 
 ### max\_page\_size Type
 
@@ -10334,6 +10219,7 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 **minimum**: the value of this number must greater than or equal to: `0`
 
 **unknown format**: the value of this string must follow the format: `uint32`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -10360,13 +10246,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10375,13 +10260,12 @@ undefined#/responses/bucket/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/properties/config/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10390,6 +10274,7 @@ undefined#/responses/bucket/properties/config/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10408,14 +10293,13 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-conf
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/properties/limits/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10424,6 +10308,7 @@ undefined#/responses/bucket/properties/limits/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10442,7 +10327,8 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limi
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -10458,13 +10344,12 @@ The name of the bucket.
 ## name Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/bucket/properties/pagination/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10473,6 +10358,7 @@ undefined#/responses/bucket/properties/pagination/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -10491,7 +10377,8 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagi
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
+
 # BucketResponse Schema
 
 ```txt
@@ -10523,13 +10410,13 @@ The configuration of the bucket.
 
 `config`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-config.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-config.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config.md "undefined#/responses/bucket/properties/config")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config.md "undefined#/responses/bucket/properties/config")
 
 ### config Type
 
@@ -10537,7 +10424,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-conf
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
 
 ## limits
 
@@ -10545,13 +10432,13 @@ The limits of the bucket.
 
 `limits`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limits.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limits.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits.md "undefined#/responses/bucket/properties/limits")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits.md "undefined#/responses/bucket/properties/limits")
 
 ### limits Type
 
@@ -10559,7 +10446,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limi
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
 
 ## name
 
@@ -10567,13 +10454,13 @@ The name of the bucket.
 
 `name`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-name.md "undefined#/responses/bucket/properties/name")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-name.md "undefined#/responses/bucket/properties/name")
 
 ### name Type
 
@@ -10585,13 +10472,13 @@ The configuration for paginated query.
 
 `pagination`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagination.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagination.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination.md "undefined#/responses/bucket/properties/pagination")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination.md "undefined#/responses/bucket/properties/pagination")
 
 ### pagination Type
 
@@ -10599,7 +10486,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagi
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
 
 # BucketResponse Definitions
 
@@ -10623,13 +10510,13 @@ The default algorithm is Sha256 .
 
 `hash_algorithm`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
 
 #### hash\_algorithm Type
 
@@ -10637,9 +10524,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
 
 ## Definitions group BucketLimits
 
@@ -10662,13 +10549,13 @@ The maximum number of pins in the bucket for an object.
 
 `max_object_pins`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
 
 #### max\_object\_pins Type
 
@@ -10676,9 +10563,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
 
 ### max\_object\_size
 
@@ -10686,13 +10573,13 @@ The maximum size of the objects in the bucket.
 
 `max_object_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
 
 #### max\_object\_size Type
 
@@ -10700,9 +10587,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
 
 ### max\_objects
 
@@ -10710,13 +10597,13 @@ The maximum number of objects in the bucket.
 
 `max_objects`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
 
 #### max\_objects Type
 
@@ -10724,9 +10611,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
 
 ### max\_total\_size
 
@@ -10734,13 +10621,13 @@ The maximum total size of the objects in the bucket.
 
 `max_total_size`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
 
 #### max\_total\_size Type
 
@@ -10748,9 +10635,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
 
 ## Definitions group HashAlgorithm
 
@@ -10784,13 +10671,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
 
 #### default\_page\_size Type
 
@@ -10810,13 +10697,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
 
 #### max\_page\_size Type
 
@@ -10838,6 +10725,7 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -10853,6 +10741,7 @@ The cursor to the next page.
 ## cursor Type
 
 `string`
+
 # Untitled boolean in okp4-objectarium Schema
 
 ```txt
@@ -10868,6 +10757,7 @@ Tells if there is a next page.
 ## has\_next\_page Type
 
 `boolean`
+
 # PageInfo Schema
 
 ```txt
@@ -10897,13 +10787,13 @@ The cursor to the next page.
 
 `cursor`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
 
 ### cursor Type
 
@@ -10915,24 +10805,23 @@ Tells if there is a next page.
 
 `has_next_page`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
 
 ### has\_next\_page Type
 
 `boolean`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/object_pins/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10941,13 +10830,12 @@ undefined#/responses/object_pins/definitions
 ## definitions Type
 
 unknown
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/object_pins/properties/data/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10956,6 +10844,7 @@ undefined#/responses/object_pins/properties/data/items
 ## items Type
 
 `string`
+
 # Untitled array in okp4-objectarium Schema
 
 ```txt
@@ -10971,13 +10860,12 @@ The list of addresses that pinned the object.
 ## data Type
 
 `string[]`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/object_pins/properties/page_info/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -10986,6 +10874,7 @@ undefined#/responses/object_pins/properties/page_info/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -11004,7 +10893,8 @@ merged type ([Details](okp4-objectarium-responses-objectpinsresponse-properties-
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
+
 # ObjectPinsResponse Schema
 
 ```txt
@@ -11034,13 +10924,13 @@ The list of addresses that pinned the object.
 
 `data`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-data.md "undefined#/responses/object_pins/properties/data")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-data.md "undefined#/responses/object_pins/properties/data")
 
 ### data Type
 
@@ -11052,13 +10942,13 @@ The page information.
 
 `page_info`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectpinsresponse-properties-page_info.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectpinsresponse-properties-page_info.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info.md "undefined#/responses/object_pins/properties/page_info")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info.md "undefined#/responses/object_pins/properties/page_info")
 
 ### page\_info Type
 
@@ -11066,7 +10956,7 @@ merged type ([Details](okp4-objectarium-responses-objectpinsresponse-properties-
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-properties-page_info-allof-0.md "check type definition")
 
 # ObjectPinsResponse Definitions
 
@@ -11089,13 +10979,13 @@ The cursor to the next page.
 
 `cursor`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/object_pins/definitions/PageInfo/properties/cursor")
 
 #### cursor Type
 
@@ -11107,17 +10997,18 @@ Tells if there is a next page.
 
 `has_next_page`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectpinsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/object_pins/definitions/PageInfo/properties/has_next_page")
 
 #### has\_next\_page Type
 
 `boolean`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11144,13 +11035,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/object/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11159,6 +11049,7 @@ undefined#/responses/object/definitions
 ## definitions Type
 
 unknown
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11174,6 +11065,7 @@ The id of the object.
 ## id Type
 
 `string`
+
 # Untitled boolean in okp4-objectarium Schema
 
 ```txt
@@ -11189,6 +11081,7 @@ Tells if the object is pinned by at least one address.
 ## is\_pinned Type
 
 `boolean`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11204,13 +11097,12 @@ The owner of the object.
 ## owner Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/object/properties/size/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11219,6 +11111,7 @@ undefined#/responses/object/properties/size/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -11237,7 +11130,8 @@ merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
+
 # ObjectResponse Schema
 
 ```txt
@@ -11269,13 +11163,13 @@ The id of the object.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-id.md "undefined#/responses/object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-id.md "undefined#/responses/object/properties/id")
 
 ### id Type
 
@@ -11287,13 +11181,13 @@ Tells if the object is pinned by at least one address.
 
 `is_pinned`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-is_pinned.md "undefined#/responses/object/properties/is_pinned")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-is_pinned.md "undefined#/responses/object/properties/is_pinned")
 
 ### is\_pinned Type
 
@@ -11305,13 +11199,13 @@ The owner of the object.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-owner.md "undefined#/responses/object/properties/owner")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-owner.md "undefined#/responses/object/properties/owner")
 
 ### owner Type
 
@@ -11323,13 +11217,13 @@ The size of the object.
 
 `size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size.md "undefined#/responses/object/properties/size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size.md "undefined#/responses/object/properties/size")
 
 ### size Type
 
@@ -11337,7 +11231,7 @@ merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
 
 # ObjectResponse Definitions
 
@@ -11351,6 +11245,7 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11366,6 +11261,7 @@ The id of the object.
 ## id Type
 
 `string`
+
 # Untitled boolean in okp4-objectarium Schema
 
 ```txt
@@ -11381,6 +11277,7 @@ Tells if the object is pinned by at least one address.
 ## is\_pinned Type
 
 `boolean`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11396,13 +11293,12 @@ The owner of the object.
 ## owner Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/objects/definitions/ObjectResponse/properties/size/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11411,6 +11307,7 @@ undefined#/responses/objects/definitions/ObjectResponse/properties/size/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -11429,7 +11326,8 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-ob
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+
 # ObjectResponse Schema
 
 ```txt
@@ -11461,13 +11359,13 @@ The id of the object.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
 
 ### id Type
 
@@ -11479,13 +11377,13 @@ Tells if the object is pinned by at least one address.
 
 `is_pinned`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
 
 ### is\_pinned Type
 
@@ -11497,13 +11395,13 @@ The owner of the object.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
 
 ### owner Type
 
@@ -11515,13 +11413,13 @@ The size of the object.
 
 `size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
 
 ### size Type
 
@@ -11529,7 +11427,8 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-ob
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11545,6 +11444,7 @@ The cursor to the next page.
 ## cursor Type
 
 `string`
+
 # Untitled boolean in okp4-objectarium Schema
 
 ```txt
@@ -11560,6 +11460,7 @@ Tells if there is a next page.
 ## has\_next\_page Type
 
 `boolean`
+
 # PageInfo Schema
 
 ```txt
@@ -11589,13 +11490,13 @@ The cursor to the next page.
 
 `cursor`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")
 
 ### cursor Type
 
@@ -11607,17 +11508,18 @@ Tells if there is a next page.
 
 `has_next_page`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
 
 ### has\_next\_page Type
 
 `boolean`
+
 # Untitled string in okp4-objectarium Schema
 
 ```txt
@@ -11644,13 +11546,12 @@ let c = Uint128::from(70u32); assert_eq!(c.u128(), 70); ```
 ## Uint128 Type
 
 `string`
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/objects/definitions
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11659,13 +11560,12 @@ undefined#/responses/objects/definitions
 ## definitions Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/objects/properties/data/items
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11674,6 +11574,7 @@ undefined#/responses/objects/properties/data/items
 ## items Type
 
 unknown
+
 # Untitled array in okp4-objectarium Schema
 
 ```txt
@@ -11689,13 +11590,12 @@ The list of objects in the bucket.
 ## data Type
 
 unknown\[]
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses/objects/properties/page_info/allOf/0
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11704,6 +11604,7 @@ undefined#/responses/objects/properties/page_info/allOf/0
 ## 0 Type
 
 unknown
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
@@ -11722,7 +11623,8 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-properties-pag
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
+
 # ObjectsResponse Schema
 
 ```txt
@@ -11752,13 +11654,13 @@ The list of objects in the bucket.
 
 `data`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-data.md "undefined#/responses/objects/properties/data")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-data.md "undefined#/responses/objects/properties/data")
 
 ### data Type
 
@@ -11770,13 +11672,13 @@ The page information.
 
 `page_info`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-properties-page_info.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-properties-page_info.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info.md "undefined#/responses/objects/properties/page_info")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info.md "undefined#/responses/objects/properties/page_info")
 
 ### page\_info Type
 
@@ -11784,7 +11686,7 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-properties-pag
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-properties-page_info-allof-0.md "check type definition")
 
 # ObjectsResponse Definitions
 
@@ -11809,13 +11711,13 @@ The id of the object.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-id.md "undefined#/responses/objects/definitions/ObjectResponse/properties/id")
 
 #### id Type
 
@@ -11827,13 +11729,13 @@ Tells if the object is pinned by at least one address.
 
 `is_pinned`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-is_pinned.md "undefined#/responses/objects/definitions/ObjectResponse/properties/is_pinned")
 
 #### is\_pinned Type
 
@@ -11845,13 +11747,13 @@ The owner of the object.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-owner.md "undefined#/responses/objects/definitions/ObjectResponse/properties/owner")
 
 #### owner Type
 
@@ -11863,13 +11765,13 @@ The size of the object.
 
 `size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size.md "undefined#/responses/objects/definitions/ObjectResponse/properties/size")
 
 #### size Type
 
@@ -11877,7 +11779,7 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-ob
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-size-allof-0.md "check type definition")
 
 ## Definitions group PageInfo
 
@@ -11898,13 +11800,13 @@ The cursor to the next page.
 
 `cursor`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-cursor.md "undefined#/responses/objects/definitions/PageInfo/properties/cursor")
 
 #### cursor Type
 
@@ -11916,13 +11818,13 @@ Tells if there is a next page.
 
 `has_next_page`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-pageinfo-properties-has_next_page.md "undefined#/responses/objects/definitions/PageInfo/properties/has_next_page")
 
 #### has\_next\_page Type
 
@@ -11938,13 +11840,12 @@ Reference this group by using
 
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
+
 # Untitled undefined type in okp4-objectarium Schema
 
 ```txt
 undefined#/responses
 ```
-
-
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -11953,6 +11854,7 @@ undefined#/responses
 ## responses Type
 
 unknown
+
 # okp4-objectarium Schema
 
 ```txt

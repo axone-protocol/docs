@@ -29,13 +29,13 @@ The id of the object.
 
 `id`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-id.md "undefined#/responses/object/properties/id")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-id.md "undefined#/responses/object/properties/id")
 
 ### id Type
 
@@ -47,13 +47,13 @@ Tells if the object is pinned by at least one address.
 
 `is_pinned`
 
-*   is required
+* is required
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-is_pinned.md "undefined#/responses/object/properties/is_pinned")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-is_pinned.md "undefined#/responses/object/properties/is_pinned")
 
 ### is\_pinned Type
 
@@ -65,13 +65,13 @@ The owner of the object.
 
 `owner`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-owner.md "undefined#/responses/object/properties/owner")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-owner.md "undefined#/responses/object/properties/owner")
 
 ### owner Type
 
@@ -83,13 +83,13 @@ The size of the object.
 
 `size`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size.md))
+* Type: merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size.md "undefined#/responses/object/properties/size")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size.md "undefined#/responses/object/properties/size")
 
 ### size Type
 
@@ -97,7 +97,7 @@ merged type ([Details](okp4-objectarium-responses-objectresponse-properties-size
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectresponse-properties-size-allof-0.md "check type definition")
 
 # ObjectResponse Definitions
 
