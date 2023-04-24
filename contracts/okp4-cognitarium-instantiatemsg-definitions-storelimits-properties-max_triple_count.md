@@ -16,6 +16,6 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimits-p
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimits-properties-max_triple_count-anyof-1.md "check type definition")
