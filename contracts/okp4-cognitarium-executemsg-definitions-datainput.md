@@ -16,8 +16,8 @@ merged type ([DataInput](okp4-cognitarium-executemsg-definitions-datainput.md))
 
 one (and only one) of
 
-*   [RDF XML](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "check type definition")
+* [RDF XML](okp4-cognitarium-executemsg-definitions-datainput-oneof-rdf-xml.md "check type definition")
 
-*   [Turtle](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "check type definition")
+* [Turtle](okp4-cognitarium-executemsg-definitions-datainput-oneof-turtle.md "check type definition")
 
-*   [N-Triples](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "check type definition")
+* [N-Triples](okp4-cognitarium-executemsg-definitions-datainput-oneof-n-triples.md "check type definition")
