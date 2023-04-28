@@ -28,13 +28,13 @@ The object of the triple pattern.
 
 `object`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
 
 ### object Type
 
@@ -42,7 +42,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
 
 ## predicate
 
@@ -50,13 +50,13 @@ The predicate of the triple pattern.
 
 `predicate`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
 
 ### predicate Type
 
@@ -64,7 +64,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
 
 ## subject
 
@@ -72,13 +72,13 @@ The subject of the triple pattern.
 
 `subject`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
 
 ### subject Type
 
@@ -86,4 +86,4 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")

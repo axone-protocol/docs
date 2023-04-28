@@ -16,7 +16,7 @@ merged type ([ExecuteMsg](okp4-cognitarium-executemsg.md))
 
 one (and only one) of
 
-* [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
+*   [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
 
 # ExecuteMsg Definitions
 
@@ -31,12 +31,12 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
 
-## Definitions group DataInput
+## Definitions group DataFormat
 
 Reference this group by using
 
 ```json
-{"$ref":"undefined#/execute/definitions/DataInput"}
+{"$ref":"undefined#/execute/definitions/DataFormat"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |

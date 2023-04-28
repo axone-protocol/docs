@@ -16,11 +16,96 @@ merged type ([QueryMsg](okp4-cognitarium-querymsg.md))
 
 one (and only one) of
 
-* [Store](okp4-cognitarium-querymsg-oneof-store.md "check type definition")
+*   [Store](okp4-cognitarium-querymsg-oneof-store.md "check type definition")
 
-* [Select](okp4-cognitarium-querymsg-oneof-select.md "check type definition")
+*   [Select](okp4-cognitarium-querymsg-oneof-select.md "check type definition")
+
+*   [Describe](okp4-cognitarium-querymsg-oneof-describe.md "check type definition")
 
 # QueryMsg Definitions
+
+## Definitions group DataFormat
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/query/definitions/DataFormat"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
+
+## Definitions group DescribeQuery
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/query/definitions/DescribeQuery"}
+```
+
+| Property              | Type    | Required | Nullable       | Defined by                                                                                                                                                      |
+| :-------------------- | :------ | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [prefixes](#prefixes) | `array` | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-prefixes.md "undefined#/query/definitions/DescribeQuery/properties/prefixes") |
+| [resource](#resource) | Merged  | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md "undefined#/query/definitions/DescribeQuery/properties/resource") |
+| [where](#where)       | `array` | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-where.md "undefined#/query/definitions/DescribeQuery/properties/where")       |
+
+### prefixes
+
+The prefixes used in the query.
+
+`prefixes`
+
+*   is required
+
+*   Type: unknown\[]
+
+*   cannot be null
+
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-prefixes.md "undefined#/query/definitions/DescribeQuery/properties/prefixes")
+
+#### prefixes Type
+
+unknown\[]
+
+### resource
+
+The resource to describe given as a variable or a node.
+
+`resource`
+
+*   is required
+
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md))
+
+*   cannot be null
+
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md "undefined#/query/definitions/DescribeQuery/properties/resource")
+
+#### resource Type
+
+merged type ([Details](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md))
+
+all of
+
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource-allof-0.md "check type definition")
+
+### where
+
+The WHERE clause. This clause is used to specify the resource identifier to describe using variable bindings.
+
+`where`
+
+*   is required
+
+*   Type: unknown\[]
+
+*   cannot be null
+
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-where.md "undefined#/query/definitions/DescribeQuery/properties/where")
+
+#### where Type
+
+unknown\[]
 
 ## Definitions group IRI
 
@@ -55,28 +140,6 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | :--- | :------- | :------- | :--------- |
 
-## Definitions group ObjectPattern
-
-Reference this group by using
-
-```json
-{"$ref":"undefined#/query/definitions/ObjectPattern"}
-```
-
-| Property | Type | Required | Nullable | Defined by |
-| :------- | :--- | :------- | :------- | :--------- |
-
-## Definitions group PredicatePattern
-
-Reference this group by using
-
-```json
-{"$ref":"undefined#/query/definitions/PredicatePattern"}
-```
-
-| Property | Type | Required | Nullable | Defined by |
-| :------- | :--- | :------- | :------- | :--------- |
-
 ## Definitions group Prefix
 
 Reference this group by using
@@ -96,13 +159,13 @@ The namespace associated with the prefix.
 
 `namespace`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-namespace.md "undefined#/query/definitions/Prefix/properties/namespace")
 
 #### namespace Type
 
@@ -114,13 +177,13 @@ The prefix.
 
 `prefix`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-prefix-properties-prefix.md "undefined#/query/definitions/Prefix/properties/prefix")
 
 #### prefix Type
 
@@ -145,12 +208,12 @@ Reference this group by using
 {"$ref":"undefined#/query/definitions/SelectQuery"}
 ```
 
-| Property              | Type      | Required | Nullable       | Defined by                                                                                                                                                  |
-| :-------------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [limit](#limit)       | `integer` | Optional | can be null    | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")       |
-| [prefixes](#prefixes) | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes") |
-| [select](#select)     | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")     |
-| [where](#where)       | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")       |
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                  |
+| :---------------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [limit](#limit)         | `integer` | Optional | can be null    | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")       |
+| [prefixes](#prefixes-1) | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes") |
+| [select](#select)       | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")     |
+| [where](#where-1)       | `array`   | Required | cannot be null | [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")       |
 
 ### limit
 
@@ -158,13 +221,13 @@ The maximum number of results to return. If `None`, there is no limit. Note: the
 
 `limit`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
 
 #### limit Type
 
@@ -182,13 +245,13 @@ The prefixes used in the query.
 
 `prefixes`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
 
 #### prefixes Type
 
@@ -200,13 +263,13 @@ The items to select. Note: the number of items to select cannot exceed the maxim
 
 `select`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
 
 #### select Type
 
@@ -218,13 +281,13 @@ The WHERE clause. If `None`, there is no WHERE clause, i.e. all triples are retu
 
 `where`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
 
 #### where Type
 
@@ -236,17 +299,6 @@ Reference this group by using
 
 ```json
 {"$ref":"undefined#/query/definitions/SimpleWhereCondition"}
-```
-
-| Property | Type | Required | Nullable | Defined by |
-| :------- | :--- | :------- | :------- | :--------- |
-
-## Definitions group SubjectPattern
-
-Reference this group by using
-
-```json
-{"$ref":"undefined#/query/definitions/SubjectPattern"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -272,13 +324,13 @@ The object of the triple pattern.
 
 `object`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object.md "undefined#/query/definitions/TriplePattern/properties/object")
 
 #### object Type
 
@@ -286,7 +338,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
 
 ### predicate
 
@@ -294,13 +346,13 @@ The predicate of the triple pattern.
 
 `predicate`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate.md "undefined#/query/definitions/TriplePattern/properties/predicate")
 
 #### predicate Type
 
@@ -308,7 +360,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
 
 ### subject
 
@@ -316,13 +368,13 @@ The subject of the triple pattern.
 
 `subject`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject.md "undefined#/query/definitions/TriplePattern/properties/subject")
 
 #### subject Type
 
@@ -330,7 +382,29 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-triplepattern-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+
+## Definitions group VarOrNode
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/query/definitions/VarOrNode"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
+
+## Definitions group VarOrNodeOrLiteral
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/query/definitions/VarOrNodeOrLiteral"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
 
 ## Definitions group WhereCondition
 
