@@ -4,6 +4,8 @@
 undefined#/query/oneOf/1/properties/select
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -24,13 +26,13 @@ The query to execute.
 
 `query`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md "undefined#/query/oneOf/1/properties/select/properties/query")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query.md "undefined#/query/oneOf/1/properties/select/properties/query")
 
 ### query Type
 
@@ -38,4 +40,4 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
