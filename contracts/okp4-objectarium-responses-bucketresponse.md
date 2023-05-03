@@ -29,13 +29,13 @@ The configuration of the bucket.
 
 `config`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-config.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-config.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config.md "undefined#/responses/bucket/properties/config")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config.md "undefined#/responses/bucket/properties/config")
 
 ### config Type
 
@@ -43,7 +43,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-conf
 
 all of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-config-allof-0.md "check type definition")
 
 ## limits
 
@@ -51,13 +51,13 @@ The limits of the bucket.
 
 `limits`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limits.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limits.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits.md "undefined#/responses/bucket/properties/limits")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits.md "undefined#/responses/bucket/properties/limits")
 
 ### limits Type
 
@@ -65,7 +65,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-limi
 
 all of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-limits-allof-0.md "check type definition")
 
 ## name
 
@@ -73,13 +73,13 @@ The name of the bucket.
 
 `name`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-name.md "undefined#/responses/bucket/properties/name")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-name.md "undefined#/responses/bucket/properties/name")
 
 ### name Type
 
@@ -91,13 +91,13 @@ The configuration for paginated query.
 
 `pagination`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagination.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagination.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination.md "undefined#/responses/bucket/properties/pagination")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination.md "undefined#/responses/bucket/properties/pagination")
 
 ### pagination Type
 
@@ -105,7 +105,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-properties-pagi
 
 all of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-properties-pagination-allof-0.md "check type definition")
 
 # BucketResponse Definitions
 
@@ -129,13 +129,13 @@ The default algorithm is Sha256 .
 
 `hash_algorithm`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
 
 #### hash\_algorithm Type
 
@@ -143,9 +143,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
 
 ## Definitions group BucketLimits
 
@@ -155,12 +155,35 @@ Reference this group by using
 {"$ref":"undefined#/responses/bucket/definitions/BucketLimits"}
 ```
 
-| Property                              | Type   | Required | Nullable       | Defined by                                                                                                                                                                                             |
-| :------------------------------------ | :----- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [max\_object\_pins](#max_object_pins) | Merged | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins") |
-| [max\_object\_size](#max_object_size) | Merged | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size") |
-| [max\_objects](#max_objects)          | Merged | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")         |
-| [max\_total\_size](#max_total_size)   | Merged | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")   |
+| Property                                                              | Type    | Required | Nullable       | Defined by                                                                                                                                                                                                                             |
+| :-------------------------------------------------------------------- | :------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [accepted\_compression\_algorithms](#accepted_compression_algorithms) | `array` | Optional | can be null    | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-accepted_compression_algorithms.md "undefined#/responses/bucket/definitions/BucketLimits/properties/accepted_compression_algorithms") |
+| [max\_object\_pins](#max_object_pins)                                 | Merged  | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")                                 |
+| [max\_object\_size](#max_object_size)                                 | Merged  | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")                                 |
+| [max\_objects](#max_objects)                                          | Merged  | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")                                         |
+| [max\_total\_size](#max_total_size)                                   | Merged  | Optional | cannot be null | [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")                                   |
+
+### accepted\_compression\_algorithms
+
+The acceptable compression algorithms for the objects in the bucket. If this parameter is not set (none or empty array), then all compression algorithms are accepted. If this parameter is set, then only the compression algorithms in the array are accepted.
+
+When an object is stored in the bucket without a specified compression algorithm, the first algorithm in the array is used. Therefore, the order of the algorithms in the array is significant. Typically, the most efficient compression algorithm, such as the NoCompression algorithm, should be placed first in the array.
+
+Any attempt to store an object using a different compression algorithm than the ones specified here will fail.
+
+`accepted_compression_algorithms`
+
+*   is optional
+
+*   Type: unknown\[]
+
+*   can be null
+
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-accepted_compression_algorithms.md "undefined#/responses/bucket/definitions/BucketLimits/properties/accepted_compression_algorithms")
+
+#### accepted\_compression\_algorithms Type
+
+unknown\[]
 
 ### max\_object\_pins
 
@@ -168,13 +191,13 @@ The maximum number of pins in the bucket for an object.
 
 `max_object_pins`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_pins")
 
 #### max\_object\_pins Type
 
@@ -182,9 +205,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
+*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_pins-anyof-1.md "check type definition")
 
 ### max\_object\_size
 
@@ -192,13 +215,13 @@ The maximum size of the objects in the bucket.
 
 `max_object_size`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_object_size")
 
 #### max\_object\_size Type
 
@@ -206,9 +229,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
+*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_object_size-anyof-1.md "check type definition")
 
 ### max\_objects
 
@@ -216,13 +239,13 @@ The maximum number of objects in the bucket.
 
 `max_objects`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_objects")
 
 #### max\_objects Type
 
@@ -230,9 +253,9 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
+*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_objects-anyof-1.md "check type definition")
 
 ### max\_total\_size
 
@@ -240,13 +263,13 @@ The maximum total size of the objects in the bucket.
 
 `max_total_size`
 
-* is optional
+*   is optional
 
-* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
+*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size.md "undefined#/responses/bucket/definitions/BucketLimits/properties/max_total_size")
 
 #### max\_total\_size Type
 
@@ -254,9 +277,20 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 any of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+*   [Untitled null in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+
+## Definitions group CompressionAlgorithm
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/responses/bucket/definitions/CompressionAlgorithm"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
 
 ## Definitions group HashAlgorithm
 
@@ -290,13 +324,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-default_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/default_page_size")
 
 #### default\_page\_size Type
 
@@ -316,13 +350,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-paginationconfig-properties-max_page_size.md "undefined#/responses/bucket/definitions/PaginationConfig/properties/max_page_size")
 
 #### max\_page\_size Type
 

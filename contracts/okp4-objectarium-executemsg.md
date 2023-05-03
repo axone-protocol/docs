@@ -16,13 +16,13 @@ merged type ([ExecuteMsg](okp4-objectarium-executemsg.md))
 
 one (and only one) of
 
-* [StoreObject](okp4-objectarium-executemsg-oneof-storeobject.md "check type definition")
+*   [StoreObject](okp4-objectarium-executemsg-oneof-storeobject.md "check type definition")
 
-* [ForgetObject](okp4-objectarium-executemsg-oneof-forgetobject.md "check type definition")
+*   [ForgetObject](okp4-objectarium-executemsg-oneof-forgetobject.md "check type definition")
 
-* [PinObject](okp4-objectarium-executemsg-oneof-pinobject.md "check type definition")
+*   [PinObject](okp4-objectarium-executemsg-oneof-pinobject.md "check type definition")
 
-* [UnpinObject](okp4-objectarium-executemsg-oneof-unpinobject.md "check type definition")
+*   [UnpinObject](okp4-objectarium-executemsg-oneof-unpinobject.md "check type definition")
 
 # ExecuteMsg Definitions
 
@@ -32,6 +32,17 @@ Reference this group by using
 
 ```json
 {"$ref":"undefined#/execute/definitions/Binary"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
+
+## Definitions group CompressionAlgorithm
+
+Reference this group by using
+
+```json
+{"$ref":"undefined#/execute/definitions/CompressionAlgorithm"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
