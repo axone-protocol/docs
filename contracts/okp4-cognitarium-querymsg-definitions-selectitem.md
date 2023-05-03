@@ -16,4 +16,4 @@ merged type ([SelectItem](okp4-cognitarium-querymsg-definitions-selectitem.md))
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable.md "check type definition")
