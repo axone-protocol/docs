@@ -16,7 +16,7 @@ merged type ([ExecuteMsg](okp4-cognitarium-executemsg.md))
 
 one (and only one) of
 
-*   [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
+* [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
 
 # ExecuteMsg Definitions
 

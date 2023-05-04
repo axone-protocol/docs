@@ -16,4 +16,4 @@ merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-i
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data-allof-0.md "check type definition")
