@@ -4,41 +4,42 @@
 @import "card";
 
 @font-face {
+  font-family: "Barlow bold";
+  src: url("/static/fonts/Barlow/Barlow-Bold.ttf");
+}
+
+@font-face {
   font-family: "Barlow regular";
   src: url("/static/fonts/Barlow/Barlow-Regular.ttf");
 }
 
-@font-face {
-  font-family: "Montserrat bold";
-  src: url("/static/fonts/Montserrat/static/Montserrat-Bold.ttf");
-}
-
 :root {
-  --ifm-color-primary: #181c49;
+  --ifm-color-primary: #ff9500;
+  --ifm-hover-overlay: rgb(255 149 0 / 12%);
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Barlow regular", sans-serif;
-  --ifm-heading-font-family: "Montserrat bold", sans-serif;
+  --ifm-heading-font-family: "Barlow bold", sans-serif;
   --ifm-font-color-base: #181c49;
   --ifm-menu-color: #181c49;
   --ifm-heading-color: #181c49;
-  --ifm-background-color-main: transparent linear-gradient(180deg, #faf8f4 0%, white 100%) 0% 0%
+  --ifm-background-color-main: transparent linear-gradient(180deg, #faf8f46c 0%, white 0%) 0% 0%
     no-repeat padding-box;
   --ifm-footer-background-color-main: transparent linear-gradient(212deg, #181c49 0%, #343869 100%)
     0% 0% no-repeat padding-box;
-  --ifm-navbar-background-color: white;
-  --ifm-background-image-url: url("/static/img/universe-light.webp");
-  --ifm-article-anchor-color: #877b65;
+  --ifm-navbar-background-color: #f2f6f9;
+  --ifm-article-anchor-color: #ff9500;
   --ifm-graph-svg-background-color: #ecf0f1;
   --ifm-knowledge-graph-data-fill-color: #f3a83f;
   --ifm-knowledge-graph-service-fill-color: #bf0000;
   --ifm-knowledge-graph-base-stroke-color: #433d32;
   --ifm-knowledge-graph-edge-stroke-color: #b5b5b5;
   --ifm-knowledge-graph-base-stroke-width: 3px;
+  --ifm-navbar-search-input-background-color: rgb(0 0 0 / 4%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: white;
+  --ifm-color-primary: #f79413;
   --ifm-font-color-base: white;
   --ifm-menu-color: #ced2d9;
   --ifm-heading-color: white;
@@ -47,9 +48,13 @@
   --ifm-footer-background-color-main: transparent linear-gradient(180deg, #102040 0%, #061126 100%)
     0% 0% no-repeat padding-box;
   --ifm-navbar-background-color: #0f1e3d;
-  --ifm-background-image-url: url("/static/img/universe-dark.webp");
   --search-local-highlight-color: #877b65;
   --ifm-knowledge-graph-base-stroke-color: white;
+  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 4%);
+}
+
+[data-theme="dark"] .menu a:hover {
+  background-color: rgb(255 149 0 / 12%);
 }
 
 [data-theme="dark"] .docusaurus-highlight-code-line {

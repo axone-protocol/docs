@@ -36,7 +36,6 @@ const config = {
       })
     ]
   ],
-
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -46,7 +45,6 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -61,7 +59,7 @@ const config = {
           {
             to: '/whitepaper/abstract',
             position: 'left',
-            label: 'Whitepaper (Work in progress)',
+            label: 'Whitepaper',
             activeBasePath: "/whitepaper"
           },
           {
@@ -108,18 +106,6 @@ const config = {
             activeBasePath: "/faq"
           },
           {
-            href: 'https://discord.gg/okp4',
-            position: 'right',
-            className: 'header-discord-link',
-            'aria-label': 'Discord'
-          },
-          {
-            href: 'https://github.com/okp4',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository'
-          },
-          {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownItemsAfter: [{to: '/contracts/', label: 'Latest version'}],
@@ -140,6 +126,18 @@ const config = {
             docsPluginId: 'commands',
             dropdownActiveClassDisabled: true,
           },
+          {
+          href: 'https://discord.gg/okp4',
+          position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord'
+          },
+          {
+          href: 'https://github.com/okp4',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository'
+          }
         ]
       },
       footer: {
@@ -197,11 +195,10 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true,
+          autoCollapseCategories: true
         },
       },
     }),
-
   plugins: [
     'docusaurus-plugin-sass',
     ['drawio', {}],
@@ -239,7 +236,7 @@ const config = {
   ],
   scripts: [
     "/js/matomo.js",
-    "/js/redirect.js",
+    "/js/redirect.js"
   ]
 }
 
