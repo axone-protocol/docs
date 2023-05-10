@@ -23,7 +23,6 @@ Some examples of ontology:
 An ontology of sheep and goat (source : OKP4):
 
 ```mermaid
-%%{init: {'theme':'neutral'}}%%
 flowchart TD
     A[Carnivore] -->|is| B[Animal]
     A -->|eats| B
@@ -33,7 +32,7 @@ flowchart TD
     F[Wolf]-->|eats| E
     F[Wolf]-->|is| B
     F[Wolf]-.->|implies| A
-````
+```
 
 An ontology of water resources (source : OKP4 from SAREF extension for water) :
 
