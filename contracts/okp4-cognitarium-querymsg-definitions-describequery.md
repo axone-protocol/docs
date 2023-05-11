@@ -28,13 +28,13 @@ The prefixes used in the query.
 
 `prefixes`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-prefixes.md "undefined#/query/definitions/DescribeQuery/properties/prefixes")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-prefixes.md "undefined#/query/definitions/DescribeQuery/properties/prefixes")
 
 ### prefixes Type
 
@@ -46,13 +46,13 @@ The resource to describe given as a variable or a node.
 
 `resource`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md "undefined#/query/definitions/DescribeQuery/properties/resource")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource.md "undefined#/query/definitions/DescribeQuery/properties/resource")
 
 ### resource Type
 
@@ -60,7 +60,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-describequery-prope
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-resource-allof-0.md "check type definition")
 
 ## where
 
@@ -68,13 +68,13 @@ The WHERE clause. This clause is used to specify the resource identifier to desc
 
 `where`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-where.md "undefined#/query/definitions/DescribeQuery/properties/where")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-describequery-properties-where.md "undefined#/query/definitions/DescribeQuery/properties/where")
 
 ### where Type
 
