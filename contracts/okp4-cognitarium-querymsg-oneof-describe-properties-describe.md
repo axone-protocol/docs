@@ -4,8 +4,6 @@
 undefined#/query/oneOf/2/properties/describe
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -27,13 +25,13 @@ The format in which the triples are serialized. If not provided, the default for
 
 `format`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format.md "undefined#/query/oneOf/2/properties/describe/properties/format")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format.md "undefined#/query/oneOf/2/properties/describe/properties/format")
 
 ### format Type
 
@@ -41,9 +39,9 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-descr
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-format-anyof-1.md "check type definition")
 
 ## query
 
@@ -51,13 +49,13 @@ The query to execute.
 
 `query`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query.md))
+* Type: merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query.md "undefined#/query/oneOf/2/properties/describe/properties/query")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query.md "undefined#/query/oneOf/2/properties/describe/properties/query")
 
 ### query Type
 
@@ -65,4 +63,4 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-descr
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe-properties-query-allof-0.md "check type definition")

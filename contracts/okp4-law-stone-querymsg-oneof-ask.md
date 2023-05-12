@@ -22,17 +22,15 @@ If not broken, ask the logic module the provided query with the law program load
 
 ## ask
 
-
-
 `ask`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-law-stone-querymsg-oneof-ask-properties-ask.md))
+* Type: `object` ([Details](okp4-law-stone-querymsg-oneof-ask-properties-ask.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
+* defined in: [okp4-law-stone](okp4-law-stone-querymsg-oneof-ask-properties-ask.md "undefined#/query/oneOf/0/properties/ask")
 
 ### ask Type
 
