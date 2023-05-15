@@ -4,6 +4,8 @@
 undefined#/responses/select/definitions/Results/properties/bindings/items
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -22,13 +24,15 @@ undefined#/responses/select/definitions/Results/properties/bindings/items
 
 Additional properties are allowed, as long as they follow this schema:
 
-* is optional
 
-* Type: unknown
 
-* cannot be null
+*   is optional
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items-additionalproperties.md "undefined#/responses/select/definitions/Results/properties/bindings/items/additionalProperties")
+*   Type: unknown
+
+*   cannot be null
+
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items-additionalproperties.md "undefined#/responses/select/definitions/Results/properties/bindings/items/additionalProperties")
 
 ### additionalProperties Type
 

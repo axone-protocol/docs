@@ -16,6 +16,6 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 any of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
 
-* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
+*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
