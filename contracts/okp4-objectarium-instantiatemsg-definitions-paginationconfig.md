@@ -31,13 +31,13 @@ Shall be less or equal than `max_page_size`. Default to '10' if not set.
 
 `default_page_size`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-default_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/default_page_size")
 
 ### default\_page\_size Type
 
@@ -57,13 +57,13 @@ Shall be less than `u32::MAX - 1`. Default to '30' if not set.
 
 `max_page_size`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
+*   defined in: [okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-paginationconfig-properties-max_page_size.md "undefined#/instantiate/definitions/PaginationConfig/properties/max_page_size")
 
 ### max\_page\_size Type
 

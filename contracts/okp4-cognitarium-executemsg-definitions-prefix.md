@@ -27,13 +27,13 @@ The namespace associated with the prefix.
 
 `namespace`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-namespace.md "undefined#/execute/definitions/Prefix/properties/namespace")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-namespace.md "undefined#/execute/definitions/Prefix/properties/namespace")
 
 ### namespace Type
 
@@ -45,13 +45,13 @@ The prefix.
 
 `prefix`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-prefix.md "undefined#/execute/definitions/Prefix/properties/prefix")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-prefix.md "undefined#/execute/definitions/Prefix/properties/prefix")
 
 ### prefix Type
 
