@@ -16,4 +16,4 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typed
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")

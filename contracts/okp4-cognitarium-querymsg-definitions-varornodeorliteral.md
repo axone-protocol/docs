@@ -16,8 +16,8 @@ merged type ([VarOrNodeOrLiteral](okp4-cognitarium-querymsg-definitions-varornod
 
 one (and only one) of
 
-*   [Variable](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-variable.md "check type definition")
+* [Variable](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-variable.md "check type definition")
 
-*   [Node](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-node.md "check type definition")
+* [Node](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-node.md "check type definition")
 
-*   [Literal](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-literal.md "check type definition")
+* [Literal](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-literal.md "check type definition")
