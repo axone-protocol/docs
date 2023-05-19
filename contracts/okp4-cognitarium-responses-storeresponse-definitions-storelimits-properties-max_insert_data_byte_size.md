@@ -16,4 +16,4 @@ merged type ([Details](okp4-cognitarium-responses-storeresponse-definitions-stor
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-storeresponse-definitions-storelimits-properties-max_insert_data_byte_size-allof-0.md "check type definition")
