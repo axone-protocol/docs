@@ -16,4 +16,4 @@ merged type ([ExecuteMsg](okp4-law-stone-executemsg.md))
 
 one (and only one) of
 
-* [BreakStone](okp4-law-stone-executemsg-oneof-breakstone.md "check type definition")
+*   [BreakStone](okp4-law-stone-executemsg-oneof-breakstone.md "check type definition")
