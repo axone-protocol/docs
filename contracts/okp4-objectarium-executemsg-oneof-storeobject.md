@@ -26,17 +26,15 @@ The "compression\_algorithm" parameter specifies the algorithm for compressing t
 
 ## store\_object
 
-
-
 `store_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md "undefined#/execute/oneOf/0/properties/store_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object.md "undefined#/execute/oneOf/0/properties/store_object")
 
 ### store\_object Type
 

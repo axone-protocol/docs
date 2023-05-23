@@ -16,4 +16,4 @@ merged type ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select-
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select-properties-query-allof-0.md "check type definition")
