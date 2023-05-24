@@ -6,7 +6,7 @@ undefined#/execute/oneOf/1
 
 Delete the data (RDF triples) from the store matching the patterns defined by the provided query. For non-existing triples it acts as no-op.
 
-Example: `json { "prefixes": [ { "prefix": "foaf", "namespace": "http://xmlns.com/foaf/0.1/" } ], "delete": [ { "subject": { "variable": "s" }, "predicate": { "variable": "p" }, "object": { "variable": "o" } } ], "where": [ { "simple": { "triplePattern": { "subject": { "variable": "s" }, "predicate": { "node": { "namedNode": {"prefixed": "foaf:givenName"} } }, "object": { "literal": { "simple": "Myrddin" } } } } }, { "simple": { "triplePattern": { "subject": { "variable": "s" }, "predicate": { "variable": "p" }, "object": { "variable": "o" } } } } ] `
+Example: `json { "prefixes": [ { "prefix": "foaf", "namespace": "http://xmlns.com/foaf/0.1/" } ], "delete": [ { "subject": { "variable": "s" }, "predicate": { "variable": "p" }, "object": { "variable": "o" } } ], "where": [ { "simple": { "triplePattern": { "subject": { "variable": "s" }, "predicate": { "node": { "namedNode": {"prefixed": "foaf:givenName"} } }, "object": { "literal": { "simple": "Myrddin" } } } } }, { "simple": { "triplePattern": { "subject": { "variable": "s" }, "predicate": { "variable": "p" }, "object": { "variable": "o" } } } } ]`
 
 Only the smart contract owner (i.e. the address who instantiated it) is authorized to perform this action.
 
@@ -26,17 +26,15 @@ Only the smart contract owner (i.e. the address who instantiated it) is authoriz
 
 ## delete\_data
 
-
-
 `delete_data`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data.md))
+* Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data.md "undefined#/execute/oneOf/1/properties/delete_data")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data.md "undefined#/execute/oneOf/1/properties/delete_data")
 
 ### delete\_data Type
 
