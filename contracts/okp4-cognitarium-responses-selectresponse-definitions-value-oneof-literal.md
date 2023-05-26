@@ -29,13 +29,13 @@ The datatype of the literal.
 
 `datatype`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/datatype")
 
 ### datatype Type
 
@@ -43,23 +43,21 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-datatype-anyof-1.md "check type definition")
 
 ## type
 
-
-
 `type`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/type")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/type")
 
 ### type Type
 
@@ -79,13 +77,13 @@ The value of the literal.
 
 `value`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/value")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/value")
 
 ### value Type
 
@@ -97,13 +95,13 @@ The language tag of the literal.
 
 `xml:lang`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-xmllang.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/xml:lang")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-literal-properties-xmllang.md "undefined#/responses/select/definitions/Value/oneOf/1/properties/xml:lang")
 
 ### xml:lang Type
 

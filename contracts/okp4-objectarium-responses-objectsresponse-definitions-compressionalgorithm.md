@@ -18,6 +18,6 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-co
 
 one (and only one) of
 
-*   [Passthrough](okp4-objectarium-responses-objectsresponse-definitions-compressionalgorithm-oneof-passthrough.md "check type definition")
+* [Passthrough](okp4-objectarium-responses-objectsresponse-definitions-compressionalgorithm-oneof-passthrough.md "check type definition")
 
-*   [Snappy](okp4-objectarium-responses-objectsresponse-definitions-compressionalgorithm-oneof-snappy.md "check type definition")
+* [Snappy](okp4-objectarium-responses-objectsresponse-definitions-compressionalgorithm-oneof-snappy.md "check type definition")

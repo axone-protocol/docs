@@ -22,17 +22,15 @@ A node, i.e. an IRI or a blank node.
 
 ## node
 
-
-
 `node`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-node-properties-node.md "undefined#/query/definitions/VarOrNodeOrLiteral/oneOf/1/properties/node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-varornodeorliteral-oneof-node-properties-node.md "undefined#/query/definitions/VarOrNodeOrLiteral/oneOf/1/properties/node")
 
 ### node Type
 
