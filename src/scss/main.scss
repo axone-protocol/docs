@@ -4,14 +4,79 @@ html {
   height: unset !important;
 
   .navbar__link--active,
-  .menu__link--active,
+  .menu__list-item,
   .table-of-contents__link--active,
   .pagination-nav__label,
   .footer__title {
     font-family: var(--ifm-heading-font-family);
   }
 
+  .menu__link {
+    margin-top: 0%;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+
+  h2:hover {
+    color: #ff9500;
+  }
+
+  .menu__list-item-collapsible {
+    display: none;
+  }
+
+  .navbar__items--right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .card-title {
+    text-decoration: none;
+  }
+
+  .thin-scrollbar {
+    background-color: var(--ifm-navbar-background-color);
+  }
+
+  .menu__link--active,
+  .menu__link:hover {
+    border-right: solid 2px;
+    border-radius: 0;
+    border-color: #ff9500;
+  }
+
+  .button[class*="CollapseButton"] {
+    position: absolute;
+    bottom: auto;
+    border-radius: 10px;
+  }
+
+  button[class*="collapseSidebarButton_node_modules-"],
+  button[class*="collapseSidebarButton_node_modules-"]:hover {
+    background-color: inherit;
+    margin-top: 20px;
+  }
+
+  [class*="menu_node_modules-"] {
+    padding-top: 50px;
+  }
+
+  .markdown h1:first-child {
+    color: inherit;
+  }
+
+  .menu__list-item {
+    padding-top: 10px;
+    margin-left: -10px;
+  }
+
+  .navbar--fixed-top {
+    height: 80px;
+  }
+
   .navbar__items {
+    font-size: 18px;
+
     .navbar__search {
       input {
         font-family: var(--ifm-font-family-base);
@@ -21,6 +86,18 @@ html {
         cursor: pointer;
       }
     }
+  }
+
+  .pagination-nav__label {
+    color: var(--ifm-font-color-base);
+  }
+
+  .pagination-nav__label:hover {
+    color: var(--ifm-color-primary);
+  }
+
+  .navbar__link--active {
+    font-weight: var(--ifm-font-weight-bold);
   }
 
   .footer {
@@ -36,15 +113,13 @@ html {
   }
 
   main {
-    background-image: var(--ifm-background-image-url);
-    background-repeat: no-repeat;
-
     article {
       > *:not(footer) {
         a,
         a:hover {
           color: var(--ifm-article-anchor-color);
           font-weight: bold;
+          text-decoration: none;
         }
       }
 
