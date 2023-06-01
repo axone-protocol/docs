@@ -22,15 +22,17 @@ Returns the resources matching the criteria defined by the provided query.
 
 ## select
 
+
+
 `select`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select.md))
+*   Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-select-properties-select.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select.md "undefined#/query/oneOf/1/properties/select")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-select-properties-select.md "undefined#/query/oneOf/1/properties/select")
 
 ### select Type
 
