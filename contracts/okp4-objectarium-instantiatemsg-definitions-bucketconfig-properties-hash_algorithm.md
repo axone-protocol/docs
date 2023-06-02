@@ -18,6 +18,6 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-anyof-1.md "check type definition")
