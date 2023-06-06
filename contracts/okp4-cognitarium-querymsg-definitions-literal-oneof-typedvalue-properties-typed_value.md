@@ -4,6 +4,8 @@
 undefined#/query/definitions/Literal/oneOf/2/properties/typed_value
 ```
 
+
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -25,13 +27,13 @@ The [datatype IRI](https://www.w3.org/TR/rdf11-concepts/#dfn-datatype-iri).
 
 `datatype`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md))
+*   Type: merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/datatype")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/datatype")
 
 ### datatype Type
 
@@ -39,7 +41,7 @@ merged type ([Details](okp4-cognitarium-querymsg-definitions-literal-oneof-typed
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-datatype-allof-0.md "check type definition")
 
 ## value
 
@@ -47,13 +49,13 @@ The [lexical form](https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form).
 
 `value`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/value")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-literal-oneof-typedvalue-properties-typed_value-properties-value.md "undefined#/query/definitions/Literal/oneOf/2/properties/typed_value/properties/value")
 
 ### value Type
 
