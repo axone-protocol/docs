@@ -4,8 +4,6 @@
 undefined#/query/oneOf/2/properties/objects
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-objectarium.json\*](schema/okp4-objectarium.json "open original schema") |
@@ -28,13 +26,13 @@ The owner of the objects to get.
 
 `address`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-address.md "undefined#/query/oneOf/2/properties/objects/properties/address")
 
 ### address Type
 
@@ -46,13 +44,13 @@ The point in the sequence to start returning objects.
 
 `after`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-after.md "undefined#/query/oneOf/2/properties/objects/properties/after")
 
 ### after Type
 
@@ -64,13 +62,13 @@ The number of objects to return.
 
 `first`
 
-*   is optional
+* is optional
 
-*   Type: `integer`
+* Type: `integer`
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects-properties-first.md "undefined#/query/oneOf/2/properties/objects/properties/first")
 
 ### first Type
 

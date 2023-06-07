@@ -27,13 +27,13 @@ The head of the response, i.e. the set of variables mentioned in the results.
 
 `head`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head.md "undefined#/responses/select/properties/head")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head.md "undefined#/responses/select/properties/head")
 
 ### head Type
 
@@ -41,7 +41,7 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
 
 ## results
 
@@ -49,13 +49,13 @@ The results of the select query.
 
 `results`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-results.md))
+* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-results.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results.md "undefined#/responses/select/properties/results")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results.md "undefined#/responses/select/properties/results")
 
 ### results Type
 
@@ -63,7 +63,7 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-resu
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-results-allof-0.md "check type definition")
 
 # SelectResponse Definitions
 
@@ -85,13 +85,13 @@ The variables selected in the query.
 
 `vars`
 
-*   is required
+* is required
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-head-properties-vars.md "undefined#/responses/select/definitions/Head/properties/vars")
 
 #### vars Type
 
@@ -126,13 +126,13 @@ The bindings of the results.
 
 `bindings`
 
-*   is required
+* is required
 
-*   Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+* Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
 
 #### bindings Type
 

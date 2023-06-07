@@ -22,17 +22,15 @@ UnpinObject unpins the object in the bucket for the considered sender. If the ob
 
 ## unpin\_object
 
-
-
 `unpin_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md "undefined#/execute/oneOf/3/properties/unpin_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-unpinobject-properties-unpin_object.md "undefined#/execute/oneOf/3/properties/unpin_object")
 
 ### unpin\_object Type
 

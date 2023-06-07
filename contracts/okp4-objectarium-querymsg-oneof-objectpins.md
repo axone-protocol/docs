@@ -22,17 +22,15 @@ ObjectPins returns the list of addresses that pinned the object with the given i
 
 ## object\_pins
 
-
-
 `object_pins`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md "undefined#/query/oneOf/4/properties/object_pins")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectpins-properties-object_pins.md "undefined#/query/oneOf/4/properties/object_pins")
 
 ### object\_pins Type
 
