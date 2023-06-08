@@ -23,15 +23,17 @@ Represents an IRI.
 
 ## type
 
+
+
 `type`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/type")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/type")
 
 ### type Type
 
@@ -41,9 +43,9 @@ Represents an IRI.
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value     | Explanation |
-| :-------- | :---------- |
-| `"u_r_i"` |             |
+| Value   | Explanation |
+| :------ | :---------- |
+| `"uri"` |             |
 
 ## value
 
@@ -51,13 +53,13 @@ The value of the IRI.
 
 `value`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md))
+*   Type: merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/value")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/0/properties/value")
 
 ### value Type
 
@@ -65,4 +67,4 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-definitions-val
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-uri-properties-value-allof-0.md "check type definition")
