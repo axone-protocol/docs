@@ -23,15 +23,17 @@ Represents a blank node.
 
 ## type
 
+
+
 `type`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/type")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-type.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/type")
 
 ### type Type
 
@@ -51,13 +53,13 @@ The identifier of the blank node.
 
 `value`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/value")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-value-oneof-blanknode-properties-value.md "undefined#/responses/select/definitions/Value/oneOf/2/properties/value")
 
 ### value Type
 
