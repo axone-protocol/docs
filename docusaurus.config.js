@@ -69,7 +69,7 @@ const config = {
             activeBasePath: "/nodes"
           },
           {
-            to: '/technical-documentation/ecosystem-overview',
+            to: '/technical-documentation/introduction',
             position: 'left',
             label: 'Technical documentation',
             activeBasePath: "/technical-documentation"
