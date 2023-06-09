@@ -75,6 +75,12 @@ const config = {
             activeBasePath: "/tech-doc"
           },
           {
+            to: '/tutorials/overview',
+            position: 'left',
+            label: 'Tutorials',
+            activeBasePath: "/tutorials"
+          },
+          {
             type: 'dropdown',
             label: 'API',
             position: 'left',
