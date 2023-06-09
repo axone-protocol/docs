@@ -21,10 +21,6 @@ html {
     color: #ff9500;
   }
 
-  .menu__list-item-collapsible {
-    display: none;
-  }
-
   .navbar__items--right {
     display: flex;
     flex-direction: row-reverse;
@@ -65,10 +61,6 @@ html {
     color: inherit;
   }
 
-  .menu__list-item {
-    padding-top: 10px;
-    margin-left: -10px;
-  }
 
   .navbar--fixed-top {
     height: 80px;
