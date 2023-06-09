@@ -22,17 +22,15 @@ Returns a description of the resource identified by the provided IRI as a set of
 
 ## describe
 
-
-
 `describe`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe.md))
+* Type: `object` ([Details](okp4-cognitarium-querymsg-oneof-describe-properties-describe.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe.md "undefined#/query/oneOf/2/properties/describe")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-oneof-describe-properties-describe.md "undefined#/query/oneOf/2/properties/describe")
 
 ### describe Type
 
