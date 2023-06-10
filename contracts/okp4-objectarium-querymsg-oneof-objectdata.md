@@ -22,17 +22,15 @@ ObjectData returns the content of the object with the given id.
 
 ## object\_data
 
-
-
 `object_data`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md))
+* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
+* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objectdata-properties-object_data.md "undefined#/query/oneOf/3/properties/object_data")
 
 ### object\_data Type
 

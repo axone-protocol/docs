@@ -22,17 +22,15 @@ ForgetObject first unpin the object from the bucket for the considered sender, t
 
 ## forget\_object
 
-
-
 `forget_object`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md))
+* Type: `object` ([Details](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
+* defined in: [okp4-objectarium](okp4-objectarium-executemsg-oneof-forgetobject-properties-forget_object.md "undefined#/execute/oneOf/1/properties/forget_object")
 
 ### forget\_object Type
 
