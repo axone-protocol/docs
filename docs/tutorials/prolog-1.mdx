@@ -299,7 +299,7 @@ okp4d query txs \
 --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc \
---output json | jq '.txs | last | .logs | last | .events | .[] | select(.type == "instantiate") | .attributes | .[] | select(.key == "_contract_address") | .value'
+--output json | jq '.txs[-1].logs[-1].events[] | select(.type == "instantiate").attributes[] | select(.key == "_contract_address").value'
 
 # "okp41xyezleexfsmn036n73uxg5y8nat0sddx8ffksnm6vf6hpmtgxx2s8hjze8"
 ```
@@ -309,7 +309,7 @@ You may want to know the `object_id` of the Prolog program you stored in the `ob
 ```bash
 okp4d query txs --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
 --chain-id okp4-nemeton-1  --node https://api.testnet.okp4.network:443/rpc \
---output json | jq '.txs | last | .logs | last | .events | .[] | select(.type == "wasm") | .attributes | .[] | select(.key == "id") | .value'
+--output json | jq '.txs[-1].logs[-1].events[] | select(.type == "wasm").attributes[] | select(.key == "id").value'
 
 # "2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3"
 ```
@@ -352,7 +352,7 @@ okp4d query wasm contract-state smart okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2s
 --node https://api.testnet.okp4.network:443/rpc \
 "{\"object_data\": {\"id\": $(okp4d query txs --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
 --chain-id okp4-nemeton-1  --node https://api.testnet.okp4.network:443/rpc \
---output json | jq '.txs | last | .logs | last | .events | .[] | select(.type == "wasm") | .attributes | .[] | select(.key == "id") | .value')}}" \
+--output json | jq '.txs[-1].logs[-1].events[] | select(.type == "wasm").attributes[] | select(.key == "id").value')}}" \
 | jq '.data' | tr -d '"' | base64 -d
 
 # Returns the Prolog program
