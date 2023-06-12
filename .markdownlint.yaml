@@ -3,3 +3,4 @@ no-hard-tabs: false
 no-inline-html: false
 no-emphasis-as-header: false
 no-duplicate-header: false
+ol-prefix: false
