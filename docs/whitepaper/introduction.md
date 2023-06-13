@@ -36,7 +36,7 @@ Today's prevailing issue is that individuals and organizations tend to veer towa
 
 - **Risks** (lack of trust between participants, the fear of loss of competitive advantage)
 - **Costs** (lack of infrastructures, data governance and interoperability issues)
-- **Lack of incentives** (bad business models, bad incentives, unclear benefits)    
+- **Lack of incentives** (bad business models, bad incentives, unclear benefits)
 
 **Stats** :
 
@@ -57,25 +57,24 @@ The same kind of transformation is needed today in the realm of data and knowled
 Recognizing the immense potential and value of data exploitation and cognition, tech giants swiftly grasped the importance of mastering the Knowledge Value Chain for their own operations. Having fine-tuned their approach to managing and leveraging data, they are now able to extend their capabilities beyond their core operations, offering sophisticated data infrastructure solutions as a product to others, thereby shaping the landscape of data and knowledge sharing in the digital realm.
 
 - **Google Cloud Platform**:
-    
+
     Google offers a range of products that cover a wide range of data and knowledge needs. For example, Google BigQuery for big data analysis, Google Cloud Storage for data storage, Google Data Studio for data visualization, and Google Workspace (formerly G Suite) for collaboration and knowledge sharing.
-    
+
 - **Amazon Web Services (AWS):**
-    
+
     AWS provides a comprehensive suite of services for data and knowledge management. For instance, Amazon S3 for scalable storage, Amazon Redshift for data warehousing, Amazon Quicksight for data visualization, and Amazon Chime for collaboration and knowledge sharing. Additionally, they offer more specialized tools like Amazon Athena for querying large datasets and Amazon Comprehend for natural language processing and machine learning applications.
-    
+
 - **Microsoft Azure**:
-    
+
     Azure offers a range of services for data and knowledge management. For example, Azure Data Lake for storage and analysis of Big Data, Azure SQL Database for database management, Power BI for data visualization, and Microsoft Teams for collaboration and knowledge sharing.
-    
+
 - **IBM Cloud**:
-    
+
     IBM offers a range of services for data and knowledge management. For example, IBM Db2 for database management, IBM Watson for AI and data analysis, IBM Cognos Analytics for data visualization, and IBM Connections for knowledge sharing and collaboration.
-    
+
 - **Snowflake**:
-    
+
     Snowflake is a fully managed cloud-based data storage and analysis platform that offers a solution for data storage, data engineering, data warehousing, data lake, data analytics, AI, and machine learning. It's important to note that although Snowflake provides a comprehensive solution for data management, it primarily focuses on structured and semi-structured aspects of data.
-    
 
 While these solutions leverage diverse technologies, their common goal is to establish a conducive environment for data and knowledge exploitation. They offer the convenience of a ready-to-use framework, user-friendly interfaces, and comprehensive support services, enabling seamless onboarding. However, these benefits often come with a significant price tag.
 
@@ -89,7 +88,7 @@ Despite their advantages, a critical limitation common to these solutions is **t
 
 Despite their benefits, the drawbacks associated with centralized data management systems necessitate exploring alternative approaches.
 
-**Web 3.0 Solutions**
+### Web 3.0 Solutions
 
 In light of data sharing, blockchain technologies play a crucial role. They can offer a secure, transparent, and decentralized infrastructure, extending their value beyond financial transactions to peer-to-peer data exchanges and secure collaborations. This is increasingly important in a data-driven world where privacy, security, and the ability to customize solutions are paramount. Hence, the relevance of blockchain technology in creating a more open and interconnected world of secure data sharing is profound, and its potential stretches across numerous sectors.
 
