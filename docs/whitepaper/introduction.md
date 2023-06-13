@@ -38,7 +38,7 @@ Today's prevailing issue is that individuals and organizations tend to veer towa
 - **Costs** (lack of infrastructures, data governance and interoperability issues)
 - **Lack of incentives** (bad business models, bad incentives, unclear benefits)
 
-![Scale](img/content/whitepaper/intro-1.webp)
+![Scale](/img/content/whitepaper/intro-1.webp)
 
 **Stats** :
 
@@ -121,19 +121,19 @@ This mission includes **maintaining the delicate balance** between respecting th
 
 To break down silos and unlock the full potential of data and algorithm sharing, the solution is to allow the creation of  **viable business models with reliable governance models.**
 
-![intro-2](img/content/whitepaper/intro-2.webp)
+![intro-2](/img/content/whitepaper/intro-2.webp)
 
 To reach this purpose, the challenges are divided into two distinct sections:
 
 - **The Human Issues:**: Removing, as much as possible, the need for trust between participants through on-chain rules definition and enforcement. Creating powerful incentives to share and consume off-chain resources through the protocol.
 - **The Technical Issues**: Building the actual resources, tools, and systems needed to store, process, and transfer information.
 
-![intro-3](img/content/whitepaper/intro-3.webp)
+![intro-3](/img/content/whitepaper/intro-3.webp)
 
 OKP4 aims to establish a system that encourages collaboration, co-creation, and knowledge sharing while ensuring and respecting individual consents and interests. As a neutral and public good, OKP4 focuses on addressing Technical solutions to provide an agnostic, flexible and secure infrastructure to solve Human Issues. The real challenge is to provide a solution that is simultaneously flexible enough to meet the needs of various stakeholders, expressive enough to interpret and interoperate different components, and secure enough to be executed within a trustworthy environment.
 
 From a technical standpoint, OKP4 offers a unique solution, deftly combining the virtues of openness and decentralization with the adaptive potential of interoperability and modularity.
 
-![intro-4](img/content/whitepaper/intro-4.webp)
+![intro-4](/img/content/whitepaper/intro-4.webp)
 
 In the following section, we will explore how OKP4 elegantly combines these four pillars to elevate the knowledge economy to the next level.
