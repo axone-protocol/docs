@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Governance rules with Prolog
 
+![Tutorials overview](/img/content/tutorials/prolog.webp)
+
 Welcome OKP4 builders to an exciting journey at the crossroads of Prolog and blockchain!
 
 This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether aspiring to develop on the OKP4 protocol or are intrigued by one of the core OKP4 protocol’s concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
@@ -268,23 +270,23 @@ To store a Prolog program and be able to query it later within the OKP4 blockcha
 
 #### `law-stone` instantiate considerations
 
-The identifier assigned to this smart contract once compiled and deployed on the testnet (`chain-id = okp4-nemeton-1`) is `CODE_ID = 3`.  
+The identifier assigned to this smart contract once compiled and deployed on the testnet (`chain-id = okp4-nemeton-1`) is `CODE_ID = 5`.  
 You have to provide two parameters to instantiate:
 
 1. `program`: the base64 encoded program (Prolog code)
 2. `storage_address`:  another smart contract, [`objectarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-objectarium), stores unstructured data as Prolog programs. You should specify the address of an `objectarium` contract on which the program will be stored and pinned (pinning prevents its removal and thus ensure its availability).
 
-You can use the following command to store the local `my_knowledgebase.pl` Prolog program, with `okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p` as a deployed `objectarium` instance:
+You can use the following command to store the local `my_knowledgebase.pl` Prolog program, with `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx` as a deployed `objectarium` instance:
 
 ```bash
-okp4d tx wasm instantiate 3 \
+okp4d tx wasm instantiate 5 \
 --from mywallet \
 --label "rules-tutorial-ex-$(date +%s)" \
 --no-admin \
 --chain-id okp4-nemeton-1 \
 --gas 1000000 \
 --node https://api.testnet.okp4.network:443/rpc \
-"{\"program\":\"$(cat my_knowledgebase.pl | base64)\", \"storage_address\": \"okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p\"}"
+"{\"program\":\"$(cat my_knowledgebase.pl | base64)\", \"storage_address\": \"okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx\"}"
 ```
 
 Replace the `--from` value by your wallet name. You can also change the `--label` name as you want but note it should be unique.
@@ -292,22 +294,22 @@ You can replace `--no-admin` with `--admin YOUR_OKP4_ADDR` if you want to be abl
 
 #### `law-stone` instantiate transaction results
 
-The following command gets you the contract address of the last `law-stone` (**`CODE_ID = 3`**) instantiated by the okp4 address **`okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8`**
+The following command gets you the contract address of the last `law-stone` (**`CODE_ID = 5`**) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**
 
 ```bash
 okp4d query txs \
---events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
+--events 'message.sender=okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9&instantiate.code_id=5' \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json | jq '.txs[-1].logs[-1].events[] | select(.type == "instantiate").attributes[] | select(.key == "_contract_address").value'
 
-# "okp41xyezleexfsmn036n73uxg5y8nat0sddx8ffksnm6vf6hpmtgxx2s8hjze8"
+# "okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf"
 ```
 
 You may want to know the `object_id` of the Prolog program you stored in the `objectarium` contract. Here is how you can have it:
 
 ```bash
-okp4d query txs --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
+okp4d query txs --events 'message.sender=okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9&instantiate.code_id=5' \
 --chain-id okp4-nemeton-1  --node https://api.testnet.okp4.network:443/rpc \
 --output json | jq '.txs[-1].logs[-1].events[] | select(.type == "wasm").attributes[] | select(.key == "id").value'
 
@@ -317,7 +319,7 @@ okp4d query txs --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl
 The `objectarium` smart contract has a query method to get the base64 stored data by its object `id`:  
 
 ```bash
-okp4d query wasm contract-state smart okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p \
+okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
 --output json \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc \
@@ -343,14 +345,14 @@ can_vote(X) :- member(X, council).
 '
 ```
 
-Let’s combine it all! To get back the Prolog code stored in the last `law-stone` (**`CODE_ID = 3`**, storage-oriented `objectarium` smart contract address = `okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p`) instantiated by the okp4 address **`okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8`**, you can type:
+Let’s combine it all! To get back the Prolog code stored in the last `law-stone` (**`CODE_ID = 5`**, storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**, you can type:
 
 ```bash
-okp4d query wasm contract-state smart okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p \
+okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
 --output json \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc \
-"{\"object_data\": {\"id\": $(okp4d query txs --events 'message.sender=okp41zj7awem0sh5k4rr3j0fzzjs7afvxqffyrl73x8&instantiate.code_id=3' \
+"{\"object_data\": {\"id\": $(okp4d query txs --events 'message.sender=okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9&instantiate.code_id=5' \
 --chain-id okp4-nemeton-1  --node https://api.testnet.okp4.network:443/rpc \
 --output json | jq '.txs[-1].logs[-1].events[] | select(.type == "wasm").attributes[] | select(.key == "id").value')}}" \
 | jq '.data' | tr -d '"' | base64 -d
@@ -368,10 +370,10 @@ can_vote(X) :- member(X, council).
 
 ### How to ask for validation rules (Prolog program) on-chain with the `okp4d` CLI
 
-Now we have instantiated a `law-stone` smart contract (address = `okp41xyezleexfsmn036n73uxg5y8nat0sddx8ffksnm6vf6hpmtgxx2s8hjze8`), we can use the `Ask` query to evaluate predicates against the underlying program:
+Now we have instantiated a `law-stone` smart contract (address = `okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf`), we can use the `Ask` query to evaluate predicates against the underlying program:
 
 ```bash
-okp4d query wasm contract-state smart okp41xyezleexfsmn036n73uxg5y8nat0sddx8ffksnm6vf6hpmtgxx2s8hjze8 \
+okp4d query wasm contract-state smart okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf \
 --node https://api.testnet.okp4.network:443/rpc \
 "{\"ask\": {\"query\": \"can_vote(X).\"}}"
 
@@ -458,7 +460,7 @@ height: "2687574"
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --program "bank_balances_has_sufficient_coin(Addr, Limit, Unit) :- bank_balances(Addr, [Unit-Nb]), compare(>, Nb, Limit)." \
-"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 9899958239, uknow)." 
+"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 99899958239, uknow)." 
 
 # NOK
 : ' 
@@ -506,7 +508,7 @@ Where:
 - `{contract_address}`: The smart contract address to query
 - `{contract_query}`: [Url encoded](https://www.urlencoder.org/) JSON query to perform on the targeted smart contract.
 
-Let’s load the Prolog program stored with the `objectarium` instance `address = okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p`, id =  `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
+Let’s load the Prolog program stored with the `objectarium` instance `address = okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`, id =  `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
 
 <details><summary>Query payload details</summary>
 
@@ -526,7 +528,7 @@ Let’s load the Prolog program stored with the `objectarium` instance `address 
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
-"consult('cosmwasm:okp4-objectarium:okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), source_file(File), can_vote(X)."\
+"consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), source_file(File), can_vote(X)."\
 | jq
 
 # "my_knowledgebase.pl" previously stored on-chain, now evaluates 'can_vote(X).' from it: X = alice 
@@ -547,7 +549,7 @@ okp4d query logic ask \
           {
             "variable": "File",
             "term": {
-              "name": "'cosmwasm:okp4-objectarium:okp416zrd20eqwx0nv05pu45na6jq345r6ggqrgx2sh79ln5z8vqvztgsqsfr4p?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'",
+              "name": "'cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'",
               "arguments": []
             }
           },
