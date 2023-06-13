@@ -22,15 +22,17 @@ A value with a datatype.
 
 ## typed\_value
 
+
+
 `typed_value`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue-properties-typed_value.md))
+*   Type: `object` ([Details](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue-properties-typed_value.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue-properties-typed_value.md "undefined#/execute/definitions/Literal/oneOf/2/properties/typed_value")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue-properties-typed_value.md "undefined#/execute/definitions/Literal/oneOf/2/properties/typed_value")
 
 ### typed\_value Type
 
