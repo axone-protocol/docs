@@ -68,10 +68,10 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/whitepaper/okp4-blockchain/"
+          href="/whitepaper/solution/"
           class="card-title card-link stretched-link"
         >
-          <h2>OKP4 Blockchain</h2>
+          <h2>OKP4 Solution</h2>
         </a>
         <p class="card-text">Everything about the first blockchain designed for digital assets sharing & coordination.
         </p>
@@ -85,23 +85,23 @@ Welcome! OKP4 is a public PoS layer 1 blockchain built for trust-minimized data 
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/whitepaper/data-spaces/"
+          href="/whitepaper/architecture/"
           class="card-title card-link stretched-link"
         >
-          <h2>Data Spaces</h2>
+          <h2>Architecture</h2>
         </a>
-        <p class="card-text">Everything about Data Spaces : the ecosystems of data and service sharing.</p>
+        <p class="card-text">Everything about the OKP4 Architecture</p>
       </div>
     </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
         <a
-          href="/whitepaper/dataverse/"
+          href="/whitepaper/tokens/"
           class="card-title card-link stretched-link"
         >
-          <h2>Dataverse</h2>
+          <h2>Tokens</h2>
         </a>
-        <p class="card-text">Everything about Dataverse : the ever-extanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, and other resources referenced in the Blockchain.
+        <p class="card-text">Everything about the KNOW token and its ecosystem
         </p>
       </div>
     </div>

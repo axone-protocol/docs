@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# INTRODUCTION
+# Introduction
 
 ## 1. We need Knowledge
 
