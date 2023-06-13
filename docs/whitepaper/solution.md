@@ -28,7 +28,7 @@ To achieve these objectives, OKP4 is designed as **a protocol layer optimized fo
 
 At a high level, OKP4 protocol aims at interconnecting off-chain resources with customized rules and governance which are recorded in the immutable source of trust. This allows everyone to build specific applications leveraging shared data and algorithms through a sustainable settlement layer.
 
-![P2-01](/static/img/content/whitepaper/P2-01.webp)
+![P2-01](/img/content/whitepaper/P2-01.webp)
 
 There are several parts to distinguish:
 
