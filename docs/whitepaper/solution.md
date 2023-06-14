@@ -100,7 +100,7 @@ For this, we need a specific design **(modularity)** to be able to interconnect 
 
 The OKP4 blockchain is a public delegated proof-of-stake layer 1 built with the [Cosmos SDK](https://docs.cosmos.network/main).
 
-::: info
+:::info
 
 *Cosmos in a nutshell:*
 
