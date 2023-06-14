@@ -39,7 +39,7 @@ There are several parts to distinguish:
 
 Let's do an overview of the different parts of the protocol and their purposes in the architecture
 
-IMG 2
+![P2-02](/img/content/whitepaper/P2-02.webp)
 
 OKP4 blockchain enables a new generation of **hybrid on & off-chain applications**. It is a sector-specific blockchain designed for resource-sharing & coordination (datasets, algorithms, storage, computation...).
 
@@ -71,14 +71,14 @@ As a decentralized orchestrator of digital resources, OKP4 needs a blockchain in
 - Ensuring an immutable and auditable registration of settlements for the Protocol Layer
 - Enabling highly customized settlements to coordinate participants and resources through rules enforcement and value exchange
 
-IMG 3
+![P2-03](/img/content/whitepaper/P2-03.webp)
 
 As the basis of the architecture, the blockchain will serve as **a source of truth and trust** to build our protocol on top of that. It responds to two of our challenges:
 
 - Decentralization
 - Openness
 
-IMG 4
+![p2-04](/img/content/whitepaper/p2-04.webp)
 
 Thanks to the public blockchain solution, OKP4 seeks to state as a **permissionless, trustless and censorship resistant protocol** where anyone can verify all the events in a sustainable and immutable ledger.
 
@@ -90,7 +90,7 @@ Nevertheless, due to the complex and fragmented nature of our domain and its gov
 
 For this, we need a specific design **(modularity)** to be able to interconnect and interpret resources of various nature **(interoperability)**
 
-IMG 5
+![p2-05](/img/content/whitepaper/p2-05.webp)
 
 **What design for OKP4 Protocol ?**
 
@@ -108,7 +108,7 @@ The Cosmos stack is composed of three modular elements:
 
 **IBC (Inter Blockchain Communication):** IBC is a general-purpose messaging protocol designed for communication between IBC-enabled blockchains. It's implemented through a specific module that ensures reliable, ordered, and authenticated communication. The IBC fosters an environment of interoperability, allowing distinct blockchains to interact seamlessly, thus enhancing the overall scalability and utility of the network.
 
-IMG 6
+![P2-06](/img/content/whitepaper/P2-06.webp)
 
 The idea behind this architecture is to use a generic consensus engine (Tendermint Core) and build an application layer by combining modules (Cosmos SDK) and creating specific design for specific use cases. Then, IBC module enables any sovereign blockchain to communicate.
 
@@ -122,7 +122,7 @@ The OKP4 blockchain uses the classic stack of Cosmos SDK modules to manage the c
 
 Our task is to **build specific modules and smart contracts** tailored for OKP4.
 
-IMG 7
+![p2-07](/img/content/whitepaper/p2-07.webp)
 
 ## OKP4 Protocol Architecture
 
@@ -134,7 +134,7 @@ What are the implications and applications of such a system?
 
 More specifically, why is it essential to have interoperability and modularity built into our infrastructure?
 
-IMG 8
+![p2-08](/img/content/whitepaper/p2-08.webp)
 
 In order to build an open interoperable infrastructure for highly customized rules and governance mechanisms leveraged by a trust minimized resource sharing layer, we need to:
 
@@ -144,7 +144,7 @@ In order to build an open interoperable infrastructure for highly customized rul
 
 In order to fully understand the scope of its objectives and the design choice for the protocol, let us illustrate with a few examples :
 
-IMG 9
+![p2-09](/img/content/whitepaper/p2-09.webp)
 
 In this illustration, we identify three distinct digital resources:
 
@@ -161,7 +161,7 @@ Moreover, the protocol has to expressively understand the existing dependance an
 
 Then, the execution conditions of a new workflow involving these resources could exist based on criteria external to the resources themselves. To illustrate this, consider a second scenario:
 
-I10
+![p2-10](/img/content/whitepaper/p2-10.webp)
 
 Suppose a public administration of a country decides to combine the green and blue services to offer a new service, complete with its own rules and governance. It opts to provide this service free of charge to all public administrations within the same country.
 
@@ -173,7 +173,7 @@ So, what can we deduce from these scenarios?
 - It's imperative for the blockchain layer to interpret these mechanisms to maintain an **understandable source of truth**.
 - Execution guarantees are needed so that **execution proceeds smoothly** despite the combination of various on-chain/off-chain events, rules, and resources of diverse natures.
 
-I11
+![p2-11](/img/content/whitepaper/p2-11.webp)
 
 Thus, to ensure decentralized governance infrastructure for off-chain digital resources, we identify three fundamental criterias:
 
@@ -193,13 +193,13 @@ The primary objective of Zones is to facilitate the coordination of heterogeneou
 
 A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources. There is no materialized link that determines the belonging of a resource to a Zone since the rules and consents express conditions that constantly evolve over time.
 
-I12
+![p2-12](/img/content/whitepaper/p2-12.webp)
 
 Another way to perceive it is through the rules of the Zone. The existence of these rules defines the reality of the Zone, and it is through the consideration (evaluation) of digital resources that are compatible with the Zone that the extent of the Zone's territory is defined. In other words, the rules establish the boundaries and parameters that determine which digital resources fall within the Zone and are recognized as part of it. By evaluating the compatibility of resources with the Zone's rules, the scope and coverage of the Zone can be determined. Multiple Zones may share common resources and can be nested or overlapped, based on the rules associated with each resource and zone.
 
 There is then an endless combination of oftentimes interoperable Zones where participants and digital resources can interact freely and create value.
 
-I13
+![p2-13](/img/content/whitepaper/p2-13.webp)
 
 **Why no link between Zone and resources?**
 
@@ -209,7 +209,7 @@ In a way, this is quite similar to Adaptive Systems, which are systems that adju
 
 Anyone can initiate workflows (interaction of datasets and services according to the rules within a Zone) generating new outputs.
 
-I14
+![p2-14](/img/content/whitepaper/p2-14.webp)
 
 These outputs created from different shared resources within a Zone can feed any application. These applications are not part of the Zone and have their governance. They can be either Web 2.0 or Web 3.0 applications.
 
@@ -227,7 +227,7 @@ OKP4 protocol has to allow the specific design for these issues.
 
 Before diving into the specific design, it is important to distinguish what we build and what we re-use thanks to the Cosmos stacks.
 
-I16
+![p2-16](/img/content/whitepaper/p2-16.webp)
 
 *NB : As native code is integrated into the blockchain, the modules are represented at the level of the blockchain layer.*
 
@@ -235,7 +235,7 @@ I16
 
 ### 3.4.1 Creating and Managing Zones
 
-I17
+![p2-17](/img/content/whitepaper/p2-17.webp)
 
 As an open protocol, anyone can create their own Zones using the dedicated smart contracts that we are developing.
 
@@ -253,7 +253,7 @@ What is important to understand in the management of zones is that the implement
 
 ### Interpreting the rules
 
-I18
+![p2-18](/img/content/whitepaper/p2-18.webp)
 
 In a decentralized and autonomous system, the system must ensure that its rules are upheld consistently and universally.
 
@@ -269,7 +269,7 @@ To tackle this, OKP4 aims at providing a reliable and secure mechanism to ensure
 
 Each Zone carries the responsibility of consulting the rules to determine whether the action that the user wishes to perform is legitimate or not, given the rules established within the Zone. This consideration must also take into account different contexts at the time of the request, as the state of the blockchain evolves.
 
-I19
+![p2-19](/img/content/whitepaper/p2-19.webp)
 
 1 - The user wants to interact with a Zone
 
@@ -285,7 +285,7 @@ We will delve into this mechanism in the technical section (IV)
 
 ### Interpreting the protocol concept - Ontology
 
-I20
+![p2-20](/img/content/whitepaper/p2-20.webp)
 
 With the smart contracts managing the zones and the logic module, the OKP4 protocol is able to provide a flexible and resilient framework to enable the exploitation of digital resources.
 
@@ -293,13 +293,13 @@ However, in view of the different natures and dependencies between the different
 
 **Why is it important ?**
 
-I21
+![p2-21](/img/content/whitepaper/p2-21.webp)
 
 As we have deeply developed in the introduction, to really leverage the power of knowledge, it is necessary to develop a universal language taking into account the semantic aspect of each concept.
 
 Let’s take an illustration to clearly understand.
 
-I22
+![p2-22](/img/content/whitepaper/p2-22.webp)
 
 The structural language only gives a definition of concept in a wide range. However, the semantic language could give the meaning of concepts, properties, relationships and entities.
 
@@ -315,7 +315,7 @@ In OKP4 Protocol, our Ontology makes it possible to **model a semantic network o
 
 The OKP4 ontology is stored on-chain as a smart contract, which called Cognitarium. Storing the on-chain ontology ensures the expressiveness and understanding of the protocol work in a formal way
 
-I24
+![p2-24](/img/content/whitepaper/p2-24.webp)
 
 The image above shows a schematic representation that the OKP4 ontology could take.
 
@@ -335,7 +335,7 @@ In addition to serving as an immutable source of truth, the blockchain will prov
 
 Below, an illustration of a workflow representation in the form of a knowledge graph, generated thanks to the information stored on-chain.
 
-I25
+![p2-25](/img/content/whitepaper/p2-25.webp)
 
 **An example :**
 
@@ -351,7 +351,7 @@ I25
 
 ### Decentralized Execution
 
-I26
+![p2-26](/img/content/whitepaper/p2-26.webp)
 
 We are currently able to create highly customizable "commons" in terms of resources, governance, and usage rules. We can finely interpret the resources, their meaning, properties, and so forth.
 
@@ -363,7 +363,7 @@ The challenge here is to ensure that all the events of the protocol are executed
 
 To execute all the workflow while ensuring composability and integrity, we decided to implement a Service Execution Agreement in the form of a smart contract which called PACTUM
 
-I27
+![p2-27](/img/content/whitepaper/p2-27.webp)
 
 **How does the Pactum smart contract work ?**
 
@@ -381,11 +381,11 @@ The Dataverse is an ever-expanding universe comprised of all the Datasets, Algor
 
 While resources in the Dataverse are classified as "off-chain resources," it is crucial to note that these can encompass **centralized or decentralized** solutions, or even services with decentralized governance.
 
-I28
+![p2-28](/img/content/whitepaper/p2-28.webp)
 
 Zones can be nested and overlapping, as one dataset can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts : this is the Dataverse. All the digital resources indexed on the protocol have to register information on the blockchain to ensure the proper processing of the resources by the different entities of the protocol (ontology, logic module, SEA )
 
-I29
+![p2-29](/img/content/whitepaper/p2-29.webp)
 
 ### Dataverse purpose
 
@@ -411,7 +411,7 @@ For example, because Zone governance is highly customizable, it can be defined a
 
 OKP4 is a general-purpose Ecosystem that enables XaaS (Anything as a Service) integration. The Dataverse provides the flexibility to incorporate and utilize any digital resources. This flexibility is designed to accommodate a wide range of use cases, and to ensure that the platform remains agnostic to specific technologies or providers. There are two main categories of resources in the dataverse: data & services.
 
-**Digital Resources :** I30
+![p2-30](/img/content/whitepaper/p2-30.webp)
 
 **Datasets :**
 In the Dataverse, any datasets can be incorporated and utilized. This feature is supported by the off-chain storage of all datasets and services, enabling the handling of data of any volume, variety, and velocity. If your data is stored locally, you must ensure its network accessibility. This can be accomplished through uploading it to a locally maintained server, storing it with a cloud service provider, or integrating it into a decentralized storage network.
@@ -425,7 +425,7 @@ Theses templates can refer to several aspects of the governance :
 - Autocratic or Democratic Governance Template
 - Privacy-oriented Zone Template
 
-**X-as-a-Service :** I31
+![p2-31](/img/content/whitepaper/p2-31.webp)
 
 **STaaS : Storage as a service :**
 
