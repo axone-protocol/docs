@@ -24,9 +24,9 @@ Knowledge, in its various forms, is a powerful catalyst for progress and innovat
 
 Our knowledge is inherently limited by the way it is created and shared. This creation begins with data - the raw material gathered by humans or machines through observation. This data serves as the inputs that enable us to train our algorithmic minds and interpret the world. Upon being contextualized and interpreted, this data becomes knowledge.
 
-However, despite the omnipresence of data and algorithms, our knowledge remains limited. Why is this? **Because data and algorithms are not shared.**, essentially because of deficits of trust and incentives.
+However, despite the omnipresence of data and algorithms, our knowledge remains limited. Why is this? **Because data and algorithms are not shared**, essentially because of deficits of trust and incentives.
 
-This is where the decentralized web steps in, capable of reshuffling the cards in terms of knowledge creation and dissemination. The decentralized web holds the key for a fair and trusted infrastructure to share any existing dataset and algorithms, while tokens give innovating tools to incentivize collaboration. Within this context, OKP4 sets out to capitalize on the virtues of both Web 2.0 and Web 3.0 with the goal of propelling the knowledge economy to the next level.
+This is where the decentralized web steps in, capable of reshuffling the cards in terms of knowledge creation and dissemination. The decentralized web holds the key for a fair and trusted infrastructure to share any existing dataset and algorithms, while tokens give innovating tools to incentivize collaboration. Within this context, OKP4 sets out to capitalize on the virtues of both Web2 and Web3 with the goal of propelling the knowledge economy to the next level.
 
 ## 2. Why Sharing is not the Norm
 
