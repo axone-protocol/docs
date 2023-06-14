@@ -1,5 +1,5 @@
 ---
-sidebar_position:4
+sidebar_position: 4
 ---
 # Video Tuto #1 - Architecture
 🚀 Welcome to the first episode of Nono's Tuto ! 
