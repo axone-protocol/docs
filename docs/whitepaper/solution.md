@@ -6,7 +6,11 @@ sidebar_position: 3
 
 ## OKP4 Overview
 
-/!\ Info: this chapter is non-technical, suited to explain the concepts. The next chapter will dive into technical design.
+:::caution
+
+ this chapter is non-technical, suited to explain the concepts. The next chapter will dive into technical design.
+
+ :::
 
 ### General Purpose
 
