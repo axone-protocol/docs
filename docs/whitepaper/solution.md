@@ -10,15 +10,15 @@ sidebar_position: 3
 
 ### General Purpose
 
-**Offering a unique Solution to Digital Resource Sharing Challenges :**
+**Offering a unique Solution to Digital Resource Sharing Challenges:**
 
 OKP4 provides a **decentralized, open, public, censorship-resistant, and neutral infrastructure**, empowering everyone to harness the complete potential of digital resources for knowledge creation. It's a **flexible and expressive protocol** designed to facilitate the sharing of data and service to create knowledge among diverse stakeholders. The protocol aims to bridge the gaps between existing Web 2.0 and Web 3.0 solutions by integrating their respective strengths at various levels and enabling their interoperability.
 
-**Democratizing Data and Knowledge Access :**
+**Democratizing Data and Knowledge Access:**
 
 OKP4 democratizes access to data and knowledge by **breaking down silos and promoting collaboration**. It aims to create economic incentives and fair compensation models that encourage data and knowledge sharing. The protocol's design allows for a ****framework and rules based on an **immutable and auditable truth layer**, providing an unquestionable source of reliability. It offers **flexible governance mechanisms** that allow all participants to benefit from each other's interests, thereby fostering a win-win scenario.
 
-**Enabling the orchestration of shared resources :**
+**Enabling the orchestration of shared resources:**
 
 A key mission of OKP4 is to unlock new value chains, thus spreading awareness and educating the world about the importance of knowledge sharing in fostering innovation and evolution.
 
@@ -32,10 +32,10 @@ At a high level, OKP4 protocol aims at interconnecting off-chain resources with 
 
 There are several parts to distinguish:
 
-- Immutable source of truth and trust : **Blockchain layer - Consensus Layer**
+- Immutable source of truth and trust: **Blockchain layer - Consensus Layer**
 - Open interoperable solution to share resources and define rules to orchestrate them: **Protocol layer**
-- Off-chain resources : **Dataverse**
-- Valuable applications using resources shared through the protocol : **Use Cases**
+- Off-chain resources: **Dataverse**
+- Valuable applications using resources shared through the protocol: **Use Cases**
 
 Let's do an overview of the different parts of the protocol and their purposes in the architecture
 
@@ -43,19 +43,19 @@ Let's do an overview of the different parts of the protocol and their purposes i
 
 OKP4 blockchain enables a new generation of **hybrid on & off-chain applications**. It is a sector-specific blockchain designed for resource-sharing & coordination (datasets, algorithms, storage, computation...).
 
-**The Blockchain Layer: Fundamental Base of OKP4 :**
+**The Blockchain Layer: Fundamental Base of OKP4:**
 
 The OKP4 blockchain layer, a public distributed ledger, acts as **a vital settlement layer**, validating and recording Protocol Layer actions. As an open smart contract platform, it offers tools for unique application creation. Its operation is upheld by independent validators using the KNOW token, reinforcing system integrity. Governance lies with the community of token holders, signifying its decentralized nature. Built on the Cosmos SDK using the Tendermint algorithm, this Proof of Stake chain is specifically designed to best suit the protocol’s needs.
 
-**The Protocol Layer: Core of OKP4's Operation :**
+**The Protocol Layer: Core of OKP4's Operation:**
 
 The Protocol Layer constitutes **the heart of OKP4**, offering an open, interoperable space tailored for any resources, customized rules, governance mechanisms, and business models. This fosters interest alignment among participants and supports the development of useful applications based on shared resources. With its permissionless design, it encourages builders to innovate, providers to share, consumers to use, and users to reap benefits, while facilitating coordination for knowledge creation.
 
-**Dataverse: The Digital Environment :**
+**Dataverse: The Digital Environment:**
 
 The Dataverse is the **repository of digital resources indexed** and described through the protocol, encompassing datasets, algorithms, storage, computation, and workflow engines etc… Anything digital can be shared and referenced in the Dataverse, enabling Anything-as-a-Service (XaaS). The Dataverse serves as the off-chain environment orchestrated by the Protocol, where all actions are triggered on-chain, according to the rules.
 
-**Applications: Realizing Use Cases :**
+**Applications: Realizing Use Cases:**
 
 Applications represent **the endpoint use cases** enabled by the Protocol Layer's diverse services - resource availability, governance, and decentralized orchestration. Builders can create applications consuming the resources of the Dataverse, interfacing with end-users, underlining the protocol's practical application and value creation.
 
@@ -96,7 +96,7 @@ For this, we need a specific design **(modularity)** to be able to interconnect 
 
 The OKP4 blockchain is a public delegated proof-of-stake layer 1 built with the Cosmos SDK.
 
-*Cosmos in a nutshell :*
+*Cosmos in a nutshell:*
 
 *Cosmos is an application-specific blockchain (ASB)  ecosystem. It offers the ability for anyone to build their own sovereign ASB which is able to easily communicate with other blockchains. For its philosophy and its characteristics of sovereignty, modularity and interoperability, OKP4 is part of the Cosmos ecosystem.*
 
@@ -142,7 +142,7 @@ In order to build an open interoperable infrastructure for highly customized rul
 - Allow anyone to find, use and combine resources according to predefined rules or new ones (as long as it's compliant with resource-specific rules)
 - Ensure that every action is initiated with the boundaries of the rules, and that every resource provider has done what was asked from him.
 
-In order to fully understand the scope of its objectives and the design choice for the protocol, let us illustrate with a few examples :
+In order to fully understand the scope of its objectives and the design choice for the protocol, let us illustrate with a few examples:
 
 ![p2-09](/img/content/whitepaper/p2-09.webp)
 
@@ -181,7 +181,7 @@ Thus, to ensure decentralized governance infrastructure for off-chain digital re
 - Facilitating interpretability and interoperability = **ONTOLOGY**
 - Guaranteeing successful execution = **DECENTRALIZED ORCHESTRATION**
 
-**Our value proposition :**
+**Our value proposition:**
 
 The OKP4 protocol leverages the blockchain layer to construct digital commons, termed **Zones**, where digital resources can be shared with **customizable rules** concerning every facet of resource sharing. This includes aspects such as access control, data and service management, business models, governance frameworks for instance.The OKP4 protocol ensures proper compliance with the rules and the execution.
 
@@ -213,7 +213,7 @@ Anyone can initiate workflows (interaction of datasets and services according to
 
 These outputs created from different shared resources within a Zone can feed any application. These applications are not part of the Zone and have their governance. They can be either Web 2.0 or Web 3.0 applications.
 
-**To sum up :**
+**To sum up:**
 
 This conceptualization of the zone protocol allows us to easily meet the need for **flexibility and integrity** of digital resources. However, the stones must be shaped to allow this:
 
@@ -229,7 +229,7 @@ Before diving into the specific design, it is important to distinguish what we b
 
 ![p2-16](/img/content/whitepaper/p2-16.webp)
 
-*NB : As native code is integrated into the blockchain, the modules are represented at the level of the blockchain layer.*
+*NB: As native code is integrated into the blockchain, the modules are represented at the level of the blockchain layer.*
 
 *Smart contracts are represented between the protocol layer and the settlement layer because their entities could be represented in both in the conceptual point of view.*
 
@@ -307,7 +307,7 @@ The expressiveness of the language enhances the disambiguation and the interoper
 
 To give meaning to each concept and entities in the protocole, we’ve decided to encode an ontology to represent and persist the information on the blockchain.
 
-**Ontology overview :**
+**Ontology overview:**
 
 The conceptualization aspect, the ontology tries to explain the being itself by developing a system of universal categories and their intrinsic relationships. In computer science, ontology is an explicit and formal specification of a shared conceptualization
 
@@ -323,11 +323,11 @@ The image above shows a schematic representation that the OKP4 ontology could ta
 
 The concept of storing ontology on the blockchain and leveraging it to imbue resources and datasets with meaning carries significant implications for both execution and verification.
 
-**Execution :**
+**Execution:**
 
 Providing a shared semantic framework within the protocol brings advantages in terms of standardization and interoperability among resources. Resources of various types can interconnect while understanding each other's roles, promoting cohesive integration and functional collaboration within the system.
 
-**Interpretability & Representation :**
+**Interpretability & Representation:**
 
 Ontology also provides a comprehensive and dynamic understanding of data sets within a Zone, their transformation (by services), and the applicable governance rules (data sharing, consents, policy rules). From this perspective, it delivers the data lineage (enabling traceability) for each piece of data within the Zones during various treatments, culminating in a knowledge graph of all data within the Dataverse.
 
@@ -337,7 +337,7 @@ Below, an illustration of a workflow representation in the form of a knowledge g
 
 ![p2-25](/img/content/whitepaper/p2-25.webp)
 
-**An example :**
+**An example:**
 
 *Let's imagine there exists a Zone dedicated to medical research on a specific disease. This Zone includes multiple datasets from various hospitals and laboratories, along with several services for analyzing this data (for instance, machine learning algorithms for identifying biomarkers or predicting health outcomes).*
 
@@ -383,17 +383,17 @@ While resources in the Dataverse are classified as "off-chain resources," it is 
 
 ![p2-28](/img/content/whitepaper/p2-28.webp)
 
-Zones can be nested and overlapping, as one dataset can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts : this is the Dataverse. All the digital resources indexed on the protocol have to register information on the blockchain to ensure the proper processing of the resources by the different entities of the protocol (ontology, logic module, SEA )
+Zones can be nested and overlapping, as one dataset can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts: this is the Dataverse. All the digital resources indexed on the protocol have to register information on the blockchain to ensure the proper processing of the resources by the different entities of the protocol (ontology, logic module, SEA )
 
 ![p2-29](/img/content/whitepaper/p2-29.webp)
 
 ### Dataverse purpose
 
-**Creating a general purpose Ecosysteme that enables XaaS integration :**
+**Creating a general purpose Ecosysteme that enables XaaS integration:**
 
 Anything that is presented to the Protocol *as a Service*, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies the integration power of the protocol, which brings infinite scalability and extensibility to the entire OKP4 ecosystem.
 
-**Ensuring Resource Discoverability and Availability :**
+**Ensuring Resource Discoverability and Availability:**
 
 Whether it involves datasets or services, it's crucial that the protocol has a means of communicating with the resources in the dataverse, ensuring that these resources are locatable and responsive to the blockchain.
 
@@ -401,7 +401,7 @@ The interaction between the protocol and the dataverse must be ensured by techni
 
 Metadata is integral to making the resources discoverable as it provides essential information about each resource for a better description and a registration to the ontology. In conjunction with this, connectors and APIs serve as bridges for communication between the protocol and the resources, facilitating data exchange and interactions.
 
-**Ensuring Personal Sovereignty :**
+**Ensuring Personal Sovereignty:**
 
 What matters in the Dataverse design is the ability of any provider to be sovereign about what they shared in the Dataverse.
 
@@ -413,13 +413,13 @@ OKP4 is a general-purpose Ecosystem that enables XaaS (Anything as a Service) in
 
 ![p2-30](/img/content/whitepaper/p2-30.webp)
 
-**Datasets :**
+**Datasets:**
 In the Dataverse, any datasets can be incorporated and utilized. This feature is supported by the off-chain storage of all datasets and services, enabling the handling of data of any volume, variety, and velocity. If your data is stored locally, you must ensure its network accessibility. This can be accomplished through uploading it to a locally maintained server, storing it with a cloud service provider, or integrating it into a decentralized storage network.
 
-**Zone Governance Template :**
+**Zone Governance Template:**
 As the Dataverse will contain more and more Zones, governance templates will be more and more available to create a Zone quickly. A user will able to use a template and create his own library of templates. These generic templates are fully customizable according to users needs.
 
-Theses templates can refer to several aspects of the governance :
+Theses templates can refer to several aspects of the governance:
 
 - Business Model Template
 - Autocratic or Democratic Governance Template
@@ -427,27 +427,27 @@ Theses templates can refer to several aspects of the governance :
 
 ![p2-31](/img/content/whitepaper/p2-31.webp)
 
-**STaaS : Storage as a service :**
+**STaaS: Storage as a service:**
 
 The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
 
-**Compute-as-a-Service :**
+**Compute-as-a-Service:**
 
 Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads.
 
-**Identity Provider :**
+**Identity Provider:**
 
 In terms of identity management, the Dataverse can integrate with various identity management services or identity standards, depending on the specific requirements. Whether it's a simple, decentralized identity management system or a more complex, centralized identity service, the platform can support it, providing secure and flexible solutions for identity management.
 
-**Orchestration-as-a-Service :**
+**Orchestration-as-a-Service:**
 
 The Orchestration Service is **a crucial service** of the Protocol which orchestrates the invocations of other services. It is a reflex component of the Ecosystem that listens to the transactions of the blockchain and is triggered on command, when a particular transaction of execution request is registered in the blockchain.It's important to note that, given the potential for multiple instances of the service and several types of orchestration services, there is a decentralized mechanism in place with Pactum that ensures the correct instance of the appropriate type is executed.
 
-**Algorithms and Models :**
+**Algorithms and Models:**
 
 Algorithms and models of all kinds can be deployed and utilized in the Dataverse. These can take the form of raw code that lacks computational infrastructure, or be provided as an Application Programming Interface (API). The choice depends on the specific requirements of the task at hand.
 
-**Analytic-as-a-Service :**
+**Analytic-as-a-Service:**
 
 In an era of increasing data complexity and volume, effective knowledge representation is pivotal. The Analytics and Business Intelligence services is designed to transform raw data into useful insights, employing tools of B.I and Knowledge Graphs.
 
