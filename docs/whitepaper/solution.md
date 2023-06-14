@@ -98,7 +98,7 @@ For this, we need a specific design **(modularity)** to be able to interconnect 
 
 **What design for OKP4 Protocol ?**
 
-The OKP4 blockchain is a public delegated proof-of-stake layer 1 built with the Cosmos SDK.
+The OKP4 blockchain is a public delegated proof-of-stake layer 1 built with the [Cosmos SDK](https://docs.cosmos.network/main).
 
 *Cosmos in a nutshell:*
 
@@ -110,7 +110,7 @@ The Cosmos stack is composed of three modular elements:
 
 **Cosmos SDK:** This open-source development kit allows the easy creation of a blockchain from a set of modules. In practice, **these modules** and their configurations provide specificity to the Protocol Layer. Several modules catering to generic functionalities, such as account management, staking, and token management, are provided within the Cosmos GitHub repository. This arrangement frees application developers to focus on designing modules that cater to their unique needs, instead of worrying about fulfilling the fundamental requirements of a blockchain.
 
-**IBC (Inter Blockchain Communication):** IBC is a general-purpose messaging protocol designed for communication between IBC-enabled blockchains. It's implemented through a specific module that ensures reliable, ordered, and authenticated communication. The IBC fosters an environment of interoperability, allowing distinct blockchains to interact seamlessly, thus enhancing the overall scalability and utility of the network.
+**IBC (Inter Blockchain Communication):** [IBC](https://ibcprotocol.org/) is a general-purpose messaging protocol designed for communication between IBC-enabled blockchains. It's implemented through a specific module that ensures reliable, ordered, and authenticated communication. The IBC fosters an environment of interoperability, allowing distinct blockchains to interact seamlessly, thus enhancing the overall scalability and utility of the network.
 
 ![P2-06](/img/content/whitepaper/P2-06.webp)
 
