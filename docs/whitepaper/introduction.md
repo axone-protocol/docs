@@ -44,7 +44,7 @@ Today's prevailing issue is that individuals and organizations tend to veer towa
 
 *In terms of the costs associated with data silos, a report by McKinsey estimated that inefficiencies due to data silos and related issues could cost businesses more than $5 trillion annually (source: [**McKinsey**](https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-perils-of-ignoring-software-development)).*
 
-*According to a report by IDC, the volume of data generated globally is expected to grow from 33 zettabytes in 2018 to 175 zettabytes by 2025 (source: [**IDC**](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf)). However, it's estimated that a significant amount of this data is inaccessible or unused. For example, in the healthcare industry, as much as 80% of health data is believed to be unstructured and inaccessible (source: [**International Journal of Medical Informatics**](https://www.sciencedirect.com/science/article/pii/S1386505619301364)). This represents a significant loss of potential knowledge and insights.*
+*According to a report by IDC, the volume of data generated globally is expected to grow from 33 zettabytes in 2018 to 175 zettabytes by 2025 (source: [**IDC**](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf)). However, it's estimated that a significant amount of these data is inaccessible or unused. For example, in the healthcare industry, as much as 80% of health data is believed to be unstructured and inaccessible (source: [**International Journal of Medical Informatics**](https://www.sciencedirect.com/science/article/pii/S1386505619301364)). This represents a significant loss of potential knowledge and insights.*
 
 As a result of these barriers, the landscape of data and knowledge sharing has evolved in a fragmented way. Rather than a comprehensive and integrated solution, we see a **patchwork of tools and platforms**, each addressing a specific aspect or a specific stage of the knowledge value chain. Some focus on data acquisition, others on data organization and storage, yet others on data analysis and application, and still others on data sharing and dissemination. **The lack of a holistic solution** that spans the entire value chain creates inefficiencies, redundancies, and gaps.
 
@@ -96,7 +96,7 @@ In light of data sharing, blockchain technologies play a crucial role. They can 
 
 Ethereum expanded decentralization principles by introducing programmable smart contracts, enabling the development of numerous decentralized applications (dApps). However, Ethereum's broad scope comes with its own limitations. As a general-purpose platform, it may not always provide the most efficient solution for every use case.
 
-Given the sensitivity of the data and knowledge sector, it's crucial that the infrastructure is as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific design requirement that fosters sharing while managing these complexities efficiently.
+Given the sensitivity of the data and knowledge sector, the infrastructure must be as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific design requirement that fosters sharing while managing these complexities efficiently.
 
 Specific Web 3.0 solutions are designed to offer specific functionalities such as decentralized storage, computation, indexing, and data validation for instance.
 
@@ -105,7 +105,7 @@ Specific Web 3.0 solutions are designed to offer specific functionalities such a
 - [Kyve](https://www.kyve.network/), a decentralized data validation network, ensures data integrity and reliability, both essential for data management.
 - [Akash](https://akash.network/), a decentralized marketplace to buy and sell computing resources
 - [Secret Network](https://scrt.network/), offering decentralized privacy-preserving solutions such as Homomorphic Encryption
-- Other notable initiatives to valorize data include for exemple [Ocean Protocol](https://oceanprotocol.com/) specializing in data markets, [DIMO](https://dimo.zone/) incentivizing vehicule data sharing or [Hivemapper] incentivizing mapping data collection
+- Other notable initiatives to valorize data include for exemple [Ocean Protocol](https://oceanprotocol.com/) specializing in data markets, [DIMO](https://dimo.zone/) incentivizing vehicule data sharing or [Hivemapper] incentivizing mapping data collection.
 
 Each of these solutions **offers a unique contribution** to the landscape of decentralized digital resource management & valorization. By addressing specific challenges, they form the building blocks for a more robust, efficient, and secure Web 3.0 infrastructure.
 
@@ -132,7 +132,7 @@ To reach this purpose, the challenges are divided into two distinct sections:
 
 OKP4 aims to establish a system that encourages collaboration, co-creation, and knowledge sharing while ensuring and respecting individual consents and interests. As a neutral and public good, OKP4 focuses on addressing Technical solutions to provide an agnostic, flexible and secure infrastructure to solve Human Issues. The real challenge is to provide a solution that is simultaneously flexible enough to meet the needs of various stakeholders, expressive enough to interpret and interoperate different components, and secure enough to be executed within a trustworthy environment.
 
-From a technical standpoint, OKP4 offers a unique solution, deftly combining the virtues of openness and decentralization with the adaptive potential of interoperability and modularity.
+From a technical standpoint, OKP4 offers a unique solution, deftly combining the virtues of **openness** and **decentralization** with the adaptive potential of **interoperability** and **modularity**.
 
 ![intro-4](/img/content/whitepaper/intro-4.webp)
 
