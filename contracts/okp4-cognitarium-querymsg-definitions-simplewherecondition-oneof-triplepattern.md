@@ -22,17 +22,15 @@ Represents a triple pattern, i.e. a condition on a triple based on its subject, 
 
 ## triple\_pattern
 
-
-
 `triple_pattern`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern-properties-triple_pattern.md "undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_pattern")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern-properties-triple_pattern.md "undefined#/query/definitions/SimpleWhereCondition/oneOf/0/properties/triple_pattern")
 
 ### triple\_pattern Type
 

@@ -16,4 +16,4 @@ merged type ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-data-allof-0.md "check type definition")

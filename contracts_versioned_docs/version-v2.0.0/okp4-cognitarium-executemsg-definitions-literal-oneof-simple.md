@@ -22,17 +22,15 @@ A [simple literal](https://www.w3.org/TR/rdf11-concepts/#dfn-simple-literal) wit
 
 ## simple
 
-
-
 `simple`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-literal-oneof-simple-properties-simple.md "undefined#/execute/definitions/Literal/oneOf/0/properties/simple")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-literal-oneof-simple-properties-simple.md "undefined#/execute/definitions/Literal/oneOf/0/properties/simple")
 
 ### simple Type
 

@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/0/properties/insert_data
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -27,13 +25,13 @@ The data to insert. The data must be serialized in the format specified by the `
 
 `data`
 
-*   is required
+* is required
 
-*   Type: merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data.md))
+* Type: merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data.md "undefined#/execute/oneOf/0/properties/insert_data/properties/data")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data.md "undefined#/execute/oneOf/0/properties/insert_data/properties/data")
 
 ### data Type
 
@@ -41,7 +39,7 @@ merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-i
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-data-allof-0.md "check type definition")
 
 ## format
 
@@ -49,13 +47,13 @@ The data format in which the triples are serialized. If not provided, the defaul
 
 `format`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format.md))
+* Type: merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format.md "undefined#/execute/oneOf/0/properties/insert_data/properties/format")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format.md "undefined#/execute/oneOf/0/properties/insert_data/properties/format")
 
 ### format Type
 
@@ -63,6 +61,6 @@ merged type ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-i
 
 any of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format-anyof-1.md "check type definition")
+* [Untitled null in okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data-properties-format-anyof-1.md "check type definition")
