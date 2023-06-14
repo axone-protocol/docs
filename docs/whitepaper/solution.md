@@ -16,7 +16,7 @@ OKP4 provides a **decentralized, open, public, censorship-resistant, and neutral
 
 **Democratizing Data and Knowledge Access:**
 
-OKP4 democratizes access to data and knowledge by **breaking down silos and promoting collaboration**. It aims to create economic incentives and fair compensation models that encourage data and knowledge sharing. The protocol's design allows for a ****framework and rules based on an **immutable and auditable truth layer**, providing an unquestionable source of reliability. It offers **flexible governance mechanisms** that allow all participants to benefit from each other's interests, thereby fostering a win-win scenario.
+OKP4 democratizes access to data and knowledge by **breaking down silos and promoting collaboration**. It aims to create economic incentives and fair compensation models that encourage data and knowledge sharing. The protocol's design allows for a **framework and rules** based on an **immutable and auditable truth layer**, providing an unquestionable source of reliability. It offers **flexible governance mechanisms** that allow all participants to benefit from each other's interests, thereby fostering a win-win scenario.
 
 **Enabling the orchestration of shared resources:**
 
