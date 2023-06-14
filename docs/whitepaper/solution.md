@@ -100,9 +100,13 @@ For this, we need a specific design **(modularity)** to be able to interconnect 
 
 The OKP4 blockchain is a public delegated proof-of-stake layer 1 built with the [Cosmos SDK](https://docs.cosmos.network/main).
 
+::: info
+
 *Cosmos in a nutshell:*
 
 *Cosmos is an application-specific blockchain (ASB)  ecosystem. It offers the ability for anyone to build their own sovereign ASB which is able to easily communicate with other blockchains. For its philosophy and its characteristics of sovereignty, modularity and interoperability, OKP4 is part of the Cosmos ecosystem.*
+
+:::
 
 The Cosmos stack is composed of three modular elements:
 
