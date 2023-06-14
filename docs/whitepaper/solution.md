@@ -237,7 +237,7 @@ Before diving into the specific design, it is important to distinguish what we b
 
 *Smart contracts are represented between the protocol layer and the settlement layer because their entities could be represented in both in the conceptual point of view.*
 
-### 3.4.1 Creating and Managing Zones
+### Creating and Managing Zones
 
 ![p2-17](/img/content/whitepaper/p2-17.webp)
 
@@ -379,7 +379,7 @@ When a user wishes to engage a workflow with a Zone, a service execution agreeme
 
 Concretely, it will serve as a decentralized orchestrator for the proper execution of protocol services and to manage cases of error.
 
-## 3.5 Dataverse
+## Dataverse
 
 The Dataverse is an ever-expanding universe comprised of all the Datasets, Algorithms, Softwares, Infrastructures, Identity solutions, Workflow Engines, and other resources referenced in the Blockchain.
 
