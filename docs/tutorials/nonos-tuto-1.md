@@ -2,7 +2,8 @@
 sidebar_position: 4
 ---
 # Video Tuto #1 - Architecture
-🚀 Welcome to the first episode of Nono's Tuto ! 
+
+🚀 Welcome to the first episode of Nono's Tuto !
 Your tutorial series to become an expert developer on the OKP4 protocol 🔥
 
 📚 In this first episode, we'll be concentrating on OKP4 basics. We'll introduce you to what OKP4 is, and go into detail about the architecture of the OKP4 protocol!
