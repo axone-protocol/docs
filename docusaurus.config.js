@@ -193,7 +193,8 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['prolog'],
       },
       colorMode: {
         defaultMode: 'dark'
