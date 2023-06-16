@@ -16,6 +16,6 @@ merged type ([VarOrNode](okp4-cognitarium-executemsg-definitions-varornode.md))
 
 one (and only one) of
 
-* [Variable](okp4-cognitarium-executemsg-definitions-varornode-oneof-variable.md "check type definition")
+*   [Variable](okp4-cognitarium-executemsg-definitions-varornode-oneof-variable.md "check type definition")
 
-* [Node](okp4-cognitarium-executemsg-definitions-varornode-oneof-node.md "check type definition")
+*   [Node](okp4-cognitarium-executemsg-definitions-varornode-oneof-node.md "check type definition")
