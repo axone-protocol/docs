@@ -395,9 +395,9 @@ okp4d query txs \
 
 ## Recap’
 
-- The CLI allows you to communicate with the OKP4 blockchain
-- To get started, you should install the `okp4d` CLI and create (or import) a wallet
-- Both native and smart contracts transactions are supported
+* The CLI allows you to communicate with the OKP4 blockchain
+* To get started, you should install the `okp4d` CLI and create (or import) a wallet
+* Both native and smart contracts transactions are supported
 
 We've just scratched the surface of what's possible with the OKP4 CLI! For a more detailed look at available commands, please check our full documentation at [OKP4 Documentation](https://docs.okp4.network/commands/okp4d).
 
