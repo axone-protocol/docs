@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Interactions with the CLI
 
+![OKP4 with Keplr](/img/content/tutorials/cli.webp)
+
 This guide will walk you through connecting with the OKP4 network using a Command Line Interface (CLI). Picture the CLI as a control panel, allowing you to tap into the pulsing core of OKP4's advanced technology. Thanks to the CLI, you can query the chain, uncover deep insights, and execute transactions with a mere command line.
 
 Let’s explore the core concepts of the OKP4 blockchain and list the most crucial commands. Have a comfortable seat, launch your favourite terminal shell, and prepare for an exhilarating adventure!
