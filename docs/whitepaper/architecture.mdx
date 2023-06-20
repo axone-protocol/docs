@@ -10,10 +10,10 @@ The protocol provides a disruptive access control mechanism. Whereas a central g
 
 ![OKP4 Basic Architecture Overview](/img/content/whitepaper/arch-basic.webp)
 
-Through an application form, providers indicates the rules for consuming its resources. The interface interacts with the blockchain, which stores the resources descriptions, revenue conditions, restrictions and execution instructions.
-A consumer asks the blockchain through an app to compute a query using multiple resources. If the rules set by the providers are met, the protocol emits an event to validate the query.
-An orchestration service, the guard on a resource relying solely on blockchain validation events, processes the query from the consumer. This query creates new knowledge as it leverages multiple resources from different providers with no required trust on a third party.
-The orchestration service reports the execution states to the blockchain to ensure reliable logging and payment.
+Through an application form, providers indicate the rules for consuming its resources. The interface interacts with the blockchain, which stores the resources descriptions, revenue conditions, restrictions and execution instructions.
+A consumer asks the blockchain through an app to execute a request using multiple resources. If the rules set by the providers are met, the protocol emits an event to validate the request.
+An orchestration service, the guard on a resource relying solely on blockchain validation events, processes the request from the consumer. This request creates new knowledge as it leverages multiple resources from different providers with no required trust on a third party.
+The orchestration service reports the execution status to the blockchain to ensure reliable logging and payment.
 
 Smart contracts carry all these interactions with the blockchain. Nodes validate smart contracts execution and persistent storage through a consensus. A distributed database, the so-called blockchain, commits to every change. The OKP4 blockchain is built with custom modules enabling the protocol governance and validation rules capabilities, among other functionalities.
 
@@ -69,7 +69,7 @@ OKP4 incorporates the [CosmWasm](https://cosmwasm.com/) smart contracting platfo
 
 Smart contracts handle all interactions with external parties, whether to provide a digital resource with condition rules to use it, to consume this resource, or to send payments. These decentralized programs are centered around three fundamental pillars:
 
-* **Ontology**: models all the different resources (e. g. datasets, computation services, infrastructure, orchestration engines, …), their descriptive properties and relations between each other.  
+* **Ontology**: models all the different resources (e. g. datasets, computation services, infrastructure, orchestration engines, …), their descriptive properties and relations with each other.  
 It also includes access rules and execution instructions linked to resources. The ontology is a whole of objects, a way to store a semantic representation of the Dataverse.
 * **Governance**: statutes the definition and the validation of resource permissions.  
 Rules (i.e. the conditions to give access to resources) can be applied at one among multiple levels: for everyone, for a set of resources, for a specific resource or between selected parties only.
@@ -92,7 +92,7 @@ The external resources description, usage rules and execution instructions are d
 
 There is no restriction on the structure to allow ample expressiveness. But the `core` serves as a fundamental and essential structure that defines concepts and their relationships, forming the basis upon which additional extensions can be integrated.
 
-Once inserted via the `cognitarium` smart contract, one can fetch the data from a “select” or a “describe” query. In the first case, it returns resources matching the criterias defined by the provided query. The second case returns the raw part of the ontology, the resource description identified by an Internationalized Resource Identifier (IRI).
+Once inserted via the `cognitarium` smart contract, one can fetch the data from a “select” or a “describe” query. In the first case, it returns resources matching the criteria defined by the provided query. The second case returns the raw part of the ontology, the resource description identified by an Internationalized Resource Identifier (IRI).
 
 ### Law-stone: source of rules
 
@@ -114,26 +114,23 @@ Service execution states are recorded in the ontology, forming the knowledge gra
 
 ### Zone hub: entry point
 
-`zone-hub` is the unique interface with the off-chain interfaces for any blockchain interaction. This smart contract operates external requests and calls the other smart contracts methods. It checks errors and ensures authentication for protected operations.  
+`zone-hub` is the single entrypoint to any mutation in the protocol. This smart contract operates external requests and calls the other smart contracts methods. It checks errors and ensures authorization for protected operations.  
 
 When a service provider submits an entry to add new resources policies, `zone-hub` stores the Prolog code with an instantiation of a `law-stone` smart contract. 
 
 `zone-hub` populates the ontology with `law-stone` address as a rules references, service execution instructions and all relevant resource metadata, via an `InsertData` message of a `cognitarium` contract. This process applies to an agreement between parties, a resource consent or a zone (resources categorization) definition.
 
-When a consumer submits a query, the `zone-hub` instance evaluates the required resources with a request to `cognitarium`. It extracts the governance rules, and, to evaluate resource access, it asks the related `law-stone` instance the Prolog interpretation. If the response back is positive, `zone-hub` validates the user transaction and emits an event. This event triggers a service execution to (off-chain) orchestration services.
+When a consumer submits an execution request, the `zone-hub` instance evaluates the required resources with a query to `cognitarium`. It extracts the governance rules, and, to evaluate resource access, it asks the related `law-stone` instance the Prolog interpretation. If the response back is positive, `zone-hub` validates the user transaction and emits an event. This event triggers a service execution to (off-chain) orchestration services.
 
 `zone-hub` also handles state reportings from orchestration executions. It stores messages in a `cognitarium` instances, before an evaluation by a `pactum` instance. 
 
 ## Orchestration
 
 Orchestration services have access to off-chain resources. They only trust the OKP4 blockchain to execute jobs.
-Initially, there will be a unique orchestration service, a central “workflow engine”.  
 
 ### Identification and Authentication
 
-An orchestration service should have an identifier.
-
-It can be authenticated using the concept of self-sovereign identity (SSI) and a decentralized identity management system.
+An orchestration service can be authenticated using the concept of self-sovereign identity (SSI) and a decentralized identity management system.
 Self-sovereign identity is an approach that empowers individuals with control over their own digital identities. It allows individuals to own and manage their identity information, granting them the ability to selectively disclose it to various parties as needed.
 SSI allows individuals or entities to control their own digital identities, while DIDs provide a unique and persistent identifier for these entities.
 
@@ -145,12 +142,12 @@ Service providers must add service execution instructions regarding secrets keys
 
 ### Jobs executions
 
-An orchestration service starts a new job when the OKP4 blockchain validates a user query.
-It fetches data, requests services, and performs various computes from one or several off-chain resources according to the necessary tasks to satisfy the user query.
+An orchestration service starts a new job when the OKP4 blockchain validates a user execution request.
+It fetches data, requests services, and performs various computes from one or several off-chain resources according to the necessary tasks to satisfy the user execution request.
 
 An orchestration service has to report to the protocol the processes status to ensure service agreement enforcements.
 
-The final result of the execution is returned to the user’s endpoint, which can visualize the new knowledge through BI components, for example.
+The execution result is defined in the workflow, it may be integrated as a new dataset in the protocol or sent elsewhere outside the control of the protocol if the rules allows it. End users can visualize the final result of the execution through BI components, for example.
 
 ### Trusted parties considerations
 
@@ -197,7 +194,7 @@ Portal is an example of administration UI, the main OKP4 protocol web interface.
 Newly generated knowledge could be presented with customised dashboards from any business intelligence component.
 White-label data platforms graph the results obtained by running workflows with the OKP4 protocol. 
 
-Since some companies cannot use a wallet to query the protocol, end user interfaces might also provides a layer of abstraction to bring data on request without any blockchain interaction.
+Since some companies cannot have a wallet to use the protocol, front-end interfaces might also provides a layer of abstraction to bring data on request without any blockchain interaction.
 
 
 ## Connect’em all
@@ -217,11 +214,11 @@ Corp A and Corp B inform a maximum of metadata, especially to describe the diffe
 
 3. Metadata indicate that resources shared by Corp A and Corp B are compatible with a ML job from Corp C. Corp C also uses the administration portal to submit its training model algorithm, governance rules, and service execution instructions.
 
-4. Individual D parameters its cloud environment with the portal, setting up how an orchestration service should store query results.
+4. Individual D parameters its cloud environment with the portal, setting up how an orchestration service should store the execution request results.
 
-5. Individual D uses the portal to request service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $KNOW tokens. The blockchain validates the query (access and execution authorizations).
+5. Individual D uses the portal to request service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $KNOW tokens. The blockchain validates the execution request (access and execution authorizations).
 
-6. The orchestration service listens the event from the blockchain. It recovers access keys, and then executes the workflow training algorithm from Corp C, using Corp A & Corp B data it fetches.
+6. The orchestration service listens to the event from the blockchain. It recovers access keys, and then executes the workflow training algorithm from Corp C, using Corp A & Corp B data it fetches.
 
 7. The orchestration service reports the job state changes. If all works well, service agreement rules are applied, $KNOW tokens from Individual D are unlocked to Corp A, Corp B et Corp C.
 
@@ -258,15 +255,15 @@ Note right of IndD: 4.
 IndD->> Secret: Cloud storage keys for results
 
 Note right of IndD: 5. 
-IndD->> OKP4: Knowledge query(ML Workflow(DbA + Db B)) - $KNOW payment
-OKP4->>OKP4: Valid knowledge query
+IndD->> OKP4: Knowledge request(ML Workflow(DbA + Db B)) - $KNOW payment
+OKP4->>OKP4: Valid knowledge request
 
 Note right of OKP4: 6. 
 OKP4-->>Orchestrator: Chain event triggering
 Orchestrator->> Secret: Get resources access (Db A, Db B, algo C, storage D)
 Secret->> Orchestrator: Resources secret keys
 loop Db A, Db B
-Orchestrator->> Db A/B: Resource query
+Orchestrator->> Db A/B: Resource request
 Db A/B->> Orchestrator: Resource result
 end 
 Orchestrator->> ML Workflow: Compute(DataA, DataB)
