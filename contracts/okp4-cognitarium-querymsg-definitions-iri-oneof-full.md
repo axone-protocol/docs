@@ -22,17 +22,15 @@ A full IRI.
 
 ## full
 
-
-
 `full`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-full-properties-full.md "undefined#/query/definitions/IRI/oneOf/1/properties/full")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-iri-oneof-full-properties-full.md "undefined#/query/definitions/IRI/oneOf/1/properties/full")
 
 ### full Type
 

@@ -4,8 +4,6 @@
 undefined#/responses/ask/definitions/Result
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                 |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [okp4-law-stone.json\*](schema/okp4-law-stone.json "open original schema") |
@@ -22,17 +20,15 @@ undefined#/responses/ask/definitions/Result
 
 ## substitutions
 
-
-
 `substitutions`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
+* defined in: [okp4-law-stone](okp4-law-stone-responses-askresponse-definitions-result-properties-substitutions.md "undefined#/responses/ask/definitions/Result/properties/substitutions")
 
 ### substitutions Type
 

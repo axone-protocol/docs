@@ -22,17 +22,15 @@ Represents a variable.
 
 ## variable
 
-
-
 `variable`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable-properties-variable.md "undefined#/query/definitions/SelectItem/oneOf/0/properties/variable")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectitem-oneof-variable-properties-variable.md "undefined#/query/definitions/SelectItem/oneOf/0/properties/variable")
 
 ### variable Type
 
