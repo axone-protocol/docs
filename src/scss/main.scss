@@ -42,25 +42,20 @@ html {
   }
 
   .button[class*="CollapseButton"] {
-    position: absolute;
-    bottom: auto;
     border-radius: 10px;
-  }
-
-  button[class*="collapseSidebarButton_node_modules-"],
-  button[class*="collapseSidebarButton_node_modules-"]:hover {
-    background-color: inherit;
-    margin-top: 20px;
   }
 
   [class*="menu_node_modules-"] {
     padding-top: 50px;
   }
 
+  .theme-doc-sidebar-container {
+    border-right: unset;
+  }
+
   .markdown h1:first-child {
     color: inherit;
   }
-
 
   .navbar--fixed-top {
     height: 80px;
