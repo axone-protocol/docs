@@ -10,7 +10,7 @@ The protocol provides a disruptive access control mechanism. Whereas a central g
 
 ![OKP4 Basic Architecture Overview](/img/content/whitepaper/arch-basic.webp)
 
-Through an application form, providers indicate the rules for consuming its resources. The interface interacts with the blockchain, which stores the resources descriptions, revenue conditions, restrictions and execution instructions.
+In a user interface, providers indicate the rules for consuming their resources. The interface interacts with the blockchain, which stores the resources descriptions, revenue conditions, restrictions and execution instructions.
 A consumer asks the blockchain through an app to execute a request using multiple resources. If the rules set by the providers are met, the protocol emits an event to validate the request.
 An orchestration service, the guard on a resource relying solely on blockchain validation events, processes the request from the consumer. This request creates new knowledge as it leverages multiple resources from different providers with no required trust on a third party.
 The orchestration service reports the execution status to the blockchain to ensure reliable logging and payment.
@@ -26,7 +26,7 @@ The diagram above provides a simplified explanation of the system’s overall op
 ### Distributed network
 
 Multiple nodes execute and validate all actions submitted to the blockchain thanks to the Tendermint consensus.
-Tendermint is a partially synchronous Byzantine fault-tolerant (BFT) consensus protocol. The protocol requires a fixed, known set of validators, where their public key identifies each validator. Validators attempt to reach a consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round leader, or proposer, who proposes a block. The validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of validators in proportion to their voting power. The security Tendermint is derived from optimal Byzantine fault tolerance through super-majority voting and a locking mechanism.
+Tendermint is a partially synchronous Byzantine fault-tolerant (BFT) consensus protocol. The protocol requires a fixed, known set of validators, where their public key identifies each validator. Validators attempt to reach a consensus on one block at a time, where a block is a list of transactions. Voting for consensus on a block proceeds in rounds. Each round has a round leader, or proposer, who proposes a block. The validators then vote, in stages, on whether to accept the proposed block or move on to the next round. The proposer for a round is chosen deterministically from the ordered list of validators in proportion to their voting power. Tendermint's security is derived from optimal Byzantine fault tolerance through super-majority voting and a locking mechanism.
 
 ### Shared state
 
@@ -36,9 +36,9 @@ Validators guarantee the reliability of the blockchain. As they all share the sa
 
 ### Built on Cosmos
 
-The OKP4 blockchain is built upon the Cosmos ecosystem to benefit from advanced implementation options without reinventing the wheel. Cosmos's modular architecture enables customized application-specific chains with ease. This unique flexibility fits the project's requirements, ensuring optimal performance and resource allocation.
+The OKP4 blockchain is built with the Cosmos SDK to benefit from advanced implementation options without reinventing the wheel. Cosmos's modular architecture enables customized application-specific chains with ease. This unique flexibility fits the project's requirements, ensuring optimal performance and resource allocation.
 
-Moreover, with Cosmos's Inter-Blockchain Communication (IBC) protocol, the OKP4 blockchain can communicate and transact seamlessly with other chains within the Cosmos ecosystem and external networks. This interchain compatibility expands the reach and potential user base and opens avenues for collaboration and synergy with other innovative projects in the Cosmos ecosystem.
+Moreover, with Cosmos's Inter-Blockchain Communication (IBC) protocol, the OKP4 blockchain can communicate and transact seamlessly with other chains within the Cosmos ecosystem and external networks. This interchain compatibility expands the reach and potential user base and opens avenues for collaboration and synergy with other innovative projects in the Cosmos ecosystem and beyond.
 
 ## Modules
 
@@ -46,14 +46,14 @@ The modules implement core functions particular to the OKP4 blockchain. They pro
 
 ### Logic
 
-The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. The main use made of it in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog. 
+The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. It's main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog. 
 
 Prolog is a powerful declarative programming language to manage from simple restrictions to complex rules. This language is not natively operable on-chain; the logic module adds Prolog interpretation capability.
 The `logic` module is not strongly coupled to the OKP4 blockchain. It’s designed to be reusable and can be integrated with any Cosmos appchain. Because it’s open and interoperable, the support of Prolog programs is a significant gain for the Cosmos ecosystem. Using this open-source `logic` module implementation, any appchain can quickly adopt complex Prolog governance rules.
 
 ### Mint, Vesting and other Cosmos SDK modules
 
-The OKP4 blockchain uses production-grade modules from Cosmos SDK. These generic modules facilitate the implementation of protocol governance, token operation management, validator punishment mechanisms, and authentication of accounts and transactions.
+The OKP4 blockchain uses production-grade modules from the Cosmos SDK. These generic modules facilitate the implementation of protocol governance, token operation management, validator punishment mechanisms, and authentication of accounts and transactions.
 
 Two of them have a custom implementation: the mint and the vesting modules.
 “Mint”, used for creating new $KNOW units, applies specific tokenomics parameters. It determines the inflation rate for validators’ and stackers’ earnings.
@@ -74,7 +74,7 @@ It also includes access rules and execution instructions linked to resources. Th
 * **Governance**: statutes the definition and the validation of resource permissions.  
 Rules (i.e. the conditions to give access to resources) can be applied at one among multiple levels: for everyone, for a set of resources, for a specific resource or between selected parties only.
 * **Orchestration**: ensures the smooth coordination and execution of services.  
-It enforces the rules and policies that govern resource (datasets and services) authorization.
+It enforces the rules and policies that govern resource (datasets and services) authorizations.
 
 <center><img src="/img/content/whitepaper/arch-3pillars.webp"></img></center>
 
@@ -100,7 +100,7 @@ To create a governance rule, one should use the `law-stone` smart contract and i
 
 A `law-stone` instance stores the Prolog code using `objectarium` smart-contract, pins it, and checks the dependencies to pin. Indeed, if the provided Prolog code depends on another Prolog program (already stored with `objectarium`), it’s necessary to ensure its availability.
 
-The rule cannot be changed; what is stored onchain is immutable. The one who instantiates the governance rule is the administrator, the only one able to destroy it. When a law is deleted, the main Prolog code stored in `objectarium` is unpinned. All object with no other pin is deleted.
+The rule cannot be changed; what is stored on-chain is immutable. The one who instantiates the governance rule is the administrator, the only one able to destroy it. When a law is deleted, the main Prolog code stored in `objectarium` is unpinned. All object with no other pin is deleted.
 
 The `law-stone` has an “ask” method to execute Prolog queries from stored rules. It loads them from `objectarium`, and uses the logic module to get the answer with eventual substitutions for results.
 
@@ -114,13 +114,13 @@ Service execution states are recorded in the ontology, forming the knowledge gra
 
 ### Zone hub: entry point
 
-`zone-hub` is the single entrypoint to any mutation in the protocol. This smart contract operates external requests and calls the other smart contracts methods. It checks errors and ensures authorization for protected operations.  
+`zone-hub` is the single entry point to any mutation in the protocol. This smart contract operates external requests and calls the other smart contracts methods. It checks errors and ensures authorization for protected operations.  
 
 When a service provider submits an entry to add new resources policies, `zone-hub` stores the Prolog code with an instantiation of a `law-stone` smart contract. 
 
-`zone-hub` populates the ontology with `law-stone` address as a rules references, service execution instructions and all relevant resource metadata, via an `InsertData` message of a `cognitarium` contract. This process applies to an agreement between parties, a resource consent or a zone (resources categorization) definition.
+`zone-hub` populates the ontology with `law-stone` addresses as rules references, service execution instructions and all relevant resource metadata via an `InsertData` message of a `cognitarium` contract. This process applies to an agreement between parties, a resource consent or a zone (resources categorization) definition.
 
-When a consumer submits an execution request, the `zone-hub` instance evaluates the required resources with a query to `cognitarium`. It extracts the governance rules, and, to evaluate resource access, it asks the related `law-stone` instance the Prolog interpretation. If the response back is positive, `zone-hub` validates the user transaction and emits an event. This event triggers a service execution to (off-chain) orchestration services.
+When a consumer submits an execution request, the `zone-hub` instance evaluates the required resources with a query to `cognitarium`. It extracts the governance rules, and, to evaluate resource access, it asks the related `law-stone` instance of the Prolog interpretation. If the response back is positive, `zone-hub` validates the user transaction and emits an event. This event triggers a service execution to (off-chain) orchestration services.
 
 `zone-hub` also handles state reportings from orchestration executions. It stores messages in a `cognitarium` instances, before an evaluation by a `pactum` instance. 
 
@@ -138,7 +138,7 @@ SSI allows individuals or entities to control their own digital identities, whil
 
 Service providers should submit API keys (or private access instructions) to a secure storage solution and grant a read operation for an orchestration service. By utilizing SSI and DIDs, a Secret Management Service relies on the cryptographic integrity of the DIDs and verifiable credentials.
 
-Service providers must add service execution instructions regarding secrets keys alongside the governance rules when referencing a resource to the on-chain ontology.  
+Service providers must add service execution instructions regarding secret keys alongside the governance rules when referencing a resource to the on-chain ontology.  
 
 ### Jobs executions
 
@@ -147,7 +147,7 @@ It fetches data, requests services, and performs various computes from one or se
 
 An orchestration service has to report to the protocol the processes status to ensure service agreement enforcements.
 
-The execution result is defined in the workflow, it may be integrated as a new dataset in the protocol or sent elsewhere outside the control of the protocol if the rules allows it. End users can visualize the final result of the execution through BI components, for example.
+The execution result is defined in the workflow, it may be integrated as a new dataset in the protocol or sent elsewhere outside the control of the protocol if the rules allow it. End users can visualize the final result of the execution through BI components, for example.
 
 ### Trusted parties considerations
 
@@ -168,7 +168,7 @@ The ontology is the way to formalize it on-chain, with a graph modelization. Usi
 Unless there is minimal schema when providing a resource (to indicate service execution instructions and governance rules), users are free to specify the metadata they want. The more descriptive fields, the better.
 
 Metadata profiles enable composability. Whereas they can be original and specific, they should respect existing industry standards. For example, AgMES (Agricultural Metadata Element Set) is an initiative to develop a standardized set of metadata elements specifically designed for agricultural information and data management systems.
-Standards are not limited to those of the industry: they are specifications like the E-Government Metadata Standard (e-GMS). Thus the UK public sector has a metadata standard for making data handling consistent in order to promote efficient use of Web pages and documents.  
+Standards are not limited to those of the industry: they are specifications like the E-Government Metadata Standard (e-GMS). Thus the UK public sector has a metadata standard for making data handling consistent in order to promote the efficient use of Web pages and documents.  
 
 ### Connectors
 
@@ -189,19 +189,19 @@ For greater efficiency, dapps may use indexers, databases replicating the blockc
 
 Portal is an example of administration UI, the main OKP4 protocol web interface. It’s the user gateway to parameter the addition of datasets and services, build workflows and create new knowledge from the shared resources. Portal offers an exploration view with advanced filters to get information like governance rules.
 
-### End user interfaces
+### End-user interfaces
 
-Newly generated knowledge could be presented with customised dashboards from any business intelligence component.
+Newly generated knowledge could be presented with customized dashboards from any business intelligence component.
 White-label data platforms graph the results obtained by running workflows with the OKP4 protocol. 
 
-Since some companies cannot have a wallet to use the protocol, front-end interfaces might also provides a layer of abstraction to bring data on request without any blockchain interaction.
+Since some companies cannot have a wallet to use the protocol, front-end interfaces might also provide a layer of abstraction to bring data on request without any blockchain interaction.
 
 
 ## Connect’em all
 
 Let’s recap with a concrete example applied to the AI industry.
 
-Two companies (Corp A and Corp B) grant access to their databases, while a third company (Corp C) provides a machine-learning training workflow using the data. A data scientist (Individual D) wants to get new knowledge and invokes an orchestration service that use resources from Corp A, Corp B and Corp C.
+Two companies (Corp A and Corp B) grant access to their databases, while a third company (Corp C) provides a machine-learning training workflow using the data. A data scientist (Individual D) wants to get new knowledge and invokes an orchestration service that uses resources from Corp A, Corp B and Corp C.
 
 :::note
 The OKP4 solution orchestrates the training process without exposing raw data, ensuring privacy, sovereignty and security. Moreover, the protocol provides revenue-sharing conditions and immutable records of the ML model's training sources.
@@ -212,7 +212,7 @@ The OKP4 solution orchestrates the training process without exposing raw data, e
 2. Corp A and Corp B continue on the administration portal and define the rules, with access restrictions and payment conditions (a fixed $KNOW fee per request, for example). A raw Prolog file is accepted, but the interface provides an ergonomic form for a better UX.
 Corp A and Corp B inform a maximum of metadata, especially to describe the different available datasets, their structures and the nature of their contents. The portal combines the service execution instructions, the governance rules and the descriptive pieces of information in a Turtle file. Then a transaction adds it to the on-chain ontology.
 
-3. Metadata indicate that resources shared by Corp A and Corp B are compatible with a ML job from Corp C. Corp C also uses the administration portal to submit its training model algorithm, governance rules, and service execution instructions.
+3. Metadata indicates that resources shared by Corp A and Corp B are compatible with a ML job from Corp C. Corp C also uses the administration portal to submit its training model algorithm, governance rules, and service execution instructions.
 
 4. Individual D parameters its cloud environment with the portal, setting up how an orchestration service should store the execution request results.
 
