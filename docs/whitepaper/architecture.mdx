@@ -222,7 +222,7 @@ Corp A and Corp B inform a maximum of metadata, especially to describe the diffe
 
 7. The orchestration service reports the job state changes. If all works well, service agreement rules are applied, $KNOW tokens from Individual D are unlocked to Corp A, Corp B et Corp C.
 
-8. The orchestration service stores the result in the provided Individual D’s storage solution.
+8. The orchestration service stores the result in the provided Individual D’s storage solution. Optionally, this new knowledge can also be referenced as a data source for other workflows.
 
 9. Individual D can have access to the newly generated knowledge via a BI interface.
 
@@ -275,6 +275,7 @@ OKP4->>OKP4: Service agreement exec ($KNOW rev share, ...)
 
 Note right of Orchestrator: 8. 
 Orchestrator->> Storage: Store result
+Orchestrator->> OKP4: Result reference
 
 Note right of IndD: 9. 
 IndD->> Storage: Get result
