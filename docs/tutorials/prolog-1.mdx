@@ -83,7 +83,7 @@ Here are some examples of predicates:
 The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin). 
 
 :::caution
-The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ. [Here](https://github.com/ichiban/prolog/wiki#predicates) is the list of built-in predicates.    
+The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.    
 ::: 
 
 
@@ -402,7 +402,21 @@ height: "2637781"
 
 ## Built-in Prolog predicates within the OKP4 blockchain
 
-The OKP4 blockchain uses the [ichiban/prolog](https://github.com/ichiban/prolog/) Prolog interpreter. Built-in predicates are listed [here](https://github.com/ichiban/prolog/wiki#predicates). 
+The logic module interpreter can manage [ichiban/prolo built-in predicates](https://github.com/ichiban/prolog/wiki#predicates) and custom predicates. But their availability is conditioned to the interpreter configuration. For instance, the `halt/1` built-in predicate is not registered in the interpreter; its usage can stop a node.
+To get the list of available predicates, you can query the logic module parameters:
+
+```bash
+okp4d --node "https://api.testnet.okp4.network:443/rpc" \
+    query params subspace \
+    logic Interpreter -ojson \
+    | jq -r '.value | fromjson.registered_predicates[]'
+```
+
+:::caution
+It's worth noticing that, in the next version the logic module parameters won't be stored in the `params` module anymore, but directly in the logic module itself, so the query to retrieve them will change. And the configuration will be based on white & black lists of predicates
+:::
+
+
 
 Several [predicates have been specially created in the logic module](https://github.com/okp4/okp4d/tree/main/x/logic/predicate) to enable rules with the blockchain state or operate crypto utilities.
 
