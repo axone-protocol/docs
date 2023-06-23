@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Governance rules with Prolog
@@ -80,7 +80,12 @@ Here are some examples of predicates:
 - `parent(john, jim).`: This predicate, named `parent`, has arity 2. It states a relationship that "John is a parent of Jim".
 - `greater_than(5, 3).`: The predicate, named `greater_than`, also has arity 2. It would be used in a Prolog program to state that 5 is greater than 3.
 
-The SWI Prolog website gives you all the [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin).  
+The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin). 
+
+:::caution
+The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.    
+::: 
+
 
 ### Installing Prolog
 
@@ -395,7 +400,23 @@ height: "2637781"
 '
 ```
 
-## Custom Prolog predicates within the OKP4 blockchain
+## Built-in Prolog predicates within the OKP4 blockchain
+
+The logic module interpreter can manage [ichiban/prolo built-in predicates](https://github.com/ichiban/prolog/wiki#predicates) and custom predicates. But their availability is conditioned to the interpreter configuration. For instance, the `halt/1` built-in predicate is not registered in the interpreter; its usage can stop a node.
+To get the list of available predicates, you can query the logic module parameters:
+
+```bash
+okp4d --node "https://api.testnet.okp4.network:443/rpc" \
+    query params subspace \
+    logic Interpreter -ojson \
+    | jq -r '.value | fromjson.registered_predicates[]'
+```
+
+:::caution
+It's worth noticing that, in the next version the logic module parameters won't be stored in the `params` module anymore, but directly in the logic module itself, so the query to retrieve them will change. And the configuration will be based on white & black lists of predicates
+:::
+
+
 
 Several [predicates have been specially created in the logic module](https://github.com/okp4/okp4d/tree/main/x/logic/predicate) to enable rules with the blockchain state or operate crypto utilities.
 
@@ -498,7 +519,7 @@ okp4d query logic ask \
 
 #### `consult/1`
 
-The [`consult(:File)`](https://www.swi-prolog.org/pldoc/doc_for?object=consult/1) predicate has been extended to enable data loading from any smart contract query through the `coswasm` prefix.
+The [`consult(:File)`](https://github.com/ichiban/prolog/wiki#program) predicate has been extended to enable data loading from any smart contract query through the `cosmwasm` URI.
 
 The Logic module expects the `File` variable to be a URI with the following form: `cosmwasm:{contract_name}:{contract_address}?query={contract_query}`
 

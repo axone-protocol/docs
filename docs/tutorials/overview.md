@@ -9,6 +9,7 @@ sidebar_position: 1
 ## Getting started with OKP4 Protocol
 
 * [Your first transaction with Keplr Wallet](./keplr-1)
+* [Interactions with the CLI](./cli-1)
 * [Governance rules with Prolog](./prolog-1)
 
 ## Nono's Tuto
