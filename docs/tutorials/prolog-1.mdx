@@ -80,7 +80,12 @@ Here are some examples of predicates:
 - `parent(john, jim).`: This predicate, named `parent`, has arity 2. It states a relationship that "John is a parent of Jim".
 - `greater_than(5, 3).`: The predicate, named `greater_than`, also has arity 2. It would be used in a Prolog program to state that 5 is greater than 3.
 
-The SWI Prolog website gives you all the [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin).  
+The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin). 
+
+:::caution
+The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ. [Here](https://github.com/ichiban/prolog/wiki#predicates) is the list of built-in predicates.    
+::: 
+
 
 ### Installing Prolog
 
@@ -395,7 +400,9 @@ height: "2637781"
 '
 ```
 
-## Custom Prolog predicates within the OKP4 blockchain
+## Built-in Prolog predicates within the OKP4 blockchain
+
+The OKP4 blockchain uses the [ichiban/prolog](https://github.com/ichiban/prolog/) Prolog interpreter. Built-in predicates are listed [here](https://github.com/ichiban/prolog/wiki#predicates). 
 
 Several [predicates have been specially created in the logic module](https://github.com/okp4/okp4d/tree/main/x/logic/predicate) to enable rules with the blockchain state or operate crypto utilities.
 
@@ -498,7 +505,7 @@ okp4d query logic ask \
 
 #### `consult/1`
 
-The [`consult(:File)`](https://www.swi-prolog.org/pldoc/doc_for?object=consult/1) predicate has been extended to enable data loading from any smart contract query through the `coswasm` prefix.
+The [`consult(:File)`](https://github.com/ichiban/prolog/wiki#program) predicate has been extended to enable data loading from any smart contract query through the `coswasm` prefix.
 
 The Logic module expects the `File` variable to be a URI with the following form: `cosmwasm:{contract_name}:{contract_address}?query={contract_query}`
 
