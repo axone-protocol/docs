@@ -22,17 +22,15 @@ Represents a simple condition.
 
 ## simple
 
-
-
 `simple`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-wherecondition-oneof-simple-properties-simple.md "undefined#/execute/definitions/WhereCondition/oneOf/0/properties/simple")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-wherecondition-oneof-simple-properties-simple.md "undefined#/execute/definitions/WhereCondition/oneOf/0/properties/simple")
 
 ### simple Type
 

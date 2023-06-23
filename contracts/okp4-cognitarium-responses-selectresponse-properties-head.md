@@ -16,4 +16,4 @@ merged type ([Details](okp4-cognitarium-responses-selectresponse-properties-head
 
 all of
 
-*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-selectresponse-properties-head-allof-0.md "check type definition")
