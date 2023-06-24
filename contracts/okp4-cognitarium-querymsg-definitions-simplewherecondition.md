@@ -16,4 +16,4 @@ merged type ([SimpleWhereCondition](okp4-cognitarium-querymsg-definitions-simple
 
 one (and only one) of
 
-*   [TriplePattern](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "check type definition")
+* [TriplePattern](okp4-cognitarium-querymsg-definitions-simplewherecondition-oneof-triplepattern.md "check type definition")
