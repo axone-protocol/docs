@@ -24,7 +24,7 @@ You'll need the [`okp4d`](https://github.com/okp4/okp4d) binary on your machine 
 ### `okp4d` one-liner installer script
 
 ```bash
-curl [https://i.jpillora.com/okp4/okp4d@v4.1.0](https://i.jpillora.com/okp4/okp4d@v4.1.0)! | bash
+curl https://i.jpillora.com/okp4/okp4d@v4.1.0! | bash
 ```
 
 ### Build the `okp4d` CLI from source
