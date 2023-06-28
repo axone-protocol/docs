@@ -37,7 +37,7 @@ Delegators primarily delegate their $KNOW tokens and voting power to Validators 
 They are responsible for choosing whom to delegate their tokens and voting power to. Furthermore, they need to be aware of the risks associated with delegating their rights.
 
 ***Interaction***
-Delegators engage with the protocol by delegating their tokens to Validators. However, they can manually “retrieve” their voting rights and directly participate in governance through specific transaction
+Delegators engage with the protocol by delegating their tokens to Validators. However, they can manually “retrieve” their voting rights and directly participate in governance through specific transaction.
 
 ***Entity***
 Delegators are typically individuals or entities staking $KNOW tokens.
@@ -64,10 +64,10 @@ DAO Participants can only be delegators or Validators for voting. Nevertheless, 
 Data Providers primarily aim to reference datasets within the protocol.
 
 ***Responsibilities***
-They are responsible  describing dataset characteristics (metadata) and for establishing consent rules for the use of this resource . They are solely authorized to modify these rules unless they decide otherwise through these rules of consent. They may also receive compensation from Consumers each time their data is used or purchased, according to the associated governance rules.
+They are responsible  describing dataset characteristics (metadata) and for establishing consent rules for the use of this resource . They are the only ones authorized to modify these rules unless they decide otherwise through these rules of consent. They may also receive compensation from Consumers each time their data is used or purchased, according to the associated governance rules.
 
 ***Interaction***
-They interact with the protocol via dedicated smart contracts to register datasets, establish their consent rules and characteristics, and make the dataset available and accessible. In addition, retribution fees may be distributed to data providers, in accordance with established consent rules.
+They interact with the protocol via dedicated smart contracts to register datasets, establish their consent rules and characteristics, and make the dataset available and accessible. In addition, retribution fees may be distributed to data providers, in accordance with established consent rules and zone rules.
 
 ***Entity***
 Data Providers can be individuals, applications, companies, or organizations owning and/or managing datasets.
@@ -78,10 +78,10 @@ Data Providers can be individuals, applications, companies, or organizations own
 Service Providers mainly aim to provide resources such as algorithms, software, storage systems, or any other digital resource requiring processing time.
 
 ***Responsibilities***
-Service Providers are responsible for providing services, defining consent rules, describing services, and setting up remuneration models based on the nature and usage of their resources. depending on consent rules and Zone rules, service providers may be required to stake tokens to ensure service availability and integrity.
+Service Providers are responsible for providing services, defining consent rules, describing services, and setting up remuneration models based on the nature and usage of their resources. Depending on consent rules and Zone rules, service providers may be required to stake tokens to ensure service availability and integrity.
 
 ***Interaction***
-Service Providers interact with the protocol by referencing their services and consent rules via smart contracts, ensuring the availability and functioning of their service in accordance with on-chain registered specifications. Furthermore, retribution fees may be distributed to service providers, according with established consent rules.
+Service Providers interact with the protocol by referencing their services and consent rules via smart contracts, ensuring the availability and functioning of their service in accordance with on-chain registered specifications. Furthermore, retribution fees may be distributed to service providers, according with established consent rules and zone rules.
 
 ***Entity***
 Service Providers can be individuals, entities, or applications offering computing or processing resources.
