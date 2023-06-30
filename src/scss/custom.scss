@@ -13,12 +13,18 @@
   src: url("/static/fonts/Barlow/Barlow-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Norse";
+  src: url("/static/fonts/Norse/Norse.woff");
+}
+
 :root {
   --ifm-color-primary: #ff9500;
   --ifm-hover-overlay: rgb(255 149 0 / 12%);
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Barlow regular", sans-serif;
-  --ifm-heading-font-family: "Barlow bold", sans-serif;
+  --ifm-heading-font-family: "Barlow Bold", sans-serif;
+  --ifm-h1-font-family: "Norse", sans-serif;
   --ifm-font-color-base: #181c49;
   --ifm-menu-color: #181c49;
   --ifm-heading-color: #181c49;

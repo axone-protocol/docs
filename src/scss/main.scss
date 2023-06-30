@@ -17,10 +17,6 @@ html {
     font-size: 18px;
   }
 
-  h2:hover {
-    color: #ff9500;
-  }
-
   .navbar__items--right {
     display: flex;
     flex-direction: row-reverse;
@@ -167,4 +163,8 @@ svg {
   .markdown > h2 {
     font-size: var(--ifm-h3-font-size);
   }
+}
+
+h1 {
+  font-family: var(--ifm-h1-font-family);
 }

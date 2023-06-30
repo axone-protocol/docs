@@ -214,7 +214,7 @@ async function createconfig() {
         },
         docs: {
           sidebar: {
-            hideable: true,
+            hideable: false,
             autoCollapseCategories: true
           }
         }

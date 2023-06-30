@@ -35,8 +35,6 @@
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgb(29 233 182 / 9%);
-  border-bottom: 1px solid rgb(29 233 182);
 }
 
 .card-header:first-child {
@@ -390,8 +388,12 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgb(255 255 255 / 10%);
+  background: url(/img/grain.webp), linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
   background-clip: border-box;
-  border: 1px solid rgba(0 0 0 / 12.5%);
-  border-radius: 0.65rem;
+  border-radius: 20px;
+  color: #15233d;
+
+  h2 {
+    color: #15233d;
+  }
 }
