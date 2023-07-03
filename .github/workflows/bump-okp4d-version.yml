@@ -26,7 +26,7 @@ jobs:
 
       - name: Bump okp4d version
         run: |
-          dataFile="docs/nodes/data.json"
+          dataFile="data/chain.json"
           tmpFile=$(mktemp)
 
           jq '.okp4dVersion |= "${{ github.event.inputs.okp4dVersion }}"' "$dataFile" > "$tmpFile" &&
