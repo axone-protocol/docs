@@ -3,12 +3,25 @@ html {
   min-height: 100%;
   height: unset !important;
 
-  .navbar__link--active,
-  .menu__list-item,
-  .table-of-contents__link--active,
-  .pagination-nav__label,
+  // .navbar__link--active,
+  // .menu__list-item,
+  // .table-of-contents__link--active,
+  // .pagination-nav__label,
   .footer__title {
     font-family: var(--ifm-heading-font-family);
+  }
+
+  .table-of-contents {
+    font-size: 14px;
+    border-color: var(--ifm-color-primary);
+
+    .table-of-contents__link {
+      color: var(--ifm-font-color-base);
+    }
+
+    .table-of-contents__link--active {
+      font-weight: 700;
+    }
   }
 
   .menu__link {
@@ -28,6 +41,10 @@ html {
 
   .thin-scrollbar {
     background-color: var(--ifm-navbar-background-color);
+  }
+
+  .hash-link {
+    display: none;
   }
 
   .menu__link--active,
@@ -167,4 +184,22 @@ svg {
 
 h1 {
   font-family: var(--ifm-h1-font-family);
+}
+
+.theme-edit-this-page {
+  color: var(--ifm-knowledge-graph-edge-stroke-color);
+}
+
+.menu__link--sublist {
+  color: var(--ifm-font-color-base);
+
+  &.menu__link--active {
+    border: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .breadcrumbs {
+    display: none;
+  }
 }

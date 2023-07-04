@@ -62,11 +62,11 @@ async function createconfig() {
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          title: 'OKP4',
+          title: '',
           logo: {
             alt: 'OKP4 Logo',
-            src: '/img/logotype-okp4-light.svg',
-            srcDark: '/img/logotype-okp4-dark.svg'
+            src: 'img/okp4-logo-light.svg',
+            srcDark: 'img/okp4-logo-dark.svg'
           },
           items: [
             {
