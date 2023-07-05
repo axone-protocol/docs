@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Governance rules with Prolog
+# Manage rules with Prolog
 
 ![Tutorials overview](/img/content/tutorials/prolog.webp)
 
@@ -80,12 +80,11 @@ Here are some examples of predicates:
 - `parent(john, jim).`: This predicate, named `parent`, has arity 2. It states a relationship that "John is a parent of Jim".
 - `greater_than(5, 3).`: The predicate, named `greater_than`, also has arity 2. It would be used in a Prolog program to state that 5 is greater than 3.
 
-The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin). 
+The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin).
 
 :::caution
-The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.    
-::: 
-
+The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.  
+:::
 
 ### Installing Prolog
 
@@ -142,14 +141,14 @@ or
 
 5. SWIPL will read and load the file, making the facts and rules available for querying. You can now use the loaded knowledge base in your Prolog sessions.
 
-For example,  if you type `can_vote(alice).`, you get the following answer:
+For example, if you type `can_vote(alice).`, you get the following answer:
 
 ```prolog
 ?- can_vote(alice).
 true.
 ```
 
- `can_vote(marc).` returns `false`:
+`can_vote(marc).` returns `false`:
 
 ```prolog
 ?- can_vote(marc).
@@ -214,11 +213,11 @@ To continue, you should:
 2. Create a wallet or import one from your seed:
 
 ```bash
-# Import from a mnemonic, you can replace "mywallet" with another wallet name 
+# Import from a mnemonic, you can replace "mywallet" with another wallet name
 okp4d keys add --recover mywallet
 
-# or create a new one, you can replace "mywallet" with another wallet name  
-okp4d keys add mywallet 
+# or create a new one, you can replace "mywallet" with another wallet name
+okp4d keys add mywallet
 
 # Get your address and name of your keys
 okp4d keys list
@@ -237,7 +236,7 @@ The following command calls the logic module:
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --program "memberOf(alice, council). memberOf(bob,council). can_vote(X) :- memberOf(X, council)." \
-"can_vote(X)." 
+"can_vote(X)."
 
 # load facts and rules from a local Prolog file, query can_vote(X).:
 okp4d query logic ask \
@@ -265,11 +264,11 @@ height: "2637781"
 ```
 
 You can optionally use the `—-program` flag to provide rules and facts.
-The query above asks for a valid substitution of X for the `can_vote(X)`  rule. `alice` is the first valid substitution found.
+The query above asks for a valid substitution of X for the `can_vote(X)` rule. `alice` is the first valid substitution found.
 
 ### How to store rules (a Prolog program) on-chain with the `okp4d` CLI
 
-The [`law-stone`](https://github.com/okp4/contracts/tree/main/contracts/okp4-law-stone) smart contract aims to provide GaaS (i.e. Governance as a Service) in any [Cosmos blockchains](https://cosmos.network/) using the [CosmWasm](https://cosmwasm.com/) framework and the logic OKP4 module.
+The [`law-stone`](https://github.com/okp4/contracts/tree/main/contracts/okp4-law-stone) smart contract aims to provide GaaS (i.e. Governance as a Service) in any [Cosmos blockchains](https://cosmos.network/) using the [CosmWasm](https://cosmwasm.com/) framework and the logic OKP4 module.
 
 To store a Prolog program and be able to query it later within the OKP4 blockchain, you have to instantiate a new `law-stone`.
 
@@ -279,7 +278,7 @@ The identifier assigned to this smart contract once compiled and deployed on the
 You have to provide two parameters to instantiate:
 
 1. `program`: the base64 encoded program (Prolog code)
-2. `storage_address`:  another smart contract, [`objectarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-objectarium), stores unstructured data as Prolog programs. You should specify the address of an `objectarium` contract on which the program will be stored and pinned (pinning prevents its removal and thus ensure its availability).
+2. `storage_address`: another smart contract, [`objectarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-objectarium), stores unstructured data as Prolog programs. You should specify the address of an `objectarium` contract on which the program will be stored and pinned (pinning prevents its removal and thus ensure its availability).
 
 You can use the following command to store the local `my_knowledgebase.pl` Prolog program, with `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx` as a deployed `objectarium` instance:
 
@@ -321,7 +320,7 @@ okp4d query txs --events 'message.sender=okp41z4ldttn975ku764er2nvtfq47n6n7jfxnk
 # "2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3"
 ```
 
-The `objectarium` smart contract has a query method to get the base64 stored data by its object `id`:  
+The `objectarium` smart contract has a query method to get the base64 stored data by its object `id`:
 
 ```bash
 okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
@@ -375,7 +374,7 @@ can_vote(X) :- member(X, council).
 
 ### How to ask for validation rules (Prolog program) on-chain with the `okp4d` CLI
 
-Now we have instantiated a `law-stone` smart contract (address = `okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf`), we can use the `Ask` query to evaluate predicates against the underlying program:
+Now we have instantiated a `law-stone` smart contract (address = `okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf`), we can use the `Ask` query to evaluate predicates against the underlying program:
 
 ```bash
 okp4d query wasm contract-state smart okp41dey5a35ssvfulh2xud3nkwk423fp0t40nga4a8xykx9frmhm6jpqne0alf \
@@ -416,8 +415,6 @@ okp4d --node "https://api.testnet.okp4.network:443/rpc" \
 It's worth noticing that, in the next version the logic module parameters won't be stored in the `params` module anymore, but directly in the logic module itself, so the query to retrieve them will change. And the configuration will be based on white & black lists of predicates
 :::
 
-
-
 Several [predicates have been specially created in the logic module](https://github.com/okp4/okp4d/tree/main/x/logic/predicate) to enable rules with the blockchain state or operate crypto utilities.
 
 ### Related to the blockchain state
@@ -429,10 +426,10 @@ Use this predicate to query the balance of an account:
 ```bash
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
-"bank_balances(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, [Unit-Nb])." 
+"bank_balances(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, [Unit-Nb])."
 
 # 9,899.958232 KNOW
-: ' 
+: '
 answer:
   has_more: false
   results:
@@ -457,17 +454,17 @@ height: "2687300"
 You can thus check a balance threshold with a `bank_balances_has_sufficient_coin/3` rule:
 
 ```bash
-# bank_balances_has_sufficient_coin(Addr, Limit, Unit) :- 
+# bank_balances_has_sufficient_coin(Addr, Limit, Unit) :-
 #    bank_balances(Addr, [Unit-Nb]),
 #    compare(>, Nb, Limit).
 
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --program "bank_balances_has_sufficient_coin(Addr, Limit, Unit) :- bank_balances(Addr, [Unit-Nb]), compare(>, Nb, Limit)." \
-"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 9899958230, uknow)." 
+"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 9899958230, uknow)."
 
 # OK
-: ' 
+: '
 answer:
   has_more: false
   results:
@@ -481,10 +478,10 @@ height: "2687574"
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --program "bank_balances_has_sufficient_coin(Addr, Limit, Unit) :- bank_balances(Addr, [Unit-Nb]), compare(>, Nb, Limit)." \
-"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 99899958239, uknow)." 
+"bank_balances_has_sufficient_coin(okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u, 99899958239, uknow)."
 
 # NOK
-: ' 
+: '
 answer:
   has_more: false
   results: []
@@ -503,47 +500,47 @@ It may be useful to know the [block height](https://academy.binance.com/en/gloss
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
-"block_height(X)." | jq '.answer.results | last | .substitutions | last | .term.name' 
+"block_height(X)." | jq '.answer.results | last | .substitutions | last | .term.name'
 ```
 
 #### `block_time/1`
 
-The following command shows you how you can have the current time ([Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)):  
+The following command shows you how you can have the current time ([Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)):
 
 ```bash
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
-"block_time(X)." | jq '.answer.results | last | .substitutions | last | .term.name' 
+"block_time(X)." | jq '.answer.results | last | .substitutions | last | .term.name'
 ```
 
 #### `consult/1`
 
 The [`consult(:File)`](https://github.com/ichiban/prolog/wiki#program) predicate has been extended to enable data loading from any smart contract query through the `cosmwasm` URI.
 
-The Logic module expects the `File` variable to be a URI with the following form: `cosmwasm:{contract_name}:{contract_address}?query={contract_query}`
+The Logic module expects the `File` variable to be a URI with the following form: `cosmwasm:{contract_name}:{contract_address}?query={contract_query}`
 
 Where:
 
-- `{contract_name}`: Only informative, represents the corresponding smart contract name or type (e.g. `okp4-objectarium`);
+- `{contract_name}`: Only informative, represents the corresponding smart contract name or type (e.g. `okp4-objectarium`);
 - `{contract_address}`: The smart contract address to query
 - `{contract_query}`: [Url encoded](https://www.urlencoder.org/) JSON query to perform on the targeted smart contract.
 
-Let’s load the Prolog program stored with the `objectarium` instance `address = okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`, id =  `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
+Let’s load the Prolog program stored with the `objectarium` instance `address = okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`, id = `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
 
 <details><summary>Query payload details</summary>
 
 **JSON Payload:**
 
 ```json
-{"object_data": {"id":"2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3"}}
+{ "object_data": { "id": "2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3" } }
 ```
 
 **[Url encoded](https://www.urlencoder.org/) payload:**
 
 `%7B%22object_data%22%3A%20%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D`
-</details>
 
+</details>
 
 ```bash
 okp4d query logic ask \
@@ -552,7 +549,7 @@ okp4d query logic ask \
 "consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), source_file(File), can_vote(X)."\
 | jq
 
-# "my_knowledgebase.pl" previously stored on-chain, now evaluates 'can_vote(X).' from it: X = alice 
+# "my_knowledgebase.pl" previously stored on-chain, now evaluates 'can_vote(X).' from it: X = alice
 : '
 {
   "height": "2689546",
@@ -593,12 +590,12 @@ okp4d query logic ask \
 
 #### `bech32_address/2`
 
-Want to know the [Stargaze](https://www.stargaze.zone/) (**stars**) address from an OKP4 one?  Here is an example to get it from **`okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u`:**
+Want to know the [Stargaze](https://www.stargaze.zone/) (**stars**) address from an OKP4 one? Here is an example to get it from **`okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u`:**
 
 ```bash
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
-"bech32_address(-(Prefix, Words), okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u), bech32_address(-(stars, Words), StarsEncodedAddr)." 
+"bech32_address(-(Prefix, Words), okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u), bech32_address(-(stars, Words), StarsEncodedAddr)."
 
 # stars address (the result we are looking for):
 # stars16rry8kjuzpxezhf4g4lvjk67mkjc95ltqrtrak
@@ -636,7 +633,7 @@ Compute the hash (and the hexa value) of a given data:
 ```bash
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
-"sha_hash('OKP4 rocks', Hash), hex_bytes(ResHex, Hash)."  
+"sha_hash('OKP4 rocks', Hash), hex_bytes(ResHex, Hash)."
 
 # ResHex = "'01235249e3708ac819526bf602b2ec2ed98266a6b98b386dc02e6e6b9ed4709d'"
 # Hash = "[1,35,82,73,227,112,138,200,25,82,107,246,2,178,236,46,217,130,102,166,185,139,56,109,192,46,110,107,158,212,112,157]"
@@ -645,7 +642,7 @@ okp4d query logic ask \
 ## Recap’
 
 1. OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
-2. These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module.  Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
+2. These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
 3. Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
 4. One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
 

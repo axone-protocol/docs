@@ -10,11 +10,12 @@ sidebar_position: 1
 
 * [Your first transaction with Keplr Wallet](./keplr-1)
 * [Interactions with the CLI](./cli-1)
-* [Governance rules with Prolog](./prolog-1)
+* [Explorer & smart contracts](./explorer-sc)
+* [Manage rules with Prolog](./prolog-1)
 
-## Nono's Tuto
+## Nono's tutorials
 
-Discover our video tutorials with Arnaud our Blockchain Architect
+Discover our video tutorials with Arnaud our Blockchain Architect:
 
 * [Introduction to OKP4 Architecture](./nonos-tuto-1)
 * [Governance, you said](./nonos-tuto-2)
