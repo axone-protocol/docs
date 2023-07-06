@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Use cases
 
-## 1. OKP4: Pioneering a sustainable revolution in Carbon Credit Management
+## OKP4: Pioneering a sustainable revolution in Carbon Credit Management
 
 ### Context
 
@@ -33,9 +33,9 @@ The scalability of the OKP4 protocol ensures it evolves with regulatory changes 
 
 Interoperability ceases to be a concern as the protocol effortlessly integrates complex workflows and eliminates compatibility issues.
 
-### [Market](https://www.globenewswire.com/en/news-release/2023/04/18/2648655/0/en/Carbon-Offset-Carbon-Credit-Market-Size-Projected-to-Reach-1-602-7-Billion-by-2028-MarketsandMarkets.html)
+### Market
 
-The global Carbon Credit Market is projected to grow remarkably, from USD **414.8 billion in 2023 to USD 1,602.7 billion by 2028, with a staggering CAGR of 31.0%.** This exponential growth reflects the growing recognition of the importance of carbon offsetting in combating climate change and achieving net-zero greenhouse gas emissions.
+The global [Carbon Credit Market](https://www.globenewswire.com/en/news-release/2023/04/18/2648655/0/en/Carbon-Offset-Carbon-Credit-Market-Size-Projected-to-Reach-1-602-7-Billion-by-2028-MarketsandMarkets.html) is projected to grow remarkably, from USD **414.8 billion in 2023 to USD 1,602.7 billion by 2028, with a staggering CAGR of 31.0%.** This exponential growth reflects the growing recognition of the importance of carbon offsetting in combating climate change and achieving net-zero greenhouse gas emissions.
 
 The global Carbon Offset/Carbon Credit Market is poised for remarkable growth in the coming years. Increasing awareness, investments in carbon capture technologies, and the rise of impactful projects drive this market expansion. By participating in carbon offsetting, OKP4 is part of a global effort to combat climate change while creating a more sustainable and resilient future for all.
 
@@ -43,9 +43,9 @@ The global Carbon Offset/Carbon Credit Market is poised for remarkable growth in
 
 ***Typical workflow:***
 
-1. **Data Collection** from various sources (ERP, CSR, etc.), actors (suppliers, clients, etc.), and formats (IoT sensors, meters, energy management systems, etc.)
-2. **Aggregation and normalization** conversion services, standardization, quality, joining services)
-3. **Processing and calculation** (GHG Protocol, VCS Protocol, Gold Standard, reference data, conversion factors) under different categories (scope 1: direct emissions, scope 2: energy-related indirect emissions, scope 3: upstream and downstream indirect emissions)
+1. **Data Collection** from various sources (ERP, CSR, etc.), actors (suppliers, clients, etc.), and formats (IoT sensors, meters, energy management systems, etc.).
+2. **Aggregation and normalization** conversion services, standardization, quality, joining services).
+3. **Processing and calculation** (GHG Protocol, VCS Protocol, Gold Standard, reference data, conversion factors) under different categories (scope 1: direct emissions, scope 2: energy-related indirect emissions, scope 3: upstream and downstream indirect emissions).
 4. **Analysis and reporting** (additional analysis based on the usage of the results, detailed and automated reporting to identify significant sources, trends, and reduction opportunities). Providing access to public and economic actors.
 5. **Offsetting**: Carbon data sharing, verification, and registration in the official registry. This avoids double accounting of credits in parallel! The protocol enables continuous monitoring beyond point-in-time calculations to detect trends and implement measures.
 
@@ -53,7 +53,7 @@ The global Carbon Offset/Carbon Credit Market is poised for remarkable growth in
 
 OKP4 protocol is promising, potentially becoming a widely adopted, standardized, and technologically advanced framework for carbon credit calculation and management. Its impact can extend beyond individual organizations, contributing to global efforts in combating climate change, achieving sustainable development goals worldwide, and ensuring fair revenue for participants. The protocol allows, at the same time, incentives organizations to share their better-quality data and create new business models.
 
-## 2. Transparent & Fair Model Training (Ml & AI)
+## Transparent & Fair Model Training (Ml & AI)
 
 ### Context
 
@@ -80,17 +80,18 @@ AI needs more trust, audibility, ethical systems, bias detection, and compliance
 
  OpenAI Inc. offers grants "[to fund experiments in setting up a democratic process for deciding what rules AI systems should follow](https://openai.com/blog/democratic-inputs-to-ai)". OKP4 protocol can guarantee the storage and enforcement of the defined rules.
 
-### [Market](https://www.statista.com/statistics/1365145/artificial-intelligence-market-size/#:~:text=According%20to%20Next%20Move%20Strategy,a%20vast%20number%20of%20industries)
+### Market
 
-Transparency issues apply to the whole field of AI. According to [Next Move Strategy Consulting](https://www.nextmsc.com/), the artificial intelligence market is expected to grow strongly in the coming decade. Its nearly $100 Billion U.S. value is expected to grow twentyfold by 2030, up to almost two trillion U.S. dollars. The AI market covers a vast number of industries. Everything from supply chains, marketing, product making, research, analysis, and more are fields that will, in some aspect, adopt artificial intelligence within their business.
+Transparency issues apply to the whole field of AI. According to [Next Move Strategy Consulting](https://www.nextmsc.com/), the [artificial intelligence market](https://www.statista.com/statistics/1365145/artificial-intelligence-market-size/#:~:text=According%20to%20Next%20Move%20Strategy,a%20vast%20number%20of%20industries) is expected to grow strongly in the coming decade. Its nearly $100 Billion U.S. value is expected to grow twentyfold by 2030, up to almost two trillion U.S. dollars. The AI market covers a vast number of industries. Everything from supply chains, marketing, product making, research, analysis, and more are fields that will, in some aspect, adopt artificial intelligence within their business.
 
 ### How it works, input & output
 
 Any entity provides any source of data to train any model.
 Let's take an example. Multiple media publishers could submit their newsfeeds to the protocol.
- A Machine Learning company could use specifically some of these stream data to propose a new summary. Everyone could know from which publishers the summary is from. For each summary consumption, revenue sharing is applied between every concerned publisher.
 
-Example :
+A Machine Learning company could use specifically some of these stream data to propose a new summary. Everyone could know from which publishers the summary is from. For each summary consumption, revenue sharing is applied between every concerned publisher.
+
+*Example:*
 
 Two companies (Corp A and Corp B) grant access to their databases, while a third company (Corp C) provides a machine-learning training workflow using the data. A data scientist (Individual D) wants new knowledge and invokes an orchestration service that uses resources from Corp A, Corp B and Corp C.
 
@@ -109,7 +110,7 @@ The OKP4 solution orchestrates the training process without exposing raw data, e
 
 OKP4 protocol aims to be the standard for AI transparency. This structuring new process for ML training will unlock the creation of a huge set of ML applications.
 
-## 3. Create, manage, and fully exploit organization and community governance
+## Create, manage, and fully exploit organization and community governance
 
 ### Context
 
@@ -120,9 +121,9 @@ Web3 has also enabled the emergence of D.A.O. (Decentralized Autonomous Organiza
 
 With OKP4, organizations finally have a solution for improving their governance management. Let's take the example of a D.A.O.: OKP4 will enable more precise governance closer to its members by optimizing the operational functioning of the D.A.O. Information monitoring, analysis of members' needs, monitoring of voting trends and projections, distribution of powers, the automated release of funds, etc. all these functionalities will help to streamline the decision-making process of organizations (decentralized or otherwise).
 
-### [Market](https://daotimes.com/6-interesting-dao-insights-from-2022/)
+### Market
 
-Estimating the market size on a broad subject, such as organizations and communities, is difficult. Instead, let's deep dive into Decentralized Autonomous Organization (D.A.O.). As of January 2023, the total market capitalization of the D.A.O. market stood at $8.8 billion. The total number of decentralized organizations stood at an impressive 10,752, up from 4,830 organizations in three months.
+Estimating the market size on a broad subject, such as organizations and communities, is difficult. Instead, let's deep dive into Decentralized Autonomous Organization (D.A.O.). As of January 2023, the total market capitalization of the [D.A.O. market](https://daotimes.com/6-interesting-dao-insights-from-2022/) stood at $8.8 billion. The total number of decentralized organizations stood at an impressive 10,752, up from 4,830 organizations in three months.
 
 ### How it works, input & output
 
@@ -130,7 +131,7 @@ Estimating the market size on a broad subject, such as organizations and communi
 
 A working group mandated by a community initiates discussions on a forum to improve the algorithmic remuneration model of a DEX to optimize the distribution of management fees to its clients. The group proposes a few avenues to explore and a budget envelope. Preliminary discussions take place on the forum and cross-cutting discussions via e-mail or online messaging (Telegram, WhatsApp or other).
 
-Thanks to the protocol, the group will formalize and build an initial workflow enabling a tool for analyzing and synthesizing discussions referenced in the Dataverse. The first stage of collecting discussions is implemented. Then these are aggregated and processed using text analysis and natural language processing tools according to the needs of the working group. Then, based on this analysis, a summary is created to facilitate understanding of all this information and made accessible to all members,
+Thanks to the protocol, the group will formalize and build an initial workflow enabling a tool for analyzing and synthesizing discussions referenced in the Dataverse. The first stage of collecting discussions is implemented. Then these are aggregated and processed using text analysis and natural language processing tools according to the needs of the working group. Then, based on this analysis, a summary is created to facilitate understanding of all this information and made accessible to all members.
 
 Thanks to OKP4, the working group and the wider community can ensure a clearer understanding of the discussions around proposals, thus promoting more informed and transparent decision-making. Following these discussions, a vote is opened to propose an external service provider to improve the DEX engine. Within this framework, a specialized "FinTech" company is mobilized to implement its analysis models and a customized expert report for an amount previously validated by vote.
 
@@ -138,16 +139,16 @@ If the vote results are positive, then part of the funds are automatically relea
 
 The service provider then carries out the work, and once it has been completed and validated, the remaining funds are released to the service provider, and a report is generated detailing the entire decision-making process and the project's progress.
 
-## 4. Other use cases with OKP4
+## Other use cases with OKP4
 
-**IoT and PoPW network as a Service**
+### IoT and PoPW network as a Service
 
 - **Environmental sensor network:** Manage a decentralized network for surveillance of air, water, noise, and other environmental factors.
 - **Driving data:** Decentralized sensor network between vehicles to enhance traffic safety and efficiency or collect actionable vehicle data.
 - **Communication network:** create a decentralized network for Wi-Fi/5G connections, or a decentralized network for satellite internet.
 - **Distributed energy resource network:** Connect batteries to the network to build a sustainable energy system.
 
-**Agriculture**
+### Agriculture
 
 - **Irrigation optimization:** Share soil sensor data and analysis models to optimize water use according to the specific needs of crops.
 - **Crop management by drone or satellite:** Share real-time data to improve decision-making, management, and thus enhance knowledge about crops.
@@ -156,7 +157,7 @@ The service provider then carries out the work, and once it has been completed a
 - **Precision agriculture:** Share field sensor data and satellite images to enable more precise and efficient agriculture.
 - **Agricultural biodiversity:** Share observations on plant and animal species present in and around fields to monitor and support biodiversity.
 
-**Health**
+### Health
 
 - **Personalized medicine:** Share data and services for genome sequencing and patient lifestyle information to tailor treatments to the individual.
 - **Epidemiology:** Share public health data and analysis resources to monitor and understand the spread of diseases.
@@ -165,7 +166,7 @@ The service provider then carries out the work, and once it has been completed a
 - **Disease prevention:** Share information on healthy behaviors and risk factors to prevent diseases.
 - **Telemedicine:** Share remote diagnostic tools and resources to improve access to care, especially in remote or underserved areas.
 
-**Industry**
+### Industry
 
 - **Predictive maintenance:** Share sensor data and analysis models to predict when equipment will need to be repaired or replaced.
 - **Supply chain optimization:** Share data on inventory, demand, and delivery times to improve supply chain efficiency.
@@ -174,7 +175,7 @@ The service provider then carries out the work, and once it has been completed a
 - **Waste management:** Share data on waste production and tools to minimize waste production.
 - **Automation:** Share production data and machine learning models to automate certain production tasks.
 
-**AI**
+### AI
 
 - **Creation of a compute network for ML:** Allows anyone to build a computing network for ML, offering economic incentives for participation in the training of ML models.
 - **Tools for verifiable and privacy-respecting ML:** Enables the training and inference of models without exposing sensitive data to the model creator.
