@@ -388,12 +388,12 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background: url(/img/grain.webp), linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
+  background: url("/img/grain.webp"), linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
   background-clip: border-box;
   border-radius: 20px;
-  color: #15233d;
+  color: var(--ifm-card-font-color);
 
   h2 {
-    color: #15233d;
+    color: var(--ifm-card-font-color);
   }
 }

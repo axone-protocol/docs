@@ -51,9 +51,8 @@
   max-width: 800px;
 
   @media (max-width: 700px) {
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   .socials_link {
@@ -69,17 +68,17 @@
     }
 
     &:hover {
-      $social_medias: (
+      $social-medias: (
         linkedin: #0077b5,
         twitter: #1da1f2,
         github: black,
         discord: #5865f2,
         telegram: #0088cc,
         medium: black,
-        website: orange
+        website: var(--ifm-color-primary)
       );
 
-      @each $social_media, $color in $social_medias {
+      @each $social_media, $color in $social-medias {
         &.#{$social_media} {
           > svg {
             path {
