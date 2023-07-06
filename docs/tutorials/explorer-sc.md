@@ -128,12 +128,12 @@ If there is an error ([transaction failed](https://explore.okp4.network/OKP4%20t
 
 ### Use an OKP4 smart contract to execute messages
 
-Let's insert [these RDF triples](https://github.com/okp4/ontology/blob/main/example/rhizome/dataset/0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl), to reference an Excel dataset in the ontology. You can only add it in a `cognitarium` contract you instantiated.
+Let's insert [these RDF triples](https://github.com/okp4/ontology/blob/d3209eb9395a0292927627004e5114b63bf3cab0/example/rhizome/dataset/0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl), to reference an Excel dataset in the ontology. You can only add it in a `cognitarium` contract you instantiated.
 
 1. The Turtle file data should be encoded in base64. You can use an [online tool](https://www.base64encode.org/), or you can use your terminal:
 
 ```bash
-cat 0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl | base64 | tr -d '\n\r'
+curl -s https://raw.githubusercontent.com/okp4/ontology/d3209eb9395a0292927627004e5114b63bf3cab0/example/rhizome/dataset/0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl | base64
 ```
 
 2. Click on the “Execute” button for the `cognitarium` previously instantiated. Copy and paste the encoded data in the “Messages” field, following this JSON structure:
