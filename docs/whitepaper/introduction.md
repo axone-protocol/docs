@@ -4,83 +4,52 @@ sidebar_position: 2
 
 # Introduction
 
-## 1. We need Knowledge
-
 The digital revolution has led to an explosive growth in data acquisition, storage and analysis, fundamentally reshaping our collective knowledge base and interactions.
+This shift has transformed us from a society of physical ownership to one based on data, licenses and intellectual property, spurring the growth of dematerialized resources.
+Unlike physical assets, dematerialized resources like datasets or algorithms are non-rival goods - they can be copied, reused, and distributed infinitely at virtually no cost. It has opened up a world of new opportunities, but it has also created a concentration of informational and technological power within tech giants.
+We are at a decisive turning point. As value creation relies exponentially on knowledge-intensive activities, tech giants get exponentially more powerful.
+But what if we could unlock knowledge creation through trusted and incentivized collaboration without the need for a third party?
 
-This shift has transformed us from a society of physical ownership to one based **on licenses and intellectual property**, spurring the growth of **dematerialized assets**. While this offers new opportunities, it's also created information and technological power concentration within tech giants.
+## We need knowdledge
 
-In light of pressing issues such as climate change and natural resource scarcity, the urgent need for open knowledge creation and sharing becomes evident.
-
-We don’t *know* how to go to Mars, we don’t *know* how to predict cancer, we don’t *know* how to farm in a desert, and we don’t *know* what present would please our mother for her birthday.
-
+In light of pressing issues such as climate change and natural resource scarcity, the urgent need for knowledge creation becomes evident.
+We don’t know how to go to Mars, we don’t know how to predict cancer, we don’t know how to farm in a desert, and we don’t know what present would please our mother for her birthday.
 Knowledge is the limiting factor to the common good for individuals, companies and society at large.
-
 Knowledge, in its various forms, is a powerful catalyst for progress and innovation, impacting all areas of human endeavor from economic growth and social development to technological advancement and cultural enrichment.
 
-- Knowledge is infinite, unlike any material good
-- Knowledge is valuable, it holds the key to all problem-solving
-- Knowledge is power, it can change the world for everyone's benefit
+![intro-1-knowledge](/img/content/whitepaper/intro-1-knowledge.webp)
 
-Our knowledge is inherently limited by the way it is created and shared. This creation begins with data - the raw material gathered by humans or machines through observation. This data serves as the inputs that enable us to train our algorithmic minds and interpret the world. Upon being contextualized and interpreted, this data becomes knowledge.
+### How knowledge is created ?
 
-However, despite the omnipresence of data and algorithms, our knowledge remains limited. Why is this? **Because data and algorithms are not shared**, essentially because of deficits of trust and incentives.
+The creation of knowledge is fundamentally linked to the resources at our disposal. At the very foundation of this process lies data - the raw, unfiltered observations collected by humans or machines. Data acts as the initial resource, the raw material that serve as the starting point of our understanding of the world. However, data in itself remains unintelligible, a jumble of signs and signals, until it is put through a process of interpretation and contextualization. It is here that the second resource, digital services, come into play.
 
-This is where the decentralized web steps in, capable of reshuffling the cards in terms of knowledge creation and dissemination. The decentralized web holds the key for a fair and trusted infrastructure to share any existing dataset and algorithms, while tokens give innovating tools to incentivize collaboration. Within this context, OKP4 sets out to capitalize on the virtues of both Web2 and Web3 with the goal of propelling the knowledge economy to the next level.
+**Data**
+Data encompass any form of discrete or continuous values, structured or not, that may be further interpreted.. This includes anything from sensor readings from IoT devices, financial data, corporate data, user-generated content, and much more. Data can be seen as the smallest units of factual information that can be used as a basis for calculation, reasoning, or discussion. Data can range from abstract ideas to concrete measurements and touches virtually every aspect of our lives even more now as  our world becomes increasingly digitized and connected.
 
-## 2. Why Sharing is not the Norm
+**Digital Services**
+On the other hand, digital services represent the cognitive aspect of our digital resources, the brain that interprets and leverages these observations to generate knowledge. Like our brain needs to process sensory inputs to make sense of our surroundings, datasets need to be processed to extract valuable knowledge from them. These digital services encompass all the algorithms, models, and software that enable us to harness the power of data. They address the question of processing time, transforming raw, unstructured, and often overwhelming datasets into digestible, actionable information. The variety of these services is as vast as the data they process, ranging from simple data sorting algorithms to complex machine learning models.
 
-Despite the context leading to the adoption of data and knowledge sharing, it is clear that **this is not at all the norm today.**
+### Sharing resources is key to create new knowledge
 
-Today's prevailing issue is that individuals and organizations tend to veer towards a siloed approach when it comes to handling data and knowledge. They create isolated data lakes and restrict access to proprietary information, effectively imprisoning valuable knowledge within walled gardens. This is mainly due to:
+Sharing digital resources is a crucial lever for generating new knowledge. Indeed, the non-rival nature of data means that sharing them does not hinder their use but, on the contrary, multiplies their potential for exploitation.
+Sharing data enhances perspectives and interpretations. A dataset, utilized by different actors with varied approaches, can lead to a multitude of analyses and discoveries. It's akin to observing an object from different angles to grasp its full complexity.
+Moreover, sharing digital services such as algorithms, models, and software fosters innovation and the creation of new analysis methods. Open source is a prime example of how sharing can stimulate innovation by providing access to a wide array of tools and enabling everyone to contribute to their improvement.
+Nevertheless, despite the obvious benefits of resource sharing for the creation of new knowledge, it must be recognized that it is not yet the norm.
 
-- **Risks** (lack of trust between participants, the fear of loss of competitive advantage)
-- **Costs** (lack of infrastructures, data governance and interoperability issues)
-- **Lack of incentives** (bad business models, bad incentives, unclear benefits)
+## Why sharing is not the norm ?
 
-![Scale](/img/content/whitepaper/intro-1.webp)
+Resource sharing is not only a question of collaboration; it is a strategic necessity to promote innovation and to create new knowledge. However, today's prevailing issue is that individuals and organizations tend to veer towards a siloed approach when it comes to handling data and knowledge. They create isolated data lakes and restrict access to proprietary service, effectively imprisoning valuable knowledge within walled gardens.
+The pace of technological advancement has far outstripped our ability to fully exploit its potential, leading to significant barriers to sharing digital resources. These obstacles range from issues of trust and incentives to technical complexities and costs.
 
-**Stats** :
+![intro-2-balance](/img/content/whitepaper/intro-2-balance.webp)
 
-*In terms of the costs associated with data silos, a report by McKinsey estimated that inefficiencies due to data silos and related issues could cost businesses more than $5 trillion annually (source: [**McKinsey**](https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-perils-of-ignoring-software-development)).*
+Trust plays a critical role in the decision to share resources. In a world where data breaches and misuse are all too common, there's a legitimate lack of trust. Providers need to be confident that their consents and rules will be respected. Furthermore, the risk of data becoming accessible to untrusted parties or being mismanaged by third parties is a significant deterrent.
+The question of perceived value and incentives is another major barrier. The value proposition of sharing digital resources is often unclear. Even when it is explicit, the conventional data marketplace model is flawed. Fixed prices on data are suboptimal because the true value lies in the knowledge generated from the data, not the data itself. This muddled value perception creates a lack of desire to share resources that doesn’t outweigh the risks and costs. 
+Technical complexities and costs present a substantial barrier. The current landscape is fragmented, making resource sharing a complex and costly endeavor. The myriad platforms, protocols, and standards introduce technical challenges, while data integration and transformation carry significant costs.These technical difficulties further contribute to this contributes to the siloing of resources and knowledge
 
-*According to a report by IDC, the volume of data generated globally is expected to grow from 33 zettabytes in 2018 to 175 zettabytes by 2025 (source: [**IDC**](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf)). However, it's estimated that a significant amount of these data is inaccessible or unused. For example, in the healthcare industry, as much as 80% of health data is believed to be unstructured and inaccessible (source: [**International Journal of Medical Informatics**](https://www.sciencedirect.com/science/article/pii/S1386505619301364)). This represents a significant loss of potential knowledge and insights.*
+![intro-3-silot](/img/content/whitepaper/intro-3-silot.webp)
 
-As a result of these barriers, the landscape of data and knowledge sharing has evolved in a fragmented way. Rather than a comprehensive and integrated solution, we see a **patchwork of tools and platforms**, each addressing a specific aspect or a specific stage of the knowledge value chain. Some focus on data acquisition, others on data organization and storage, yet others on data analysis and application, and still others on data sharing and dissemination. **The lack of a holistic solution** that spans the entire value chain creates inefficiencies, redundancies, and gaps.
-
-Indeed, it has been difficult for a cohesive, comprehensive approach to data and knowledge sharing to gain traction. The existing solutions have provided **partial answers**, but they have not been able to deliver the level of **interoperability, security, and scalability required** for true data and knowledge sharing on a global scale.
-
-Historically, we can draw parallels to the evolution of communication networks. In the early days of telecommunication, there were numerous competing systems that were unable to interconnect, resulting in isolated networks with limited reach. It wasn't until the advent of the telephone and the development of standardized protocols that a truly global communication network emerged.
-
-The same kind of transformation is needed today in the realm of data and knowledge sharing
-
-## 3. Current state: fragmented and complex
-
-Recognizing the immense potential and value of data exploitation and cognition, tech giants swiftly grasped the importance of mastering the Knowledge Value Chain for their own operations. Having fine-tuned their approach to managing and leveraging data, they are now able to extend their capabilities beyond their core operations, offering sophisticated data infrastructure solutions as a product to others, thereby shaping the landscape of data and knowledge sharing in the digital realm.
-
-- **Google Cloud Platform**:
-
-    Google offers a range of products that cover a wide range of data and knowledge needs. For example, Google BigQuery for big data analysis, Google Cloud Storage for data storage, Google Data Studio for data visualization, and Google Workspace (formerly G Suite) for collaboration and knowledge sharing.
-
-- **Amazon Web Services (AWS):**
-
-    AWS provides a comprehensive suite of services for data and knowledge management. For instance, Amazon S3 for scalable storage, Amazon Redshift for data warehousing, Amazon Quicksight for data visualization, and Amazon Chime for collaboration and knowledge sharing. Additionally, they offer more specialized tools like Amazon Athena for querying large datasets and Amazon Comprehend for natural language processing and machine learning applications.
-
-- **Microsoft Azure**:
-
-    Azure offers a range of services for data and knowledge management. For example, Azure Data Lake for storage and analysis of Big Data, Azure SQL Database for database management, Power BI for data visualization, and Microsoft Teams for collaboration and knowledge sharing.
-
-- **IBM Cloud**:
-
-    IBM offers a range of services for data and knowledge management. For example, IBM Db2 for database management, IBM Watson for AI and data analysis, IBM Cognos Analytics for data visualization, and IBM Connections for knowledge sharing and collaboration.
-
-- **Snowflake**:
-
-    Snowflake is a fully managed cloud-based data storage and analysis platform that offers a solution for data storage, data engineering, data warehousing, data lake, data analytics, AI, and machine learning. It's important to note that although Snowflake provides a comprehensive solution for data management, it primarily focuses on structured and semi-structured aspects of data.
-
-While these solutions leverage diverse technologies, their common goal is to establish a conducive environment for data and knowledge exploitation. They offer the convenience of a ready-to-use framework, user-friendly interfaces, and comprehensive support services, enabling seamless onboarding. However, these benefits often come with a significant price tag.
-
-Despite their advantages, a critical limitation common to these solutions is **their centralization**. Centralization poses significant challenges, especially in the realms of data and knowledge sharing. The central issues arising due to this structure encompass:
+This context also fosters centralization which poses significant challenges, especially in the realms of data and knowledge sharing. The central issues arising due to this structure encompass:
 
 - Confidentiality
 - Security
@@ -88,52 +57,58 @@ Despite their advantages, a critical limitation common to these solutions is **t
 - Provider dependence
 - Sovereignty
 
-Despite their benefits, the drawbacks associated with centralized data management systems necessitate exploring alternative approaches.
+In essence, these issues result in a digital environment where resource sharing is not standard practice despite its undeniable benefits. Overcoming these hurdles is a crucial task, and one that OKP4 is committed to achieving. It aims to break down these barriers, fostering a more open, equitable, and knowledge-rich digital landscape.
 
-### Web 3.0 Solutions
+## Challenge to open the knowledge silos
 
-In light of data sharing, blockchain technologies play a crucial role. They can offer a secure, transparent, and decentralized infrastructure, extending their value beyond financial transactions to peer-to-peer data exchanges and secure collaborations. This is increasingly important in a data-driven world where privacy, security, and the ability to customize solutions are paramount. Hence, the relevance of blockchain technology in creating a more open and interconnected world of secure data sharing is profound, and its potential stretches across numerous sectors.
+Given our previous analysis of the limitations of sharing , it's clear that the first challenge we need to address is the establishment of an open, decentralized infrastructure.
 
-Ethereum expanded decentralization principles by introducing programmable smart contracts, enabling the development of numerous decentralized applications (dApps). However, Ethereum's broad scope comes with its own limitations. As a general-purpose platform, it may not always provide the most efficient solution for every use case.
+### Decentralized Infrastructure Challenges
 
-Given the sensitivity of the data and knowledge sector, the infrastructure must be as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific design requirement that fosters sharing while managing these complexities efficiently.
+Decentralized infrastructure is a must to ensure equitable and autonomous access to digital resources, boost the reliability and resilience of the sharing system, and foster a vibrant and diverse ecosystem for innovation and collaboration.
 
-Specific Web 3.0 solutions are designed to offer specific functionalities such as decentralized storage, computation, indexing, and data validation for instance.
+- **Trustlessness:** A decentralized infrastructure must eliminate the need for trusted third parties, ensuring maximum impartiality and transparency, crucial for secure sharing of digital resources.
+- **Permissionless:** The principle of permissionless access allows anyone to participate in the network and share or use digital resources without prior authorization, thus facilitating the democratization of access to data and knowledge. and maximizing opportunities.
+- **Availability and Sustainability:** A decentralized infrastructure provides a constantly available settlement layer. This constant availability in the infrastructure is key to guaranteeing access to digital resources at all times. Moreover, its decentralized nature ensures its sustainability. Thanks to its distributed structure, the system remains viable even in the face of disruptions or technological evolutions, thus ensuring the long-term viability of digital resource sharing.
 
-- Decentralized storage solutions like [Arweave](https://www.arweave.org/) or [Filecoin](https://filecoin.io/) offer secure and robust data storage, crucial for any data and knowledge management system.
-- [The Graph](https://thegraph.com/), a decentralized indexing solution, facilitates efficient data retrieval from blockchains through a GraphQL API, simplifying developer interaction with blockchain data.
-- [Kyve](https://www.kyve.network/), a decentralized data validation network, ensures data integrity and reliability, both essential for data management.
-- [Akash](https://akash.network/), a decentralized marketplace to buy and sell computing resources
-- [Secret Network](https://scrt.network/), offering decentralized privacy-preserving solutions such as Homomorphic Encryption
-- Other notable initiatives to valorize data include for exemple [Ocean Protocol](https://oceanprotocol.com/) specializing in data markets, [DIMO](https://dimo.zone/) incentivizing vehicule data sharing or [Hivemapper] incentivizing mapping data collection.
+### Openness Challenges
 
-Each of these solutions **offers a unique contribution** to the landscape of decentralized digital resource management & valorization. By addressing specific challenges, they form the building blocks for a more robust, efficient, and secure Web 3.0 infrastructure.
+Openness is a critical principle to ensure transparency, encourage innovation, and promote large-scale collaboration in digital resource sharing.
 
-And this is without considering the fields of Zero-Knowledge, Artificial Intelligence and advanced cryptographic methods to facilitate secure data sharing and encrypted data analysis.
+- **Transparency:** Openness should be accompanied by transparency so that users understand and trust the sharing system.
+- **Open source:** The adoption of open-source code principles facilitates massive collaboration, complete transparency, and rapid innovation, all essential for efficient development and sharing of digital resources.
+- **Auditability:** The openness of the decentralized infrastructure allows anyone to audit the system. This means that any interested person or organization can verify the system's proper functioning, including compliance with access and sharing rules. This auditability enhances transparency and trust in the system, which is essential for ethical and equitable sharing of digital resources.
 
-In this complex context, the challenge is to **develop a holistic solution to connect all the relevant solutions** (web 2.0 & 3.0) in order to effectively manage both data and knowledge at all stages of the Knowledge Value Chain.
+In response to these challenges, blockchain technologies play a crucial role. They can offer a secure, transparent, and decentralized infrastructure, extending their value beyond financial transactions to peer-to-peer data exchanges and secure collaborations. This is increasingly important in a data-driven world where privacy, security, and the ability to customize solutions are paramount. Hence, the relevance of blockchain technology in creating a more open and interconnected world of secure data sharing is profound, and its potential stretches across numerous sectors.
+Given the sensitivity of the data and knowledge sector, the infrastructure must be as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific and adaptive design requirement that fosters sharing while managing these complexities efficiently. That’s why the **modularity aspect** is essential.
 
-## 4. Challenges to open the knowledge silos
+### Modularity Challenges
 
-Considering the backdrop, the challenges, and the current state of solutions that we outlined in this introduction, we've critically analyzed every key aspect of data sharing to understand **how to build a successful knowledge economy.**.
+Modularity offers flexibility and adaptability for infrastructure and when sharing digital resources.
 
-This mission includes **maintaining the delicate balance** between respecting the **technical aspects** of these integrations while also addressing **concerns and incentives** of all involved parties – an interplay between human and technical factors.
+- **Composability:** The ability to combine different elements to create solutions tailored to specific needs is essential for customizing digital resource sharing.
+- **Freedom of innovation of business models and consent rules:** Modularity provides the opportunity to innovate in terms of business models and consent rules, addressing a variety of needs and contexts in digital resource sharing.
+- **Scalability:** To ensure sustainable digital resource sharing, the infrastructure must be able to scale to meet increasing demand without degrading performance.
 
-To break down silos and unlock the full potential of data and algorithm sharing, the solution is to allow the creation of  **viable business models with reliable governance models.**
+There are a multitude of revelant solutions that have opted for a more or less modular architecture to perfectly cater to their specific use cases.
 
-![intro-2](/img/content/whitepaper/intro-2.webp)
+![intro-4-solution](/img/content/whitepaper/intro-4-solution.webp)
 
-To reach this purpose, the challenges are divided into two distinct sections:
+However, despite these more resilient and neutral sharing solutions, their technical specifics do not allow for easy interoperability. For instance, some solutions will be Web 3 native and centered on the Ethereum ecosystem, which restricts their interconnection with Web 2 solutions (whether open source or not).
 
-- **The Human Issues:**: Removing, as much as possible, the need for trust between participants through on-chain rules definition and enforcement. Creating powerful incentives to share and consume off-chain resources through the protocol.
-- **The Technical Issues**: Building the actual resources, tools, and systems needed to store, process, and transfer information.
+![intro-5-connect](/img/content/whitepaper/intro-5-connect.webp)
 
-![intro-3](/img/content/whitepaper/intro-3.webp)
+The most relevant aspect in the field of resource sharing is interoperability, which brings together all these relevant solutions and combines them to create the next generation of use cases, combining the intelligence of Web 2 with the disruptive contributions of Web 3.
 
-OKP4 aims to establish a system that encourages collaboration, co-creation, and knowledge sharing while ensuring and respecting individual consents and interests. As a neutral and public good, OKP4 focuses on addressing Technical solutions to provide an agnostic, flexible and secure infrastructure to solve Human Issues. The real challenge is to provide a solution that is simultaneously flexible enough to meet the needs of various stakeholders, expressive enough to interpret and interoperate different components, and secure enough to be executed within a trustworthy environment.
+### Interoperability Challenges
 
-From a technical standpoint, OKP4 offers a unique solution, deftly combining the virtues of **openness** and **decentralization** with the adaptive potential of **interoperability** and **modularity**.
+Interoperability is essential to facilitate data and knowledge exchange, promote collaboration, and stimulate innovation across technological boundaries in digital resource sharing.
 
-![intro-4](/img/content/whitepaper/intro-4.webp)
+- **Technology Agnostic:** Being technology agnostic, though it could be associated with openness, is crucial to ensuring that the solution is open to all technologies, thus avoiding technological blockades and promoting diversity and innovation in digital resource sharing.
+- **Interpretability:** The ability to understand the operation, meaning, and interactions of digital services is essential to promote understanding and trust in the digital resource sharing infrastructure.
+- **No tech lock-in:** Interoperability helps avoid tech lock-in, ensuring the solution can communicate and interact with various technologies, crucial for smooth digital resource sharing.
+- **Interconnection between independent systems:** The ability to connect and integrate independent systems is essential for optimizing digital resource sharing and fully leveraging technological advancements.
 
-In the following section, we will explore how OKP4 elegantly combines these four pillars to elevate the knowledge economy to the next level.
+This is where the protocol comes in. OKP4 aspire to interconnect a multitude of datasets and digital services to generate knowledge, all the while respecting the rules of consent and retribution chosen by the providers. In doing so, we believe that we can democratize access to knowledge, decentralize informational power, and build a governance infrastructure for digital resources that is truly fair and sustainable.
+
+![intro-6-okp4](/img/content/whitepaper/intro-6-okp4.webp)
