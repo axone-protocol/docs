@@ -47,33 +47,25 @@
   display: flex;
   flex-direction: row;
   margin-top: 70px;
+  gap: 40px;
+  max-width: 800px;
 
   @media (max-width: 700px) {
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
   }
 
   .socials_link {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
 
     svg {
-      width: 70px;
+      width: 50px;
       height: auto;
 
       path {
         fill: var(--ifm-font-color-base);
       }
-    }
-
-    span {
-      display: flex;
-      gap: 5px;
-      font-size: 20px;
     }
 
     &:hover {
@@ -83,15 +75,12 @@
         github: black,
         discord: #5865f2,
         telegram: #0088cc,
-        medium: black
+        medium: black,
+        website: orange
       );
 
       @each $social_media, $color in $social_medias {
         &.#{$social_media} {
-          .text {
-            color: $color;
-          }
-
           > svg {
             path {
               fill: $color;

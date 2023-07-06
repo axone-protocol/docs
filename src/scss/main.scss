@@ -51,7 +51,7 @@ html {
   .menu__link:hover {
     border-right: solid 2px;
     border-radius: 0;
-    border-color: #ff9500;
+    border-color: var(--ifm-color-primary);
   }
 
   .button[class*="CollapseButton"] {
