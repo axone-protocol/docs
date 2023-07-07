@@ -182,6 +182,12 @@ svg {
   }
 }
 
+.markdown > h3 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 .theme-edit-this-page {
   color: var(--ifm-knowledge-graph-edge-stroke-color);
 }
