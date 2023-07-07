@@ -290,7 +290,7 @@ okp4d tx wasm instantiate 5 \
 --chain-id okp4-nemeton-1 \
 --gas 1000000 \
 --node https://api.testnet.okp4.network:443/rpc \
-"{\"program\":\"$(cat my_knowledgebase.pl | base64)\", \"storage_address\": \"okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx\"}"
+"{\"program\":\"$(cat my_knowledgebase.pl | base64 | tr -d '\n\r')\", \"storage_address\": \"okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx\"}"
 ```
 
 Replace the `--from` value by your wallet name. You can also change the `--label` name as you want but note it should be unique.
@@ -407,7 +407,7 @@ However, their availability depends on the interpreter's configuration. For exam
 You can get the list of all available predicates as a set of whitelist / blacklist predicates by querying the logic module parameters.
 
 :::tip
-The whitelist specifies the list of predicates that 
+The whitelist specifies the list of predicates that
 are allowed, and if not specified, all supported predicates are available. The blacklist specifies the list of predicates that are excluded from the set of allowed precicates. If a predicate
 is included in both whitelist and blacklist, it will be excluded. This means that blacklisted predicates prevails over whitelisted ones.
 :::
@@ -551,7 +551,7 @@ Let’s load the Prolog program stored with the `objectarium` instance `address 
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
-"consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), source_file(File), can_vote(X)."\
+"consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), can_vote(X)."\
 | jq
 
 # "my_knowledgebase.pl" previously stored on-chain, now evaluates 'can_vote(X).' from it: X = alice
@@ -569,13 +569,6 @@ okp4d query logic ask \
     "results": [
       {
         "substitutions": [
-          {
-            "variable": "File",
-            "term": {
-              "name": "'cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'",
-              "arguments": []
-            }
-          },
           {
             "variable": "X",
             "term": {
@@ -646,10 +639,10 @@ okp4d query logic ask \
 
 ## Recap’
 
-1. OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
-2. These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
-3. Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
-4. One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
+- OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
+- These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
+- Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
+- One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
 
 Utilizing Prolog to enforce governance rules via the OKP4 blockchain paves the way for transparent and trustless sharing interactions and promotes interoperability without limits.
 
