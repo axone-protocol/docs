@@ -8,7 +8,7 @@ sidebar_position: 5
 
 Welcome OKP4 builders to an exciting journey at the crossroads of Prolog and blockchain!
 
-This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether aspiring to develop on the OKP4 protocol or are intrigued by one of the core OKP4 protocol’s concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
+This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether aspiring to develop on the OKP4 protocol or are intrigued by one of the core OKP4 protocol's concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
 
 ## Why use Prolog on the OKP4 blockchain?
 
@@ -290,7 +290,7 @@ okp4d tx wasm instantiate 5 \
 --chain-id okp4-nemeton-1 \
 --gas 1000000 \
 --node https://api.testnet.okp4.network:443/rpc \
-"{\"program\":\"$(cat my_knowledgebase.pl | base64)\", \"storage_address\": \"okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx\"}"
+"{\"program\":\"$(cat my_knowledgebase.pl | base64 | tr -d '\n\r')\", \"storage_address\": \"okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx\"}"
 ```
 
 Replace the `--from` value by your wallet name. You can also change the `--label` name as you want but note it should be unique.
@@ -349,7 +349,7 @@ can_vote(X) :- member(X, council).
 '
 ```
 
-Let’s combine it all! To get back the Prolog code stored in the last `law-stone` (**`CODE_ID = 5`**, storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**, you can type:
+Let's combine it all! To get back the Prolog code stored in the last `law-stone` (**`CODE_ID = 5`**, storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**, you can type:
 
 ```bash
 okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
@@ -407,7 +407,7 @@ However, their availability depends on the interpreter's configuration. For exam
 You can get the list of all available predicates as a set of whitelist / blacklist predicates by querying the logic module parameters.
 
 :::tip
-The whitelist specifies the list of predicates that 
+The whitelist specifies the list of predicates that
 are allowed, and if not specified, all supported predicates are available. The blacklist specifies the list of predicates that are excluded from the set of allowed precicates. If a predicate
 is included in both whitelist and blacklist, it will be excluded. This means that blacklisted predicates prevails over whitelisted ones.
 :::
@@ -499,7 +499,7 @@ height: "2687583"
 
 #### `block_height/1`
 
-It may be useful to know the [block height](https://academy.binance.com/en/glossary/block-height). Here’s how to get it:
+It may be useful to know the [block height](https://academy.binance.com/en/glossary/block-height). Here's how to get it:
 
 ```bash
 okp4d query logic ask \
@@ -519,7 +519,7 @@ okp4d query logic ask \
 "block_time(X)." | jq '.answer.results | last | .substitutions | last | .term.name'
 ```
 
-#### `consult/1`
+#### `consult/1`, `open/4`
 
 The [`consult(:File)`](https://github.com/ichiban/prolog/wiki#program) predicate has been extended to enable data loading from any smart contract query through the `cosmwasm` URI.
 
@@ -531,7 +531,7 @@ Where:
 - `{contract_address}`: The smart contract address to query
 - `{contract_query}`: [Url encoded](https://www.urlencoder.org/) JSON query to perform on the targeted smart contract.
 
-Let’s load the Prolog program stored with the `objectarium` instance `address = okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`, id = `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
+Let's load the Prolog program stored with the `objectarium` instance `address = okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`, id = `2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3`:
 
 <details><summary>Query payload details</summary>
 
@@ -551,7 +551,7 @@ Let’s load the Prolog program stored with the `objectarium` instance `address 
 okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
-"consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), source_file(File), can_vote(X)."\
+"consult('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'), can_vote(X)."\
 | jq
 
 # "my_knowledgebase.pl" previously stored on-chain, now evaluates 'can_vote(X).' from it: X = alice
@@ -570,13 +570,6 @@ okp4d query logic ask \
       {
         "substitutions": [
           {
-            "variable": "File",
-            "term": {
-              "name": "'cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'",
-              "arguments": []
-            }
-          },
-          {
             "variable": "X",
             "term": {
               "name": "alice",
@@ -591,7 +584,53 @@ okp4d query logic ask \
 '
 ```
 
-### Useful Prolog predicates in a blockchain context
+You can also open a stream from a `cosmwasm` query with the `open/4` predicate. The `Stream` should be read as a string with a `read_string/3` predicate, and then closed with the `close/1` predicate.
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"open('cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx?query=%7B%22object_data%22%3A%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D', 'read', Stream), read_string(Stream, _, Raw), close(Stream)."\
+| jq
+
+: '
+{
+  "height": "3082671",
+  "gas_used": "77954",
+  "answer": {
+    "success": true,
+    "has_more": false,
+    "variables": [
+      "Raw",
+      "Stream"
+    ],
+    "results": [
+      {
+        "substitutions": [
+          {
+            "variable": "Raw",
+            "term": {
+              "name": "% Facts\\nmember(alice, council).\\nmember(bob, council).\\n\\n% Rules\\ncan_vote(X) :- member(X, council).",
+              "arguments": []
+            }
+          },
+          {
+            "variable": "Stream",
+            "term": {
+              "name": "<stream>(0xc0f9726230)",
+              "arguments": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "user_output": ""
+}
+'
+```
+
+### Useful Prolog predicates in the OKP4 blockchain context
 
 #### `bech32_address/2`
 
@@ -631,6 +670,145 @@ height: "2687799"
 '
 ```
 
+#### `did_components/2`
+
+It breaks down a DID (decentralized identifier) into its components according to the [W3C specification](https://www.w3.org/TR/did-core/).
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"did_components('did:example:123456/page?versionId=1#partTwo', did(Method, ID, Path, Query, Fragment))." \
+| jq '.answer.results | last | .substitutions '
+
+: '
+[
+  {
+    "variable": "Method",
+    "term": {
+      "name": "example",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "ID",
+    "term": {
+      "name": "'123456'",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Path",
+    "term": {
+      "name": "page",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Query",
+    "term": {
+      "name": "'versionId=1'",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Fragment",
+    "term": {
+      "name": "partTwo",
+      "arguments": []
+    }
+  }
+]
+'
+
+```
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"did_components('did:example:123456?versionId=1', did(Method, ID, Path, Query, Fragment))." \
+| jq '.answer.results | last | .substitutions '
+
+: '
+[
+  {
+    "variable": "Method",
+    "term": {
+      "name": "example",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "ID",
+    "term": {
+      "name": "'123456'",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Path",
+    "term": {
+      "name": "''",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Query",
+    "term": {
+      "name": "'versionId=1'",
+      "arguments": []
+    }
+  },
+  {
+    "variable": "Fragment",
+    "term": {
+      "name": "''",
+      "arguments": []
+    }
+  }
+]
+'
+
+```
+
+#### `json/1`, `json_prolog/2`
+
+You can create JSON-like elements with a `key-value` list as argument of a `json` predicate. Use `json_prolog/2` to parse JSON strings.
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"json_prolog(JsonString,json([select-json([query-json([select-'el1, el2',limit-5,prefix-[core,mdata]])])]))." \
+| jq '.answer.results[0].substitutions[0].term.name' | tr -d "'" | tail -c +2 | head -c -2 | tr -d "\\" | jq .
+
+: '
+{
+  "select": {
+    "query": {
+      "limit": 5,
+      "prefix": [
+        "core",
+        "mdata"
+      ],
+      "select": "el1, el2"
+    }
+  }
+}
+'
+```
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"json_prolog('{\"select\":{\"query\":{\"limit\":5,\"prefix\":[\"core\",\"mdata\"],\"select\":\"el1, el2\"}}}',JsonEl)." \
+| jq '.answer.results[0].substitutions[0].term.name'
+
+# "json([select-json([query-json([limit-5,prefix-[core,mdata],select-'el1, el2'])])])"
+```
+
 #### `hex_bytes/2`, `sha_hash/2`
 
 Compute the hash (and the hexa value) of a given data:
@@ -644,12 +822,38 @@ okp4d query logic ask \
 # Hash = "[1,35,82,73,227,112,138,200,25,82,107,246,2,178,236,46,217,130,102,166,185,139,56,109,192,46,110,107,158,212,112,157]"
 ```
 
-## Recap’
+#### `uri_encoded/3`
 
-1. OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
-2. These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
-3. Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
-4. One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
+You can manipulate string and get it encoded, or, inversely, have encoded strings and want a human-readable version.
+
+The first argument of the predicate is the `Composant` and can be `query`, `fragment`, `path` or `segment`, the second argument is the decoded string, and the third is the encoded string.
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"uri_encoded(query, '{\"object_data\": {\"id\":\"2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3\"}}', Encoded)." \
+| jq '.answer.results[0].substitutions[0].term.name'
+
+# "'%7B%22object_data%22%3A%20%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D'"
+```
+
+```bash
+okp4d query logic ask \
+--node https://api.testnet.okp4.network:443/rpc \
+--output json \
+"uri_encoded(query, Decoded, '%7B%22object_data%22%3A%20%7B%22id%22%3A%222625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3%22%7D%7D')." \
+| jq '.answer.results[0].substitutions[0].term.name'
+
+# "'{\"object_data\": {\"id\":\"2625337e6025495a87cb32eb7f5a042f31e4385fd7e34c90d661bfc94dd539e3\"}}'"
+```
+
+## Recap'
+
+- OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
+- These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
+- Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
+- One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
 
 Utilizing Prolog to enforce governance rules via the OKP4 blockchain paves the way for transparent and trustless sharing interactions and promotes interoperability without limits.
 

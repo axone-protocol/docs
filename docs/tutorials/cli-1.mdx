@@ -312,12 +312,12 @@ Once a smart contract is instantiated, it can be executed or triggered to perfor
 Let's add a text object to the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`). The [msg.rs](https://github.com/okp4/contracts/blob/main/contracts/okp4-objectarium/src/msg.rs) source file indicates we can use the `store_object` method with `data` and `pin` arguments.
 
 ```bash
-echo "Hello OKP4 Builders !" > text-ex.txt && \
+echo "Hello OKP4 Builders" > text-ex.txt && \
 okp4d tx wasm execute okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85 \
 --from mywallet \
 --gas 1000000 \
 --chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc \
-"{\"store_object\":{\"data\": \"$(cat text-ex.txt | base64)\", \"pin\":true}}"
+"{\"store_object\":{\"data\": \"$(cat text-ex.txt | base64 | tr -d '\n\r')\", \"pin\":true}}"
 ```
 
 :::caution
@@ -327,28 +327,28 @@ Replace `mywallet` with the name of the OKP4 wallet you control!
 You get a new `txhash`; let's get the created object `id`:
 
 ```bash
-okp4d query tx 75A2158C63B2860CE85FECD996DE4A7C0590CA55D8231D86D07E08CD570E3E4A \
+okp4d query tx F945A917D3B0E013FD0870B5CFDA23FB00ED8C985030D1C9DD262D71F4BCA50A \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json | jq '.logs[0].events[].attributes[] | select(.key == "id").value'
 
-# "1fce568de3168c21f4b6363449c9d6a59071286a89dd07dea916874037418d6f"
+# "71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213"
 ```
 
 #### Smart contract query
 
 A query gives the ability to retrieve data or information from a smart contract without modifying the state of the blockchain. Queries allow users or applications to fetch specific data or execute read-only functions from the smart contract to gather information.
 
-Let's check the text is correctly stored on-chain, with an `object_data` of the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`, id = `1fce568de3168c21f4b6363449c9d6a59071286a89dd07dea916874037418d6f`).
+Let's check the text is correctly stored on-chain, with an `object_data` of the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`, id = `71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213`).
 
 ```bash
 okp4d query wasm contract-state smart okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85 \
 --output json \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc \
-"{\"object_data\": {\"id\":\"1fce568de3168c21f4b6363449c9d6a59071286a89dd07dea916874037418d6f\"}}" \
+"{\"object_data\": {\"id\":\"71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213\"}}" \
 | jq '.data' | tr -d '"' | base64 -d
 
-# Hello OKP4 Builders !
+# Hello OKP4 Builders
 ```
 
 #### Analyze smart contracts activities
@@ -371,31 +371,6 @@ okp4d query txs \
 --chain-id okp4-nemeton-1 \
 --node https://api.testnet.okp4.network:443/rpc --output json | jq \
 '{total_count: .total_count, txs: [.txs[] | {date: .timestamp, wasm_action: [ .logs[0].events[] | select(.type == "wasm").attributes[] ] }]}'
-
-: '
-    {
-      "total_count": "1",
-      "txs": [
-        {
-          "date": "2023-06-18T15:51:09Z",
-          "wasm_action": [
-            {
-              "key": "_contract_address",
-              "value": "okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85"
-            },
-            {
-              "key": "action",
-              "value": "store_object"
-            },
-            {
-              "key": "id",
-              "value": "1fce568de3168c21f4b6363449c9d6a59071286a89dd07dea916874037418d6f"
-            }
-          ]
-        }
-      ]
-    }
-'
 ```
 
 ## Recap'
