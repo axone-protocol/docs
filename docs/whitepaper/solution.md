@@ -111,7 +111,7 @@ Given that resources are not directly attached to a specific Zone, but rather de
 To really leverage the power of knowledge, OKP4 protocol  interprets all these entities and concept within a universal language taking into account **the semantic aspect** of each of them.
 Let’s take an illustration to clearly understand.
 
-[image7]
+![solution-6](/img/content/whitepaper/solution-6.webp)
 
 The structural language only gives a definition of concepts in a wide range. However, the semantic language could give **the meaning** of concepts, properties, relationships and entities.
 The expressiveness of the language enhances **the disambiguation and the interoperability** between entities in a computable form. To give meaning to each concept and entity in the protocol, we’ve decided to encode an ontology to represent and persist the information on the blockchain.
@@ -133,7 +133,7 @@ Ontology also provides a comprehensive and dynamic understanding of datasets wit
 In addition to serving as an immutable source of truth, the blockchain will provide detailed insight into the knowledge generation process, thereby qualifying itself as an interpretable settlement layer.
 Below, an example of a workflow representation in the form of a knowledge graph, generated thanks to the information stored on-chain.
 
-[image8]
+![solution-7](/img/content/whitepaper/solution-7.webp)
 
 ## PROTOCOL FUNCTIONALITY
 
@@ -152,7 +152,7 @@ From a computer science perspective, the challenge lies in resolving occasionall
 To tackle this, OKP4 aims at providing a **reliable and secure mechanism** to ensure that all the invoked rules are correctly interpreted in a decentralized way.
 Each Zone's established rules determine whether a user's intended action is permissible or not. It's essential to note that these considerations must also account for the different contexts at the time of the request, as the state of the blockchain evolves.
 
-[IMAGE9]
+![solution-8](/img/content/whitepaper/solution-8.webp)
 
 1 - An Identity (human or bot)  wants to interact with a Zone
 2 - The Zone ask to the dedicated smart contract if its possible given the context and all the involved rules
@@ -168,7 +168,7 @@ A Service Execution Agreement in the form of a smart contract called PACTUM outl
 
 **How does the Pactum smart contract work ?**
 
-[IMAGE10]
+[IMAGE9]![solution-9](/img/content/whitepaper/solution-9.webp)
 
 When an Identity wishes to engage a workflow within a Zone, a service execution agreement as a Pactum smart contract will be established among the involved participants.
 1- This agreement verifies the alignment of governance rules of the Zone and the digital resources involved in the execution and also checks the conformity of all rules within the entire execution context. This context includes the resources and the Zone, as well as the user who initiated the workflow.
