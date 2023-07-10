@@ -16,6 +16,6 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketlimits-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketlimits-properties-max_total_size-anyof-1.md "check type definition")

@@ -16,6 +16,6 @@ merged type ([Details](okp4-objectarium-executemsg-oneof-storeobject-properties-
 
 any of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-compression_algorithm-anyof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-compression_algorithm-anyof-0.md "check type definition")
 
-*   [Untitled null in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-compression_algorithm-anyof-1.md "check type definition")
+* [Untitled null in okp4-objectarium](okp4-objectarium-executemsg-oneof-storeobject-properties-store_object-properties-compression_algorithm-anyof-1.md "check type definition")
