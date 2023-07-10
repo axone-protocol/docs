@@ -16,6 +16,6 @@ merged type ([IRI](okp4-cognitarium-executemsg-definitions-iri.md))
 
 one (and only one) of
 
-* [Prefixed](okp4-cognitarium-executemsg-definitions-iri-oneof-prefixed.md "check type definition")
+*   [Prefixed](okp4-cognitarium-executemsg-definitions-iri-oneof-prefixed.md "check type definition")
 
-* [Full](okp4-cognitarium-executemsg-definitions-iri-oneof-full.md "check type definition")
+*   [Full](okp4-cognitarium-executemsg-definitions-iri-oneof-full.md "check type definition")
