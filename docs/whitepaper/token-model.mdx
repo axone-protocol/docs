@@ -1,0 +1,104 @@
+---
+sidebar_position: 5
+---
+
+# Token model
+
+## Motivation
+
+OKP4 Token Model aims to:
+
+- secure the network by providing sufficient incentives for validators to participate and delegators to stake their tokens;
+- ensure low-cost participation for Providers and Consumers;
+- incentivize long-term token holding;
+- secure open-source funding & network maintenance.
+
+One issue we've seen with many other Cosmos-based chains is, to secure the network, they define an inflation parameter (usually ranging from 10% to 30%), resulting in token selling pressure and unattractive price action.
+
+One way to secure the network while limiting inflation is providing rewards derived from network activity. Unlike Ethereum's [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) which reduces inflation through fee's burning, OKP4 introduce a tax on specific network activity: the workflows. As with VAT (value-added tax), a fraction of the workflow's price can be collected to secure the network while reducing selling pressure, and even result in long-term $KNOW supply reduction.
+
+In OKP4, the two main parameters influencing the inflation rate are (1) the bonding ratio and (2) the workflow tax.
+
+## Bonding ratio
+
+The bonding ratio is the ratio between the number of tokens staked, and the number of existing tokens. The higher the bonding ratio, the more tokens are needed to increase a validator's voting power. To ensure the bonding ratio stays high, the staking rewards increase when the bonding ratio decreases. This would further incentivize token holders to stake their tokens.
+
+## Workflow tax
+
+OKP4 aims to reduce $KNOW inflation while maintaining a security budget to incentivize validators and delegators. Inflation can be considered as value extracted from existing token holders, another source of value needs to be found.
+
+The main chosen source of revenues is workflows. Workflows are initiated and paid by Consumers to retribute Providers.
+
+Tomorrow, thousands of applications will be leveraging OKP4, each of them generating many workflows. For each workflow, Consumers pay Data providers and Service providers according to the business model defined on-chain. A tax is applied to the workflow's price. The tax percentage is a parameter defined through DAO governance. This tax is collected into a tax pool and redistributed to validators and delegators.
+
+This tax pool compensates for inflation. The higher the tax collected on workflows, the lower the inflation rate. If the daily tax pool exceeds the Staking Reward Target (SRT), then the SRT is distributed from the tax pool, no new tokens are minted, and the remaining tokens are burnt, reducing the token supply.
+Another effect of that tax is to prevent fake volume on datasets and services, making the volume a more robust reputation metric.
+
+## Staking reward target
+
+The `SRT` would be defined for an epoch set _daily_.
+
+Let's define the $R$ staking reward target:
+
+$$
+R = a \cdot i \cdot (c - \frac{b}{b'})
+$$
+
+Where:
+
+- $R$: daily staking reward target
+- $a$ = variable: $KNOW supply at the end of the epoch (200 000 000 at genesis)
+- $i$ = 0.0002: daily inflation coefficient
+- $c$ = 2.5: bonding ratio adjustment coefficient
+- $b$ = variable: bonding ratio at the end of the epoch (ranging between 0 and 1)
+- $b'$ = 0.66: target bonding ratio
+
+This would give the following daily `SRT`* (without considering that the $KNOW supply is dynamic and may increase and decrease).
+
+<center>
+  <img width="570px" src="/img/content/whitepaper/token-model-r-plot.webp"></img>
+</center>
+
+The daily `SRT` is linearly influenced by the bonding ratio and capped to a maximum and minimum adjusted to the token supply.
+
+As a yearly percentage of the token supply, this would give the following chart:
+
+<center>
+  <img width="570px" src="/img/content/whitepaper/token-model-percentage-plot.webp"></img>
+</center>
+
+This `SRT` would be the base case inflation if no workflow was initiated and no tax collected.
+
+## Inflation reduction
+
+At the end of every epoch, the tax pool $R'$ would be collected and distributed to validators and delegators and will influence inflation for the following epoch.
+
+The $V$ \$KNOW amount to be minted during the epoch will be adjusted at the beginning of each epoch according to the value of $\Delta$ with:
+
+$$
+\Delta = R - R'
+$$
+
+1. If the daily tax pool is below the daily staking reward target (If $\Delta > 0$), we have:
+
+$$
+V=Δ
+$$
+
+2. If the daily tax pool is equal to or above the daily staking reward target (If $\Delta \leq 0$), we have:
+
+$$
+V=0
+$$
+
+$$
+\lvert \Delta \rvert \text{ is burnt}
+$$
+
+## Other payment tokens
+
+In the future, Consumers will be able to pay for workflows using other payment tokens such as stablecoins. The Providers will be paid in that payment token, and the tax will apply. These payment tokens will need to be approved by governance, and a default route and timing to be swapped into $KNOW will be defined. At the end of the epoch, the tax pool will be composed of $KNOW tokens, even if other tokens are used for payment.
+
+## Other taxes on workflows
+
+Beyond inflation reduction and burning, additional workflow taxes are set to be distributed for specific purposes. One key purpose is public goods funding and providing incentives for builders. These taxes can be given to the community pool and strategic treasury. As with the tax pool for validators and delegators, the DAO governance decides the tax levels at the protocol's level.
