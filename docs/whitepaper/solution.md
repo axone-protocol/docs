@@ -50,12 +50,12 @@ The primary objective of Zones is to **facilitate the coordination** of heteroge
 **What is a Zone ?**
 A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
-[IMAGE1]
+![solution-1](/img/content/whitepaper/solution-1.webp)
 
 Another way to perceive it is through the rules of the Zone which can be either open or on the contrary restrictive . The existence of these rules defines the reality of the Zone, and it is through the consideration (evaluation) of digital resources that are compatible with the Zone that the extent of the Zone's territory is defined. In other words, the rules establish the boundaries and parameters that determine which digital resources fall within the Zone and are recognized as part of it. By evaluating the compatibility of resources with the Zone's rules, the scope and coverage of the Zone can be determined. Multiple Zones may share common resources and can be nested or overlapped, based on the rules associated with each resource and zone.
 There is then an endless combination of oftentimes interoperable Zones where participants and digital resources can interact freely and create value.
 
-[IMAGE2]
+![solution-2](/img/content/whitepaper/solution-2.webp)
 
 **Why no direct link between Zone and resources?**
 If there is no materialized link determining the belonging of a resource to a Zone, it is because Zones are designed to constantly evolve through their rules and conditions which continuously redefine their boundaries.
@@ -69,7 +69,7 @@ Zones can be nested and overlapping, as one resource or service can participate 
 Anything that is presented to the Protocol as a Service, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies **the integration power of the protocol**, which brings infinite scalability and extensibility to the entire OKP4 ecosystem.
 The description of each resources referenced on the protocol ensures their proper processing by the different entities of the protocol.
 
-[IMAGE3]
+![solution-3](/img/content/whitepaper/solution-3.webp)
 
 There are two main categories of resources in the dataverse:
 
@@ -81,7 +81,7 @@ Digital Resources encompass various forms of data and information, which can be 
 - Bounded Digital Resources which have a finite size and are often accessed and analyzed as a whole. We call them datasets, and can be classified into structured data, such as databases or spreadsheets, and unstructured data, such as text documents, images, or videos, to name a few.
 - Unbounded Digital Resources, such as data streams, are characterized by their continuous and potentially infinite nature. They involve a continuous flow of data that is generated over time, often in real-time or near real-time. Examples of unbounded resources include sensor data from IOT, social media feeds, or stock market tickers, to name a few.
 
-[IMAGE4]
+![solution-4](/img/content/whitepaper/solution-4.webp)
 
 **Digital Services**, on the other hand, are essential components that handle and support the transformation of these digital resources into actionable knowledge.
 From this perspective, Digital Services serve as the structural and functional unit in the process of Knowledge creation. They provide the necessary means to transform the digital resources, enabling the generation of new knowledge. Digital Service includes :
@@ -89,7 +89,7 @@ From this perspective, Digital Services serve as the structural and functional u
 - Infrastructure service
 - Digital resource processing Service
 
-[IMAGE5]
+![solution-5](/img/content/whitepaper/solution-5.webp)
 
 **STaaS-Storage as a service:**
 The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or Any”Drive”. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
