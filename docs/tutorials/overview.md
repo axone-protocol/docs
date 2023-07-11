@@ -12,6 +12,7 @@ sidebar_position: 1
 * [Interactions with the CLI](./cli-1)
 * [Explorer & smart contracts](./explorer-sc)
 * [Manage rules with Prolog](./prolog-1)
+* [Leverage the ontology](./ontology-1)
 
 ## Nono's tutorials
 
