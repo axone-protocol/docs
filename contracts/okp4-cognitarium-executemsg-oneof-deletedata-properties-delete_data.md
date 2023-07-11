@@ -4,8 +4,6 @@
 undefined#/execute/oneOf/1/properties/delete_data
 ```
 
-
-
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [okp4-cognitarium.json\*](schema/okp4-cognitarium.json "open original schema") |
@@ -28,13 +26,13 @@ The items to delete.
 
 `delete`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-delete.md "undefined#/execute/oneOf/1/properties/delete_data/properties/delete")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-delete.md "undefined#/execute/oneOf/1/properties/delete_data/properties/delete")
 
 ### delete Type
 
@@ -46,13 +44,13 @@ The prefixes used in the operation.
 
 `prefixes`
 
-*   is required
+* is required
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-prefixes.md "undefined#/execute/oneOf/1/properties/delete_data/properties/prefixes")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-prefixes.md "undefined#/execute/oneOf/1/properties/delete_data/properties/prefixes")
 
 ### prefixes Type
 
@@ -64,13 +62,13 @@ The WHERE clause to apply. If not provided, all the RDF triples are considered.
 
 `where`
 
-*   is optional
+* is optional
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   can be null
+* can be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-where.md "undefined#/execute/oneOf/1/properties/delete_data/properties/where")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-deletedata-properties-delete_data-properties-where.md "undefined#/execute/oneOf/1/properties/delete_data/properties/where")
 
 ### where Type
 

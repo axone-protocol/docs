@@ -22,17 +22,15 @@ An RDF [blank node](https://www.w3.org/TR/rdf11-concepts/#dfn-blank-node).
 
 ## blank\_node
 
-
-
 `blank_node`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode-properties-blank_node.md "undefined#/query/definitions/Node/oneOf/1/properties/blank_node")
+* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-blanknode-properties-blank_node.md "undefined#/query/definitions/Node/oneOf/1/properties/blank_node")
 
 ### blank\_node Type
 
