@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ![Tutorials overview](/img/content/tutorials/ontology-1.webp)
 
-This tutorial will unravel the concept of ontology and figure out its crucial role in the OKP4 protocol.
+This tutorial unveils the concept of ontology and figure out its crucial role in the OKP4 protocol.
 
 An ontology describes knowledge. We can represent it as a graph database that fixes the meaning of concepts and the relationships that unite them.
 
