@@ -46,7 +46,7 @@ In the realm of the semantic web, RDF (Resource Description Framework) is a comm
 
 RDF encodes information in triple structures. The basic structure of an RDF triple is subject-predicate-object, much like a simple sentence in the English language.
 
-1. **Subject**: The subject is the entity or resource the statement is about. It's typically a URI (Uniform Resource Identifier) which uniquely identifies a resource.
+1. **Subject**: The subject is the entity or resource the statement is about. It's typically a URI ([Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)) which uniquely identifies a resource.
 2. **Predicate**: The predicate (also called a property) is a specific aspect, characteristic, attribute, or relation that describes the subject. It's also typically a URI.
 3. **Object**: The object is the value of the attribute defined by the predicate for the subject. It can be a URI or a literal (such as a string or a number) and may also include additional information such as a language tag or a datatype.
 
