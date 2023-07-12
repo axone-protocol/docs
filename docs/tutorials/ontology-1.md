@@ -8,7 +8,7 @@ sidebar_position: 6
 
 This tutorial unveils the concept of ontology and figure out its crucial role in the OKP4 protocol.
 
-An ontology describes knowledge. We can represent it as a graph database that fixes the meaning of concepts and the relationships that unite them.
+An ontology describes knowledge. We can represent it as a graph that fixes the meaning of concepts and the relationships that unite them.
 
 If you’re looking to explore the various formats to encode ontologies and understand how a CosmWasm smart contract operates all the on-chain structured data within the OKP4 blockchain, you’re on the right page. Prepare yourself for an enlightening adventure where the semantic web ([Web 3.0](https://en.wikipedia.org/wiki/Semantic_Web)) meets the decentralized web ([Web3](https://en.wikipedia.org/wiki/Web3))!
 
