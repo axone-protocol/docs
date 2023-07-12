@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 101
 ---
 # Video Tuto #1 - Architecture
 
