@@ -50,7 +50,7 @@ RDF encodes information in triple structures. The basic structure of an RDF trip
 2. **Predicate**: The predicate (also called a property) is a specific aspect, characteristic, attribute, or relation that describes the subject. It's also typically a URI.
 3. **Object**: The object is the value of the attribute defined by the predicate for the subject. It can be a URI or a literal (such as a string or a number) and may also include additional information such as a language tag or a datatype.
 
-In RDF, **prefixes** are used as a shorthand notation for long URIs to make the data more readable and less verbose. They're similar to namespaces in programming languages. For instance, instead of writing `http://www.w3.org/2001/XMLSchema#integer`, you could declare a prefix `xsd` to represent the `http://www.w3.org/2001/XMLSchema` URI and then use `xsd:integer`.
+In RDF, **prefixes** are used as a shorthand notation for long URIs to make the data more readable and less verbose. They're similar to namespaces in programming languages. For instance, instead of writing `http://www.w3.org/2001/XMLSchema#integer`, you could declare a prefix `xsd` to represent the `http://www.w3.org/2001/XMLSchema#` URI and then use `xsd:integer`.
 
 ### **Turtle**
 
