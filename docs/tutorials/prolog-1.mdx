@@ -797,7 +797,7 @@ okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
 "json_prolog(JsonString,json([select-json([query-json([select-'el1, el2',limit-5,prefix-[core,mdata]])])]))." \
-| jq '.answer.results[0].substitutions[0].term.name' | tr -d "'" | tail -c +2 | head -c -2 | tr -d "\\" | jq .
+| jq '.answer.results[0].substitutions[0].term.name' | tr -d "'" | tr -d "\\" | sed 's/^.\(.*\).$/\1/' | jq '.'
 
 : '
 {
