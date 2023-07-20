@@ -90,9 +90,12 @@ The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a
 
 Prolog has various distributions, but SWI-Prolog is widely adopted and well-documented, which makes it a suitable choice for beginners.
 
-On a Debian-based Linux distro, you can install SWI-Prolog using apt-get:
+On a Debian-based Linux distro, you can install SWI-Prolog using `apt-get`:
 
 ```bash
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:swi-prolog/stable
+sudo apt-get update
 sudo apt-get install swi-prolog
 ```
 
