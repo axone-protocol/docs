@@ -30,9 +30,19 @@ You'll need the [`okp4d`](https://github.com/okp4/okp4d) binary on your machine 
   curl https://i.jpillora.com/okp4/okp4d@{data.okp4dVersion}! | bash
 </CodeBlock>
 
-### Build the `okp4d` CLI from source
+Verify the installation:
 
-If the one-liner script fails, don't worry. Certain aspects, such as your computer's unique characteristics (particularly for Mac M1/M2 users), can occasionally cause issues.
+```bash
+okp4d version
+```
+
+:::note
+
+Certain aspects, such as your computer's unique characteristics (particularly for Mac M1/M2 users), can occasionally cause issues. If the one-liner script fails, you should build from source, as explained below.
+
+:::
+
+### Build the `okp4d` CLI from source
 
 1. Clone the OKP4 repository from GitHub:
 
