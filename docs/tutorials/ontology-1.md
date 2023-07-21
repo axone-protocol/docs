@@ -132,6 +132,28 @@ Ontologies are widely used for open data. You can find out some file examples in
 
 ## Store and query RDF triples with the OKP4 blockchain
 
+:::info
+
+To continue, you should:
+
+1. [Install the OKP4 daemon CLI and `jq`](https://docs.okp4.network/tutorials/cli-1)
+2. Create a wallet or import one from your seed:
+
+```bash
+# Import from a mnemonic, you can replace "mywallet" with another wallet name
+okp4d keys add --recover mywallet
+
+# or create a new one, you can replace "mywallet" with another wallet name
+okp4d keys add mywallet
+
+# Get your address and name of your keys
+okp4d keys list
+```
+
+3. [Get $KNOW test tokens](https://faucet.okp4.network/)
+
+:::
+
 ### The `cognitarium` smart contract
 
 The [`cognitarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-cognitarium) smart contract enables the usage of RDF graphs triples in any [Cosmos blockchains](https://cosmos.network/) (and therefore the OKP4 blockchain) using the [CosmWasm](https://cosmwasm.com/) framework.

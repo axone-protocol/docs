@@ -8,7 +8,7 @@ sidebar_position: 5
 
 Welcome OKP4 builders to an exciting journey at the crossroads of Prolog and blockchain!
 
-This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether aspiring to develop on the OKP4 protocol or are intrigued by one of the core OKP4 protocol's concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
+This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether you're interested in developing using the protocol or are intrigued by one of the core OKP4 concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
 
 ## Why use Prolog on the OKP4 blockchain?
 
@@ -90,9 +90,12 @@ The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a
 
 Prolog has various distributions, but SWI-Prolog is widely adopted and well-documented, which makes it a suitable choice for beginners.
 
-On a Debian-based Linux distro, you can install SWI-Prolog using apt-get:
+On a Debian-based Linux distro, you can install SWI-Prolog using `apt-get`:
 
 ```bash
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:swi-prolog/stable
+sudo apt-get update
 sudo apt-get install swi-prolog
 ```
 
@@ -163,6 +166,16 @@ X = alice ;
 X = bob.
 ```
 
+:::tip
+
+Need to exit? Use the `halt/0` predicate:
+
+```prolog
+?- halt.
+```
+
+:::
+
 ### An example related to sharing resource rules
 
 Here's an example of how Prolog can be used to define and enforce governance rules for accessing shared private datasets between different companies:
@@ -209,7 +222,7 @@ This example demonstrates how a Prolog code can define and enforce conditions fo
 
 To continue, you should:
 
-1. [Install the OKP4 daemon CLI](https://docs.okp4.network/nodes/installation)
+1. [Install the OKP4 daemon CLI and `jq`](https://docs.okp4.network/tutorials/cli-1)
 2. Create a wallet or import one from your seed:
 
 ```bash
@@ -336,7 +349,7 @@ okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjp
 To get the Prolog code, you need to decode the data:
 
 ```bash
-echo "JSBGYWN0cwptZW1iZXIoYWxpY2UsIGNvdW5jaWwpLgptZW1iZXIoYm9iLCBjb3VuY2lsKS4KCiUgUnVsZXMKY2FuX3ZvdGUoWCkgOi0gbWVtYmVyKFgsIGNvdW5jaWwpLg" | base64 -d
+echo "JSBGYWN0cwptZW1iZXIoYWxpY2UsIGNvdW5jaWwpLgptZW1iZXIoYm9iLCBjb3VuY2lsKS4KCiUgUnVsZXMKY2FuX3ZvdGUoWCkgOi0gbWVtYmVyKFgsIGNvdW5jaWwpLg==" | base64 -d
 
 # Returns the Prolog program
 : '
@@ -349,7 +362,10 @@ can_vote(X) :- member(X, council).
 '
 ```
 
-Let's combine it all! To get back the Prolog code stored in the last `law-stone` (**`CODE_ID = 5`**, storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**, you can type:
+Let's combine it all! Here is how to get back the Prolog code stored through the last `law-stone` (`CODE_ID = 5`) instantiation
+
+- instantiated by the okp4 address `okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`
+- within the storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`)
 
 ```bash
 okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
@@ -781,7 +797,7 @@ okp4d query logic ask \
 --node https://api.testnet.okp4.network:443/rpc \
 --output json \
 "json_prolog(JsonString,json([select-json([query-json([select-'el1, el2',limit-5,prefix-[core,mdata]])])]))." \
-| jq '.answer.results[0].substitutions[0].term.name' | tr -d "'" | tail -c +2 | head -c -2 | tr -d "\\" | jq .
+| jq '.answer.results[0].substitutions[0].term.name' | tr -d "'" | tr -d "\\" | sed 's/^.\(.*\).$/\1/' | jq '.'
 
 : '
 {
