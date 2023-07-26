@@ -16,4 +16,4 @@ merged type ([Details](okp4-objectarium-responses-objectsresponse-definitions-ob
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-compressed_size-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-objectsresponse-definitions-objectresponse-properties-compressed_size-allof-0.md "check type definition")

@@ -16,8 +16,8 @@ merged type ([Literal](okp4-cognitarium-executemsg-definitions-literal.md))
 
 one (and only one) of
 
-*   [Simple](okp4-cognitarium-executemsg-definitions-literal-oneof-simple.md "check type definition")
+* [Simple](okp4-cognitarium-executemsg-definitions-literal-oneof-simple.md "check type definition")
 
-*   [LanguageTaggedString](okp4-cognitarium-executemsg-definitions-literal-oneof-languagetaggedstring.md "check type definition")
+* [LanguageTaggedString](okp4-cognitarium-executemsg-definitions-literal-oneof-languagetaggedstring.md "check type definition")
 
-*   [TypedValue](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue.md "check type definition")
+* [TypedValue](okp4-cognitarium-executemsg-definitions-literal-oneof-typedvalue.md "check type definition")
