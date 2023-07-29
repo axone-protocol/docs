@@ -22,15 +22,17 @@ A variable.
 
 ## variable
 
+
+
 `variable`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-varornodeorliteral-oneof-variable-properties-variable.md "undefined#/execute/definitions/VarOrNodeOrLiteral/oneOf/0/properties/variable")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-varornodeorliteral-oneof-variable-properties-variable.md "undefined#/execute/definitions/VarOrNodeOrLiteral/oneOf/0/properties/variable")
 
 ### variable Type
 

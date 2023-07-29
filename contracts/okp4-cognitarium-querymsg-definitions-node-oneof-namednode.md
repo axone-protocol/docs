@@ -22,15 +22,17 @@ An RDF [IRI](https://www.w3.org/TR/rdf11-concepts/#dfn-iri).
 
 ## named\_node
 
+
+
 `named_node`
 
-* is required
+*   is required
 
-* Type: unknown
+*   Type: unknown
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-namednode-properties-named_node.md "undefined#/query/definitions/Node/oneOf/0/properties/named_node")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-node-oneof-namednode-properties-named_node.md "undefined#/query/definitions/Node/oneOf/0/properties/named_node")
 
 ### named\_node Type
 
