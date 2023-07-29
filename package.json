@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@okp4/eslint-config": "^1.1.0",
-    "docusaurus-plugin-drawio": "^0.2.0",
+    "docusaurus-plugin-drawio": "^0.4.0",
     "graphviz-react": "^1.2.5",
     "remark-kroki": "^0.2.7",
     "markdownlint-cli": "^0.33.0",
