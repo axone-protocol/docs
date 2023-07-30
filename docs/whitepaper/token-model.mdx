@@ -61,10 +61,10 @@ Where:
 
 - $srt_d$ represents the daily staking reward target.
 - $a$ is a variable representing the $KNOW supply at the end of the epoch (200,000,000 at genesis).
-- $i = 0.0002$ is the daily inflation coefficient.
+- $i = 0.02\%$ is the daily inflation coefficient.
 - $c = 2.5$ is the bonding ratio adjustment coefficient.
 - $b \in [0,1]$ is a variable representing the bonding ratio at the end of the epoch.
-- $b_t = 0.66$ is the target bonding ratio.
+- $b_t = 66\%$ is the target bonding ratio.
 
 This formula yields the following daily SRT, without considering the dynamic nature of the $KNOW supply, which may increase or decrease.
 
@@ -90,7 +90,7 @@ As a yearly percentage of the token supply, this yields the following chart:
 <LinePlot
   caption="Plot of srty = 365 . i . (c - b / bt)"
   xLegend="b"
-  yLegend="srt as percentage of the supply (year)"
+  yLegend="srt as percentage of the supply (yearly)"
   xFormat={nFloatFormat.format}
   yFormat={nPercentFormat.format}
   data={srdyPercentData}
