@@ -7,42 +7,33 @@ const i = 0.0002
 const c = 2.5
 const bt = 0.66
 
-const srtdPoints = (): { x: number; y: number }[] => {
-  const data: { x: number; y: number }[] = []
-
+function* srtdPoints(): Generator<{ x: number; y: number }> {
   for (let x = 0; x <= 1; x += 0.05) {
-    const y = a * i * (c - x / bt)
-    data.push({ x, y })
+    const y = a * i * (c - x / bt);
+    yield { x, y };
   }
-
-  return data
 }
 
 export const srtdData = [
   {
     id: 'r',
     color: 'hsl(331, 70%, 50%)',
-    data: srtdPoints()
+    data: [...srtdPoints()]
   }
 ]
 
-const srdyPercentPoints = (): { x: number; y: number }[] => {
-  const data: { x: number; y: number }[] = []
-
+function* srdyPercentPoints(): Generator<{ x: number; y: number }> {
   for (let x = 0; x <= 1; x += 0.05) {
-    const y = 365 * i * (c - x / bt)
-
-    data.push({ x, y })
+    const y = 365 * i * (c - x / bt);
+    yield { x, y };
   }
-
-  return data
 }
 
 export const srdyPercentData = [
   {
     id: 'percentage of a',
     color: 'hsl(331, 70%, 50%)',
-    data: srdyPercentPoints()
+    data: [...srdyPercentPoints()]
   }
 ]
 
