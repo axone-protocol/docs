@@ -36,56 +36,58 @@ Another effect of that tax is to prevent fake volume on datasets and services, m
 
 ## Staking reward target
 
-The `SRT` would be defined for an epoch set _daily_.
+The Staking Reward Target (SRT) is defined for an epoch on a daily basis.
 
-Let's define the $R$ staking reward target:
+Let's define the daily staking reward target, denoted as $srt_d$:
 
 $$
-R = a \cdot i \cdot (c - \frac{b}{b'})
+srt_d = a \cdot i \cdot \left(c - \frac{b}{b_t}\right)
 $$
 
 Where:
 
-- $R$: daily staking reward target
-- $a$ = variable: $KNOW supply at the end of the epoch (200 000 000 at genesis)
-- $i$ = 0.0002: daily inflation coefficient
-- $c$ = 2.5: bonding ratio adjustment coefficient
-- $b$ = variable: bonding ratio at the end of the epoch (ranging between 0 and 1)
-- $b'$ = 0.66: target bonding ratio
+- $srt_d$ represents the daily staking reward target.
+- $a$ is a variable representing the $KNOW supply at the end of the epoch (200,000,000 at genesis).
+- $i = 0.0002$ is the daily inflation coefficient.
+- $c = 2.5$ is the bonding ratio adjustment coefficient.
+- $b \in [0,1]$ is a variable representing the bonding ratio at the end of the epoch.
+- $b_t = 0.66$ is the target bonding ratio.
+
+This formula yields the following daily SRT, without considering the dynamic nature of the $KNOW supply, which may increase or decrease.
 
 This would give the following daily `SRT`(without considering that the $KNOW supply is dynamic and may increase and decrease).
 
-<center>
-  <img width="570px" src="/img/content/whitepaper/token-model-r-plot.webp"></img>
-</center>
+The daily SRT, $srt_d$, is linearly influenced by the bonding ratio and is capped to a maximum and minimum, adjusted according to the token supply.
 
-The daily `SRT` is linearly influenced by the bonding ratio and capped to a maximum and minimum adjusted to the token supply.
+Now, let's express the yearly staking reward target as a percentage of the supply, denoted as $srt_y^\%$. This would correspond to the yearly inflation if no tax were collected. It is defined as follows:
 
-As a yearly percentage of the token supply, this would give the following chart:
+$$
+srt_y^\% = \frac{365 \cdot srt_d}{a} = 365 \cdot i \cdot \left(c - \frac{b}{b_t}\right)
+$$
 
-<center>
-  <img width="570px" src="/img/content/whitepaper/token-model-percentage-plot.webp"></img>
-</center>
+As a yearly percentage of the token supply, this yields the following chart:
 
 This `SRT` would be the base case inflation if no workflow was initiated and no tax collected.
 
-## Inflation reduction
+## Adjusting reduction
 
-At the end of every epoch, the tax pool $R'$ would be collected and distributed to validators and delegators and will influence inflation for the following epoch.
+At the end of each epoch, the tax pool, denoted as $pool$, is collected and distributed among validators and delegators. This process impacts the inflation rate for the subsequent epoch.
 
-The $V$ \$KNOW amount to be minted during the epoch will be adjusted at the beginning of each epoch according to the value of $\Delta$ with:
+The quantity of \$KNOW tokens, represented as $V$, to be minted during the epoch is adjusted at the onset of each epoch based on the value of $\Delta$, where:
 
 $$
-\Delta = R - R'
+\Delta = srt_d - pool
 $$
 
-1. If the daily tax pool is below the daily staking reward target (If $\Delta > 0$), we have:
+**1.** If the daily tax pool falls short of the daily staking reward target (i.e., $\Delta > 0$), the adjustment is as follows:
 
 $$
 V=Δ
 $$
 
-2. If the daily tax pool is equal to or above the daily staking reward target (If $\Delta \leq 0$), we have:
+In this case, the shortfall $\Delta$ is made up by minting additional \$KNOW tokens.
+
+**2.** If the tax pool is equal to or exceeds the staking reward target (i.e., $\Delta \leq 0$), the adjustment is as follows:
 
 $$
 V=0
@@ -94,6 +96,8 @@ $$
 $$
 \lvert \Delta \rvert \text{ is burnt}
 $$
+
+In this case, no new \$KNOW tokens are minted, and the excess amount $\lvert \Delta \rvert$ is removed from the circulating supply, effectively _burnt_. This mechanism helps to control inflation by reducing the total supply of tokens when the tax pool is sufficient or exceeds the staking reward target.
 
 ## Other payment tokens
 
