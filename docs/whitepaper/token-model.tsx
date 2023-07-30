@@ -2,12 +2,6 @@ import { ResponsiveLine } from '@nivo/line'
 import React from 'react'
 import { useColorMode } from '@docusaurus/theme-common'
 
-const nIntFormat = new Intl.NumberFormat('en')
-const nFloatFormat = new Intl.NumberFormat('en', {
-  minimumFractionDigits: 1,
-  maximumFractionDigits: 1
-})
-
 const a = 200000000
 const i = 0.0002
 const c = 2.5
@@ -16,7 +10,7 @@ const bt = 0.66
 const srtdPoints = (): { x: number; y: number }[] => {
   const data: { x: number; y: number }[] = []
 
-  for (let x = 0; x <= 1; x += 0.1) {
+  for (let x = 0; x <= 1; x += 0.05) {
     const y = a * i * (c - x / bt)
     data.push({ x, y })
   }
@@ -35,7 +29,7 @@ export const srtdData = [
 const srdyPercentPoints = (): { x: number; y: number }[] => {
   const data: { x: number; y: number }[] = []
 
-  for (let x = 0; x <= 1; x += 0.1) {
+  for (let x = 0; x <= 1; x += 0.05) {
     const y = 365 * i * (c - x / bt)
 
     data.push({ x, y })
@@ -63,7 +57,12 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
             data={data}
             margin={{ top: 20, right: 20, bottom: 50, left: 80 }}
             lineWidth={3}
-            xScale={{ type: 'point' }}
+            curve='linear'
+            xScale={{ 
+              type: 'linear',
+              min: 'auto',
+              max: 'auto',
+            }}
             yScale={{
               type: 'linear',
               min: 'auto',
@@ -91,6 +90,21 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
             }}
             yFormat={yFormat}
             xFormat={xFormat}
+            markers={[
+              {
+                axis: 'x',
+                legend: 'target',
+                lineStyle: {
+                  stroke: '#b0413e',
+                  strokeDasharray: '4 4',
+                  strokeWidth: 1
+                },
+                textStyle: {
+                  fill: '#b0413e'
+                },
+                value: bt
+              }
+            ]}
             enableGridX={false}
             enableGridY={false}
             pointSize={0}
