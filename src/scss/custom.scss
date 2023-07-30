@@ -85,3 +85,13 @@
 .hide {
   display: none;
 }
+
+.plot {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
