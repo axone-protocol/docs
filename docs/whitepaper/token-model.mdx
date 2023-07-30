@@ -2,6 +2,19 @@
 sidebar_position: 5
 ---
 
+import { srtdData, srdyPercentData, LinePlot } from './token-model'
+import { ResponsiveLine } from '@nivo/line'
+const nIntFormat = new Intl.NumberFormat('en')
+const nFloatFormat = new Intl.NumberFormat('en', {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1
+})
+const nPercentFormat = new Intl.NumberFormat('en', {
+  style: 'percent',
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2
+})
+
 # Token model
 
 ## Motivation
@@ -55,7 +68,14 @@ Where:
 
 This formula yields the following daily SRT, without considering the dynamic nature of the $KNOW supply, which may increase or decrease.
 
-This would give the following daily `SRT`(without considering that the $KNOW supply is dynamic and may increase and decrease).
+<LinePlot
+  caption="Plot of srtd = a . i . (c - b / bt)"
+  xLegend="b"
+  yLegend="srt (daily)"
+  xFormat={nFloatFormat.format}
+  yFormat={nIntFormat.format}
+  data={srtdData}
+/>
 
 The daily SRT, $srt_d$, is linearly influenced by the bonding ratio and is capped to a maximum and minimum, adjusted according to the token supply.
 
@@ -67,7 +87,14 @@ $$
 
 As a yearly percentage of the token supply, this yields the following chart:
 
-This `SRT` would be the base case inflation if no workflow was initiated and no tax collected.
+<LinePlot
+  caption="Plot of srty = 365 . i . (c - b / bt)"
+  xLegend="b"
+  yLegend="srt as percentage of the supply (year)"
+  xFormat={nFloatFormat.format}
+  yFormat={nPercentFormat.format}
+  data={srdyPercentData}
+/>
 
 ## Adjusting reduction
 
