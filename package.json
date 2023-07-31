@@ -24,8 +24,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint": "stylelint '**/*.scss' && markdownlint -i node_modules -i 'contracts' -i 'modules' '**/*.md'",
-    "lint:fix": "stylelint '**/*.scss' --fix && markdownlint -i node_modules -i 'contracts' -i 'modules'  --fix '**/*.md'"
+    "lint": "stylelint '**/*.scss' && markdownlint README.md 'docs/**/*.md'",
+    "lint:fix": "stylelint '**/*.scss' --fix && markdownlint --fix README.md 'docs/**/*.md'"
   },
   "dependencies": {
     "@docusaurus/core": "2.2.0",
