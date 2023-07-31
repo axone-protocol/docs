@@ -16,6 +16,6 @@ merged type ([VarOrNamedNode {](okp4-cognitarium-querymsg-definitions-varornamed
 
 one (and only one) of
 
-* [Variable](okp4-cognitarium-querymsg-definitions-varornamednode--oneof-variable.md "check type definition")
+*   [Variable](okp4-cognitarium-querymsg-definitions-varornamednode--oneof-variable.md "check type definition")
 
-* [NamedNode](okp4-cognitarium-querymsg-definitions-varornamednode--oneof-namednode.md "check type definition")
+*   [NamedNode](okp4-cognitarium-querymsg-definitions-varornamednode--oneof-namednode.md "check type definition")
