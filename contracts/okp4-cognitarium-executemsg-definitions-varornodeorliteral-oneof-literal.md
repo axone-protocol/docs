@@ -22,17 +22,15 @@ An RDF [literal](https://www.w3.org/TR/rdf11-concepts/#dfn-literal), i.e. a simp
 
 ## literal
 
-
-
 `literal`
 
-*   is required
+* is required
 
-*   Type: unknown
+* Type: unknown
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-varornodeorliteral-oneof-literal-properties-literal.md "undefined#/execute/definitions/VarOrNodeOrLiteral/oneOf/2/properties/literal")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-varornodeorliteral-oneof-literal-properties-literal.md "undefined#/execute/definitions/VarOrNodeOrLiteral/oneOf/2/properties/literal")
 
 ### literal Type
 
