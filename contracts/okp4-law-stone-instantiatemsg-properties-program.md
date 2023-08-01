@@ -16,4 +16,4 @@ merged type ([Details](okp4-law-stone-instantiatemsg-properties-program.md))
 
 all of
 
-* [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-law-stone](okp4-law-stone-instantiatemsg-properties-program-allof-0.md "check type definition")
