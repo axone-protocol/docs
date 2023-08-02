@@ -24,17 +24,15 @@ Only the smart contract owner (i.e. the address who instantiated it) is authoriz
 
 ## insert\_data
 
-
-
 `insert_data`
 
-*   is required
+* is required
 
-*   Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md))
+* Type: `object` ([Details](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md "undefined#/execute/oneOf/0/properties/insert_data")
+* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-oneof-insertdata-properties-insert_data.md "undefined#/execute/oneOf/0/properties/insert_data")
 
 ### insert\_data Type
 
