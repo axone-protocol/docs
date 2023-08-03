@@ -16,9 +16,9 @@ merged type ([ExecuteMsg](okp4-cognitarium-executemsg.md))
 
 one (and only one) of
 
-* [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
+*   [InsertData](okp4-cognitarium-executemsg-oneof-insertdata.md "check type definition")
 
-* [DeleteData](okp4-cognitarium-executemsg-oneof-deletedata.md "check type definition")
+*   [DeleteData](okp4-cognitarium-executemsg-oneof-deletedata.md "check type definition")
 
 # ExecuteMsg Definitions
 
@@ -96,13 +96,13 @@ The namespace associated with the prefix.
 
 `namespace`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-namespace.md "undefined#/execute/definitions/Prefix/properties/namespace")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-namespace.md "undefined#/execute/definitions/Prefix/properties/namespace")
 
 #### namespace Type
 
@@ -114,13 +114,13 @@ The prefix.
 
 `prefix`
 
-* is required
+*   is required
 
-* Type: `string`
+*   Type: `string`
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-prefix.md "undefined#/execute/definitions/Prefix/properties/prefix")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-prefix-properties-prefix.md "undefined#/execute/definitions/Prefix/properties/prefix")
 
 #### prefix Type
 
@@ -157,13 +157,13 @@ The object of the triple pattern.
 
 `object`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object.md))
+*   Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object.md "undefined#/execute/definitions/TriplePattern/properties/object")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object.md "undefined#/execute/definitions/TriplePattern/properties/object")
 
 #### object Type
 
@@ -171,7 +171,7 @@ merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-pro
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-object-allof-0.md "check type definition")
 
 ### predicate
 
@@ -179,13 +179,13 @@ The predicate of the triple pattern.
 
 `predicate`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate.md))
+*   Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate.md "undefined#/execute/definitions/TriplePattern/properties/predicate")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate.md "undefined#/execute/definitions/TriplePattern/properties/predicate")
 
 #### predicate Type
 
@@ -193,7 +193,7 @@ merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-pro
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-predicate-allof-0.md "check type definition")
 
 ### subject
 
@@ -201,13 +201,13 @@ The subject of the triple pattern.
 
 `subject`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject.md))
+*   Type: merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject.md "undefined#/execute/definitions/TriplePattern/properties/subject")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject.md "undefined#/execute/definitions/TriplePattern/properties/subject")
 
 #### subject Type
 
@@ -215,7 +215,7 @@ merged type ([Details](okp4-cognitarium-executemsg-definitions-triplepattern-pro
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-executemsg-definitions-triplepattern-properties-subject-allof-0.md "check type definition")
 
 ## Definitions group VarOrNode
 

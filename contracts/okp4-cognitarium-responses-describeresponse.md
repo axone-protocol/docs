@@ -27,13 +27,13 @@ The data serialized in the specified format.
 
 `data`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-data.md))
+*   Type: merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-data.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-data.md "undefined#/responses/describe/properties/data")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-data.md "undefined#/responses/describe/properties/data")
 
 ### data Type
 
@@ -41,7 +41,7 @@ merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-da
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-data-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-data-allof-0.md "check type definition")
 
 ## format
 
@@ -49,13 +49,13 @@ The format of the data.
 
 `format`
 
-* is required
+*   is required
 
-* Type: merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-format.md))
+*   Type: merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-format.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-format.md "undefined#/responses/describe/properties/format")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-format.md "undefined#/responses/describe/properties/format")
 
 ### format Type
 
@@ -63,7 +63,7 @@ merged type ([Details](okp4-cognitarium-responses-describeresponse-properties-fo
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-format-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-responses-describeresponse-properties-format-allof-0.md "check type definition")
 
 # DescribeResponse Definitions
 
