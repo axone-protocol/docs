@@ -16,7 +16,7 @@ merged type ([Details](okp4-cognitarium-instantiatemsg-definitions-storelimitsin
 
 all of
 
-* [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimitsinput-properties-max_insert_data_triple_count-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-cognitarium](okp4-cognitarium-instantiatemsg-definitions-storelimitsinput-properties-max_insert_data_triple_count-allof-0.md "check type definition")
 
 ## max\_insert\_data\_triple\_count Default Value
 

@@ -22,15 +22,17 @@ Objects returns the list of objects in the bucket with support for pagination.
 
 ## objects
 
+
+
 `objects`
 
-* is required
+*   is required
 
-* Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objects-properties-objects.md))
+*   Type: `object` ([Details](okp4-objectarium-querymsg-oneof-objects-properties-objects.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects.md "undefined#/query/oneOf/2/properties/objects")
+*   defined in: [okp4-objectarium](okp4-objectarium-querymsg-oneof-objects-properties-objects.md "undefined#/query/oneOf/2/properties/objects")
 
 ### objects Type
 

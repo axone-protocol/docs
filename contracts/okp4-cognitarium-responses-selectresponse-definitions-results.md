@@ -26,13 +26,13 @@ The bindings of the results.
 
 `bindings`
 
-* is required
+*   is required
 
-* Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
+*   Type: `object[]` ([Details](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings-items.md))
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-results-properties-bindings.md "undefined#/responses/select/definitions/Results/properties/bindings")
 
 ### bindings Type
 
