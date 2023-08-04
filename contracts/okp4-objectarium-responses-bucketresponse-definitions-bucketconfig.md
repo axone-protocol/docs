@@ -33,13 +33,13 @@ Any attempt to store an object using a different compression algorithm than the 
 
 `accepted_compression_algorithms`
 
-*   is optional
+* is optional
 
-*   Type: unknown\[]
+* Type: unknown\[]
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-accepted_compression_algorithms.md "undefined#/responses/bucket/definitions/BucketConfig/properties/accepted_compression_algorithms")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-accepted_compression_algorithms.md "undefined#/responses/bucket/definitions/BucketConfig/properties/accepted_compression_algorithms")
 
 ### accepted\_compression\_algorithms Type
 
@@ -65,13 +65,13 @@ The default algorithm is Sha256 if not set.
 
 `hash_algorithm`
 
-*   is optional
+* is optional
 
-*   Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
+* Type: merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
+* defined in: [okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm.md "undefined#/responses/bucket/definitions/BucketConfig/properties/hash_algorithm")
 
 ### hash\_algorithm Type
 
@@ -79,7 +79,7 @@ merged type ([Details](okp4-objectarium-responses-bucketresponse-definitions-buc
 
 all of
 
-*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-allof-0.md "check type definition")
+* [Untitled undefined type in okp4-objectarium](okp4-objectarium-responses-bucketresponse-definitions-bucketconfig-properties-hash_algorithm-allof-0.md "check type definition")
 
 ### hash\_algorithm Default Value
 

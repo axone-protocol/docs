@@ -22,17 +22,15 @@ An IRI prefixed with a prefix. The prefixed IRI is expanded to a full IRI using 
 
 ## prefixed
 
-
-
 `prefixed`
 
-*   is required
+* is required
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed")
+* defined in: [okp4-cognitarium](okp4-cognitarium-responses-selectresponse-definitions-iri-oneof-prefixed-properties-prefixed.md "undefined#/responses/select/definitions/IRI/oneOf/0/properties/prefixed")
 
 ### prefixed Type
 
