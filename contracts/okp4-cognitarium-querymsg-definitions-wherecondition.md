@@ -16,4 +16,4 @@ merged type ([WhereCondition](okp4-cognitarium-querymsg-definitions-whereconditi
 
 one (and only one) of
 
-*   [Simple](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "check type definition")
+* [Simple](okp4-cognitarium-querymsg-definitions-wherecondition-oneof-simple.md "check type definition")

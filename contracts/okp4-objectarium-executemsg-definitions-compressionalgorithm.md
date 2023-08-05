@@ -18,8 +18,8 @@ merged type ([Details](okp4-objectarium-executemsg-definitions-compressionalgori
 
 one (and only one) of
 
-*   [Passthrough](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-passthrough.md "check type definition")
+* [Passthrough](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-passthrough.md "check type definition")
 
-*   [Snappy](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-snappy.md "check type definition")
+* [Snappy](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-snappy.md "check type definition")
 
-*   [Lzma](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-lzma.md "check type definition")
+* [Lzma](okp4-objectarium-executemsg-definitions-compressionalgorithm-oneof-lzma.md "check type definition")

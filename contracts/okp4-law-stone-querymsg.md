@@ -16,6 +16,6 @@ merged type ([QueryMsg](okp4-law-stone-querymsg.md))
 
 one (and only one) of
 
-*   [Ask](okp4-law-stone-querymsg-oneof-ask.md "check type definition")
+* [Ask](okp4-law-stone-querymsg-oneof-ask.md "check type definition")
 
-*   [Program](okp4-law-stone-querymsg-oneof-program.md "check type definition")
+* [Program](okp4-law-stone-querymsg-oneof-program.md "check type definition")
