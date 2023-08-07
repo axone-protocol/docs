@@ -62,7 +62,7 @@
     "docusaurus-plugin-drawio": "^0.4.0",
     "graphviz-react": "^1.2.5",
     "markdownlint-cli": "^0.33.0",
-    "prettier": "^2.8.3",
+    "prettier": "^3.0.1",
     "remark-kroki": "^0.2.7",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^28.0.0",
