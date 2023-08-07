@@ -18,7 +18,7 @@ merged type ([Details](okp4-objectarium-instantiatemsg-definitions-bucketconfig-
 
 all of
 
-* [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-allof-0.md "check type definition")
+*   [Untitled undefined type in okp4-objectarium](okp4-objectarium-instantiatemsg-definitions-bucketconfig-properties-hash_algorithm-allof-0.md "check type definition")
 
 ## hash\_algorithm Default Value
 

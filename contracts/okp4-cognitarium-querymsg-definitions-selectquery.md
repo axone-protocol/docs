@@ -29,13 +29,13 @@ The maximum number of results to return. If `None`, there is no limit. Note: the
 
 `limit`
 
-* is optional
+*   is optional
 
-* Type: `integer`
+*   Type: `integer`
 
-* can be null
+*   can be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-limit.md "undefined#/query/definitions/SelectQuery/properties/limit")
 
 ### limit Type
 
@@ -53,13 +53,13 @@ The prefixes used in the query.
 
 `prefixes`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-prefixes.md "undefined#/query/definitions/SelectQuery/properties/prefixes")
 
 ### prefixes Type
 
@@ -71,13 +71,13 @@ The items to select. Note: the number of items to select cannot exceed the maxim
 
 `select`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-select.md "undefined#/query/definitions/SelectQuery/properties/select")
 
 ### select Type
 
@@ -89,13 +89,13 @@ The WHERE clause. If `None`, there is no WHERE clause, i.e. all triples are retu
 
 `where`
 
-* is required
+*   is required
 
-* Type: unknown\[]
+*   Type: unknown\[]
 
-* cannot be null
+*   cannot be null
 
-* defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
+*   defined in: [okp4-cognitarium](okp4-cognitarium-querymsg-definitions-selectquery-properties-where.md "undefined#/query/definitions/SelectQuery/properties/where")
 
 ### where Type
 
