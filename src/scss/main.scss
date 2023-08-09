@@ -1,3 +1,9 @@
+@mixin with-linear-gradient($background-color) {
+  background: var($background-color);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 html {
   background: var(--ifm-background-color-main);
   min-height: 100%;
@@ -77,6 +83,10 @@ html {
   .navbar__items {
     font-size: 18px;
 
+    .navbar__link {
+      color: inherit;
+    }
+
     .navbar__search {
       input {
         font-family: var(--ifm-font-family-base);
@@ -97,7 +107,17 @@ html {
   }
 
   .navbar__link--active {
+    @include with-linear-gradient(--ifm-navbar-item-color);
+
     font-weight: var(--ifm-font-weight-bold);
+  }
+
+  .navbar__link:hover {
+    @include with-linear-gradient(--ifm-navbar-item-color);
+  }
+
+  .dropdown .navbar__link:hover::after {
+    border-color: #00b6b7 transparent;
   }
 
   .footer {
