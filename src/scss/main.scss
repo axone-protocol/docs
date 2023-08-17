@@ -39,6 +39,12 @@ html {
   .navbar__items--right {
     display: flex;
     flex-direction: row-reverse;
+
+    @media (max-width: 996px) {
+      position: absolute;
+      right: 55px;
+      top: 40px;
+    }
   }
 
   .card-title {
@@ -83,6 +89,14 @@ html {
   .navbar__items {
     font-size: 18px;
 
+    @media (max-width: 996px) {
+      flex-direction: row-reverse;
+
+      .navbar__brand {
+        width: 100%;
+      }
+    }
+
     .navbar__link {
       color: inherit;
     }
@@ -104,6 +118,12 @@ html {
 
   .pagination-nav__label:hover {
     color: var(--ifm-color-primary);
+  }
+
+  .navbar-sidebar {
+    left: inherit;
+    right: 0;
+    transform: translate3d(100%, 0, 0);
   }
 
   .navbar__link--active {

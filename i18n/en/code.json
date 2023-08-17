@@ -1,0 +1,6 @@
+{
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "Back to main menu →",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  }
+}

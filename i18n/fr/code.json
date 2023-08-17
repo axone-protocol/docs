@@ -1,0 +1,6 @@
+{
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "Retour au menu principal →",
+    "description": "Le libellé du bouton de retour pour revenir au menu principal, à l'intérieur du menu secondaire de la barre latérale de la barre de navigation mobile (utilisé notamment pour afficher la barre latérale des documents)"
+  }
+}

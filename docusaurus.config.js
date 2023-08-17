@@ -20,6 +20,11 @@ async function createconfig() {
     deploymentBranch: 'gh-pages',
     trailingSlash: false,
 
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'fr']
+    },
+
     presets: [
       [
         'classic',
