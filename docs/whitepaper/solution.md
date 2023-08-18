@@ -93,14 +93,19 @@ From this perspective, Digital Services serve as the structural and functional u
 
 **STaaS-Storage as a service:**
 The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or Any”Drive”. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
+
 **Compute-as-a-Service:**
 Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads. Revelant general purpose compute networks as [Akash](https://akash.network/) can be easily referenced into the protocol.
+
 **Identity Provider:**
 In terms of identity management, the Dataverse can integrate with various identity management services or identity standards, depending on the specific requirements. Whether it's a simple, a decentralized identity management system, or a more complex centralized identity service, OKP4 can support it, providing secure and flexible solutions for identity management;
+
 **Orchestration-as-a-Service:**
 The Orchestration Service is a **crucial service** of the Protocol which orchestrates the invocations of other services. It is a reflex component of the Ecosystem that listens to the transactions of the blockchain and is triggered on command, when a particular transaction of execution request is registered in the blockchain. It's important to note that, given the potential for multiple instances of the service and several types of orchestration services, there is a decentralized mechanism in place that ensures the correct instance of the appropriate type is executed.
+
 **Algorithms and Models:**
 From simple logical rules to sophisticated AI-driven algorithms, machine learning models, data processing scripts, image recognition models, predictive analytics, natural language processing (NLP) models, and even blockchain smart contracts, the Dataverse is designed to accommodate and utilize a diverse range of algorithms and models. Their inclusion is dictated solely by the unique needs and objectives of the tasks at hand.
+
 **Analytic-as-a-Service:**
 In an era of increasing data complexity and volume, effective knowledge representation is pivotal. The Analytics and Business Intelligence services is designed to transform raw data into useful insights, employing tools of B.I and Knowledge Graphs.
 BI tools can be effectively employed to comprehend the data shared within the zones and facilitate the extraction of useful knowledge. Knowledge Graph can facilitate the interpretation of the complex interactions and dependencies within the Dataverse, offering an intuitive view of the knowledge extraction processes.
