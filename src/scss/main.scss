@@ -216,6 +216,42 @@ svg {
   }
 }
 
+.mermaid {
+  svg {
+    path.messageLine0 {
+      stroke: var(--ifm-graph-base-line-color) !important;
+    }
+
+    line {
+      fill: var(--ifm-graph-base-line-color) !important;
+      stroke: var(--ifm-graph-base-line-color) !important;
+    }
+  }
+
+  .loopText > tspan,
+  text.actor > tspan,
+  .messageText {
+    fill: var(--ifm-menu-color) !important;
+  }
+
+  g {
+    .actor,
+    circle {
+      fill: var(--ifm-graph-base-actor-color) !important;
+      stroke: var(--ifm-graph-base-actor-color) !important;
+    }
+
+    .note {
+      fill: var(--ifm-graph-base-rect-color) !important;
+      stroke: var(--ifm-graph-base-rect-color) !important;
+    }
+
+    .noteText > tspan {
+      fill: var(--ifm-graph-base-rect-text-color) !important;
+    }
+  }
+}
+
 .docs-doc-id-faq\/faq {
   .markdown > h2 {
     font-size: var(--ifm-h3-font-size);
