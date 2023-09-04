@@ -2025,9 +2025,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@okp4/eslint-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@okp4/eslint-config/-/eslint-config-1.1.0.tgz"
+"@okp4/eslint-config@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@okp4/eslint-config/-/eslint-config-1.2.0.tgz#f7b4cde62a89d756a9d5e01516a75e93e1d229a3"
+  integrity sha512-ydLi6mc6GiGf94CUoYAIEhxFrg9dw0yYkYvdbMpg4KyvsL1EHMnKeNMi4yTRSe06BtP6rkRerqU9vaxhH+HjtA==
   dependencies:
     "@typescript-eslint/parser" ">=5.14.0"
     tsutils ">=3.21.0"
