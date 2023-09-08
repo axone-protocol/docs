@@ -46,7 +46,7 @@ The modules implement core functions particular to the OKP4 blockchain. They pro
 
 ### Logic
 
-The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. It's main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog.
+The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. Its main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog.
 
 Prolog is a powerful declarative programming language to manage from simple restrictions to complex rules. This language is not natively operable on-chain; the logic module adds Prolog interpretation capability.
 The `logic` module is not strongly coupled to the OKP4 blockchain. It's designed to be reusable and can be integrated with any Cosmos appchain. Because it's open and interoperable, the support of Prolog programs is a significant gain for the Cosmos ecosystem. Using this open-source `logic` module implementation, any appchain can quickly adopt complex Prolog governance rules.
