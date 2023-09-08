@@ -173,7 +173,7 @@ A Service Execution Agreement in the form of a smart contract called PACTUM outl
 
 **How does the Pactum smart contract work ?**
 
-[IMAGE9]![solution-9](/img/content/whitepaper/solution-9.webp)
+![solution-9](/img/content/whitepaper/solution-9.webp)
 
 When an Identity wishes to engage a workflow within a Zone, a service execution agreement as a Pactum smart contract will be established among the involved participants.
 1- This agreement verifies the alignment of governance rules of the Zone and the digital resources involved in the execution and also checks the conformity of all rules within the entire execution context. This context includes the resources and the Zone, as well as the user who initiated the workflow.
