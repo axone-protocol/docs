@@ -58,7 +58,13 @@ make build
 make install`}
 </CodeBlock>
 
-3. Verify the installation:
+3. Move the executable binary in a folder set in `$PATH` (`/usr/local/bin` for example)
+
+```bash
+mv ./target/dist/okp4d /usr/local/bin
+```
+
+4. Verify the installation:
 
 ```bash
 okp4d version
