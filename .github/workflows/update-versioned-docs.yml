@@ -29,13 +29,13 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.OKP4_TOKEN }}
           fetch-depth: 2
 
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.version }}
           repository: ${{ github.event.inputs.repository }}
