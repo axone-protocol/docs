@@ -265,13 +265,10 @@ Now add the `Connection` component in the main `App.tsx` file:
 
 ```tsx
 import { configureGraz } from "graz";
-
 import {
   Connection
 } from "./components";
-
 import "./App.css";
-
 import {
   OKP4TestnetChain,
 } from "./constants";
@@ -592,9 +589,7 @@ Now we can add `InstantitateCognitarium`, a specific component to [instantiate `
 import { useAccount } from "graz";
 import { InstantiateOptions } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { InstantiateMsg, StoreLimitsInput } from "@okp4/cognitarium-schema";
-
 import { Instantiate } from "./Instantiate";
 
 export function InstantiateCognitarium({ codeId }: { codeId: number }) {
@@ -678,11 +673,8 @@ Here is the code for the `InstantiateLawStone.tsx` file in the `components` fold
 import { useAccount } from "graz";
 import { InstantiateOptions } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { InstantiateMsg } from "@okp4/law-stone-schema";
-
 import { Instantiate } from "./Instantiate";
-
 import { encodeForMsgTx } from "../utils";
 
 export function InstantiateLawStone({ codeId }: { codeId: number }) {
@@ -737,16 +729,13 @@ Update `components/index.ts` and then `App.tsx`:
 
 ```tsx
 import { configureGraz } from "graz";
-
 import {
     Balance,
     Connection,
     InstantiateCognitarium,
     InstantiateLawStone,
 } from "./components";
-
 import "./App.css";
-
 import {
     COGNITARIUM_CODE_ID,
     LAWSTONE_CODE_ID,
@@ -922,9 +911,7 @@ Here is `ExecuteCognitarium`, a specific component to [execute an `InsertData` m
 
 ```tsx
 import { ExecuteMsg, InsertData } from "@okp4/cognitarium-schema";
-
 import { Execute } from "./Execute";
-
 import { encodeForMsgTx } from "../utils";
 
 export function ExecuteCognitarium({
@@ -993,7 +980,6 @@ Update `components/index.ts` and then `App.tsx` (replace `okp41mnrjmkmv2hx448qq5
 
 ```jsx
 import { configureGraz } from "graz";
-
 import {
     Balance,
     Connection,
@@ -1001,9 +987,7 @@ import {
     InstantiateCognitarium,
     InstantiateLawStone,
 } from "./components";
-
 import "./App.css";
-
 import {
     COGNITARIUM_CODE_ID,
     LAWSTONE_CODE_ID,
@@ -1057,7 +1041,6 @@ A generic `Query` component (Query`.tsx` file in the `components` folder) receiv
 
 ```tsx
 import { ReactElement, useEffect } from "react";
-
 import { useQuerySmart } from "graz";
 
 type QueryProps = {
@@ -1106,7 +1089,6 @@ import {
     SelectResponse,
     Value,
 } from "@okp4/cognitarium-schema";
-
 import { Query } from "./Query";
 
 function onQueryResult(data?: Record<string, unknown>) {
@@ -1224,7 +1206,6 @@ import {
     Substitution,
     Term,
 } from "@okp4/law-stone-schema";
-
 import { Query } from "./Query";
 
 function onQueryResult(data: Record<string, unknown> | undefined) {
@@ -1301,13 +1282,10 @@ Update `components/index.ts` and add the components in `App.tsx` (replace `okp41
 
 ```tsx
 import { useEffect, useState } from "react";
-
 import { useAccount, useCosmWasmClient } from "graz";
 import { Contract, CosmWasmClient } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { ExecuteCognitarium } from "./ExecuteCognitarium";
-
 import { COGNITARIUM_CODE_ID } from "../constants";
 
 export function Contracts({ codeId }: { codeId: number }) {
@@ -1441,13 +1419,12 @@ The necessary `decode` function depends on the type URL. Here is a helper functi
 
 ```tsx
 import { Any } from "cosmjs-types/google/protobuf/any";
-
 import {
     MsgExecuteContract,
     MsgInstantiateContract,
-  } from "cosmjs-types/cosmwasm/wasm/v1/tx";
-  import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
-  import { MsgVote } from "cosmjs-types/cosmos/gov/v1beta1/tx";
+} from "cosmjs-types/cosmwasm/wasm/v1/tx";
+import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
+import { MsgVote } from "cosmjs-types/cosmos/gov/v1beta1/tx";
 
 /**
  * Decodes a transaction message based on its type URL.
@@ -1602,7 +1579,6 @@ You can use any available client (among [CosmWasmClient](https://cosmwasm.github
 
 ```tsx
 import { useAccount, useTendermintClient } from "graz";
-
 import {
   Tendermint37Client,
   TxData,
@@ -1653,7 +1629,6 @@ To fully decode a transaction, first, use the `decodeTxRaw` helper from `@cosmjs
 
 ```tsx
 import { DecodedTxRaw, decodeTxRaw } from "@cosmjs/proto-signing";
-
 import { decodeTxMessage } from "../utils";
 
 type DecodedTransaction = {
@@ -1699,7 +1674,6 @@ const transaction: DecodedTransaction = {
 You may also need to know when a transaction has been validated. You can have this information with a `block` method from a `Tendermint37Client` client:
 
 ```tsx
-
 import {
     Block,
     ReadonlyDateWithNanoseconds,
@@ -1719,7 +1693,6 @@ To sum up, here is a `Transactions` component (`Transactions.tsx` file in the `c
 
 ```tsx
 import { useEffect, useState } from "react";
-
 import { useAccount, useTendermintClient } from "graz";
 import { Key } from "graz/dist/keplr";
 import {
@@ -1731,10 +1704,8 @@ import {
     TxSearchParams,
     TxSearchResponse,
 } from "graz/dist/tendermint";
-
 import { toHex } from "@cosmjs/encoding";
 import { DecodedTxRaw, decodeTxRaw } from "@cosmjs/proto-signing";
-
 import { decodeTxMessage } from "../utils";
 
 type DecodedTransaction = {
