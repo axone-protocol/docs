@@ -17,7 +17,7 @@ This is a step-by-step tutorial, but you can also directly check out [the Web UI
 **Prerequisites:**
 
 - Basic understanding of blockchain and a [browser wallet set up with some $KNOW tokens](https://docs.okp4.network/tutorials/keplr-1)
-- Familiarity with JavaScript and modern web development, [Node.js](https://nodejs.org/) installed on your machine. This guide uses `npm`, but you’re encouraged to use `yarn` or `pnpm` as well.
+- Familiarity with JavaScript and modern web development, [Node.js](https://nodejs.org/) installed on your machine. This guide uses [Node.JS v18.18 (LTS)](https://nodejs.org/fr/blog/release/v18.18.0). You'll see commands with `npm`, but you’re encouraged to use `yarn` or `pnpm` as well.
 
 ## Importance of user interfaces interacting with the OKP4 protocol
 
@@ -34,7 +34,7 @@ This is where the significance of user-friendly interfaces comes into play. A we
 Let’s initiate a project with the [Vite framework](https://vitejs.dev/), which offers a lightning-fast cold server start and blazingly fast hot updates:
 
 ```bash
-npm create vite@latest
+npm create vite@4.4.1 # you're free to use the latest version, but to ensure compatibility this guide provides a specific version
 ```
 
 Choose the **React** framework and the **TypeScript + SWC** variant.
@@ -60,7 +60,8 @@ As we’ll deal with libraries and dependencies that were originally designed fo
 Thus, install **`node-stdlib-browser`** and the **`vite-plugin-node-stdlib-browser`** plugin:
 
 ```bash
-npm i -D node-stdlib-browser vite-plugin-node-stdlib-browser
+# you're free to use the latest versions, but to ensure compatibility this guide provides specific versions
+npm i -D node-stdlib-browser@1.2.0 vite-plugin-node-stdlib-browser@0.2.1
 ```
 
 Then, modify the Vite config file (`vite.config.ts`):  
@@ -81,7 +82,8 @@ export default defineConfig({
 Now, install some packages to equip the project with a suite of tools and libraries essential for interacting with the blockchain, handling encoding/decoding, ensuring transactional integrity, and working with specific data structures defined by the OKP4 protocol.
 
 ```bash
-npm i graz @cosmjs/encoding @cosmjs/proto-signing  cosmjs-types @okp4/cognitarium-schema @okp4/law-stone-schema
+# you're free to use the latest versions, but to ensure compatibility this guide provides specific versions
+npm i graz@0.0.50 @cosmjs/encoding@0.31.1 @cosmjs/proto-signing@0.31.1 cosmjs-types@0.8.0 @okp4/cognitarium-schema@2.1.0 @okp4/law-stone-schema@2.1.0
 ```
 
 - **graz**: a collection of React hooks containing everything you need to start working with the [Cosmos ecosystem](https://cosmos.network/)
