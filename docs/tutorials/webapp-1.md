@@ -86,11 +86,11 @@ Now, install some packages to equip the project with a suite of tools and librar
 npm i graz@0.0.50 @cosmjs/encoding@0.31.1 @cosmjs/proto-signing@0.31.1 cosmjs-types@0.8.0 @okp4/cognitarium-schema@2.1.0 @okp4/law-stone-schema@2.1.0
 ```
 
-- **graz**: a collection of React hooks containing everything you need to start working with the [Cosmos ecosystem](https://cosmos.network/)
-- **@cosmjs/encoding**: to transform data into a format that can be easily transported or stored.
-- **@cosmjs/proto-signing**: to ensure the data's authenticity and integrity
-- **cosmjs-types**: TypeScript type definitions related to Protocol Buffers used by Cosmos SDK
-- **@okp4/cognitarium-schema** and **@okp4/law-stone-schema**: schema definitions related to the OKP4 protocol. Schemas define the structure of transaction data, ensuring consistency and validity
+- [**graz**](https://www.npmjs.com/package/graz): a collection of React hooks containing everything you need to start working with the [Cosmos ecosystem](https://cosmos.network/)
+- [**@cosmjs/encoding**](https://www.npmjs.com/package/@cosmjs/encoding): to transform data into a format that can be easily transported or stored.
+- [**@cosmjs/proto-signing**](https://www.npmjs.com/package/@cosmjs/proto-signing): to ensure the data's authenticity and integrity
+- [**cosmjs-types**](https://www.npmjs.com/package/cosmjs-types): TypeScript type definitions related to Protocol Buffers used by Cosmos SDK
+- [**@okp4/cognitarium-schema**](https://www.npmjs.com/package/@okp4/cognitarium-schema) and [**@okp4/law-stone-schema**](https://www.npmjs.com/package/@okp4/law-stone-schema): schema definitions related to the OKP4 protocol. Schemas define the structure of transaction data, ensuring consistency and validity
 
 ## Connect the web app to the OKP4 testnet
 
