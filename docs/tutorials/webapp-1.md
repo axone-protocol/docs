@@ -31,7 +31,7 @@ This is where the significance of user-friendly interfaces comes into play. A we
 
 ### Vite project
 
-Let’s initiate a project with the Vite framework, which offers a lightning-fast cold server start and blazingly fast hot updates:
+Let’s initiate a project with the [Vite framework](https://vitejs.dev/), which offers a lightning-fast cold server start and blazingly fast hot updates:
 
 ```bash
 npm create vite@latest
