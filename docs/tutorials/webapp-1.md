@@ -21,11 +21,9 @@ This is a step-by-step tutorial, but you can also directly check out [the Web UI
 
 ## Importance of user interfaces interacting with the OKP4 protocol
 
-The OKP4 protocol is a blockchain built on the Cosmos SDK that enables providers to share resources like web services or datasets with anyone without the need to trust a party. A provider describes his resources ([RDF triples](https://docs.okp4.network/tutorials/ontology-1)) and the rules ([Prolog program to define access conditions, revenue sharing, and more](https://docs.okp4.network/tutorials/prolog-1)) in the blockchain.
+The OKP4 protocol is a blockchain built on the Cosmos SDK that enables providers to share resources like web services or datasets with anyone without the need to trust a party. A provider describes resources ([RDF triples](https://docs.okp4.network/tutorials/ontology-1)) and rules ([Prolog program to define access conditions, revenue sharing, and more](https://docs.okp4.network/tutorials/prolog-1)), and consumers send requests to the blockchain which guarantees the respect of sharing conditions.
 
-In essence, user interfaces are the key to democratizing the power of the OKP4 blockchain, making it usable and beneficial for everyone.
-
-For most users, [interacting with the protocol via terminal commands](https://docs.okp4.network/tutorials/cli-1) or delving into the intricacies of defining rules with the Prolog language remains a daunting, if not insurmountable, challenge. Similarly, the manipulation and understanding of RDF triples for semantic data can be complex without the right tools.
+In essence, user interfaces are the key to democratizing the power of the OKP4 blockchain, making it usable and beneficial for everyone. For most users, [interacting with the protocol via terminal commands](https://docs.okp4.network/tutorials/cli-1) or delving into the intricacies of defining rules with the Prolog language remains a daunting, if not insurmountable, challenge. Similarly, the manipulation and understanding of RDF triples for semantic data can be complex without the right tools.
 
 This is where the significance of user-friendly interfaces comes into play. A well-designed user interface abstracts the complexities of the underlying protocol, offering a more intuitive and ergonomic experience. It bridges the gap between advanced blockchain technology and everyday users, ensuring that the benefits of the OKP4 protocol are accessible to a broader audience. Without these interfaces, the potential of the OKP4 protocol would remain largely untapped, confined to the realm of tech-savvy individuals.
 
@@ -59,7 +57,7 @@ Now, with the server running, you can navigate to the provided local URL in your
 
 As we’ll deal with libraries and dependencies that were originally designed for a Node.js environment, browsers don't natively support these modules. To bridge this gap and ensure that the Vite project runs smoothly in the browser, providing "polyfills" for these Node.js modules is necessary.
 
-First, install **`node-stdlib-browser`** and the **`vite-plugin-node-stdlib-browser`** plugin:
+Thus, install **`node-stdlib-browser`** and the **`vite-plugin-node-stdlib-browser`** plugin:
 
 ```bash
 npm i -D node-stdlib-browser vite-plugin-node-stdlib-browser
@@ -302,9 +300,7 @@ export default App;
 
 [Metamask is the most popular crypto wallet](https://www.techopedia.com/cryptocurrency/metamask-wallet-review) but does not support Cosmos-based accounts. Fortunately, [Metamask can be extended with plug-ins](https://snaps.metamask.io/), and the Leap wallet team built one to enable all Cosmos-based chains with Metamask.
 
-Thus, the app can be compatible with several wallet extensions, including Metamask.
-
-As the `getAvailableWallets` hook returns the list of wallets on the user’s machine, add the support of all compatible wallets with the following code in the `Connection.tsx` file:
+`graz` enables the app to be compatible with several wallet extensions, including Metamask. As the `getAvailableWallets` hook returns the list of wallets on the user’s device, add the support of all compatible wallets with the following code in the `Connection.tsx` file:
 
 ```tsx
 import {
@@ -457,7 +453,7 @@ You can now connect an OKP4 account to the app with Metamask:
 
 ## Get user balance
 
-`useBalance` hook returns the number of tokens the user holds in the wallet. Here is an example of a  `Balance` component (`Balance.tsx` in the `components` folder)
+`useBalance` hook returns the number of tokens the user holds in the wallet. Here is an example of a  `Balance` component (`Balance.tsx` in the `components` folder):
 
 ```tsx
 import { useAccount, useBalance } from "graz";
@@ -504,11 +500,7 @@ This part shows off how to instantiate smart contracts deployed on the OKP4 bloc
 - how to create a database which will welcome RDF triples describing the resources (`cognitarium` smart contract)
 - how to add Prolog rules (`law-stone` smart contract)
 
-First, let’s create a generic `Instantiate` component (`Instantiate.tsx` file in the `components` folder).
-
-This component receives a smart contract `codeId` ([related to the smart contract to instantiate](https://docs.okp4.network/tutorials/explorer-sc#instantiate-okp4-smart-contracts)), and the transaction arguments `instantitateArgs` (with `msg` as the payload).
-
-The `useInstantitateContract` hook returns an `instantiateContract` function. This function will be invoked with [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh) and the transaction arguments to instantiate. See also `onSuccess` and `onError` functions provided to the hook, callback functions called regarding the instantiate action status.
+A generic `Instantiate` component (`Instantiate.tsx` file in the `components` folder) receives a smart contract `codeId` ([related to the smart contract to instantiate](https://docs.okp4.network/tutorials/explorer-sc#instantiate-okp4-smart-contracts)), and the transaction arguments `instantitateArgs` (with `msg` as the payload). The `useInstantitateContract` hook returns an `instantiateContract` function. This function will be invoked with [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh) and the transaction arguments to instantiate. See also `onSuccess` and `onError` functions provided to the hook, callback functions called regarding the instantiate action status.
 
 ```tsx
 import {
@@ -645,7 +637,7 @@ export function InstantiateCognitarium({ codeId }: { codeId: number }) {
 
 #### Add rules: instantiate a `law stone` smart contract
 
-The approach is the same to [instantiate a law stone smart contract](https://docs.okp4.network/contracts/okp4-law-stone#instantiatemsg). But the Prolog program should be base64-encoded. Here is a helper function (created in an `utils.ts` file):
+The approach is the same to [instantiate a `law stone` smart contract](https://docs.okp4.network/contracts/okp4-law-stone#instantiatemsg). But the Prolog program should be base64-encoded. Here is a helper function (created in an `utils.ts` file):
 
 ```tsx
 /**
@@ -671,7 +663,8 @@ export function encodeForMsgTx(data: string): string {
 Let’s define the Prolog program to send in the transaction:
 
 ```prolog
-% Should be the epoch value of the instatitate transaction time
+% alice and bob can vote as they are voters, once this prolog program is stored
+% "7845" to be replaed by the epoch value of the instantiate transaction time
 program_creation_epoch(7845).
 voter(alice).
 voter(bob).
@@ -679,7 +672,7 @@ voter(bob).
 can_vote(X) :- voter(X), block_time(T), program_creation_epoch(C), T > C.
 ```
 
-Thus, here is the code for the `InstantiateLawStone.tsx` file in the `components` folder:
+Here is the code for the `InstantiateLawStone.tsx` file in the `components` folder:
 
 ```tsx
 import { useAccount } from "graz";
@@ -780,36 +773,9 @@ function App() {
 export default App;
 ```
 
-Now we can click on the buttons to test the instantiations:
+Now buttons are available to test the instantiations:
 
 ![Result with Instantiate component](/img/content/tutorials/webapp-4.webp)
-
-Here is the result in the DevTools console for a `law stone` instance created (`address = okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8`):
-
-```json
-{
-    "transactionHash": "9AB49E81C1A7FA868DD7498D213D31AAE2C9A97765CF4F519C4A17EE70D7EE84",
-    "events": [
-        ...,
-        {
-            "type": "instantiate",
-            "attributes": [
-                {
-                    "key": "_contract_address",
-                    "value": "okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8"
-                },
-                {
-                    "key": "code_id",
-                    "value": "5"
-                }
-            ]
-        }
-    ],
-    "logs": [...],
-    "gasUsed": 334562,
-    "height": 4204371
-}
-```
 
 Here is the result in the DevTools console for a `cognitarium` instance created (`address = okp41mnrjmkmv2hx448qq54snt24js43nesk9esn52jzl5fv4c33w6a6smke3n2`):
 
@@ -838,17 +804,40 @@ Here is the result in the DevTools console for a `cognitarium` instance created 
 }
 ```
 
+Here is the result in the DevTools console for a `law stone` instance created (`address = okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8`):
+
+```json
+{
+    "transactionHash": "9AB49E81C1A7FA868DD7498D213D31AAE2C9A97765CF4F519C4A17EE70D7EE84",
+    "events": [
+        ...,
+        {
+            "type": "instantiate",
+            "attributes": [
+                {
+                    "key": "_contract_address",
+                    "value": "okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8"
+                },
+                {
+                    "key": "code_id",
+                    "value": "5"
+                }
+            ]
+        }
+    ],
+    "logs": [...],
+    "gasUsed": 334562,
+    "height": 4204371
+}
+```
+
 ### Execute components
 
 This part shows off how to execute messages on the OKP4 blockchain, that’s to say:
 
 - insert RDF triples (`cognitarium` smart contract)
 
-First, let’s create a generic `Execute` component (`Execute.tsx` file in the `components` folder).
-
-This component receives a smart contract address `contractAddress` and the transaction arguments `executeArgs` (with `msg` as the payload).
-
-The `useExecuteContract` hook returns an `executeContract` function. This function will be invoked with [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh) and the transaction arguments to instantiate. See also `onSuccess` and `onError` functions provided to the hook, callback functions called regarding the execute action status.
+A generic `Execute` component (`Execute.tsx` file in the `components` folder) receives a smart contract address `contractAddress` and the transaction arguments `executeArgs` (with `msg` as the payload). The `useExecuteContract` hook returns an `executeContract` function. This function will be invoked with [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh) and the transaction arguments to execute. See also `onSuccess` and `onError` functions provided to the hook, callback functions called regarding the execute action status.
 
 ```tsx
 import {
@@ -996,7 +985,7 @@ service:03230ce7-d8cb-410e-919e-19c480c1dd75 a owl:NamedIndividual,
 }
 ```
 
-You can notice the usage of `encodeForMsgTx` function to encode the triples in base64.
+You can notice the usage of `encodeForMsgTx` function to encode the RDF triples (Turtle format) in base64.
 
 #### Use the app to execute a smart contract
 
@@ -1064,11 +1053,7 @@ This part shows off how to query messages on the OKP4 blockchain, that’s to sa
 - select some RDF triples with filters (`cognitarium`smart contract)
 - evaluate Prolog rules (`law stone` smart contract)
 
-First, let’s create a generic `Query` component (Query`.tsx` file in the `components` folder).
-
-This component receives a smart contract address `contractAddress`, the query and a callback function `onQueryResult`.
-
-The `useQuerySmart` hook is invoked when the component mounts and returns the result of the message query.
+A generic `Query` component (Query`.tsx` file in the `components` folder) receives a smart contract address `contractAddress`, the query `query` and a callback function `onQueryResult`. The `useQuerySmart` hook is invoked when the component mounts and returns the result of the message query.
 
 ```tsx
 import { ReactElement, useEffect } from "react";
@@ -1224,7 +1209,7 @@ export function QueryCognitarium({
 }
 ```
 
-Here, the query selects all triples for any subject, predicate and object (no filter). A limit of 2 elements to return is set.
+In this example, the query selects all triples for any subject, predicate and object (no filter). A limit of 2 elements to return is set. See the [tutorial about the OKP4 ontology](https://docs.okp4.network/tutorials/ontology-1#retrieve-stored-triples) to understand how to query with filters.
 
 #### Evaluate Prolog rules: query an `Ask` message to a `law stone` instance
 
@@ -1299,11 +1284,11 @@ export function QueryLawStone({
 }
 ```
 
-Here `can_vote(X).` is the Prolog query to evaluate.
+In this example, `can_vote(X).` is the Prolog query to evaluate.
 
 #### Use the app to query a smart contract
 
-Update `components/index.ts` and then `App.tsx` (replace `okp41mnrjmkmv2hx448qq54snt24js43nesk9esn52jzl5fv4c33w6a6smke3n2` by the address of a `cognitarium` instance the connected account created, replace `okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8` by the address of a `law stone` instance the connected account created):
+Update `components/index.ts` and add the components in `App.tsx` (replace `okp41mnrjmkmv2hx448qq54snt24js43nesk9esn52jzl5fv4c33w6a6smke3n2` by the address of a `cognitarium` instance the connected account created, replace `okp41j7f3mcqynl6ux8seaagvn4t09gg9k9wstkqkffu2dnpr3crghhrqdz6cl8` by the address of a `law stone` instance the connected account created):
 
 ```tsx
 <QueryCognitarium contractAddress="okp41mnrjmkmv2hx448qq54snt24js43nesk9esn52jzl5fv4c33w6a6smke3n2" />
@@ -1312,11 +1297,7 @@ Update `components/index.ts` and then `App.tsx` (replace `okp41mnrjmkmv2hx448qq5
 
 ### List instances by smart contract (`CODE_ID`)
 
-First, let’s create a `Contracts` component (`Contracts` file in the `components` folder).
-
-This component receives a smart contract `codeId` ([related to the available smart contract](https://docs.okp4.network/tutorials/explorer-sc#instantiate-okp4-smart-contracts)).
-
-The `useCosmWasmClient` hook returns [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh), which provides useful functions `getContracts` (to get all instances by `codeId`) and `getContract` (to get all information on an instance by its address).
+`Contracts` component (`Contracts` file in the `components` folder) receives a smart contract `codeId` ([related to the available smart contract](https://docs.okp4.network/tutorials/explorer-sc#instantiate-okp4-smart-contracts)). The `useCosmWasmClient` hook returns [a signing client](https://hackmd.io/@0xGhastly/H1GlUwiZh), which provides the useful functions `getContracts` (to get all instances by `codeId`) and `getContract` (to get all information on an instance by its address).
 
 ```tsx
 import { useEffect, useState } from "react";
@@ -1444,7 +1425,7 @@ export function Contracts({ codeId }: { codeId: number }) {
 }
 ```
 
-This component proposes a filter to display only the contracts the connected account has instantiated.
+This example filters to display the contracts the connected account has instantiated.
 
 ## Analyze transactions
 
@@ -1453,7 +1434,7 @@ This component proposes a filter to display only the contracts the connected acc
 This part shows how to decode data sent and validated on the OKP4 protocol. It explains:
 
 - how to decode a transaction message based on its type URL (`typeUrl`)
-- how to decode messages from smart contract (CosmWasm) interactions
+- how to decode messages payload from smart contract (CosmWasm) interactions
 - how to retrieve plain Prolog program previously stored
 
 The necessary `decode` function depends on the type URL. Here is a helper function (created in the `utils.ts` file) to decode transactions from any protobuf message:
@@ -1512,7 +1493,7 @@ export function decodeTxMessage(message: Any) {
 }
 ```
 
-Add also this `decodeTxWasmMessageValue` helper to decode wasm messages (`msg` payload from CosmWasm smart contract instantiations and executions):
+This `decodeTxWasmMessageValue` helper decodes wasm messages (`msg` payload from CosmWasm smart contract instantiations and executions):
 
 ```tsx
 import { fromBase64, fromUtf8 } from "@cosmjs/encoding";
@@ -1559,7 +1540,7 @@ export function decodeTxMessage(message: Any) {
 }
 ```
 
-Do you remember you provided data in the `msg` payload in base64 encoded? So it would be best if you had a function to decode back. This helper is s mainly useful to get Prolog program (as RDF triples may be requested with [Query messages](https://docs.okp4.network/contracts/okp4-cognitarium#querymsg))
+Do you remember you provided data in the `msg` payload in base64 encoded? So it would be best if you had a function to decode back. This helper is mainly useful to get Prolog program (as RDF triples may be requested with [Query messages](https://docs.okp4.network/contracts/okp4-cognitarium#querymsg)).
 
 ```tsx
 /**
@@ -1586,7 +1567,7 @@ export function decodePrologProgram(program: string): string {
 }
 ```
 
-Thus, update the `decodeTxWasmMessageValue` helper to populate the function response with the decoded prolog program :
+Thus, update the `decodeTxWasmMessageValue` helper to populate the returned object with the decoded prolog program :
 
 ```tsx
 /**
@@ -1615,11 +1596,9 @@ export function decodeTxWasmMessageValue(
 
 ### List and filter transactions
 
-You’ll find a complete `Transactions` component at the end of this part. But let’s understand how we can write such code.
+You’ll find a complete `Transactions` component below. But let’s understand how we can write such code.
 
-You can use any available client (among [CosmWasmClient](https://cosmwasm.github.io/CosmWasmJS/clients/reading/CosmWasmClient.html), [StargateClient](https://www.npmjs.com/package/@cosmjs/stargate) or [TendermintClient](https://www.npmjs.com/package/@cosmjs/tendermint-rpc)) to get transactions within the OKP4 network.
-
-Here is how to search transactions with a query filtering by message sender with the `txSearch` method from `Tendermint37Client` provided by the `useTendermintClient` hook:
+You can use any available client (among [CosmWasmClient](https://cosmwasm.github.io/CosmWasmJS/clients/reading/CosmWasmClient.html), [StargateClient](https://www.npmjs.com/package/@cosmjs/stargate) or [TendermintClient](https://www.npmjs.com/package/@cosmjs/tendermint-rpc)) to get OKP4 network transactions. Here is how to search transactions with a query filtering by message sender with the `txSearch` method from a `Tendermint37Client` client provided by the `useTendermintClient` hook:
 
 ```tsx
 import { useAccount, useTendermintClient } from "graz";
@@ -1670,7 +1649,7 @@ do {
 } while (!stop);
 ```
 
-To fully decode a transaction response, first, use the `decodeTxRaw` helper from `@cosmjs/proto-signing` and then populate with decoded messages thanks to the `decodeTxMessage` we previously added in `utils.ts`:
+To fully decode a transaction, first, use the `decodeTxRaw` helper from `@cosmjs/proto-signing` and then populate with decoded messages thanks to the `decodeTxMessage` we previously added in `utils.ts`:
 
 ```tsx
 import { DecodedTxRaw, decodeTxRaw } from "@cosmjs/proto-signing";
@@ -1717,7 +1696,7 @@ const transaction: DecodedTransaction = {
 };
 ```
 
-You may also need to know when a transaction has been validated. You can have this information with the `Tendermint37Client`  `.block(height: number)` method:
+You may also need to know when a transaction has been validated. You can have this information with a `block` method from a `Tendermint37Client` client:
 
 ```tsx
 
@@ -1872,7 +1851,7 @@ export function Transactions() {
                         <tr key={i}>
                             <td>
                                 <a
-                                    href={`https://explore.okp4.network/OKP4%20testnet/tx/${hash}`}
+                                    href={`https://testnet.ping.pub/OKP4%20testnet/tx/${hash}`}
                                 >
                                     {hash}
                                 </a>
@@ -1886,13 +1865,19 @@ export function Transactions() {
 }
 ```
 
-Update the `components/index.ts` file and add the `Transactions` component in the `App.tsx` file. Check the result is as expected in your browser:
+:::tip
+
+You can check the transactions results by looking to events in the `result.events` object.  
+
+:::
+
+Update the`components/index.ts` file and add the `Transactions` component in the `App.tsx` file. Check the result is as expected in your browser:
 
 ![Result with Transactions component](/img/content/tutorials/webapp-6.webp)
 
 ## Récap
 
-- Using React and [graz](https://graz.sh/) hooks, you can easily develop a web interface to read and send transactions
+- Using React and [graz](https://graz.sh/) hooks, you can easily develop a web interface to read and send transactions over the OKP4 blockchain
 - You need a [`SigningCosmWasmClient`](https://graz.sh/docs/hooks/useCosmWasmSigningClient) to interact with smart contracts
 - Decoding transaction data should be managed according to message type
 
