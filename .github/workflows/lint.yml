@@ -84,12 +84,37 @@ jobs:
             if [[ $type =~ ^(WEBP|SVG|ICO)$ ]]; then
               echo "✅ $file"
             else
-              >&2 echo "❌ $file incorrect. Please use only webp or svg format 🙏"
+              >&2 echo "❌ $file incorrect. Please use only webp or svg format. 🙏"
               FAILED=1
             fi
           done
           if [ "${FAILED}" = "1" ]; then
             exit 1
+          fi
+        env:
+          FOLDER: ./static
+
+  lint-image-size:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Lint image files
+        run: |
+          MAX_SIZE=200000
+          FAILED=0
+          for file in $(find "$FOLDER" -regextype posix-egrep -regex '.+\.(bmp|ico|jpg|jpeg|png|svg|webp)'); do
+            size=$(wc -c "$file" | awk '{print $1}')
+            if [ "$size" -gt "$MAX_SIZE" ]; then
+                >&2 echo "❌ $file is $size. Please reduce its size to a maximum of $MAX_SIZE. 🙏"
+                FAILED=1
+            else
+                echo "✅ $file"
+            fi
+          done
+          if [ "${FAILED}" = "1" ]; then
+              exit 1
           fi
         env:
           FOLDER: ./static
