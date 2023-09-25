@@ -17,7 +17,7 @@ This is a step-by-step tutorial, but you can also directly check out [the Web UI
 **Prerequisites:**
 
 - Basic understanding of blockchain and a [browser wallet set up with some $KNOW tokens](https://docs.okp4.network/tutorials/keplr-1)
-- Familiarity with JavaScript and modern web development, Node.js installed on your machine. This guide uses `npm`, but you’re encouraged to use `yarn` or `pnpm` as well
+- Familiarity with JavaScript and modern web development, [Node.js](https://nodejs.org/) installed on your machine. This guide uses `npm`, but you’re encouraged to use `yarn` or `pnpm` as well.
 
 ## Importance of user interfaces interacting with the OKP4 protocol
 
