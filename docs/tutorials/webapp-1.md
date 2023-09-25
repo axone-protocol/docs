@@ -599,7 +599,7 @@ const UINT128_MAX = "340282366920938463463374607431768211455"
 export function InstantiateCognitarium({ codeId }: { codeId: number }) {
     const { data: account }: { data: Key | null } = useAccount();
 
-    const label: string = `cogniatarium-frontdemo-${new Date().valueOf()}`;
+    const label: string = `cognitarium-frontdemo-${new Date().valueOf()}`;
 
     const limits: StoreLimitsInput = {
         max_byte_size: UINT128_MAX,
