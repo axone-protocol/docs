@@ -99,31 +99,6 @@ async function createconfig() {
               activeBasePath: '/tutorials'
             },
             {
-              type: 'dropdown',
-              label: 'API',
-              position: 'left',
-              items: [
-                {
-                  type: 'doc',
-                  label: 'Contracts',
-                  docId: 'README',
-                  docsPluginId: 'contracts'
-                },
-                {
-                  type: 'doc',
-                  label: 'Modules',
-                  docId: 'logic',
-                  docsPluginId: 'modules'
-                },
-                {
-                  type: 'doc',
-                  label: 'Commands',
-                  docId: 'okp4d',
-                  docsPluginId: 'commands'
-                }
-              ]
-            },
-            {
               to: '/faq',
               position: 'left',
               label: 'FAQ',
