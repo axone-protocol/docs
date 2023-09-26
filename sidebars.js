@@ -56,7 +56,22 @@ const sidebars = {
               dirName: 'technical-documentation/ontology'
             }
           ]
-        }
+        },
+        {
+          type: 'link',
+          label: "Smart contracts",
+          href: '/contracts',
+        },
+        {
+          type: 'link',
+          label: "Modules",
+          href: '/modules/logic',
+        },
+        {
+          type: 'link',
+          label: "Commands line interface",
+          href: '/commands/okp4d',
+        },
       ]
     }
   ],
