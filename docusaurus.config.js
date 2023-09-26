@@ -87,7 +87,7 @@ async function createconfig() {
               activeBasePath: '/nodes'
             },
             {
-              to: '/technical-documentation/introduction',
+              to: '/technical-documentation/ontology/general-principles',
               position: 'left',
               label: 'Technical documentation',
               activeBasePath: '/technical-documentation'
