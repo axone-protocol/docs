@@ -21,7 +21,7 @@ This is a step-by-step tutorial, but you can also directly check out [the Web UI
 
 ## Importance of user interfaces interacting with the OKP4 protocol
 
-The OKP4 protocol is a blockchain built on the Cosmos SDK that enables providers to share resources like web services or datasets with anyone without the need to trust a party. A provider describes resources ([RDF triples](https://docs.okp4.network/tutorials/ontology-1)) and rules ([Prolog program to define access conditions, revenue sharing, and more](https://docs.okp4.network/tutorials/prolog-1)), and consumers send requests to the blockchain which guarantees the respect of sharing conditions.
+The OKP4 protocol is a blockchain built on the Cosmos SDK that enables providers to share resources like web services or datasets with anyone without the need to trust a third party. A provider describes resources ([RDF triples](https://docs.okp4.network/tutorials/ontology-1)) and rules ([Prolog program to define access conditions, revenue sharing, and more](https://docs.okp4.network/tutorials/prolog-1)), and consumers send requests to the blockchain which guarantees the respect of sharing conditions.
 
 In essence, user interfaces are the key to democratizing the power of the OKP4 blockchain, making it usable and beneficial for everyone. For most users, [interacting with the protocol via terminal commands](https://docs.okp4.network/tutorials/cli-1) or delving into the intricacies of defining rules with the Prolog language remains a daunting, if not insurmountable, challenge. Similarly, the manipulation and understanding of RDF triples for semantic data can be complex without the right tools.
 
