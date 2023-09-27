@@ -34,6 +34,10 @@ const sidebars = {
       label: 'Technical documentation',
       items: [
         {
+          type: 'doc',
+          id: 'technical-documentation/overview',
+        },
+        {
           type: 'category',
           label: 'Ontology',
           items: [
