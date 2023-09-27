@@ -9,7 +9,7 @@ sidebar_position: 2
 In computer science, ontology is a formal and structured representation of the concepts, relationships, and properties of a particular domain. An ontology generally comprises the following basic elements: concepts, relationships, properties, axioms, and instances. These can be graphically represented by the simplified equation shown below.
 
 <center>
-  <img src="/img/content/technical-documentation/ontology_equation.webp" alt="Ontology equation"></img>
+  <img src="/img/content/technical-documentation/ontology_equation.webp" alt="Ontology equation" style={{ maxHeight: "220px" }}></img>
 </center>
 
 Some definitions:
@@ -111,7 +111,7 @@ The construction of this ontology follows a number of steps which are described 
 - **Ontology evaluation (6)**: Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
 
 <center>
-  <img src="/img/content/technical-documentation/ontology-construction-process.webp" alt="Ontology construction process"></img>
+  <img src="/img/content/technical-documentation/ontology-construction-process.webp" alt="Ontology construction process" style={{ maxHeight: "650px" }}></img>
 </center>
 
 ## Underlying Assumptions
