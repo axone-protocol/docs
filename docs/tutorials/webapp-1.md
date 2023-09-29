@@ -1856,7 +1856,7 @@ Update the`components/index.ts` file and add the `Transactions` component in the
 - You need a [`SigningCosmWasmClient`](https://graz.sh/docs/hooks/useCosmWasmSigningClient) to interact with smart contracts
 - Decoding transaction data should be managed according to message type
 
-With some CSS tricks you can copy from the [Vite boilerplate repository](https://github.com/okp4/web-ui-boilerplates/tree/main/vite), you can have a prettier UI:
+With some CSS tricks you can copy from the [Vite boilerplate repository](https://github.com/okp4/web-ui-boilerplates), you can have a prettier UI:
 
 ![Vite UI boilerplate final (connected to OKP4 network)](/img/content/tutorials/webapp-7.webp)
 
