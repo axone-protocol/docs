@@ -6,7 +6,7 @@ sidebar_position: 5
 
 Amending each level of the hierarchy is living and perpetually in flux, reflecting the evolving needs and circumstances of the protocol. The specific procedure for making amendments is unique to each level of the hierarchy and is dictated by the rules and regulations inherent to that level.
 
-## For governances
+## Protocol governance
 
 At the highest level, amendments are often driven by proposals from the community. These proposals, ranging from minor adjustments to significant changes, are submitted to a community vote. If approved, these amendments become part of the protocol's governance, shaping the fundamental rules and guidelines that govern the entire blockchain.
 

@@ -12,6 +12,10 @@ In the OKP4 Governance framework, the hierarchy of norms establishes a clear ord
   <img src="/img/content/technical-documentation/governance-hierarchy-of-norms.webp" alt="Governance - Hierarchy of Norms" style={{ maxHeight: "340px" }}></img>
 </center>
 
+<br/>
+
+<br/>
+
 The different levels of governance are:
 
 ## Protocol Governance

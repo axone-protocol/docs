@@ -12,7 +12,7 @@ Protocol governance profoundly influences the evolution, decentralization and se
 
 ## Zone Rules
 
-Zone rules encompass the acting entities and the digital resources that interact within a designated Zone. These rules can be tailored to address specific use cases, industry sectors, partnership circles, or geographical regions, facilitating context-specific governance arrangements. By customizing the rules to match the unique characteristics and requirements of each Zone, effective and targeted go governance be established, ensuring proper management and compliance within the designated Zone.
+Zone rules encompass the acting entities and the digital resources that interact within a designated Zone. These rules can be tailored to address specific use cases, industry sectors, partnership circles, or geographical regions, facilitating context-specific governance arrangements. By customizing the rules to match the unique characteristics and requirements of each Zone, effective and targeted governance be established, ensuring proper management and compliance within the designated Zone.
 
 OKP4 recognizes the following distinct types of rules.
 
@@ -22,7 +22,7 @@ Zone rules define the rights, obligations, permissions, and prohibitions governi
 
 Here are some of the supported credentials:
 
-- **Identity** Credentials: These credentials establish and verify the acting entities' identity within a zone's context. These credentials can be verified by restricting [Decentralized Identities](https://www.w3.org/TR/did-core/) through the expression of blacklists or whitelists, thereby controlling authorized identities.
+- **Identity Credentials**: These credentials establish and verify the acting entities' identity within a zone's context. These credentials can be verified by restricting [Decentralized Identities](https://www.w3.org/TR/did-core/) through the expression of blacklists or whitelists, thereby controlling authorized identities.
 - **Qualification Credentials**: These credentials certify acting entities' qualifications, skills, or expertise relevant to the governance process.
 - **Reputation Credentials**: These credentials provide information about acting entities' reputations or track records in the OKP4 ecosystem or other ecosystems. They can be based on past performance, ratings, reviews, or endorsements from trusted and acknowledge sources.
 - **Token-related Credentials**: These credentials bring the proof of token ownership in a wallet, token staking in specific blockchains, token voting, and token transfer history, to list a few — all of which serve as evidence of active participation and contributions within the blockchain ecosystem.
@@ -52,9 +52,9 @@ Here are some facets of business models in the zones:
 
 ### Related to self
 
-The zone rules also establish the principles by which the rules can be modified, amended, enhanced, or simplified. The OKP4 governance framework supports various processes, providing flexibility and adaptability of the Zone rules.
+The zone rules also establish the principles by which the rules can be modified, amended, enhanced, or simplified. The OKP4 governance framework supports various processes, providing flexibility and adaptability of the Zone rules. Let's explore some of the amendment processes supported:
 
-- **Consensus or Voting**: Amendments require an agreement or voting process. The Zone rules specify voter qualifications, voting period, approval threshold, and verification mechanisms. Let's explore some of the amendment processes supported:
+- **Consensus or Voting**: Amendments require an agreement or voting process. The Zone rules specify voter qualifications, voting period, approval threshold, and verification mechanisms.
 - **Autocratic**: A designated entity or group proposes and enacts rule changes. The Zone rules express the entities' decentralized identities and outlines the proposal process and decision criteria.
 - **Participatory**: Broad stakeholder participation is emphasized. The Zone rules specify the considered entities, the qualification required and the conditions for participation.
 - **Bring Your Own Rules**: The expressive power of the rules enables the establishment of various amendment processes, which only need to be imagined to become a reality within the OKP4 protocol. This flexibility allows for exploring and implementing diverse, innovative amendment mechanisms within the protocol.

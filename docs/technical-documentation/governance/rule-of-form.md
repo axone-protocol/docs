@@ -22,7 +22,7 @@ The content specifies the rules for the governance framework. They elaborate on 
 
 ### Section
 
-Section group related subsections together, serving as an intermediate level of organization.
+Sections group related subsections together, serving as an intermediate level of organization.
 
 ### Subsection
 
