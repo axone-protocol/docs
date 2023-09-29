@@ -4,168 +4,266 @@ sidebar_position: 1
 
 # Frequently Asked Questions
 
-_Work in progress_
+## Overview
 
-## Can you sum up OKP4 in a few sentences?
+### Can you sum up OKP4 in a few sentences?
 
-OKP4 is an ever-expanding Dataverse powering the next generation of Applications. Anyone can define and join Data Spaces where custom rules are shared between participants to transform their Datasets & Services into valuable Applications. Without any trusted third party, without having your data accessed by other participants or Application users.
+OKP4 is the first settlement layer for off-chain workflows using shared resources. In other words, it is an open-source and public protocol that enables the sharing and orchestration of digital off-chain resources (datasets, algorithms, storage, computation resources…) while enforcing their associated governance rules.
 
-## Why would someone want to build an application on OKP4 when there are many other blockchains available?
+### How does OKP4 works in a few words ?
 
-OKP4 is specifically designed for scalable trust minimized data sharing.
+OKP4 is a custom blockchain facilitating digital resource sharing with auditability and adherence to consent rules. It establishes trust through decentralization, offers a flexible incentive system, and reduces digital ecosystem fragmentation by enabling 'Anything as a Service'. The protocol introduces Zones for resource orchestration and utilizes an on-chain ontology for standardized interpretation of diverse elements. With smart contracts and modules, it is the orchestrator of workflows running on shared resources for any applications.
 
-Unlike other general-purpose layer-1s and layer-2s (Ethereum, Solana, Cardano, Avalanche, Polygon, Arbitrum...), it is the perfect environment for developers to build Data Spaces & Applications based on digital resources of any kind shared by participants.
+### What makes OKP4 a protocol ?
 
-OKP4 benefits from the simplicity & freedom of development through SDKs, Data Space governance templates and the ability to provide anything as a service in the dataverse. Soon, the many data & services referenced in the protocol will bring an unstoppable network effect.
+OKP4 serves as a set of rules and conventions that facilitate interoperability and coordination among diverse digital resources, systems, and entities. It allows for the establishment of rules, consents, and conditions for resource sharing, yet it doesn't focus on any specific use case. These are agnostic, trustless primitives that form the foundation for numerous other application and layer that can be built on top. OKP4 stands as the base settlement layer for off-chain workflows involving shared resources
 
-## How does OKP4 stores the data?
+### What makes OKP4 so groundbreaking?
 
-OKP4 doesn't store the data. It only references the data where it is (wherever it is) and make it available to the network according to the permissions granted by the data provider.
-The data can be stored anywhere, with any kind of storage solution, either centralized or decentralized.
+OKP4 does not aiming to be the next 'Ethereum Killer.' Instead, OKP4 plays a pivotal role in facilitating the transition to a new digital revolution, one centered around harnessing the power of data. In today's landscape, we recognize that trust and technical complexities often pose significant limitations.
+OKP4 is a meticulously designed protocol that fuels the expansion of this digital revolution by simplifying the sharing of data and digital resources. It places a profound emphasis on respecting consent and the proper utilization of everyone’s assets, thereby fostering a more equitable and secure digital ecosystem
 
-## Who is on the team and who are the founders of OKP4?
+### What problem is OKP4 solving?
 
-OKP4 was founded by Emmanuel Aldeguer in 2018, when he was a Data-Driven Marketer. He was later joined by the 3 main executives of the company: Marine Dechamp-Guillaume (Chief Project Manager), Théo Pelliet (Head of Ecosystem) and Christophe Camel (Chief Technology Officer).
-OKP4 core team is comprised of 27 people, with diversified and experienced profiles in web3/blockchain, IT development, data science, project management and business development.
+Today’s datasets are stored in silos, their potential and value stay untapped. This situation exists because of a substantial lack of trust and incentives to share data.
+Many companies’ products and crypto projects tried to tackle these issues through a similar approach: data marketplaces. But this approach is highly limiting because 1. the exchanged data is accessible to the buyer, resulting in risks, and 2. pricing mechanisms are disconnected from how data is used, resulting in poor incentives.
+Today, there’s no infrastructure, centralized or decentralized, to easily share any resource and agree on rules to enable these resources to interact with each other.
 
-## What is the market for OKP4? What is OKP4's ambition in this market?
+### What solution is OKP4 providing?
 
-Data intermediaries will be key players in the trillion dollar data economy of tomorrow.
-Decentralized data intermediaries will dominate centralized alternatives.
+OKP4 is a Cosmos-based layer-1 for anyone to build applications based on shared data & services. OKP4 blockchain and no-code interfaces allows individuals and companies to build and join ecosystems where they can (1) share anything (datasets, algorithms, software, computation..) (2) define any rules (business models, workflow management..) and (3) build applications on top of everything shared in the ecosystem. OKP4 aims to become the IBC-connected hub to value any existing web2 system.
 
-PwC estimates that global GDP will increase by up to 14% (the equivalent of US$15.7 trillion) by 2030 due to the accelerating development and take-up of data-powered AI.
-More specifically, we develop an alternative (and complementary) model to data marketplaces, which is a 1 billion market in 2022. "We" (more specifically, our community-owned digital commons) aim to claim at least 5% of this market in the next five years and expand many new opportunities enabled by trust-minimized data sharing.
+### What is trust-minimized data sharing?
 
+It is the ability to let data contribute to valuable knowledge and applications without ever exposing the data itself to other participants. Through a trustless network and privacy-preserving techniques, other parties never access the raw data that has been shared. End-users will access only the output (the indicator, the graph, the application...), not the data itself. Enabling value creation, value sharing, without the risks associated to exposing data.
+
+### What is the market for OKP4? What is OKP4's ambition in this market?
+
+Data intermediaries will be key players in the trillion-dollar data economy of tomorrow. Decentralized data intermediaries will dominate centralized alternatives because of reduced trust assumptions, and better composability and incentives.
+PwC estimates that global GDP will increase by up to 14% (the equivalent of US$15.7 trillion) by 2030 due to the accelerating development and take-up of data-powered AI. More specifically, we develop an alternative (and complementary) model to data marketplaces, which is a 1 billion market in 2022. "We" (more specifically, our community-owned digital commons) aim to claim at least 5% of this market in the next five years and expand many new opportunities enabled by trust-minimized data sharing.
 OKP4's goal is to be the leading decentralized data intermediary by enabling a new wave of innovation & use cases through unique coordination features.
 
-## What is trust-minimized data sharing?
+## General Questions
 
-It is the ability to let data contribute to valuable knowledge and applications without ever exposing the data itself to other participants. Through a trustless network and privacy-preserving techniques, other parties never access the raw data that has been shared. End-users will access only the output (the indicator, the graph, the application...), not the data itself.
-Enabling value creation, value sharing, without the risks associated to exposing data.
+### What is a Zone ?
 
-## What is the Dataverse?
+A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, considering the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
+The primary objective of Zones is to facilitate the coordination of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
+More information [here](https://docs.okp4.network/whitepaper/solution#protocol-overview)
 
-The Dataverse is an ever-expanding combination of digital resources shared by participants: datasets, algorithms, softwares, storage resources, computation resources, identity solutions... Anything can be considered a service as long as it is accessible via an API.
-The Dataverse is the basis on which Data Spaces are built to enable Dataverse resources to interact with each other.
+### What types of resources can be shared ?
 
-## What is a Data Space?
+As an agnostic infrastructure, OKP4 has no limitations on the types of resources it can be referenced, it opens doors to a wide range of possibilities.
+For clarity, we categorize resources and services into different types:
+Bounded Resources: These encompass both structured and unstructured data.
+Unbounded Resources: This category is dedicated to data streams, allowing real-time data processing.
+Processing Services: OKP4 can manage various digital processing services, including algorithms and AI models.
+Infrastructure Services: Additionally, OKP4 can handle any infrastructure services such as storage and computation or ID.
+For more in-depth information, you can refer to our dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#the-dataverse).
 
-A Data Space is a set of rules shared by Data Space participants:
+### Why do you distinguish Zones and digital resources?
 
-- Rules that regulates interactions between any data, any service (algorithms, software, storage, computation, identity providers...) or tokens shared by participants. The rules include access rights, business models, tech requirements...
-- Governance mechanisms to adapt these rules. This can be quite centralized (monosig or multisig) or decentralized (a Data Space can have its own token, or can use existing tokens as a governance token).
+The distinction between Zones and resources is crucial to enable the flexibility and adaptability of the OKP4 ecosystem.
+Zones are conceptual frameworks defined by a set of rules. They determine the parameters and boundaries that define the territory of a given Zone. Zone rules can be either open, allowing broad interaction, or restrictive, limiting access and resource usage. By evaluating the compatibility of resources with Zone rules, the scope and coverage of that Zone are defined. Multiple Zones can share common resources and nest within each other based on the rules associated with each resource and Zone.
+The absence of a direct link between Zones and resources allows for significant flexibility as Zones can evolve by adjusting their rules and conditions. This continuous evolution redefines the boundaries and characteristics of Zones, promoting adaptation to the changing needs of the OKP4 ecosystem.
+In summary, the distinction between Zones and resources enables the OKP4 ecosystem to be dynamic, scalable, and capable of accommodating a variety of rules and conditions for each Zone, thereby fostering value creation and free interaction among participants and digital resources.
 
-In a Data Space, datasets and algorithms are not stored centrally but at source and are therefore only shared (via [semantic interoperability](https://en.wikipedia.org/wiki/Semantic_interoperability)) when necessary. Data Spaces can be nested and overlapping, so that a Data Provider, for example, can participate in several Data Spaces at once without the need to copy or move his data.
+### What is the Dataverse ?
 
-## How exactly does OKP4 increases trust between Data Space participants?
+The Dataverse is an ever-expanding universe comprised of all the digital resources, such as datasets, and digital services such as infrastructure services, processing services or any other digital service referenced in the OKP4 Blockchain.
+All resources, services and Zones are found within the same universe, the Dataverse. The on-chain Ontology is the semantic representation of the Dataverse.
 
-## How does governance work within OKP4?
+### How does OKP4 stores the resources and services?
 
-## Who will benefit from OKP4?
+As a protocol, OKP4 doesn't store them. It only references the resource/services where it is (wherever it is) and make it available to the network according to the permissions granted by the provider. It can be stored anywhere, with any kind of storage solution, either centralized or decentralized.
 
-## How are crypto users affected or will benefit from OKP4?
+### How does the referencing process work in OKP4?
 
-## Why choose Cosmos as an underlying technology?
+Provider's Consent Rules: The provider defines the consent rules associated with the resource they wish to share. These rules could specify who can access and use the resource and under what conditions.
+Enforcement On-Chain: These consent rules are enforced on the blockchain, ensuring that they are transparent and tamper-resistant.
+Metadata On-Chain: Importantly, the actual resource data itself is not stored on the blockchain. Instead, only the metadata or description of the resource and how access it is recorded on-chain. This metadata is integrated into the ontology, providing a structured representation of the resource and service.
+Resource Utilization: When a digital resource is referenced within the OKP4 protocol, consumers can leverage this resource if their request aligns with the consent rules enforced on-chain. This mechanism ensures that resource usage complies with the agreed-upon conditions set by the provider.
 
-## Who are OKP4 competitors?
+### Euh Wait… What is an ontology?
 
-Our environment is a hybrid of "blockchain layer-1" & "data sharing solutions".
+Don’t worry, an ontology, in the context of OKP4, refers to a structured representation of knowledge that defines the relationships between various terms or concepts. It's like a map that helps us understand how different referenced resources (datasets, algorithms, services…) are related to each other.
+In OKP4, this ontology is used to describe the metadata or characteristics of resources and services. Think of it as the "data about the data." This structured information makes it easier for users and systems to understand and interact with resources and services within the OKP4 network. It ensures that everyone speaks the same language when it comes to sharing and accessing digital resources.
+Dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#ontology)
+And deep-dive article [here](https://blog.okp4.network/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
 
-Within the blockchain environment, we compete with generic layer-1s and layer-2s are "block-space providers". But, our technology is specifically designed for such use cases so we can optimize developer, contributor & user onboarding. Additionally, we will provide value-generating use cases that are extremely complex to implement on other chains.
+### Who can share and consume these resources ?
 
-Within the data sharing environment, our technology is a genuine digital commons everyone can use (no trusted third party needed) designed for synergies between existing solutions. The world doesn't need another "let's build another closed ecosystem to extract value" platform, the world needs a digital commons that is designed to break the silos.
+Anyone can share resources and define associated consent rules. As an open and public protocol, everyone has access to the resources referenced in the protocol and can use them, according to the access rights and conditions defined in the rules of the concerned Zone and resources.
 
-Our ambition is to make it too painful NOT to open web2 silos. "Show me the incentives, I'll show you the outcomes".
+### Is OKP4 private by design ?
 
-## What is a data silo?
+No, OKP4 is agnostic by design. It provides the flexibility for privacy-focused applications to be built on top of it. This means that privacy-enhancing features and services can be implemented within OKP4, allowing developers to tailor privacy settings to their specific needs and use cases. It's a versatile foundation that can support a wide range of applications, whether they prioritize privacy or other aspects of data sharing and orchestration.
 
-A data silo is a repository of data that is controlled by one party and is isolated from the rest. It is typically stored in a standalone system and often is incompatible with other datasets. While "data silos" is a term usually used to only talk about data inside an organization, we use it also to qualify data that does not generate value outside an organization.
+### OKP4 + AI?
 
-## What is the purpose of the $KNOW token?
+OKP4 does indeed have a unique relationship with the field of Artificial Intelligence. OKP4's purpose is to provide an on-chain governance layer for off-chain digital resources. AI models are undoubtedly promising digital services and providing a "law framework" or a "framework for intervention" for AI models appears to be an inevitable step in their progress.
+Furthermore, to enhance their capabilities, AI models require data and computational power. OKP4 aims to become the go-to destination for collaboration in the AI field.
+Imagine an AI trained, owned and governed by a DAO with governance rules, like data requirements and contribution quantification mechanisms, inscribed on-chain.
 
-## Is there a decentralized wallet for the $KNOW token?
+### What is the web2 alternative today?
 
-You can manage your $KNOW tokens with the [Keplr](https://www.keplr.app/) Chrome extension. Keplr is a non-custodial blockchain wallet for webpages that allow users to interact with the OKP4 ecosystem.
+The alternative to such a protocol is a set of trusted technical, legal, and financial intermediaries. That’s what we’ve seen being built in various use cases over the last few years, and it’s also very complex and creates a lot of friction.
 
-## What is the marketing strategy for OKP4?
+### Who are OKP4 web3 competitors?
 
-## What is the go-to-market strategy for OKP4?
+OKP4 doesn't have direct competitors for several reasons, but let's focus on the most significant one to keep in mind: no one else is currently focused on building a decentralized governance layer for off-chain resources. OKP4 enables the orchestration of digital resources through their associated governance rules and consents.
+In a general sense, governance corresponds to a set of rules. When we talk about the governance of digital resources to interoperate different resources within workflows, the primary concern is not the technical aspect, such as which technical stack to use. The primary concern is speaking the same language so that resources can "understand" each other.
+As a governance layer for off-chain resources, OKP4 introduces a strong logical and semantic aspect within its architecture to abstract all the difficulties related to interoperability among diverse resources. Today, we are not aware of any project that is as focused on governance and semantics, making the orchestration of digital resources in a trustless environment as accessible as OKP4.
 
-Our core product is the OKP4 SDK designed for developers.
-A SDK is a Software Development Kit: a set of development tools that facilitate the creation of Data Spaces and Applications.
-Our goal is to attract as many builders as possible to enable many opportunities for Data Providers & Users, to maximize value flows into the network.
+If you want to delve into the Governance aspect, this series of 3 articles is a must-read
+[Part 1](https://blog.okp4.network/beyond-traditional-governance-embracing-on-chain-with-okp4-1-3-bb925ea4e1b2) – [Part 2](https://blog.okp4.network/beyond-traditional-governance-embracing-on-chain-with-okp4-2-3-17237d68033c) – [Part 3](https://blog.okp4.network/beyond-traditional-governance-embracing-on-chain-with-okp4-3-3-424f7a8eb2fc)
 
-## How do you manage data privacy? And privacy of my interactions with the blockchain?
+### I'm still struggling to understand what makes OKP4 different. How is it different from Ocean Protocol, for example?
 
-## How do you align with GDPR or other privacy-concerned compliance?
+Ocean Protocol enables decentralized data exchange and monetization solutions through a marketplace. It’s a great solution if you want to sell datasets.
+OKP4 enables custom governance for complex workflows and applications powered by shared data & services. It’s a great solution if you want your data, algorithms or resources to contribute to any application on your own terms, with on-chain rules.
+While Ocean Protocol focuses on tokenizing datasets, we’re focused on building the right infrastructure and tools to enforce customized rules/permissions on any data or service. It goes way beyond what Ocean does as it has new primitives to build anything on top. OKP4 will leverage data from Ocean Protocol but will not be limited to that at all.
 
-## How will you onboard existing communities?
+### Is OKP4 limited to web2 B2B applications?
 
-## According to which principles was OKP4 designed?
+Not at all! The protocol we’ve developed introduces innovative primitives suitable for a wide range of applications. Initially, we targeted B2B ones. While these have notable usage volume, they’re not seamless and pose bootstrapping challenges.
+Consequently, we’ve prioritized no-code interfaces for data & service providers, Zone creators, governance participants, and workflow consumers. Our aim is to allow individuals to easily define rules and either contribute to or consume resources. These user-friendly interfaces empower developers to seamlessly experiment with off-chain coordination. While many community-driven innovations arise from our members (such as Marketplaces, Collaborative Research DAOs, Personal Data Vaults, etc.), our primary focus for adoption is collaborative AI training. The OKP4 Portal will feature what we term "AI Factory" templates.
+These templates detail rules for data, algorithms, and infrastructure contributions. They can be customized to meet specific needs related to quality, privacy, transparency, or reliability. Furthermore, they introduce governance frameworks and custom tokens to manage or incentivize AI DAO participants.
+The ultimate outcome is a collectively trained, owned, and governed AI, fueled by a network of incentivized contributors. At its core, OKP4 is more than a tool for businesses. It’s a protocol for collective innovation and coordination, inviting individuals from all backgrounds to contribute and add value.
 
-To become the go-to solution for digital resources coordination, we follow 7 principles to maximize opportunities and minimize risks & costs:
+## Architecture
 
-### Opportunity-maximization
+### Why does OKP4 need a blockchain infrastructure to do that?
 
-Onboard Consumers, contributors and users to create new use cases and share value.
+As a decentralized orchestrator of digital resources, OKP4 needs a blockchain infrastructure for essential reasons:
 
-- **Designed for Consumers**: to maximize adoption through valuable data applications. Consumers will innovate and design Data Spaces & communities that will enable this wave of valuable data applications. OKP4 is then designed to facilitate onboarding of Consumers through SDKs & docs, fast deployment through tools & templates, and community empowerment to create a thriving Ecosystem.
+- Verifying and validating the Protocol events thanks to decentralized consensus mechanism
+- Ensuring an immutable and auditable registration of settlements for the Protocol Layer
+- Enabling highly customized settlements to coordinate participants and resources through rules enforcement and value exchange
+As the basis of the architecture, the blockchain act as a source of truth in the protocol.
 
-- **Designed for contributors**: to maximize value created by data application by onboarding contributors. Value-sharing models and easy to use tools will incentivize participants in infinite ways, encouraging them to share data, algorithms, storage and computation towards a common goal.
+### Why did you create OKP4 as a new blockchain instead of using an existing one?
 
-- **Designed for freedom**: to maximize opportunities by aligning interest between Providers, Consumers and users through freedom of innovation and customization.
+We established OKP4 as a new blockchain for several strategic reasons:
+Independence from Existing Chains: We aimed to operate without being reliant on the decisions or the pace of development of Ethereum or any other Layer 1 (L1) or Layer 2 (L2) solutions. This autonomy ensures that our direction isn’t dictated by external factors.
+Customization and Speed: By creating our own blockchain, we can move at a pace that aligns with our vision and can tailor the chain specifically for our use case. Our primary goal is to create an optimal environment for off-chain resource governance.
+Complete Environment Control: We wanted the freedom to fully customize our environment. We didn’t want to be confined by the limitations of smart contract virtual machines. This also allows us to set specific requirements for our validators, both in terms of software and hardware.
+Sovereign Governance: We prioritize having sovereignty over our blockchain’s governance. We envision a true DAO consisting of validators and token holders. This structure fosters an environment ripe for experimentation and innovation.
+Balancing the Trilemma: Every blockchain faces the scalability-decentralization-security trilemma. With our own chain, we can choose our position on this spectrum, balancing these factors according to our priorities.
+Decentralization Over L2s: Unlike Layer 2 solutions, where components might be controlled by a single sequencer or another centralized entity, the protocol is autonomous and runs on a decentralized network of nodes. This reduces points of failure and enhances security.
+Innovative Features: With our own blockchain, we can implement features that are unattainable on existing networks. This includes innovations like mempool encryption, native oracles, and validator-secured bridges, further differentiating us from other solutions.
 
-- **Designed for interoperability**: to maximize synergies at the blockchain level through cross-chain communication, at the Ecosystem level thanks to agnosticism, at the Data Space level through interoperability of standards or governance synergies, and also at the application level enabling applications to leverage multiple Data Spaces (or multiple applications leveraging the same Data Space).
+### Why choose Cosmos as an underlying technology?
 
-### Risk-minimization
+Choosing Cosmos as the underlying technology aligns with our core values of interoperability and sovereignty. Cosmos provides the stack for OKP4 to serve as both an orchestration layer for off-chain resources and a governance layer for off-chain resources. This means it offers interoperability and sovereignty, allowing for specific design and modularity.
+In summary, OKP4 shares and works on the same vision than Cosmos.
 
-Let anyone build and contribute by minimizing trust and technical issues.
+- Interoperability
+- Sovereignty
+- Specific Design and Modularity
 
-- **Designed for sovereignty**: raw data is never stored on-chain. Some metadata is, but only for features such as discoverability, value sharing & security. In some applications, data can be shared through privacy-preserving algorithms to provide a valuable output without transferring the data to another participant/user. That way, Data Providers can be rewarded without any risk of losing sovereignty over their data.
+### Why would someone want to build an application on OKP4 when there are many other blockchains available?
 
-- **Designed for trustlessness**: every rule, right and governance mechanism can be enforced on-chain by the decentralized network of Validators. Coordination between Providers (data, algorithms, storage, computation), Consumers, users, Curators and Governance Participants is autonomous, fluid and unstoppable.
+We don't claim that OKP4 can be a one-size-fits-all solution for every use case. Our primary objective is to create an infrastructure that facilitates the sharing of digital resources. OKP4's architecture is optimized for this purpose and doesn't compete for block space with other types of applications.
+In essence, OKP4 is designed for its specialization in resource sharing and its ability to provide a dedicated governance layer for such applications without the need to contend with other blockchain use cases as DeFi Apps or NFT Apps.
 
-### Cost-minimization
+### There's many ongoing disputes and risks surrounding Cosmos, is it a risk for OKP4?
 
-- **Designed for minimal extraction**: no intermediary, only an open digital infrastructure that doesn't seek value-extraction. Its scalable and dedicated nature makes it unlikely to be congested and/or expensive. This app-specific network is supported by incentivized nodes enabling low fees for anyone.
+As we mentioned previously, the number one reason to build a Cosmos chain is sovereignty, more precisely, interoperable sovereignty.
+For us, Cosmos is a design pattern we leveraged with a set of components that suit our needs: CometBFT, CosmosSDK, IBC, CosmWasm. We then built our custom modules and smart contracts to make the OKP4 blockchain specifically designed for our protocol.
+There’s certainly drama around the Cosmos Hub and the ecosystem as a whole because it’s democratic and governance-intensive, and that’s the issue with sovereignty.
+We see ourselves very independently from that drama. Many projects in the interchain have managed to be seen as industry-specific layer-1s and not attached to the Cosmos brand; we strive for the same. We’re part of the Interchain that wouldn’t be possible without Cosmos, but we’re independent from Cosmos.
+We definitely think this trend will accelerate as interoperability becomes seamless and the ecosystems blur on the liquidity side (see IBC everywhere) and UX side (see Metamask snaps).
 
-## What are the key principles and features of OKP4?
+## Smart contracts and modules
 
-OKP4 is generic, customizable, scalable, decentralized, permissionless, secure, it enables complex workflows, synergetic and incentivized.
+### What is the Objectarium smart contract in a few words?
 
-### Generic
+The Objectarium smart contract enables the storage of arbitrary unstructured Objects in any Cosmos blockchain. It provides a flexible solution for storing data without imposing strict schemas or predefined structures, accommodating various data formats and types.
 
-OKP4 is a general-purpose communication infrastructure that enables XaaS - Anything as a Service. The Protocol enables anyone to share any data, any algorithm, any storage, any cloud, any SSI, etc. Anyone can earn from these assets and services and make them valuable for the community.
+### What is the Cognitarium smart contract in a few words?
 
-### Customizable
+The Cognitarium smart contract facilitates the storage and querying of semantic data using RDF (Resource Description Framework), which represents information as semantic triples. In essence, it serves as a repository for knowledge, providing a dedicated space for storing and retrieving semantic information within any Cosmos blockchains.
 
-Besides, WHAT you can share, OKP4 is highly customizable in terms of HOW you can share. Smart contracts that govern Data Spaces can be copied, edited, reinvented in infinite ways. Customization is applied to the rules (business models, access mechanisms, constraints on service providers...) and also the mechanisms to change the rules (who can vote, weight of their vote, fixed or dynamic through a token, etc.).
+### What is the Law-Stone smart contract in a few words?
 
-### Scalable
+The Law-Stone is a highly versatile smart contract designed to apply and enforce legislative rules, including Zone rules, Consents, and Agreements. It offers extraordinary adaptability and can be utilized in any blockchain within the Cosmos ecosystem that seeks to establish robust and flexible on-chain governance systems. With its exceptional proficiency in evaluating logical rules, Law-Stone can be applied across various use cases.
+The smart contract has two sides:
+The side of the “Law”: Indeed, the smart contract interprets the law, i.e. makes a judgement on what is legal, permissible or prohibited according to the result of execution of the rules of governance informed by the knowledge available at the time of this interpretation.
+The side of the “Stone”: The instantiation of the smart contract engraves in stone the rules to be interpreted, and these are immutable, irrevocable, and indisputable unless the stone is broken.
 
-Its generic infrastructure makes it scalable by design, as workflow orchestration, computation and storage is done off-chain and is theoretically unlimited. Nevertheless, indexation, rule enforcement, governance and value-sharing is done on-chain. With a capacity of 10 000 TPS (Transactions Per Second), limits may be reached when dozens to hundreds of highly used data apps coexist on the OKP4 Ecosystem. That is one of the reasons a roll-up strategy is implemented to enable layer-2 scalability and even more roll-up-specific functionalities (such as on-chain privacy features).
+### What is the Pactum smart contract in a few words?
 
-### Decentralized
+The Pactum smart contract is designed to streamline and automate the execution of agreements involving multiple parties. In contrast to the Law-Stone, which primarily focuses on expressing or stating the law, the Pactum’s core function is to actively execute the law by the predefined terms outlined in the agreement. By leveraging the power of Prolog provided by the Law-Stone smart contract, the Pactum facilitates the seamless implementation of agreed-upon terms and ensures the proper enforcement of contractual obligations.
+This smart contract is essential in the governance framework implemented in the OKP4 protocol, particularly in regulating the orchestration of digital resources, which involves many parties.
 
-The OKP4 Network has no trusted parties or single points of failure for any function. Many centralized components can intervene in data workflows but are not mandatory. As said before, the infrastructure is generic and its thriving Ecosystem will be composed of many centralized & decentralized independent components.
-OKP4 Blockchain is decentralized thanks to the Tendermint consensus and many Validator nodes that find consensus on the state of the Network. Its governance is also decentralized through a DAO. Eventually, as with every PoS networks and token-based DAOs, its decentralization is dependent on the distribution of the token and the ability of one stakeholder to acquire a "dangerous" stake in the Network. Eventually, it all comes down to the value and liquidity of its token on the market. The more distributed and expensive to acquire the token is, the more it can be and stay decentralized.
+### What is the Logic Module in a few words?
 
-### Permissionless
+The Logic module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. Its main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog. Prolog is a powerful declarative programming language to manage from simple restrictions to complex rules. This language is not natively operable on-chain; the logic module adds Prolog interpretation capability. The Logic module is not strongly coupled to the OKP4 blockchain. It's designed to be reusable and can be integrated with any Cosmos appchain. Because it's open and interoperable, the support of Prolog programs is a significant gain for the Cosmos ecosystem. Using this open-source Logic module implementation, any appchain can quickly adopt complex Prolog governance rules.
 
-Anyone can become a Validator, Delegator, Governance Participant, Consumer, Curator, Builder or a Provider of data, algorithm, storage, or even computational power. Some Data Spaces may be restricted on the user & provider sides, but the infrastructure will always be open and permissionless, ensuring censorship-resistance at the foundation of the technology stack.
+## Token
 
-### Secure
+### What is the utility of the KNOW token ?
 
-OKP4 is designed for security at the blockchain level (due to its decentralized nature and robust consensus mechanism), but also at the data level. The blockchain enforces rules such as access control that are immutable (except if consensus is reached to change these rules of course). That way, vulnerability will never be on the blockchain side, but on the user/provider side (if there's a breach in his own cloud infrastructure for a self-hosted data provider, or if a user gets his private keys stolen for example).
+The KNOW is the fee token of the OKP4 blockchain, it is required to submit transactions to the network of validators.
+Similar to other Proof-of-stake chains, the KNOW secures the network through staking.
+The KNOW is also governance token. Anyone can do on-chain proposals, and KNOW holders can vote yes, no, abstain or no with veto to these proposals.
+The KNOW token can also be a governance token for any Zone if implemented that way. Beyond that, and more related to use cases, the KNOW is used by default for
+value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
+The KNOW token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
+More details about Token Model here
 
-### Complex workflows
+### Can price volatility of the KNOW token be a problem?
 
-A user/consumer can design complex workflows such as thousands of datasets interact with hundreds of services to produce a single product or application. A set of tools is provided to enable anyone to easily build such workflows and innovate on how data can be used and shared with confidence.
+The KNOW price volatility can become a problem when it’s used for payment. Imagine a dataset or service providers denominates its price in KNOW. If the KNOW values goes +50%, then it goes the same of providers who may see their resources less used because 50% more expensive. An external service can be used to define another unit of account (like the dollar) and have the $KNOW value updated every time their resource is consumed.
 
-### Synergetic
+### Decentralization seems to add complexity. Does that get offset but the open composability?
 
-OKP4 is modular in terms of infrastructure, but also in terms of governance. While the blockchain is as decentralized as possible, the Data Spaces and resources that interact through it may have centralized components and governance. This enables web2 and web3 synergies with quick-coordination, human-centric UI while keeping web3 strengths such as data sovereignty, tokenized governance, powerful incentives, trustlessness, auditability... OKP4 is then an open infrastructure that suits needs on a spectrum from decentralized communities to private businesses, with many hybrid models and synergies to build and discover.
+It’s important to state that we’re building a protocol: trustless and general primitives that form a foundation for many more layers that can be built on top. OKP4 is the first settlement layer for off-chain workflows using shared resources.
+Decentralization introduces complexity but provides many benefits.
+Composability is really important; all solutions that exist today are not tech-agnostic and rely on specific cloud infrastructure solutions. OKP4, as a protocol, is designed to become the binder between all the existing solutions that are worth sharing and making interoperable.
+The financial and reputation primitives of the protocol enable new possibilities in mechanism design. Zone rules, for example, can be defined to set a mandatory self-staked token threshold on data and service providers to ensure they are financially incentivized to honor their off-chain commitments.
+The ontology primitives provide an open and permissionless source of facts and knowledge where anyone can contribute, and anyone can benefit from, as long as they respect the programmed Prolog on-chain rules.
+The token is also an important element; its design creates real cash flow for token holders, creating a flywheel of incentives for the ecosystem, attracting open-source contributors, data and service providers, and consumers, and essentially bringing the interest of many developers who like a new playground.
+OKP4 is a sandbox for human coordination experiments in the off-chain world. You can’t build that and create proper incentives without decentralization. The complexity that is introduced is worth it, and our mission is, and will be, as a team and community, to abstract the underlying complexity with beautiful no-code interfaces & applications.
 
-### Incentivized
+## Utilization
 
-To ensure that high-value applications can rely on the network to keep all of its functionalities listed above, OKP4 incentivizes Validators, Delegators, Providers, Curators, Consumers, Builders to ensure development, maintenance, involvement into the Ecosystem. Incentives are designed to align individual interest with public interest through low inflation, fair value distribution and punishment of detrimental behaviors.
+### Can you describe how the data transfer work ?
+
+First, let me remind that the data is off-chain, only the data’s metadata (it’s description) is on-chain and integrated in the ontology.
+When a consumer interacts with the OKP4 blockchain, they might request access to multiple datasets and algorithms. The protocol checks if the conditions set by the data or algorithm providers are satisfied. If they are, the transaction is validated on-chain (the [Pactum smart contract](https://docs.okp4.network/whitepaper/architecture#pactum-managing-agreements) ensures conditions are met, including retributions for providers), with the workflow being described like any service in the ontology (leveraging the [Cognitarium smart contract](https://docs.okp4.network/whitepaper/architecture#cognitarium-semantic-data-storage)).
+Subsequent to this validation, an [off-chain orchestration service](https://docs.okp4.network/whitepaper/architecture#orchestration), exemplified by workflow engines like [Argo](https://argoproj.github.io/argo-workflows/), takes over. This service acts as a gatekeeper for resources, relying exclusively on blockchain validation events to process the consumer’s request. It’s important to note that this orchestration service doesn’t inherently trust any party; it solely trusts the blockchain’s validation.
+The orchestration service’s role is to create new insights or knowledge by utilizing resources from different providers. Once the processing is complete, the service reports back to the blockchain, ensuring that the execution status is logged reliably and that any due payments are processed.
+Data transfer is a crucial part of this workflow. Depending on the rules and services invoked, data is transferred between the relevant providers and consumers. The orchestration service facilitates this by fetching data through APIs and requesting services that perform computations on one or more datasets as required.
+To sum it up, from the moment a consumer places a request to the final reporting by the orchestration service, the entire process is seamlessly automated.
+
+### Are the datasets necessarily transferred to the consumer?
+
+Not necessarily, there are several ways to process data without transferring it to the end consumer, or even to third-party service providers: Trusted Execution Environments (TEE), Multi-Party Computation (MPC), Edge computing, and more. Implementations of these technologies are digital services that can be used within workflows. Once again, it's up to the provider to choose the consent rules related to the resources they want to share and especially how they can be processed.
+
+### OKP4 is the set of instructions that could be used for data pipelines. How can I build a Data Platform with OKP4 ?
+
+The answer depends on the Design Pattern you opt for: batching, micro batching, streaming, hybrid, or any other. Depending on the most suitable choice for the datasets you intend to collect and process, you'll need to pick specific tools. For instance, within the Apache series, options such as AIRFLOW, SPARK, STORM, KAFKA, FLINK, or even other open-source or proprietary solutions could come into play.
+Both the team and community will reference implementations of these tools alongside the necessary connectors for communication. This will facilitate the seamless construction of your own process by interconnecting services that best align with your use case.
+
+### Can you illustrate it ?
+
+For example, when you want to extract data from nodes for analytical purposes, a batching collection approach every 6-12 hours might be ideal, followed by data processing and storage in a Data Warehouse solution. Conversely, when extracting data from nodes for monitoring purposes, a streaming or micro batching process might be more suitable, with the data being stored in a Data Lake solution.
+OKP4 functions as a decentralized coordinator where:
+
+- The consent rules for each dataset and service are enforced on-chain.
+- The workflow can be initiated in accordance with the consent rules of each resource.
+- The workflow is recorded on-chain and is subject to thorough auditing.
+
+### How does OKP4 ensures the execution and validation of sharing rules?
+
+The protocol itself is primarily an infrastructure that allows a resource “provider” to reference and define usage rules (in Prolog, which offers better expressiveness compared to other languages), and for a "consumer" to make usage requests based on these rules. What the protocol guarantees is the transparency of the rules and the correct assessment (validation or not) of these rules. However, there is indeed the question of verifying the actual "real" sharing action. The current approach is an open-source off chain "orchestrator" developed by the OKP4 Association team that provides access to resources (based on requests validated onchain) and then reports the successful execution back on chain. So, yes, there’s an element of centralization! We aim to have multiple orchestrators, deployed by external entities, and even decentralize that process at some point. Both "providers" and "consumers" will be able to choose the one they "trust" or deploy their own.
+More info [here](https://docs.okp4.network/whitepaper/architecture#trusted-parties-considerations)
+
+### How OKP4 ensures law enforcement BEFORE EXECUTION?
+
+1. An Identity (human or bot) wants to interact with a Zone
+2. The Zone ask to the dedicated smart contract if its possible given the context and all the involved rules
+3. The protocol employs logical inference to resolve matters based on the state of the blockchain
+4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on. Depending on the answer, the execution process could start.
