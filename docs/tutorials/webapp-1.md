@@ -83,7 +83,7 @@ Now, install some packages to equip the project with a suite of tools and librar
 
 ```bash
 # you're free to use the latest versions, but to ensure compatibility this guide provides specific versions
-npm i graz@0.0.50 @cosmjs/encoding@0.31.1 @cosmjs/proto-signing@0.31.1 cosmjs-types@0.8.0 @okp4/cognitarium-schema@2.1.0 @okp4/law-stone-schema@2.1.0
+npm i graz@0.0.50 @cosmjs/encoding@0.31.1 @cosmjs/proto-signing@0.31.1 cosmjs-types@0.8.0 @okp4/cognitarium-schema@3.0.0 @okp4/law-stone-schema@3.0.0
 ```
 
 - [**graz**](https://www.npmjs.com/package/graz): a collection of React hooks containing everything you need to start working with the [Cosmos ecosystem](https://cosmos.network/)
