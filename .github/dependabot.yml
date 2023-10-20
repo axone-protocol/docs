@@ -7,11 +7,9 @@ updates:
     reviewers:
       - amimart
       - ccamel
-      - fredericvilcot
     assignees:
       - amimart
       - ccamel
-      - fredericvilcot
     open-pull-requests-limit: 5
   - package-ecosystem: npm
     directory: /
@@ -19,8 +17,6 @@ updates:
       interval: weekly
     reviewers:
       - ccamel
-      - fredericvilcot
     assignees:
       - ccamel
-      - fredericvilcot
     open-pull-requests-limit: 5
