@@ -114,6 +114,13 @@ async function createconfig() {
             {
               type: 'docsVersionDropdown',
               position: 'right',
+              dropdownItemsAfter: [{ to: '/predicates/predicates', label: 'Latest version' }],
+              docsPluginId: 'predicates',
+              dropdownActiveClassDisabled: true
+            },
+            {
+              type: 'docsVersionDropdown',
+              position: 'right',
               dropdownItemsAfter: [{ to: '/modules/logic', label: 'Latest version' }],
               docsPluginId: 'modules',
               dropdownActiveClassDisabled: true
@@ -215,6 +222,14 @@ async function createconfig() {
           id: 'contracts',
           path: 'contracts',
           routeBasePath: 'contracts/'
+        }
+      ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'predicates',
+          path: 'predicates',
+          routeBasePath: 'predicates/'
         }
       ],
       [

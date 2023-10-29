@@ -64,6 +64,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'Governance Predicates',
+          href: '/predicates/predicates',
+        },
+        {
+          type: 'link',
           label: "Modules",
           href: '/modules/logic',
         },
