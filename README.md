@@ -15,7 +15,7 @@
 
 This repository contains the source code for the OKP4 documentation portal, which is hosted at <https://docs.okp4.network>.
 
-![[docs.okp4.network](https://docs.okp4.network)](./screenshot.webp)
+[![docs.okp4.network](./screenshot.webp)](https://docs.okp4.network)
 
 ## Developing & contributing
 
