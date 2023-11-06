@@ -11,6 +11,12 @@
 [![license][bsd-3-clause-image]][bsd-3-clause]
 [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
 
+## Overview
+
+This repository contains the source code for the OKP4 documentation portal, which is hosted at <https://docs.okp4.network>.
+
+![[docs.okp4.network](https://docs.okp4.network)](./screenshot.webp)
+
 ## Developing & contributing
 
 ### Installation
