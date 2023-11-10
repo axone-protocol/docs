@@ -94,6 +94,56 @@ jobs:
         env:
           FOLDER: ./static
 
+  lint-web:
+    runs-on: ubuntu-22.04
+    env:
+      WEB_PORT: 3000
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup node environment (for building)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16.18
+          cache: yarn
+
+      - name: Fetch dependencies
+        run: |
+          yarn --frozen-lockfile
+
+      - name: Start web server
+        run: |
+          yarn build
+          yarn serve --port $WEB_PORT --no-open &
+          sleep 2
+
+      - name: Create artifacts directory
+        run: |
+          mkdir -p ${{ github.workspace }}/tmp/artifacts
+
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@v10.0.0
+        with:
+          prCommentEnabled: true
+          maxRetries: 2
+          outputDirectory: ${{ github.workspace }}/tmp/artifacts
+          device: all
+          urls: >-
+            http://localhost:${{ env.WEB_PORT }}/
+          gitHubAccessToken: ${{ secrets.OKP4_TOKEN }}
+
+      - name: Upload lighthouse reports
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: Lighthouse reports
+          path: ${{ github.workspace }}/tmp/artifacts
+
+      - name: Stop web server
+        if: always()
+        run: |
+          kill $(lsof -t -i:$WEB_PORT)
+
   report-new-dependencies:
     runs-on: ubuntu-22.04
     if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
@@ -151,6 +201,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16.18
+          cache: yarn
 
       - name: Fetch dependencies
         run: |

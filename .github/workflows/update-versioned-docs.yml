@@ -63,6 +63,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16.18
+          cache: yarn
 
       - name: Bump new version
         if: ${{ github.event.inputs.draft == 'false' }}
