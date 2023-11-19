@@ -32,7 +32,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.12
-          cache: npm
+          # don't use cache as it may interfere with other jobs
+          # cache: npm
 
       - name: Screenshot Website
         run: |
