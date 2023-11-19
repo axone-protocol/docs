@@ -35,9 +35,13 @@ jobs:
           # don't use cache as it may interfere with other jobs
           # cache: npm
 
+      - name: Install global dependencies
+        run: |
+          npm install --global capture-website-cli@4.0.0
+
       - name: Screenshot Website
         run: |
-          npx capture-website-cli@4.0.0 \
+          capture-website \
             --type webp \
             --quality=0.7 \
             --launch-options='{"headless": "new"}' \
