@@ -180,7 +180,7 @@ async function createconfig() {
               items: [
                 {
                   label: 'Medium',
-                  href: 'https://medium.com/okp4'
+                  href: 'https://blog.okp4.network/'
                 },
                 {
                   label: 'OKP4.network',
