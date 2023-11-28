@@ -3,6 +3,8 @@ name: 📦 Generate Documentation Bundles
 on:
   workflow_call:
 
+  workflow_dispatch:
+
 concurrency:
   group: generate-doc-bundles-${{ github.ref }}
   cancel-in-progress: true
