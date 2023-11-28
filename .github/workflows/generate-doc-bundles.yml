@@ -1,0 +1,77 @@
+name: 📦 Generate Documentation Bundles
+
+on:
+  workflow_call:
+
+concurrency:
+  group: generate-doc-bundles-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate-doc-bundles:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        bundles:
+          - name: "whitepaper-tech-faq"
+            sources:
+              - "docs/whitepaper/**/*.md"
+              - "docs/technical-documentation/**/*.md"
+              - "docs/faq/**/*.md"
+          - name: "tutorial-validator"
+            sources:
+              - "docs/tutorials/**/*.md"
+              - "docs/nodes/**/*.md"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install python-frontmatter
+          pip install justext
+
+      - name: Generate Documentation Bundle
+        shell: python
+        env:
+          SOURCES: ${{ toJSON(matrix.bundles.sources) }}
+          BUNDLE: ${{ matrix.bundles.name }}
+        run: |
+          import os
+          import glob
+          import json
+          import frontmatter
+          import justext
+
+          sources = json.loads(os.environ["SOURCES"])
+          output_filename = f"{os.environ["BUNDLE"]}-bundle.md"
+
+          print(f"⚡️ Generating {output_filename}")
+          with open(output_filename, "a") as output_file:
+              for source in sources:
+                  print(f"🔎 looking for {source}")
+                  files = glob.glob(source, recursive=True)
+
+                  for file_path in files:
+                      print(f"🔁 merging {file_path}")
+                      with open(file_path, "r") as input_file:
+                          _, content = frontmatter.parse(input_file.read())
+                          paragraphs = justext.justext(content, justext.get_stoplist("English"))
+                          for paragraph in paragraphs:
+                              if not paragraph.is_boilerplate:
+                                  output_file.write(paragraph.text)
+                                  output_file.write("\n")
+                          output_file.write("\n")
+
+          print(f"📦 bundle {output_filename} generated")
+
+      - name: Upload Documentation Bundle as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.bundles.name }}-bundle
+          path: ${{ matrix.bundles.name }}-bundle.md
