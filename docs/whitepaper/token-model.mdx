@@ -19,117 +19,56 @@ const nPercentFormat = new Intl.NumberFormat('en', {
 
 ## Motivation
 
-OKP4 Token Model aims to:
+The KNOW Token Model aims to:
 
 - secure the network by providing sufficient incentives for validators to participate and delegators to stake their tokens;
 - ensure low-cost participation for Providers and Consumers;
 - incentivize long-term token holding;
 - secure open-source funding & network maintenance.
 
-One issue we've seen with many other Cosmos-based chains is that to secure the network, they define an inflation parameter (usually ranging from 10% to 30%), resulting in token selling pressure and unattractive price action.
+One issue we've seen with many other layer-1 chains is that to secure the network, they define a high inflation parameter resulting in token selling pressure and unattractive price action. While this is not bad *per se* for the holders who stake, the reflective nature of crypto assets is further exagerated to the downside when inflation is high during market downturns.
 
-One way to secure the network while limiting inflation is by providing rewards derived from network activity. Unlike Ethereum's [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), which reduces inflation through fee burning, OKP4 introduces a tax on specific network activity: the workflows. As with VAT (value-added tax), a fraction of the workflow's price can be collected to secure the network while reducing selling pressure and even resulting in long-term $KNOW supply reduction.
+One way to secure the network while limiting inflation is by providing rewards derived from network activity. Unlike Ethereum's [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), which reduces inflation through fee burning, OKP4 introduces a tax on value-creating network activity: the workflows. As with VAT (value-added tax), a fraction of the workflow's price can be collected to secure the network while reducing selling pressure and even resulting in long-term $KNOW supply reduction.
 
-In OKP4, the two main parameters influencing the inflation rate are (1) the bonding ratio and (2) the workflow tax.
+The two opposite forces that influences the KNOW token supply are (1) the bonding ratio which influences the inflation rate, and (2) the workflow tax which burns tokens.
 
-## Bonding ratio
+## Mint
 
-The bonding ratio is the ratio between the number of tokens staked and the number of existing tokens. The higher the bonding ratio, the more tokens are needed to increase a validator's voting power. The staking rewards increase when the bonding ratio decreases to ensure the bonding ratio stays high. This would further incentivize token holders to stake their tokens.
+### Inflation formula
 
-## Workflow tax
+InflationRate = (1/bondedRatio)*inflationCoefficient
 
-OKP4 aims to reduce $KNOW inflation while maintaining a security budget to incentivize validators and delegators. Inflation can be considered as value extracted from existing token holders; another source of value needs to be found.
+### Bonding ratio
 
-The primary chosen source of revenue is workflows. Workflows are initiated and paid by Consumers to retribute Providers.
+The bondedRatio is the ratio between the number of tokens staked and the number of existing tokens. The higher the bonded ratio, the more tokens are needed to increase a validator's voting power, the harder it is for an attacker to reach 1/3 or the network voting power. The inflation rate, and consequently the staking rewards, increase when the bonded ratio decreases. This would further incentivize token holders to stake their tokens.
 
-Tomorrow, thousands of applications will be leveraging OKP4, each generating many workflows. For each workflow, Consumers pay Data providers and Service providers according to the business model defined on-chain. A tax is applied to the workflow's price. The tax percentage is a parameter defined through DAO governance. This tax is collected into a tax pool and redistributed to validators and delegators.
+### Inflation Coefficient
 
-This tax pool compensates for inflation. The higher the tax collected on workflows, the lower the inflation rate. If the daily tax pool exceeds the Staking Reward Target (SRT), then the SRT is distributed from the tax pool, no new tokens are minted, and the remaining tokens are burnt, reducing the token supply.
-Another effect of that tax is to prevent fake volume on datasets and services, making volume a more robust reputation metric.
+The inflationCoefficient parameter directly influences inflation. The higher the parameter, the higher the inflation.
 
-## Staking reward target
+inflationCoefficient = 0.03
 
-The Staking Reward Target (SRT) is defined for an epoch on a daily basis.
-
-Let's define the daily staking reward target, denoted as $srt_d$:
-
-$$
-srt_d = a \cdot i \cdot \left(c - \frac{b}{b_t}\right)
-$$
-
-Where:
-
-- $srt_d$ represents the daily staking reward target.
-- $a$ is a variable representing the $KNOW supply at the end of the epoch (200,000,000 at genesis).
-- $i = 0.02\%$ is the daily inflation coefficient.
-- $c = 2.5$ is the bonding ratio adjustment coefficient.
-- $b \in [0,1]$ is a variable representing the bonding ratio at the end of the epoch.
-- $b_t = 66\%$ is the target bonding ratio.
-
-This formula yields the following daily SRT, without considering the dynamic nature of the $KNOW supply, which may increase or decrease.
+This gives the following InflationRate:
 
 <LinePlot
-  caption="Plot of srtd = a . i . (c - b / bt)"
-  xLegend="b"
-  yLegend="srt (daily)"
-  xFormat={nFloatFormat.format}
+  caption="Plot of yearly inflationRate = (1/bondedRatio)*inflationCoefficient"
+  xLegend="Bonded Ratio"
+  yLegend="Inflation (%)"
+  xFormat={nIntFormat.format}
   yFormat={nIntFormat.format}
-  data={srtdData}
+  data={inflationRateData}
 />
 
-The daily SRT, $srt_d$, is linearly influenced by the bonding ratio and is capped to a maximum and minimum, adjusted according to the token supply.
+The yearly inflation rate described above doesn't take into consideration the burning mechanism from the workflow tax, which offsets the inflation.
 
-Now, let's express the yearly staking reward target as a percentage of the supply, denoted as $srt_y^\%$. This would correspond to the yearly inflation if no tax were collected. It is defined as follows:
+## Burn
 
-$$
-srt_y^\% = \frac{365 \cdot srt_d}{a} = 365 \cdot i \cdot \left(c - \frac{b}{b_t}\right)
-$$
+### Workflow tax
 
-As a yearly percentage of the token supply, this yields the following chart:
+For each workflow, whatever the application, consumers pay providers according to the business model defined on-chain. A tax is applied to the workflow's price. The tax percentage is a parameter defined by governance. When KNOW tokens are used by consumers, the tax is automatically burnt.
 
-<LinePlot
-  caption="Plot of srty = 365 . i . (c - b / bt)"
-  xLegend="b"
-  yLegend="srt as percentage of the supply (yearly)"
-  xFormat={nFloatFormat.format}
-  yFormat={nPercentFormat.format}
-  data={srdyPercentData}
-/>
+This tax compensates for inflation. The higher the tax collected on workflows, the lower the overall inflation rate. Another indirect effect of that tax is to prevent fake volume on datasets and services, making volume a more robust reputation metric.
 
-## Adjusting reduction
+### Other payment tokens
 
-At the end of each epoch, the tax pool, denoted as $pool$, is collected and distributed among validators and delegators. This process impacts the inflation rate for the subsequent epoch.
-
-The quantity of \$KNOW tokens, represented as $V$, to be minted during the epoch is adjusted at the onset of each epoch based on the value of $\Delta$, where:
-
-$$
-\Delta = srt_d - pool
-$$
-
-**1.** If the daily tax pool falls short of the daily staking reward target (i.e., $\Delta > 0$), the adjustment is as follows:
-
-$$
-V=Δ
-$$
-
-In this case, the shortfall $\Delta$ is made up by minting additional \$KNOW tokens.
-
-**2.** If the tax pool is equal to or exceeds the staking reward target (i.e., $\Delta \leq 0$), the adjustment is as follows:
-
-$$
-V=0
-$$
-
-$$
-\lvert \Delta \rvert \text{ is burnt}
-$$
-
-In this case, no new \$KNOW tokens are minted, and the excess amount $\lvert \Delta \rvert$ is removed from the circulating supply, effectively _burnt_. This mechanism helps to control inflation by reducing the total supply of tokens when the tax pool is sufficient or exceeds the staking reward target.
-
-## Other payment tokens
-
-In the future, Consumers will be able to pay for workflows using other payment tokens, such as stablecoins. The Providers will be paid with that payment token, and the tax will still apply. These payment tokens will need to be approved by governance, and a default route and timing mechanism to be swapped into $KNOW will be defined. At the end of the epoch, the tax pool will be composed of $KNOW tokens, even if other tokens are used for payment.
-
-## Other taxes on workflows
-
-Beyond inflation reduction and burning, additional workflow taxes are set to be distributed for specific purposes. One key purpose is public goods funding and providing incentives for builders. These taxes can be given to the community pool and strategic treasury. As with the tax pool for validators and delegators, the DAO governance decides the tax levels at the protocol's level.
+Depending on the business model of the zone and of the invoked resources, consumers can pay for workflows using other cw-20 tokens, such as stablecoins like USDC. While providers will be paid with that payment token, and the same workflow tax will still apply. These payment tokens, instead of being immediately burnt, will be collected into a multisig pool, before getting used to buyback and burn KNOW tokens, using the best route for optimal liquidity. This creates additional buying pressure on the token, while also decreasing the overall supply.

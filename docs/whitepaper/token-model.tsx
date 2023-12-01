@@ -2,40 +2,22 @@ import { ResponsiveLine } from '@nivo/line'
 import React from 'react'
 import { usePrismTheme } from '@docusaurus/theme-common'
 
-const a = 200000000
-const i = 0.0002
-const c = 2.5
-const bt = 0.66
+const inflationCoefficient = 3
 
 const lineColor = 'hsl(331, 70%, 50%)' // TODO: use theme color
 
-function* srtdPoints(): Generator<{ x: number; y: number }> {
+function* inflationPoints(): Generator<{ x: number; y: number }> {
   for (let x = 0; x <= 1; x += 0.05) {
-    const y = a * i * (c - x / bt)
+    const y = (1 / x) * inflationCoefficient
     yield { x, y }
   }
 }
 
-export const srtdData = [
+export const inflationRateData = [
   {
     id: 'r',
     color: lineColor,
-    data: [...srtdPoints()]
-  }
-]
-
-function* srdyPercentPoints(): Generator<{ x: number; y: number }> {
-  for (let x = 0; x <= 1; x += 0.05) {
-    const y = 365 * i * (c - x / bt)
-    yield { x, y }
-  }
-}
-
-export const srdyPercentData = [
-  {
-    id: 'percentage of a',
-    color: lineColor,
-    data: [...srdyPercentPoints()]
+    data: [...inflationPoints()]
   }
 ]
 
