@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-import { srtdData, srdyPercentData, LinePlot } from './token-model'
+import { inflationRateData, srdyPercentData, LinePlot } from './token-model'
 import { ResponsiveLine } from '@nivo/line'
 const nIntFormat = new Intl.NumberFormat('en')
 const nFloatFormat = new Intl.NumberFormat('en', {
@@ -30,28 +30,27 @@ One issue we've seen with many other layer-1 chains is that to secure the networ
 
 One way to secure the network while limiting inflation is by providing rewards derived from network activity. Unlike Ethereum's [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), which reduces inflation through fee burning, OKP4 introduces a tax on value-creating network activity: the workflows. As with VAT (value-added tax), a fraction of the workflow's price can be collected to secure the network while reducing selling pressure and even resulting in long-term $KNOW supply reduction.
 
-The two opposite forces that influences the KNOW token supply are (1) the bonding ratio which influences the inflation rate, and (2) the workflow tax which burns tokens.
+The two opposite forces that influences the KNOW token supply are (1) the bonded ratio ($\rho_{\text{bonded}}$) which influences the inflation rate ($r_{\text{inflation}}$), and (2) the workflow tax which burns tokens.
 
 ## Mint
 
 ### Inflation formula
 
-InflationRate = (1/bondedRatio)*inflationCoefficient
+$$
+r_{\text{inflation}} = \frac{1}{\rho_{\text{bonded}}} \times c_{\text{inflation}}
+$$
 
-### Bonding ratio
+Where:
+- $r_{\text{inflation}}$ is the *inflation rate* of $KNOW, representing the rate at which new tokens are created and introduced into circulation. 
+- $\rho_{\text{bonded}}$ is the *bonded ratio*, i.e. the ratio between the number of tokens staked and the number of existing tokens. The higher the bonded ratio, the more tokens are needed to increase a validator's voting power, the harder it is for an attacker to reach $1 / 3$ or the network voting power. The inflation rate, and consequently the staking rewards, increase when the bonded ratio decreases. This would further incentivize token holders to stake their tokens.
+- $c_{\text{inflation}}$ is the *inflation coefficient*, a constant factor that adjusts the influence of the bonded ratio on the inflation rate. The higher the parameter, the higher the inflation.
 
-The bondedRatio is the ratio between the number of tokens staked and the number of existing tokens. The higher the bonded ratio, the more tokens are needed to increase a validator's voting power, the harder it is for an attacker to reach 1/3 or the network voting power. The inflation rate, and consequently the staking rewards, increase when the bonded ratio decreases. This would further incentivize token holders to stake their tokens.
+### Illustrative scenarios
 
-### Inflation Coefficient
-
-The inflationCoefficient parameter directly influences inflation. The higher the parameter, the higher the inflation.
-
-inflationCoefficient = 0.03
-
-This gives the following InflationRate:
+For example, by setting the inflation coefficient $c_{\text{inflation}}$ to 0.03, the resulting plot can be observed as follows:
 
 <LinePlot
-  caption="Plot of yearly inflationRate = (1/bondedRatio)*inflationCoefficient"
+  caption="Plot of yearly r_inflation = (1 / ρ_bonded) * 0.03"
   xLegend="Bonded Ratio"
   yLegend="Inflation (%)"
   xFormat={nIntFormat.format}
@@ -71,4 +70,4 @@ This tax compensates for inflation. The higher the tax collected on workflows, t
 
 ### Other payment tokens
 
-Depending on the business model of the zone and of the invoked resources, consumers can pay for workflows using other cw-20 tokens, such as stablecoins like USDC. While providers will be paid with that payment token, and the same workflow tax will still apply. These payment tokens, instead of being immediately burnt, will be collected into a multisig pool, before getting used to buyback and burn KNOW tokens, using the best route for optimal liquidity. This creates additional buying pressure on the token, while also decreasing the overall supply.
+Depending on the business model of the zone and of the invoked resources, consumers can pay for workflows using other `cw-20` tokens, such as stablecoins like USDC. While providers will be paid with that payment token, and the same workflow tax will still apply. These payment tokens, instead of being immediately burnt, will be collected into a multisig pool, before getting used to buyback and burn KNOW tokens, using the best route for optimal liquidity. This creates additional buying pressure on the token, while also decreasing the overall supply.

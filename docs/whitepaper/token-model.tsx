@@ -2,13 +2,14 @@ import { ResponsiveLine } from '@nivo/line'
 import React from 'react'
 import { usePrismTheme } from '@docusaurus/theme-common'
 
-const inflationCoefficient = 3
+const c = 3
 
 const lineColor = 'hsl(331, 70%, 50%)' // TODO: use theme color
 
 function* inflationPoints(): Generator<{ x: number; y: number }> {
-  for (let x = 0; x <= 1; x += 0.05) {
-    const y = (1 / x) * inflationCoefficient
+  const step = 0.02
+  for (let x = step; x <= 1; x += step) {
+    const y = (1 / x) * c
     yield { x, y }
   }
 }
@@ -77,7 +78,7 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
                 textStyle: {
                   fill: '#b0413e' // TODO: use theme color
                 },
-                value: bt
+                value: c
               }
             ]}
             enableGridX={false}
