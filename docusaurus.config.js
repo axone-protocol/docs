@@ -105,6 +105,11 @@ async function createconfig() {
               activeBasePath: '/faq'
             },
             {
+              href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta',
+              position: 'left',
+              label: 'OKP4 GPT',
+            },
+            {
               type: 'docsVersionDropdown',
               position: 'right',
               dropdownItemsAfter: [{ to: '/contracts/', label: 'Latest version' }],
