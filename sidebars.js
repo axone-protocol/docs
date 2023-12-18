@@ -98,6 +98,13 @@ const sidebars = {
       id: 'faq/faq',
       label: 'FAQ'
     }
+  ],
+  gpt: [
+    {
+      type: 'link',
+      href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta',
+      label: 'OKP4 GPT'
+    }
   ]
 }
 
