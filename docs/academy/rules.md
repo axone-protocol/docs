@@ -16,7 +16,7 @@ To handle this, the OKP4 protocol ensures a secure and reliable way to interpret
 ![rules-1](/img/content/academy/rules-1.webp)
 
 1. An Identity (human or bot) wants to interact with a Zone
-2. The Zone asks to the dedicated smart contract if its possible given the context and all the involved rules
+2. The Zone asks the dedicated smart contract if it's possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on. Depending on the answer, the execution process could start.
 
