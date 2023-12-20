@@ -222,7 +222,11 @@ async function createconfig() {
                 {
                   label: 'Telegram',
                   href: 'https://t.me/okp4network'
-                }
+                },
+                {
+                  label: 'Zealy Program',
+                  href: 'https://zealy.io/c/okp4/questboard'
+                },
               ]
             },
             {
@@ -241,7 +245,20 @@ async function createconfig() {
                   href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta'
                 }
               ]
-            }
+            },
+            {
+              title: 'Tools',
+              items: [
+                {
+                  label: 'Blockchain Explorer',
+                  href: 'https://explore.okp4.network'
+                },
+                {
+                  label: 'Testnet Faucet',
+                  href: 'https://faucet.okp4.network'
+                },
+              ]
+            },
           ],
           copyright: `Copyright © ${new Date().getFullYear()} OKP4`
         },
