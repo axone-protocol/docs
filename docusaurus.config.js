@@ -251,7 +251,7 @@ async function createconfig() {
               items: [
                 {
                   label: 'Blockchain Explorer',
-                  href: 'https://explore.okp4.network'
+                  href: 'https://explore.okp4.network/OKP4%20testnet'
                 },
                 {
                   label: 'Testnet Faucet',
