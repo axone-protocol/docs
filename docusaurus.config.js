@@ -1,7 +1,25 @@
-// @ts-check
-
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+
+function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage = 1 } = {}) {
+  return async function transformer(tree, vfile) {
+    const readingTime = require('reading-time')
+    const { u } = await import('unist-builder')
+    const visit = require('unist-util-visit')
+
+    let imageCount = 0
+    visit(tree, 'jsx', node => {
+      if (node.value.includes('img')) {
+        imageCount++
+      }
+    })
+
+    const baseReadingTime = readingTime(vfile.contents).minutes
+    const adjustedReadingTime = baseReadingTime + imageCount * additionalTimePerImage
+
+    tree.children.unshift(u('export', { value: `const ${variable} = '${adjustedReadingTime}';` }))
+  }
+}
 
 async function createconfig() {
   const { remarkKroki } = await import('remark-kroki')
@@ -34,6 +52,7 @@ async function createconfig() {
             sidebarPath: require.resolve('./sidebars.js'),
             editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
             remarkPlugins: [
+              readingTimeMDXPlugin,
               require('remark-math'),
               require('mdx-mermaid'),
               [
@@ -107,7 +126,7 @@ async function createconfig() {
             {
               href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta',
               position: 'left',
-              label: 'OKP4 GPT',
+              label: 'OKP4 GPT'
             },
             {
               type: 'docsVersionDropdown',

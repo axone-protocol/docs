@@ -4,3 +4,4 @@ no-inline-html: false
 no-emphasis-as-header: false
 no-duplicate-header: false
 ol-prefix: false
+no-emphasis-as-heading: false
