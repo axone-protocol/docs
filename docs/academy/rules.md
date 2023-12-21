@@ -4,7 +4,7 @@ sidebar_class_name: hidden
 
 # Define any rule
 
-*Reading time: 14 min*
+<i>Reading time: {readingTime} min</i>
 
 ## Rules: what can be defined?
 
