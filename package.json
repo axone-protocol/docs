@@ -45,7 +45,7 @@
     "remark-math": "3",
     "sass": "^1.68.0",
     "unist-builder": "^4.0.0",
-    "unist-util-visit": "^2.0.0"
+    "unist-util-visit": "^5.0.0"
   },
   "browserslist": {
     "production": [
