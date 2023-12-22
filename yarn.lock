@@ -1605,7 +1605,7 @@
     vfile "^6.0.1"
     webpack "^5.88.1"
 
-"@docusaurus/module-type-aliases@3.0.1":
+"@docusaurus/module-type-aliases@3.0.1", "@docusaurus/module-type-aliases@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.0.1.tgz#d45990fe377d7ffaa68841cf89401188a5d65293"
   integrity sha512-DEHpeqUDsLynl3AhQQiO7AbC7/z/lBra34jTcdYuvp9eGm01pfH1wTVq8YqWZq6Jyx0BgcVl/VJqtE9StRd9Ag==
