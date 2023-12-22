@@ -41,7 +41,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "reading-time": "^2.0.0-1",
-    "rehype-katex": "5",
+    "rehype-katex": "7",
     "remark-math": "3",
     "sass": "^1.68.0",
     "unist-builder": "^4.0.0",
