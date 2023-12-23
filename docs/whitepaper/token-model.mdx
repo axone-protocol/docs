@@ -4,12 +4,12 @@ sidebar_position: 5
 
 import { inflationRateData, srdyPercentData, LinePlot } from './token-model'
 import { ResponsiveLine } from '@nivo/line'
-const nIntFormat = new Intl.NumberFormat('en')
-const nFloatFormat = new Intl.NumberFormat('en', {
+export const nIntFormat = new Intl.NumberFormat('en')
+export const nFloatFormat = new Intl.NumberFormat('en', {
   minimumFractionDigits: 2,
   maximumFractionDigits: 2
 })
-const nPercentFormat = new Intl.NumberFormat('en', {
+export const nPercentFormat = new Intl.NumberFormat('en', {
   style: 'percent',
   minimumFractionDigits: 2,
   maximumFractionDigits: 2

@@ -24,7 +24,7 @@ Keplr is a wallet, a small application that allows you to create, protect and co
 
 Keplr allows you to store your key locally on your computer or to use a physical wallet like Ledger or Trezor.
 
-If it's not already done you should get Keplr: <https://www.keplr.app/>
+If it's not already done you should get Keplr: [https://www.keplr.app/](https://www.keplr.app/)
 You can use either of the following solutions:
 
 - [Keplr Extension](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap) for [Google chrome](https://www.google.com/chrome/index.html) or [Brave](https://brave.com/) browsers.
@@ -56,7 +56,7 @@ You should see something like this:
 
 ![keplr account](/img/content/nft-tutorial/keplr-account.webp)
 
-You can then go to <https://app.stargaze.zone>
+You can then go to [https://app.stargaze.zone](https://app.stargaze.zone)
 
 - Click on `Connect Wallet`
 - Once connected click on the user icon: ![stargaze user](/img/content/nft-tutorial/stargaze-account.webp)
@@ -91,7 +91,7 @@ Watch out, the generated mnemonic and only it can give control on your wallet. M
 ![Keplr Wallet](/img/content/nft-tutorial/stargaze-wallet.webp)
 
 - In Keplr, switch back to the temporary OKP4 wallet by clicking on the icon on the top right.
-- Go back to your NFT page: <https://app.stargaze.zone/profile>
+- Go back to your NFT page: [https://app.stargaze.zone/profile](https://app.stargaze.zone/profile)
 - Select your NFT
 - Click on `Transfer`
 - Enter your home address starting with "stars1..." that you have copied

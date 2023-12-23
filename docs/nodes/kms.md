@@ -1,6 +1,6 @@
-<!--
-order: 2
--->
+---
+sidebar_position: 8
+---
 
 # Tendermint KMS
 
