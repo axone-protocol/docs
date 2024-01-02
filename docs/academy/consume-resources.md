@@ -22,18 +22,15 @@ This can be formalized very simply, with a set of resources as input and a set o
 
 ![consume-resources-1](/img/content/academy/consume-resources-1.webp)
 
-
 Once we have defined the elementary processing unit, we can combine them together to form a more complex processing structure called a Workflow.
 A workflow is a plan that outlines a series of activities, where some activities depend on the output of others. These interdependencies form a Directed Acyclic Graph (DAG) structure, ensuring that the workflow progresses without circular references or loops.
 Let’s consider an example to illustrate this concept:
 
 ![consume-resources-2](/img/content/academy/consume-resources-2.webp)
 
-
 In the example above, we have a simple use case which involves three datasets (D1, D2, D3) that are used to produce the final knowledge (D7) after a series of transformations (S1, S2, S3).
 
 In essence, workflows in OKP4 represent the practical application of the shared digital resources within its ecosystem, facilitating various tasks and operations by leveraging the power of decentralized data and resource sharing.
-
 
 ## The life of a workflow from initiation to completion
 
@@ -51,14 +48,12 @@ Here's a detailed breakdown:
 
 5. **Flexibility and Adaptation**: Workflows in OKP4 are designed to be flexible, allowing for adaptation as per changing needs or rules within the Zones. This ensures that workflows can evolve in response to new opportunities or requirements.
 
-
 ### The hidden service
 
 An important concept to understand is that interacting with any digital resource requires a service. In the previous examples, we mentioned a specific digital resource being presented as input to a service, but the digital resource cannot exist without the service that makes it available within the workflow. This is typically the role of Storage Services, which provides access to digital resources under specific terms and conditions.
 In the following example, the dataset D1 is accessed via the service S1, and the processing result is generated using S2, ultimately produced on S3.
 
 ![consume-resources-3](/img/content/academy/consume-resources-3.webp)
-
 
 A workflow is merely a sequence of activities, taking inputs and producing outputs. So it can be conceptualized as a Service capable of performing specific functions, just like traditional services. This paradigm shift enables Workflows to be invoked in the protocol as a Service and to join the anything-as-a-service family.
 
@@ -91,6 +86,7 @@ Within the ecosystem, there can be numerous instances of different Orchestration
 The role and responsibilities of an Orchestration Service can be categorized into three main areas: control, integration and security.
 
 **Control**: By control, we mean the mechanisms by which the work sequence is orchestrated. This includes:
+
 - Sequence Management: The Orchestration Service determines the sequence in which tasks and activities are executed within a workflow, ensuring that they are carried out in the correct order.
 - Flow Control: It manages the routing of tasks based on predefined conditions or rules, determining which activities should be executed next based on the outcomes of previous steps.
 - Exception Handling: The Orchestration Service handles exceptions or errors that may occur during the execution of tasks, allowing for appropriate actions to be taken, such as error logging, notifications, or rerouting.
@@ -98,13 +94,9 @@ The role and responsibilities of an Orchestration Service can be categorized int
 **Integration**: By Integration, we mean that the Orchestration Service enables that data is where it is needed when it is needed in the form in which it is needed. The Orchestration Service facilitates the integration of data from various sources and systems, ensuring that the required data is available to execute tasks and activities within the workflow.
 
 **Security**:
+
 - Access control: The Orchestration Service applies Access Control policies defined in the Governance rules specified in the blockchain.
 - Authentication and authorization: The Orchestration Service manages the authentication and authorization required for interactions with orchestrated resources.
 - Audit trail: The Orchestration Service maintains an Audit Trail by recording all execution steps in the blockchain. Specifically, it records information in the ontology designed for this purpose on-chain. This provides a complete and immutable traceability of actions performed within the workflow, offering enhanced transparency and control.
 
 ## Safety mechanisms - To be completed
-
-
-
-
-
