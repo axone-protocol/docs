@@ -172,6 +172,12 @@ async function createconfig() {
         },
         footer: {
           style: 'dark',
+          logo: {
+            alt: 'OKP4 Logo',
+            src: 'img/logo-white-horizontal.webp',
+            href: 'https://okp4.network',
+            width: 160,
+          },
           links: [
             {
               title: 'Docs',
@@ -179,6 +185,22 @@ async function createconfig() {
                 {
                   label: 'Whitepaper',
                   to: '/whitepaper/abstract'
+                },
+                {
+                  label: 'Nodes & Validators',
+                  to: '/nodes/introduction'
+                },
+                {
+                  label: 'Technical documentation',
+                  to: '/technical-documentation/overview'
+                },
+                {
+                  label: 'Tutorials',
+                  to: '/tutorials/overview'
+                },
+                {
+                  label: 'FAQ',
+                  to: '/faq'
                 }
               ]
             },
@@ -196,7 +218,15 @@ async function createconfig() {
                 {
                   label: 'GitHub',
                   href: 'https://github.com/okp4'
-                }
+                },
+                {
+                  label: 'Telegram',
+                  href: 'https://t.me/okp4network'
+                },
+                {
+                  label: 'Zealy Program',
+                  href: 'https://zealy.io/c/okp4/questboard'
+                },
               ]
             },
             {
@@ -209,9 +239,26 @@ async function createconfig() {
                 {
                   label: 'OKP4.network',
                   href: 'https://okp4.network'
+                },
+                {
+                  label: 'OKP4 GPT',
+                  href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta'
                 }
               ]
-            }
+            },
+            {
+              title: 'Tools',
+              items: [
+                {
+                  label: 'Blockchain Explorer',
+                  href: 'https://explore.okp4.network/OKP4%20testnet'
+                },
+                {
+                  label: 'Testnet Faucet',
+                  href: 'https://faucet.okp4.network'
+                },
+              ]
+            },
           ],
           copyright: `Copyright © ${new Date().getFullYear()} OKP4`
         },
