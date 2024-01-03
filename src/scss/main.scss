@@ -146,6 +146,21 @@ html {
   .footer {
     background: var(--ifm-footer-background-color-main);
 
+    .footer__col {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      @media (min-width: 320px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      @media (min-width: 768px) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+
     .footer__link-item {
       color: #ced2d9;
 
