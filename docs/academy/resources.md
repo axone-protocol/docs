@@ -24,7 +24,7 @@ These Digital Resources can be categorized into two subtypes:
 
 In contrast to their bounded counterparts, **unbounded digital resources** have no boundaries defined in terms of time. This data may have originated in the past, persisted into the present, and is expected to continue arriving in the future. This absence of predefined boundaries implies that unbounded resources do not have a set size and are characterized by their continuous and potentially infinite nature. Examples of unbounded resources include streaming data and real-time data: sensor data from IoT devices, social media feeds, or stock market tickers.
 
-![resources-2](/img/content/academy/resources-2.webp)
+![resources-1](/img/content/academy/resources-1.webp)
 
 ## Digital Service
 
