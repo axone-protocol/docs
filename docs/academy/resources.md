@@ -18,7 +18,7 @@ Digital Resources serve as the raw material from which insights and new knowledg
 These Digital Resources can be categorized into two subtypes:
 
 - <u>Bounded digital resources</u>
-- <u>Unbonded digital resources</u>
+- <u>Unbounded digital resources</u>
 
 **Bounded digital resources** have a finite size and defined boundaries in terms of time. They are often accessed and analyzed as complete entities, commonly referred to as datasets. These datasets are further classify into structured data, such as databases or spreadsheets, and unstructured data, including text documents, images, videos, and more.
 
