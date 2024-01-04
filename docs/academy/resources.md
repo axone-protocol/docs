@@ -24,7 +24,7 @@ These Digital Resources can be categorized into two subtypes:
 
 In contrast to their bounded counterparts, **unbounded digital resources** have no boundaries defined in terms of time. This data may have originated in the past, persisted into the present, and is expected to continue arriving in the future. This absence of predefined boundaries implies that unbounded resources do not have a set size and are characterized by their continuous and potentially infinite nature. Examples of unbounded resources include streaming data and real-time data: sensor data from IoT devices, social media feeds, or stock market tickers.
 
-![protocol_concepts_01](/img/content/academy/protocol_concepts_01.webp)
+![resources-2](/img/content/academy/resources-2.webp)
 
 ## Digital Service
 
@@ -48,7 +48,7 @@ Some examples of Infrastructure Services:
 Managing intricate processes involved in transforming digital resources, these services play a crucial role in enabling the generation of fresh knowledge.
 Any kind of algorithms and models can be considered as dedicated solutions to unique needs and objectives of the tasks at hand: from simple logical rules to sophisticated AI-driven algorithms, machine learning models, data processing scripts, image recognition models, predictive analytics, natural language processing (NLP) models etc…
 
-![protocol_concepts_02](/img/content/academy/protocol_concepts_02.webp)
+![resources-2](/img/content/academy/resources-2.webp)
 
 ## Verifiable Claims: how it's referenced in the protocol
 
