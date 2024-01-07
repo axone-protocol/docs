@@ -1,15 +1,15 @@
-<!--
-order: 3
--->
+---
+sidebar_position: 9
+---
 
 # Tendermint KMS + Ledger
 
-Set up Tendermint KMS with the Tendermint Ledger app {synopsis}
+Set up Tendermint KMS with the Tendermint Ledger app \{synopsis\}
 
 ## Pre-requisites
 
 - [Ledger device](https://shop.ledger.com/)
-- [Install Ledger Live](https://www.ledger.com/ledger-live) {prereq}
+- [Install Ledger Live](https://www.ledger.com/ledger-live) \{prereq\}
 
 ## Checklist
 
