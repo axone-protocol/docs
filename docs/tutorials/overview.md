@@ -13,6 +13,7 @@ sidebar_position: 1
 * [Explorer & smart contracts](./explorer-sc)
 * [Manage rules with Prolog](./prolog-1)
 * [Leverage the ontology](./ontology-1)
+* [Build a Web App](./webapp-1)
 
 ## Nono's tutorials
 
