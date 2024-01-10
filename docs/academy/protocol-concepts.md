@@ -17,7 +17,7 @@ This lack of trust in digital resource sharing has hindered the growth and expan
 
 ### Resource Sovereignty
 
-The advancement in OKP4 enables providers to share resources while retaining their sovereignty significantly. The protocol assigns a Decentralized Identity (DID) to every resource listed, which is stored on-chain, providing a robust foundation for a Self-Sovereign Identity (SSI) model. This model relies on assigning a DID to each on-chain registered resource, ensuring blockchain technology's security and immutability. Additionally, the SSI model facilitates control over shared information, permissions, and authorization, enabling individuals to manage their digital resources securely within the network. 
+The advancement in OKP4 enables providers to share resources while retaining their sovereignty significantly. The protocol assigns a Decentralized Identity (DID) to every resource listed, which is stored on-chain, providing a robust foundation for a Self-Sovereign Identity (SSI) model. This model relies on assigning a DID to each on-chain registered resource, ensuring blockchain technology's security and immutability. Additionally, the SSI model facilitates control over shared information, permissions, and authorization, enabling individuals to manage their digital resources securely within the network.
 
 The OKP4 project integrates an on-chain Prolog module that surpasses the mere decentralization of resource identities, offering a sophisticated mechanism to handle access rules and permissions, thereby enhancing the security and efficiency of resource sharing within the network. Integrating the Prolog module with the OKP4 protocol allows for better access rules and permissions management, improving the network's overall security and efficiency in sharing resources.
 
@@ -43,6 +43,7 @@ The need for a decentralized infrastructure in OKP4 arises from addressing cruci
 ### Decentralized Orchestration
 
 As an decentralized orchestration layer for off-chain resources, OKP4 must ensure two functionality in a decentralized manner :
+
 - Interpret the rules to ensure the law enforcement
 - Execute workflow and orchestrate the resources according to the rules
 
@@ -71,7 +72,6 @@ Although resources and services are stored off-chain, they are referenced within
 Connecting user requests with resource consent rules and zone governance rules to ensure law enforcement and solve intricate logical problems requires the use of a robust logical problem-solving capability language such as Prolog. However, this also necessitates its direct integration on-chain. Prolog is integrated into an on-chain module, serving as a trustworthy interpreter of rules. Each zone, with its established rules, can leverage Prolog to determine the permissibility of a user's actions. This decentralized interpretation ensures that governance and consent rules are consistently and reliably applied across the network.
 In this way, OKP4 ensures a reliable and decentralized interpretation before the execution.
 
-
 **Execution of workflows**
 
 Execution involves coordinating resources and carrying out the workflow to generate knowledge. The OKP4 Protocol handles the workflow execution in a decentralized manner, posing a considerable challenge due to the intricate connections, interactions, and dependencies in both on-chain and off-chain environments. Given the blockchain's limited communication capabilities with the external environment, it is unable to manage orchestration on its own.
@@ -86,7 +86,6 @@ In our example, when the user is authorized to interact with a Zone, an off-chai
 
 Nb : As a service, workflows can invoke other workflows as sub-services, forming a multi-level hierarchy to facilitate the composition and reuse of more complex processes. This workflow could invoke one or several orchestration services to perform the entire sequence.
 
-
 **Reliability on the decentralized process**
 
 The workflow engines serve as Orchestrator services to execute the on-chain instructions of the protocol. Thus, we have a method to decentralize the execution, but it is essential to establish the connection between the user's on-chain request and its off-chain execution by the orchestration service.
@@ -98,7 +97,6 @@ When an identity seeks to initiate a workflow within a Zone, as exemplified, a s
 1. This agreement verifies the alignment of governance rules for the Zone and the digital resources involved in the execution, also confirming the conformity of all rules within the entire execution context. This context encompasses the resources, the Zone, and the user who initiated the workflow.
 2. Pactum oversees the entire execution flow of all resources.
 3. Finally, the Pactum smart contract applies retribution rules, ensuring the distribution of rewards or compensation in accordance with defined retribution rules. In practical terms, Pactum functions as a decentralized regulator, coordinating the orchestration of digital resources and managing instances of error.
-
 
 ## INTEROPERABILITY
 
@@ -116,13 +114,11 @@ As an orchestration layer for off-chain resources, OKP4 enables users to connect
 
 OKP4 introduces a groundbreaking approach by combining semantic and governance aspects, leveraging an ontology-based framework. This dual focus enables transparent communication and precise rule enforcement within the digital ecosystem.
 
-
 **Ontology: Establishing a Common Language**
 
 The ontology in OKP4, stored in the Cognitarium smart contract, serves as a foundational element. It defines a shared language that transcends the technical details of individual digital resources such as zones, datasets, and services. This shared semantic model is crucial for fostering a comprehensive understanding among diverse resources.
 
 When an entity, be it a zone, dataset, or service, is incorporated into the Dataverse, its attributes and relationships are meticulously described using on-chain metadata within the ontology. This ensures that each resource comprehends the context in which it operates. The ontology doesn't merely connect resources; it creates a unified vision, paving the way for transparent interactions and informed collaborations.
-
 
 **Governance Rules: Codified and On-Chain**
 
@@ -130,13 +126,11 @@ Crucially, the ontology in OKP4 goes beyond a mere declaration of resources; it 
 
 Law Stone acts as a repository for governance rules, providing a clear reference for the conditions that each resource must adhere to. By associating the ontology with governance rules, OKP4 ensures that the entire system operates transparently and complies with established standards. This dual-layered approach enhances the clarity of resource management and contributes to a robust and standardized digital ecosystem.
 
-
 **Interplay between Ontology and Governance: On-Chain Harmony**
 
 In practical terms, the ontology and governance rules work in harmony on-chain. The ontology, residing in Cognitarium, references governance rules in Law Stone. This interplay creates a comprehensive on-chain representation, facilitating a rich, context-aware environment for seamless resource interactions.
 
 By detailing this distinction, the enhanced content aligns with the semantic and governance aspects, offering a clearer understanding of the role each plays within OKP4.
-
 
 ### IBC-enabled
 
@@ -150,18 +144,15 @@ IBC operates through two layers: the transport layer and the application layer. 
 
 An example of relevant applications that OKP4 could leverage is Interchain Accounts, significantly enhancing composability within the Interchain by improving the user experience. Thanks to Interchain Accounts, some relevant IBC-enabled blockchains like [Akash](https://akash.network/), [Jackal](https://www.jackalprotocol.com/), [Cheqd](https://cheqd.io/) or even the entire EVM ecosystem can share their strengths and leverage their functionalities.
 
-
 ## GOVERNANCE
 
 ![rules-2](/img/content/academy/rules-2.webp)
 
 In the OKP4 ecosystem, governance takes the form of an essential triptych, extending to the governance of the protocol, resources and zones. This governance trinity represents an integrated and decentralized mechanism that defines how participants interact, share, and coordinate digital resources within the network. Each level of governance contributes to establishing a balance between protocol stability, customization of consent rules, and coordination within different zones. Let's explore in detail how these forms of governance translate and why they are fundamental to OKP4's mission.
 
-
 ### Protocol Governance
 
 Protocol governance in OKP4 is built on the Cosmos stack's foundations, allowing participants to propose and vote on fundamental protocol changes. This decentralized approach ensures continuous scalability and adaptation to technological advancements. It results in transparent, consensus-based updates, strengthening participants' trust in the stability and future of the protocol.
-
 
 ### Resource Governance
 
@@ -172,7 +163,6 @@ Here are some examples of rules that providers can customize:
 - The economic model.
 - Access modalities for users and service providers.
 
-
 ### Zone Governance
 
 Zone governance, also recorded and executed on-chain, offers exceptional flexibility. Each zone is defined by specific governance rules, enabling complete customization of sharing conditions. This customization fosters collaboration between different resources and zones, making it possible to create specific rules for each community or business domain.
@@ -182,18 +172,17 @@ Furthermore, Zones are not just entities governing interactions between resource
 It is important to understand that each Zone will define rules to respond most effectively to its objective. Some zones will organize under a more democratic vision (Coreum/DAO) to create a virtuous economy within the Zone. Others will have a more autocratic vision, wishing to retain more rights over the governance of the Zone.
 
 Here are some examples of rules that can be defined within a zone:
+
 - Types of resources accepted/rejected.
 - How zone rules can be modified.
 - Access modalities for users.
 - Procedures for modifying zone rules
-
 
 ### Why Distinguish Between Resources and Zones?
 
 The distinction between resources and zones is crucial, particularly regarding governance. By allowing zones to redefine their rules continually, OKP4 offers exceptional flexibility in how resources can be used and shared. This encourages more flexible governance, enabling participants to actively shape how resources are coordinated and used within each zone while promoting adaptability to the community's evolving needs and the digital environment. Ultimately, this dynamic approach contributes to creating an ecosystem where governance is agile, transparent, and aligned with the values and goals of each specific zone.
 
 Note, as seen earlier, the importance of describing a digital resource through its metadata. Considering its specific characteristics, this approach facilitates its integration within zones more efficiently and appropriately, considering its specific characteristics.
-
 
 ## SCALABILITY
 
