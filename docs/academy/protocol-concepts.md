@@ -159,6 +159,7 @@ Protocol governance in OKP4 is built on the Cosmos stack's foundations, allowing
 At the resource level, governance is expressed through consent rules, strictly recorded and enforced on-chain. Resource providers define these rules, determining how their data or services can be used. This approach gives resource providers precise control over how their assets are shared, reinforcing trust and encouraging open adoption of digital resources.
 
 Here are some examples of rules that providers can customize:
+
 - Who can access the resource
 - The economic model.
 - Access modalities for users and service providers.
@@ -209,4 +210,3 @@ Underpinning this structure, the Cosmos technology with Tendermint Core and the 
 Furthermore, integrating the Inter-Blockchain Communication (IBC) module paves the way for horizontal scalability by enabling native communication between different blockchains. This functionality is crucial for focusing on developing specific applications while benefiting from the advantages and specificities of other systems.
 
 OKP4, with its unique architecture, modular approach, and strategic use of blockchain technology, positions itself as a robust solution to address the scalability challenges imposed by the ever-evolving digital world. Its decentralized orchestration approach for off-chain resources, combined with the benefits of Zones and the Dataverse, along with the underlying infrastructure based on Cosmos and IBC, creates an ecosystem where the exponential growth of data and digital resources can be managed effectively, flexibly, and scalably.
-
