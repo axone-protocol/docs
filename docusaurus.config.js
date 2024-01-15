@@ -100,7 +100,8 @@ const config = {
             ]
           ],
           rehypePlugins: [rehypeKatex],
-          routeBasePath: '/'
+          routeBasePath: '/',
+          showLastUpdateTime: true
         },
         blog: false,
         theme: {
@@ -208,11 +209,12 @@ const config = {
       footer: {
         style: 'dark',
         logo: {
-            alt: 'OKP4 Logo',
-            src: 'img/logo-white-horizontal.webp',
-            href: 'https://okp4.network',
-            width: 160,
-          },links: [
+          alt: 'OKP4 Logo',
+          src: 'img/logo-white-horizontal.webp',
+          href: 'https://okp4.network',
+          width: 160
+        },
+        links: [
           {
             title: 'Docs',
             items: [
@@ -220,22 +222,22 @@ const config = {
                 label: 'Whitepaper',
                 to: '/whitepaper/abstract'
               },
-                {
-                  label: 'Nodes & Validators',
-                  to: '/nodes/introduction'
-                },
-                {
-                  label: 'Technical documentation',
-                  to: '/technical-documentation/overview'
-                },
-                {
-                  label: 'Tutorials',
-                  to: '/tutorials/overview'
-                },
-                {
-                  label: 'FAQ',
-                  to: '/faq'
-                }
+              {
+                label: 'Nodes & Validators',
+                to: '/nodes/introduction'
+              },
+              {
+                label: 'Technical documentation',
+                to: '/technical-documentation/overview'
+              },
+              {
+                label: 'Tutorials',
+                to: '/tutorials/overview'
+              },
+              {
+                label: 'FAQ',
+                to: '/faq'
+              }
             ]
           },
           {
@@ -251,15 +253,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/okp4'},
-                {
-                  label: 'Telegram',
-                  href: 'https://t.me/okp4network'
-                },
-                {
-                  label: 'Zealy Program',
-                  href: 'https://zealy.io/c/okp4/questboard'
+                href: 'https://github.com/okp4'
               },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/okp4network'
+              },
+              {
+                label: 'Zealy Program',
+                href: 'https://zealy.io/c/okp4/questboard'
+              }
             ]
           },
           {
@@ -271,26 +274,27 @@ const config = {
               },
               {
                 label: 'OKP4.network',
-                href: 'https://okp4.network'},
-                {
-                  label: 'OKP4 GPT',
-                  href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta'
-                }
-              ]
-            },
-            {
-              title: 'Tools',
-              items: [
-                {
-                  label: 'Blockchain Explorer',
-                  href: 'https://explore.okp4.network/OKP4%20testnet'
-                },
-                {
-                  label: 'Testnet Faucet',
-                  href: 'https://faucet.okp4.network'
+                href: 'https://okp4.network'
               },
+              {
+                label: 'OKP4 GPT',
+                href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta'
+              }
             ]
           },
+          {
+            title: 'Tools',
+            items: [
+              {
+                label: 'Blockchain Explorer',
+                href: 'https://explore.okp4.network/OKP4%20testnet'
+              },
+              {
+                label: 'Testnet Faucet',
+                href: 'https://faucet.okp4.network'
+              }
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} OKP4`
       },
