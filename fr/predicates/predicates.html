@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="/js/matomo.js"></script>
 <script src="/js/redirect.js"></script><link rel="stylesheet" href="/fr/assets/css/styles.ea72b0db.css">
-<script src="/fr/assets/js/runtime~main.00f3778f.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.96eb6828.js" defer="defer"></script>
 <script src="/fr/assets/js/main.58b022ad.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -57,7 +57,7 @@
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">bech32_address(-Address, +Bech32)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">bech32_address(+Address, -Bech32)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">bech32_address(+Address, +Bech32)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>where:</p>
 <ul>
-<li>Address is a pair of the HRP (Human-Readable Part) which holds the address prefix and a list of integers ranging from 0 to 255 that represent the base64 encoded bech32 address string.</li>
+<li>Address is a pair of the HRP (Human-Readable Part) which holds the address prefix and a list of numbers ranging from 0 to 255 that represent the base64 encoded bech32 address string.</li>
 <li>Bech32 is an Atom or string representing the bech32 encoded string address</li>
 </ul>
 <p>Examples:</p>
@@ -105,6 +105,7 @@
 <p>For Format, the supported encodings are:</p>
 <ul>
 <li>utf8 (default), the UTF-8 encoding represented as an atom.</li>
+<li>text, the plain text encoding represented as an atom.</li>
 <li>hex, the hexadecimal encoding represented as an atom.</li>
 <li>octet, the raw byte encoding depicted as a list of integers ranging from 0 to 255.</li>
 </ul>
@@ -151,6 +152,8 @@
 <ul>
 <li>hex (default), the hexadecimal encoding represented as an atom.</li>
 <li>octet, the plain byte encoding depicted as a list of integers ranging from 0 to 255.</li>
+<li>text, the plain text encoding represented as an atom.</li>
+<li>utf8 (default), the UTF-8 encoding represented as an atom.</li>
 </ul>
 <p>For Alg, the supported algorithms are:</p>
 <ul>
@@ -174,6 +177,8 @@
 <ul>
 <li>hex (default), the hexadecimal encoding represented as an atom.</li>
 <li>octet, the plain byte encoding depicted as a list of integers ranging from 0 to 255.</li>
+<li>text, the plain text encoding represented as an atom.</li>
+<li>utf8 (default), the UTF-8 encoding represented as an atom.</li>
 </ul>
 <p>For Alg, the supported algorithms are:</p>
 <ul>
@@ -213,10 +218,10 @@
 <li>SourceSink is an atom representing the source or sink of the stream. The atom typically represents a resource that can be opened, such as a URI. The URI scheme determines the type of resource that is opened.</li>
 <li>Mode is an atom representing the mode of the stream (read, write, append).</li>
 <li>Stream is the stream to be opened.</li>
-<li>Options is a list of options.</li>
+<li>Options is a list of options. No options are currently defined, so the list should be empty.</li>
 </ul>
 <p>Examples:</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># open/4 a stream from a cosmwasm query.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># The Stream should be read as a string with a read_string/3 predicate, and then closed with the close/1 predicate.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- open(&#x27;cosmwasm:okp4-objectarium:okp412kgx?query=%7B%22object_data%22%3A%7B%...4dd539e3%22%7D%7D&#x27;, &#x27;read&#x27;, Stream)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># open/4 a stream from a cosmwasm query.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># The Stream should be read as a string with a read_string/3 predicate, and then closed with the close/1 predicate.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- open(&#x27;cosmwasm:okp4-objectarium:okp412kgx?query=%7B%22object_data%22%3A%7B%...4dd539e3%22%7D%7D&#x27;, &#x27;read&#x27;, Stream, [])</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="read_string3">read_string/3<a href="#read_string3" class="hash-link" aria-label="Lien direct vers read_string/3" title="Lien direct vers read_string/3">​</a></h2>
 <p>read_string/3 is a predicate that reads characters from the provided Stream and unifies them with String. Users can optionally specify a maximum length for reading; if the stream reaches this length, the reading stops. If Length remains unbound, the entire Stream is read, and upon completion, Length is unified with the count of characters read.</p>
 <p>The signature is as follows:</p>
@@ -249,7 +254,7 @@
 <li>Bytes is the list of numbers between 0 and 255 that represent the sequence of bytes.</li>
 <li>Encoding is the encoding to use for the conversion.</li>
 </ul>
-<p>Encoding can be one of the following: - &#x27;text&#x27; considers the string as a sequence of Unicode characters. - &#x27;octet&#x27; considers the string as a sequence of bytes. - &#x27;utf8&#x27; considers the string as a sequence of UTF-8 characters. - &#x27;&lt;encoding&gt;&#x27; considers the string as a sequence of characters in the given encoding.</p>
+<p>Encoding can be one of the following: - &#x27;text&#x27; considers the string as a sequence of Unicode characters. - &#x27;octet&#x27; considers the string as a sequence of bytes. - &#x27;&lt;encoding&gt;&#x27; considers the string as a sequence of characters in the given encoding.</p>
 <p>At least one of String or Bytes must be instantiated.</p>
 <p>Examples:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Convert a string to a list of bytes.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- string_bytes(&#x27;Hello World&#x27;, Bytes, octet).</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Convert a list of bytes to a string.</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- string_bytes(String, [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100], octet).</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
