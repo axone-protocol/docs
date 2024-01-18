@@ -9,7 +9,7 @@ sidebar_class_name: hidden
 This section will provide an in-depth analysis of the core principles that form the protocol's foundation and how it presents an innovative solution to sharing digital resources by leveraging these principles. It's important to note that these concepts are often intertwined and mutually reliant to ensure the equilibrium of the protocol.
 We will also begin to address some essential technical components, such as smart contracts. We will delve deeper into these aspects in the second part of the academy.
 
-## SOVEREIGNTY
+## Sovereignty
 
 In digital resource sharing, sovereignty pertains to an entity's ability to exercise autonomous control over its digital resources and infrastructures. In the present digital landscape, despite the widespread proliferation of digital assets, they often remain confined within silos due to a lack of confidence and trust among stakeholders. Providers, in particular, are often hesitant to share their digital assets fully, apprehensive of losing control or exposing them to unauthorized access.
 
@@ -26,7 +26,7 @@ The OKP4 project integrates an on-chain Prolog module that surpasses the mere de
 OKP4's decentralized architecture, focused on orchestrating resources through workflows, facilitates the generation of results based on these resources and their consent rules. Thus, a dataset can be used without disclosing specific details to the consumer. The emphasis is on access to results, ensuring that resource utilization strictly aligns with what is agreed upon by rules, validated by consensus, and compliant with the provider's wishes. This reinforces the sovereignty of participants, creating a digital environment where sharing is secure, controlled, and in line with individual requirements.
 When participants are aware that their contributions and rights are protected, they are more inclined to engage in collaborative efforts. This environment fosters innovation by allowing the secure exchange of ideas and assets, paving the way for the development of new applications and services. Sovereignty in the context of OKP4 becomes a catalyst for transparent and empowering collaboration in the digital ecosystem.
 
-## DECENTRALIZATION
+## Decentralization
 
 Decentralization within OKP4 is a fundamental necessity to ensure equitable and autonomous access to digital resources, enhance the reliability and resilience of the sharing system, and foster a dynamic and diverse ecosystem conducive to innovation and collaboration. Decentralization is evident both in the infrastructure and the application layer of the OKP4 protocol.
 
@@ -42,7 +42,7 @@ The need for a decentralized infrastructure in OKP4 arises from addressing cruci
 
 ### Decentralized Orchestration
 
-As an decentralized orchestration layer for off-chain resources, OKP4 must ensure two functionality in a decentralized manner :
+As a decentralized orchestration layer for off-chain resources, OKP4 must ensure two functionalities in a decentralized manner:
 
 - Interpret the rules to ensure the law enforcement
 - Execute workflow and orchestrate the resources according to the rules
@@ -98,9 +98,9 @@ When an identity seeks to initiate a workflow within a Zone, as exemplified, a s
 2. Pactum oversees the entire execution flow of all resources.
 3. Finally, the Pactum smart contract applies retribution rules, ensuring the distribution of rewards or compensation in accordance with defined retribution rules. In practical terms, Pactum functions as a decentralized regulator, coordinating the orchestration of digital resources and managing instances of error.
 
-## INTEROPERABILITY
+## Interoperability
 
-Interoperability is a critical aspect of the OKP4 protocol, which enables seamless interactions among diverse systems, resources, and digital services. In this context, interoperability is paramount as the OKP4 protocol aims to orchestrate and share digital resources. The protocol adopts a technologically agnostic approach, enabling transparent interaction among resources, technologies, and ecosystems, bridging the gap between Web 2.0 and Web 3.0 environments. Interoperability is key to promoting smooth and effective collaboration, as it eliminates technical barriers that may hinder the sharing and utilization of digital resources. OKP4 facilitates efficient and effective collaboration by enabling interoperability, thereby enhancing the value and utility of digital resources.
+Interoperability, a critical aspect of the OKP4 protocol, enables seamless interactions among diverse systems, resources, and digital services. In this context, interoperability is paramount as the OKP4 protocol aims to orchestrate and share digital resources. The protocol adopts a technologically agnostic approach, enabling transparent interaction among resources, technologies, and ecosystems, bridging the gap between Web 2.0 and Web 3.0 environments. Interoperability is key to promoting smooth and effective collaboration, as it eliminates technical barriers that may hinder the sharing and utilization of digital resources. OKP4 facilitates efficient and effective collaboration by enabling interoperability, thereby enhancing the value and utility of digital resources.
 
 ### Technical Aspect
 
@@ -108,7 +108,7 @@ Interoperability is a critical aspect of the OKP4 protocol, which enables seamle
 
 Within the context of OKP4, interoperability encompasses more than simply connecting digital resources. OKP4 relies on fundamental components such as APIs (Application Programming Interfaces) and connectors to facilitate seamless collaboration. These components are indispensable in synchronizing and exchanging digital resources within the protocol. Application Programming Interfaces (APIs) serve as standardized gateways, facilitating seamless communication between digital resources. In this context, OKP4 ensures that diverse systems and services can interact seamlessly within its ecosystem. This enables developers to design applications and services that effectively harness a range of resources, seamlessly connecting them through OKP4's APIs. By providing this cohesive framework, OKP4 offers a robust and flexible protocol for developing innovative solutions that leverage the power of diverse digital resources in a streamlined and efficient manner.
 
-As an orchestration layer for off-chain resources, OKP4 enables users to connect and leverage Anything-as-a-service to share anythings in any conditions. All these shared resources and rules shape the Dataverse, an ever-expanding universe of datasets, algorithms and all other resources referenced and interconnected in the blockchain.
+As an orchestration layer for off-chain resources, OKP4 enables users to connect and leverage Anything-as-a-service to share anythings in any conditions. All these shared resources and rules shape the Dataverse, an ever-expanding universe of datasets, algorithms, and all other resources referenced and interconnected in the blockchain.
 
 ### Semantic Aspect and Governance Aspects
 
@@ -144,7 +144,7 @@ IBC operates through two layers: the transport layer and the application layer. 
 
 An example of relevant applications that OKP4 could leverage is Interchain Accounts, significantly enhancing composability within the Interchain by improving the user experience. Thanks to Interchain Accounts, some relevant IBC-enabled blockchains like [Akash](https://akash.network/), [Jackal](https://www.jackalprotocol.com/), [Cheqd](https://cheqd.io/) or even the entire EVM ecosystem can share their strengths and leverage their functionalities.
 
-## GOVERNANCE
+## Governance
 
 ![rules-2](/img/content/academy/rules-2.webp)
 
@@ -158,7 +158,7 @@ Protocol governance in OKP4 is built on the Cosmos stack's foundations, allowing
 
 At the resource level, governance is expressed through consent rules, strictly recorded and enforced on-chain. Resource providers define these rules, determining how their data or services can be used. This approach gives resource providers precise control over how their assets are shared, reinforcing trust and encouraging open adoption of digital resources.
 
-Here are some examples of rules that providers can customize:
+Here are examples of rules that can be defined for a resource:
 
 - Who can access the resource
 - The economic model.
@@ -185,7 +185,7 @@ The distinction between resources and zones is crucial, particularly regarding g
 
 Note, as seen earlier, the importance of describing a digital resource through its metadata. Considering its specific characteristics, this approach facilitates its integration within zones more efficiently and appropriately, considering its specific characteristics.
 
-## SCALABILITY
+## Scalability
 
 In the context of the OKP4 protocol, scalability assumes paramount importance as a foundational concept, delineating the system's ability to dynamically handle a substantial increase in data, digital resources, and their interactions without necessitating a corresponding escalation in the hardware requirements of validators. This ensures the decentralization of the network.
 
