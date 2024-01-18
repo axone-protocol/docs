@@ -14,23 +14,23 @@ There are two types of resources:
 
 ## Digital Resource
 
-Digital Resources serve as the raw material from which insights and new knowledge are extracted. They encompass data and information presented in various forms (spreadsheets, text, videos, etc.) and expressed, carried, and stored in any format (.xlm, .json, .txt, .mp4, etc.).
+Digital Resources are the raw material from which insights and new knowledge are extracted. They encompass data and information presented in various forms (spreadsheets, text, videos, etc.) and expressed, carried, and stored in any format (.xlm, .json, .txt, .mp4, etc.).
 These Digital Resources can be categorized into two subtypes:
 
 - <u>Bounded digital resources</u>
 - <u>Unbounded digital resources</u>
 
-**Bounded digital resources** have a finite size and defined boundaries in terms of time. They are often accessed and analyzed as complete entities, commonly referred to as datasets. These datasets are further classify into structured data, such as databases or spreadsheets, and unstructured data, including text documents, images, videos, and more.
+**Bounded digital resources** have a finite size and defined boundaries regarding time. They are often accessed and analyzed as complete entities, commonly referred to as datasets. These datasets are further classified into structured data, such as databases or spreadsheets, and unstructured data, including text documents, images, videos, and more.
 
-In contrast to their bounded counterparts, **unbounded digital resources** have no boundaries defined in terms of time. This data may have originated in the past, persisted into the present, and is expected to continue arriving in the future. This absence of predefined boundaries implies that unbounded resources do not have a set size and are characterized by their continuous and potentially infinite nature. Examples of unbounded resources include streaming data and real-time data: sensor data from IoT devices, social media feeds, or stock market tickers.
+In contrast to their bounded counterparts, **unbounded digital resources** have no boundaries defined in terms of time. This data may have originated in the past, persisted into the present, and is expected to continue arriving in the future. This absence of predefined boundaries implies that unbounded resources do not have a set size and are characterized by their continuous and potentially infinite nature. Examples of unbounded resources include streaming and real-time data: sensor data from IoT devices, social media feeds, or stock market tickers.
 
 ![resources-1](/img/content/academy/resources-1.webp)
 
 ## Digital Service
 
-To extract new knowledge, raw materials require processing and this is where Digital Services come into play.
-From this standpoint, Digital Services function as both the structural and functional units in the knowledge creation process. They provide the essential service to transform digital resources, facilitating the generation of new knowledge.
-Digital Services encompass differents kind of service:
+To extract new knowledge, raw materials require processing, which is where Digital Services come into play.
+From this standpoint, Digital Services function as the structural and functional units in the knowledge creation process. They provide the essential service to transform digital resources, facilitating the generation of new knowledge.
+Digital Services encompass different kinds of service:
 
 ### Infrastructure Services
 
@@ -46,19 +46,19 @@ Some examples of Infrastructure Services:
 ### Digital Resource Processing Services
 
 Managing intricate processes involved in transforming digital resources, these services play a crucial role in enabling the generation of fresh knowledge.
-Any kind of algorithms and models can be considered as dedicated solutions to unique needs and objectives of the tasks at hand: from simple logical rules to sophisticated AI-driven algorithms, machine learning models, data processing scripts, image recognition models, predictive analytics, natural language processing (NLP) models etc…
+Any algorithms and models can be considered as dedicated solutions to unique needs and objectives of the tasks at hand, from simple logical rules to sophisticated AI-driven algorithms, machine learning models, data processing scripts, image recognition models, predictive analytics, natural language processing (NLP) models etc…
 
 ![resources-2](/img/content/academy/resources-2.webp)
 
 ## Verifiable Claims: how it's referenced in the protocol
 
-Understanding the intricate workings of the OKP4 protocol is essential, particularly concerning the handling of digital resources. Unlike traditional storage mechanisms, the OKP4 blockchain doesn't store these resources directly. Instead, providers maintain sovereignty over resource ownership.
+Understanding the intricate workings of the OKP4 protocol is essential, particularly concerning handling digital resources. Unlike traditional storage mechanisms, the OKP4 blockchain doesn't store these resources directly. Instead, providers maintain sovereignty over resource ownership.
 
 In the context of the OKP4 protocol, each resource is uniquely identified by **Decentralized Identifiers** (DIDs). DIDs are a key component in the decentralized identity ecosystem, providing a mechanism for establishing and verifying the identity of a resource without centralized control. This identification system ensures that each resource is distinct, easily identifiable and easily traceable.
 
-For effective resource accessibility and description (context, precision about the data, and even technical information about the dataset structure for instance), the protocol relies on [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/). Firstly, VCs allow for the assertion of specific properties about a resource. This means that each resource can carry with it a set of verifiable information, detailing its characteristics, and any other relevant attributes. Secondly, because VCs are inherently designed to be tamper-evident and cryptographically secure, they enhance the reliability and transparency of the information they convey, ensuring integrity and clarity in both off-chain and on-chain contexts.
+For adequate resource accessibility and description (context, precision about the data, and even technical information about the dataset structure for instance), the protocol relies on [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/). Firstly, VCs allow for the assertion of specific properties about a resource. Each resource can carry verifiable information detailing its characteristics and other relevant attributes. Secondly, because VCs are inherently designed to be tamper-evident and cryptographically secure, they enhance the reliability and transparency of the information they convey, ensuring integrity and clarity in both off-chain and on-chain contexts.
 
-Example: A Data provider shares a dataset. In the OKP4 Protocol, this dataset is uniquely identified by the DID `d0c63b88-44f8-4518-b62d-e141dd8fb624`.
+**Example**: A Data provider shares a dataset. In the OKP4 Protocol, this dataset is uniquely identified by the DID `d0c63b88-44f8-4518-b62d-e141dd8fb624`.
 
 Here are some verifiable claims the provider can link to his dataset:
 
@@ -70,9 +70,9 @@ Geographical Coverage: Europe
 Served by: (DID of the server where the dataset is stored off-chain) 
 ```
 
-This approach results in a more reliable and robust system, where the data about resources (also called metadata), backed by the claims from Verifiable Credentials, can be shared and used with confidence. These claims, being trusted sources of information, are instrumental for decision-making in established on-chain Governance rules.
+This approach results in a more reliable and robust system, where the data about resources (also called metadata), backed by the claims from Verifiable Credentials, can be shared and used confidently. These claims, being trusted sources of information, are instrumental for decision-making in established on-chain Governance rules.
 
-Some Verifiable Claims are stored Off-chain but key data is introduced to the blockchain in the form of **Verifiable Presentations** (VPs). VPs, often a selected subset of VCs with a verifiable chain, serve as the medium for conveying knowledge to the blockchain and are a resource for on-chain governance decisions. They provide a reliable basis for the formulation and execution of governance rules, ensuring that decisions are made on the basis of verified and accurate information.
+Some Verifiable Claims are stored Off-chain, but critical data is introduced to the blockchain as **Verifiable Presentations** (VPs). VPs, often a selected subset of VCs with a verifiable chain, serve as the medium for conveying knowledge to the blockchain and are a resource for on-chain governance decisions. They provide a reliable basis for the formulation and execution of governance rules, ensuring that decisions are made based on verified and accurate information.
 
 ## Ontology: how it's represented, semantic description
 
@@ -86,11 +86,11 @@ In the intricate landscape of digital resource sharing, the demand for interoper
 
 ### Ontological Foundation
 
-At its core, ontology refers to the formal representation of knowledge and the relationships that exist between different entities. In the context of OKP4, ontology serves as the backbone, providing a structured framework for understanding the semantics associated with digital resources.
+At its core, ontology refers to the formal representation of knowledge and the relationships between different entities. In the context of OKP4, ontology serves as the backbone, providing a structured framework for understanding the semantics associated with digital resources.
 
 ### Semantic Enrichment
 
-The representation of ontology in the OKP4 protocol goes beyond mere categorization. It involves a semantic enrichment process, where not only are resources classified, but their inherent meaning is also captured. This semantic description enhances the interpretability of digital assets, ensuring a more nuanced comprehension among stakeholders.
+The representation of ontology in the OKP4 protocol goes beyond mere categorization. It involves a semantic enrichment process, where resources are classified, and their inherent meaning is also captured. This semantic description enhances the interpretability of digital assets, ensuring a more nuanced comprehension among stakeholders.
 
 ### Interplay with Verifiable Claims
 
@@ -98,7 +98,7 @@ Ontology and Verifiable Claims synergize within the protocol, creating a powerfu
 
 ### Standardization Efforts
 
-To foster interoperability and consistency, the OKP4 protocol encourages adherence to established ontological standards. By aligning with widely accepted frameworks, such as RDF (Resource Description Framework) or OWL (Web Ontology Language), the protocol ensures a harmonized representation of knowledge across diverse resources.
+The OKP4 protocol encourages adherence to established ontological standards to foster interoperability and consistency. The protocol ensures a harmonized representation of knowledge across diverse resources by aligning with widely accepted frameworks, such as RDF (Resource Description Framework) or OWL (Web Ontology Language).
 
 ### Practical Application
 

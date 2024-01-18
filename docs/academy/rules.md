@@ -8,10 +8,10 @@ sidebar_class_name: hidden
 
 ## Rules: what can be defined?
 
-The key feature of the OKP4 protocol is the ability to define rules within its ecosystem. The term **"Rules"** form the backbone of the protocol, governing how off-chain digital resources like datasets, algorithms, storage, and computation resources are shared and managed. These rules define the parameters and conditions under which resource sharing and interactions occur. Understanding the scope of what can be defined within these rules is crucial for harnessing the full power of the OKP4 protocol.
+The key feature of the OKP4 protocol is the ability to define rules within its ecosystem. The term **"Rules"** forms the backbone of the protocol, governing how off-chain digital resources like datasets, algorithms, storage, and computation resources are shared and managed. These rules define the parameters and conditions under which resource sharing and interactions occur. Understanding the scope of what can be defined within these rules is crucial for harnessing the full power of the OKP4 protocol.
 
-The OKP4 protocol enforces rules for governance and consent. When users want to do something in a Zone (launch a workflow to create new indicators or to train an AI model for instance), the protocol checks if it's allowed based on the rules. This decision considers the current situation, as the rules and digital resources on the blockchain are always changing. From a computer science perspective, the challenge is dealing with complex logic involving rules, such as hierarchy, inconsistency, and dependency.
-To handle this, the OKP4 protocol ensures a secure and reliable way to interpret rules in a decentralized manner. The rules in each Zone and the consent attached to a resource determine if a user's action is permitted. It's important to keep in mind that this assessment also considers the evolving state of the blockchain at the time of the request.
+**The OKP4 protocol enforces rules for governance and consent. When users want to do something in a Zone (launch a workflow to create new indicators or train an AI model, for instance), the protocol checks if it's allowed based on the rules. This decision considers the current situation, as blockchain rules and digital resources constantly change. From a computer science perspective, the challenge is dealing with complex logic involving rules, such as hierarchy, inconsistency, and dependency.
+To handle this, the OKP4 protocol ensures a secure and reliable way to interpret rules in a decentralized manner. The rules in each Zone and the consent attached to a resource determine if a user's action is permitted. It's essential to remember that this assessment also considers the evolving state of the blockchain at the time of the request.**
 
 ![rules-1](/img/content/academy/rules-1.webp)
 
@@ -24,11 +24,11 @@ What kind of rules can be defined?
 
 ### 1. Defining Access Permissions
 
-One fundamental aspect of OKP4 rules is the ability to define access permissions. Through these rules, you can precisely outline who has the right to access specific off-chain resources. Whether it's granting read-only access to certain data or allowing full control over a particular resource, OKP4 empowers users to tailor access permissions according to their unique needs.
+One fundamental aspect of OKP4 rules is the ability to define access permissions. Through these rules, you can precisely outline who has the right to access specific off-chain resources. Whether granting read-only access to certain data or complete control over a particular resource, OKP4 empowers users to tailor access permissions according to their unique needs.
 
 ### 2. Resource Utilization Policies
 
-OKP4 goes beyond simple access permissions by allowing users to establish resource utilization policies. This involves defining how shared resources can be utilized, ensuring optimal efficiency and preventing misuse. Whether it's specifying the duration of resource access or setting usage quotas, OKP4 rules provide a flexible framework for resource management. For example, users can define temporal and spatial constraints for resource sharing. This means you can set rules that dictate when certain resources are available, creating dynamic access schedules. Additionally, spatial constraints enable the restriction of resource access based on geographical or network-specific parameters.
+OKP4 allows users to establish resource utilization policies beyond simple access permissions. This involves defining how shared resources can be utilized, ensuring optimal efficiency, and preventing misuse. Whether specifying the duration of resource access or setting usage quotas, OKP4 rules provide a flexible framework for resource management. For example, users can define temporal and spatial constraints for resource sharing. This means you can set rules that dictate when specific resources are available, creating dynamic access schedules. Additionally, spatial constraints enable the restriction of resource access based on geographical or network-specific parameters.
 
 ### 3. Business models
 
@@ -42,31 +42,31 @@ The OKP4 protocol acknowledges the dynamic nature of resource management. Rules 
 
 OKP4 rules are not isolated entities; they can interact with one another. Understanding and defining inter-rule relationships is a powerful aspect of OKP4's flexibility. For example, you can establish dependencies between rules, ensuring that certain conditions must be met before others come into effect.
 
-The ability to define rules is a pivotal feature of the OKP4 protocol, offering an unprecedented level of control and customization. By leveraging these rules, participants can create a diverse range of applications and ecosystems, each with its unique governance and operational dynamics. This flexibility is central to OKP4’s vision of fostering a decentralized, collaborative, and innovative digital resource environment.
+The ability to define rules is a pivotal feature of the OKP4 protocol, offering an unprecedented level of control and customization. By leveraging these rules, participants can create diverse applications and ecosystems, each with unique governance and operational dynamics. This flexibility is central to OKP4’s vision of fostering a decentralized, collaborative, and innovative digital resource environment.
 
 ## Prolog: Turing complete logical and declarative programming language
 
-In the vast landscape of programming languages, Prolog stands out as a formidable tool, and in the realm of OKP4, it plays a pivotal role in shaping the logical and declarative aspects of the protocol. Prolog's significance lies in its ability to handle complex logical scenarios, making it a powerful choice for the dynamic environment of the OKP4 protocol.
+In the vast landscape of programming languages, Prolog stands out as a formidable tool. And in the realm of OKP4, it plays a pivotal role in shaping the logical and declarative aspects of the protocol. Prolog's significance lies in its ability to handle complex logical scenarios, making it a powerful choice for the dynamic environment of the OKP4 protocol.
 
 ### 1. The Essence of Prolog
 
-Prolog, short for "Programming in Logic," is a unique programming paradigm that utilizes logical inference and declarative statements. Unlike traditional imperative languages, Prolog focuses on describing relationships and rules rather than explicit step-by-step instructions. This makes it well-suited for expressing complex relationships and solving intricate logical problems, precisely the kind of challenges faced in OKP4.
+Prolog, short for "Programming in Logic," is a unique programming paradigm that utilizes logical inference and declarative statements. Unlike traditional imperative languages, Prolog focuses on describing relationships and rules rather than explicit step-by-step instructions. This makes it well-suited for expressing complex relationships and solving intricate logical problems, precisely the challenges faced in OKP4.
 
 ### 2. Turing Completeness
 
-One of Prolog's notable features is its Turing completeness. This term signifies that Prolog can, in theory, compute anything that is computable by other programming languages. This attribute is essential for OKP4, as it ensures that the logical and declarative programming capabilities provided by Prolog can address the diverse and evolving challenges presented by the combination of multiple resources and rules.
+One of Prolog's notable features is its Turing completeness. This term signifies that Prolog can, in theory, compute anything computable by other programming languages. This attribute is essential for OKP4, as it ensures that the logical and declarative programming capabilities provided by Prolog can address the diverse and evolving challenges presented by combining multiple resources and rules.
 
 ### 3. Declarative Programming in Action
 
-In the context of OKP4, Prolog's declarative nature is a boon. Users can specify what they want to achieve, and Prolog handles the intricate task of determining how to achieve it. This allows to provide a clear and concise way to express the governance and consent rules that govern resource interactions.
+In the context of OKP4, Prolog's declarative nature is a boon. Users can specify what they want to achieve, and Prolog handles the intricate task of determining how to achieve it. This provides a clear and concise way to express the governance and consent rules governing resource interactions.
 
 ### 4. Logical Problem Solving
 
-The dynamic and evolving nature of OKP4's rules necessitates a robust logical problem-solving capability. Prolog excels in this arena by employing a resolution-based inference engine, allowing it to navigate through complex relationships defined by rules. This becomes crucial when resolving issues of hierarchy, inconsistency, dependency, and conflict resolution in the realm of access permissions and resource utilization.
+The dynamic and evolving nature of OKP4's rules necessitates a robust logical problem-solving capability. Prolog excels in this arena by employing a resolution-based inference engine, allowing it to navigate through complex relationships defined by rules. This becomes crucial when resolving issues of hierarchy, inconsistency, dependency, and conflict resolution in access permissions and resource utilization.
 
 ### 5. Decentralized Interpretation
 
-In the OKP4 ecosystem, where decentralization is a key principle, Prolog is integrated in an on-chain module and serves as a trustworthy interpreter of rules. Each Zone, with its established rules, can leverage Prolog to determine the permissibility of a user's actions. This decentralized interpretation ensures that the governance and consent rules are applied consistently and reliably across the network.
+In the OKP4 ecosystem, where decentralization is a crucial principle, Prolog is integrated into an on-chain module and serves as a trustworthy interpreter of rules. With its established rules, each Zone can leverage Prolog to determine the permissibility of a user's actions. This decentralized interpretation ensures that the governance and consent rules are applied consistently and reliably across the network.
 
 ### 6. Prolog in practice
 
@@ -148,7 +148,7 @@ factorial(N, Result) :- N > 0, Prev is N - 1, factorial(Prev, PrevResult), Resul
 ```
 
 - <u>Cut Operator (!)</u>:
-The cut operator is used to control backtracking. It prunes the search space and commits Prolog to the choices made so far.
+The cut operator controls backtracking. It prunes the search space and commits Prolog to the choices made.
 
 ```prolog
 % Cut operator example
@@ -159,7 +159,7 @@ likes(john, sushi).
 ?- likes(john, pizza), !.
 ```
 
-These are some of the basic concepts of Prolog. Its emphasis on logic and declarative programming makes it well-suited for applications involving rule-based systems, knowledge representation, and artificial intelligence.
+These are some of the basic concepts of Prolog. Its emphasis on logic and declarative programming makes it well-suited for rule-based systems, knowledge representation, and artificial intelligence applications.
 
 As we progress through the OKP4 Academy, the role of Prolog becomes increasingly apparent in enabling a Turing complete, logical, and declarative approach to managing the intricate rules that define the protocol. Join us on this journey as we explore the depth of Prolog's capabilities within the dynamic landscape of OKP4.
 
@@ -169,7 +169,7 @@ In the intricate web of the OKP4 protocol, the heartbeat of interaction lies wit
 
 **1. Defining Resource-Specific Rules**
 
-Every resource within the OKP4 ecosystem comes with its own consent, a set of rules intricately defining how it can be accessed, utilized, and shared. These rules act as the blueprint for the resource's behavior, outlining the conditions under which it can be interacted with. Whether it's data, computational power, or any other off-chain asset, the rules serve as the guiding principles for their governance.
+Every resource within the OKP4 ecosystem comes with its consent, a set of rules intricately defining how it can be accessed, utilized, and shared. These rules act as the blueprint for the resource's behavior, outlining the conditions under which it can be interacted with. Whether it's data, computational power, or any other off-chain asset, the rules are the guiding principles for their governance.
 
 **2. Access Permissions and Restrictions**
 
@@ -177,7 +177,7 @@ At the core of resource consents are access permissions and restrictions. OKP4 a
 
 **3. Resource Utilization Policies**
 
-Beyond mere access, OKP4 resource consents extend to resource utilization policies. Owners can define how their resources should be utilized, whether it's setting usage quotas, determining the conditions for resource sharing, or specifying the acceptable purposes for interaction. These policies contribute to the efficient and controlled utilization of resources within the decentralized OKP4 network.
+Beyond mere access, OKP4 resource consents extend to resource utilization policies. Owners can define how their resources should be utilized by setting usage quotas, determining the conditions for resource sharing, or specifying the acceptable purposes for interaction. These policies contribute to the efficient and controlled utilization of resources within the decentralized OKP4 network.
 
 **4. Dynamic Rule Adaptation**
 
@@ -185,13 +185,13 @@ Consents in OKP4 are not static; they adapt dynamically to the changing needs of
 
 **5. Rule Interdependencies and Conflicts**
 
-Given the interconnected nature of resources and their rules, OKP4 acknowledges the potential for interdependencies and conflicts. The hierarchy of norms refers to the hierarchical structure of rules within the OKP4 governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard. Then the rules of a Zone prevail on the resource consent (see technical doc).
+Given the interconnected nature of resources and their rules, OKP4 acknowledges the potential for interdependencies and conflicts. The hierarchy of norms refers to the hierarchical structure of rules within the OKP4 governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard. Then, the rules of a Zone prevail on the resource consent (see technical doc).
 
 ![rules-2](/img/content/academy/rules-2.webp)
 
 **6. Transparency and Auditing**
 
-OKP4 places a premium on transparency in resource governance. Resource consents are designed to be transparent and auditable, allowing users and stakeholders to understand how each resource is governed. This transparency not only fosters trust but also contributes to the overall security and accountability within the OKP4 ecosystem.
+OKP4 places a premium on transparency in resource governance. Resource consents are designed to be transparent and auditable, allowing users and stakeholders to understand how each resource is governed.  This transparency fosters trust and contributes to the overall security and accountability within the OKP4 ecosystem.
 
 **7. Let’s practice**
 
@@ -234,11 +234,10 @@ current_time(15.30).
 ?- user_role(bob, Role), access_rule(Role, confidential_data, Time).
 ```
 
-In this Prolog example:
-We define roles (admin, user, guest) and associate users with roles.
-Access rules are defined based on roles and, in some cases, temporal constraints. For instance, admins have unrestricted access to any dataset, users have access before 18.00, and guests have access to the public_data dataset without temporal constraints.
+In this Prolog example, we define roles (admin, user, guest) and associate users with roles.
+Access rules are determined based on roles and, in some cases, temporal constraints. For instance, admins have unrestricted access to any dataset, users have access before 18.00, and guests can access to the public_data dataset without time constraints.
 We define two datasets (confidential_data and public_data).
-The current time is simulated to illustrate temporal constraints.
+The current time is simulated to illustrate temporal limitations.
 Example queries demonstrate how Prolog can be used to check if a user has access to a specific dataset at the current time based on the defined rules.
 Note: The OKP4 SDK contains templates of governance rules that you can use and adapt to your needs.
 
