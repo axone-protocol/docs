@@ -1,0 +1,21 @@
+{
+  "quizTitle": "Test your knowledge!",
+  "nrOfQuestions": "1",
+  "questions": [
+    {
+      "question": "Which of the following best describes the role of Prolog in the OKP4 protocol?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Prolog is primarily used for front-end development within the OKP4 ecosystem, focusing on user interface design and experience.",
+        "Prolog serves as a database management system in OKP4, handling the storage, retrieval, and update of data within the protocol.",
+        "Prolog is employed as an on-chain module within OKP4, interpreting rules related to governance and consent, and ensuring secure and reliable decentralized decision-making.",
+        "Prolog functions as a cryptocurrency wallet in the OKP4 protocol, managing digital assets and facilitating transactions between users."
+      ],
+      "correctAnswer": "3",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    }
+  ]
+}

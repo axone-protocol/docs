@@ -2,6 +2,9 @@
 sidebar_class_name: hidden
 ---
 
+import Quiz from 'react-quiz-component';
+import * as quiz from './rules-quiz.json';
+
 # Define any rule
 
 <i>Reading time: {readingTime} min</i>
@@ -242,3 +245,5 @@ Example queries demonstrate how Prolog can be used to check if a user has access
 Note: The OKP4 SDK contains templates of governance rules that you can use and adapt to your needs.
 
 As we delve deeper into the OKP4 Academy, understanding the intricacies of resource rules becomes paramount. These rules serve as the backbone of the protocol, ensuring that off-chain resources are governed with precision, flexibility, and transparency. Join us as we unravel the complexities of resource rule management within the dynamic landscape of OKP4.
+
+<Quiz quiz={quiz}/>
