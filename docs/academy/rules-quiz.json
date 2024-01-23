@@ -1,0 +1,66 @@
+{
+  "quizTitle": "Test your knowledge!",
+  "nrOfQuestions": "4",
+  "questions": [
+    {
+      "question": "Which of the following best describes the role of Prolog in the OKP4 protocol?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Prolog is primarily used for front-end development within the OKP4 ecosystem, focusing on user interface design and experience.",
+        "Prolog serves as a database management system in OKP4, handling the storage, retrieval, and update of data within the protocol.",
+        "Prolog is employed as an on-chain module within OKP4, interpreting rules related to governance and consent, and ensuring secure and reliable decentralized decision-making.",
+        "Prolog functions as a cryptocurrency wallet in the OKP4 protocol, managing digital assets and facilitating transactions between users."
+      ],
+      "correctAnswer": "3",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "How does the OKP4 protocol handle the dynamic nature of resource management?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "By enforcing static rules.",
+        "Through Dynamic Rule Updates in real-time.",
+        "By allowing only manual updates to rules.",
+        "By relying on a centralized system for adaptation."
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "What is the role of hierarchy of norms in OKP4 resource consents?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "It establishes the order of precedence among different norms.",
+        "It increases transparency.",
+        "It eliminates conflicts.",
+        "It enforces static rules."
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "In Prolog, what is the declarative style?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Specifying how to achieve a task",
+        "Describing relationships and rules without step-by-step instructions.",
+        "Focusing on sequential programming.",
+        "Ignoring logical inferenceIt establishes the order of precedence among different norms."
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    }
+  ]
+}
