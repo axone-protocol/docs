@@ -10,7 +10,7 @@ Unlike physical assets, dematerialized resources like datasets or algorithms are
 We are at a decisive turning point. As value creation relies exponentially on knowledge-intensive activities, tech giants get exponentially more powerful.
 But what if we could unlock knowledge creation through trusted and incentivized collaboration without the need for a third party?
 
-## We need knowdledge
+## We need knowledge
 
 In light of pressing issues such as climate change and natural resource scarcity, the urgent need for knowledge creation becomes evident.
 We don’t know how to go to Mars, we don’t know how to predict cancer, we don’t know how to farm in a desert, and we don’t know what present would please our mother for her birthday.
