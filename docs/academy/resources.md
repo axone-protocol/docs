@@ -106,7 +106,7 @@ In practical terms, the semantic description facilitated by ontology within the 
 
 Ontology forms a cornerstone in the OKP4 protocol, elevating the representation and semantic description of digital resources. Its integration with metadata and commitment to standardization positions OKP4 as a forward-looking protocol in the dynamic landscape of data sharing among professionals.
 
-# SUM UP
+## SUM UP
 
 This illustration provides an overview of the classification of digital resources and services within the protocol.
 
