@@ -105,3 +105,9 @@ The OKP4 protocol encourages adherence to established ontological standards to f
 In practical terms, the semantic description facilitated by ontology within the OKP4 protocol extends to various domains. For instance, in the AI sector, ontology can illuminate the intricate relationships between different types of AI algorithms, datasets, and model architectures. This semantic richness provides a comprehensive understanding of the AI landscape, enabling users to navigate and leverage diverse AI resources with greater insight and efficiency.
 
 Ontology forms a cornerstone in the OKP4 protocol, elevating the representation and semantic description of digital resources. Its integration with metadata and commitment to standardization positions OKP4 as a forward-looking protocol in the dynamic landscape of data sharing among professionals.
+
+## SUM UP
+
+This illustration provides an overview of the classification of digital resources and services within the protocol.
+
+![resources-3](/img/content/academy/resources-3.webp)
