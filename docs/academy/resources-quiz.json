@@ -40,7 +40,8 @@
           "A method for storing resources directly on the blockchain.",
           "A way to ensure the sovereignty of digital resources.",
           "A mechanism for identifying resources without centralized control.",
-          "A means to describe specific properties of a resource"
+          "A means to describe specific properties of a resource securely and in a verifiable manner"
+
         ],
         "correctAnswer": "4",
         "messageForCorrectAnswer": "Correct answer. Good job.",
@@ -53,7 +54,7 @@
         "answerSelectionType": "single",
         "answers": [
           "VCs and VPs are interchangeable terms in the OKP4 protocol.",
-          "VPs are used to store critical information on the blockchain, while VCs are intended for the visual presentation of data.",
+          "VPs are used to store data about resources, while VCs are used to store data about services.",
           "VCs are verifiable claims about a set of resources, while VPs are assertions that define off-chain governance rules in OKP4, facilitating decision-making within the network.",
           "VCs are verifiable assertions about a resource, while VPs are a selection of VCs with a verifiable chain, serving as a basis for decision-making in on-chain governance."
         ],
@@ -82,10 +83,10 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "Verifiable Claims are an integral part of Ontology in the OKP4 protocol.",
+          "Verifiable Claims and Ontology synergize by sharing cryptographic keys, enhancing the security of digital resources within the OKP4.",
           "They are not linked and operate independently.",
-          "Ontology serves as a substitute for Verifiable Claims, offering comprehensive details about digital resources without the need for additional information from VCs.",
-          "VCs provide detailed information, while ontology clarifies relationships and the context of resources."
+          "Ontology serves as a substitute for Verifiable Claims, offering comprehensive details about digital resources without the need for additional information from Verifiable Claims.",
+          "Verifiable Claims provide detailed information, while ontology clarifies relationships and the context of resources."
         ],
         "correctAnswer": "4",
         "messageForCorrectAnswer": "Correct answer. Good job.",
