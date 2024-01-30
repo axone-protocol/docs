@@ -18,42 +18,6 @@ Dataset Description credentials deliver an extensive overview of the principal a
 
 The objective of these credentials is to furnish a wide-ranging insight into the dataset, thereby simplifying the process for users to comprehend the dataset's content and potential applications.
 
-## Digital resource declaration credential
-
-### Name
-
-`credential-digital-resource-declaration`
-
-### Schema
-
-&lt;[https://w3id.org/okp4/ontology/v2/schema/credential/digital-resource/declaration](https://w3id.org/okp4/ontology/v2/schema/credential/digital-resource/declaration)&gt;
-
-### Description
-
-Digital Resource credentials serve as a testament to the declaration of a Digital Resource within the dataverse.
-
-Digital Resources serve as the raw material from which insights and new knowledge are extracted. They encompass data and information presented in various forms and expressed, carried, and stored in any format. This includes, but is not limited to spreadsheets, CSV files, databases, text documents, multimedia files such as videos, AI related files like neural network models, and various other digital elements.
-
-This concept is inherently flexible, adapting continuously to emerging digital formats and technological developments.
-
-## Digital service declaration credential
-
-### Name
-
-`credential-digital-service-declaration`
-
-### Schema
-
-&lt;[https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/declaration](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/declaration)&gt;
-
-### Description
-
-Digital Service Declaration credentials serve as a testament to the declaration of a Digital Service within the dataverse.
-
-A Digital Service is a multifaceted entity integral to the processing and transformation of Digital Resources. It functions not merely as an operator on these resources, but as a critical structural and functional unit in the knowledge creation process.
-
-These services distinguish themselves through their ability to interact dynamically with Digital Resources, facilitating the generation of new knowledge by providing network interfaces for user engagement. They encompass a variety of forms, ranging from Infrastructure Services, which lay the foundational groundwork for efficient resource sharing and transformation, to Digital Resource Processing Services, which manage complex processes for transforming digital resources. This includes various algorithms and models, from simple logical rules to advanced AI-driven algorithms and machine learning models, thereby catering to the unique needs and objectives of diverse tasks.
-
 ## Digital service description credential
 
 ### Name
