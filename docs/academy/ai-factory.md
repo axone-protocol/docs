@@ -75,7 +75,8 @@ Once the governance framework is defined and live on-chain, the  protocol can de
 
 ![ai-factory-4](/img/content/academy/ai-factory-4.webp)
 
-<u>All Resources and Services allowed by the Zone :</u>  The governance rules of the Zone help determine, within the set of resources referenced in the Dataverse, which ones can be used within the scope of this zone. All Dataverse resources adhering to these rules are allowed by the Zone.
+<u>All Resources and Services allowed by the Zone:</u>  The governance rules of the Zone help determine, within the set of resources referenced in the Dataverse, which ones can be used within the scope of this zone. All Dataverse resources adhering to these rules are allowed by the Zone.
+
 
 <u>All Resources and Services compatible with the Zone:</u>  Resource Consent defines the conditions for including a resource in an activity involving entities operating within a Zone. While the Zone rules specify the regulations from the perspective of the Zone, the consent represents the rules from the perspective of the Resource. It serves as the expression of the resource owner's considerations regarding the terms of use for the Resource, providing guidelines for its proper use within the Dataverse. Rules may include aspects such as the business model, Zone licenses or labels, and regulations about any credentials, such as identity, reputation, qualification, or token-related credentials.
 
