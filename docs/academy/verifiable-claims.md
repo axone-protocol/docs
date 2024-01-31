@@ -18,9 +18,9 @@ A credential may contain several claims. For example, a diploma contains the cla
 
 In the [W3C standard](https://www.w3.org/TR/vc-data-model/), a credential is a set of one or more **claims** made by the same entity. Credentials include an identifier and metadata describing the credential's properties, such as the issuer, the expiry date and time, a representative image, a public key to use for verification purposes, the revocation mechanism, and so on. The issuer might sign the metadata. A verifiable credential is a set of tamper-evident claims and metadata that cryptographically prove who issued it.
 
-<centre>
-![verifiable-claims-1](/img/content/academy/verifiable-claims-1.webp)
-</centre>
+<center>
+  <img src="/img/content/academy/verifiable-claims-1.webp" alt="Verifiable claims W3C" style={{ maxHeight: "340px" }}></img>
+</center>
 
 :::info
 
@@ -38,9 +38,9 @@ A **verifiable presentation** is a tamper-evident presentation encoded in such a
 
 A government authority issues a digital passport to a citizen.
 
-<centre>
-![verifiable-claims-2](/img/content/academy/verifiable-claims-2.webp)
-</centre>
+<center>
+  <img src="/img/content/academy/verifiable-claims-2.webp" alt="Verifiable claims passport example" style={{ maxHeight: "650px" }}></img>
+</center>
 
 Use when traveling :
 
@@ -61,9 +61,9 @@ This notion is analogous to that of crypto-currency wallets. Although all addres
 
 Verifiable Credentials obey schemas that describe a particular aspect of a resource. Certain VCs apply depending on the nature of the resource. A VC describing an entity or organization does not apply to the same resource as a VC describing a dataset. This is why VCs are organized in schemas.
 
-<centre>
-![verifiable-claims-3](/img/content/academy/verifiable-claims-3.webp)
-</centre>
+<center>
+  <img src="/img/content/academy/verifiable-claims-3.webp" alt="Verifiable claims attached to a resource" style={{ maxHeight: "400px" }}></img>
+</center>
 
 ### Resource materiality
 
@@ -85,6 +85,6 @@ Once the Issuer successfully issues the Verifiable Credentials (VCs) associated 
 
 Recording VPs in the blockchain, rather than individual VCs, ensures the confidentiality of specific properties by only revealing a restricted set of properties on the public chain.
 
-<centre>
-![verifiable-claims-4](/img/content/academy/verifiable-claims-4.webp)
-</centre>
+<center>
+  <img src="/img/content/academy/verifiable-claims-4.webp" alt="Verifiable presentation W3C" style={{ maxHeight: "360px" }}></img>
+</center>
