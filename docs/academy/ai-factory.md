@@ -29,7 +29,8 @@ The AI factory is a decentralized framework where anyone can collaborate and gov
 The AI Factory enables the creation of a zone where different identities can coordinate around blockchain-based governance rules enforced on-chain to train a model using the wealth of resources and services from the Dataverse.
 
 
-### What is the benefit?
+### What are the benefits?
+
 
 **Resilient Service-Level Agreements:** OKP4 offers robust SLAs by ensuring the integrity of computation and storage, upholding adherence to consent rules (including privacy and retribution considerations), demonstrating censorship resistance, and maintaining a transparent data provenance.
 
