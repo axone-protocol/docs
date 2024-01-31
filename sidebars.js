@@ -35,7 +35,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'technical-documentation/overview',
+          id: 'technical-documentation/overview'
         },
         {
           type: 'category',
@@ -59,24 +59,33 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: "Smart contracts",
-          href: '/contracts',
+          label: 'Smart contracts',
+          href: '/contracts'
+        },
+        {
+          type: 'html',
+          value: '<hr/>'
+        },
+        {
+          type: 'link',
+          label: 'Ontology',
+          href: '/ontology/schemas'
         },
         {
           type: 'link',
           label: 'Governance Predicates',
-          href: '/predicates/predicates',
+          href: '/predicates/predicates'
         },
         {
           type: 'link',
-          label: "Modules",
-          href: '/modules/logic',
+          label: 'Modules',
+          href: '/modules/logic'
         },
         {
           type: 'link',
-          label: "Commands line interface",
-          href: '/commands/okp4d',
-        },
+          label: 'Commands line interface',
+          href: '/commands/okp4d'
+        }
       ]
     }
   ],
@@ -98,7 +107,7 @@ const sidebars = {
       id: 'faq/faq',
       label: 'FAQ'
     }
-  ],
+  ]
 }
 
 module.exports = sidebars

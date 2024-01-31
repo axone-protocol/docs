@@ -174,6 +174,13 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
+            dropdownItemsAfter: [{ to: '/ontology/schemas', label: 'Latest version' }],
+            docsPluginId: 'ontology',
+            dropdownActiveClassDisabled: true
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
             dropdownItemsAfter: [{ to: '/predicates/predicates', label: 'Latest version' }],
             docsPluginId: 'predicates',
             dropdownActiveClassDisabled: true
@@ -329,6 +336,14 @@ const config = {
         id: 'contracts',
         path: 'contracts',
         routeBasePath: 'contracts/'
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ontology',
+        path: 'ontology',
+        routeBasePath: 'ontology/'
       }
     ],
     [
