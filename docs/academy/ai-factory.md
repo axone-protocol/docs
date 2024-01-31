@@ -47,7 +47,8 @@ The AI Factory enables the creation of a zone where different identities can coo
 In practical terms, AI Factory is represented by three key aspects:
 - On-chain Rules and Governance Templates
 - All Referenced Resources and Services in the Dataverse Accepted within the Zone's Scope
-- Integrated Tools and connector to interconnect with users' existing workflows.
+- Integrated Tools and connectors to interconnect with users' existing workflows.
+
 
 **Rules & Governances Templates** 
 
