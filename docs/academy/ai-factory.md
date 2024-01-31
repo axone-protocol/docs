@@ -54,7 +54,8 @@ In practical terms, AI Factory is represented by three key aspects:
 
 Defined as a set of rules, these on-chain governance templates establish the boundaries and operational scope of the Zone. They provide a structured framework that outlines the permissible actions and existence parameters within the Zone.
 
-The zone creator can create his own template or reuse an existing one. to deploy a framework tailored to specific needs quickly.
+The zone creator can create his own template or reuse an existing one to deploy a framework tailored to quickly specific needs.
+
 
 ![ai-factory-3](/img/content/academy/ai-factory-3.webp)
 
