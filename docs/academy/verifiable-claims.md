@@ -76,8 +76,9 @@ These VCs play a crucial role in regulating and managing resources. They define 
 
 Resources are considered to be under "Self-Sovereign" management according to the following two principles:
 
-Free Issuance of Claims: In this framework, any entity (individual, organization, service, etc.) can issue claims on the resource concerned, with the exception of governance claims, which are issued by the identities themselves.
-Unilateral revocation of claims: This principle stipulates that claims can only be revoked by the entity that issued them. This means that if Entity A issues a claim on the resource, only Entity A can revoke that claim. This principle is unalterable and remains independent of any intervention or modification by governance structures.
+- **Free Issuance of Claims**: In this framework, any entity (individual, organization, service, etc.) can issue claims on the resource concerned, with the exception of governance claims, which are issued by the identities themselves.
+- **Unilateral revocation of claims**: This principle stipulates that claims can only be revoked by the entity that issued them. This means that if Entity A issues a claim on the resource, only Entity A can revoke that claim. This principle is unalterable and remains independent of any intervention or modification by governance structures.
+
 Self-sovereign governance is particularly well suited to environments where autonomy and decentralization are paramount, as is the case in the OKP4 dataverse. However, we must remain vigilant to the "gossip effect": given that any entity can issue credentials, there is a risk that unverified or inaccurate information will be disseminated. This phenomenon poses a significant challenge in balancing individual freedom and collective interest. Such dynamics need to be carefully considered when designing governance schemes in Zones.
 
 ## Registration of Verifiable Presentation in the OKP4 Protocol
