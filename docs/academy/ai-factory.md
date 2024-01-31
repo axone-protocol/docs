@@ -28,9 +28,7 @@ The AI factory is a decentralized framework where anyone can collaborate and gov
 
 The AI Factory enables the creation of a zone where different identities can coordinate around blockchain-based governance rules enforced on-chain to train a model using the wealth of resources and services from the Dataverse.
 
-
 ### What are the benefits?
-
 
 **Resilient Service-Level Agreements:** OKP4 offers robust SLAs by ensuring the integrity of computation and storage, upholding adherence to consent rules (including privacy and retribution considerations), demonstrating censorship resistance, and maintaining a transparent data provenance.
 
@@ -45,17 +43,16 @@ The AI Factory enables the creation of a zone where different identities can coo
 ### How does it work?
 
 In practical terms, AI Factory is represented by three key aspects:
+
 - On-chain Rules and Governance Templates
 - All Referenced Resources and Services in the Dataverse Accepted within the Zone's Scope
 - Integrated Tools and connectors to interconnect with users' existing workflows.
 
-
-**Rules & Governances Templates** 
+**Rules & Governances Templates**
 
 Defined as a set of rules, these on-chain governance templates establish the boundaries and operational scope of the Zone. They provide a structured framework that outlines the permissible actions and existence parameters within the Zone.
 
 The zone creator can create his own template or reuse an existing one to deploy a framework tailored to quickly specific needs.
-
 
 ![ai-factory-3](/img/content/academy/ai-factory-3.webp)
 
@@ -63,7 +60,7 @@ The zone creator can create his own template or reuse an existing one to deploy 
 
 <u>Governance Model:</u> Determines how governance is exercised and expressed, ranging from a model with a single authority to a multi-sig or a DAO around a token model. All governance rules can be defined, allowing for a highly customizable governance structure.
 
-<u>Resource Management:</u> Define the conditions under which digital resources can be considered within the scope of an activity involving acting entities. Numerous rules can be expressed regarding the properties of the digital resources established by their metadata. Rules related to metadata requirements, format compatibility, size limitations, ownership and intellectual property rights, and quality assurance may be included. 
+<u>Resource Management:</u> Define the conditions under which digital resources can be considered within the scope of an activity involving acting entities. Numerous rules can be expressed regarding the properties of the digital resources established by their metadata. Rules related to metadata requirements, format compatibility, size limitations, ownership and intellectual property rights, and quality assurance may be included.
 
 <u>Business Model:</u> The business model of the zone defines how contributions are quantified and how contributors are rewarded. This can range from a simple one-time payment for access to more complex business logic aiming to create an AI Factory with specific services that require a fair and sustainable compensation system for each contributor.
 
@@ -76,7 +73,6 @@ Once the governance framework is defined and live on-chain, the  protocol can de
 ![ai-factory-4](/img/content/academy/ai-factory-4.webp)
 
 <u>All Resources and Services allowed by the Zone:</u>  The governance rules of the Zone help determine, within the set of resources referenced in the Dataverse, which ones can be used within the scope of this zone. All Dataverse resources adhering to these rules are allowed by the Zone.
-
 
 <u>All Resources and Services compatible with the Zone:</u>  Resource Consent defines the conditions for including a resource in an activity involving entities operating within a Zone. While the Zone rules specify the regulations from the perspective of the Zone, the consent represents the rules from the perspective of the Resource. It serves as the expression of the resource owner's considerations regarding the terms of use for the Resource, providing guidelines for its proper use within the Dataverse. Rules may include aspects such as the business model, Zone licenses or labels, and regulations about any credentials, such as identity, reputation, qualification, or token-related credentials.
 
@@ -98,7 +94,7 @@ Understanding the unique relationship between the consent of resources and the z
 
 **Integration and Connectors:**
 
-- <u>APIs and Connectors:</u> APIs provide a standardized interface for accessing and communicating with a service, while connectors are components that facilitate the connection between two distinct systems by overcoming potential differences in their protocols and communication methods. They are crucial for ensuring the connection between different services and the orchestrator. 
+- <u>APIs and Connectors:</u> APIs provide a standardized interface for accessing and communicating with a service, while connectors are components that facilitate the connection between two distinct systems by overcoming potential differences in their protocols and communication methods. They are crucial for ensuring the connection between different services and the orchestrator.
 - <u>Front-end Interface:</u> It serves as the user-friendly entry point for interacting with the Zone. A front-end interface acts as a crucial bridge, enabling effective communication and interaction between users and the decentralized framework.
 
 As the Dataverse continues to expand, numerous interfaces and APIs will become available, created by the community or external contributors to facilitate accessibility and entry points.
@@ -124,41 +120,53 @@ The AI Factory serves as the initial milestone for collaborative model training.
 Here is a non-exhaustive list of projects we anticipate rapidly emerging within the Dataverse, contributing to innovation in AI:
 
 ### Inference Marketplace Zone
+
 This zone acts as a marketplace where contributors can offer and access AI inference services. Contributors collaborate to provide efficient and specialized inference capabilities, creating a dynamic ecosystem for deploying and utilizing AI models in real-world scenarios. On-chain rules define the terms of service and ensure transparent transactions within the marketplace.
 
 ### Aggregator of AI Inference Zone
+
 It serves as an aggregator for AI inference services, allowing contributors to pool resources and offer collective solutions. The zone facilitates collaboration to optimize and aggregate inference results from multiple models. On-chain rules govern the aggregation process, ensuring fair contributions and quality output.
 
 ### Specialized Infrastructure Provider Zone
+
 Zone Purpose: addresses specific infrastructure requirements by providing a decentralized marketplace for contributors to access various compute chipsets, whether heterogeneous or homogeneous, tailored to specific AI model needs.
 
-
 ### Fine Tuning Zone
+
 This Zone is designed for fine-tuning AI models to enhance their performance. Contributors collaborate to make nuanced adjustments, iterating on model parameters and hyperparameters to achieve optimal results. On-chain rules define the fine-tuning parameters and ensure the traceability of refinements made to the models. Most relevant fine-tuning algorithms, such as Grid Search, Random Search, and Bayesian Optimization, may easily be implemented as a service into the Dataverse.
 
 ### Edge Computing Infrastructure Zone
+
 This zone specializes in providing resources optimized for edge computing scenarios. Contributors can access infrastructure solutions designed for deploying AI models at the network edge, reducing latency and enhancing real-time processing. Edge computing chipsets and configurations allow contributors to meet the unique demands of applications requiring fast and decentralized AI processing on the edge. The on-chain rules of this zone ensure seamless compatibility and provide clear usage conditions for contributors leveraging edge computing infrastructure.
 
 ### Data Pre-Processing Zone
+
 This Zone focuses on preparing data for AI model training through various pre-processing tasks such as data ingestion, cleaning, and outlier detection. Contributors collaborate to ensure that datasets are well-structured and cleansed, addressing data quality and integrity challenges.
 
 ### Privacy-Preserving Data Labeling Service
+
 Collaborators can use privacy-preserving data labeling tools that allow for data annotation without exposing personally identifiable information, contributing to developing privacy-conscious AI models.
 
 ### Secure Multiparty Computation Services Zone
+
 Zone Purpose: is dedicated to providing Secure Multiparty Computation (SMPC) services, allowing contributors to perform computations on encrypted data without exposing the raw information. This specialized zone enhances privacy during collaborative model development, ensuring that sensitive data remains confidential throughout the computation processes.
 
-### Zero-Knowledge Machine Learning Zone 
+### Zero-Knowledge Machine Learning Zone
+
 Zone Purpose: ZKML focuses on zero-knowledge machine learning techniques, providing a collaborative space for contributors to develop privacy-preserving AI models. Contributors collaborate to integrate advanced privacy features using zero-knowledge proofs. On-chain rules define the privacy standards and usage conditions within the zone.
 
 ### Monitoring Zone
+
 This zone specializes in real-time monitoring of AI model performance in training or production. Contributors can access advanced monitoring tools that alert them to deviations or performance degradation. On-chain rules define monitoring parameters and ensure responsiveness to issues.
 
 ### Simulation Tools Zone
+
 Enables the testing and validation of models in simulated environments before deployment in production. Contributors collaborate to create realistic simulations, ensuring the robustness of models. On-chain rules define the conditions for using simulation tools.
 
 ### Model Explainability Tools Zone
+
 It focuses on enhancing the transparency of AI models by providing explanations for decision-making processes. Contributors collaborate to make models more understandable, reinforcing user trust. On-chain rules ensure the quality and objectivity of generated explanations.
 
 ### Dimensionality Reduction Tools Zone
+
 This Zone can facilitate the management of complex datasets by reducing their dimensionality. Contributors collaborate to apply reduction techniques while preserving essential information.
