@@ -99,7 +99,9 @@ Understanding the unique relationship between the consent of resources and the z
 **Integration and Connectors:**
 
 - <u>APIs and Connectors:</u> APIs provide a standardized interface for accessing and communicating with a service, while connectors are components that facilitate the connection between two distinct systems by overcoming potential differences in their protocols and communication methods. They are crucial for ensuring the connection between different services and the orchestrator. 
-- <u>Front-end Interface:</u> It serve as the user-friendly entry point for interacting withthe Zone. A front-end interface acts as a crucial bridge, enabling effective communication and interaction between users and the decentralized framework.
+- <u>Front-end Interface:</u> It serves as the user-friendly entry point for interacting with the Zone. A front-end interface acts as a crucial bridge, enabling effective communication and interaction between users and the decentralized framework.
+
+As the Dataverse continues to expand, numerous interfaces and APIs will become available, created by the community or external contributors to facilitate accessibility and entry points.
 
 ### Unlock New Synergies with AI Factory
 
