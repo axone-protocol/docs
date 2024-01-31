@@ -1,0 +1,92 @@
+---
+sidebar_class_name: hidden
+---
+
+# Verifiable Claims Principles
+
+<i>Reading time: {readingTime} min</i>
+
+**Verifiable Credentials** are a key concept in the world of digital identity, particularly in decentralized identity systems. A Verifiable Credential is a form of digital evidence that attests an information or a characteristic about a person, organization, or object. A trusted entity that issues these credentials is called the **Issuer**.
+
+## Verifiable Credentials and claims
+
+Commonly, a credential is a certificate, proof, or qualification of competence or authority issued to an entity (corporate or individual) by a third party with the authority or presumed competence to do so. It may be proof of authority, status, rights, privileges, or others, usually written. For example, a diploma is a credential issued to a graduate by a university. The diploma includes information such as the graduate's name, the issue date, the degree obtained, and the field of study. It also bears the signature of those in charge of the institution, such as the rector or dean. The diploma serves as official proof that the individual has completed a certain level of education.
+
+A credential may contain several claims. For example, a diploma contains the claims "I have a degree in Biology" and "My diploma was issued on 19/06/2023".
+
+**Verifiable Credentials** (VCs) can be digitally authenticated, meaning that the credential receiver can verify its origin and integrity without contacting the issuer directly. The holder of the Verifiable Credential can control how and to whom his or her information is shared. For example, a person holds the VC for his degree, the Issuer of which is the university where he studied. When this person applies for a job, he or she can share this VC with the company to provide proof of his or her background and skills. The company does not need to contact the university to verify the authenticity of the VC.
+
+In the [W3C standard](https://www.w3.org/TR/vc-data-model/), a credential is a set of one or more **claims** made by the same entity. Credentials include an identifier and metadata describing the credential's properties, such as the issuer, the expiry date and time, a representative image, a public key to use for verification purposes, the revocation mechanism, and so on. The issuer might sign the metadata. A verifiable credential is a set of tamper-evident claims and metadata that cryptographically prove who issued it.
+
+<center>
+  <img src="/img/content/academy/verifiable-claims-1.webp" alt="Verifiable claims W3C" style={{ maxHeight: "340px" }}></img>
+</center>
+
+:::info
+
+A **claim** is an assertion made about a subject.
+
+A **credential** is a set of one or more claims made by an issuer.
+
+A **verifiable credential** is a tamper-evident credential that has authorship that can be cryptographically verified. These verifiable credentials can be used to build verifiable presentations, which can also be cryptographically verified.
+
+A **verifiable presentation** is a tamper-evident presentation encoded in such a way that authorship of the data can be trusted after a process of cryptographic verification.
+
+:::
+
+### Example: Issuing a Digital Passport
+
+A government authority issues a digital passport to a citizen.
+
+<center>
+  <img src="/img/content/academy/verifiable-claims-2.webp" alt="Verifiable claims passport example" style={{ maxHeight: "650px" }}></img>
+</center>
+
+Use when traveling :
+
+- Airport Verification: When traveling, the passport holder presents his or her digital passport at the airport.
+- Verifier (Customs): Customs officers use a system that verifies the passport's digital signature and metadata to confirm its authenticity.
+
+The digital signature and metadata ensure enhanced security by preventing forgery and guaranteeing data integrity. Compliance with W3C standards facilitates fast, efficient data verification by verifiers.
+
+## Verifiable claims in the OKP4 protocol
+
+The [OKP4 ontology](https://docs.okp4.network/academy/resources#ontology-how-its-represented-semantic-description) is used to describe the Dataverse. In the Dataverse, resources are identified by their DID. Resources are described by claims referenced in the ontology as Verifiable Presentations (VPs) whose subject is the resource's DID. In this way, each resource is described by a set of associated claims.
+
+It's important to note that the existence of a resource is conditional on the presence of at least one relevant claim. In other words, although the universe of potential resources is infinite, a resource only becomes concrete and tangible when a corresponding claim is established.
+
+:::note
+This notion is analogous to that of crypto-currency wallets. Although all addresses theoretically exist, they only take on practical significance (such as indicating a balance) when participating in a transaction.
+:::
+
+Verifiable Credentials obey schemas that describe a particular aspect of a resource. Certain VCs apply depending on the nature of the resource. A VC describing an entity or organization does not apply to the same resource as a VC describing a dataset. This is why VCs are organized in schemas.
+
+<center>
+  <img src="/img/content/academy/verifiable-claims-3.webp" alt="Verifiable claims attached to a resource" style={{ maxHeight: "400px" }}></img>
+</center>
+
+### Resource materiality
+
+It has been established that the concrete existence of a resource depends on the presence of a claim concerning it. More specifically, **the Resource Governance VC ensures the existence of a resource in the protocol**: a resource or zone exists in the protocol only if governance is attached to it.
+These VCs play a crucial role in regulating and managing resources. They define the parameters for controlling, managing, and interacting with the resource and thus regulate its use, sharing, and modification in the dataverse. These VCs guarantee order and compliance with established resource management standards.
+
+### Claim and revocation
+
+#### Self-sovereign governance principles
+
+Except from Governance credentials, resources are considered to be under "Self-Sovereign" management according to the following two principles:
+
+- **Free Issuance of Claims**: In this framework, any entity (individual, organization, service, etc.) can issue claims on the resource concerned, **with the exception of governance claims**, which are issued by the identities themselves.
+- **Unilateral revocation of claims**: This principle stipulates that claims can only be revoked by the entity that issued them. This means that if Entity A issues a claim on the resource, only Entity A can revoke that claim. This principle is unalterable and remains independent of any intervention or modification by governance structures.
+
+Self-sovereign governance is particularly well suited to environments where autonomy and decentralization are paramount, as is the case in the OKP4 dataverse. However, we must remain vigilant to the "gossip effect": given that any entity can issue credentials, there is a risk that unverified or inaccurate information will be disseminated. This phenomenon poses a significant challenge in balancing individual freedom and collective interest. Such dynamics need to be carefully considered when designing governance schemes in Zones.
+
+## Registration of Verifiable Presentation in the OKP4 Protocol
+
+Once the Issuer successfully issues the Verifiable Credentials (VCs) associated with a resource or a Zone to the Holder, the Registrant will record a Verifiable Presentation (VP) in the OKP4 blockchain. A VP consists of a set of VCs. The Registrant can be either the Holder or a third party.
+
+Recording VPs in the blockchain, rather than individual VCs, ensures the confidentiality of specific properties by only revealing a restricted set of properties on the public chain.
+
+<center>
+  <img src="/img/content/academy/verifiable-claims-4.webp" alt="Verifiable presentation W3C" style={{ maxHeight: "360px" }}></img>
+</center>
