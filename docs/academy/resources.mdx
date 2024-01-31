@@ -2,6 +2,9 @@
 sidebar_class_name: hidden
 ---
 
+import Quiz from 'react-quiz-component';
+import * as quiz from './resources-quiz.json';
+
 # Resources: what can be shared
 
 <i>Reading time: {readingTime} min</i>
@@ -111,3 +114,5 @@ Ontology forms a cornerstone in the OKP4 protocol, elevating the representation 
 This illustration provides an overview of the classification of digital resources and services within the protocol.
 
 ![resources-3](/img/content/academy/resources-3.webp)
+
+<Quiz quiz={quiz}/>
