@@ -22,9 +22,9 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "It reveals the full identity of the holder at each verification.",
-          "It enables a claim to be shared without revealing the full identity.",
-          "It irreversibly encrypts identity data.",
+          "It reveals the all information at each verification.",
+          "It allows information to be shared without revealing all details.",
+          "It encrypts data in an irreversible manner.",
           "It modifies the data so as not to reveal the identity of the holder."
         ],
         "correctAnswer": "2",
