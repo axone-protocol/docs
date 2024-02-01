@@ -55,7 +55,8 @@
           "It verifies and approves resource claims.",
           "It registers the Verifiable Presentation of a resource on the blockchain.",
           "It creates and manages resource DIDs.",
-          "It encrypts identification data for enhanced security."
+          "It encrypts information for enhanced security."
+
         ],
         "correctAnswer": "2",
         "messageForCorrectAnswer": "Correct answer. Good job.",
