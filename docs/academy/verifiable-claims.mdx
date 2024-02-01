@@ -1,6 +1,10 @@
 ---
+sidebar_position: 9
 sidebar_class_name: hidden
 ---
+
+import Quiz from 'react-quiz-component';
+import * as quiz from './verifiable-claims-quiz.json';
 
 # Verifiable Claims Principles
 
@@ -90,3 +94,5 @@ Recording VPs in the blockchain, rather than individual VCs, ensures the confide
 <center>
   <img src="/img/content/academy/verifiable-claims-4.webp" alt="Verifiable presentation W3C" style={{ maxHeight: "360px" }}></img>
 </center>
+
+<Quiz quiz={quiz}/>

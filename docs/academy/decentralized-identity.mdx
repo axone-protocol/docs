@@ -1,6 +1,10 @@
 ---
+sidebar_position: 8
 sidebar_class_name: hidden
 ---
+
+import Quiz from 'react-quiz-component';
+import * as quiz from './decentralised-identity-quiz.json';
 
 # Decentralized identity
 
@@ -206,3 +210,5 @@ In the case of a declaration of reputation, the roles are handled by distinct en
 - The Issuer is a trusted authority
 - The Holder is the Provider subject of the reputation claim
 - The Registrant can be the Provider, the Issuer, or a third-party 
+
+<Quiz quiz={quiz}/>
