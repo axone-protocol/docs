@@ -22,7 +22,7 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "A Verifiable Credential is a set of claims, whereas a Verifiable Presentation is a set of Verifiable Credentials registered in the protocol.",
+          "A Verifiable Credential is a set of claims, whereas a Verifiable Presentation is a set of Verifiable Credentials derivations registered in the protocol.",
           "There is no significant difference between the two.",
           "A Verifiable Credential is used for financial transactions, while a Verifiable Presentation is for personal data.",
           "A Verifiable Credential is always public, while a Verifiable Presentation is always private."
