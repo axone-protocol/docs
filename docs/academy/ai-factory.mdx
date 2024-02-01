@@ -2,7 +2,12 @@
 sidebar_class_name: hidden
 ---
 
+import Quiz from 'react-quiz-component';
+import * as quiz from './ai-factory-quiz.json';
+
 # AI Factory: A Use Case Unveiling
+
+<i>Reading time: {readingTime} min</i>
 
 In the previous section, we highlighted the target audience of the protocol using concise examples. To delve deeper into the power of this protocol, this section will examine the underlying motivations for its creation through more detailed and concrete case studies.
 
@@ -56,7 +61,7 @@ The zone creator can create his own template or reuse an existing one to deploy 
 
 ![ai-factory-3](/img/content/academy/ai-factory-3.webp)
 
-<u>Identity Management:</u> This refers to the various authentication methods used to manage access to the zone. It can range from key-based systems Self-Sovereign Identity (SSI) services like Cheqd to more conventional Single Sign-On (SSO) methods like signing in with Google. The choice may depend on the desired contributor engagement type or the disclosed information's granularity.
+<u>Identity Management:</u> This refers to the various authentication methods used to manage access to the zone. It can range from key-based systems Self-Sovereign Identity (SSI) services like Cheqd to more conventional Single Sign-On (SSO) methods like Sign-in with Google. The choice may depend on the desired contributor engagement type or the disclosed information's granularity.
 
 <u>Governance Model:</u> Determines how governance is exercised and expressed, ranging from a model with a single authority to a multi-sig or a DAO around a token model. All governance rules can be defined, allowing for a highly customizable governance structure.
 
@@ -170,3 +175,5 @@ It focuses on enhancing the transparency of AI models by providing explanations 
 ### Dimensionality Reduction Tools Zone
 
 This Zone can facilitate the management of complex datasets by reducing their dimensionality. Contributors collaborate to apply reduction techniques while preserving essential information.
+
+<Quiz quiz={quiz}/>
