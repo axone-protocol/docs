@@ -308,7 +308,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['prolog', 'turtle', 'bash']
+        additionalLanguages: ['prolog', 'turtle', 'bash', 'json', 'sparql']
       },
       colorMode: {
         defaultMode: 'dark'
