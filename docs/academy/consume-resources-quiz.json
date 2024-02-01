@@ -1,0 +1,66 @@
+{
+  "quizTitle": "Test your knowledge!",
+  "nrOfQuestions": "4",
+  "questions": [
+    {
+      "question": "What does a workflow represent in the context of the OKP4 protocol?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "A sequence of financial transactions on the blockchain.",
+        "A series of processes involving digital resources and digital resource processing services.",
+        "A set of governance rules for resource management.",
+        "A communication protocol between different nodes on the blockchain."
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "How are workflows structured in OKP4?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "As a linear sequence of activities with no interdependencies.",
+        "As a Directed Acyclic Graph (DAG) without circular references or loops.",
+        "By following a proof-of-work consensus model.",
+        "By a random set of uncoordinated activities."
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "What is the first step in the life of a workflow in OKP4?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "The execution of digital resources.",
+        "Payment of tokens to resource providers.",
+        "Workflow validation by validators.",
+        "Submission of a transaction describing the desired workflow."
+      ],
+      "correctAnswer": "4",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    },
+    {
+      "question": "How is off-chain orchestration implemented in OKP4?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "By using the blockchain to coordinate resources directly.",
+        "Through a centralized authority that manages execution logic.",
+        "Through a dedicated off-chain Orchestration Service.",
+        "Through an automatic distributed consensus mechanism."
+      ],
+      "correctAnswer": "3",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": "1"
+    }
+  ]
+}

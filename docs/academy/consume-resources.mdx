@@ -3,6 +3,9 @@ sidebar_position: 4
 sidebar_class_name: hidden
 ---
 
+import Quiz from 'react-quiz-component';
+import * as quiz from './consume-resources-quiz.json';
+
 # Consume resources
 
 <i>Reading time: {readingTime} min</i>
@@ -100,4 +103,6 @@ The role and responsibilities of an Orchestration Service can be categorized int
 - Authentication and authorization: The Orchestration Service manages the authentication and approval required for interactions with orchestrated resources.
 - Audit trail: The Orchestration Service maintains an Audit Trail by recording all execution steps in the blockchain. Specifically, it records information in the ontology designed for this purpose on-chain. This provides a complete and immutable traceability of actions performed within the workflow, offering enhanced transparency and control.
 
-## Safety mechanisms - To be completed
+## Safety mechanisms - Coming soon
+
+<Quiz quiz={quiz}/>
