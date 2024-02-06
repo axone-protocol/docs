@@ -1,0 +1,204 @@
+---
+sidebar_position: 12
+sidebar_class_name: hidden
+---
+
+# Describe a Zone
+
+<i>Reading time: {readingTime} min</i>
+
+A [zone](https://docs.okp4.network/whitepaper/solution#zone-overview) is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. A resource is not attached to a zone. The recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
+
+All the workflows initiated within the OKP4 protocol must be defined in the context of a specific Zone. When the workflow is submitted, the protocol will check if all rules of the zone and of the engaged resources are respected and will apply the business model of the zone. 
+
+Let’s see how to describe and register a zone in the OKP4 Protocol. Here are the four steps involved: 
+
+<center>
+  <img src="/img/content/academy/describe-resource-1.webp" alt="Steps to describe a resource in the Dataverse" style={{ maxHeight: "340px" }}></img>
+</center>
+
+We'll take the example of the Collaborative AI Zone in this tutorial.
+
+:::info
+Prerequisite: [Install the OKP4 CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
+:::
+
+## Step 1: Create keys
+
+The first step consists of creating keys and related DID for the issuer of the credentials and the resource itself. 
+
+The OKP4 Protocol can provide you keys (also called a wallet) and DID. A key pair is created to obtain a wallet to establish secure ownership and control over your assets on the OKP4 blockchain. The key pair consists of two cryptographic keys: public and private keys.
+When creating a wallet, you're typically provided with a mnemonic consisting of 12, 24, or sometimes more words. This mnemonic acts as a human-readable representation of the underlying cryptographic information. It is easier to remember and write down than the complex numbers and characters representing the private key.
+The mnemonic serves as a backup mechanism for the wallet. You can regenerate the key pair by inputting the mnemonic into any compatible wallet software to recover access to your funds.
+
+Here, we don’t create a wallet for cryptocurrency storage but for secure storage of identifiers: A wallet can securely store digital identifiers, such as proofs of identity, certificates, or other personal identification information. 
+
+:::danger
+A keyring is a secure software utility designed to store and manage credentials, such as passwords, cryptographic keys, and API tokens, in a centralized and encrypted form. `--keyring-backend test` is a command used to configure a keyring in test mode, which is helpful for development and testing but not for applications where private key security is a major concern. Be careful; this keyring is unsafe as the private keys are unencrypted on the file system.
+:::
+
+```bash
+​​# Create a new key. Replace "collab-ai-zone" with another name
+okp4d keys add collab-ai-zone --keyring-backend test
+```
+
+:::danger
+If you create a new key pair, the terminal displays a list of 24 words. Store this mnemonic phrase in a safe place.
+:::
+
+Get the list of all your keys stored locally especially the new one. You can see that the DID related to this key is `did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ`.
+
+```bash
+okp4d keys list --keyring-backend test
+
+- address: okp41e48vdzvv5j337f6z5h93lyg5jth9ckn94cagzt
+  did: did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ
+  name: collab-ai-zone
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A+D85xM279HkiCCqONveag2X4QLKA0cyliClJbsS2fsj"}'
+  type: local
+
+```
+
+You can also use the command `okp4d show` to directly find information about a particular wallet. 
+
+```bash
+# Replace "collab-ai-zone" with your wallet name
+okp4d keys show collab-ai-zone --keyring-backend test
+
+- address: okp41e48vdzvv5j337f6z5h93lyg5jth9ckn94cagzt
+  name: collab-ai-zone
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A+D85xM279HkiCCqONveag2X4QLKA0cyliClJbsS2fsj"}'
+  type: local
+
+```
+Reiterate the command to create a wallet to store the identity of the issuer. 
+
+
+So now we have the following information: 
+
+|  | Collaborative AI zone | 
+|--------------|------|
+| Name of the wallet | collab-ai-zone |
+| Public key  | okp41e48vdzvv5j337f6z5h93lyg5jth9ckn94cagzt | 
+| DID  | did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ |
+
+|  | Issuer |
+|--------------|------|
+| Name of the wallet | issuer-okp4 |
+| Public key  | okp41ysl9yllv40kfygcdfqj7c9n2a5c5zpmgku8ufg |
+| DID  | did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3 |
+
+:::note
+In the future, you will be able to use any key provider, such as Cheqd.  
+:::
+
+## Step 2: Create the credentials
+
+Find the credential templates you need in the [Ontology documentation](https://docs.okp4.network/ontology/schemas) according to the nature of the resource you describe. 
+
+For the zone, instantiate the template [credential-zone-description](https://github.com/okp4/ontology/blob/main/src/example/zone/collab-ai-zone-description.jsonld).  
+
+:::info
+Would you like to describe your zone with other properties? You can create your template of credentials. Don’t directly add these properties in the ZoneDescriptionCredential as defined in the Ontology. 
+:::
+
+### Description of the Zone 
+
+Here are the following metadata of the zone Collaborative AI Zone
+
+| Title | Collaborative AI Zone | 
+|--------------|------|
+| Description | Collaborative AI Zone is dedicated to training AI models in a collaborative and open way. | 
+| Image | NA |
+| Tags | AI, Collaboration, Machine learning |
+| Topic | Other |
+
+Let’s fill in the template.
+
+```bash
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/okp4/ontology/v$major/schema/credential/zone/description/"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
+    "credentialSubject": {
+        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+        "type": "ZoneDescriptionCredential",
+        "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
+        "hasTag": [
+            "AI",
+            "Collaboration",
+            "Machine Learning"
+        ],
+        "hasTitle": "Collaborative AI Zone",
+        "hasTopic": "https://w3id.org/okp4/ontology/v$major/thesaurus/topic/other"
+    },
+    "issuanceDate": "2024-02-02T15:40:43.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}
+```
+
+Fields to modify:
+
+- `id` (in @context): change the UUID at the end of the URI. You can generate a new UUID with this [tool](https://www.uuidgenerator.net). 
+- `id`: copy the did:key of the zone
+- `hasDescription`: fill in the description of the zone
+- `hasTag`: fill in a list of tags
+- `hasTitle`: fill in the title of the zone
+- `hasTopic`: select the topic concerned by your zone in the [Thesaurus Topic](https://github.com/okp4/ontology/blob/main/src/thesaurus/topic.ttl). Put the URI of the selected topic in the jsonld. 
+- `issuanceDate`: update the date for Today
+- `id` (issuer): copy the did:key of the issuer
+- `name`: put the issuer's name (string). 
+
+You can remove some properties if they are not relevant to your zone. 
+
+## Step 3: Sign the credentials
+
+Now that you have created the VC, you will sign it. 
+
+Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
+
+By signing the credential, any alteration to the credential's data after it has been signed will invalidate the signature. This ensures the data has not been tampered with and remains as it was when issued.
+
+To sign your VC, use this command: 
+
+COMMANDE A AJOUTER
+
+You can see that there is a new field in the jsonld with the cryptographic proof. 
+
+AJOUTER RESULTAT
+
+The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
+
+The OKP4 blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+
+## Step 4: Register the credentials in the blockchain
+
+The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It’s the role of the Registrant (who can be the Holder or another entity). 
+
+:::info
+Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
+::: 
+
+```bash
+# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+```
+
+With:
+
+- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `MY_ADDR` : registrant okp4 address  
+- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+
+The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
+
+The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
+
+:::warning
+Remember, the Resource Governance VC ensures the existence of a resource in the protocol: a resource or zone exists in the protocol only if governance is attached to it. Let’s do it on the next page. 
+:::
