@@ -49,7 +49,7 @@ okp4d keys add crime-data-lapd --keyring-backend test
 If you create a new key pair, the terminal displays a list of 24 words. Store this mnemonic phrase in a safe place.
 :::
 
-Get the list of all your keys stored locally especially the new one. You can see that the DID related to this key is `did:key:zQ3shcLHSPRYUJzAPzS5mrxVy8rpbfmu6S3x2J2gDWPAbRx92`.
+Get the list of all your keys stored locally especially the new one. You can see that the DID related to this key is `did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5`.
 
 ```bash
 okp4d keys list --keyring-backend test
@@ -64,15 +64,14 @@ address: okp413e4exyqr5chxz5qlg2wpqr5ehmq90q2dgy753z
 You can also use the command `okp4d show` to directly find information about a particular wallet. 
 
 ```bash
-# Replace "issuer-okp4" with your wallet name
-okp4d keys show issuer-okp4 --keyring-backend test
-
-- address: okp41ysl9yllv40kfygcdfqj7c9n2a5c5zpmgku8ufg
-  name: issuer-okp4
-  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A7lWVpVRnv82dt3LDLsDkCas/rth0NXMp1N2yupOpf/8"}'
+# Replace "crime-data-lapd" with your wallet name
+okp4d keys show crime-data-lapd --keyring-backend test
+- address: okp413e4exyqr5chxz5qlg2wpqr5ehmq90q2dgy753z
+  name: crime-data-lapd
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Aj8dI0OJWxTGM4gYd89cB8Qzi95DNxR/3F9DAPaNU0Mg"}'
   type: local
 ```
-Reiterate the command to create a wallet to store the issuer's identity. 
+Reiterate the command to create a wallet to store the IPFS and Issuer's identities. 
 
 So now we have the following information: 
 
@@ -183,7 +182,7 @@ Here are the following metadata of the service [IPFS](https://ipfs.tech).
 | Category | Storage | 
 | Image | NA |
 | Publisher | OKP4 |
-| Tags | Storage Cloud Peer-to-peer |
+| Tags | Storage, Cloud, Peer-to-peer |
 | Webpage | https://docs.ipfs.tech/ |
 
 ```bash
@@ -231,7 +230,7 @@ Fields to modify:
 
 ## Step 3: Sign the credentials
 
-Now that you have created the VC, you will sign them. 
+Now that you have created the VCs, you will sign them. 
 
 Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
 
