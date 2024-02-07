@@ -1,0 +1,311 @@
+---
+sidebar_position: 13
+sidebar_class_name: hidden
+---
+
+# Create the zone's governance
+
+<i>Reading time: {readingTime} min</i>
+
+:::info
+We recommend you first read the [Technical documentation of Governance](https://docs.okp4.network/technical-documentation/governance/introduction) before delving into practice in the Academy. 
+:::
+
+Zone Rules establish the boundaries of a specific area in the Dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
+
+The materialization of a zone in the dataverse requires the creation of a Governance VP. According to a principle of self-determination, the zone itself must generate this VP, i.e., the issuer and the zone have the same identity.
+
+The impact of this VP of Governance is constitutional. Its implementation transfers authority from the issuer (i.e., the zone) to an autonomous governance system associated with the zone. This system is equipped with its own mechanisms and manages changes and revisions relating to the governance of the zone in an independent, self-regulated, and decentralized manner.
+
+The zone Governance is contractual, defining the terms of use of the zone. For example, it can specify the conditions of access to a dataset for certain services with specific claims.
+
+In the protocol, governance structures are made up of two key elements:
+
+- A **VP** serves as proof of the existence of a governance by referencing the Codified Governance. This document plays a fundamental role in creating a zone within the dataverse.
+- **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing zone management.
+
+<center>
+  <img src="/img/content/academy/resource-governance-1.webp" alt="Governance elements for Zone in OKP4 Protocol" style={{ maxHeight: "340px" }}></img>
+</center>
+
+Here are the five steps to create a zone governance in the Dataverse: 
+
+<center>
+  <img src="/img/content/academy/resource-governance-2.webp" alt="Steps to create a zone's governance" style={{ maxHeight: "340px" }}></img>
+</center>
+
+We'll take one simple example in this tutorial for the Collaborative AI zone.  
+
+## Step 1: Define the governance of your zone 
+
+First, you need to define the governance rules of your zone. 
+The governance content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
+
+- **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
+- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
+- **section**: A section is a subdivision of a chapter. It allows articles to be organized into thematic subgroups, making the structure of the rules more readable and easier to navigate.
+- **subSection**: Sub-sections provide an additional level of detail within sections. They are used to group together articles or paragraphs that address specific aspects or details of a broader issue covered in the section.
+- **paragraph**: The paragraph is the element that contains the text of the rule itself. This translates into a clause defining a specific condition or rule in Prolog.
+
+You can use a template (coming soon) or begin from scratch. 
+
+Governance rules of the Collaborative AI zone: 
+
+| Division    | Ordinal number | Title                                                |
+|-------------|----------------|------------------------------------------------------|
+| Chapter     | 1              | Collaborative AI zone                                |
+| Section     | 1.1            | Zone Governance                                      |
+| Sub-section | 1.1.1          | Governers                                            |
+| Article     | 1.1.1.1        | Conditions to amend the rules                       |
+| Paragraph   | 1.1.1.1.1      | Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`|
+
+
+:::info
+The OKP4 Community will provide more and more templates over time. 
+:::
+
+## Step 2: Create the Prolog program 
+
+### Introduction 
+
+Codified Governance is based on the principles of Rules as Code (RaC), a powerful and innovative approach that reinvents a fundamental aspect of governance: the formulation of rules. This concept suggests that governance bodies implement official versions of rules (such as regulations) in a format that can be interpreted by both machines and humans.
+
+This method facilitates computer systems' understanding and automated application of rules, guaranteeing consistent and deterministic execution. On the other hand, the ability of rules to be interpreted by humans facilitates their verification and encourages the informed and responsible involvement of stakeholders.
+
+In the context of the protocol, it enables autonomous and decentralized interpretation and execution of the rules, thanks to the use of Smart Contracts.
+
+### The elements of law
+
+Several terminological elements are essential when expressing legal terms in Prolog for the construction of governance rules. These elements provide a structured framework, mirroring traditional legal documents, and facilitate the precise encoding of legal concepts and rules in the Prolog programming environment. 
+
+#### Hierarchical elements
+
+To articulate the hierarchy of the various elements that make up governance, hierarchy levels are introduced into the system to improve structuring and enhance understanding of the content.
+
+These elements are translated into the following Prolog predicates:
+
+```prolog
+chapter(ChapterId).
+section(SectionId).
+subSection(SubSectionId).
+article(ArticleId).
+paragraph(ParagraphId, ...).
+```
+
+To maintain the link between the different hierarchical elements, the binary predicate `partOf/2` is added to the system.   
+
+For example:
+
+```prolog
+% Definition of instances
+chapter(chap1).
+section(sec1).
+subSection(subSec1).
+article(art1).
+paragraph(para1, ...).
+paragraph(para2, ...).
+
+% Definition of relationships
+partOf(para1, art1).
+partOf(para2, art1).
+partOf(art1, subSec1).
+partOf(subSec1, sec1).
+partOf(sec1, chap1).
+```
+
+<center>
+  <img src="/img/content/academy/resource-governance-3.webp" alt="Governance elements for Resources in OKP4 Protocol" style={{ maxHeight: "340px" }}></img>
+</center>
+
+#### Elements of description
+
+To enable the textual description of the different parts of governance, 2 predicates are introduced into the system:
+
+- `title`: The title of a hierarchy element
+- `description`: The description of a hierarchy element
+
+```prolog
+title(ElementId, Text).
+description(ElementId, Text).
+```
+
+Where `ElementId` is an instance of a hierarchical element as defined above.
+
+#### Legal terms
+
+Legal reasoning is based on expressing what is permitted and what is prohibited. Unconditional or conditional `paragraph/2` clauses encode this expression.
+
+The `paragraph/2` predicate is defined as follows:
+
+```prolog
+paragraph(ParagraphId, Modality)
+```
+
+where
+
+- `ParagraphId` is the unique identifier of the paragraph.
+- `Modality` designates the modality, the interpretation under which the rule is to be considered. The possible values are:
+   - `permitted`: This modality expresses formal permission relating to the specified action, depending on the particular conditions or context taken into account. It is relevant to conditional clauses, highlighting situations where the action is explicitly permitted.
+   - `prohibited`: This modality expresses an explicit prohibition linked to the action mentioned, applicable in the specific context considered. It is also relevant for conditional clauses, marking circumstances where the action is formally prohibited.
+
+#### Elements of context
+
+The `paragraph/2` predicate allows the expression of (unitary) governance rules by asserting the modality with which to interpret the rule. However, contextual elements such as the action performed, the object of the action, or the subject at the origin of the action are not explicitly specified in the signature of the predicate. For this reason, predicate clauses can incorporate references to contextual elements, establishing conditions for satisfying the rule.
+As part of the interpretation of a rule, contextual elements are introduced as facts and exploited in the rules to define the conditions under which the modality expressed in the rule is true.
+
+The `subjectId/1` predicate unifies the decentralized identifier (DID) of the subject of an action with the supplied argument.
+
+The `resourceId/1` predicate unifies the resource's decentralized identifier (DID), which is the object of the action with the supplied argument.
+
+The `action/1` predicate unifies the action initiated by the subject on the object with the supplied argument. The action is a term (a prolog fact) defined by an extensible control vocabulary, which refers to all possible actions. By convention, actions are designated by a domain and an action separated by ':'.
+
+Examples of action:
+
+- resource:download
+- governance:amend
+
+#### Legal order
+
+The legal order is the framework that enables the resolution of interactions between rules derived from different, possibly conflicting, norms, such as the rules governing the consent of resources and those defining the governance of an area.
+
+To interpret these rules without conflict, it is essential to use strict principles that define an unambiguous and consistent logical framework that makes it possible to establish the resulting modality when several norms express different modalities.
+
+First of all, it should be remembered that the modalities are: permitted and prohibited, plus unregulated, which corresponds to the absence of a verdict for evaluating a rule.
+
+**Principle of Non-Contradiction**  
+For a given standard (i.e., governance), no action can be both permitted and prohibited by the applicable rules. If such a contradiction occurs, the action is considered to be unregulated.
+In Prolog, this means that for a given rule, there cannot be several possible modality solutions that satisfy it.
+
+**Principle of Non-Regulation**  
+For a given standard, if an action is neither prohibited nor permitted by any rule, the action is considered to be unregulated.
+
+**Priority principle**  
+For two standards under consideration, providing 2 different verdicts, the following priority principle is applied:
+- *prohibited* over *permitted*: If an action is both prohibited by one rule and permitted by another, the prohibition rule prevails.
+- *prohibited* over *unregulated*: If a rule prohibits an action, the prohibition prevails, regardless of whether other rules are neutral in this respect.
+- *permitted* over *unregulated*: If an action is explicitly permitted by a rule, this permission prevails over the absence of any indication (unregulated) in other rules.
+
+### Examples
+
+Here is an example of the governance of Collaborative AI zone: 
+
+```prolog
+chapter('chap1').
+     title('chap1', 'Collaborative AI zone governance').
+     section('sec1.1').
+         partOf('sec1.1', 'chap1').
+         title('sec1.1', 'Zone Governance').
+         subSection('subSec1.1.1').
+             partOf('subSec1.1.1', 'sec1.1').
+             title('subSec1.1.1', 'Governers').
+             article('art1.1.1.1').
+                 partOf('art1.1.1.1', 'subSec1.1.1').
+                 title('art1.1.1.1', 'Conditions to amend the rules').
+                 paragraph('para1.1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758'.
+                    partOf('para1.1.1.1.1', 'art1.1.1.1').
+                     description('para1.1.1.1.1', 'Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`').
+```
+
+## Step 3: Submit the Prolog program in the Dataverse
+
+COMPLETER
+
+## Step 4: Create the Governance VC
+
+The Governance VP is a specific type of VP that details the governance rules applicable to a given resource, whether it is a Dataset, a Service, or a Zone. This VP addresses two key dimensions:
+
+- Association with Codified Governance: It associates the resource with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
+- Textual Description of the Rules: In addition to the link to the codified rules, the VP provides a structured and hierarchical textual explanation of the governance rules, as set out in the Prolog program.
+
+This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the OKP4 dataverse.
+
+Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as [datasets, services](/academy/resource-governance), and zones.
+
+Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/collab-AI-zone-governance.jsonld). 
+
+Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-zone). 
+
+The following code specifies that the Collaborative AI zone whose DID is `<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx...>` for which a text description is also provided.
+
+```bash
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95",
+    "credentialSubject": {
+        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+        "type": ":GovernanceTextCredential",
+        "isGovernedBy": {
+            "type": ":GovernanceText",
+            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "hasChapter": {
+                "type": ":Chapter",
+                "hasTitle": "Collaborative AI governance",
+                "hasOrdinalNumber": "1",
+                "hasSection": {
+                    "type": ":Section",
+                    "hasTitle": "Zone Governance",
+                    "hasOrdinalNumber": "1.1",
+                    "hasSubsection": {
+                        "type": ":SubSection",
+                        "hasTitle": "Governers",
+                        "hasOrdinalNumber": "1.1.1",
+                        "hasArticle": {
+                            "type": ":Article",
+                            "hasTitle": "Conditions to amend the rules",
+                            "hasOrdinalNumber": "1.1.1.1",
+                            "hasParagraph": {
+                                "type": ":Paragraph",
+                                "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+                                "hasOrdinalNumber": "1.1.1.1.1"
+                            },
+```
+
+## Step 5: Sign and register in the Blockchain
+
+Now that you have created the VCs, you will sign them. 
+
+Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
+
+By signing the credential, any alteration to the credential's data after it has been signed will invalidate the signature. This ensures the data has not been tampered with and remains as it was when issued.
+
+To sign your VC, use this command: 
+
+COMMANDE A AJOUTER
+
+You can see that there is a new field in the jsonld with the cryptographic proof. 
+
+AJOUTER RESULTAT
+
+The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
+
+The OKP4 blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+
+The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It’s the role of the Registrant (who can be the Holder or another entity). 
+
+:::info
+Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
+::: 
+
+```bash
+# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+```
+
+With:
+
+- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `MY_ADDR` : registrant okp4 address  
+- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+
+The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
+
+The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
+
+## Delete a zone in the Dataverse
+
+The deletion of a zone in the OKP4 Dataverse is carried out exclusively by deleting the governance VP associated with this zone. This deletion action can only be initiated following the rules established by the governance of the zone.
+It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking zones.
+
