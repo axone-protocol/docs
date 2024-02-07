@@ -136,6 +136,12 @@ const config = {
             activeBasePath: '/whitepaper'
           },
           {
+            to: '/academy/overview',
+            position: 'left',
+            label: 'Academy',
+            activeBasePath: '/academy'
+          },
+          {
             to: '/nodes/introduction',
             position: 'left',
             label: 'Nodes & Validators',
