@@ -56,8 +56,8 @@ The `logic` module is not strongly coupled to the OKP4 blockchain. It's designed
 The OKP4 blockchain uses production-grade modules from the Cosmos SDK. These generic modules facilitate the implementation of protocol governance, token operation management, validator punishment mechanisms, and authentication of accounts and transactions.
 
 Two of them have a custom implementation: the mint and the vesting modules.
-“Mint”, used for creating new $KNOW units, applies specific tokenomics parameters. It determines the inflation rate for validators' and stackers' earnings.
-“Vesting” refers to distributing tokens over a specified period rather than all at once. This approach allows for controlled token distribution over time, promoting responsible token management and preventing immediate sell-offs that could negatively impact the OKP4 ecosystem.
+"Mint", used for creating new $KNOW units, applies specific tokenomics parameters. It determines the inflation rate for validators' and stackers' earnings.
+"Vesting" refers to distributing tokens over a specified period rather than all at once. This approach allows for controlled token distribution over time, promoting responsible token management and preventing immediate sell-offs that could negatively impact the OKP4 ecosystem.
 
 ### WASM
 
@@ -84,9 +84,9 @@ Smart contracts handle all interactions with external parties, whether to provid
 
 The main goal of `objectarium` is to provide the protocol with a versatile mechanism for storing unstructured data, ensuring that the stored data remains immutable.
 
-Any user or smart contract can ”pin” a stored object. Object deletion is impossible as long as it contains at least one “pin”. The user (or smart contract) should use the “unpin” function from `objectarium` to remove a pin.
+Any user or smart contract can "pin" a stored object. Object deletion is impossible as long as it contains at least one "pin". The user (or smart contract) should use the "unpin" function from `objectarium` to remove a pin.
 
-A specific use case is the storing governance rules as a Prolog program. Prolog code defines governance rules, the “law”. These pieces of logic programming (usually from `.pl` files) are stored in raw with an `objectarium` smart contract.
+A specific use case is the storing governance rules as a Prolog program. Prolog code defines governance rules, the "law". These pieces of logic programming (usually from `.pl` files) are stored in raw with an `objectarium` smart contract.
 
 ### Cognitarium: semantic data storage
 
@@ -94,7 +94,7 @@ The external resources description, usage rules and execution instructions are d
 
 There is no restriction on the structure to allow ample expressiveness. But the `core` serves as a fundamental and essential structure that defines concepts and their relationships, forming the basis upon which additional extensions can be integrated.
 
-Once inserted via the `cognitarium` smart contract, one can fetch the data from a “select” or a “describe” query. In the first case, it returns resources matching the criteria defined by the provided query. The second case returns the raw part of the ontology, the resource description identified by an Internationalized Resource Identifier (IRI).
+Once inserted via the `cognitarium` smart contract, one can fetch the data from a "select" or a "describe" query. In the first case, it returns resources matching the criteria defined by the provided query. The second case returns the raw part of the ontology, the resource description identified by an Internationalized Resource Identifier (IRI).
 
 ### Law-stone: source of rules
 
@@ -104,7 +104,7 @@ A `law-stone` instance stores the Prolog code using `objectarium` smart-contract
 
 The rule cannot be changed; what is stored on-chain is immutable. The one who instantiates the governance rule is the administrator, the only one able to destroy it. When a law is deleted, the main Prolog code stored in `objectarium` is unpinned. All object with no other pin is deleted.
 
-The `law-stone` has an “ask” method to execute Prolog queries from stored rules. It loads them from `objectarium`, and uses the logic module to get the answer with eventual substitutions for results.
+The `law-stone` has an "ask" method to execute Prolog queries from stored rules. It loads them from `objectarium`, and uses the logic module to get the answer with eventual substitutions for results.
 
 ### Pactum: managing agreements
 
@@ -159,7 +159,7 @@ To ensure decentralization, several external parties should propose their proper
 
 ## Dataverse
 
-The “dataverse” represents all resources referenced via the OKP4 protocol.
+The "dataverse" represents all resources referenced via the OKP4 protocol.
 
 ### Ontology: Framework and Interoperability
 

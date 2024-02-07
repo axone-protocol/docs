@@ -44,7 +44,7 @@ They are responsible for choosing whom to delegate their tokens and voting power
 
 ***Interaction***
 
-Delegators engage with the protocol by delegating their tokens to Validators. However, they can manually “retrieve” their voting rights and directly participate in governance through a transaction.
+Delegators engage with the protocol by delegating their tokens to Validators. However, they can manually "retrieve" their voting rights and directly participate in governance through a transaction.
 
 ***Entity***
 

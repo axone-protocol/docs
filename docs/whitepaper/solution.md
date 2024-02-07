@@ -104,7 +104,7 @@ From this perspective, Digital Services serve as the structural and functional u
 ![solution-5](/img/content/whitepaper/solution-5.webp)
 
 **STaaS-Storage as a service:**
-The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or Any”Drive”. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
+The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or Any"Drive". Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
 
 **Compute-as-a-Service:**
 Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads. Revelant general purpose compute networks as [Akash](https://akash.network/) can be easily referenced into the protocol.
