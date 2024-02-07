@@ -25,7 +25,7 @@ But while building your own explorer is possible, it requires significant time, 
 A transaction on the blockchain is a record of some blockchain state change, like the transfer of tokens from one account to another or the execution of a smart contract.
 
 The [OKP4 Explorer](https://explore.okp4.network/OKP4%20testnet) allows you to view and analyze these transactions in detail.
-Several transactions are validated in a block. You can check [the last validated blocks](https://explore.okp4.network/OKP4%20testnet/block) via the “Blocks” menu of the explorer. Click on the “Transactions” tab to get the last transactions.
+Several transactions are validated in a block. You can check [the last validated blocks](https://explore.okp4.network/OKP4%20testnet/block) via the "Blocks" menu of the explorer. Click on the "Transactions" tab to get the last transactions.
 
 Before moving on to transactions with smart contracts, let's begin with a basic operation: a transfer of $KNOW tokens.
 
@@ -36,14 +36,14 @@ You need to [set up a wallet with Keplr and own some $KNOW tokens](https://docs.
 :::
 
 1. Ensure to use the *testnet*  ([https://explore.okp4.network/OKP4 testnet](https://explore.okp4.network/OKP4%20testnet)) and not the *devnet* ([https://explore.okp4.network/OKP4 devnet](https://explore.okp4.network/OKP4%20devnet)).
-Link your OKP4 account to the explorer; click on the wallet button (upper on the right), “Connect wallet”, “Keplr”, “Connect” and then on “Approve”.
+Link your OKP4 account to the explorer; click on the wallet button (upper on the right), "Connect wallet", "Keplr", "Connect" and then on "Approve".
 You'll see your OKP4 wallet address if you click again on the wallet button. Click on it to copy the address.
 
-2. Click on the “Send” button from the Dashboard, and send a few $KNOW tokens to another OKP4 wallet (`okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg` as the recipient for example). Click on “Send” and “Approve” to confirm the transfer.
+2. Click on the "Send" button from the Dashboard, and send a few $KNOW tokens to another OKP4 wallet (`okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg` as the recipient for example). Click on "Send" and "Approve" to confirm the transfer.
 
 <center><img src="/img/content/tutorials/explorer-1.webp"></img></center>
 
-Once completed, click on “View transaction”.
+Once completed, click on "View transaction".
 
 3. Here are what the OKP4 Explorer shows us for [the `Send` transaction details](https://explore.okp4.network/OKP4%20testnet/tx/F50F300F369A5D2428492A439E167C32D4B4F79E61CC40EF39479AA83169CFD5).
 
@@ -56,7 +56,7 @@ Once completed, click on “View transaction”.
 - **Amount**: `0.02 KNOW` sent
 - **JSON:** Two main components (`tx` and `tx_response`) which provide insights into the transaction, its execution status and related metadata.
 
-You can also retrieve a transaction you executed by clicking the “Search” button upper on the right, providing your OKP4 address, and clicking “Confirm”. Click on the hash in the “Transactions” section to get the details.
+You can also retrieve a transaction you executed by clicking the "Search" button upper on the right, providing your OKP4 address, and clicking "Confirm". Click on the hash in the "Transactions" section to get the details.
 
 <center><img src="/img/content/tutorials/explorer-2.webp"></img></center>
 
@@ -92,11 +92,11 @@ Anyone can deploy a new instance. Each smart contract is linked to a specific `C
 
 Let's create a new database to populate the ontology, with a `cognitarium` smart contract instantiation (`CODE_ID = 7`).
 
-1. Click on the “Cosmwasm” tab to have the list of the available smart contracts. Click on the `CODE HASH` link next to `CODE_ID` `7`.
+1. Click on the "Cosmwasm" tab to have the list of the available smart contracts. Click on the `CODE HASH` link next to `CODE_ID` `7`.
 
 <center><img src="/img/content/tutorials/explorer-3.webp"></img></center>
 
-2. Click on “Instantiate contract”. Then a modal shows up. You see your OKP4 address in the “Sender” field. Set your OKP4 address as “Admin”, and provide a unique name for the instance in the “Label” field. For the “Messages” field, you can set `{}` if you don't need to specify `limits` regarding store usage, or you can submit a configuration like the following:
+2. Click on "Instantiate contract". Then a modal shows up. You see your OKP4 address in the "Sender" field. Set your OKP4 address as "Admin", and provide a unique name for the instance in the "Label" field. For the "Messages" field, you can set `{}` if you don't need to specify `limits` regarding store usage, or you can submit a configuration like the following:
 
 ```json
 { 
@@ -112,11 +112,11 @@ Let's create a new database to populate the ontology, with a `cognitarium` smart
 }
 ```
 
-Then click “Send” and “Approve” when the Keplr window appears.
+Then click "Send" and "Approve" when the Keplr window appears.
 
 <center><img src="/img/content/tutorials/explorer-4.webp"></img></center>
 
-3. Click on “View transaction” once executed to see all instantiation details. The transaction response from the JSON section gives you the resulting contract address. `okp41rprnv4g92cwhjsr226hkxzysxcsjgeh3llw0ps4wpuwsky4w38fq2gpy7z` is the instantiated address from [the `Instantiate` transaction](https://explore.okp4.network/OKP4%20testnet/tx/D132548E38BF942CEC242E1D380BC385335C4DC80DF68AEA37625C9C404A804E).
+3. Click on "View transaction" once executed to see all instantiation details. The transaction response from the JSON section gives you the resulting contract address. `okp41rprnv4g92cwhjsr226hkxzysxcsjgeh3llw0ps4wpuwsky4w38fq2gpy7z` is the instantiated address from [the `Instantiate` transaction](https://explore.okp4.network/OKP4%20testnet/tx/D132548E38BF942CEC242E1D380BC385335C4DC80DF68AEA37625C9C404A804E).
 
 <center><img src="/img/content/tutorials/explorer-5.webp"></img></center>
 
@@ -136,7 +136,7 @@ Let's insert [these RDF triples](https://github.com/okp4/ontology/blob/d3209eb93
 curl -s https://raw.githubusercontent.com/okp4/ontology/d3209eb9395a0292927627004e5114b63bf3cab0/example/rhizome/dataset/0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl | base64 | tr -d '\n\r'
 ```
 
-2. Click on the “Execute” button for the `cognitarium` previously instantiated. Copy and paste the encoded data in the “Messages” field, following this JSON structure:
+2. Click on the "Execute" button for the `cognitarium` previously instantiated. Copy and paste the encoded data in the "Messages" field, following this JSON structure:
 
 ```json
 {
@@ -146,11 +146,11 @@ curl -s https://raw.githubusercontent.com/okp4/ontology/d3209eb9395a029292762700
 }
 ```
 
-The default value of “Gas” would not be enough to cover this transaction cost. Click on “Advance” and set `2000000`.  You can also set a `Memo` below. Click on “Send”, then “Approve”.
+The default value of "Gas" would not be enough to cover this transaction cost. Click on "Advance" and set `2000000`.  You can also set a `Memo` below. Click on "Send", then "Approve".
 
 <center><img src="/img/content/tutorials/explorer-7.webp"></img></center>
 
-3. Click on “View transaction” once executed to see all insertion details. Thus you can check [the `InsertData` transaction](https://explore.okp4.network/OKP4%20testnet/tx/953EB5C7786862F8239D0CD4629738D5C273DE9ECCE3E15D0A4EEBFED98E4328) added 31 triples.
+3. Click on "View transaction" once executed to see all insertion details. Thus you can check [the `InsertData` transaction](https://explore.okp4.network/OKP4%20testnet/tx/953EB5C7786862F8239D0CD4629738D5C273DE9ECCE3E15D0A4EEBFED98E4328) added 31 triples.
 
 <center><img src="/img/content/tutorials/explorer-8.webp"></img></center>
 
@@ -158,7 +158,7 @@ The default value of “Gas” would not be enough to cover this transaction cos
 
 Let's retrieve [the `GeneralMetadata` identifier](https://github.com/okp4/ontology/blob/d3209eb9395a0292927627004e5114b63bf3cab0/example/rhizome/dataset/0ea1fc7a-dd97-4adc-a10e-169c6597bcde.ttl#L14) previously stored.  
 
-1. Click on the “Query” button of the `cognitarium` instance you used to insert data. Click on “Smart query”. Copy-paste this `Select` query:
+1. Click on the "Query" button of the `cognitarium` instance you used to insert data. Click on "Smart query". Copy-paste this `Select` query:
 
 ```json
 {
@@ -237,7 +237,7 @@ Let's retrieve [the `GeneralMetadata` identifier](https://github.com/okp4/ontolo
 }
 ```
 
-2. Click on “Query contract”. You should get a JSON with `https://ontology.okp4.space/dataverse/dataset/metadata/d1615703-4ee1-4e2f-997e-15aecf1eea4e` bound to the variable `metadataid` as a result.
+2. Click on "Query contract". You should get a JSON with `https://ontology.okp4.space/dataverse/dataset/metadata/d1615703-4ee1-4e2f-997e-15aecf1eea4e` bound to the variable `metadataid` as a result.
 
 <center><img src="/img/content/tutorials/explorer-9.webp"></img></center>
 

@@ -232,9 +232,9 @@ The Law-Stone is a highly versatile smart contract designed to apply and enforce
 
 The smart contract has two sides:
 
-The side of the “Law”: Indeed, the smart contract interprets the law, i.e. makes a judgement on what is legal, permissible or prohibited according to the result of execution of the rules of governance informed by the knowledge available at the time of this interpretation.
+The side of the "Law": Indeed, the smart contract interprets the law, i.e. makes a judgement on what is legal, permissible or prohibited according to the result of execution of the rules of governance informed by the knowledge available at the time of this interpretation.
 
-The side of the “Stone”: The instantiation of the smart contract engraves in stone the rules to be interpreted, and these are immutable, irrevocable, and indisputable unless the stone is broken.
+The side of the "Stone": The instantiation of the smart contract engraves in stone the rules to be interpreted, and these are immutable, irrevocable, and indisputable unless the stone is broken.
 
 ### What is the Pactum smart contract in a few words?
 
@@ -320,7 +320,7 @@ OKP4 functions as a decentralized coordinator where:
 
 ### How does OKP4 ensures the execution and validation of sharing rules?
 
-The protocol itself is primarily an infrastructure that allows a resource “provider” to reference and define usage rules (in Prolog, which offers better expressiveness compared to other languages), and for a "consumer" to make usage requests based on these rules. What the protocol guarantees is the transparency of the rules and the correct assessment (validation or not) of these rules. However, there is indeed the question of verifying the actual "real" sharing action. The current approach is an open-source off chain "orchestrator" developed by the OKP4 Association team that provides access to resources (based on requests validated onchain) and then reports the successful execution back on chain. So, yes, there’s an element of centralization! We aim to have multiple orchestrators, deployed by external entities, and even decentralize that process at some point. Both "providers" and "consumers" will be able to choose the one they "trust" or deploy their own.
+The protocol itself is primarily an infrastructure that allows a resource "provider" to reference and define usage rules (in Prolog, which offers better expressiveness compared to other languages), and for a "consumer" to make usage requests based on these rules. What the protocol guarantees is the transparency of the rules and the correct assessment (validation or not) of these rules. However, there is indeed the question of verifying the actual "real" sharing action. The current approach is an open-source off chain "orchestrator" developed by the OKP4 Association team that provides access to resources (based on requests validated onchain) and then reports the successful execution back on chain. So, yes, there’s an element of centralization! We aim to have multiple orchestrators, deployed by external entities, and even decentralize that process at some point. Both "providers" and "consumers" will be able to choose the one they "trust" or deploy their own.
 
 More info [here](https://docs.okp4.network/whitepaper/architecture#trusted-parties-considerations)
 

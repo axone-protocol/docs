@@ -1,6 +1,5 @@
 ---
 sidebar_position: 4
-sidebar_class_name: hidden
 ---
 
 import Quiz from 'react-quiz-component';
@@ -61,7 +60,7 @@ In the following example, the dataset D1 is accessed via the service S1, and the
 
 A workflow is merely a sequence of activities, taking inputs and producing outputs. So, it can be conceptualized as a Service capable of performing specific functions, just like traditional services. This paradigm shift enables Workflows to be invoked in the protocol as a Service and to join the anything-as-a-service family.
 
-When we think of Workflows as a Service, a new perspective emerges: workflows can invoke other workflows as sub-services, forming a multi-level hierarchy to facilitate the composition and re-use of more complex treatments. Moreover, these particular services can be seen as virtual services since they consist only of the “blueprint” describing the workflow to be executed.
+When we think of Workflows as a Service, a new perspective emerges: workflows can invoke other workflows as sub-services, forming a multi-level hierarchy to facilitate the composition and re-use of more complex treatments. Moreover, these particular services can be seen as virtual services since they consist only of the "blueprint" describing the workflow to be executed.
 
 ## How are rules enforced in the Dataverse?
 
@@ -71,7 +70,7 @@ The workflow is purely declarative and merely expresses the activities to be per
 
 ![consume-resources-4](/img/content/academy/consume-resources-4.webp)
 
-In its centralized perspective, orchestration relies on a single authority responsible for taking the necessary actions to accomplish a set of activities in response to a declarative expression of needs. This authority holds the logic for execution. Let’s consider the example of Kubernetes — a well-known Container Orchestrator — its API enables the “declaration” of resources and will manage the operations and lifecycle logic associated with these resources.
+In its centralized perspective, orchestration relies on a single authority responsible for taking the necessary actions to accomplish a set of activities in response to a declarative expression of needs. This authority holds the logic for execution. Let’s consider the example of Kubernetes — a well-known Container Orchestrator — its API enables the "declaration" of resources and will manage the operations and lifecycle logic associated with these resources.
 
 By adopting a decentralized approach, one would expect the blockchain to handle orchestration. However, due to its highly constrained communication capabilities with the external environment, it cannot fulfill this role effectively. Therefore, the most suitable approach is to delegate the execution of workflows to a dedicated off-chain resource: **the Orchestration Service**. This specific resource takes on the orchestration role while the protocol maintains its position as the source of truth and ultimate authority to which it must adhere.
 
