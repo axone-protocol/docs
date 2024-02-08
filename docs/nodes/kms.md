@@ -56,7 +56,7 @@ export RUSTFLAGS=-Ctarget-feature=+aes,+ssse3
 
 :::
 
-We are ready to install KMS. There are 2 ways to do this: compile from source or install with Rusts cargo-install. We’ll use the first option.
+We are ready to install KMS. There are 2 ways to do this: compile from source or install with Rusts cargo-install. We'll use the first option.
 
 ### Compile from source code
 

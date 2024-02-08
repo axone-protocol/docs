@@ -33,7 +33,7 @@ The OKP4 Protocol can provide you keys (also called a wallet) and DID. A key pai
 When creating a wallet, you're typically provided with a mnemonic consisting of 12, 24, or sometimes more words. This mnemonic acts as a human-readable representation of the underlying cryptographic information. It is easier to remember and write down than the complex numbers and characters representing the private key.
 The mnemonic serves as a backup mechanism for the wallet. You can regenerate the key pair by inputting the mnemonic into any compatible wallet software to recover access to your funds.
 
-Here, we don’t create a wallet for cryptocurrency storage but for secure storage of identifiers: A wallet can securely store digital identifiers, such as proofs of identity, certificates, or other personal identification information. 
+Here, we don't create a wallet for cryptocurrency storage but for secure storage of identifiers: A wallet can securely store digital identifiers, such as proofs of identity, certificates, or other personal identification information. 
 
 :::danger
 A keyring is a secure software utility designed to store and manage credentials, such as passwords, cryptographic keys, and API tokens, in a centralized and encrypted form. `--keyring-backend test` is a command parameter used to configure a keyring in test mode, which is helpful for development and testing but not for applications where private key security is a major concern. Be careful; this keyring is unsafe as the private keys are unencrypted on the file system.
@@ -104,7 +104,7 @@ For the dataset, instantiate the template [credential-dataset-description](https
 For the service, instantiate the template [credential-digital-service-description](https://github.com/okp4/ontology/blob/main/src/example/digital-service/ipfs-digital-service-description.jsonld).
 
 :::info
-Would you like to describe your dataset with other properties? You can create your template of credentials. Don’t directly add these properties in the DatasetDescriptionCredential as defined in the Ontology. 
+Would you like to describe your dataset with other properties? You can create your template of credentials. Don't directly add these properties in the DatasetDescriptionCredential as defined in the Ontology. 
 :::
 
 ### Description of the dataset 
@@ -121,7 +121,7 @@ Here are the following metadata of the dataset [Crime Data from 2020 to Present]
 | Temporal coverage | 2020 to Present |
 | Topic | Security |
 
-Let’s fill in the template.
+Let's fill in the template.
 
 ```json
 {
@@ -223,7 +223,7 @@ Fields to modify:
 - `hasPublisher': fill in the name of the entity primarily responsible for making the Digital Service available
 - `hasTag`: fill in a list of tags
 - `hasTitle`: fill in the title of the service
-- `hasWebpage`: fill in the URL of the service’s webpage
+- `hasWebpage`: fill in the URL of the service's webpage
 - `id` (issuer): copy the did:key of the issuer
 - `name`: put the issuer's name (string). 
 
@@ -249,7 +249,7 @@ The OKP4 blockchain can only register VCs in N-Quads format. Then, you must conv
 
 ## Step 4: Register the credentials in the blockchain
 
-The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It’s the role of the Registrant (who can be the Holder or another entity). 
+The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
 :::info
 Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
@@ -270,5 +270,5 @@ The Protocol will check the signature and if the public key corresponds to the p
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
 
 :::warning
-Remember, the Resource Governance VC ensures the existence of a resource in the protocol: a resource or zone exists in the protocol only if governance is attached to it. Let’s do it on the next page. 
+Remember, the Resource Governance VC ensures the existence of a resource in the protocol: a resource or zone exists in the protocol only if governance is attached to it. Let's do it on the next page. 
 :::
