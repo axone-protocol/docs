@@ -71,19 +71,19 @@ const sidebars = {
           ]
         },
         {
-          type: 'link',
-          label: 'Smart contracts',
-          href: '/contracts'
-        },
-        {
           type: 'html',
           value: '<hr/>'
         },
         {
           type: 'link',
-          label: 'Ontology',
-          href: '/ontology/schemas'
+          label: 'Smart contracts',
+          href: '/contracts'
         },
+        {
+            type: 'link',
+            label: 'Ontology',
+            href: '/ontology/schemas/credential-dataset-description'
+          },
         {
           type: 'link',
           label: 'Governance Predicates',
