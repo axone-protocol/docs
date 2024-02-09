@@ -180,7 +180,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/ontology/schemas', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/ontology/schemas/credential-dataset-description', label: 'Latest version' }],
             docsPluginId: 'ontology',
             dropdownActiveClassDisabled: true
           },

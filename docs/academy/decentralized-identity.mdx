@@ -175,7 +175,7 @@ You can use this tool to resolve a DID : https://resolver.identity.foundation/
 ### A verification method: the did:key Method
 
 The **did:key method** is a specific way to create and use DIDs that is focused on simplicity and universality. Here's an overview of the main features:
-Direct Incorporation of Public Key: In the did:key method, the DID directly encodes the public key itself. This means the DID is self-describing and doesn’t require an external resolution to a DID document.
+Direct Incorporation of Public Key: In the did:key method, the DID directly encodes the public key itself. This means the DID is self-describing and doesn't require an external resolution to a DID document.
 
 - Simplicity: It is one of the simplest forms of DID, as it doesn't rely on a blockchain or a distributed ledger. The did:key method generates DIDs that are entirely independent of any registry, network, or company.
 - Instantaneous Resolution: Because the public key information is embedded in the DID, resolving a did:key DID to its DID document is a straightforward, computation-only process. There is no need to interact with a ledger or network to retrieve the DID document.
@@ -184,7 +184,7 @@ Direct Incorporation of Public Key: In the did:key method, the DID directly enco
 A did:key DID looks like this: did:key:z12ab34cd56ef78gh90i...
 
 The limitations of the did:key method are: 
-- No Dynamic Updates: Since did:key DIDs are static and don’t reference an external source for their DID document, they cannot be updated. Any change in the key or other details requires the generation of a new DID.
+- No Dynamic Updates: Since did:key DIDs are static and don't reference an external source for their DID document, they cannot be updated. Any change in the key or other details requires the generation of a new DID.
 - No Privacy Layer: The method exposes the public key openly, which might not be desirable in all scenarios, especially where privacy is a concern.
 
 # Decentralized identity in OKP4 Protocol

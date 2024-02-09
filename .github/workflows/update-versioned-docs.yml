@@ -54,7 +54,7 @@ jobs:
       - name: Copy updated docs
         run: |
           rm -rf ${{ github.event.inputs.section }}/*
-          rsync -rmv --include='*/' --include='*.md' --include='*.json' --exclude='*' tmp/${{ github.event.inputs.docs_directory }} ${{ github.event.inputs.section }}
+          rsync -rmv --include='*/' --include='*.md' --include='*.mdx' --include='*.json' --exclude='*' tmp/${{ github.event.inputs.docs_directory }} ${{ github.event.inputs.section }}
           git rm --ignore-unmatch --cached tmp
           rm -rf .git/modules/tmp
           rm -rf tmp
@@ -86,7 +86,7 @@ jobs:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
           commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          commit_message: "docs: update draft docs for ${{ github.event.inputs.section }}"
+          commit_message: "feat(${{ github.event.inputs.section }}): update draft docs"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6

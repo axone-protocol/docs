@@ -36,7 +36,7 @@ Vous pouvez utiliser une de ces solutions:
 Connectez vous avec l'adresse fournie par OKP4 en utilisant le fichier fournit dans le mail qui vous a été envoyé:
 
 - Décryptez le fichier reçu par mail à l'aide du mot de passe accessible par le lien temporaire fournit dans le même mail
-- Cliquez sur l’icône Keplr de votre navigateur :  
+- Cliquez sur l'icône Keplr de votre navigateur :  
   ![keplr icon](/img/content/nft-tutorial/keplr-icon.webp)
 - Vous devriez voir l'écran suivant:  
   ![create account](/img/content/nft-tutorial/account-creation-keplr.webp)
@@ -45,7 +45,7 @@ Connectez vous avec l'adresse fournie par OKP4 en utilisant le fichier fournit d
 - Entrer un nom de compte, par exemple `nom + temporary okp4 wallet`
 - Choisissez un mot pour Keplr si cela vous est demandé.
 
-Maintenant, vous pouvez cliquer sur l’icône de l’extension Keplr
+Maintenant, vous pouvez cliquer sur l'icône de l'extension Keplr
 
 - Sélectionnez la blockchain `Stargaze`
 
@@ -71,7 +71,7 @@ Vous devriez être redirigé vers la page de votre NFT :
 Si vous en avez déjà un, vous pouvez sauter cette partie
 
 - Ouvrez Keplr
-- Cliquer sur l’icône utilisateur (en haut à droite)
+- Cliquer sur l'icône utilisateur (en haut à droite)
 - `+ Add account`
 - `Create new account`
 - Suivez les instructions : donnez un nom à votre portefeuille personnel, notez précieusement le mnémonique, puis prouvez que vous pouvez le retrouver.

@@ -27,7 +27,7 @@ This can be formalized very simply, with a set of resources as input and a set o
 
 Once we have defined the elementary processing unit, we can combine them to form a more complex processing structure called a Workflow.
 A workflow is a plan that outlines a series of activities, where some activities depend on the output of others. These interdependencies form a Directed Acyclic Graph (DAG) structure, ensuring that the workflow progresses without circular references or loops.
-Let’s consider an example to illustrate this concept:
+Let's consider an example to illustrate this concept:
 
 ![consume-resources-2](/img/content/academy/consume-resources-2.webp)
 
@@ -47,7 +47,7 @@ Here's a detailed breakdown:
 
 4. **Output and Integration**: The output of these workflows may vary based on the nature of the task. It could be a new dataset, data processing results, software outputs such as trained AI, etc. This output might also contribute to the Dataverse, further enriching the ecosystem.
 
-5. **Payments**: Once the workflow is finished, tokens are sent to the different resource providers according to the business model. Excess tokens may be sent back to the consumer. Eventual slashing can be applied to providers who didn’t provide the expected service.
+5. **Payments**: Once the workflow is finished, tokens are sent to the different resource providers according to the business model. Excess tokens may be sent back to the consumer. Eventual slashing can be applied to providers who didn't provide the expected service.
 
 6. **Flexibility and Adaptation**: Workflows in OKP4 are designed to be flexible, allowing for adaptation per changing needs or rules within the Zones. This ensures that workflows can evolve in response to new opportunities or requirements.
 
@@ -70,7 +70,7 @@ The workflow is purely declarative and merely expresses the activities to be per
 
 ![consume-resources-4](/img/content/academy/consume-resources-4.webp)
 
-In its centralized perspective, orchestration relies on a single authority responsible for taking the necessary actions to accomplish a set of activities in response to a declarative expression of needs. This authority holds the logic for execution. Let’s consider the example of Kubernetes — a well-known Container Orchestrator — its API enables the "declaration" of resources and will manage the operations and lifecycle logic associated with these resources.
+In its centralized perspective, orchestration relies on a single authority responsible for taking the necessary actions to accomplish a set of activities in response to a declarative expression of needs. This authority holds the logic for execution. Let's consider the example of Kubernetes — a well-known Container Orchestrator — its API enables the "declaration" of resources and will manage the operations and lifecycle logic associated with these resources.
 
 By adopting a decentralized approach, one would expect the blockchain to handle orchestration. However, due to its highly constrained communication capabilities with the external environment, it cannot fulfill this role effectively. Therefore, the most suitable approach is to delegate the execution of workflows to a dedicated off-chain resource: **the Orchestration Service**. This specific resource takes on the orchestration role while the protocol maintains its position as the source of truth and ultimate authority to which it must adhere.
 

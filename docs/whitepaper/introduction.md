@@ -13,7 +13,7 @@ But what if we could unlock knowledge creation through trusted and incentivized 
 ## We need knowledge
 
 In light of pressing issues such as climate change and natural resource scarcity, the urgent need for knowledge creation becomes evident.
-We don’t know how to go to Mars, we don’t know how to predict cancer, we don’t know how to farm in a desert, and we don’t know what present would please our mother for her birthday.
+We don't know how to go to Mars, we don't know how to predict cancer, we don't know how to farm in a desert, and we don't know what present would please our mother for her birthday.
 Knowledge is the limiting factor to the common good for individuals, companies and society at large.
 Knowledge, in its various forms, is a powerful catalyst for progress and innovation, impacting all areas of human endeavor from economic growth and social development to technological advancement and cultural enrichment.
 
@@ -44,7 +44,7 @@ The pace of technological advancement has far outstripped our ability to fully e
 ![intro-2-balance](/img/content/whitepaper/intro-2-balance.webp)
 
 Trust plays a critical role in the decision to share resources. In a world where data breaches and misuse are all too common, there's a legitimate lack of trust. Providers need to be confident that their consents and rules will be respected. Furthermore, the risk of data becoming accessible to untrusted parties or being mismanaged by third parties is a significant deterrent.
-The question of perceived value and incentives is another major barrier. The value proposition of sharing digital resources is often unclear. Even when it is explicit, the conventional data marketplace model is flawed. Fixed prices on data are suboptimal because the true value lies in the knowledge generated from the data, not the data itself. This muddled value perception creates a lack of desire to share resources that doesn’t outweigh the risks and costs.
+The question of perceived value and incentives is another major barrier. The value proposition of sharing digital resources is often unclear. Even when it is explicit, the conventional data marketplace model is flawed. Fixed prices on data are suboptimal because the true value lies in the knowledge generated from the data, not the data itself. This muddled value perception creates a lack of desire to share resources that doesn't outweigh the risks and costs.
 Technical complexities and costs present a substantial barrier. The current landscape is fragmented, making resource sharing a complex and costly endeavor. The myriad platforms, protocols, and standards introduce technical challenges, while data integration and transformation carry significant costs.These technical difficulties further contribute to this contributes to the siloing of resources and knowledge
 
 ![intro-3-silot](/img/content/whitepaper/intro-3-silot.webp)
@@ -80,7 +80,7 @@ Openness is a critical principle to ensure transparency, encourage innovation, a
 - **Auditability:** The openness of the decentralized infrastructure allows anyone to audit the system. This means that any interested person or organization can verify the system's proper functioning, including compliance with access and sharing rules. This auditability enhances transparency and trust in the system, which is essential for ethical and equitable sharing of digital resources.
 
 In response to these challenges, blockchain technologies play a crucial role. They can offer a secure, transparent, and decentralized infrastructure, extending their value beyond financial transactions to peer-to-peer data exchanges and secure collaborations. This is increasingly important in a data-driven world where privacy, security, and the ability to customize solutions are paramount. Hence, the relevance of blockchain technology in creating a more open and interconnected world of secure data sharing is profound, and its potential stretches across numerous sectors.
-Given the sensitivity of the data and knowledge sector, the infrastructure must be as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific and adaptive design requirement that fosters sharing while managing these complexities efficiently. That’s why the **modularity aspect** is essential.
+Given the sensitivity of the data and knowledge sector, the infrastructure must be as resilient and neutral as possible. Moreover, due to the intricacy of this field, there's a specific and adaptive design requirement that fosters sharing while managing these complexities efficiently. That's why the **modularity aspect** is essential.
 
 ### Modularity Challenges
 

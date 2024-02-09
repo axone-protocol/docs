@@ -76,7 +76,7 @@ All resources, services and Zones are found within the same universe, the Datave
 
 Zones can be nested and overlapping, as one resource or service can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts: **this is the Dataverse.**
 
-**What’s the purpose ?**
+**What's the purpose ?**
 **Creating a general purpose Ecosysteme that enables XaaS integration**
 Anything that is presented to the Protocol as a Service, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies **the integration power of the protocol**, which brings infinite scalability and extensibility to the entire OKP4 ecosystem.
 The description of each resources referenced on the protocol ensures their proper processing by the different entities of the protocol.
@@ -127,12 +127,12 @@ BI tools can be effectively employed to comprehend the data shared within the zo
 Given that resources are not directly attached to a specific Zone, but rather deemed compatible with certain Zones based on their rules and conditions, it is crucial for the OKP4 protocol to accurately **represent and interpret** these diverse concepts within its framework. Furthermore, the protocol must efficiently distinguish and understand various consent rules, their dependencies, and hierarchies. Consequently, the protocol have to **express as clearly as possible the context**, the meaning of the concepts and their relationships.
 
 To really leverage the power of knowledge, OKP4 protocol  interprets all these entities and concept within a universal language taking into account **the semantic aspect** of each of them.
-Let’s take an illustration to clearly understand.
+Let's take an illustration to clearly understand.
 
 ![solution-6](/img/content/whitepaper/solution-6.webp)
 
 The structural language only gives a definition of concepts in a wide range. However, the semantic language could give **the meaning** of concepts, properties, relationships and entities.
-The expressiveness of the language enhances **the disambiguation and the interoperability** between entities in a computable form. To give meaning to each concept and entity in the protocol, we’ve decided to encode an ontology to represent and persist the information on the blockchain.
+The expressiveness of the language enhances **the disambiguation and the interoperability** between entities in a computable form. To give meaning to each concept and entity in the protocol, we've decided to encode an ontology to represent and persist the information on the blockchain.
 
 **Ontology overview:**
 In a broader, philosophical context, ontology is concerned with the nature of being, structuring a system of universal categories and their intrinsic relationships to explain existence itself.
