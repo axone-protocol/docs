@@ -39,7 +39,7 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-quiz-component": "^0.8.0",
+    "react-quiz-component": "^0.8.1",
     "reading-time": "^2.0.0-1",
     "rehype-katex": "7",
     "remark-math": "6",
