@@ -180,7 +180,9 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/ontology/schemas/credential-dataset-description', label: 'Latest version' }],
+            dropdownItemsAfter: [
+              { to: '/ontology/schemas/credential-dataset-description', label: 'Latest version' }
+            ],
             docsPluginId: 'ontology',
             dropdownActiveClassDisabled: true
           },
@@ -374,6 +376,17 @@ const config = {
         id: 'commands',
         path: 'commands',
         routeBasePath: 'commands/'
+      }
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/academy/overview',
+            from: '/academy'
+          }
+        ]
       }
     ]
   ],
