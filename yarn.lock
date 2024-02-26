@@ -8631,10 +8631,10 @@ remark-gfm@^4.0.0:
     remark-stringify "^11.0.0"
     unified "^11.0.0"
 
-remark-kroki@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/remark-kroki/-/remark-kroki-0.3.1.tgz#29bed01e5344dc42971eefcea7a42385e7fc3d1f"
-  integrity sha512-OhTpLVigSGo/17rl18zQbjgcj4IhivDaNRnpOLJ4N1KZ5YpK+N+mAy+YEJ/+3BsfRtuS+pzCTW1px7y2GPZFyA==
+remark-kroki@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/remark-kroki/-/remark-kroki-0.3.2.tgz#d125922b2f360cc6f10454054b4c716c120f85ce"
+  integrity sha512-nmu1Ua4FL+YfNldyKww6gvwb4NFmhNrX/V9z3L6ilobD9qBOe0ekgiCQtl1at7lI4wSHNz5/AjM5gLt3rwvx7Q==
   dependencies:
     is-plain-obj "^4.1.0"
     markdown-code-block-meta "^0.0.2"
