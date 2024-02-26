@@ -106,7 +106,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Governance Predicates',
-          href: '/predicates/predicates'
+          href: '/predicates/bank_balances_2'
         },
         {
           type: 'link',

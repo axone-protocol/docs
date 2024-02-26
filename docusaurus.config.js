@@ -189,7 +189,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/predicates/predicates', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/predicates/bank_balances_2', label: 'Latest version' }],
             docsPluginId: 'predicates',
             dropdownActiveClassDisabled: true
           },
