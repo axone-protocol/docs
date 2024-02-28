@@ -36,7 +36,11 @@ The mnemonic serves as a backup mechanism for the wallet. You can regenerate the
 Here, we don't create a wallet for cryptocurrency storage but for secure storage of identifiers: A wallet can securely store digital identifiers, such as proofs of identity, certificates, or other personal identification information. 
 
 :::danger
-A keyring is a secure software utility designed to store and manage credentials, such as passwords, cryptographic keys, and API tokens, in a centralized and encrypted form. `--keyring-backend test` is a command parameter used to configure a keyring in test mode, which is helpful for development and testing but not for applications where private key security is a major concern. Be careful; this keyring is unsafe as the private keys are unencrypted on the file system.
+A keyring is a secure software utility designed to store and manage credentials, such as passwords, cryptographic keys, and API tokens, in a centralized and encrypted form. The `--keyring-backend test` command parameter is intended for use in *testing* environments. However, it is not recommended for production applications where the security of private keys is a highest priority.
+
+For secure keyring setup in production environments, refer to the [Cosmos SDK doc](https://docs.cosmos.network/v0.50/user/run-node/keyring). This documentation provides a comprehensive guide to establishing a secure keyring configuration suitable for production use. 
+
+Avoid using the `--keyring-backend test` option in production, as it leaves private keys unencrypted on the file system, posing a potential security risk.
 :::
 
 ```bash
