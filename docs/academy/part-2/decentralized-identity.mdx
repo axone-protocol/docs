@@ -9,13 +9,23 @@ import * as quiz from './decentralised-identity-quiz.json';
 
 <i>Reading time: {readingTime} min</i>
 
-Unlike traditional identity systems, where personal identification information is centralized and often managed by a single entity (such as a company or government), **decentralized identity** enables individuals to control and manage their own identification data. This model, also known as Self-Sovereign Identity (SSI), offers several key advantages. 
+Unlike traditional identity systems, where personal identification information is centralized and often managed by a single entity (such as a company or government), **decentralized identity** enables individuals to control and operate their own identification data. This model, also known as Self-Sovereign Identity (SSI), offers several key advantages. 
 
 It enhances security and privacy, as data is not stored in a central location vulnerable to attack or abuse. 
 It increases transparency and trust, as users can choose how, when, and with whom to share their information without relying on intermediaries. 
 This reduces the risk of censorship or manipulation by third parties. 
 
 The importance of decentralized identity lies in its ability to give individuals back the power over their personal information in an increasingly digital world, offering a new approach to identity management that is secure, transparent, and user-centric.
+
+:::info
+
+OKP4 integrates [W3C standards](https://www.w3.org/) for decentralized identity, guaranteeing compatibility and interoperability across a wide range of specifications.
+
+**For more information on [W3C standards](https://www.w3.org/), refer to**
+[Decentralized Identifiers doc](https://www.w3.org/TR/did-core/)
+[Verifiable Credentials doc](https://www.w3.org/TR/vc-data-model-2.0/)
+
+:::
 
 ## Decentralized identity roles
 
@@ -57,7 +67,7 @@ Note that blockchain technologies generally support decentralized identity. Ther
 
 *Role*: Receives and holds claims (attestations).
 
-*Action*: The graduate (Holder) receives the digital diploma and stores it in his or her digital wallet. This wallet enables him to manage his digital credentials and attestations securely.
+*Action*: The graduate (Holder) receives the digital diploma and stores it in their digital wallet. This wallet enables him to manage his digital credentials and attestations securely.
 
 **Verifier - Potential Employer**:
 
@@ -67,7 +77,7 @@ Note that blockchain technologies generally support decentralized identity. Ther
 
 **How the process works**:
 1. Diploma issuance: The university creates a digital diploma and digitally signs it.
-2. Diploma storage: The graduate receives and securely stores the diploma in his/her digital wallet.
+2. Diploma storage: The graduate receives and securely stores the diploma in their digital wallet.
 3. Sharing and verification: When applying for a job, the graduate shares the diploma with the employer. The employer then verifies the digital signature against the university's public key.
 
 This scenario illustrates how decentralized identity systems facilitate the secure and verifiable exchange of identity information while enabling individuals to control which aspects of their identity are shared and with whom.
@@ -85,7 +95,7 @@ An infinite number of DIDs can be attached to the same identity, which offers se
 3. **Security**: If one DID is compromised, other DIDs and associated contexts remain secure. This isolates the risk and minimizes damage.
 4. **Flexibility and scalability**: Users can create new DIDs as their needs and contexts evolve without being limited by rigid identifiers.
 
-DIDs are managed by decentralized networks, notably blockchains. This means that no single central authority controls identity information, offering greater security and resilience against single points of failure. Users have total control over their DIDs. They can create, update, or delete their identifiers without the need for a central authority.
+DIDs are managed by decentralized networks, notably blockchains. This means that no single central authority controls identity information, offering greater security and resilience against single points of failure. Users have total control over their DIDs. They can create, update, or delete their identifiers without a central authority.
 
 The DID is a [W3C](https://www.w3.org/TR/did-core/) standard designed to be interoperable across different systems and networks, facilitating their use in diverse digital contexts.
 
@@ -95,7 +105,7 @@ The DID is a [W3C](https://www.w3.org/TR/did-core/) standard designed to be inte
 
 ### Example: An Autonomous Vehicle as a DID Holder
 
-In the near future, autonomous vehicles could be equipped with their own decentralized identity (DID). These DIDs enable the vehicle to interact autonomously with various services and infrastructures without human intervention.
+Soon, autonomous vehicles could be equipped with their own decentralized identity (DID). These DIDs enable the car to interact autonomously with various services and infrastructures without human intervention.
 
 **How the process works**:
 1. Identity creation: An autonomous vehicle manufacturer generates a DID for each vehicle it produces. This DID serves as a digital identifier for the vehicle.
@@ -170,14 +180,14 @@ Example:
 }
 ```
 
-You can use this tool to resolve a DID : https://resolver.identity.foundation/
+You can use this tool to resolve a DID: https://resolver.identity.foundation/
 
 ### A verification method: the did:key Method
 
 The **did:key method** is a specific way to create and use DIDs that is focused on simplicity and universality. Here's an overview of the main features:
 Direct Incorporation of Public Key: In the did:key method, the DID directly encodes the public key itself. This means the DID is self-describing and doesn't require an external resolution to a DID document.
 
-- Simplicity: It is one of the simplest forms of DID, as it doesn't rely on a blockchain or a distributed ledger. The did:key method generates DIDs that are entirely independent of any registry, network, or company.
+- Simplicity: It is one of the simplest forms of DID, as it doesn't rely on a blockchain or a distributed ledger. The did:key method generates DIDs entirely independent of any registry, network, or company.
 - Instantaneous Resolution: Because the public key information is embedded in the DID, resolving a did:key DID to its DID document is a straightforward, computation-only process. There is no need to interact with a ledger or network to retrieve the DID document.
 - Support for Multiple Cryptographic Algorithms: The did:key method supports various cryptographic algorithms, allowing for generating different types of keys (like RSA, ECDSA, Ed25519, etc.).
 
