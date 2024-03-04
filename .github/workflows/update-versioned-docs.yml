@@ -86,16 +86,16 @@ jobs:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
           commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          commit_message: "feat(${{ github.event.inputs.section }}): update draft docs"
+          commit_message: "feat(${{ github.event.inputs.section }}): update ${{ github.event.inputs.repository }} ${{ github.event.inputs.section }} documentation"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         if: ${{ github.event.inputs.draft == 'false' && steps.changed-files.outputs.any_changed }}
         with:
-          commit-message: "docs(${{ github.event.inputs.section }}): add ${{ github.event.inputs.section }} ${{ github.event.inputs.version }} version"
+          commit-message: "feat(${{ github.event.inputs.section }}): add ${{ github.event.inputs.repository }} ${{ github.event.inputs.version }} ${{ github.event.inputs.section }} documentation"
           committer: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
           author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          branch: docs/${{ github.event.inputs.section }}-${{ github.event.inputs.version }}
+          branch: feat/${{ github.event.inputs.section }}-${{ github.event.inputs.version }}
           title: 📜 Add ${{ github.event.inputs.version }} ${{ github.event.inputs.section }} documentation version
           body: |
             #### 📜 Documentation update
