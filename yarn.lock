@@ -6112,6 +6112,11 @@ katex@^0.16.0:
   dependencies:
     commander "^8.3.0"
 
+kebab-case@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/kebab-case/-/kebab-case-1.0.2.tgz#5eac97d5d220acf606d40e3c0ecfea21f1f9e1eb"
+  integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
+
 keyv@^4.5.3:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.5.4.tgz#a879a99e29452f942439f2a405e3af8b31d4de93"
@@ -8631,12 +8636,13 @@ remark-gfm@^4.0.0:
     remark-stringify "^11.0.0"
     unified "^11.0.0"
 
-remark-kroki@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/remark-kroki/-/remark-kroki-0.3.1.tgz#29bed01e5344dc42971eefcea7a42385e7fc3d1f"
-  integrity sha512-OhTpLVigSGo/17rl18zQbjgcj4IhivDaNRnpOLJ4N1KZ5YpK+N+mAy+YEJ/+3BsfRtuS+pzCTW1px7y2GPZFyA==
+remark-kroki@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/remark-kroki/-/remark-kroki-0.3.3.tgz#1708a0d7f54bbb513a0c551df939ed7d4d6b53f4"
+  integrity sha512-raTGKJD4XgUKmyiWc4R+R9NU0IZ91rLub+t4cHDZEtgM/9L2HXLGj/9sexVMTnAo2mizJOC55XJauyjaPDMZyQ==
   dependencies:
     is-plain-obj "^4.1.0"
+    kebab-case "^1.0.2"
     markdown-code-block-meta "^0.0.2"
     node-fetch "^3.3.2"
     p-memoize "^7.1.1"
