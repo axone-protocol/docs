@@ -60,14 +60,14 @@ function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OKP4 Docs',
+  title: 'Axone Docs',
   tagline: 'Unleash the Knowledge Economy 🚀',
   url: 'https://okp4.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'OKP4',
+  organizationName: 'Axone',
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -124,9 +124,9 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'OKP4 Logo',
-          src: 'img/okp4-logo-light.svg',
-          srcDark: 'img/okp4-logo-dark.svg'
+          alt: 'Axone Logo',
+          src: 'img/logo-axone-dark.webp',
+          srcDark: 'img/logo-axone-light.webp'
         },
         items: [
           {
@@ -168,7 +168,7 @@ const config = {
           {
             href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta',
             position: 'left',
-            label: 'OKP4 GPT'
+            label: 'Axone GPT'
           },
           {
             type: 'docsVersionDropdown',
@@ -222,10 +222,10 @@ const config = {
         ]
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         logo: {
-          alt: 'OKP4 Logo',
-          src: 'img/logo-white-horizontal.webp',
+          alt: 'Axone Logo',
+          src: 'img/logo-axone-dark.webp',
           href: 'https://okp4.network',
           width: 160
         },
@@ -319,7 +319,7 @@ const config = {
         additionalLanguages: ['prolog', 'turtle', 'bash', 'json', 'sparql']
       },
       colorMode: {
-        defaultMode: 'dark'
+        defaultMode: 'light'
       },
       docs: {
         sidebar: {
