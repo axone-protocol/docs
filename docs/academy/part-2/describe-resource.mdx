@@ -6,9 +6,9 @@ sidebar_position: 3
 
 <i>Reading time: {readingTime} min</i>
 
-Now that you know what a DID and a Verifiable Credential are, and what they mean for the OKP4 protocol, let's put them into practice! 
+Now that you know what a DID and a Verifiable Credential are, and what they mean for the Axoneprotocol, let's put them into practice! 
 
-You're a digital resource provider and you want to share a dataset or a service. First, you need to describe your resource and register it in the Dataverse (i.e. in the OKP4 protocol). 
+You're a digital resource provider and you want to share a dataset or a service. First, you need to describe your resource and register it in the Dataverse (i.e. in the Axoneprotocol). 
 
 Here are the 4 steps involved: 
 
@@ -22,14 +22,14 @@ We'll take 2 examples in this tutorial:
 - The storage service [IPFS](https://ipfs.tech)
 
 :::info
-Prerequisite: [Install the OKP4 CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
+Prerequisite: [Install the AxoneCLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
 :::
 
 ## Step 1: Create keys
 
 As we saw previously, all entities are identified by a DID in the Dataverse. The first step consists of creating keys and related DID for the issuer of the credentials and the resource itself. 
 
-The OKP4 Protocol can provide you keys (also called a wallet) and DID. A key pair is created to obtain a wallet to establish secure ownership and control over your assets on the OKP4 blockchain. The key pair consists of two cryptographic keys: public and private keys.
+The AxoneProtocol can provide you keys (also called a wallet) and DID. A key pair is created to obtain a wallet to establish secure ownership and control over your assets on the Axoneblockchain. The key pair consists of two cryptographic keys: public and private keys.
 When creating a wallet, you're typically provided with a mnemonic consisting of 12, 24, or sometimes more words. This mnemonic acts as a human-readable representation of the underlying cryptographic information. It is easier to remember and write down than the complex numbers and characters representing the private key.
 The mnemonic serves as a backup mechanism for the wallet. You can regenerate the key pair by inputting the mnemonic into any compatible wallet software to recover access to your funds.
 
@@ -92,7 +92,7 @@ So now we have the following information:
 
 |  | Issuer |
 |--------------|------|
-| Name of the wallet | issuer-okp4 |
+| Name of the wallet | issuer-Axone|
 | Public key  | okp41ysl9yllv40kfygcdfqj7c9n2a5c5zpmgku8ufg |
 | DID  | did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3 |
 
@@ -184,7 +184,7 @@ Here are the following metadata of the service [IPFS](https://ipfs.tech).
 | Description | IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale. | 
 | Category | Storage | 
 | Image | NA |
-| Publisher | OKP4 |
+| Publisher | Axone|
 | Tags | Storage, Cloud, Peer-to-peer |
 | Webpage | https://docs.ipfs.tech/ |
 
@@ -249,14 +249,14 @@ You can see that there is a new field in the jsonld with the cryptographic proof
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The OKP4 blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+The Axoneblockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
 
 ## Step 4: Register the credentials in the blockchain
 
-The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
+The final step is to register the VCs in the Axoneblockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
 :::info
-Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
+Note that as you interact with the Axoneblockchain, you must pay fees in $AXON at each transaction.
 ::: 
 
 ```bash
@@ -266,7 +266,7 @@ Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW a
 With:
 
 - `CONTRACT_ADDR` : dataverse contract address (always the same)  
-- `MY_ADDR` : registrant okp4 address  
+- `MY_ADDR` : registrant Axoneaddress  
 - `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 

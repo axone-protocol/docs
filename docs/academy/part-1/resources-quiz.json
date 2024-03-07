@@ -33,7 +33,7 @@
         "point": "1"
       },
       {
-        "question": "What do Verifiable Credentials (VCs) bring to the OKP4 ?",
+        "question": "What do Verifiable Credentials (VCs) bring to the Axone ?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
@@ -53,9 +53,9 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "VCs and VPs are interchangeable terms in the OKP4 protocol.",
+          "VCs and VPs are interchangeable terms in the Axone protocol.",
           "VPs are used to store data about resources, while VCs are used to store data about services.",
-          "VCs are verifiable claims about a set of resources, while VPs are assertions that define off-chain governance rules in OKP4, facilitating decision-making within the network.",
+          "VCs are verifiable claims about a set of resources, while VPs are assertions that define off-chain governance rules in Axone, facilitating decision-making within the network.",
           "VCs are verifiable assertions about a resource, while VPs are a selection of VCs with a verifiable chain, serving as a basis for decision-making in on-chain governance."
         ],
         "correctAnswer": "4",
@@ -64,7 +64,7 @@
         "point": "1"
       },
       {
-        "question": "How does Ontology contribute to solving challenges related to the diversity of digital resources in the OKP4 protocol?",
+        "question": "How does Ontology contribute to solving challenges related to the diversity of digital resources in the Axone protocol?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
@@ -79,11 +79,11 @@
         "point": "1"
       },
       {
-        "question": "How do Verifiable Claims and Ontology interact in the OKP4 protocol?",
+        "question": "How do Verifiable Claims and Ontology interact in the Axone protocol?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "Verifiable Claims and Ontology synergize by sharing cryptographic keys, enhancing the security of digital resources within the OKP4.",
+          "Verifiable Claims and Ontology synergize by sharing cryptographic keys, enhancing the security of digital resources within the Axone.",
           "They are not linked and operate independently.",
           "Ontology serves as a substitute for Verifiable Claims, offering comprehensive details about digital resources without the need for additional information from Verifiable Claims.",
           "Verifiable Claims provide detailed information, while ontology clarifies relationships and the context of resources."

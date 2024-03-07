@@ -68,9 +68,9 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "Within OKP4, the same entity can be both a consumer and a provider.",
+          "Within Axone, the same entity can be both a consumer and a provider.",
           "If a consumer uses a Third-party identity service like Sign-in with Google, they will not have their own ID when interacting with the protocol.",
-          "If a company uses OKP4 to build its XaaS, the company's clients will not necessarily interact with the protocol as consumers.",
+          "If a company uses Axone to build its XaaS, the company's clients will not necessarily interact with the protocol as consumers.",
           "Within the same workflow, the same entity can be both a consumer and a provider."
         ],
         "correctAnswer": "2",

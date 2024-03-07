@@ -52,9 +52,9 @@ Use when traveling :
 
 The digital signature and metadata ensure enhanced security by preventing forgery and guaranteeing data integrity. Compliance with W3C standards facilitates fast, efficient data verification by verifiers.
 
-## Verifiable claims in the OKP4 protocol
+## Verifiable claims in the Axone protocol
 
-The [OKP4 ontology](https://docs.okp4.network/academy/resources#ontology-how-its-represented-semantic-description) is used to describe the Dataverse. In the Dataverse, resources are identified by their DID. Resources are described by claims referenced in the ontology as Verifiable Presentations (VPs) whose subject is the resource's DID. In this way, each resource is described by a set of associated claims.
+The [Axone ontology](https://docs.okp4.network/academy/resources#ontology-how-its-represented-semantic-description) is used to describe the Dataverse. In the Dataverse, resources are identified by their DID. Resources are described by claims referenced in the ontology as Verifiable Presentations (VPs) whose subject is the resource's DID. In this way, each resource is described by a set of associated claims.
 
 It's important to note that the existence of a resource is conditional on the presence of at least one relevant claim. In other words, although the universe of potential resources is infinite, a resource only becomes concrete and tangible when a corresponding claim is established.
 
@@ -82,11 +82,11 @@ Except from Governance credentials, resources are considered to be under "Self-S
 - **Free Issuance of Claims**: In this framework, any entity (individual, organization, service, etc.) can issue claims on the resource concerned, **except for governance claims**, which are issued by the identities themselves.
 - **Unilateral revocation of claims**: This principle stipulates that claims can only be revoked by the entity that issued them. This means that if Entity A issues a claim on the resource, only Entity A can revoke that claim. This principle is unalterable and remains independent of any intervention or modification by governance structures.
 
-Self-sovereign governance is particularly well suited to environments where autonomy and decentralization are paramount, as is the case in the OKP4 dataverse. However, we must remain vigilant to the "gossip effect": given that any entity can issue credentials, there is a risk that unverified or inaccurate information will be disseminated. This phenomenon poses a significant challenge in balancing individual freedom and collective interest. Such dynamics need to be carefully considered when designing governance schemes in Zones.
+Self-sovereign governance is particularly well suited to environments where autonomy and decentralization are paramount, as is the case in the Axone dataverse. However, we must remain vigilant to the "gossip effect": given that any entity can issue credentials, there is a risk that unverified or inaccurate information will be disseminated. This phenomenon poses a significant challenge in balancing individual freedom and collective interest. Such dynamics need to be carefully considered when designing governance schemes in Zones.
 
-## Registration of Verifiable Presentation in the OKP4 Protocol
+## Registration of Verifiable Presentation in the Axone Protocol
 
-Once the Issuer successfully issues the Verifiable Credentials (VCs) associated with a resource or a Zone to the Holder, the Registrant will record a Verifiable Presentation (VP) in the OKP4 blockchain. A VP consists of a set of VCs. The Registrant can be either the Holder or a third party.
+Once the Issuer successfully issues the Verifiable Credentials (VCs) associated with a resource or a Zone to the Holder, the Registrant will record a Verifiable Presentation (VP) in the Axone blockchain. A VP consists of a set of VCs. The Registrant can be either the Holder or a third party.
 
 Recording VPs in the blockchain, rather than individual VCs, ensures the confidentiality of specific properties by only revealing a restricted set of properties on the public chain.
 

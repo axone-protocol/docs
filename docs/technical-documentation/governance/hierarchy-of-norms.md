@@ -6,7 +6,7 @@ sidebar_position: 3
 
 The hierarchy of norms refers to the hierarchical structure of rules within the given governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard.
 
-In the OKP4 Governance framework, the hierarchy of norms establishes a clear order of precedence for rules and regulations. We thus end up with different levels of governance that allow fine-grained control of the use of the protocol.
+In the Axone Governance framework, the hierarchy of norms establishes a clear order of precedence for rules and regulations. We thus end up with different levels of governance that allow fine-grained control of the use of the protocol.
 
 <center>
   <img src="/img/content/technical-documentation/governance-hierarchy-of-norms.webp" alt="Governance - Hierarchy of Norms" style={{ maxHeight: "340px" }}></img>
@@ -20,7 +20,7 @@ The different levels of governance are:
 
 ## Protocol Governance
 
-At the top of the hierarchy is Protocol Governance, which establishes the overarching rules and principles for the entire OKP4 protocol.
+At the top of the hierarchy is Protocol Governance, which establishes the overarching rules and principles for the entire Axone protocol.
 
 ## Zone Rules
 

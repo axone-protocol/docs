@@ -18,7 +18,7 @@
         "point": "1"
       },
       {
-        "question": "What is the difference between a Verifiable Credential and a Verifiable Presentation in the OKP4 protocol?",
+        "question": "What is the difference between a Verifiable Credential and a Verifiable Presentation in the Axone protocol?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
@@ -33,14 +33,14 @@
         "point": "1"
       },
       {
-        "question": "What best characterizes the Resource Governance VCs in OKP4?",
+        "question": "What best characterizes the Resource Governance VCs in Axone?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
           "They act as registries for financial transactions.",
           "They regulate and manage resources, defining how they are controlled, managed and interacted with.",
           "They are digital copies of physical documents.",
-          "They serve as digital currency within the OKP4 ecosystem."
+          "They serve as digital currency within the Axone ecosystem."
         ],
         "correctAnswer": "2",
         "messageForCorrectAnswer": "Correct answer. Good job.",
@@ -48,7 +48,7 @@
         "point": "1"
       },
       {
-        "question": "What is the Self-Sovereign principle of resource governance in OKP4?",
+        "question": "What is the Self-Sovereign principle of resource governance in Axone?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [

@@ -8,9 +8,9 @@ sidebar_position: 5
 
 A [zone](https://docs.okp4.network/whitepaper/solution#zone-overview) is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. A resource is not attached to a zone. The recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
-All the workflows initiated within the OKP4 protocol must be defined in the context of a specific Zone. When the workflow is submitted, the protocol will check if all rules of the zone and of the engaged resources are respected and will apply the business model of the zone. 
+All the workflows initiated within the Axone protocol must be defined in the context of a specific Zone. When the workflow is submitted, the protocol will check if all rules of the zone and of the engaged resources are respected and will apply the business model of the zone. 
 
-Let's see how to describe and register a zone in the OKP4 Protocol. Here are the four steps involved: 
+Let's see how to describe and register a zone in the Axone Protocol. Here are the four steps involved: 
 
 <center>
   <img src="/img/content/academy/describe-resource-1.webp" alt="Steps to describe a resource in the Dataverse" style={{ maxHeight: "340px" }}></img>
@@ -19,14 +19,14 @@ Let's see how to describe and register a zone in the OKP4 Protocol. Here are the
 We'll take the example of the Collaborative AI Zone in this tutorial.
 
 :::info
-Prerequisite: [Install the OKP4 CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
+Prerequisite: [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
 :::
 
 ## Step 1: Create keys
 
 The first step consists of creating keys and related DID for the issuer of the credentials and the resource itself. 
 
-The OKP4 Protocol can provide you keys (also called a wallet) and DID. A key pair is created to obtain a wallet to establish secure ownership and control over your assets on the OKP4 blockchain. The key pair consists of two cryptographic keys: public and private keys.
+The Axone Protocol can provide you keys (also called a wallet) and DID. A key pair is created to obtain a wallet to establish secure ownership and control over your assets on the Axone blockchain. The key pair consists of two cryptographic keys: public and private keys.
 When creating a wallet, you're typically provided with a mnemonic consisting of 12, 24, or sometimes more words. This mnemonic acts as a human-readable representation of the underlying cryptographic information. It is easier to remember and write down than the complex numbers and characters representing the private key.
 The mnemonic serves as a backup mechanism for the wallet. You can regenerate the key pair by inputting the mnemonic into any compatible wallet software to recover access to your funds.
 
@@ -178,14 +178,14 @@ You can see that there is a new field in the jsonld with the cryptographic proof
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The OKP4 blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
 
 ## Step 4: Register the credentials in the blockchain
 
-The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
+The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
 :::info
-Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
+Note that as you interact with the Axone blockchain, you must pay fees in $AXON at each transaction.
 ::: 
 
 ```bash

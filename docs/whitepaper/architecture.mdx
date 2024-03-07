@@ -6,20 +6,20 @@ sidebar_position: 4
 
 ## General overview
 
-The protocol provides a disruptive access control mechanism. Whereas a central gateway usually safekeeps a specific set of resources, OKP4 protocol acts as a global source of trust for any operation:
+The protocol provides a disruptive access control mechanism. Whereas a central gateway usually safekeeps a specific set of resources, Axone protocol acts as a global source of trust for any operation:
 
-![OKP4 Basic Architecture Overview](/img/content/whitepaper/arch-basic.webp)
+![Axone Basic Architecture Overview](/img/content/whitepaper/arch-basic.webp)
 
 In a user interface, providers indicate the rules for consuming their resources. The interface interacts with the blockchain, which stores the resources descriptions, revenue conditions, restrictions and execution instructions.
 A consumer asks the blockchain through an app to execute a request using multiple resources. If the rules set by the providers are met, the protocol emits an event to validate the request.
 An orchestration service, the guard on a resource relying solely on blockchain validation events, processes the request from the consumer. This request creates new knowledge as it leverages multiple resources from different providers with no required trust on a third party.
 The orchestration service reports the execution status to the blockchain to ensure reliable logging and payment.
 
-Smart contracts carry all these interactions with the blockchain. Nodes validate smart contracts execution and persistent storage through a consensus. A distributed database, the so-called blockchain, commits to every change. The OKP4 blockchain is built with custom modules enabling the protocol governance and validation rules capabilities, among other functionalities.
+Smart contracts carry all these interactions with the blockchain. Nodes validate smart contracts execution and persistent storage through a consensus. A distributed database, the so-called blockchain, commits to every change. The Axone blockchain is built with custom modules enabling the protocol governance and validation rules capabilities, among other functionalities.
 
 The diagram above provides a simplified explanation of the system's overall operation. More precisely, the entire solution architecture is structured as follows:
 
-![OKP4 Architecture Schema](/img/content/whitepaper/arch-overview.webp)
+![Axone Architecture Schema](/img/content/whitepaper/arch-overview.webp)
 
 ## Blockchain
 
@@ -30,38 +30,38 @@ Tendermint is a partially synchronous Byzantine fault-tolerant (BFT) consensus p
 
 ### Shared state
 
-When a user wants to update the blockchain state, he submits a transaction with cryptographic keys authentication. Users interacting with the network pay fees to these validators for every transaction. These fees are paid with the OKP4 blockchain native coin, $KNOW.
+When a user wants to update the blockchain state, he submits a transaction with cryptographic keys authentication. Users interacting with the network pay fees to these validators for every transaction. These fees are paid with the Axone blockchain native coin, $KNOW.
 
-Validators guarantee the reliability of the blockchain. As they all share the same on-chain data and process the same transactions, if a node acts maliciously (e.g., the purpose of updating a state for its benefit without required permissions), the rest of the network will reject it. The economic incentive with $KNOW fees makes virtuous behavior more profitable than unwise conduct.
+Validators guarantee the reliability of the blockchain. As they all share the same on-chain data and process the same transactions, if a node acts maliciously (e.g., the purpose of updating a state for its benefit without required permissions), the rest of the network will reject it. The economic incentive with $AXON fees makes virtuous behavior more profitable than unwise conduct.
 
 ### Built on Cosmos
 
-The OKP4 blockchain is built with the Cosmos SDK to benefit from advanced implementation options without reinventing the wheel. Cosmos's modular architecture enables customized application-specific chains with ease. This unique flexibility fits the project's requirements, ensuring optimal performance and resource allocation.
+The Axone blockchain is built with the Cosmos SDK to benefit from advanced implementation options without reinventing the wheel. Cosmos's modular architecture enables customized application-specific chains with ease. This unique flexibility fits the project's requirements, ensuring optimal performance and resource allocation.
 
-Moreover, with Cosmos's Inter-Blockchain Communication (IBC) protocol, the OKP4 blockchain can communicate and transact seamlessly with other chains within the Cosmos ecosystem and external networks. This interchain compatibility expands the reach and potential user base and opens avenues for collaboration and synergy with other innovative projects in the Cosmos ecosystem and beyond.
+Moreover, with Cosmos's Inter-Blockchain Communication (IBC) protocol, the Axone blockchain can communicate and transact seamlessly with other chains within the Cosmos ecosystem and external networks. This interchain compatibility expands the reach and potential user base and opens avenues for collaboration and synergy with other innovative projects in the Cosmos ecosystem and beyond.
 
 ## Modules
 
-The modules implement core functions particular to the OKP4 blockchain. They provide features for protocol governance, rules interpretation regarding resources, and more.
+The modules implement core functions particular to the Axone blockchain. They provide features for protocol governance, rules interpretation regarding resources, and more.
 
 ### Logic
 
-The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. Its main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the OKP4 blockchain can use the logic module to evaluate queries written in Prolog.
+The `logic` module is designed to primarily address logical queries based on facts sourced from the ontology or the state of the chain, along with inference rules. Its main use in the protocol is the management of governance rules, written in Prolog. Thus, any smart contract deployed on the Axone blockchain can use the logic module to evaluate queries written in Prolog.
 
 Prolog is a powerful declarative programming language to manage from simple restrictions to complex rules. This language is not natively operable on-chain; the logic module adds Prolog interpretation capability.
-The `logic` module is not strongly coupled to the OKP4 blockchain. It's designed to be reusable and can be integrated with any Cosmos appchain. Because it's open and interoperable, the support of Prolog programs is a significant gain for the Cosmos ecosystem. Using this open-source `logic` module implementation, any appchain can quickly adopt complex Prolog governance rules.
+The `logic` module is not strongly coupled to the Axone blockchain. It's designed to be reusable and can be integrated with any Cosmos appchain. Because it's open and interoperable, the support of Prolog programs is a significant gain for the Cosmos ecosystem. Using this open-source `logic` module implementation, any appchain can quickly adopt complex Prolog governance rules.
 
 ### Mint, Vesting and other Cosmos SDK modules
 
-The OKP4 blockchain uses production-grade modules from the Cosmos SDK. These generic modules facilitate the implementation of protocol governance, token operation management, validator punishment mechanisms, and authentication of accounts and transactions.
+The Axone blockchain uses production-grade modules from the Cosmos SDK. These generic modules facilitate the implementation of protocol governance, token operation management, validator punishment mechanisms, and authentication of accounts and transactions.
 
 Two of them have a custom implementation: the mint and the vesting modules.
-"Mint", used for creating new $KNOW units, applies specific tokenomics parameters. It determines the inflation rate for validators' and stackers' earnings.
-"Vesting" refers to distributing tokens over a specified period rather than all at once. This approach allows for controlled token distribution over time, promoting responsible token management and preventing immediate sell-offs that could negatively impact the OKP4 ecosystem.
+"Mint", used for creating new $AXON units, applies specific tokenomics parameters. It determines the inflation rate for validators' and stackers' earnings.
+"Vesting" refers to distributing tokens over a specified period rather than all at once. This approach allows for controlled token distribution over time, promoting responsible token management and preventing immediate sell-offs that could negatively impact the Axone ecosystem.
 
 ### WASM
 
-OKP4 incorporates the [CosmWasm](https://cosmwasm.com/) smart contracting platform built for the Cosmos Ecosystem. The primary programming language used in this module is [Rust](https://www.rust-lang.org/) for building secure and multi-chain smart contracts. Yet, any language compiled into WASM can be supported as they become available.
+Axone incorporates the [CosmWasm](https://cosmwasm.com/) smart contracting platform built for the Cosmos Ecosystem. The primary programming language used in this module is [Rust](https://www.rust-lang.org/) for building secure and multi-chain smart contracts. Yet, any language compiled into WASM can be supported as they become available.
 
 ## Smart Contracts
 
@@ -128,7 +128,7 @@ When a consumer submits an execution request, the `zone-hub` instance evaluates 
 
 ## Orchestration
 
-Orchestration services have access to off-chain resources. They only trust the OKP4 blockchain to execute jobs.
+Orchestration services have access to off-chain resources. They only trust the Axone blockchain to execute jobs.
 
 ### Identification and Authentication
 
@@ -144,7 +144,7 @@ Service providers must add service execution instructions regarding secret keys 
 
 ### Jobs executions
 
-An orchestration service starts a new job when the OKP4 blockchain validates a user execution request.
+An orchestration service starts a new job when the Axone blockchain validates a user execution request.
 It fetches data, requests services, and performs various computes from one or several off-chain resources according to the necessary tasks to satisfy the user execution request.
 
 An orchestration service has to report to the protocol the processes status to ensure service agreement enforcements.
@@ -159,7 +159,7 @@ To ensure decentralization, several external parties should propose their proper
 
 ## Dataverse
 
-The "dataverse" represents all resources referenced via the OKP4 protocol.
+The "dataverse" represents all resources referenced via the Axone protocol.
 
 ### Ontology: Framework and Interoperability
 
@@ -174,27 +174,27 @@ Standards are not limited to those of the industry: they are specifications like
 
 ### Connectors
 
-Although resources can be of any form, they are served via technological stacks that are more or less common and standardized. An OKP4 connector defines a specification for resource access and processing for a given solution (e.g. S3). It is then necessary to have an execution service that the orchestration service could use (e. g. Docker container image for an Argo Workflows engine), which understands how to interpret the instructions and returns the expected processing result.
+Although resources can be of any form, they are served via technological stacks that are more or less common and standardized. An Axone connector defines a specification for resource access and processing for a given solution (e.g. S3). It is then necessary to have an execution service that the orchestration service could use (e. g. Docker container image for an Argo Workflows engine), which understands how to interpret the instructions and returns the expected processing result.
 
 ## Beyond the protocol: user interfaces, applications
 
-OKP4 team builds user interfaces on the OKP4 protocol, but anyone can publish an alternative of the following applications.
+Axone team builds user interfaces on the Axone protocol, but anyone can publish an alternative of the following applications.
 
 ### Blocks indexers, transactions explorer
 
 A blockchain explorer is designed to present blockchain data in a user-friendly and intuitive manner, making it easier for technical and non-technical users to navigate and understand the information stored on the blockchain.
-The UI provides transparency and visibility into the OKP4 blockchain's activity. It allows users to search and retrieve specific transaction information, such as sender and recipient addresses, transaction amounts, timestamps, and transaction statuses. Users can also view details about each block in the blockchain and the transactions it contains.
+The UI provides transparency and visibility into the Axone blockchain's activity. It allows users to search and retrieve specific transaction information, such as sender and recipient addresses, transaction amounts, timestamps, and transaction statuses. Users can also view details about each block in the blockchain and the transactions it contains.
 
 For greater efficiency, dapps may use indexers, databases replicating the blockchain state, especially for a block explorer interface.
 
 ### Administration clients
 
-Portal is an example of administration UI, the main OKP4 protocol web interface. It's the user gateway to parameter the addition of datasets and services, build workflows and create new knowledge from the shared resources. Portal offers an exploration view with advanced filters to get information like governance rules.
+Portal is an example of administration UI, the main Axone protocol web interface. It's the user gateway to parameter the addition of datasets and services, build workflows and create new knowledge from the shared resources. Portal offers an exploration view with advanced filters to get information like governance rules.
 
 ### End-user interfaces
 
 Newly generated knowledge could be presented with customized dashboards from any business intelligence component.
-White-label data platforms graph the results obtained by running workflows with the OKP4 protocol.
+White-label data platforms graph the results obtained by running workflows with the Axone protocol.
 
 Since some companies cannot have a wallet to use the protocol, front-end interfaces might also provide a layer of abstraction to bring data on request without any blockchain interaction.
 
@@ -205,23 +205,23 @@ Let's recap with a concrete example applied to the AI industry.
 Two companies (Corp A and Corp B) grant access to their databases, while a third company (Corp C) provides a machine-learning training workflow using the data. A data scientist (Individual D) wants to get new knowledge and invokes an orchestration service that uses resources from Corp A, Corp B and Corp C.
 
 :::note
-The OKP4 solution orchestrates the training process without exposing raw data, ensuring privacy, sovereignty and security. Moreover, the protocol provides revenue-sharing conditions and immutable records of the ML model's training sources.
+The Axone solution orchestrates the training process without exposing raw data, ensuring privacy, sovereignty and security. Moreover, the protocol provides revenue-sharing conditions and immutable records of the ML model's training sources.
 :::
 
 1. Each on their own, Corp A and Corp B indicate through an administration portal the underlying technology of their respective database. They store access tokens with a Secret Management Service, with authorization for orchestration service.
 
-2. Corp A and Corp B continue on the administration portal and define the rules, with access restrictions and payment conditions (a fixed $KNOW fee per request, for example). A raw Prolog file is accepted, but the interface provides an ergonomic form for a better UX.
+2. Corp A and Corp B continue on the administration portal and define the rules, with access restrictions and payment conditions (a fixed $AXON fee per request, for example). A raw Prolog file is accepted, but the interface provides an ergonomic form for a better UX.
    Corp A and Corp B inform a maximum of metadata, especially to describe the different available datasets, their structures and the nature of their contents. The portal combines the service execution instructions, the governance rules and the descriptive pieces of information in a Turtle file. Then a transaction adds it to the on-chain ontology.
 
 3. Metadata indicate that resources shared by Corp A and Corp B are compatible with a ML job from Corp C. Corp C also uses the administration portal to submit its training model algorithm, governance rules, and service execution instructions.
 
 4. Individual D parameters its cloud environment with the portal, setting up how an orchestration service should store the execution request results.
 
-5. Individual D uses the portal to request service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $KNOW tokens. The blockchain validates the execution request (access and execution authorizations).
+5. Individual D uses the portal to request service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $AXON tokens. The blockchain validates the execution request (access and execution authorizations).
 
 6. The orchestration service listens to the event from the blockchain. It recovers access keys, and then executes the workflow training algorithm from Corp C, using Corp A & Corp B data it fetches.
 
-7. The orchestration service tracks the progress and state changes of all jobs within the workflow and reports this information to the blockchain. If all works well, service agreement rules are applied, $KNOW tokens from Individual D are unlocked to Corp A, Corp B et Corp C.
+7. The orchestration service tracks the progress and state changes of all jobs within the workflow and reports this information to the blockchain. If all works well, service agreement rules are applied, $AXON tokens from Individual D are unlocked to Corp A, Corp B et Corp C.
 
 8. The orchestration service stores the result in the provided Individual D's storage solution. Optionally, this new knowledge can also be referenced as a data source for other workflows.
 
@@ -234,7 +234,7 @@ sequenceDiagram
     actor DataProv as A/B
     actor ServProv as C
     actor IndD as D
-    participant OKP4
+    participant Axone
     participant Secret
     participant Db A/B
     participant ML Workflow
@@ -245,22 +245,22 @@ Note right of DataProv: 1.
 DataProv->> Secret: Database keys store
 
 Note right of DataProv: 2.
-DataProv->> OKP4: Database reference
+DataProv->> Axone: Database reference
 
 Note right of ServProv: 3.
-ServProv->> OKP4: Check workflow compatibilities
-OKP4->> ServProv: Possible ML workflow (Db A + Db B)
-ServProv->> OKP4: ML Workflow reference
+ServProv->> Axone: Check workflow compatibilities
+Axone->> ServProv: Possible ML workflow (Db A + Db B)
+ServProv->> Axone: ML Workflow reference
 
 Note right of IndD: 4.
 IndD->> Secret: Cloud storage keys for results
 
 Note right of IndD: 5.
-IndD->> OKP4: Knowledge request(ML Workflow(DbA + Db B)) - $KNOW payment
-OKP4->>OKP4: Valid knowledge request
+IndD->> Axone: Knowledge request(ML Workflow(DbA + Db B)) - $AXON payment
+Axone->>Axone: Valid knowledge request
 
-Note right of OKP4: 6.
-OKP4-->>Orchestrator: Chain event triggering
+Note right of Axone: 6.
+Axone-->>Orchestrator: Chain event triggering
 Orchestrator->> Secret: Get resources access (Db A, Db B, algo C, storage D)
 Secret->> Orchestrator: Resources secret keys
 loop Db A, Db B
@@ -271,12 +271,12 @@ Orchestrator->> ML Workflow: Compute(DataA, DataB)
 ML Workflow->> Orchestrator: Knowledge result
 
 Note right of Orchestrator: 7.
-Orchestrator->> OKP4: Workflow state report
-OKP4->>OKP4: Service agreement exec ($KNOW rev share, ...)
+Orchestrator->> Axone: Workflow state report
+Axone->>Axone: Service agreement exec ($AXON rev share, ...)
 
 Note right of Orchestrator: 8.
 Orchestrator->> Storage: Store result
-Orchestrator->> OKP4: Result reference
+Orchestrator->> Axone: Result reference
 
 Note right of IndD: 9.
 IndD->> Storage: Get result

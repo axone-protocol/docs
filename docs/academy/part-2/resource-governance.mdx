@@ -24,7 +24,7 @@ In the protocol, governance structures are made up of two key elements:
 - **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing resource management.
 
 <center>
-  <img src="/img/content/academy/resource-governance-1.webp" alt="Governance elements for Resources in OKP4 Protocol" style={{ maxHeight: "340px" }}></img>
+  <img src="/img/content/academy/resource-governance-1.webp" alt="Governance elements for Resources in Axone Protocol" style={{ maxHeight: "340px" }}></img>
 </center>
 
 Here are the five steps to create the governance of a resource in the Dataverse: 
@@ -82,7 +82,7 @@ Governance rules of the service IPFS:
 | Paragraph   | 1.1.2.1.1      | Free                         |
 
 :::info
-The OKP4 Community will provide more and more templates over time. 
+The Axone Community will provide more and more templates over time. 
 :::
 
 ## Step 2: Create the Prolog program 
@@ -135,7 +135,7 @@ partOf(sec1, chap1).
 ```
 
 <center>
-  <img src="/img/content/academy/resource-governance-3.webp" alt="Governance elements for Resources in OKP4 Protocol" style={{ maxHeight: "340px" }}></img>
+  <img src="/img/content/academy/resource-governance-3.webp" alt="Governance elements for Resources in Axone Protocol" style={{ maxHeight: "340px" }}></img>
 </center>
 
 #### Elements of description
@@ -240,7 +240,7 @@ The Governance VP is a specific type of VP that details the governance rules app
 - Association with Codified Governance: It associates the resource with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
 - Textual Description of the Rules: In addition to the link to the codified rules, the VP provides a structured and hierarchical textual explanation of the governance rules, as set out in the Prolog program.
 
-This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the OKP4 dataverse.
+This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the Axone dataverse.
 
 Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as datasets, services, and [zones](/academy/part-2/zone-governance).
 
@@ -304,12 +304,12 @@ You can see that there is a new field in the jsonld with the cryptographic proof
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The OKP4 blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
 
-The final step is to register the VCs in the OKP4 blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
+The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
 :::info
-Note that as you interact with the OKP4 blockchain, you must pay fees in $KNOW at each transaction.
+Note that as you interact with the Axone blockchain, you must pay fees in $AXON at each transaction.
 ::: 
 
 ```bash
@@ -328,7 +328,7 @@ The command returns the hash of the transaction. You can find more details of th
 
 ## Delete a resource in the Dataverse
 
-The deletion of a resource in the OKP4 Dataverse is carried out exclusively by deleting the governance VP associated with this resource. This deletion action can only be initiated following the rules established by the governance of the resource.
+The deletion of a resource in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this resource. This deletion action can only be initiated following the rules established by the governance of the resource.
 It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the resource remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking resources.
 
 ## Extinction of a resource in the Dataverse

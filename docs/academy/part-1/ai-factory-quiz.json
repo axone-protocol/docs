@@ -18,7 +18,7 @@
         "point": "1"
       },
       {
-        "question": "What is the primary mission of OKP4 in relation to the AI Factory? ?",
+        "question": "What is the primary mission of Axone in relation to the AI Factory? ?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
@@ -33,7 +33,7 @@
         "point": "1"
       },
       {
-        "question": "How does OKP4 contribute to Resilient Service-Level Agreements?",
+        "question": "How does Axone contribute to Resilient Service-Level Agreements?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
@@ -64,14 +64,14 @@
         "point": "1"
       },
       {
-        "question": "Why does OKP4 aim to create a Privacy-Preserving Data Labeling Service?",
+        "question": "Why does Axone aim to create a Privacy-Preserving Data Labeling Service?",
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
           "To decentralize data labeling services within the Dataverse.",
           "To enable contributors to perform computations on encrypted data.",
           "To enhance privacy during collaborative model development.",
-          "OKP4 does not intend to create specific zones but provides infrastructure and framework for such services to be implemented."
+          "Axone does not intend to create specific zones but provides infrastructure and framework for such services to be implemented."
         ],
         "correctAnswer": "4",
         "messageForCorrectAnswer": "Correct answer. Good job.",
@@ -83,10 +83,10 @@
         "questionType": "text",
         "answerSelectionType": "single",
         "answers": [
-          "Yes, it is. OKP4 must be at the forefront of AI technology to offer suitable zones and services for its development.",
-          "Not really. As a decentralized orchestrator layer, OKP4 only needs to ensure communication between these zones and should not focus on research in these domains.",
-          "Yes, it is. Even though OKP4 doesn't have to develop all these projects, it is important to understand them well to offer the most suitable governance and business templates.",
-          "Not really. OKP4 must ensure to offer a decentralized, auditable, and modular infrastructure for communication, coordination between digital resources within Zones, while ensuring that the rules and conditions of each are respected."
+          "Yes, it is. Axone must be at the forefront of AI technology to offer suitable zones and services for its development.",
+          "Not really. As a decentralized orchestrator layer, Axone only needs to ensure communication between these zones and should not focus on research in these domains.",
+          "Yes, it is. Even though Axone doesn't have to develop all these projects, it is important to understand them well to offer the most suitable governance and business templates.",
+          "Not really. Axone must ensure to offer a decentralized, auditable, and modular infrastructure for communication, coordination between digital resources within Zones, while ensuring that the rules and conditions of each are respected."
         ],
         "correctAnswer": "4",
         "messageForCorrectAnswer": "Correct answer. Good job.",

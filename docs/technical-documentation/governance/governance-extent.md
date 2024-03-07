@@ -24,9 +24,9 @@ Here are some of the supported credentials:
 
 - **Identity Credentials**: These credentials establish and verify the acting entities' identity within a zone's context. These credentials can be verified by restricting [Decentralized Identities](https://www.w3.org/TR/did-core/) through the expression of blacklists or whitelists, thereby controlling authorized identities.
 - **Qualification Credentials**: These credentials certify acting entities' qualifications, skills, or expertise relevant to the governance process.
-- **Reputation Credentials**: These credentials provide information about acting entities' reputations or track records in the OKP4 ecosystem or other ecosystems. They can be based on past performance, ratings, reviews, or endorsements from trusted and acknowledge sources.
+- **Reputation Credentials**: These credentials provide information about acting entities' reputations or track records in the Axone ecosystem or other ecosystems. They can be based on past performance, ratings, reviews, or endorsements from trusted and acknowledge sources.
 - **Token-related Credentials**: These credentials bring the proof of token ownership in a wallet, token staking in specific blockchains, token voting, and token transfer history, to list a few — all of which serve as evidence of active participation and contributions within the blockchain ecosystem.
-- **Anything as Credentials**: These categories of credentials expand the possibilities by considering unconventional or innovative credentials within the governance framework. By acknowledging "Anything as Credentials," the OKP4 governance framework remains open to diverse forms of evidence and allows for continuous adaptation to meet the evolving needs of the OKP4 ecosystem.
+- **Anything as Credentials**: These categories of credentials expand the possibilities by considering unconventional or innovative credentials within the governance framework. By acknowledging "Anything as Credentials," the Axone governance framework remains open to diverse forms of evidence and allows for continuous adaptation to meet the evolving needs of the Axone ecosystem.
 
 ### Related to digital resources
 
@@ -52,12 +52,12 @@ Here are some facets of business models in the zones:
 
 ### Related to self
 
-The zone rules also establish the principles by which the rules can be modified, amended, enhanced, or simplified. The OKP4 governance framework supports various processes, providing flexibility and adaptability of the Zone rules. Let's explore some of the amendment processes supported:
+The zone rules also establish the principles by which the rules can be modified, amended, enhanced, or simplified. The Axone governance framework supports various processes, providing flexibility and adaptability of the Zone rules. Let's explore some of the amendment processes supported:
 
 - **Consensus or Voting**: Amendments require an agreement or voting process. The Zone rules specify voter qualifications, voting period, approval threshold, and verification mechanisms.
 - **Autocratic**: A designated entity or group proposes and enacts rule changes. The Zone rules express the entities' decentralized identities and outlines the proposal process and decision criteria.
 - **Participatory**: Broad stakeholder participation is emphasized. The Zone rules specify the considered entities, the qualification required and the conditions for participation.
-- **Bring Your Own Rules**: The expressive power of the rules enables the establishment of various amendment processes, which only need to be imagined to become a reality within the OKP4 protocol. This flexibility allows for exploring and implementing diverse, innovative amendment mechanisms within the protocol.
+- **Bring Your Own Rules**: The expressive power of the rules enables the establishment of various amendment processes, which only need to be imagined to become a reality within the Axone protocol. This flexibility allows for exploring and implementing diverse, innovative amendment mechanisms within the protocol.
 
 ## Resource Consent
 
@@ -75,4 +75,4 @@ This type of agreement sets the mutually agreed-upon rules where tokens or some 
 
 ### Service Provision Agreement
 
-This is an arrangement detailing the terms under which specific services are provided and executed within a Zone as part of the OKP4 protocol. This agreement stipulates the expectations, duties, and deliverables between all participating entities, such as service providers and consumers. It forms the core of the Orchestration mechanism.
+This is an arrangement detailing the terms under which specific services are provided and executed within a Zone as part of the Axone protocol. This agreement stipulates the expectations, duties, and deliverables between all participating entities, such as service providers and consumers. It forms the core of the Orchestration mechanism.

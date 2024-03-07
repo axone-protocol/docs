@@ -1,6 +1,6 @@
-# OKP4 documentation
+# Axone documentation
 
-> OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
+> Axone documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 [![lint](https://img.shields.io/github/actions/workflow/status/okp4/docs/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/actions/workflow/status/okp4/docs/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/build.yml)

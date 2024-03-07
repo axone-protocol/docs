@@ -3,7 +3,7 @@
   "nrOfQuestions": "4",
   "questions": [
     {
-      "question": "What does a workflow represent in the context of the OKP4 protocol?",
+      "question": "What does a workflow represent in the context of the Axone protocol?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -18,7 +18,7 @@
       "point": "1"
     },
     {
-      "question": "How are workflows structured in OKP4?",
+      "question": "How are workflows structured in Axone?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -33,7 +33,7 @@
       "point": "1"
     },
     {
-      "question": "What is the first step in the life of a workflow in OKP4?",
+      "question": "What is the first step in the life of a workflow in Axone?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -48,7 +48,7 @@
       "point": "1"
     },
     {
-      "question": "How is off-chain orchestration implemented in OKP4?",
+      "question": "How is off-chain orchestration implemented in Axone?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [

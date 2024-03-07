@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# OKP4 Ontology
+# Axone Ontology
 
-The OKP4 protocol orchestrates the various resources of the Dataverse (datasets and services) using different blockchain elements such as smart contracts, logic modules, and ontology. All these elements allow for fine management of dataset and service workflows for knowledge creation within a Zone with personalized governance. As seen previous sections, the ontology must stand for the different concepts of the protocol, their relationships, and their properties.
+The Axone protocol orchestrates the various resources of the Dataverse (datasets and services) using different blockchain elements such as smart contracts, logic modules, and ontology. All these elements allow for fine management of dataset and service workflows for knowledge creation within a Zone with personalized governance. As seen previous sections, the ontology must stand for the different concepts of the protocol, their relationships, and their properties.
 
 ## The big picture
 
@@ -43,7 +43,7 @@ classDiagram
 
 ## Class and properties
 
-The following concepts and properties are found within the OKP4 ontology:
+The following concepts and properties are found within the Axone ontology:
 
 ### Data
 
@@ -86,7 +86,7 @@ A decentralized identifier URI. A URI that identifies a subject in a decentraliz
 
 The information data about something (i.e. data about the data). This something can be a Zone, a Dataset, a Service, or any other entity that can be described.
 
-Metadata is an abstract concept which is refined in Metadata Profiles used to provide a formal specification that defines the set of metadata elements, their semantics, and their syntax to be used in a particular context or application. The OKP4 protocol proposes several profiles at the core of the ontology, such as GeneralMetadata for describing services or datasets.
+Metadata is an abstract concept which is refined in Metadata Profiles used to provide a formal specification that defines the set of metadata elements, their semantics, and their syntax to be used in a particular context or application. The Axone protocol proposes several profiles at the core of the ontology, such as GeneralMetadata for describing services or datasets.
 
 ### Resource
 
@@ -99,4 +99,4 @@ A service consumes a resource and produces data.
 
 ## Conclusion
 
-With all these concepts, their properties, and their relationships, we can create the OKP4 ontology and explain the workings of the OKP4 protocol in a structured and formalized way. This ontology can be expressed in different formats, both understandable by humans and machines. It can be expressed in French or English, RDF, OWL, JSON-LD, N-Triples, Notation3 RDF/XML, Turtle, etc.
+With all these concepts, their properties, and their relationships, we can create the Axone ontology and explain the workings of the Axone protocol in a structured and formalized way. This ontology can be expressed in different formats, both understandable by humans and machines. It can be expressed in French or English, RDF, OWL, JSON-LD, N-Triples, Notation3 RDF/XML, Turtle, etc.
