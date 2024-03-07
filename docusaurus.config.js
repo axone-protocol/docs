@@ -319,7 +319,8 @@ const config = {
         additionalLanguages: ['prolog', 'turtle', 'bash', 'json', 'sparql']
       },
       colorMode: {
-        defaultMode: 'light'
+        defaultMode: 'light',
+        disableSwitch: true
       },
       docs: {
         sidebar: {
