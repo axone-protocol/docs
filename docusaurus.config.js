@@ -173,7 +173,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/contracts/', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/contracts/okp4-cognitarium', label: 'Latest version' }],
             docsPluginId: 'contracts',
             dropdownActiveClassDisabled: true
           },
