@@ -30,7 +30,7 @@ Here are the namespaces used in this schema:
 
 Zone Description credentials deliver an extensive overview of the essential information about a zone. This typically comprises details like the zone's title, description, and tags.
 
-The primary objective of this credentials is to provide a broad overview of the zone, facilitating users' comprehension of its purpose and potential use cases.
+The primary objective of these credentials is to provide a broad overview of the zone, facilitating users' comprehension of its purpose and potential use cases.
 
 ### Examples
 
