@@ -62,7 +62,7 @@ A consumer wishes to interact with this zone, using this sequence of activities 
 
 **Interpretation of rules**
 
-In the beginning of the example, we have three datasets (D1, D2, D3) that are processed with a service (S1). These transformations produce D4 & D5 as outputs.
+At the beginning of the example, we have three datasets (D1, D2, D3) that are processed with a service (S1). These transformations produce D4 & D5 as outputs.
 We therefore understand that to carry out this sequence of activities, we need the consent rules for resources D1 / D2 / D3, service S1 and zone governance rules, all stored on-chain, must be met.
 So, before the execution, the first step is to ensure that the users are authorized to perform the sequence of activities they wish.
 
@@ -108,7 +108,7 @@ Interoperability, a critical aspect of the Axone protocol, enables seamless inte
 
 Within the context of Axone, interoperability encompasses more than simply connecting digital resources. Axone relies on fundamental components such as APIs (Application Programming Interfaces) and connectors to facilitate seamless collaboration. These components are indispensable in synchronizing and exchanging digital resources within the protocol. Application Programming Interfaces (APIs) serve as standardized gateways, facilitating seamless communication between digital resources. In this context, Axone ensures that diverse systems and services can interact seamlessly within its ecosystem. This enables developers to design applications and services that effectively harness a range of resources, seamlessly connecting them through Axone's APIs. By providing this cohesive framework, Axone offers a robust and flexible protocol for developing innovative solutions that leverage the power of diverse digital resources in a streamlined and efficient manner.
 
-As an orchestration layer for off-chain resources, Axone enables users to connect and leverage Anything-as-a-service to share anythings in any conditions. All these shared resources and rules shape the Dataverse, an ever-expanding universe of datasets, algorithms, and all other resources referenced and interconnected in the blockchain.
+As an orchestration layer for off-chain resources, Axone enables users to connect and leverage Anything-as-a-service to share anything in any condition. All these shared resources and rules shape the Dataverse, an ever-expanding universe of datasets, algorithms, and all other resources referenced and interconnected in the blockchain.
 
 ### Semantic Aspect and Governance Aspects
 
@@ -181,7 +181,7 @@ Here are some examples of rules that can be defined within a zone:
 
 ### Why Distinguish Between Resources and Zones?
 
-The distinction between resources and zones is crucial, particularly regarding governance. By allowing zones to redefine their rules continually, Axone offers exceptional flexibility in how resources can be used and shared. This encourages more flexible governance, enabling participants to actively shape how resources are coordinated and used within each zone while promoting adaptability to the community's evolving needs and the digital environment. Ultimately, this dynamic approach contributes to creating an ecosystem where governance is agile, transparent, and aligned with the values and goals of each specific zone.
+The distinction between resources and zones is crucial, particularly regarding governance. By allowing zones to redefine their rules continually, Axone offers exceptional flexibility in how resources can be used and shared. This encourages more flexible governance, enabling participants to actively shape how resources are coordinated and used within each zone, while promoting adaptability to the community's evolving needs and the digital environment. Ultimately, this dynamic approach contributes to creating an ecosystem where governance is agile, transparent, and aligned with the values and goals of each specific zone.
 
 Note, as seen earlier, the importance of describing a digital resource through its metadata. Considering its specific characteristics, this approach facilitates its integration within zones more efficiently and appropriately, considering its specific characteristics.
 
@@ -189,11 +189,11 @@ Note, as seen earlier, the importance of describing a digital resource through i
 
 In the context of the Axone protocol, scalability assumes paramount importance as a foundational concept, delineating the system's ability to dynamically handle a substantial increase in data, digital resources, and their interactions without necessitating a corresponding escalation in the hardware requirements of validators. This ensures the decentralization of the network.
 
-This capacity becomes particularly crucial in the era of Big Data, where the exponential volume of digital resources poses a major challenge for traditional systems limited by their inefficiency in processing such vast amounts of data. Confronting this challenge, the Axone protocol positions itself as a relevant and innovative solution through its decentralized and modular architecture.
+This capacity becomes particularly crucial in the era of Big Data, where the exponential volume of digital resources poses a major challenge for traditional systems, limited by their inefficiency in processing such vast amounts of data. Confronting this challenge, the Axone protocol positions itself as a relevant and innovative solution through its decentralized and modular architecture.
 
 ### Protocol Objective: Decentralized Orchestration Layer for Off-chain Resources
 
-The primary objective of Axone is to act as a decentralized orchestration layer for off-chain resources. This approach involves a strategic decoupling between orchestration logic and digital resources stored off-chain. Consequently, the blockchain does not directly handle data storage or processing but rather focuses on coordinating their utilization and access.
+The primary objective of Axone is to act as a decentralized orchestration layer for off-chain resources. This approach involves a strategic decoupling between orchestration logic and digital resources stored off-chain. Consequently, the blockchain does not directly handle data storage or processing, but rather focuses on coordinating their utilization and access.
 
 This distinction significantly contributes to reducing the storage and execution burden on the blockchain, offering increased flexibility and optimal scalability.
 

@@ -33,7 +33,7 @@ yarn start
 
 This command starts a local development server and opens up a browser window (<http://localhost:3000/>). Most changes are reflected live without having to restart the server.
 
-Note that the search wont work in development. To use the search feature, first run `yarn build` then `yarn run serve`.
+Note that the search won't work in development. To use the search feature, first run `yarn build` then `yarn run serve`.
 
 ### Build
 

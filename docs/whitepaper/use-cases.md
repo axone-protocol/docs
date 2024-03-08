@@ -68,11 +68,11 @@ AI needs more trust, audibility, ethical systems, bias detection, and compliance
 
 ***Here comes Axone Protocol.***
 
- Anyone can submit resources (dataset, algorithms, infrastructure, etc.) and rules to use it. Anyone can ask for model training from multiple resources. The protocol controls the conditions and triggers validations. Every single execution is tracked and stored immutably in the blockchain. Axone protocol ensures traceability but also enforces revenues for data providers.
+Anyone can submit resources (dataset, algorithms, infrastructure, etc.) and rules to use it. Anyone can ask for model training from multiple resources. The protocol controls the conditions and triggers validations. Every single execution is tracked and stored immutably in the blockchain. Axone protocol ensures traceability but also enforces revenues for data providers.
 
 ***A bright future for AI.***
 
- Axone Protocol brings an innovative "open source" training approach with fair and transparent revenue sharing. It unlocks the potential of new powerful AI applications, braked with inconsistency and uncertainty.
+ Axone Protocol brings an innovative "open source" training approach with fair and transparent revenue sharing. It unlocks the potential of powerful new AI applications, braked with inconsistency and uncertainty.
 
  Multiple user interfaces can be quickly built upon the protocol to bring significant user experience regarding Machine-Learning models trained through Axone.
 
@@ -180,4 +180,4 @@ The service provider then carries out the work, and once it has been completed a
 - **Creation of a compute network for ML:** Allows anyone to build a computing network for ML, offering economic incentives for participation in the training of ML models.
 - **Tools for verifiable and privacy-respecting ML:** Enables the training and inference of models without exposing sensitive data to the model creator.
 - **Creation of specific datasets for training:** Facilitates the collaborative creation of proprietary datasets for model training.
-- **DAO for managing AI models:** Envision DAOs for the management of AI models, overseeing the  entire process of model training and fine-tuning, then making it available for inferences in return for a fee.
+- **DAO for managing AI models:** Envision DAOs for the management of AI models, overseeing the entire process of model training and fine-tuning, then making it available for inferences in return for a fee.

@@ -3,7 +3,7 @@ sidebar_position: 101
 ---
 # Video Tuto #1 - Architecture
 
-🚀 Welcome to the first episode of Nono's Tuto !
+🚀 Welcome to the first episode of Nono's Tuto!
 Your tutorial series to become an expert developer on the Axone protocol 🔥
 
 📚 In this first episode, we'll be concentrating on Axone basics. We'll introduce you to what Axone is, and go into detail about the architecture of the Axone protocol!

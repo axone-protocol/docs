@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Governance Extent
 
-The extent of Governance vary depending on the level of the hierarchy where one is situated.
+The extent of Governance varies depending on the level of the hierarchy where one is situated.
 
 ## Protocol Governance
 

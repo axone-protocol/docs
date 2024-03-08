@@ -20,7 +20,7 @@ Axone serves as a set of rules and conventions that facilitate interoperability 
 
 ### What makes Axone so groundbreaking?
 
-Axone does not aiming to be the next 'Ethereum Killer.' Instead, Axone plays a pivotal role in facilitating the transition to a new digital revolution, one centered around harnessing the power of data. In today's landscape, we recognize that trust and technical complexities often pose significant limitations.
+Axone does not aim to be the next 'Ethereum Killer.' Instead, Axone plays a pivotal role in facilitating the transition to a new digital revolution, one centered around harnessing the power of data. In today's landscape, we recognize that trust and technical complexities often pose significant limitations.
 
 Axone is a meticulously designed protocol that fuels the expansion of this digital revolution by simplifying the sharing of data and digital resources. It places a profound emphasis on respecting consent and the proper utilization of everyone's assets, thereby fostering a more equitable and secure digital ecosystem
 
@@ -28,13 +28,13 @@ Axone is a meticulously designed protocol that fuels the expansion of this digit
 
 Today's datasets are stored in silos, their potential and value stay untapped. This situation exists because of a substantial lack of trust and incentives to share data.
 
-Many companies' products and crypto projects tried to tackle these issues through a similar approach: data marketplaces. But this approach is highly limiting because 1. the exchanged data is accessible to the buyer, resulting in risks, and 2. pricing mechanisms are disconnected from how data is used, resulting in poor incentives.
+Many companies' products and crypto projects tried to tackle these issues through a similar approach: data marketplaces. But this approach is highly limiting because 1. The exchanged data is accessible to the buyer, resulting in risks, and 2. Pricing mechanisms are disconnected from how data is used, resulting in poor incentives.
 
 Today, there's no infrastructure, centralized or decentralized, to easily share any resource and agree on rules to enable these resources to interact with each other.
 
 ### What solution is Axone providing?
 
-Axone is a Cosmos-based layer-1 for anyone to build applications based on shared data & services. Axone blockchain and no-code interfaces allows individuals and companies to build and join ecosystems where they can (1) share anything (datasets, algorithms, software, computation..) (2) define any rules (business models, workflow management..) and (3) build applications on top of everything shared in the ecosystem. Axone aims to become the IBC-connected hub to value any existing web2 system.
+Axone is a Cosmos-based layer-1 for anyone to build applications based on shared data & services. Axone blockchain and no-code interfaces allows individuals and companies to build and join ecosystems where they can (1) share anything (datasets, algorithms, software, computation...) (2) define any rules (business models, workflow management...) and (3) build applications on top of everything shared in the ecosystem. Axone aims to become the IBC-connected hub to value any existing web2 system.
 
 ### What is trust-minimized data sharing?
 
@@ -248,25 +248,25 @@ The Logic module is designed to primarily address logical queries based on facts
 
 ## Token
 
-### What is the utility of the KNOW token ?
+### What is the utility of the $AXON token ?
 
-The KNOW is the fee token of the Axone blockchain, it is required to submit transactions to the network of validators.
+The $AXON is the fee token of the Axone blockchain, it is required to submit transactions to the network of validators.
 
-Similar to other Proof-of-stake chains, the KNOW secures the network through staking.
+Similar to other Proof-of-stake chains, the $AXON secures the network through staking.
 
-The KNOW is also governance token. Anyone can do on-chain proposals, and KNOW holders can vote yes, no, abstain or no with veto to these proposals.
+The $AXON is also a governance token. Anyone can do on-chain proposals, and $AXON holders can vote yes, no, abstain or no with veto to these proposals.
 
-The KNOW token can also be a governance token for any Zone if implemented that way.
+The $AXON token can also be a governance token for any Zone if implemented that way.
 
-Beyond that, and more related to use cases, the KNOW is used by default for value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
+Beyond that, and more related to use cases, the $AXON is used by default for value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
 
-The KNOW token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
+The $AXON token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
 
 More details about Token Model [here](https://docs.okp4.network/whitepaper/token-model)
 
-### Can price volatility of the KNOW token be a problem?
+### Can price volatility of the $AXON token be a problem?
 
-The KNOW price volatility can become a problem when it's used for payment. Imagine a dataset or service providers denominates its price in KNOW. If the KNOW values goes +50%, then it goes the same of providers who may see their resources less used because 50% more expensive. An external service can be used to define another unit of account (like the dollar) and have the $KNOW value updated every time their resource is consumed.
+The $AXON price volatility can become a problem when it's used for payment. Imagine a dataset or service providers denominates its price in KNOW. If the $AXON values goes +50%, then it goes the same of providers who may see their resources less used because 50% more expensive. An external service can be used to define another unit of account (like the dollar) and have the $AXON value updated every time their resource is consumed.
 
 ### Decentralization seems to add complexity. Does that get offset but the open composability?
 
@@ -285,9 +285,9 @@ Axone is a sandbox for human coordination experiments in the off-chain world. Yo
 
 ## Utilization
 
-### Can you describe how the data transfer work ?
+### Can you describe how the data transfer works ?
 
-First, let me remind that the data is off-chain, only the data's metadata (it's description) is on-chain and integrated in the ontology.
+First, let me remind that the data is off-chain, only the data's metadata (its description) is on-chain and integrated in the ontology.
 
 When a consumer interacts with the Axone blockchain, they might request access to multiple datasets and algorithms. The protocol checks if the conditions set by the data or algorithm providers are satisfied. If they are, the transaction is validated on-chain (the [Pactum smart contract](https://docs.okp4.network/whitepaper/architecture#pactum-managing-agreements) ensures conditions are met, including retributions for providers), with the workflow being described like any service in the ontology (leveraging the [Cognitarium smart contract](https://docs.okp4.network/whitepaper/architecture#cognitarium-semantic-data-storage)).
 Subsequent to this validation, an [off-chain orchestration service](https://docs.okp4.network/whitepaper/architecture#orchestration), exemplified by workflow engines like [Argo](https://argoproj.github.io/argo-workflows/), takes over. This service acts as a gatekeeper for resources, relying exclusively on blockchain validation events to process the consumer's request. It's important to note that this orchestration service doesn't inherently trust any party; it solely trusts the blockchain's validation.
@@ -327,6 +327,6 @@ More info [here](https://docs.okp4.network/whitepaper/architecture#trusted-parti
 ### How Axone ensures law enforcement BEFORE EXECUTION?
 
 1. An Identity (human or bot) wants to interact with a Zone
-2. The Zone ask to the dedicated smart contract if its possible given the context and all the involved rules
+2. The Zone asks to the dedicated smart contract if its possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on. Depending on the answer, the execution process could start.

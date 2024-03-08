@@ -10,7 +10,7 @@ This chapter is non-technical, suited to explain the concepts. The next chapter 
 
 :::
 
-## What is Axone ?
+## What is Axone?
 
 Axone has been purposefully structured as a custom blockchain to ignite a **new wave of innovation based on shared digital resources.** Its aim is to provide a unique solution to the challenges inherent in digital resource sharing while enabling the **orchestration** of various shared resources.
 
@@ -42,13 +42,13 @@ Axone tackles the challenge of fragmentation by offering a **solution that enabl
 
 The protocol's interoperability plays a vital role in addressing technical fragmentation. As a **technology-agnostic solution**, Axone enables seamless interaction between diverse systems, platforms, and technologies. It transcends the boundaries between the Web 2.0 and Web 3.0 ecosystems, ensuring that all digital resources can be effectively shared and utilized. This flexible and inclusive approach drives knowledge creation and stimulates innovation, promoting a more collaborative and efficient digital landscape.
 
-In addition to addressing technical fragmentation, Axone also provides a **comprehensive and expressive representation** of different digital resources and their interactions. Given the wide variety of datasets and services,  recording resources and their interactions is not sufficient ; it's necessary to **understand and interpret** the characteristics of a resource and its relationships with others. Axone's expressive formal representation allows for efficient comprehension and coordination among diverse resources, enhancing their utilization and the generation of valuable insights.
+In addition to addressing technical fragmentation, Axone also provides a **comprehensive and expressive representation** of different digital resources and their interactions. Given the wide variety of datasets and services, recording resources and their interactions is not sufficient ; it's necessary to **understand and interpret** the characteristics of a resource and its relationships with others. Axone's expressive formal representation allows for efficient comprehension and coordination among diverse resources, enhancing their utilization and the generation of valuable insights.
 
 ## Protocol Overview
 
-### How does Axone work ?
+### How does Axone work?
 
-Axone leverages the referenced resources into the protocol to construct digital commons, termed **Zones**, where digital resources can be shared and orchestrated to create knowledge. **To each zone and shared resource is attached customizable rules** concerning every facet of resource sharing. This includes aspects such as access control, data and service management, business models, governance frameworks for instance.The Axone protocol ensures proper compliance with the rules and the execution.
+Axone leverages the referenced resources into the protocol to construct digital commons, termed **Zones**, where digital resources can be shared and orchestrated to create knowledge. **To each zone and shared resource is attached customizable rules** concerning every facet of resource sharing. This includes aspects such as access control, data and service management, business models, governance frameworks for instance. The Axone protocol ensures proper compliance with the rules and the execution.
 
 ### Zone overview
 
@@ -79,7 +79,7 @@ Zones can be nested and overlapping, as one resource or service can participate 
 **What's the purpose ?**
 **Creating a general purpose Ecosysteme that enables XaaS integration**
 Anything that is presented to the Protocol as a Service, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies **the integration power of the protocol**, which brings infinite scalability and extensibility to the entire Axone ecosystem.
-The description of each resources referenced on the protocol ensures their proper processing by the different entities of the protocol.
+The description of each resource referenced on the protocol ensures their proper processing by the different entities of the protocol.
 
 ![solution-3](/img/content/whitepaper/solution-3.webp)
 
@@ -104,7 +104,7 @@ From this perspective, Digital Services serve as the structural and functional u
 ![solution-5](/img/content/whitepaper/solution-5.webp)
 
 **STaaS-Storage as a service:**
-The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or Any"Drive". Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
+The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or AnyDrive. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
 
 **Compute-as-a-Service:**
 Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads. Revelant general purpose compute networks as [Akash](https://akash.network/) can be easily referenced into the protocol.
@@ -124,9 +124,9 @@ BI tools can be effectively employed to comprehend the data shared within the zo
 
 ### Ontology
 
-Given that resources are not directly attached to a specific Zone, but rather deemed compatible with certain Zones based on their rules and conditions, it is crucial for the Axone protocol to accurately **represent and interpret** these diverse concepts within its framework. Furthermore, the protocol must efficiently distinguish and understand various consent rules, their dependencies, and hierarchies. Consequently, the protocol have to **express as clearly as possible the context**, the meaning of the concepts and their relationships.
+Given that resources are not directly attached to a specific Zone, but rather deemed compatible with certain Zones based on their rules and conditions, it is crucial for the Axone protocol to accurately **represent and interpret** these diverse concepts within its framework. Furthermore, the protocol must efficiently distinguish and understand various consent rules, their dependencies, and hierarchies. Consequently, the protocol has to **express as clearly as possible the context**, the meaning of the concepts and their relationships.
 
-To really leverage the power of knowledge, Axone protocol  interprets all these entities and concept within a universal language taking into account **the semantic aspect** of each of them.
+To really leverage the power of knowledge, Axone protocol interprets all these entities and concept within a universal language taking into account **the semantic aspect** of each of them.
 Let's take an illustration to clearly understand.
 
 ![solution-6](/img/content/whitepaper/solution-6.webp)
@@ -141,7 +141,7 @@ In computer science, an ontology is an **explicit, formal representation of know
 In the context of the Axone protocol, our ontology serves to model **a semantic network of all entities**—such as zones, data, services, rules, processing workflows, and more—by defining what they are and how they relate to each other.
 The Axone ontology is stored on-chain as a smart contract, called Cognitarium. Storing the ontology on-chain guarantees the protocol's expressiveness and facilitates its structured understanding.
 
-**What are the benefits for Axone Protocol ?**
+**What are the benefits for Axone Protocol?**
 Storing ontology on the blockchain and leveraging it to imbue resources and datasets with meaning carries significant implications for both execution and verification.
 
 **Execution:**
@@ -172,7 +172,7 @@ To tackle this, Axone aims at providing a **reliable and secure mechanism** to e
 ![solution-8](/img/content/whitepaper/solution-8.webp)
 
 1. An Identity (human or bot)  wants to interact with a Zone
-2. The Zone ask to the dedicated smart contract if its possible given the context and all the involved rules
+2. The Zone asks to the dedicated smart contract if its possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on.
 Depending on the answer, the execution process could start.
@@ -183,7 +183,7 @@ Execution refers to the process of orchestrating resources and executing the wor
 
 The challenge here is to **ensure that all the events of the protocol are executed in a reliable environment** so that all parties involved see their conditions respected with a trust minimized process and they are able to follow the workflow progress. A Service Execution Agreement in the form of a smart contract called PACTUM outlines the terms of the agreement that binds the stakeholders together - the consumer and providers. It does not execute the workflows itself, but rather ensures their composability and integrity by clearly defining the contractual terms.
 
-**How does the Pactum smart contract work ?**
+**How does the Pactum smart contract work?**
 
 ![solution-9](/img/content/whitepaper/solution-9.webp)
 

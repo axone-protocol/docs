@@ -62,7 +62,7 @@ DAO Participants are responsible for issuing improvement proposals, voting on th
 
 ***Interaction***
 
-DAO Participants interact with the protocol by making and voting on proposals, facilitated by staking $KNOW. Each $AXON token provides a voting right.
+DAO Participants interact with the protocol by making and voting on proposals, facilitated by staking $AXON. Each $AXON token provides a voting right.
 
 ***Entity***
 
@@ -132,6 +132,6 @@ It is important to note that Application participants, such as builders and end-
 
 Builders are also essential to the proper functioning of our ecosystem. They leverage the Dataverse to build, update, and improve applications on top of the protocol with the aim of consuming the knowledge created. This includes UI (User Interface) developers who design and build interfaces for these applications. The Builder's application will therefore play an intermediary role (the application becomes a Consumer) to create the knowledge required by the end user. Then the application consumes the knowledge in order to provide its service to the client.
 
-They are the ones using Applications. Some applications may be completely off-chain, these applications just leverage outputs from Axone with end-users invisible for the protocol. Some may need users to have on-chain identity and/or perform on-chain actions. These 2 kinds of end-users will coexist.
+They are the ones using Applications. Some applications may be completely off-chain, they leverage outputs from Axone, making end-users invisible to the protocol. Some may need users to have on-chain identity and/or perform on-chain actions. These 2 kinds of end-users will coexist.
 
 :::
