@@ -8,9 +8,9 @@ The hierarchy of norms refers to the hierarchical structure of rules within the 
 
 In the Axone Governance framework, the hierarchy of norms establishes a clear order of precedence for rules and regulations. We thus end up with different levels of governance that allow fine-grained control of the use of the protocol.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/technical-documentation/governance-hierarchy-of-norms.webp" alt="Governance - Hierarchy of Norms" style={{ maxHeight: "340px" }}></img>
-</center>
+</div>
 
 <br/>
 

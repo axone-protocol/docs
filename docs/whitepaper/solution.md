@@ -79,7 +79,7 @@ Zones can be nested and overlapping, as one resource or service can participate 
 **What's the purpose ?**
 **Creating a general purpose Ecosysteme that enables XaaS integration**
 Anything that is presented to the Protocol as a Service, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies **the integration power of the protocol**, which brings infinite scalability and extensibility to the entire Axone ecosystem.
-The description of each resource referenced on the protocol ensures their proper processing by the different entities of the protocol.
+The description of each resource referenced in the protocol ensures their proper processing by the different entities of the protocol.
 
 ![solution-3](/img/content/whitepaper/solution-3.webp)
 
@@ -172,7 +172,7 @@ To tackle this, Axone aims at providing a **reliable and secure mechanism** to e
 ![solution-8](/img/content/whitepaper/solution-8.webp)
 
 1. An Identity (human or bot)  wants to interact with a Zone
-2. The Zone asks to the dedicated smart contract if its possible given the context and all the involved rules
+2. The Zone asks to the dedicated smart contract if it's possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on.
 Depending on the answer, the execution process could start.

@@ -6,9 +6,9 @@ sidebar_position: 1
 
 In the Axone protocol, ontologies are indispensable. They facilitate a comprehensive depiction of the dataverse, capturing even its most intricate details. Ontologies provide detailed descriptions of both datasets and services, enhancing overall comprehension. Moreover, they bridge the connection between governance and orchestration within the dataverse.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/whitepaper/arch-3pillars.webp" style={{ maxHeight: "250px" }}></img>
-</center>
+</div>
 
 This ontology allows to achieve:
 
@@ -28,9 +28,9 @@ Several languages are used to express the Axone ontologies:
 - RDFS (RDF Schema): an ontology representation language that defines classes and properties and relationships between them. RDFS is an extension of RDF.
 - [SKOS (Simple Knowledge Organization System)](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System): a language for representing ontology that allows the description of classification systems and thesauri. SKOS allows the definition of concepts, relationships, and properties.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/technical-documentation/semantic-stack.webp" style={{ maxHeight: "335px" }}></img>
-</center>
+</div>
 
 ## Ontology at the heart of the blockchain
 

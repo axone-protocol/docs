@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Axone is the first settlement layer for off-chain workflows using shared resources. In other words, it is an open-source and public protocol that enables the sharing and orchestration of digital off-chain resources (datasets, algorithms, storage, computation resources…) while enforcing their associated governance rules.
 
-### How does Axone works in a few words ?
+### How does Axone work in a few words ?
 
 Axone is a custom blockchain facilitating digital resource sharing with auditability and adherence to consent rules. It establishes trust through decentralization, offers a flexible incentive system, and reduces digital ecosystem fragmentation by enabling 'Anything as a Service'. The protocol introduces Zones for resource orchestration and utilizes an on-chain ontology for standardized interpretation of diverse elements. With smart contracts and modules, it is the orchestrator of workflows running on shared resources for any applications.
 
@@ -84,7 +84,7 @@ In summary, the distinction between Zones and resources enables the Axone ecosys
 The Dataverse is an ever-expanding universe comprised of all the digital resources, such as datasets, and digital services such as infrastructure services, processing services or any other digital service referenced in the Axone Blockchain.
 All resources, services and Zones are found within the same universe, the Dataverse. The on-chain Ontology is the semantic representation of the Dataverse.
 
-### How does Axone stores the resources and services?
+### How does Axone store the resources and services?
 
 As a protocol, Axone doesn't store them. It only references the resource/services where it is (wherever it is) and make it available to the network according to the permissions granted by the provider. It can be stored anywhere, with any kind of storage solution, either centralized or decentralized.
 
@@ -318,7 +318,7 @@ Axone functions as a decentralized coordinator where:
 - The workflow can be initiated in accordance with the consent rules of each resource.
 - The workflow is recorded on-chain and is subject to thorough auditing.
 
-### How does Axone ensures the execution and validation of sharing rules?
+### How does Axone ensure the execution and validation of sharing rules?
 
 The protocol itself is primarily an infrastructure that allows a resource "provider" to reference and define usage rules (in Prolog, which offers better expressiveness compared to other languages), and for a "consumer" to make usage requests based on these rules. What the protocol guarantees is the transparency of the rules and the correct assessment (validation or not) of these rules. However, there is indeed the question of verifying the actual "real" sharing action. The current approach is an open-source off chain "orchestrator" developed by the Axone Association team that provides access to resources (based on requests validated onchain) and then reports the successful execution back on chain. So, yes, there's an element of centralization! We aim to have multiple orchestrators, deployed by external entities, and even decentralize that process at some point. Both "providers" and "consumers" will be able to choose the one they "trust" or deploy their own.
 

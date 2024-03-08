@@ -23,15 +23,15 @@ In the protocol, governance structures are made up of two key elements:
 - A **VP** serves as proof of the existence of a governance by referencing the Codified Governance. This document plays a fundamental role in creating a zone within the dataverse.
 - **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing zone management.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/zone-governance-1.webp" alt="Governance elements for Zone in Axone Protocol" style={{ maxHeight: "340px" }}></img>
-</center>
+</div>
 
 Here are the five steps to create a zone governance in the Dataverse: 
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/zone-governance-2.webp" alt="Steps to create a zone's governance" style={{ maxHeight: "340px" }}></img>
-</center>
+</div>
 
 We'll take one simple example in this tutorial for the Collaborative AI zone.  
 
@@ -112,9 +112,9 @@ partOf(subSec1, sec1).
 partOf(sec1, chap1).
 ```
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/resource-governance-3.webp" alt="Governance elements for Resources in Axone Protocol" style={{ maxHeight: "340px" }}></img>
-</center>
+</div>
 
 #### Elements of description
 
@@ -283,7 +283,7 @@ You can see that there is a new field in the jsonld with the cryptographic proof
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads .
+The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads.
 
 The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 

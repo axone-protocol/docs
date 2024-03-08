@@ -27,7 +27,7 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
 
   return (
     <figure>
-      <center>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="plot" style={{ height: '380px', width: '570px', maxWidth: '100%' }}>
           <ResponsiveLine
             data={data}
@@ -98,12 +98,12 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
             }}
           />
         </div>
-      </center>
-      <center>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <figcaption>
           <span className="math math-inline">{caption}</span>
         </figcaption>
-      </center>
+      </div>
     </figure>
   )
 }

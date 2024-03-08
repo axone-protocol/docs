@@ -6,6 +6,6 @@ sidebar_position: 103
 🚀 Welcome to the third episode of Nono's Tuto!
 Your tutorial series to become an expert developer on the Axone protocol 🔥
 
-📚 In this third episode, we'll dive in the Ontology and do some demonstration!
+📚 In this third episode, we'll dive into the Ontology and do some demonstration!
 
 <iframe width="100%" height="550" src="https://www.youtube.com/embed/39SOwMhdylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

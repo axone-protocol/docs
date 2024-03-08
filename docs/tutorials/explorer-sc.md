@@ -52,7 +52,7 @@ You'll see your Axone wallet address if you click again on the wallet button. Cl
 - Send a few $AXON tokens to another Axone wallet, `okp41wuxc2mzy0wp27cdcfnde3vz07eurpd7grfmq6n` as the recipient for example.
 - Click on "Send" and "Approve" to confirm the transfer.
 
-<center><img src="/img/content/tutorials/explorermaj-1.webp"></img></center>
+<div style={{ display: "flex", justifyContent: "center" }}><img src="/img/content/tutorials/explorermaj-1.webp"></img></div>
 
 Once completed, click on "View transaction".
 
@@ -69,7 +69,7 @@ Once completed, click on "View transaction".
 
 You can also retrieve a transaction you executed by clicking the "Search" button upper on the right, providing your Axone address, and clicking "Confirm". Click on the hash in the "Transactions" section to get the details.
 
-<center><img src="/img/content/tutorials/explorer-2.webp"></img></center>
+<div style={{ display: "flex", justifyContent: "center" }}><img src="/img/content/tutorials/explorer-2.webp"></img></div>
 
 If you have the transaction hash, you can also directly get transaction details by providing the hash in the Search modal.
 

@@ -48,7 +48,7 @@ The Zone Rules directly address matters that significantly impact business activ
 Here are some facets of business models in the zones:
 
 - **Retribution models**: Rules establish the economic terms resulting from the orchestration of resources within a zone. The retribution model describes the creation and redistribution of resulting value, benefitting all participating parties. The models can be diverse and significantly different from each other, and their design can either promote equity or impose constraints on it. For instance, in one specific Zone, it may be stated that Open Data does not receive remuneration, whereas other data sets receive remuneration. Conversely, each service provider may set the price associated with their service usage in another zone, with compensation arranged according to this price.
-- **Economic Incentives**: The rules specify financial incentives to promote desirable behaviours and outcomes within the Zone. This can include mechanisms such as reward systems, token incentives, or revenue-sharing models that encourage active entities to contribute to the growth and development of the Zone actively.
+- **Economic Incentives**: The rules specify financial incentives to promote desirable behaviors and outcomes within the Zone. This can include mechanisms such as reward systems, token incentives, or revenue-sharing models that encourage active entities to contribute to the growth and development of the Zone actively.
 
 ### Related to self
 
