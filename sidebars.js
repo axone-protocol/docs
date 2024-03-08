@@ -96,7 +96,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Smart contracts',
-          href: '/contracts'
+          href: '/contracts/okp4-cognitarium'
         },
         {
             type: 'link',
