@@ -9,7 +9,7 @@ import * as quiz from './verifiable-claims-quiz.json';
 
 <i>Reading time: {readingTime} min</i>
 
-**Verifiable Credentials** are a key concept in the world of digital identity, particularly in decentralized identity systems. A Verifiable Credential is a form of digital evidence that attests an information or a characteristic about a person, organization, or object. A trusted entity that issues these credentials is called the **Issuer**.
+**Verifiable Credentials** are a key concept in the world of digital identity, particularly in decentralized identity systems. A Verifiable Credential is a form of digital evidence that attests to information or a characteristic about a person, organization, or object. A trusted entity that issues these credentials is called the **Issuer**.
 
 ## Verifiable Credentials and claims
 
@@ -17,7 +17,7 @@ Commonly, a credential is a certificate, proof, or qualification of competence o
 
 A credential may contain several claims. For example, a diploma contains the claims "I have a degree in Biology" and "My diploma was issued on 19/06/2023".
 
-**Verifiable Credentials** (VCs) can be digitally authenticated, meaning that the credential receiver can verify its origin and integrity without contacting the issuer directly. The holder of the Verifiable Credential can control how and to whom their information is shared. For example, a person holds the VC for his degree, the Issuer of which is the university where he studied. When this person applies for a job, they can share this VC with the company to provide proof of their background and skills. The company does not need to contact the university to verify the authenticity of the VC.
+**Verifiable Credentials** (VCs) can be digitally authenticated, meaning that the credential receiver can verify its origin and integrity without contacting the issuer directly. The holder of the Verifiable Credential can control how and to whom information is shared. For example, a person holds the VC for his degree, the Issuer of which is the university where he studied. When this person applies for a job, they can share this VC with the company to provide proof of their background and skills. The company does not need to contact the university to verify the authenticity of the VC.
 
 In the [W3C standard](https://www.w3.org/TR/vc-data-model/), a credential is a set of one or more **claims** made by the same entity. Credentials include an identifier and metadata describing the credential's properties, such as the issuer, the expiry date and time, a representative image, a public key to use for verification purposes, the revocation mechanism, and so on. The issuer might sign the metadata. A verifiable credential is a set of tamper-evident claims and metadata that cryptographically prove who issued it.
 
@@ -59,7 +59,7 @@ The [Axone ontology](https://docs.okp4.network/academy/resources#ontology-how-it
 It's important to note that the existence of a resource is conditional on the presence of at least one relevant claim. In other words, although the universe of potential resources is infinite, a resource only becomes concrete and tangible when a corresponding claim is established.
 
 :::note
-This notion is analogous to that of crypto-currency wallets. Although all addresses theoretically exist, they only take on practical significance (such as indicating a balance) when participating in a transaction.
+This notion is analogous to that of cryptocurrency wallets. Although all addresses theoretically exist, they only take on practical significance (such as indicating a balance) when participating in a transaction.
 :::
 
 Verifiable Credentials obey schemas that describe a particular aspect of a resource. Certain VCs apply depending on the nature of the resource. A VC describing an entity or organization does not apply to the same resource as a VC describing a dataset. This is why VCs are organized in schemas.

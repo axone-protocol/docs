@@ -12,7 +12,7 @@ We recommend you first read the [Technical documentation of Governance](https://
 
 Zone Rules establish the boundaries of a specific area in the Dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
 
-The materialization of a zone in the dataverse requires the creation of a Governance VP. According to a principle of self-determination, the zone itself must generate this VP, i.e., the issuer and the zone have the same identity.
+The materialization of a zone in the Dataverse requires the creation of a Governance VP. According to a principle of self-determination, the zone itself must generate this VP, i.e., the issuer and the zone have the same identity.
 
 The impact of this VP of Governance is constitutional. Its implementation transfers authority from the issuer (i.e., the zone) to an autonomous governance system associated with the zone. This system is equipped with its own mechanisms and manages changes and revisions relating to the governance of the zone in an independent, self-regulated, and decentralized manner.
 
@@ -27,7 +27,7 @@ In the protocol, governance structures are made up of two key elements:
   <img src="/img/content/academy/zone-governance-1.webp" alt="Governance elements for Zone in Axone Protocol" style={{ maxHeight: "340px" }}></img>
 </div>
 
-Here are the five steps to create a zone governance in the Dataverse: 
+Here are the five steps to create a zone governance in the Dataverse:
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/zone-governance-2.webp" alt="Steps to create a zone's governance" style={{ maxHeight: "340px" }}></img>
@@ -54,7 +54,7 @@ Governance rules of the Collaborative AI zone:
 |-------------|----------------|------------------------------------------------------|
 | Chapter     | 1              | Collaborative AI zone                                |
 | Section     | 1.1            | Zone Governance                                      |
-| Sub-section | 1.1.1          | Governers                                            |
+| Sub-section | 1.1.1          | Governors                                            |
 | Article     | 1.1.1.1        | Conditions to amend the rules                       |
 | Paragraph   | 1.1.1.1.1      | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
 
@@ -218,9 +218,9 @@ The Governance VP is a specific type of VP that details the governance rules app
 - Association with Codified Governance: It associates the resource with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
 - Textual Description of the Rules: In addition to the link to the codified rules, the VP provides a structured and hierarchical textual explanation of the governance rules, as set out in the Prolog program.
 
-This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the Axone dataverse.
+This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the Axone Dataverse.
 
-Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as [datasets, services](/academy/part-2/resource-governance), and zones.
+Governance VPs play an essential role in the Dataverse, applying universally to various categories of resources, such as [datasets, services](/academy/part-2/resource-governance), and zones.
 
 Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/collab-AI-zone-governance.jsonld). 
 
@@ -297,7 +297,7 @@ Note that as you interact with the Axone blockchain, you must pay fees in $AXON 
 
 With:
 
-- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `CONTRACT_ADDR` : Dataverse contract address (always the same)  
 - `MY_ADDR` : registrant okp4 address  
 - `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
 
@@ -308,5 +308,5 @@ The command returns the hash of the transaction. You can find more details of th
 ## Delete a zone in the Dataverse
 
 The deletion of a zone in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this zone. This deletion action can only be initiated following the rules established by the governance of the zone.
-It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking zones.
+It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the Dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking zones.
 

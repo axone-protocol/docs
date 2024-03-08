@@ -10,11 +10,11 @@ sidebar_position: 1
 
 Axone is the first settlement layer for off-chain workflows using shared resources. In other words, it is an open-source and public protocol that enables the sharing and orchestration of digital off-chain resources (datasets, algorithms, storage, computation resources…) while enforcing their associated governance rules.
 
-### How does Axone work in a few words ?
+### How does Axone work in a few words?
 
 Axone is a custom blockchain facilitating digital resource sharing with auditability and adherence to consent rules. It establishes trust through decentralization, offers a flexible incentive system, and reduces digital ecosystem fragmentation by enabling 'Anything as a Service'. The protocol introduces Zones for resource orchestration and utilizes an on-chain ontology for standardized interpretation of diverse elements. With smart contracts and modules, it is the orchestrator of workflows running on shared resources for any applications.
 
-### What makes Axone a protocol ?
+### What makes Axone a protocol?
 
 Axone serves as a set of rules and conventions that facilitate interoperability and coordination among diverse digital resources, systems, and entities. It allows for the establishment of rules, consents, and conditions for resource sharing, yet it doesn't focus on any specific use case. These are agnostic, trustless primitives that form the foundation for numerous other application and layer that can be built on top. Axone stands as the base settlement layer for off-chain workflows involving shared resources
 
@@ -49,7 +49,7 @@ Axone's goal is to be the leading decentralized data intermediary by enabling a 
 
 ## General Questions
 
-### What is a Zone ?
+### What is a Zone?
 
 A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, considering the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
@@ -57,7 +57,7 @@ The primary objective of Zones is to facilitate the coordination of heterogeneou
 
 More information [here](https://docs.okp4.network/whitepaper/solution#protocol-overview)
 
-### What types of resources can be shared ?
+### What types of resources can be shared?
 
 As an agnostic infrastructure, Axone has no limitations on the types of resources it can be referenced, it opens doors to a wide range of possibilities.
 
@@ -79,7 +79,7 @@ The absence of a direct link between Zones and resources allows for significant 
 
 In summary, the distinction between Zones and resources enables the Axone ecosystem to be dynamic, scalable, and capable of accommodating a variety of rules and conditions for each Zone, thereby fostering value creation and free interaction among participants and digital resources.
 
-### What is the Dataverse ?
+### What is the Dataverse?
 
 The Dataverse is an ever-expanding universe comprised of all the digital resources, such as datasets, and digital services such as infrastructure services, processing services or any other digital service referenced in the Axone Blockchain.
 All resources, services and Zones are found within the same universe, the Dataverse. The on-chain Ontology is the semantic representation of the Dataverse.
@@ -108,11 +108,11 @@ Dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#ont
 
 And deep-dive article [here](https://blog.okp4.network/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
 
-### Who can share and consume these resources ?
+### Who can share and consume these resources?
 
 Anyone can share resources and define associated consent rules. As an open and public protocol, everyone has access to the resources referenced in the protocol and can use them, according to the access rights and conditions defined in the rules of the concerned Zone and resources.
 
-### Is Axone private by design ?
+### Is Axone private by design?
 
 No, Axone is agnostic by design. It provides the flexibility for privacy-focused applications to be built on top of it. This means that privacy-enhancing features and services can be implemented within Axone, allowing developers to tailor privacy settings to their specific needs and use cases. It's a versatile foundation that can support a wide range of applications, whether they prioritize privacy or other aspects of data sharing and orchestration.
 
@@ -248,7 +248,7 @@ The Logic module is designed to primarily address logical queries based on facts
 
 ## Token
 
-### What is the utility of the $AXON token ?
+### What is the utility of the $AXON token?
 
 The $AXON is the fee token of the Axone blockchain, it is required to submit transactions to the network of validators.
 
@@ -285,7 +285,7 @@ Axone is a sandbox for human coordination experiments in the off-chain world. Yo
 
 ## Utilization
 
-### Can you describe how the data transfer works ?
+### Can you describe how the data transfer works?
 
 First, let me remind that the data is off-chain, only the data's metadata (its description) is on-chain and integrated in the ontology.
 
@@ -302,13 +302,13 @@ To sum it up, from the moment a consumer places a request to the final reporting
 
 Not necessarily, there are several ways to process data without transferring it to the end consumer, or even to third-party service providers: Trusted Execution Environments (TEE), Multi-Party Computation (MPC), Edge computing, and more. Implementations of these technologies are digital services that can be used within workflows. Once again, it's up to the provider to choose the consent rules related to the resources they want to share and especially how they can be processed.
 
-### Axone is the set of instructions that could be used for data pipelines. How can I build a Data Platform with Axone ?
+### Axone is the set of instructions that could be used for data pipelines. How can I build a Data Platform with Axone?
 
 The answer depends on the Design Pattern you opt for: batching, micro batching, streaming, hybrid, or any other. Depending on the most suitable choice for the datasets you intend to collect and process, you'll need to pick specific tools. For instance, within the Apache series, options such as AIRFLOW, SPARK, STORM, KAFKA, FLINK, or even other open-source or proprietary solutions could come into play.
 
 Both the team and community will reference implementations of these tools alongside the necessary connectors for communication. This will facilitate the seamless construction of your own process by interconnecting services that best align with your use case.
 
-### Can you illustrate it ?
+### Can you illustrate it?
 
 For example, when you want to extract data from nodes for analytical purposes, a batching collection approach every 6-12 hours might be ideal, followed by data processing and storage in a Data Warehouse solution. Conversely, when extracting data from nodes for monitoring purposes, a streaming or micro batching process might be more suitable, with the data being stored in a Data Lake solution.
 

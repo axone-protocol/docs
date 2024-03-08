@@ -77,7 +77,7 @@ All resources, services and Zones are found within the same universe, the Datave
 Zones can be nested and overlapping, as one resource or service can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts: **this is the Dataverse.**
 
 **What's the purpose ?**
-**Creating a general purpose Ecosysteme that enables XaaS integration**
+**Creating a general purpose Ecosystem that enables XaaS integration**
 Anything that is presented to the Protocol as a Service, whatever it does, wherever it is hosted or deployed (in the cloud or on premise), whoever provides it, it can be used by the Protocol. Therein lies **the integration power of the protocol**, which brings infinite scalability and extensibility to the entire Axone ecosystem.
 The description of each resource referenced in the protocol ensures their proper processing by the different entities of the protocol.
 
@@ -107,7 +107,7 @@ From this perspective, Digital Services serve as the structural and functional u
 The Dataverse is capable of supporting all storage options. These range from local storage options to cloud storage solutions operated by major providers such as Dropbox or AnyDrive. Additionally, decentralized storage networks like InterPlanetary File System (IPFS), Filecoin, or Arweave can also be integrated into the platform.
 
 **Compute-as-a-Service:**
-Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads. Revelant general purpose compute networks as [Akash](https://akash.network/) can be easily referenced into the protocol.
+Similarly, the Dataverse is adaptable to a range of computation options. While many services will be provided as APIs with their own computational resources, others can be executed on cloud services operated by commercial entities or decentralized compute resources. This flexibility is essential for accommodating different types of computational tasks and workloads. Relevant general purpose compute networks as [Akash](https://akash.network/) can be easily referenced into the protocol.
 
 **Identity Provider:**
 In terms of identity management, the Dataverse can integrate with various identity management services or identity standards, depending on the specific requirements. Whether it's a simple, a decentralized identity management system, or a more complex centralized identity service, Axone can support it, providing secure and flexible solutions for identity management;
@@ -171,8 +171,8 @@ To tackle this, Axone aims at providing a **reliable and secure mechanism** to e
 
 ![solution-8](/img/content/whitepaper/solution-8.webp)
 
-1. An Identity (human or bot)  wants to interact with a Zone
-2. The Zone asks to the dedicated smart contract if it's possible given the context and all the involved rules
+1. An Identity (human or bot) wants to interact with a Zone
+2. The Zone asks the dedicated smart contract if it's possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on.
 Depending on the answer, the execution process could start.

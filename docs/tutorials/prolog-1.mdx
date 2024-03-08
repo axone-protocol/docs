@@ -364,8 +364,10 @@ can_vote(X) :- member(X, council).
 
 Let's combine it all! Here is how to get back the Prolog code stored through the last `law-stone` (`CODE_ID = 5`) instantiation
 
-- instantiated by the Axone address `okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`
+- instantiated by the OKP4 address `okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`
 - within the storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`)
+
+This command retrieves the stored Prolog program by querying the last instantiated `law-stone` contract, extracting the program ID, and decoding the base64-encoded Prolog code.
 
 ```bash
 okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
