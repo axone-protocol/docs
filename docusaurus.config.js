@@ -320,7 +320,8 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true
+        disableSwitch: true,
+        respectPrefersColorScheme: false
       },
       docs: {
         sidebar: {
