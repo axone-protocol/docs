@@ -19,7 +19,7 @@ This ontology allows to achieve:
 
 ## A formal model for the Axone protocol
 
-This ontology describes and defines the different forms of vocabularies used in the [OKP4](https://okp4.network) protocol in a standard and well designed format. The aim is to model a semantic network of all the _entities_ (Zones, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them. Thus, the ontology provides a complete living understanding and knowledge of the datasets within a Zone, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).
+This ontology describes and defines the different forms of vocabularies used in the [Axone protocol](https://axone.xyz) in a standard and well designed format. The aim is to model a semantic network of all the _entities_ (Zones, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them. Thus, the ontology provides a complete living understanding and knowledge of the datasets within a Zone, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).
 
 Several languages are used to express the Axone ontologies:
 
@@ -34,4 +34,4 @@ Several languages are used to express the Axone ontologies:
 
 ## Ontology at the heart of the blockchain
 
-The Ontology is at the heart of the [OKP4](https://github.com/okp4/okp4d) protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. This means that (almost) all the semantics of the transactions submitted to the blockchain are expressed through this ontology - for instance the creation of a Zone, the execution of a Service, the description of a Dataset, etc.
+The Ontology is at the heart of the [Axone](https://github.com/okp4/okp4d) protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. This means that (almost) all the semantics of the transactions submitted to the blockchain are expressed through this ontology - for instance the creation of a Zone, the execution of a Service, the description of a Dataset, etc.
