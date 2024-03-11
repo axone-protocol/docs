@@ -93,12 +93,12 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which cosmovisor) start
+ExecStart=$(which cosmovisor) run start
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
 Environment="DAEMON_NAME=okp4d"
-Environment="$HOME/.okp4d"
+Environment="DAEMON_HOME=$HOME/.okp4d"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 
