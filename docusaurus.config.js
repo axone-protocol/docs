@@ -226,7 +226,7 @@ const config = {
         logo: {
           alt: 'Axone Logo',
           src: 'img/logo-axone-dark.webp',
-          href: 'https://okp4.network',
+          href: 'https://axone.xyz',
           width: 160
         },
         links: [
@@ -264,7 +264,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/OKP4_Protocol'
+                href: 'https://twitter.com/axonexyz'
               },
               {
                 label: 'GitHub',
@@ -288,8 +288,8 @@ const config = {
                 href: 'https://blog.okp4.network/'
               },
               {
-                label: 'OKP4.network',
-                href: 'https://okp4.network'
+                label: 'Axone.xyz',
+                href: 'https://axone.xyz'
               },
               {
                 label: 'OKP4 GPT',
