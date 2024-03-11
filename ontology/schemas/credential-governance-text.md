@@ -29,7 +29,7 @@ Here are the namespaces used in this schema:
 
 Governance Text Credential is a type of Credential that attests to descriptive information about a governance text in a "human-readable format".
 
-The Governance Text Credential applies to all resources in the Dataverse for which rules must be followed. Such Governances are categorized into three main types as recognized by the [Axone protocol](https://axone.xyz):
+The Governance Text Credential applies to all resources in the Dataverse for which rules must be followed. Such Governances are categorized into three main types as recognized by the [OKP4 protocol](https://okp4.network):
 
 - Zone Rules: Rules establish the boundaries of a specific area in the Dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
 - Resource Consent: Consents are agreements associated with the use of Resources within Zones. By resources, we mean Digital Resources (e.g. datasets) or Digital Services. It goes beyond simple approval and encompasses the permissions and restrictions on resource owners' access, usage, sharing, management and handling of their resources. It allows parties to define boundaries and establish terms for others to interact with their digital resources. It's a crucial aspect of governance, ensuring resources are used appropriately per the relevant parties' expressed will and intentions.
