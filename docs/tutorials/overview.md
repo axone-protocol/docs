@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ![Tutorials overview](/img/content/tutorials/overview-tutos.webp)
 
-## Getting started with OKP4 Protocol
+## Getting started with Axone Protocol
 
 * [Your first transaction with Keplr Wallet](./keplr-1)
 * [Interactions with the CLI](./cli-1)
@@ -17,6 +17,6 @@ sidebar_position: 1
 
 Discover our video tutorials with Arnaud our Blockchain Architect:
 
-* [Introduction to OKP4 Architecture](./nonos-tuto-1)
+* [Introduction to Axone Architecture](./nonos-tuto-1)
 * [Governance, you said](./nonos-tuto-2)
 * [Learn more about Ontology](./nonos-tuto-3)

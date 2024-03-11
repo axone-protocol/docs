@@ -7,15 +7,15 @@ import CodeBlock from '@theme/CodeBlock'
 
 # Interactions with the CLI
 
-![OKP4 with Keplr](/img/content/tutorials/cli.webp)
+![Axone with Keplr](/img/content/tutorials/cli.webp)
 
-This guide will walk you through connecting with the OKP4 network using a Command Line Interface (CLI). Picture the CLI as a control panel, allowing you to tap into the pulsing core of OKP4's advanced technology. Thanks to the CLI, you can query the chain, uncover deep insights, and execute transactions with a mere command line.
+This guide will walk you through connecting with the Axone network using a Command Line Interface (CLI). Picture the CLI as a control panel, allowing you to tap into the pulsing core of Axone's advanced technology. Thanks to the CLI, you can query the chain, uncover deep insights, and execute transactions with a mere command line.
 
-Let's explore the core concepts of the OKP4 blockchain and list the most crucial commands. Have a comfortable seat, launch your favourite terminal shell, and prepare for an exhilarating adventure!
+Let's explore the core concepts of the Axone blockchain and list the most crucial commands. Have a comfortable seat, launch your favorite terminal shell, and prepare for an exhilarating adventure!
 
-## Installing the OKP4 CLI
+## Installing the Axone CLI
 
-The `okp4d` is a text-based interface that allows users to interact with and query the OKP4 blockchain directly through commands typed in a terminal. The CLI serves as a tool for executing transactions and retrieving information from the blockchain.
+The `okp4d` is a text-based interface that allows users to interact with and query the Axone blockchain directly through commands typed in a terminal. The CLI serves as a tool for executing transactions and retrieving information from the blockchain.
 
 You'll need the [`okp4d`](https://github.com/okp4/okp4d) binary on your machine before we can start playing around with the CLI.
 
@@ -44,7 +44,7 @@ Certain aspects, such as your computer's unique characteristics (particularly fo
 
 ### Build the `okp4d` CLI from source
 
-1. Clone the OKP4 repository from GitHub:
+1. Clone the Axone repository from GitHub:
 
 ```bash
 git clone https://github.com/okp4/okp4d.git && cd okp4d
@@ -69,13 +69,13 @@ make install`}
 okp4d version
 ```
 
-## Get started with the OKP4 CLI
+## Get started with the Axone CLI
 
 Let's start with some essential notions and commands to get you up and running!
 
 ### Get a wallet by creating a new key pair
 
-A key pair is created to obtain a wallet in order to establish secure ownership and control over your cryptocurrency assets on the OKP4 blockchain. The key pair consists of two cryptographic keys: public and private keys.
+A key pair is created to obtain a wallet in order to establish secure ownership and control over your cryptocurrency assets on the Axone blockchain. The key pair consists of two cryptographic keys: public and private keys.
 
 When creating a wallet, you're typically provided with a mnemonic consisting of 12, 24, or sometimes more words. This mnemonic acts as a human-readable representation of the underlying cryptographic information. It is easier to remember and write down than the complex numbers and characters representing the private key.
 
@@ -111,13 +111,13 @@ okp4d keys show mywallet
 '
 ```
 
-Here the terminal returns `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` as the OKP4 address.
+Here the terminal returns `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` as the Axone address.
 
 ### Check your wallet balance
 
 A wallet balance refers to the amount of cryptocurrency or digital assets held in a specific wallet address. It represents the total value of funds that are available for spending or transferring from that particular wallet.
 
-The following command indicates that `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` OKP4 wallet holds 1 KNOW (1 KNOW = 1,000,000 uKNOW).
+The following command indicates that `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` Axone wallet holds 1 AXON (1 AXON = 1,000,000 uAXON).
 
 ```bash
 okp4d query bank balances okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
@@ -126,7 +126,7 @@ okp4d query bank balances okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
 : '
 balances:
 - amount: "1000000"
-  denom: uknow
+  denom: uAXON
 pagination:
   next_key: null
   total: "0"
@@ -135,11 +135,11 @@ pagination:
 
 :::tip
 
-Provide your OKP4 address to the [faucet](https://faucet.okp4.network/) to receive 1 $KNOW (test tokens).
+Provide your Axone address to the [faucet](https://faucet.okp4.network/) to receive 1 $AXON (test tokens).
 
 :::
 
-### Get the total supply of $KNOW
+### Get the total supply of $AXON
 
 Wondering about the number of coins in circulation? Watch out for the inflation rate with the `okp4d query bank total` command.
 
@@ -148,21 +148,21 @@ okp4d query bank total \
 --node https://api.testnet.okp4.network:443/rpc
 ```
 
-### Send some $KNOW to another wallet
+### Send some $AXON to another wallet
 
-Here is the command to send 0.5 KNOW (`500000 uknow`) from the wallet `mywallet` you control to the wallet with the OKP4 address `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg`:
+Here is the command to send 0.5 AXON (`500000 uAXON`) from the wallet `mywallet` you control to the wallet with the Axone address `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg`:
 
 ```bash
 okp4d tx bank send mywallet okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg \
-500000uknow \
+500000uAXON \
 --chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc
 ```
 
-You should type `y` to confirm the transaction. Then the terminal returns a `txhash`, a unique identifier that helps track and verify the transaction on the OKP4 blockchain.
+You should type `y` to confirm the transaction. Then the terminal returns a `txhash`, a unique identifier that helps track and verify the transaction on the Axone blockchain.
 
 ### Get transaction info from a `txhash`
 
-A transaction hash, also known as a transaction ID or TXID, is a string of alphanumeric characters generated by applying a hash function to the transaction data. The transaction hash serves as a digital fingerprint that uniquely identifies and tracks a specific transaction within the blockchain. It is commonly used to verify a transaction's status, details, and authenticity on the blockchain.
+A transaction hash, also AXONn as a transaction ID or TXID, is a string of alphanumeric characters generated by applying a hash function to the transaction data. The transaction hash serves as a digital fingerprint that uniquely identifies and tracks a specific transaction within the blockchain. It is commonly used to verify a transaction's status, details, and authenticity on the blockchain.
 
 Let's analyze a transaction executed for the previous part of this tutorial, `txhash = 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1`:
 
@@ -179,7 +179,7 @@ body:
     - "@type": /cosmos.bank.v1beta1.MsgSend
       amount:
       - amount: "500000"
-        denom: uknow
+        denom: uAXON
       from_address: okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5
       to_address: okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg
 ...
@@ -201,7 +201,7 @@ okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 
   "to_address": "okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg",
   "amount": [
     {
-      "denom": "uknow",
+      "denom": "uAXON",
       "amount": "500000"
     }
   ]
@@ -227,7 +227,7 @@ brew install jq
 
 ## Blockchain mastery with advanced commands
 
-Are you now comfortable with the CLI? Let's go further so that the OKP4 blockchain no longer holds any secrets for you!
+Are you now comfortable with the CLI? Let's go further so that the Axone blockchain no longer holds any secrets for you!
 
 ### Get all transactions from a filter function
 
@@ -252,17 +252,17 @@ okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 
   },
   {
     "key": "amount",
-    "value": "500000uknow"
+    "value": "500000uAXON"
   }
 ]
 '
 ```
 
-Thus we can get all transfer transactions where the recipient is `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg` and the amount is `500000uknow`:
+Thus we can get all transfer transactions where the recipient is `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg` and the amount is `500000uAXON`:
 
 ```bash
 okp4d query txs \
---events 'transfer.recipient=okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg&transfer.amount=500000uknow' \
+--events 'transfer.recipient=okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg&transfer.amount=500000uAXON' \
 --node https://api.testnet.okp4.network:443/rpc \
 --page 1 --limit 1000 \
 --output json | jq '{total_count: .total_count, txs: [.txs[] | {txhash: .txhash, date: .timestamp, txdata: .logs[0].events[] | select(.type == "transfer").attributes}]}'
@@ -285,7 +285,7 @@ okp4d query txs \
         },
         {
           "key": "amount",
-          "value": "500000uknow"
+          "value": "500000uAXON"
         }
       ]
     }
@@ -298,11 +298,11 @@ _Note the `--page 1 --limit 1000` parameters to set the results pagination._
 
 ### Smart contracts operations
 
-A smart contract is a self-executing contract with the terms of the agreement directly written into code. It is stored and executed publicly on the blockchain, enabling decentralized and automated transactions, agreements, and functionalities. OKP4 uses the `wasm` module to operate smart contracts.
+A smart contract is a self-executing contract with the terms of the agreement directly written into code. It is stored and executed publicly on the blockchain, enabling decentralized and automated transactions, agreements, and functionalities. Axone uses the `wasm` module to operate smart contracts.
 
 #### Smart contract instantiation
 
-Smart contract instantiation is creating and deploying a smart contract instance on the OKP4 (Cosmos-based) appchain. You must provide a `CODE_ID` to specify which smart contract code you want to instantiate.
+Smart contract instantiation is creating and deploying a smart contract instance on the Axone (Cosmos-based) appchain. You must provide a `CODE_ID` to specify which smart contract code you want to instantiate.
 
 | CODE_ID | Smart contract                                                                          | Description                         |
 | ------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
@@ -323,7 +323,7 @@ okp4d tx wasm instantiate 4 \
 ```
 
 :::caution
-Replace `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` with the OKP4 wallet you control!
+Replace `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` with the Axone wallet you control!
 :::
 
 You get a new `txhash`; let's get the created smart contract address:
@@ -343,7 +343,7 @@ Once a smart contract is instantiated, it can be executed or triggered to perfor
 Let's add a text object to the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`). The [msg.rs](https://github.com/okp4/contracts/blob/main/contracts/okp4-objectarium/src/msg.rs) source file indicates we can use the `store_object` method with `data` and `pin` arguments.
 
 ```bash
-echo "Hello OKP4 Builders" > text-ex.txt && \
+echo "Hello Axone Builders" > text-ex.txt && \
 okp4d tx wasm execute okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85 \
 --from mywallet \
 --gas 1000000 \
@@ -352,7 +352,7 @@ okp4d tx wasm execute okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8
 ```
 
 :::caution
-Replace `mywallet` with the name of the OKP4 wallet you control!
+Replace `mywallet` with the name of the Axone wallet you control!
 :::
 
 You get a new `txhash`; let's get the created object `id`:
@@ -379,12 +379,12 @@ okp4d query wasm contract-state smart okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdd
 "{\"object_data\": {\"id\":\"71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213\"}}" \
 | jq '.data' | tr -d '"' | base64 -d
 
-# Hello OKP4 Builders
+# Hello Axone Builders
 ```
 
 #### Analyze smart contracts activities
 
-- Wondering how many `law-stone` are instantiated, and for each instance what are its contract address, the OKP4 address of the creator, and the rules program?
+- Wondering how many `law-stone` are instantiated, and for each instance what are its contract address, the Axone address of the creator, and the rules program?
 
 ```bash
 okp4d query txs \
@@ -406,10 +406,10 @@ okp4d query txs \
 
 ## Recap'
 
-- The CLI allows you to communicate with the OKP4 blockchain
+- The CLI allows you to communicate with the Axone blockchain
 - To get started, you should install the `okp4d` CLI and create (or import) a wallet
 - Both native and smart contracts transactions are supported
 
-We've just scratched the surface of what's possible with the OKP4 CLI! For a more detailed look at available commands, please check our full documentation at [OKP4 Documentation](https://docs.okp4.network/commands/okp4d).
+We've just scratched the surface of what's possible with the Axone CLI! For a more detailed look at available commands, please check our full documentation at [Axone Documentation](https://docs.okp4.network/commands/okp4d).
 
-Remember, the blockchain space moves quickly, and OKP4 is no exception. Stay in touch with our updates and feel free to join our active developer community. We're thrilled to have you onboard!
+Remember, the blockchain space moves quickly, and Axone is no exception. Stay in touch with our updates and feel free to join our active developer community. We're thrilled to have you on board!

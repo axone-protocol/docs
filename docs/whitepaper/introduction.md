@@ -57,7 +57,7 @@ This context also fosters centralization which poses significant challenges, esp
 - Provider dependence
 - Sovereignty
 
-In essence, these issues result in a digital environment where resource sharing is not standard practice despite its undeniable benefits. Overcoming these hurdles is a crucial task, and one that OKP4 is committed to achieving. It aims to break down these barriers, fostering a more open, equitable, and knowledge-rich digital landscape.
+In essence, these issues result in a digital environment where resource sharing is not standard practice despite its undeniable benefits. Overcoming these hurdles is a crucial task, and one that Axone is committed to achieving. It aims to break down these barriers, fostering a more open, equitable, and knowledge-rich digital landscape.
 
 ## Challenge to open the knowledge silos
 
@@ -109,6 +109,6 @@ Interoperability is essential to facilitate data and knowledge exchange, promote
 - **No tech lock-in:** Interoperability helps avoid tech lock-in, ensuring the solution can communicate and interact with various technologies, crucial for smooth digital resource sharing.
 - **Interconnection between independent systems:** The ability to connect and integrate independent systems is essential for optimizing digital resource sharing and fully leveraging technological advancements.
 
-This is where the protocol comes in. OKP4 aspire to interconnect a multitude of datasets and digital services to generate knowledge, all the while respecting the rules of consent and retribution chosen by the providers. In doing so, we believe that we can democratize access to knowledge, decentralize informational power, and build a governance infrastructure for digital resources that is truly fair and sustainable.
+This is where the protocol comes in. Axone aspire to interconnect a multitude of datasets and digital services to generate knowledge, all the while respecting the rules of consent and retribution chosen by the providers. In doing so, we believe that we can democratize access to knowledge, decentralize informational power, and build a governance infrastructure for digital resources that is truly fair and sustainable.
 
 ![intro-6-okp4](/img/content/whitepaper/intro-6-okp4.webp)

@@ -6,15 +6,15 @@ sidebar_position: 5
 
 ![Tutorials overview](/img/content/tutorials/prolog.webp)
 
-Welcome OKP4 builders to an exciting journey at the crossroads of Prolog and blockchain!
+Welcome, Axone builders, to an exciting journey at the crossroads of Prolog and blockchain!
 
-This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether you're interested in developing using the protocol or are intrigued by one of the core OKP4 concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
+This tutorial delves into the fascinating realm of logic programming and its profound impact on the "law" governing off-chain resources usages. Whether you're interested in developing using the protocol or are intrigued by one of the core Axone concepts, this tutorial will equip you with the knowledge of programming rules with Prolog and how to use it to set up and enforce rules without trusting a central authority.
 
-## Why use Prolog on the OKP4 blockchain?
+## Why use Prolog on the Axone blockchain?
 
-### What is the OKP4 protocol?
+### What is the Axone protocol?
 
-OKP4 is a governance infrastructure for off-chain digital resources. OKP4 is a Cosmos-based blockchain that allows anyone to define on-chain rules, intending to share any resource and create a new generation of applications on top of them without exposing the data and without the need to trust a party.
+Axone is a governance infrastructure for off-chain digital resources. Axone is a Cosmos-based blockchain that allows anyone to define on-chain rules, intending to share any resource and create a new generation of applications on top of them without exposing the data and without the need to trust a party.
 
 The rules define access conditions and the revenue-sharing model, for example. But how can we define programmatically these terms? Here comes Prolog.
 
@@ -24,11 +24,11 @@ The rules define access conditions and the revenue-sharing model, for example. B
 
 The declarative nature of Prolog makes it an excellent choice for establishing governance rules in decentralized systems where rules can be explicitly stated and enforced. Unlike procedural languages, where the control flow is explicitly coded, Prolog uses a declarative approach where you declare the facts and rules.
 
-### How the OKP4 protocol leverages Prolog language?
+### How does the Axone protocol leverage Prolog language?
 
-The OKP4 blockchain has a Prolog interpreter built-in, the "logic module", which enables the definition of complex business logic and agreement conditions using a concise and human-readable syntax.
+The Axone blockchain has a Prolog interpreter built-in, the "logic module", which enables the definition of complex business logic and agreement conditions using a concise and human-readable syntax.
 
-Decentralized programs (smart contracts executions) operated by the OKP4 blockchain nodes are thus able to load and query Prolog code.
+Decentralized programs (smart contracts executions) operated by the Axone blockchain nodes are thus able to load and query Prolog code.
 
 Using Prolog improves the readability and understandability of smart contracts, making them easier to audit, verify, and maintain.
 
@@ -83,7 +83,7 @@ Here are some examples of predicates:
 The SWI Prolog website gives you all its [built-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin).
 
 :::caution
-The OKP4 blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.  
+The Axone blockchain uses [ichiban/prolog](https://github.com/ichiban/prolog/), a different Prolog interpreter. Natively available predicates differ.  
 :::
 
 ### Installing Prolog
@@ -216,13 +216,13 @@ The Prolog interpreter will evaluate the rules and facts and respond with `true`
 
 This example demonstrates how a Prolog code can define and enforce conditions for accessing shared private datasets between companies. By leveraging Prolog's logical inference capabilities, you can create flexible and scalable rules that control data access and permissions across multiple organizations in a secure and controlled manner.
 
-## Storing and querying a Prolog program with the OKP4 blockchain
+## Storing and querying a Prolog program with the Axone blockchain
 
 :::info
 
 To continue, you should:
 
-1. [Install the OKP4 daemon CLI and `jq`](https://docs.okp4.network/tutorials/cli-1)
+1. [Install the Axone daemon CLI and `jq`](https://docs.okp4.network/tutorials/cli-1)
 2. Create a wallet or import one from your seed:
 
 ```bash
@@ -281,9 +281,9 @@ The query above asks for a valid substitution of X for the `can_vote(X)` rule. `
 
 ### How to store rules (a Prolog program) on-chain with the `okp4d` CLI
 
-The [`law-stone`](https://github.com/okp4/contracts/tree/main/contracts/okp4-law-stone) smart contract aims to provide GaaS (i.e. Governance as a Service) in any [Cosmos blockchains](https://cosmos.network/) using the [CosmWasm](https://cosmwasm.com/) framework and the logic OKP4 module.
+The [`law-stone`](https://github.com/okp4/contracts/tree/main/contracts/okp4-law-stone) smart contract aims to provide GaaS (i.e. Governance as a Service) in any [Cosmos blockchains](https://cosmos.network/) using the [CosmWasm](https://cosmwasm.com/) framework and the logic Axone module.
 
-To store a Prolog program and be able to query it later within the OKP4 blockchain, you have to instantiate a new `law-stone`.
+To store a Prolog program and be able to query it later within the Axone blockchain, you have to instantiate a new `law-stone`.
 
 #### `law-stone` instantiate considerations
 
@@ -311,7 +311,7 @@ You can replace `--no-admin` with `--admin YOUR_OKP4_ADDR` if you want to be abl
 
 #### `law-stone` instantiate transaction results
 
-The following command gets you the contract address of the last `law-stone` (**`CODE_ID = 5`**) instantiated by the okp4 address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**
+The following command gets you the contract address of the last `law-stone` (**`CODE_ID = 5`**) instantiated by the Axone address **`okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`**
 
 ```bash
 okp4d query txs \
@@ -364,8 +364,10 @@ can_vote(X) :- member(X, council).
 
 Let's combine it all! Here is how to get back the Prolog code stored through the last `law-stone` (`CODE_ID = 5`) instantiation
 
-- instantiated by the okp4 address `okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`
+- instantiated by the OKP4 address `okp41z4ldttn975ku764er2nvtfq47n6n7jfxnkc2k9`
 - within the storage-oriented `objectarium` smart contract address = `okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx`)
+
+This command retrieves the stored Prolog program by querying the last instantiated `law-stone` contract, extracting the program ID, and decoding the base64-encoded Prolog code.
 
 ```bash
 okp4d query wasm contract-state smart okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx \
@@ -415,7 +417,7 @@ height: "2637781"
 '
 ```
 
-## Built-in Prolog predicates within the OKP4 blockchain
+## Built-in Prolog predicates within the Axone blockchain
 
 The logic module interpreter can handle [ichiban/prolog built-in predicates](https://github.com/ichiban/prolog/wiki#predicates) and custom predicates.
 However, their availability depends on the interpreter's configuration. For example, the built-in predicate `halt/1` is not registered in the interpreter, as its use is harmful, as it stops the node executing it.
@@ -646,11 +648,11 @@ okp4d query logic ask \
 '
 ```
 
-### Useful Prolog predicates in the OKP4 blockchain context
+### Useful Prolog predicates in the Axone blockchain context
 
 #### `bech32_address/2`
 
-Want to know the [Stargaze](https://www.stargaze.zone/) (**stars**) address from an OKP4 one? Here is an example to get it from **`okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u`:**
+Want to know the [Stargaze](https://www.stargaze.zone/) (**stars**) address from an Axone one? Here is an example to get it from **`okp416rry8kjuzpxezhf4g4lvjk67mkjc95lterek2u`:**
 
 ```bash
 okp4d query logic ask \
@@ -866,11 +868,11 @@ okp4d query logic ask \
 
 ## Recap'
 
-- OKP4 protocol orchestrates off-chain resources with on-chain governance rules.
-- These rules are written in Prolog, and the OKP4 blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the OKP4 blockchain can evaluate Prolog queries.
+- Axone protocol orchestrates off-chain resources with on-chain governance rules.
+- These rules are written in Prolog, and the Axone blockchain can interpret Prolog code via a `logic` module. Thus any smart contract instantiated on the Axone blockchain can evaluate Prolog queries.
 - Custom implementations make blockchain states and crypto utilities usable with any Prolog program queried on-chain.
 - One has to store its Prolog program with a `law-stone` smart contract instantiation. The instantiated smart contract can be queried for a Prolog evaluation.
 
-Utilizing Prolog to enforce governance rules via the OKP4 blockchain paves the way for transparent and trustless sharing interactions and promotes interoperability without limits.
+Utilizing Prolog to enforce governance rules via the Axone blockchain paves the way for transparent and trustless sharing interactions and promotes interoperability without limits.
 
-With this tutorial, you gain proficiency in Prolog and gain deeper insights into how you can implement advanced governance rules via the OKP4 protocol. A whole new field of possibilities opens up and everything remains to be created! Seize the opportunity to apply your newfound knowledge to real-world challenges 🚀
+With this tutorial, you gain proficiency in Prolog and gain deeper insights into how you can implement advanced governance rules via the Axone protocol. A whole new field of possibilities opens up and everything remains to be created! Seize the opportunity to apply your newfound knowledge to real-world challenges 🚀

@@ -1,6 +1,6 @@
-# OKP4 documentation
+# Axone documentation
 
-> OKP4 documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
+> Axone documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 [![lint](https://img.shields.io/github/actions/workflow/status/okp4/docs/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/actions/workflow/status/okp4/docs/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/okp4/docs/actions/workflows/build.yml)
@@ -33,7 +33,7 @@ yarn start
 
 This command starts a local development server and opens up a browser window (<http://localhost:3000/>). Most changes are reflected live without having to restart the server.
 
-Note that the search wont work in development. To use the search feature, first run `yarn build` then `yarn run serve`.
+Note that the search won't work in development. To use the search feature, first run `yarn build` then `yarn run serve`.
 
 ### Build
 

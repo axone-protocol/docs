@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 import Quiz from 'react-quiz-component';
-import * as quiz from './decentralised-identity-quiz.json';
+import * as quiz from './decentralized-identity-quiz.json';
 
 # Decentralized identity
 
@@ -19,7 +19,7 @@ The importance of decentralized identity lies in its ability to give individuals
 
 :::info
 
-OKP4 integrates [W3C standards](https://www.w3.org/) for decentralized identity, guaranteeing compatibility and interoperability across a wide range of specifications.
+Axone integrates [W3C standards](https://www.w3.org/) for decentralized identity, guaranteeing compatibility and interoperability across a wide range of specifications.
 
 **For more information on [W3C standards](https://www.w3.org/), refer to**
 [Decentralized Identifiers doc](https://www.w3.org/TR/did-core/) and [Verifiable Credentials doc](https://www.w3.org/TR/vc-data-model-2.0/)
@@ -42,9 +42,9 @@ A Holder can be a person, organization, product, or object possessing a set of a
 
 A Verifier is an entity empowered to authenticate the legitimacy and veracity of a Verifiable Credential through a Verifiable Presentation submitted to it. The verifier can confirm that the information presented originates from the correct and authorized Issuer and that the Verifiable Credential has not been altered in any way. Generally, the verifier can also check that the Verifiable Credential has not expired or been revoked.
 
-<center>
-  <img src="/img/content/academy/decentralised-identity-1.webp" alt="Decentralised Identity tryptic" style={{ maxHeight: "340px" }}></img>
-</center>
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/decentralized-identity-1.webp" alt="Decentralized Identity tryptic" style={{ maxHeight: "340px" }}></img>
+</div>
 
 **Zero-knowledge proof** (ZKP) technology can be used to share proof of identity or authorization without revealing the complete identity of the holder. 
 
@@ -85,7 +85,7 @@ This scenario illustrates how decentralized identity systems facilitate the secu
 
 A **DID**, or **Decentralized Identifier**, is a unique identifier that enables sovereign, verifiable digital identification. Unlike traditional identifiers, such as those provided by online services like user accounts or social security numbers, DIDs are entirely controlled by the individual, organization, or entity they refer to. 
 
-A DID applies to anything that has an identity. An entity is something with a distinct and independent existence. It can be a person but also an organization, an animal, an object, and, in the case of the OKP4 protocol, a dataset or a digital service. 
+A DID applies to anything that has an identity. An entity is something with a distinct and independent existence. It can be a person but also an organization, an animal, an object, and, in the case of the Axone protocol, a dataset or a digital service. 
 
 An infinite number of DIDs can be attached to the same identity, which offers several advantages: 
 
@@ -98,9 +98,9 @@ DIDs are managed by decentralized networks, notably blockchains. This means that
 
 The DID is a [W3C](https://www.w3.org/TR/did-core/) standard designed to be interoperable across different systems and networks, facilitating their use in diverse digital contexts.
 
-<center>
-  <img src="/img/content/academy/decentralised-identity-2.webp" alt="DID" style={{ maxHeight: "300px" }}></img>
-</center>
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/decentralized-identity-2.webp" alt="DID" style={{ maxHeight: "300px" }}></img>
+</div>
 
 ### Example: An Autonomous Vehicle as a DID Holder
 
@@ -196,23 +196,23 @@ The limitations of the did:key method are:
 - No Dynamic Updates: Since did:key DIDs are static and don't reference an external source for their DID document, they cannot be updated. Any change in the key or other details requires the generation of a new DID.
 - No Privacy Layer: The method exposes the public key openly, which might not be desirable in all scenarios, especially where privacy is a concern.
 
-# Decentralized identity in OKP4 Protocol
+# Decentralized identity in Axone Protocol
 
-The **[OKP4 ontology](/academy/part-1/resources#ontology-how-its-represented-semantic-description)** is used to describe the dataverse. In the dataverse, resources are identified by their DID. 
+The **[Axone ontology](/academy/part-1/resources#ontology-how-its-represented-semantic-description)** is used to describe the dataverse. In the dataverse, resources are identified by their DID. 
 
-Understanding and distinguishing key roles is essential when claiming a resource in the OKP4 dataverse. Although these roles are distinct, they can be exercised by the same or different entities. Here's a detailed explanation of each role:
-- **Registrant**: This entity initiates the process of declaring the resource on the blockchain. It is also responsible for the financial aspects of the process, including transaction fees. It is important to note that the Declarer can be any entity that is able and willing to declare the resource in the OKP4 protocol.
+Understanding and distinguishing key roles is essential when claiming a resource in the Axone dataverse. Although these roles are distinct, they can be exercised by the same or different entities. Here's a detailed explanation of each role:
+- **Registrant**: This entity initiates the process of declaring the resource on the blockchain. It is also responsible for the financial aspects of the process, including transaction fees. It is important to note that the Declarer can be any entity that is able and willing to declare the resource in the Axone protocol.
 - **Holder**: This role is assigned to the DID of the resource itself. The holder embodies the digital identity of the resource in the dataverse, thus constituting a central point for any interaction or transaction concerning this resource.
 - **Issuer**: The issuer, whose DID is linked to creating the Verifiable Credential, plays a decisive role. It ensures the authenticity and legitimacy of the resource's claim, guaranteeing its official recognition in the protocol.
 
-<center>
-  <img src="/img/content/academy/decentralised-identity-3.webp" alt="Decentralised Identity and OKP4" style={{ maxHeight: "340px" }}></img>
-</center>
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/decentralized-identity-3.webp" alt="Decentralized Identity and Axone" style={{ maxHeight: "340px" }}></img>
+</div>
 
 In the case of the declaration of a digital resource in the Dataverse, the Provider has three roles at the same time:
 - Issuer as he declares the metadata of its resource
 - Holder as he is the owner of the resource
-- Registrant as he declares the verifiable presentations in the OKP4 Protocol so that it can be used
+- Registrant as he declares the verifiable presentations in the Axone Protocol so that it can be used
 
 In the case of a declaration of reputation, the roles are handled by distinct entities:
 - The Issuer is a trusted authority

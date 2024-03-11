@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # The sources
 
-The Sources of Governance refer to the various origins or means by which rules are created. Sources of governance are categorized into four main types as recognized by the OKP4 protocol:
+The Sources of Governance refer to the various origins or means by which rules are created. Sources of governance are categorized into four main types as recognized by the Axone protocol:
 
 ## Protocol Governance
 
-Protocol Governance sets the fundamental rules and regulations governing the OKP4 blockchain. It is the foundation upon which all other levels are built and provides the core principles and guidelines that dictate how the protocol operates.
+Protocol Governance sets the fundamental rules and regulations governing the Axone blockchain. It is the foundation upon which all other levels are built and provides the core principles and guidelines that dictate how the protocol operates.
 
 ## Zone rules
 

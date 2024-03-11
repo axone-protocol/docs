@@ -8,9 +8,9 @@ sidebar_position: 2
 
 In computer science, ontology is a formal and structured representation of the concepts, relationships, and properties of a particular domain. An ontology generally comprises the following basic elements: concepts, relationships, properties, axioms, and instances. These can be graphically represented by the simplified equation shown below.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/technical-documentation/ontology_equation.webp" alt="Ontology equation" style={{ maxHeight: "220px" }}></img>
-</center>
+</div>
 
 Some definitions:
 
@@ -40,7 +40,7 @@ flowchart TD
 
 ### Water resources
 
-source: OKP4 from SAREF extension for water
+source: Axone from SAREF extension for water
 
 ```mermaid
 classDiagram
@@ -110,14 +110,14 @@ The construction of this ontology follows a number of steps which are described 
 - **Ontology implementation (5)**: Encoding the ontology according to the OWL grammar.
 - **Ontology evaluation (6)**: Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
 
-<center>
+<div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/technical-documentation/ontology-construction-process.webp" alt="Ontology construction process" style={{ maxHeight: "650px" }}></img>
-</center>
+</div>
 
 ## Underlying Assumptions
 
 - Modeling a domain is not a one-size-fits-all process. There's a balance to be struck between the ontology's meaning, its expressivity, its potential for expansion, and its actual application.
-- The development of the OKP4 ontology is dynamic. It evolves progressively through an iterative process (detailed in the subsequent section). Some decisions taken now may be revisited in the future.
+- The development of the Axone ontology is dynamic. It evolves progressively through an iterative process (detailed in the subsequent section). Some decisions taken now may be revisited in the future.
 - It's crucial to recognize the distinction between OWL modeling and [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language) modeling. The latter, often rooted in Object-Oriented interpretations, varies from OWL's approach. For deeper insights, the following resources are recommended:
   - [Comparing UML and OWL in Depth](https://madoc.bib.uni-mannheim.de/1898/1/TR2008_004.pdf)
   - [Dispelling a Common Myth about OWL Properties](https://henrietteharmse.com/2018/06/22/a-common-misconception-regarding-owl-properties/)
