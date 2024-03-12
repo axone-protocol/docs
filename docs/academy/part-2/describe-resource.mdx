@@ -241,15 +241,36 @@ By signing the credential, any alteration to the credential's data after it has 
 
 To sign your VC, use this command: 
 
-:::info
-The command is coming soon 🔧
-:::
+```bash
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld --keyring-backend test --from $MY_ADDR
+```
 
-You can see that there is a new field in the jsonld with the cryptographic proof. 
+With:
+
+- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
+- `MY_ADDR` : issuer okp4 address    
+
+Example: 
+
+```bash
+okp4d credential sign ./ontology/target/ontology/v3/example/dataset/crime-dataset-description.jsonld --keyring-backend test --from issuer-okp4
+```
+
+You can see that there is new fields in the jsonld with the cryptographic proof. 
+
+```bash
+{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/"],"credentialSubject":{"hasDescription":"This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database.","hasFormat":"https://w3id.org/okp4/ontology/v3/thesaurus/media-type/text_csv","hasGeoCoverage":"https://w3id.org/okp4/ontology/v3/thesaurus/area-code/840","hasTag":["Crime","Police","Los Angeles"],"hasTemporalCoverage":"2020-01-01T00:00:00.0000+01:00/2024-02-02T00:00:00.00000+01:00","hasTitle":"Crime Data from 2020 to Present","hasTopic":"https://w3id.org/okp4/ontology/v3/thesaurus/topic/security","id":"did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5"},"id":"https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e","issuanceDate":"2024-02-02T09:45:43.475304+01:00","issuer":{"id":"did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3","name":"OKP4"},"proof":{"created":"2024-03-08T15:55:37.793844+01:00","proofPurpose":"assertionMethod","proofValue":"YJhJYdwag-TfsAcxOPkrVR_d2IHLDXkItm55YwWoaKEDumqaiSImk0GKgLVVC03U5EReHed7hwiPceoR7HlYLQ","type":"Ed25519Signature2018","verificationMethod":"did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3"},"type":["VerifiableCredential","DatasetDescriptionCredential"]}
+```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads.
+The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld content in N-Quads. Copy the result of the signature command and paste it in this tool: https://transform.tools/jsonld-to-nquads.
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/n-quads.webp" alt="Conversion from jsonld to n-quads" style={{ maxHeight: "340px" }}></img>
+</div>
+
+Save this content in a temporary file with '.nq' extension. 
 
 ## Step 4: Register the credentials in the blockchain
 
@@ -268,6 +289,11 @@ With:
 - `CONTRACT_ADDR` : dataverse contract address (always the same)  
 - `MY_ADDR` : registrant okp4 address  
 - `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+
+Example: 
+```bash
+# okp4d tx wasm execute $CONTRACT_ADDR \ --from okp4-issuer \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat VC-signed-crime-dataset.nq | base64)\"}}"
+```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
 
