@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
@@ -49,7 +49,7 @@ Indicates the status of the service execution.
 
 ## Classes
 
-This schema defines 1 classe.
+This schema defines 1 class.
 
 ### Digital service execution result
 >

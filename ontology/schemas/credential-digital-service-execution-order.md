@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
@@ -49,7 +49,7 @@ This property is fundamental in associating the formal execution request with th
 
 ## Classes
 
-This schema defines 1 classe.
+This schema defines 1 class.
 
 ### Digital service execution order
 >
