@@ -100,10 +100,11 @@ jobs:
           title: 📜 Add ${{ github.event.inputs.version }} ${{ github.event.inputs.section }} documentation version
           body: |
             #### 📜 Documentation update
-            
+
             🎉 A new version of [${{ github.event.inputs.repository }}](https://github.com/${{ github.event.inputs.repository }}/releases/tag/${{ github.event.inputs.version }}) is available.
-            
-            This PR add this new `${{ github.event.inputs.version }}`` version into the documentation.
+
+            This PR add this new `${{ github.event.inputs.version }}` version into the documentation.
+          labels: documentation
           assignees: ccamel,amimart
           reviewers: ccamel,amimart
           add-paths: |
