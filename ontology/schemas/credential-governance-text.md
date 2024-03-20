@@ -47,7 +47,7 @@ The Governance Text that governs a Resource in the Dataverse.
 
 ## Classes
 
-This schema defines 6 classes.
+This schema defines 5 classes.
 
 ### Article
 >
@@ -203,53 +203,7 @@ The title of a Governance Text.
 
 #### Description
 
-A section of a governance text, which groups related subsections together.
-
-#### Properties
-
-##### Has content
->
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
->
-> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
-
-The content of a Governance Text.
-
-##### Has ordinal number
->
-> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber)
->
-> **Range**:&nbsp;[xsd:integer](http://www.w3.org/2001/XMLSchema#integer)
-
-This property associates a governance component with its sequential number.
-
-It assigns an ordinal number as a value, starting from 1, ensuring sequential continuity within a specific domain instance.
-
-The format for this numbering may vary based on the domain, for instance, employing Roman numerals for section numbering.
-
-##### Has subsection
->
-> **IRI**: [credential-governance-text:hasSubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSubSection)
->
-> **Range**:&nbsp;[credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/SubSection)
-
-The subsection of a Governance Text.
-
-##### Has title
->
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
->
-> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
-
-The title of a Governance Text.
-
-### Subsection
->
-> **IRI**: [credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/SubSection)
-
-#### Description
-
-A subsection of a governance text, which groups related articles together within a section.
+A section of a governance text, which groups related articles together.
 
 #### Properties
 
