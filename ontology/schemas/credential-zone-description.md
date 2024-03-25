@@ -69,6 +69,8 @@ The primary objective of these credentials is to provide a broad overview of the
 >
 > **IRI**: [credential-zone-description:hasDescription](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasDescription)
 >
+> **Domain**:&nbsp;[credential-zone-description:ZoneDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 A description of the Zone.
@@ -76,6 +78,8 @@ A description of the Zone.
 #### Has image
 >
 > **IRI**: [credential-zone-description:hasImage](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasImage)
+>
+> **Domain**:&nbsp;[credential-zone-description:ZoneDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -85,6 +89,8 @@ The image associated with the Zone.
 >
 > **IRI**: [credential-zone-description:hasTag](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag)
 >
+> **Domain**:&nbsp;[credential-zone-description:ZoneDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 A (free) keyword or term assigned to the Zone.
@@ -93,6 +99,8 @@ A (free) keyword or term assigned to the Zone.
 >
 > **IRI**: [credential-zone-description:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTitle)
 >
+> **Domain**:&nbsp;[credential-zone-description:ZoneDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 The title of the Zone.
@@ -100,6 +108,8 @@ The title of the Zone.
 #### Has topic
 >
 > **IRI**: [credential-zone-description:hasTopic](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTopic)
+>
+> **Domain**:&nbsp;[credential-zone-description:ZoneDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential)
 >
 > **Range**:&nbsp;[thesaurus:topic](https://w3id.org/okp4/ontology/v3/thesaurus/topic)
 

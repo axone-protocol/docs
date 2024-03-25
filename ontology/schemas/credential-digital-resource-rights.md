@@ -36,6 +36,8 @@ These details are critical for understanding the Digital Resource's provenance, 
 >
 > **IRI**: [credential-digital-resource-rights:hasAuthor](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/hasAuthor)
 >
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+>
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
 The author(s) of the Digital Resource.
@@ -43,6 +45,8 @@ The author(s) of the Digital Resource.
 #### Has creator
 >
 > **IRI**: [credential-digital-resource-rights:hasCreator](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/hasCreator)
+>
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
@@ -52,6 +56,8 @@ The creator or entity responsible for compiling or generating the Digital Resour
 >
 > **IRI**: [credential-digital-resource-rights:hasLicense](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/hasLicense)
 >
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+>
 > **Range**:&nbsp;[ns1:license](https://w3id.org/okp4/ontology/v3/thesaurus/license)
 
 The licensing terms under which the Digital Resource is made available.
@@ -59,6 +65,8 @@ The licensing terms under which the Digital Resource is made available.
 #### Has publisher
 >
 > **IRI**: [credential-digital-resource-rights:hasPublisher](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/hasPublisher)
+>
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 

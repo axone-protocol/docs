@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 6
 ---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
@@ -40,6 +40,8 @@ The Governance Text Credential applies to all resources in the Dataverse for whi
 #### Is governed by
 >
 > **IRI**: [credential-governance-text:isGovernedBy](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy)
+>
+> **Domain**:&nbsp;[credential-governance-text:GovernanceTextCredential](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential)
 >
 > **Range**:&nbsp;[credential-governance-text:GovernanceText](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText)
 

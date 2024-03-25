@@ -35,6 +35,8 @@ Digital Resource Publication Credentials confirm the publication and availabilit
 >
 > **IRI**: [credential-digital-resource-publication:hasIdentifier](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/hasIdentifier)
 >
+> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
+>
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
 The URI that identifies the digital asset within the scope of a digital service that provides access to it.
@@ -42,6 +44,8 @@ The URI that identifies the digital asset within the scope of a digital service 
 #### Served by
 >
 > **IRI**: [credential-digital-resource-publication:servedBy](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/servedBy)
+>
+> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 

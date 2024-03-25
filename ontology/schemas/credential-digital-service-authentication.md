@@ -37,6 +37,8 @@ In these credentials, both the subject and the issuer are the Digital Service to
 >
 > **IRI**: [credential-digital-service-authentication:forOrder](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/authentication/forOrder)
 >
+> **Domain**:&nbsp;[credential-digital-service-authentication:DigitalServiceAuthenticationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/authentication/DigitalServiceAuthenticationCredential)
+>
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
 The Digital Service Execution Order served by this authentication.
@@ -44,6 +46,8 @@ The Digital Service Execution Order served by this authentication.
 #### To service
 >
 > **IRI**: [credential-digital-service-authentication:toService](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/authentication/toService)
+>
+> **Domain**:&nbsp;[credential-digital-service-authentication:DigitalServiceAuthenticationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/authentication/DigitalServiceAuthenticationCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 

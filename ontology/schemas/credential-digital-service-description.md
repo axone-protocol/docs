@@ -71,6 +71,8 @@ Their primary function is to simplify the process for users to grasp the service
 >
 > **IRI**: [credential-digital-service-description:hasCategory](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasCategory)
 >
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+>
 > **Range**:&nbsp;[thesaurus:service-category](https://w3id.org/okp4/ontology/v3/thesaurus/service-category)
 
 A category of the Digital Service.
@@ -78,6 +80,8 @@ A category of the Digital Service.
 #### Has description
 >
 > **IRI**: [credential-digital-service-description:hasDescription](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasDescription)
+>
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -87,6 +91,8 @@ A description of the Digital Service.
 >
 > **IRI**: [credential-digital-service-description:hasImage](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasImage)
 >
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
 The image associated with the Digital Service.
@@ -94,6 +100,8 @@ The image associated with the Digital Service.
 #### Has publisher
 >
 > **IRI**: [credential-digital-service-description:hasPublisher](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasPublisher)
+>
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
@@ -103,6 +111,8 @@ An entity primarily responsible for making the Digital Service available.
 >
 > **IRI**: [credential-digital-service-description:hasTag](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTag)
 >
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 A (free) keyword or term assigned to the Digital Service.
@@ -111,6 +121,8 @@ A (free) keyword or term assigned to the Digital Service.
 >
 > **IRI**: [credential-digital-service-description:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTitle)
 >
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+>
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 The title of the Digital Service.
@@ -118,6 +130,8 @@ The title of the Digital Service.
 #### Has webpage
 >
 > **IRI**: [credential-digital-service-description:hasWebpage](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasWebpage)
+>
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
