@@ -45,16 +45,6 @@ This credential is fundamental in providing a formal record of the execution of 
 
 The execution of the Orchestration Service.
 
-#### Has execution status
->
-> **IRI**: [credential-orchestration-service-execution:hasExecutionStatus](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionStatus)
->
-> **Domain**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
->
-> **Range**:&nbsp;[ns1:digital-service-execution-status](https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status)
-
-Indicates the status of the service execution.
-
 ## Classes
 
 This schema defines 1 class.
@@ -68,6 +58,14 @@ This schema defines 1 class.
 Captures the details of the progress and outcomes of the execution of an Orchestration Service.
 
 #### Properties
+
+##### Execution of
+>
+> **IRI**: [credential-orchestration-service-execution:executionOf](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/executionOf)
+>
+> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionOrder)
+
+This relationship is pivotal for associating the formal execution request with the corresponding credential, providing the necessary authorization and detailed directives for service execution. This ensures a verifiable and formalized process for initiating and tracking the execution of orchestration services.
 
 ##### Has consumed resource
 >
@@ -88,6 +86,14 @@ Multiple instances of `hasConsumedResource` can represent various resources cons
 Links the Orchestration Service Execution to a resource that provides evidence of the execution, such as logs, transaction records, or other forms of auditable data. This evidence supports the verification of the execution's integrity, completeness, and compliance with the specified execution parameters and governance rules of all the involved resources within the Zone.
 
 The evidence resource can be a URI pointing to a secure, immutable and verifiable location where the evidence is stored, like IPFS, a blockchain, or an immutable database.
+
+##### Has execution status
+>
+> **IRI**: [credential-orchestration-service-execution:hasExecutionStatus](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionStatus)
+>
+> **Range**:&nbsp;[ns1:digital-service-execution-status](https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status)
+
+Indicates the status of the service execution.
 
 ##### Has execution time
 >
