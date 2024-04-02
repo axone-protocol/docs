@@ -117,7 +117,7 @@ Here the terminal returns `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` as the A
 
 A wallet balance refers to the amount of cryptocurrency or digital assets held in a specific wallet address. It represents the total value of funds that are available for spending or transferring from that particular wallet.
 
-The following command indicates that `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` Axone wallet holds 1 AXON (1 AXON = 1,000,000 uAXON).
+The following command indicates that `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` Axone wallet holds 1 $AXONE (1 $AXONE = 1,000,000 uAXON).
 
 ```bash
 okp4d query bank balances okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
@@ -150,11 +150,11 @@ okp4d query bank total \
 
 ### Send some $AXONE to another wallet
 
-Here is the command to send 0.5 AXON (`500000 uAXON`) from the wallet `mywallet` you control to the wallet with the Axone address `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg`:
+Here is the command to send 0.5 $AXONE (`500000 $uAXONE`) from the wallet `mywallet` you control to the wallet with the Axone address `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg`:
 
 ```bash
 okp4d tx bank send mywallet okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg \
-500000uAXON \
+500000 $uAXONE \
 --chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc
 ```
 
