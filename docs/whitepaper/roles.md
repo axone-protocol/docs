@@ -36,7 +36,7 @@ More information about [Tendermint BFT mechanism](https://tendermint.com/core/)
 
 ***Purpose***
 
-Delegators primarily delegate their $AXON tokens and voting power to Validators to accumulate rewards.
+Delegators primarily delegate their $AXONE tokens and voting power to Validators to accumulate rewards.
 
 ***Responsibilities***
 
@@ -48,7 +48,7 @@ Delegators engage with the protocol by delegating their tokens to Validators. Ho
 
 ***Entity***
 
-Delegators are typically individuals or entities staking $AXON tokens.
+Delegators are typically individuals or entities staking $AXONE tokens.
 
 ### DAO Participants
 
@@ -58,15 +58,15 @@ The principal role of DAO Participants is to participate in the on-chain governa
 
 ***Responsibilities***
 
-DAO Participants are responsible for issuing improvement proposals, voting on these proposals, and staking $AXON tokens to participate in governance. As protocol holders, they also have a direct stake in its direction and success.
+DAO Participants are responsible for issuing improvement proposals, voting on these proposals, and staking $AXONE tokens to participate in governance. As protocol holders, they also have a direct stake in its direction and success.
 
 ***Interaction***
 
-DAO Participants interact with the protocol by making and voting on proposals, facilitated by staking $AXON. Each $AXON token provides a voting right.
+DAO Participants interact with the protocol by making and voting on proposals, facilitated by staking $AXON. Each $AXONE token provides a voting right.
 
 ***Entity***
 
-DAO Participants can only be delegators or Validators for voting. Nevertheless, note that it is necessary to deposit $AXON to make a proposal and therefore not necessarily need to be a Delegator.
+DAO Participants can only be delegators or Validators for voting. Nevertheless, note that it is necessary to deposit $AXONE to make a proposal and therefore not necessarily need to be a Delegator.
 
 ## Dataverse & Zone Participants
 

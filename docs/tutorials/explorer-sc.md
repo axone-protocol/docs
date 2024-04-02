@@ -31,11 +31,11 @@ A transaction on the blockchain is a record of some blockchain state change, lik
 The [Axone Explorer](https://explore.okp4.network/OKP4%20Drunemeton%20testnet) allows you to view and analyze these transactions in detail.
 Several transactions are validated in a block. You can check the last validated blocks via the ["Blocks" menu](https://explore.okp4.network/OKP4%20Drunemeton%20testnet/block) . Click on the "Transactions tab" to get the transactions in recent blocks.
 
-Before moving on to transactions with smart contracts, let's begin with a basic operation: a transfer of $AXON tokens.
+Before moving on to transactions with smart contracts, let's begin with a basic operation: a transfer of $AXONE tokens.
 
 :::info
 
-You need to [set up a wallet with Keplr and own some $AXON tokens](https://docs.okp4.network/tutorials/keplr-1).
+You need to [set up a wallet with Keplr and own some $AXONE tokens](https://docs.okp4.network/tutorials/keplr-1).
 
 :::
 
@@ -46,10 +46,10 @@ You need to [set up a wallet with Keplr and own some $AXON tokens](https://docs.
 
 You'll see your Axone wallet address if you click again on the wallet button. Click on it to copy the address.
 
-2. Now,you are ready to send $AXON via the explorer interface :
+2. Now,you are ready to send $AXONE via the explorer interface :
 
 - Click on the "Send" button from the Dashboard.
-- Send a few $AXON tokens to another Axone wallet, `okp41wuxc2mzy0wp27cdcfnde3vz07eurpd7grfmq6n` as the recipient for example.
+- Send a few $AXONE tokens to another Axone wallet, `okp41wuxc2mzy0wp27cdcfnde3vz07eurpd7grfmq6n` as the recipient for example.
 - Click on "Send" and "Approve" to confirm the transfer.
 
 <div style={{ display: "flex", justifyContent: "center" }}><img src="/img/content/tutorials/explorermaj-1.webp"></img></div>
