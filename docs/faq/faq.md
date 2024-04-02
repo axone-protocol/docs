@@ -248,25 +248,25 @@ The Logic module is designed to primarily address logical queries based on facts
 
 ## Token
 
-### What is the utility of the $AXON token?
+### What is the utility of the $AXONE token?
 
-The $AXON is the fee token of the Axone blockchain, it is required to submit transactions to the network of validators.
+The $AXONE is the fee token of the Axone blockchain, it is required to submit transactions to the network of validators.
 
-Similar to other Proof-of-stake chains, the $AXON secures the network through staking.
+Similar to other Proof-of-stake chains, the $AXONE secures the network through staking.
 
-The $AXON is also a governance token. Anyone can do on-chain proposals, and $AXON holders can vote yes, no, abstain or no with veto to these proposals.
+The $AXONE is also a governance token. Anyone can do on-chain proposals, and $AXONE holders can vote yes, no, abstain or no with veto to these proposals.
 
-The $AXON token can also be a governance token for any Zone if implemented that way.
+The $AXONE token can also be a governance token for any Zone if implemented that way.
 
-Beyond that, and more related to use cases, the $AXON is used by default for value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
+Beyond that, and more related to use cases, the $AXONE is used by default for value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
 
-The $AXON token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
+The $AXONE token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
 
 More details about Token Model [here](https://docs.okp4.network/whitepaper/token-model)
 
-### Can price volatility of the $AXON token be a problem?
+### Can price volatility of the $AXONE token be a problem?
 
-The $AXON price volatility can become a problem when it's used for payment. Imagine a dataset or service providers denominates its price in KNOW. If the $AXON values goes +50%, then it goes the same of providers who may see their resources less used because 50% more expensive. An external service can be used to define another unit of account (like the dollar) and have the $AXON value updated every time their resource is consumed.
+The $AXONE price volatility can become a problem when it's used for payment. Imagine a dataset or service providers denominates its price in KNOW. If the $AXONE values goes +50%, then it goes the same of providers who may see their resources less used because 50% more expensive. An external service can be used to define another unit of account (like the dollar) and have the $AXONE value updated every time their resource is consumed.
 
 ### Decentralization seems to add complexity. Does that get offset but the open composability?
 

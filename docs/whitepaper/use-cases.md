@@ -98,12 +98,12 @@ Two companies (Corp A and Corp B) grant access to their databases, while a third
 The Axone solution orchestrates the training process without exposing raw data, ensuring privacy, sovereignty and security. Moreover, the protocol provides revenue-sharing conditions and immutable records of the ML model's training sources.
 
 1. Each on their own, Corp A and Corp B indicate through an administration portal the underlying technology of their respective database. They store access tokens with a Secret Management Service, with authorization for orchestration service.
-2. Corp A and Corp define the rules, with access restrictions and payment conditions (a fixed $AXON fee per request, for example). They inform a maximum of metadata, especially to describe the different available datasets, their structures and the nature of their contents.
+2. Corp A and Corp define the rules, with access restrictions and payment conditions (a fixed $AXONE fee per request, for example). They inform a maximum of metadata, especially to describe the different available datasets, their structures and the nature of their contents.
 3. Metadata indicates that resources shared by Corp A and Corp B are compatible with an ML job from Corp C. Corp C submitted its training model algorithm, governance rules, and service execution instructions.
 4. Individual D parameters its cloud environment, setting up how an orchestration service should store the execution request results.
-5. Individual D requests service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $AXON tokens. The blockchain validates the execution request (access and execution authorizations).
+5. Individual D requests service execution with the ML Workflow from Corp C, using data from Corp A and Corp B. He submits a transaction with a Keplr wallet and pays with $AXONE tokens. The blockchain validates the execution request (access and execution authorizations).
 6. The orchestration service listens to the event from the blockchain. It recovers access keys and then executes the workflow training algorithm from Corp C, using Corp A & Corp B data it fetches.
-7. The orchestration service tracks the progress and state changes of all jobs within the workflow and reports this information to the blockchain. If all works well, service agreement rules are applied, and $AXON tokens from Individual D are unlocked to Corp A, Corp B, et Corp C.
+7. The orchestration service tracks the progress and state changes of all jobs within the workflow and reports this information to the blockchain. If all works well, service agreement rules are applied, and $AXONE tokens from Individual D are unlocked to Corp A, Corp B, et Corp C.
 8. The orchestration service stores the result in the provided Individual D's storage solution. Optionally, this new knowledge can also be referenced as a data source for other workflows. Individual D can have access to the newly generated knowledge.
 
 ### And tomorrow?
