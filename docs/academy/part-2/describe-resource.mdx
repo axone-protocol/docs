@@ -131,16 +131,15 @@ Let's fill in the template.
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/dataset/description/"
+        "https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/dataset/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e",
+    "type": ["VerifiableCredential","DatasetDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8",
     "credentialSubject": {
         "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
-        "type": "DatasetDescriptionCredential",
         "hasDescription": "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database.",
-        "hasFormat": "https://w3id.org/okp4/ontology/v$major/thesaurus/media-type/text_csv",
-        "hasGeoCoverage": "https://w3id.org/okp4/ontology/v$major/thesaurus/area-code/840",
+        "hasFormat": "https://w3id.org/okp4/ontology/v3/thesaurus/media-type/text_csv",
+        "hasGeoCoverage": "https://w3id.org/okp4/ontology/v3/thesaurus/area-code/840",
         "hasTag": [
             "Crime",
             "Police",
@@ -148,7 +147,7 @@ Let's fill in the template.
         ],
         "hasTemporalCoverage": "2020-01-01T00:00:00.0000+01:00/2024-02-02T00:00:00.00000+01:00",
         "hasTitle": "Crime Data from 2020 to Present",
-        "hasTopic": "https://w3id.org/okp4/ontology/v$major/thesaurus/topic/security"
+        "hasTopic": "https://w3id.org/okp4/ontology/v3/thesaurus/topic/security"
     },
     "issuanceDate": "2024-02-02T09:45:43.475304+01:00",
     "issuer": {
@@ -192,14 +191,13 @@ Here are the following metadata of the service [IPFS](https://ipfs.tech).
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/description/"
+        "https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/description/72cab400-5bd6-4eb4-8605-a5ee8c1a45c9",
+    "type": ["VerifiableCredential","DigitalServiceDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
     "credentialSubject": {
         "id": "did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB",
-        "type": "DigitalServiceDescriptionCredential",
-        "hasCategory": "https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-category/Storage",
+        "hasCategory": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/Storage",
         "hasDescription": "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale",
         "hasPublisher": "IPFS",
         "hasTag": [
@@ -242,35 +240,52 @@ By signing the credential, any alteration to the credential's data after it has 
 To sign your VC, use this command: 
 
 ```bash
-okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld --keyring-backend test --from $MY_ADDR
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld 
+    --keyring-backend test 
+    --from $MY_ADDR | jsonld toRdf -q - > $MY-DATASET.nq
 ```
 
 With:
 
 - `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
-- `MY_ADDR` : issuer okp4 address    
+- `MY_ADDR` : issuer address    
+- `MY-DATASET.nq` : name of the file with the signed credential in RDF format
 
 Example: 
 
 ```bash
-okp4d credential sign ./ontology/target/ontology/v3/example/dataset/crime-dataset-description.jsonld --keyring-backend test --from issuer-okp4
+okp4d credential sign /ontology/target/ontology/v3/example/digital-service/ipfs-digital-service-description.jsonld 
+    --keyring-backend test 
+    --from issuer-okp4 | jsonld toRdf -q - > ipfs-digital-service-description.nq
 ```
 
 You can see that there is new fields in the jsonld with the cryptographic proof. 
 
-```bash
-{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/"],"credentialSubject":{"hasDescription":"This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database.","hasFormat":"https://w3id.org/okp4/ontology/v3/thesaurus/media-type/text_csv","hasGeoCoverage":"https://w3id.org/okp4/ontology/v3/thesaurus/area-code/840","hasTag":["Crime","Police","Los Angeles"],"hasTemporalCoverage":"2020-01-01T00:00:00.0000+01:00/2024-02-02T00:00:00.00000+01:00","hasTitle":"Crime Data from 2020 to Present","hasTopic":"https://w3id.org/okp4/ontology/v3/thesaurus/topic/security","id":"did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5"},"id":"https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e","issuanceDate":"2024-02-02T09:45:43.475304+01:00","issuer":{"id":"did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3","name":"OKP4"},"proof":{"created":"2024-03-08T15:55:37.793844+01:00","proofPurpose":"assertionMethod","proofValue":"YJhJYdwag-TfsAcxOPkrVR_d2IHLDXkItm55YwWoaKEDumqaiSImk0GKgLVVC03U5EReHed7hwiPceoR7HlYLQ","type":"Ed25519Signature2018","verificationMethod":"did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3"},"type":["VerifiableCredential","DatasetDescriptionCredential"]}
+```nquads
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasDescription "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database." .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasFormat https://w3id.org/okp4/ontology/v3/thesaurus/media-type/text_csv .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasGeoCoverage https://w3id.org/okp4/ontology/v3/thesaurus/area-code/840 .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasTag "Crime" .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasTag "Los Angeles" .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasTag "Police" .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasTitle "Crime Data from 2020 to Present" .
+did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/hasTopic https://w3id.org/okp4/ontology/v3/thesaurus/topic/security .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/DatasetDescriptionCredential .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://www.w3.org/2018/credentials#VerifiableCredential .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 https://w3id.org/security#proof _:b0 .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 https://www.w3.org/2018/credentials#credentialSubject did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5 .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 https://www.w3.org/2018/credentials#issuanceDate "2024-02-02T09:45:43.475304+01:00"^^http://www.w3.org/2001/XMLSchema#dateTime .
+https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8 https://www.w3.org/2018/credentials#issuer did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3 .
+_:b1 http://purl.org/dc/terms/created "2024-04-03T09:19:27.543122+02:00"^^http://www.w3.org/2001/XMLSchema#dateTime _:b0 .
+_:b1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://w3id.org/security#EcdsaSecp256k1Signature2019 _:b0 .
+_:b1 https://w3id.org/security#jws "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..8L1rZp9tfVh-cp0RXBx-IboTqmX7My6w5W4rKI3c1HxA82unFSdAdwKBXE4sBrYYHFCcTdnM13-WKpjbCVYqhw" _:b0 .
+_:b1 https://w3id.org/security#proofPurpose https://w3id.org/security#assertionMethod _:b0 .
+_:b1 https://w3id.org/security#verificationMethod did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3 _:b0 .
 ```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld content in N-Quads. Copy the result of the signature command and paste it in this tool: https://transform.tools/jsonld-to-nquads.
-
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/n-quads.webp" alt="Conversion from jsonld to n-quads" style={{ maxHeight: "340px" }}></img>
-</div>
-
-Save this content in a temporary file with '.nq' extension. 
+The Axone blockchain can only register VCs in N-Quads format. 
 
 ## Step 4: Register the credentials in the blockchain
 
@@ -281,23 +296,44 @@ Note that as you interact with the Axone blockchain, you must pay fees in $AXON 
 ::: 
 
 ```bash
-# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+# okp4d tx wasm execute $CONTRACT_ADDR \ 
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \ 
+    --from $MY_ADDR \ 
+    --keyring-backend test
+    --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat $MY-DATASET.nq | base64)\"}}"
 ```
 
 With:
 
-- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `CONTRACT_ADDR` : dataverse contract address (always the same) - For the Drunemeton testnet use okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du
+- `node "https://api.drunemeton.okp4.network:443/rpc"` : name of the node for the Drunemeton testnet
 - `MY_ADDR` : registrant okp4 address  
-- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format 
 
 Example: 
 ```bash
-# okp4d tx wasm execute $CONTRACT_ADDR \ --from okp4-issuer \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat VC-signed-crime-dataset.nq | base64)\"}}"
-```
+okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --from issuer-okp4 \
+    --keyring-backend test 
+    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat ipfs-digital-service-description.nq | base64)\"}}"
+    ```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
 
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
+
+Example:
+Hash: 766627052AA0A56F56702038E54EC69491386D35E0D76A47F9D5B2321DD56C3E
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/transaction-explorer.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
+</div>  
+
+<br>
+</br>
 
 :::warning
 Remember, the Resource Governance VC ensures the existence of a resource in the protocol: a resource or zone exists in the protocol only if governance is attached to it. Let's do it on the next page. 
