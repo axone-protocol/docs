@@ -1,0 +1,23 @@
+jsonld.LoadDocumentError: Could not retrieve a JSON-LD document from the URL.
+    at jsonld.get (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/jsonld-cli/node_modules/jsonld/lib/jsonld.js:899:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async jsonld.expand (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/jsonld-cli/node_modules/jsonld/lib/jsonld.js:300:23)
+    at async jsonld.toRDF (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/jsonld-cli/node_modules/jsonld/lib/jsonld.js:687:16)
+    at async Command.toRdf (file:///Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/jsonld-cli/bin/jsonld.js:402:20)
+    at async Command.parseAsync (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/jsonld-cli/node_modules/commander/lib/command.js:936:5)
+Error: {
+  name: [32m'jsonld.LoadDocumentError'[39m,
+  details: {
+    code: [32m'loading document failed'[39m,
+    cause: jsonld.NullRemoteDocument: No remote document found at the given URL.
+        at jsonld.get (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/[4mjsonld-cli[24m/node_modules/[4mjsonld[24m/lib/jsonld.js:891:13)
+    [90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+        at async jsonld.expand (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/[4mjsonld-cli[24m/node_modules/[4mjsonld[24m/lib/jsonld.js:300:23)
+        at async jsonld.toRDF (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/[4mjsonld-cli[24m/node_modules/[4mjsonld[24m/lib/jsonld.js:687:16)
+        at async Command.toRdf (file:///Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/[4mjsonld-cli[24m/bin/jsonld.js:402:20)
+        at async Command.parseAsync (/Users/marinedechamp-guillaume/.nvm/versions/node/v18.0.0/lib/node_modules/[4mjsonld-cli[24m/node_modules/[4mcommander[24m/lib/command.js:936:5) {
+      details: {}
+    },
+    remoteDoc: { contextUrl: [1mnull[22m, documentUrl: [32m'-'[39m, document: [1mnull[22m }
+  }
+}
