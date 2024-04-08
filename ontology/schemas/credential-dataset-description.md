@@ -40,11 +40,10 @@ The objective of these credentials is to furnish a wide-ranging insight into the
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e",
+    "type": ["VerifiableCredential","DatasetDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/dataset/description/5d29ea71-003f-46e7-a74d-d8d598629ed8",
     "credentialSubject": {
         "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
-        "type": "DatasetDescriptionCredential",
         "hasDescription": "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database.",
         "hasFormat": "https://w3id.org/okp4/ontology/v3/thesaurus/media-type/text_csv",
         "hasGeoCoverage": "https://w3id.org/okp4/ontology/v3/thesaurus/area-code/840",

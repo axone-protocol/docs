@@ -40,11 +40,10 @@ The primary objective of these credentials is to provide a broad overview of the
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
+    "type": ["VerifiableCredential","ZoneDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
-        "type": "ZoneDescriptionCredential",
         "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
         "hasTag": [
             "AI",

@@ -40,11 +40,10 @@ Their primary function is to simplify the process for users to grasp the service
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/72cab400-5bd6-4eb4-8605-a5ee8c1a45c9",
+    "type": ["VerifiableCredential","DigitalServiceDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
     "credentialSubject": {
         "id": "did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB",
-        "type": "DigitalServiceDescriptionCredential",
         "hasCategory": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/Storage",
         "hasDescription": "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale",
         "hasPublisher": "IPFS",
