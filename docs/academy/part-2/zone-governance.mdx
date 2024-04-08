@@ -50,9 +50,8 @@ First, you need to define the governance rules of your zone.
 The governance content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
-- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **section**: A section is a subdivision of a chapter. It allows articles to be organized into thematic subgroups, making the structure of the rules more readable and easier to navigate.
-- **subSection**: Sub-sections provide an additional level of detail within sections. They are used to group together articles or paragraphs that address specific aspects or details of a broader issue covered in the section.
+- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **paragraph**: The paragraph is the element that contains the text of the rule itself. This translates into a clause defining a specific condition or rule in Prolog.
 
 You can use a template (coming soon) or begin from scratch. 
@@ -95,7 +94,6 @@ These elements are translated into the following Prolog predicates:
 ```prolog
 chapter(ChapterId).
 section(SectionId).
-subSection(SubSectionId).
 article(ArticleId).
 paragraph(ParagraphId, ...).
 ```
@@ -108,7 +106,6 @@ For example:
 % Definition of instances
 chapter(chap1).
 section(sec1).
-subSection(subSec1).
 article(art1).
 paragraph(para1, ...).
 paragraph(para2, ...).
@@ -116,8 +113,7 @@ paragraph(para2, ...).
 % Definition of relationships
 partOf(para1, art1).
 partOf(para2, art1).
-partOf(art1, subSec1).
-partOf(subSec1, sec1).
+partOf(art1, Sec1).
 partOf(sec1, chap1).
 ```
 
@@ -303,8 +299,11 @@ The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3sh
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
     ],
-    "type": ["VerifiableCredential","GovernanceTextCredential"],
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
+    "type": [
+        "VerifiableCredential",
+        "GovernanceTextCredential"
+    ],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
         "isGovernedBy": {
@@ -318,54 +317,49 @@ The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3sh
                     "type": "Section",
                     "hasTitle": "Zone Governance",
                     "hasOrdinalNumber": "1.1",
-                    "hasSubsection": {
-                        "type": "SubSection",
-                        "hasTitle": "Governers",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions to amend the rules",
                         "hasOrdinalNumber": "1.1.1",
-                        "hasArticle": {
-                            "type": "Article",
-                            "hasTitle": "Conditions to amend the rules",
-                            "hasOrdinalNumber": "1.1.1.1",
-                            "hasParagraph": {
-                                "type": "Paragraph",
-                                "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
-                                "hasOrdinalNumber": "1.1.1.1.1"
-                            },
-                            "hasArticle": {
-                                "type": "Article",
-                                "hasTitle": "Conditions on autorized services",
-                                "hasOrdinalNumber": "1.1.1.2",
-                                "hasParagraph": {
-                                    "type": "Paragraph",
-                                    "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
-                                    "hasOrdinalNumber": "1.1.1.2.1"
-                                },
-                                "hasSubsection": {
-                                    "type": "SubSection",
-                                    "hasTitle": "XXXX",
-                                    "hasOrdinalNumber": "1.1.2",
-                                    "hasArticle": {
-                                        "type": "Article",
-                                        "hasTitle": "XXXX",
-                                        "hasOrdinalNumber": "1.1.2.1",
-                                        "hasParagraph": {
-                                            "type": "Paragraph",
-                                            "hasTitle": "XXXX",
-                                            "hasOrdinalNumber": "1.1.2.1.1"
-                                        },
-                                        "hasArticle": {
-                                            "type": "Article",
-                                            "hasTitle": "XXXX",
-                                            "hasOrdinalNumber": "1.1.2.2",
-                                            "hasParagraph": {
-                                                "type": "Paragraph",
-                                                "hasTitle": "XXXX",
-                                                "hasOrdinalNumber": "1.1.2.2.1"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+                            "hasOrdinalNumber": "1.1.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on autorized services",
+                        "hasOrdinalNumber": "1.1.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+                            "hasOrdinalNumber": "1.1.2.1"
+                        }
+                    }
+                },
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Zone Business Model",
+                    "hasOrdinalNumber": "1.2",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.1",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.2.1"
                         }
                     }
                 }
@@ -414,12 +408,12 @@ You can see that there is new fields in the jsonld with the cryptographic proof.
 
 ```nquads
 <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 _:b1 <http://purl.org/dc/terms/created> "2024-04-03T11:34:29.724958+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
 _:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..WHnc8--Jo7GjhuN2HhO1bKE0EkfG8qVyl-M2k34hzmJsH6M4SfwtmocFPagvzFUu6upKM8mvt40Y2Hxz0cMKGg" _:b0 .
@@ -478,7 +472,7 @@ The Protocol will check the signature and if the public key corresponds to the p
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
 
 Example:
-Hash: 14B30F027884C7D2BE565961489C7DE36ADF5FB388A694D19667AD18380EEA00
+Hash: E6D18D38D5A54BC0C73084A047448216A238C69930908B16F11509E7877E0CF9
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/transaction-explorer-4.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
