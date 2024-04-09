@@ -47,7 +47,7 @@ npm install -g jsonld-cli
 ## Step 1: Define the governance of your zone 
 
 First, you need to define the governance rules of your zone. 
-The governance content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
+The governance content is systematically arranged into a hierarchical text structure comprising sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
 - **section**: A section is a subdivision of a chapter. It allows articles to be organized into thematic subgroups, making the structure of the rules more readable and easier to navigate.
@@ -62,9 +62,10 @@ Governance rules of the Collaborative AI zone:
 |-------------|----------------|------------------------------------------------------|
 | Chapter     | 1              | Collaborative AI zone                                |
 | Section     | 1.1            | Zone Governance                                      |
-| Sub-section | 1.1.1          | Governors                                            |
-| Article     | 1.1.1.1        | Conditions to amend the rules                       |
-| Paragraph   | 1.1.1.1.1      | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
+| Article     | 1.1.1          | Conditions to amend the rules                        |
+| Paragraph   | 1.1.1.1        | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
+| Article     | 1.1.2          | Conditions on authorized services                    |
+| Paragraph   | 1.1.1.1        | Only services of type 'Storage' or 'Machine Learning'|
 
 
 :::info
@@ -329,7 +330,7 @@ The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3sh
                     },
                     "hasArticle": {
                         "type": "Article",
-                        "hasTitle": "Conditions on autorized services",
+                        "hasTitle": "Conditions on authorized services",
                         "hasOrdinalNumber": "1.1.2",
                         "hasParagraph": {
                             "type": "Paragraph",

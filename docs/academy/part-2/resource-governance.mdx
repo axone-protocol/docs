@@ -133,7 +133,7 @@ paragraph(para2, ...).
 % Definition of relationships
 partOf(para1, art1).
 partOf(para2, art1).
-partOf(art1, Sec1).
+partOf(art1, sec1).
 partOf(sec1, chap1).
 ```
 
@@ -221,10 +221,10 @@ chapter('chap1').
          partOf('sec1.1', 'chap1').
          title('sec1.1', 'Usage of the dataset').
              article('art1.1.1').
-                 partOf('art1.1.1', 'Sec1.1').
+                 partOf('art1.1.1', 'sec1.1').
                  title('art1.1.1', 'Conditions on consumers').
                  paragraph('para1.1.1.1', permitted) :- action(A), A=='workflow:consume'.
-                    partOf('para1.1.1.1', 'art1.1.1.1').
+                    partOf('para1.1.1.1', 'art1.1.1').
                      description('para1.1.1.1', 'Everyone can use the dataset').
 ```
 
