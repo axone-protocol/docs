@@ -38,6 +38,7 @@ We'll take one simple example in this tutorial for the Collaborative AI zone.
 :::info
 Prerequisite: 
 - [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
 - Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
 ```bash
 npm install -g jsonld-cli
@@ -114,7 +115,7 @@ paragraph(para2, ...).
 % Definition of relationships
 partOf(para1, art1).
 partOf(para2, art1).
-partOf(art1, Sec1).
+partOf(art1, sec1).
 partOf(sec1, chap1).
 ```
 
@@ -202,7 +203,7 @@ chapter('chap1').
          partOf('sec1.1', 'chap1').
          title('sec1.1', 'Zone Governance').
              article('art1.1.1').
-                 partOf('art1.1.1', 'Sec1.1').
+                 partOf('art1.1.1', 'sec1.1').
                  title('art1.1.1', 'Conditions to amend the rules').
                  paragraph('para1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
                     partOf('para1.1.1.1', 'art1.1.1').
