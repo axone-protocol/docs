@@ -35,15 +35,24 @@ Here are the five steps to create a zone governance in the Dataverse:
 
 We'll take one simple example in this tutorial for the Collaborative AI zone.  
 
+:::info
+Prerequisite: 
+- [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
+- Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
+```bash
+npm install -g jsonld-cli
+```
+:::
+
 ## Step 1: Define the governance of your zone 
 
 First, you need to define the governance rules of your zone. 
-The governance content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
+The governance content is systematically arranged into a hierarchical text structure comprising sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
-- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **section**: A section is a subdivision of a chapter. It allows articles to be organized into thematic subgroups, making the structure of the rules more readable and easier to navigate.
-- **subSection**: Sub-sections provide an additional level of detail within sections. They are used to group together articles or paragraphs that address specific aspects or details of a broader issue covered in the section.
+- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **paragraph**: The paragraph is the element that contains the text of the rule itself. This translates into a clause defining a specific condition or rule in Prolog.
 
 You can use a template (coming soon) or begin from scratch. 
@@ -54,9 +63,10 @@ Governance rules of the Collaborative AI zone:
 |-------------|----------------|------------------------------------------------------|
 | Chapter     | 1              | Collaborative AI zone                                |
 | Section     | 1.1            | Zone Governance                                      |
-| Sub-section | 1.1.1          | Governors                                            |
-| Article     | 1.1.1.1        | Conditions to amend the rules                       |
-| Paragraph   | 1.1.1.1.1      | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
+| Article     | 1.1.1          | Conditions to amend the rules                        |
+| Paragraph   | 1.1.1.1        | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
+| Article     | 1.1.2          | Conditions on authorized services                    |
+| Paragraph   | 1.1.1.1        | Only services of type 'Storage' or 'Machine Learning'|
 
 
 :::info
@@ -86,7 +96,6 @@ These elements are translated into the following Prolog predicates:
 ```prolog
 chapter(ChapterId).
 section(SectionId).
-subSection(SubSectionId).
 article(ArticleId).
 paragraph(ParagraphId, ...).
 ```
@@ -99,7 +108,6 @@ For example:
 % Definition of instances
 chapter(chap1).
 section(sec1).
-subSection(subSec1).
 article(art1).
 paragraph(para1, ...).
 paragraph(para2, ...).
@@ -107,8 +115,7 @@ paragraph(para2, ...).
 % Definition of relationships
 partOf(para1, art1).
 partOf(para2, art1).
-partOf(art1, subSec1).
-partOf(subSec1, sec1).
+partOf(art1, sec1).
 partOf(sec1, chap1).
 ```
 
@@ -189,85 +196,189 @@ For two standards under consideration, providing 2 different verdicts, the follo
 Here is an example of the governance of Collaborative AI zone: 
 
 ```prolog
+:- discontiguous([title/2,partOf/2,chapter/1,section/1,article/1,paragraph/2]).
 chapter('chap1').
      title('chap1', 'Collaborative AI zone governance').
      section('sec1.1').
          partOf('sec1.1', 'chap1').
          title('sec1.1', 'Zone Governance').
-         subSection('subSec1.1.1').
-             partOf('subSec1.1.1', 'sec1.1').
-             title('subSec1.1.1', 'Governers').
-             article('art1.1.1.1').
-                 partOf('art1.1.1.1', 'subSec1.1.1').
-                 title('art1.1.1.1', 'Conditions to amend the rules').
-                 paragraph('para1.1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
-                    partOf('para1.1.1.1.1', 'art1.1.1.1').
-                     description('para1.1.1.1.1', 'Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`').
+             article('art1.1.1').
+                 partOf('art1.1.1', 'sec1.1').
+                 title('art1.1.1', 'Conditions to amend the rules').
+                 paragraph('para1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
+                    partOf('para1.1.1.1', 'art1.1.1').
+                     description('para1.1.1.1', 'Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`').
+
 ```
 
 ## Step 3: Submit the Prolog program in the Dataverse
 
-:::info
-This part is in progress 🔧 Coming soon 
-:::
+Create a Prolog file `my-zone-governance.pl` with the governance of your zone.
+
+Create a specific smart contrat Law Stone for your governance. 
+
+```bash
+okp4d tx wasm instantiate 2 --label $UNIQUE_LABEL \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --keyring-backend test \
+    --from $WALLET \
+    --admin $WALLET \
+    --gas 20000000 \
+    "{\"program\":\"$(cat $MY-GOVERNANCE.pl | base64)\", \"storage_address\": \"CONTRACT_ADDR\"}"
+```
+
+With:
+
+- `$UNIQUE_LABEL` : name of the smart contract. It must be unique. You can use a UUID.
+- `CONTRACT_ADDR` : Cognitarium contract address (always the same) okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj
+- from `$WALLET` : registrant okp4 address  
+- admin `$WALLET` : okp4 address which is allowed to update the contract 
+- `$MY-GOVERNANCE.pl` : Prolog file of the governance  
+
+Example:
+```bash
+okp4d tx wasm instantiate 2 --label 4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --keyring-backend test \
+    --from issuer-okp4 \
+    --admin issuer-okp4 \
+    --gas 20000000 \
+    "{\"program\":\"$(cat collab-ai-zone-governance.pl | base64)\", \"storage_address\": \"okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj\"}"
+```
+
+txhash: 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
+
+Then you need to find the contract address which is necessary for the next step. You can use the following command: 
+
+```bash
+okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx $TX_HASH
+```
+
+With:
+
+- `$TX_HASH`: The hash of the transaction which instantiates the smart contract
+
+Example:
+```bash
+okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
+```
+
+Find the contract address in the transactions information:
+
+Example: 
+```bash
+- attributes:
+  - index: true
+    key: _contract_address
+    value: okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl
+  - index: true
+    key: code_id
+    value: "2"
+```
 
 ## Step 4: Create the Governance VC
 
-The Governance VP is a specific type of VP that details the governance rules applicable to a given resource, whether it is a Dataset, a Service, or a Zone. This VP addresses two key dimensions:
+The Governance VP is a specific type of VP that details the governance rules applicable to a given zone, whether it is a Dataset, a Service, or a Zone. This VP addresses two key dimensions:
 
-- Association with Codified Governance: It associates the resource with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
+- Association with Codified Governance: It associates the zone with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
 - Textual Description of the Rules: In addition to the link to the codified rules, the VP provides a structured and hierarchical textual explanation of the governance rules, as set out in the Prolog program.
 
-This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the Axone Dataverse.
+This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for zone within the Axone dataverse.
 
-Governance VPs play an essential role in the Dataverse, applying universally to various categories of resources, such as [datasets, services](/academy/part-2/resource-governance), and zones.
+Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as datasets, services, and [zones](/academy/part-2/zone-governance).
 
-Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/collab-AI-zone-governance.jsonld). 
+Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/crime-dataset-governance.jsonld). 
 
 Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-zone). 
 
-The following code specifies that the Collaborative AI zone whose DID is `<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx...>` for which a text description is also provided.
+The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl>` for which a text description is also provided.
 
-```bash
+```json
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
+        "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95",
+    "type": [
+        "VerifiableCredential",
+        "GovernanceTextCredential"
+    ],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
-        "type": ":GovernanceTextCredential",
         "isGovernedBy": {
-            "type": ":GovernanceText",
-            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "type": "GovernanceText",
+            "fromGovernance": "cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22",
             "hasChapter": {
-                "type": ":Chapter",
+                "type": "Chapter",
                 "hasTitle": "Collaborative AI governance",
                 "hasOrdinalNumber": "1",
                 "hasSection": {
-                    "type": ":Section",
+                    "type": "Section",
                     "hasTitle": "Zone Governance",
                     "hasOrdinalNumber": "1.1",
-                    "hasSubsection": {
-                        "type": ":SubSection",
-                        "hasTitle": "Governers",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions to amend the rules",
                         "hasOrdinalNumber": "1.1.1",
-                        "hasArticle": {
-                            "type": ":Article",
-                            "hasTitle": "Conditions to amend the rules",
-                            "hasOrdinalNumber": "1.1.1.1",
-                            "hasParagraph": {
-                                "type": ":Paragraph",
-                                "hasTitle": "Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`",
-                                "hasOrdinalNumber": "1.1.1.1.1"
-                            },
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+                            "hasOrdinalNumber": "1.1.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on authorized services",
+                        "hasOrdinalNumber": "1.1.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+                            "hasOrdinalNumber": "1.1.2.1"
+                        }
+                    }
+                },
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Zone Business Model",
+                    "hasOrdinalNumber": "1.2",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.1",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.2.1"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issuanceDate": "2024-06-06T15:45:00.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}
 ```
 
 ## Step 5: Sign and register in the Blockchain
 
-Now that you have created the VCs, you will sign them. 
+Now that you have created the VC, you will sign it. 
 
 Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
 
@@ -275,15 +386,56 @@ By signing the credential, any alteration to the credential's data after it has 
 
 To sign your VC, use this command: 
 
-:::info
-The command is coming soon 🔧
-:::
+```bash
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld 
+    --keyring-backend test 
+    --from $MY_ADDR | jsonld toRdf -q - > $MY-DATASET.nq
+```
 
-You can see that there is a new field in the jsonld with the cryptographic proof. 
+With:
+
+- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
+- `MY_ADDR` : issuer address    
+- `MY-DATASET.nq` : name of the file with the signed credential in RDF format
+
+Example: 
+
+```bash
+okp4d credential sign collab-ai-zone-governance.jsonld 
+    --from issuer-okp4 
+    --keyring-backend test | jsonld toRdf -q - > collab-ai-zone-governance.nq
+```
+
+You can see that there is new fields in the jsonld with the cryptographic proof. 
+
+```nquads
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+_:b1 <http://purl.org/dc/terms/created> "2024-04-03T11:34:29.724958+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
+_:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..WHnc8--Jo7GjhuN2HhO1bKE0EkfG8qVyl-M2k34hzmJsH6M4SfwtmocFPagvzFUu6upKM8mvt40Y2Hxz0cMKGg" _:b0 .
+_:b1 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b0 .
+_:b1 <https://w3id.org/security#verificationMethod> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> _:b0 .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText> .
+_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22> .
+_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasChapter> _:b3 .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter> .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1" .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSection> _:b4 .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Collaborative AI governance" .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section> .
+_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
+_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Zone Governance" .
+```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads.
+The Axone blockchain can only register VCs in N-Quads format.   
 
 The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
@@ -292,21 +444,43 @@ Note that as you interact with the Axone blockchain, you must pay fees in $AXONE
 ::: 
 
 ```bash
-# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+okp4d tx wasm execute $CONTRACT_ADDR \ 
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \ 
+    --from $MY_ADDR \ 
+    --keyring-backend test
+    --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat $MY-DATASET.nq | base64)\"}}"
 ```
 
 With:
 
-- `CONTRACT_ADDR` : Dataverse contract address (always the same)  
+- `CONTRACT_ADDR` : dataverse contract address (always the same) - For the Drunemeton testnet use okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du
+- `node "https://api.drunemeton.okp4.network:443/rpc"` : name of the node for the Drunemeton testnet
 - `MY_ADDR` : registrant okp4 address  
-- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format 
+
+Example: 
+```bash
+okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --from issuer-okp4 \
+    --keyring-backend test 
+    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat collab-ai-zone-governance.nq | base64)\"}}"
+    ```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
 
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
 
+Example:
+Hash: E6D18D38D5A54BC0C73084A047448216A238C69930908B16F11509E7877E0CF9
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/transaction-explorer-4.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
+</div>  
+
 ## Delete a zone in the Dataverse
 
 The deletion of a zone in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this zone. This deletion action can only be initiated following the rules established by the governance of the zone.
-It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the Dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking zones.
-
+It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying zones.

@@ -19,7 +19,13 @@ Let's see how to describe and register a zone in the Axone Protocol. Here are th
 We'll take the example of the Collaborative AI Zone in this tutorial.
 
 :::info
-Prerequisite: [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol. 
+Prerequisite: 
+- [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
+- Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
+```bash
+npm install -g jsonld-cli
+```
 :::
 
 ## Step 1: Create keys
@@ -122,13 +128,12 @@ Let's fill in the template.
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/zone/description/"
+        "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
+    "type": ["VerifiableCredential","ZoneDescriptionCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
-        "type": "ZoneDescriptionCredential",
         "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
         "hasTag": [
             "AI",
@@ -136,7 +141,7 @@ Let's fill in the template.
             "Machine Learning"
         ],
         "hasTitle": "Collaborative AI Zone",
-        "hasTopic": "https://w3id.org/okp4/ontology/v$major/thesaurus/topic/other"
+        "hasTopic": "https://w3id.org/okp4/ontology/v3/thesaurus/topic/other"
     },
     "issuanceDate": "2024-02-02T15:40:43.475304+01:00",
     "issuer": {
@@ -170,15 +175,51 @@ By signing the credential, any alteration to the credential's data after it has 
 
 To sign your VC, use this command: 
 
-:::info
-The command is coming soon 🔧
-:::
+```bash
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld 
+    --keyring-backend test 
+    --from $MY_ADDR | jsonld toRdf -q - > $MY-DATASET.nq
+```
 
-You can see that there is a new field in the jsonld with the cryptographic proof. 
+With:
+
+- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
+- `MY_ADDR` : issuer address    
+- `MY-DATASET.nq` : name of the file with the signed credential in RDF format
+
+Example: 
+
+```bash
+okp4d credential sign collab-ai-zone-description.jsonld 
+    --keyring-backend test 
+    --from issuer-okp4 | jsonld toRdf -q - > collab-ai-zone-description.nq
+```
+
+You can see that there is new fields in the jsonld with the cryptographic proof. 
+
+```nquads
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasDescription> "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way." .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "AI" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "Collaboration" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "Machine Learning" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTitle> "Collaborative AI Zone" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTopic> <https://w3id.org/okp4/ontology/v3/thesaurus/topic/other> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-02T15:40:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+_:b1 <http://purl.org/dc/terms/created> "2024-04-03T09:30:58.82844+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
+_:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..-oJCy6SuZM1QmQNOw2_cpdXfqSu3sER_V-j1FfcE-k1pjh-K4TFtNc4EMuHcoTp-FMsCcJoMyR3xphLPo0BLgQ" _:b0 .
+_:b1 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b0 .
+_:b1 <https://w3id.org/security#verificationMethod> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> _:b0 .
+```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads.
+The Axone blockchain can only register VCs in N-Quads format. 
 
 ## Step 4: Register the credentials in the blockchain
 
@@ -189,19 +230,46 @@ Note that as you interact with the Axone blockchain, you must pay fees in $AXONE
 ::: 
 
 ```bash
-# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+okp4d tx wasm execute $CONTRACT_ADDR \ 
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \ 
+    --from $MY_ADDR \ 
+    --keyring-backend test
+    --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat $MY-DATASET.nq | base64)\"}}"
 ```
 
 With:
 
-- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `CONTRACT_ADDR` : dataverse contract address (always the same) - For the Drunemeton testnet use okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du
+- `node "https://api.drunemeton.okp4.network:443/rpc"` : name of the node for the Drunemeton testnet
 - `MY_ADDR` : registrant okp4 address  
-- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format 
+
+Example: 
+```bash
+okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --from issuer-okp4 \
+    --keyring-backend test 
+    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat collab-ai-zone-description.nq | base64)\"}}"
+    ```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
 
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
 
+Example:
+Hash: 213CE6A476776392625981A071E36DD295B1F0BB95F4A29DFCDA8B1F59C9282D
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/transaction-explorer-2.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
+</div>  
+
+<br>
+</br>
+
 :::warning
 Remember, the Resource Governance VC ensures the existence of a resource in the protocol: a resource or zone exists in the protocol only if governance is attached to it. Let's do it on the next page. 
 :::
+

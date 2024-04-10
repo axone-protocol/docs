@@ -38,15 +38,24 @@ We'll take 2 simple examples in this tutorial:
 - The dataset [Crime Data from 2020 to Present](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 - The storage service [IPFS](https://ipfs.tech)
 
+:::info
+Prerequisite: 
+- [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
+- Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
+```bash
+npm install -g jsonld-cli
+```
+:::
+
 ## Step 1: Define the governance of your resource 
 
 First, you need to define the governance rules of your resource. 
-The governance content is systematically arranged into a hierarchical text structure comprising sections, subsections, articles, and paragraphs.
+The governance content is systematically arranged into a hierarchical text structure comprising sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
-- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **section**: A section is a subdivision of a chapter. It allows articles to be organized into thematic subgroups, making the structure of the rules more readable and easier to navigate.
-- **subSection**: Subsections provide an additional level of detail within sections. They are used to group together articles or paragraphs that address specific aspects or details of a broader issue covered in the section.
+- **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **paragraph**: The paragraph is the element that contains the text of the rule itself. This translates into a clause defining a specific condition or rule in Prolog.
 
 You can use a template (coming soon) or begin from scratch. 
@@ -57,16 +66,15 @@ Governance rules of the dataset Crime Data from 2020 to Present:
 |------------|----------------|------------------------------------------------------|
 | Chapter    | 1              | Crime data dataset governance                        |
 | Section    | 1.1            | Usage of the dataset                                 |
-| Subsection | 1.1.1          | Users                                                |
-| Article    | 1.1.1.1        | Conditions on consumers                              |
-| Paragraph  | 1.1.1.1.1      | Everyone can use the dataset                         |
-| Article    | 1.1.1.2        | Conditions on services that consume the dataset      |
-| Paragraph  | 1.1.1.2.1      | Only services of type "Storage" or "Data Processing" |
-| Subsection | 1.1.2          | Conditions of usages                                 |
-| Article    | 1.1.2.1        | Price                                                |
-| Paragraph  | 1.1.2.1.1      | Free                                                 |
-| Article    | 1.1.2.2        | Rate limiting                                        |
-| Paragraph  | 1.1.2.2.1      | The rate limit is 2 months maximum                   |
+| Article    | 1.1.1          | Conditions on consumers                              |
+| Paragraph  | 1.1.1.1        | Everyone can use the dataset                         |
+| Article    | 1.1.2          | Conditions on services that consume the dataset      |
+| Paragraph  | 1.1.2.1        | Only services of type "Storage" or "Data Processing" |
+| Section    | 1.2            | Conditions of usages                                 |
+| Article    | 1.2.1          | Price                                                |
+| Paragraph  | 1.2.1.1        | Free                                                 |
+| Article    | 1.2.2          | Rate limiting                                        |
+| Paragraph  | 1.2.2.1        | The rate limit is 2 months maximum                   |
 
 Governance rules of the service IPFS:
 
@@ -74,12 +82,11 @@ Governance rules of the service IPFS:
 |-------------|----------------|------------------------------|
 | Chapter     | 1              | IPFS governance              |
 | Section     | 1.1            | Usage of the dataset         |
-| Subsection  | 1.1.1          | Users                        |
-| Article     | 1.1.1.1        | Conditions on consumers      |
-| Paragraph   | 1.1.1.1.1      | Everyone can use the dataset |
-| Subsection  | 1.1.2          | Conditions of usages         |
-| Article     | 1.1.2.1        | Price                        |
-| Paragraph   | 1.1.2.1.1      | Free                         |
+| Article     | 1.1.1          | Conditions on consumers      |
+| Paragraph   | 1.1.1.1        | Everyone can use the dataset |
+| Section     | 1.2            | Conditions of usages         |
+| Article     | 1.2.1          | Price                        |
+| Paragraph   | 1.2.1.1        | Free                         |
 
 :::info
 The Axone Community will provide more and more templates over time. 
@@ -108,7 +115,6 @@ These elements are translated into the following Prolog predicates:
 ```prolog
 chapter(ChapterId).
 section(SectionId).
-subSection(SubSectionId).
 article(ArticleId).
 paragraph(ParagraphId, ...).
 ```
@@ -121,7 +127,6 @@ For example:
 % Definition of instances
 chapter(chap1).
 section(sec1).
-subSection(subSec1).
 article(art1).
 paragraph(para1, ...).
 paragraph(para2, ...).
@@ -129,8 +134,7 @@ paragraph(para2, ...).
 % Definition of relationships
 partOf(para1, art1).
 partOf(para2, art1).
-partOf(art1, subSec1).
-partOf(subSec1, sec1).
+partOf(art1, sec1).
 partOf(sec1, chap1).
 ```
 
@@ -211,27 +215,86 @@ For two standards under consideration, providing 2 different verdicts, the follo
 Here is an example of the consent attached to the Crime dataset: 
 
 ```prolog
+:- discontiguous([title/2,partOf/2,chapter/1,section/1,article/1,paragraph/2]).
 chapter('chap1').
      title('chap1', 'Crime data governance').
      section('sec1.1').
          partOf('sec1.1', 'chap1').
          title('sec1.1', 'Usage of the dataset').
-         subSection('subSec1.1.1').
-             partOf('subSec1.1.1', 'sec1.1').
-             title('subSec1.1.1', 'Users').
-             article('art1.1.1.1').
-                 partOf('art1.1.1.1', 'subSec1.1.1').
-                 title('art1.1.1.1', 'Conditions on consumers').
-                 paragraph('para1.1.1.1.1', permitted) :- action(A), A=='workflow:consume'.
-                    partOf('para1.1.1.1.1', 'art1.1.1.1').
-                     description('para1.1.1.1.1', 'Everyone can use the dataset').
+             article('art1.1.1').
+                 partOf('art1.1.1', 'sec1.1').
+                 title('art1.1.1', 'Conditions on consumers').
+                 paragraph('para1.1.1.1', permitted) :- action(A), A=='workflow:consume'.
+                    partOf('para1.1.1.1', 'art1.1.1').
+                     description('para1.1.1.1', 'Everyone can use the dataset').
 ```
 
 ## Step 3: Submit the Prolog program in the Dataverse
 
-:::info
-This part is in progress 🔧 Coming soon 
-:::
+Create a Prolog file `my-resource-governance.pl` with the governance of your resource.
+
+Create a specific smart contrat Law Stone for your governance. 
+
+```bash
+okp4d tx wasm instantiate 2 --label $UNIQUE_LABEL \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --keyring-backend test \
+    --from $WALLET \
+    --admin $WALLET \
+    --gas 20000000 \
+    "{\"program\":\"$(cat $MY-GOVERNANCE.pl | base64)\", \"storage_address\": \"CONTRACT_ADDR\"}"
+```
+
+With:
+
+- `$UNIQUE_LABEL` : name of the smart contract. It must be unique. You can use a UUID.
+- `CONTRACT_ADDR` : Cognitarium contract address (always the same) okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj
+- from `$WALLET` : registrant okp4 address  
+- admin `$WALLET` : okp4 address which is allowed to update the contract 
+- `$MY-GOVERNANCE.pl` : Prolog file of the governance  
+
+Example:
+```bash
+okp4d tx wasm instantiate 2 --label fea0312a-f4bb-449c-a736-7a16e7cc94c1 \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --keyring-backend test \
+    --from issuer-okp4 \
+    --admin issuer-okp4 \
+    --gas 20000000 \
+    "{\"program\":\"$(cat crime-dataset-governance.pl | base64)\", \"storage_address\": \"okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj\"}"
+```
+
+txhash: 59AB4A2A7AD238AD55F75D5CB9B576FF92DDE39F1509442A74E6556A612591A6
+
+Then you need to find the contract address which is necessary for the next step. You can use the following command: 
+
+```bash
+okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx $TX_HASH
+```
+
+With:
+
+- `$TX_HASH`: The hash of the transaction which instantiates the smart contract
+
+Example:
+```bash
+okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx 59AB4A2A7AD238AD55F75D5CB9B576FF92DDE39F1509442A74E6556A612591A6
+```
+
+Find the contract address in the transactions information:
+
+Example: 
+```bash
+- attributes:
+  - index: true
+    key: _contract_address
+    value: okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk
+  - index: true
+    key: code_id
+    value: "2"
+```
 
 ## Step 4: Create the Governance VC
 
@@ -248,48 +311,89 @@ Instantiate the template [credential-governance-text](https://github.com/okp4/on
 
 Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-resource). 
 
-The following code specifies that the Crime Dataset whose DID is `<did:example:ebfeb1f712ebc6f1c276e12ec21>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp41lppz4x9dtmccek2m6cezjlwwzup6pdqrkvxjpk95806c3dewgrfq602kgx...>` for which a text description is also provided.
+The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk>` for which a text description is also provided.
 
 ```json
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
+        "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
     ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95",
+    "type": ["VerifiableCredential","GovernanceTextCredential"],
+    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1",
     "credentialSubject": {
         "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
-        "type": ":GovernanceTextCredential",
         "isGovernedBy": {
-            "type": ":GovernanceText",
-            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "type": "GovernanceText",
+            "fromGovernance": "cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22",
             "hasChapter": {
-                "type": ":Chapter",
+                "type": "Chapter",
                 "hasTitle": "Crime data dataset governance",
                 "hasOrdinalNumber": "1",
                 "hasSection": {
-                    "type": ":Section",
+                    "type": "Section",
                     "hasTitle": "Usage of the dataset",
                     "hasOrdinalNumber": "1.1",
-                    "hasSubsection": {
-                        "type": ":SubSection",
-                        "hasTitle": "Users",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on consumers",
                         "hasOrdinalNumber": "1.1.1",
-                        "hasArticle": {
-                            "type": ":Article",
-                            "hasTitle": "Conditions on consumers",
-                            "hasOrdinalNumber": "1.1.1.1",
-                            "hasParagraph": {
-                                "type": ":Paragraph",
-                                "hasTitle": "Everyone can use the dataset",
-                                "hasOrdinalNumber": "1.1.1.1.1"
-                            },
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Everyone can use the dataset",
+                            "hasOrdinalNumber": "1.1.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on services that consume the dataset",
+                        "hasOrdinalNumber": "1.1.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Only services of type 'Storage' or 'Data Processing'",
+                            "hasOrdinalNumber": "1.1.2.1"
+                        }
+                    }
+                },
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Conditions of usages",
+                    "hasOrdinalNumber": "1.2",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Price",
+                        "hasOrdinalNumber": "1.2.1",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Free",
+                            "hasOrdinalNumber": "1.2.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Rate limiting",
+                        "hasOrdinalNumber": "1.2.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "The rate limit is 2 months maximum",
+                            "hasOrdinalNumber": "1.2.2.1"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issuanceDate": "2024-02-06T13:29:00.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}
 ```
 
 ## Step 5: Sign and register in the Blockchain
 
-Now that you have created the VCs, you will sign them. 
+Now that you have created the VC, you will sign it. 
 
 Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
 
@@ -297,14 +401,56 @@ By signing the credential, any alteration to the credential's data after it has 
 
 To sign your VC, use this command: 
 
-:::info
-The command is coming soon 🔧
-:::
-You can see that there is a new field in the jsonld with the cryptographic proof. 
+```bash
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld 
+    --keyring-backend test 
+    --from $MY_ADDR | jsonld toRdf -q - > $MY-DATASET.nq
+```
+
+With:
+
+- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
+- `MY_ADDR` : issuer address    
+- `MY-DATASET.nq` : name of the file with the signed credential in RDF format
+
+Example: 
+
+```bash
+okp4d credential sign crime-dataset-governance.jsonld 
+    --from issuer-okp4 
+    --keyring-backend test | jsonld toRdf -q - > crime-dataset-governance.nq
+```
+
+You can see that there is new fields in the jsonld with the cryptographic proof. 
+
+```nquads
+<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-06T13:29:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+_:b1 <http://purl.org/dc/terms/created> "2024-04-03T10:45:45.644839+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
+_:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..VJ_c0Hn4N-Wlcdvqk5fHdWPFtUM3bxmPW_qM_9hUOsYxs5ucoB3S3y2837VgXO51Urv84Pv0o5wM0SNng7KPZQ" _:b0 .
+_:b1 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b0 .
+_:b1 <https://w3id.org/security#verificationMethod> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> _:b0 .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText> .
+_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22> .
+_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasChapter> _:b3 .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter> .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1" .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSection> _:b4 .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Crime data dataset governance" .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section> .
+_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
+_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Usage of the dataset" .
+```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
 
-The Axone blockchain can only register VCs in N-Quads format. Then, you must convert the jsonld files in N-Quads. You can use this tool: https://transform.tools/jsonld-to-nquads.
+The Axone blockchain can only register VCs in N-Quads format.   
 
 The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
 
@@ -313,18 +459,41 @@ Note that as you interact with the Axone blockchain, you must pay fees in $AXONE
 ::: 
 
 ```bash
-# okp4d tx wasm execute $CONTRACT_ADDR \ --from $MY_ADDR \ --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat vc.nq | base64)\"}}"
+okp4d tx wasm execute $CONTRACT_ADDR \ 
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \ 
+    --from $MY_ADDR \ 
+    --keyring-backend test
+    --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat $MY-DATASET.nq | base64)\"}}"
 ```
 
 With:
 
-- `CONTRACT_ADDR` : dataverse contract address (always the same)  
+- `CONTRACT_ADDR` : dataverse contract address (always the same) - For the Drunemeton testnet use okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du
+- `node "https://api.drunemeton.okp4.network:443/rpc"` : name of the node for the Drunemeton testnet
 - `MY_ADDR` : registrant okp4 address  
-- `vc.nq` : name of the verifiable credential signed in RDF in N-Quads format  
+- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format 
+
+Example: 
+```bash
+okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du \
+    --node "https://api.drunemeton.okp4.network:443/rpc" \
+    --chain-id okp4-drunemeton-1 \
+    --from issuer-okp4 \
+    --keyring-backend test 
+    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat crime-dataset-governance.nq | base64)\"}}"
+    ```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
 
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
+
+Example:
+Hash: 4192587E13FF1A1530B0FFE88A80EACE4954374AE9A2789462E0372CC49E1A47
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/academy/transaction-explorer-3.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
+</div>  
 
 ## Delete a resource in the Dataverse
 
