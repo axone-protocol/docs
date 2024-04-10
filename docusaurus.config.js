@@ -277,7 +277,7 @@ const config = {
               {
                 label: 'Zealy Program',
                 href: 'https://zealy.io/c/okp4/questboard'
-              }
+              },
               {
                 label: 'Community discussions',
                 href: 'https://github.com/axone-protocol/community'
