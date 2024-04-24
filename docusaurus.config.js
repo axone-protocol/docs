@@ -280,7 +280,7 @@ const config = {
               },
               {
                 label: 'Community discussions',
-                href: 'https://github.com/axone-protocol/community'
+                href: 'https://github.com/axone-protocol/community/discussions'
               }
             ]
           },
