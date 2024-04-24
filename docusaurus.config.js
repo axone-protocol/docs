@@ -208,7 +208,7 @@ const config = {
             dropdownActiveClassDisabled: true
           },
           {
-            href: 'https://discord.gg/okp4',
+            href: 'https://discord.gg/axone',
             position: 'right',
             className: 'header-discord-link',
             'aria-label': 'Discord'
@@ -260,7 +260,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/okp4'
+                href: 'https://discord.gg/axone'
               },
               {
                 label: 'Twitter',
@@ -277,6 +277,10 @@ const config = {
               {
                 label: 'Zealy Program',
                 href: 'https://zealy.io/c/okp4/questboard'
+              },
+              {
+                label: 'Community discussions',
+                href: 'https://github.com/axone-protocol/community/discussions'
               }
             ]
           },
@@ -285,7 +289,7 @@ const config = {
             items: [
               {
                 label: 'Medium',
-                href: 'https://blog.okp4.network/'
+                href: 'https://blog.axone.xyz/'
               },
               {
                 label: 'Axone.xyz',
