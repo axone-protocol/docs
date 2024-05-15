@@ -28,10 +28,10 @@
     "lint:fix": "stylelint '**/*.scss' --fix && markdownlint --fix README.md 'docs/**/*.md'"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.2.0",
-    "@docusaurus/plugin-client-redirects": "^3.2.0",
-    "@docusaurus/preset-classic": "^3.2.0",
-    "@docusaurus/theme-mermaid": "^3.2.0",
+    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/plugin-client-redirects": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.3.2",
+    "@docusaurus/theme-mermaid": "^3.3.2",
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
     "@mdx-js/react": "^3.0.1",
     "clsx": "^2.1.0",
