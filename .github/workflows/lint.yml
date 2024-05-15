@@ -131,7 +131,7 @@ jobs:
           device: all
           urls: >-
             http://localhost:${{ env.WEB_PORT }}/
-          gitHubAccessToken: ${{ secrets.OKP4_TOKEN }}
+          gitHubAccessToken: ${{ secrets.OPS_TOKEN }}
 
       - name: Upload lighthouse reports
         uses: actions/upload-artifact@v4
@@ -154,7 +154,7 @@ jobs:
       - name: Check for new dependencies
         uses: hiwelo/new-dependencies-action@1.0.1
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
 
   lint-branch-name:
     runs-on: ubuntu-22.04
@@ -186,10 +186,10 @@ jobs:
         if: ${{ failure() }}
         uses: codelytv/no-pull-requests@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.OPS_TOKEN }}
           message: 🙅 Closing the PR because it does not respect naming conventions. Edit the branch name and submit a new PR.
     env:
-      GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.OPS_TOKEN }}
 
   lint-scss:
     runs-on: ubuntu-22.04
