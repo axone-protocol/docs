@@ -17,13 +17,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v6
         with:
-          gpg_private_key: ${{ secrets.OKP4_BOT_GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.OKP4_BOT_GPG_PASSPHRASE }}
+          gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.BOT_GPG_PASSPHRASE }}
           git_config_global: true
           git_user_signingkey: true
           git_commit_gpgsign: true
@@ -48,12 +48,12 @@ jobs:
             --output screenshot.webp \
             --overwrite \
             --dark-mode \
-            https://docs.okp4.network/
+            https://docs.axone.xyz/
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
-          commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
-          commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          commit_user_name: ${{ vars.BOT_GIT_COMMITTER_NAME }}
+          commit_user_email: ${{ vars.BOT_GIT_COMMITTER_EMAIL }}
+          commit_author: ${{ vars.BOT_GIT_AUTHOR_NAME }} <${{ vars.BOT_GIT_AUTHOR_EMAIL }}>
           commit_message: "docs: update website screenshot"

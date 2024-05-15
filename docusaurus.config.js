@@ -62,7 +62,7 @@ function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage
 const config = {
   title: 'Axone Docs',
   tagline: 'Unleash the Knowledge Economy 🚀',
-  url: 'https://okp4.github.io',
+  url: 'https://docs.axone.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -86,7 +86,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: ({ docPath }) => `https://github.com/okp4/docs/edit/main/docs/${docPath}`,
+          editUrl: ({ docPath }) => `https://github.com/axone-protocol/docs/edit/main/docs/${docPath}`,
           remarkPlugins: [
             readingTimeMDXPlugin,
             remarkMath,
@@ -214,7 +214,7 @@ const config = {
             'aria-label': 'Discord'
           },
           {
-            href: 'https://github.com/okp4',
+            href: 'https://github.com/axone-protocol',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository'
@@ -268,7 +268,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/okp4'
+                href: 'https://github.com/axone-protocol'
               },
               {
                 label: 'Telegram',
