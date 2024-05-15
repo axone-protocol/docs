@@ -34,6 +34,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.OKP4_TOKEN }}
+          github_token: ${{ secrets.OPS_TOKEN }}
           publish_dir: ./build
-          cname: docs.okp4.network
+          cname: docs.axone.xyz
