@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_axone_docs=self.webpackChunk_axone_docs||[]).push([[88585],{55320:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"ontology"}')}}]);

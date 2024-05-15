@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_axone_docs=self.webpackChunk_axone_docs||[]).push([[48162],{3198:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"contracts"}')}}]);
