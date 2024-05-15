@@ -123,7 +123,7 @@ jobs:
           mkdir -p ${{ github.workspace }}/tmp/artifacts
 
       - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@v10.0.0
+        uses: foo-software/lighthouse-check-action@v12.0.1
         with:
           prCommentEnabled: true
           maxRetries: 2
