@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_okp4_docs=self.webpackChunk_okp4_docs||[]).push([[67624],{82152:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"ontology"}')}}]);
