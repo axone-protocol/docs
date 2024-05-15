@@ -48,7 +48,7 @@ jobs:
             --output screenshot.webp \
             --overwrite \
             --dark-mode \
-            https://docs.okp4.network/
+            https://docs.axone.xyz/
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
