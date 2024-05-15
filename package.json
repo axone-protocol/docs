@@ -1,14 +1,14 @@
 {
-  "name": "@okp4/docs",
+  "name": "@axone/docs",
   "version": "1.0.0",
   "private": false,
-  "repository": "git@github.com:okp4/docs.git",
+  "repository": "git@github.com:axone-protocol/docs.git",
   "license": "BSD-3-Clause",
   "description": "OKP4 procotol documentation",
-  "homepage": "https://okp4.github.io/docs",
+  "homepage": "https://axone-protocol.github.io/docs",
   "author": {
-    "name": "OKP4",
-    "web": "https://okp4.network"
+    "name": "AXONE",
+    "web": "https://axone.xyz"
   },
   "engines": {
     "node": "^18.0",
