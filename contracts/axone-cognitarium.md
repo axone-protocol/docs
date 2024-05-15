@@ -94,10 +94,10 @@ The same RDF triple can be expressed in RDF/XML format (`.rdf.xml` file):
 
 ### Instantiate the Smart Contract
 
-Let's initiate a new instance of Smart Contract and input some RDF triples into it. The `okp4-cognitarium` can be set up in the following manner. Please consult the schema for additional details regarding configuration settings.
+Let's initiate a new instance of Smart Contract and input some RDF triples into it. The `axone-cognitarium` can be set up in the following manner. Please consult the schema for additional details regarding configuration settings.
 
 ```bash
-okp4d tx wasm instantiate $CODE_ID \
+axoned tx wasm instantiate $CODE_ID \
     --from $ADDR \
     --label "my-rdf-storage" \
     --admin $ADMIN_ADDR \
@@ -161,8 +161,8 @@ Let's consider the following example of data in Turtle format, contained within 
 You can insert this data into the `cognitarium` smart contract with the following command:
 
 ```bash
-okp4d tx wasm execute $CONTRACT_ADDR \
-    --from okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
+axoned tx wasm execute $CONTRACT_ADDR \
+    --from axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
     --gas 10000000 \
     "{\"insert_data\":{\"format\": \"turtle\", \"data\": \"$(cat data.ttl | base64 | tr -d '\n\r')\"}}"
 ```
@@ -170,13 +170,13 @@ okp4d tx wasm execute $CONTRACT_ADDR \
 With the transaction hash we can query the number of triples inserted:
 
 ```bash
-okp4d query tx $TX_HASH -ojson |
+axoned query tx $TX_HASH -ojson |
     jq -r '.events[] | select(.type == "wasm") | .attributes[] | select(.key == "triple_count") | .value'
 ```
 
 ### Query RDF triples
 
-Now that we've populated the okp4-cognitarium with several triples, let's explore how to retrieve this data. We can utilize the Select query message for this purpose. If you're familiar with [SPARQL](https://www.w3.org/TR/rdf-sparql-query/), you'll find the process quite intuitive.
+Now that we've populated the axone-cognitarium with several triples, let's explore how to retrieve this data. We can utilize the Select query message for this purpose. If you're familiar with [SPARQL](https://www.w3.org/TR/rdf-sparql-query/), you'll find the process quite intuitive.
 
 A `select` query on a `cognitarium` instance enables you to fetch and filter the data. The `select.query` JSON should contain the following:
 
@@ -242,7 +242,7 @@ WHERE {
 This query can be executed on the cognitarium smart contract using the command below:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     '{"select":{"query":{"prefixes":[],"select":[{"variable":"subject"},{"variable":"predicate"},{"variable":"object"}],"where":[{"simple":{"triple_pattern":{"subject":{"variable":"subject"},"predicate":{"variable":"predicate"},"object":{"variable":"object"}}}}],"limit":null}}}'
 ```
 
@@ -372,7 +372,7 @@ WHERE {
 This query can be executed on the cognitarium smart contract using the command below:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     '{"select":{"query":{"prefixes":[{"foaf":"http://xmlns.com/foaf/0.1/"},{"schema":"http://schema.org/"}],"select":[{"variable":"personName"},{"variable":"jobTitle"}],"where":[{"simple":{"triple_pattern":{"subject":{"variable":"person"},"predicate":{"node":{"named_node":{"full":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}}},"object":{"node":{"named_node":{"prefixed":"foaf:Person"}}}}}},{"simple":{"triple_pattern":{"subject":{"variable":"person"},"predicate":{"node":{"named_node":{"prefixed":"foaf:Name"}}},"object":{"variable":"personName"}}}},{"simple":{"triple_pattern":{"subject":{"variable":"person"},"predicate":{"node":{"named_node":{"prefixed":"schema:jobTitle"}}},"object":{"variable":"jobTitle"}}}},{"simple":{"triple_pattern":{"subject":{"variable":"person"},"predicate":{"node":{"named_node":{"prefixed":"foaf:knows"}}},"object":{"variable":"knownPerson"}}}}],"limit":null}}}'
 ```
 
@@ -876,4 +876,4 @@ Represents a condition in a [WhereClause].
 
 ---
 
-_Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `okp4-cognitarium.json` (`a383ff7b3119361f`)_
+_Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `axone-cognitarium.json` (`ddcfdef446357b86`)_

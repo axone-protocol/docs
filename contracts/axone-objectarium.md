@@ -23,17 +23,17 @@ Features like pinning, unpinning, and discarding objects offer a strategic way t
 
 ## Rationale
 
-In a sense, we can consider blockchains built on the [Cosmos L0](https://docs.cosmos.network/main) layer as decentralized databases, and their nature can be shaped and modeled through the smart contracts or modules. Given this, it provides a great opportunity to address the wide range of data management needs. One such important area is the management of unstructured, immutable data, which is written once but accessed frequently — commonly known as object storage. This is the primary focus of `okp4-objectarium`: a specialized smart contract designed to offer a versatile and efficient approach to handling _on-chain_, _unstructured_, _immutable_ data in a _decentralized_ manner.
+In a sense, we can consider blockchains built on the [Cosmos L0](https://docs.cosmos.network/main) layer as decentralized databases, and their nature can be shaped and modeled through the smart contracts or modules. Given this, it provides a great opportunity to address the wide range of data management needs. One such important area is the management of unstructured, immutable data, which is written once but accessed frequently — commonly known as object storage. This is the primary focus of `axone-objectarium`: a specialized smart contract designed to offer a versatile and efficient approach to handling _on-chain_, _unstructured_, _immutable_ data in a _decentralized_ manner.
 
 ## Terminology
 
 ### Object
 
-In the context of the `okp4-objectarium` smart contract, an `object` refers to a piece of data stored on the blockchain. It can represent various types of information, such as documents, binary files, or any other digital content. Objects are immutable once stored and are identified by their cryptographic hash, which can be generated using algorithms like MD5 or SHA256. This ensures the integrity and security of the stored data, as any modification to the object would result in a different hash value.
+In the context of the `axone-objectarium` smart contract, an `object` refers to a piece of data stored on the blockchain. It can represent various types of information, such as documents, binary files, or any other digital content. Objects are immutable once stored and are identified by their cryptographic hash, which can be generated using algorithms like MD5 or SHA256. This ensures the integrity and security of the stored data, as any modification to the object would result in a different hash value.
 
 ### Bucket
 
-The smart contract is organized around buckets. A bucket represents a logical container within the `okp4-objectarium` smart contract instance that groups related Objects together. It acts as a storage unit for Objects and provides a context for managing and organizing them. Each bucket has a unique name and is associated with a set of configurations and limits that define its behaviour and characteristics.
+The smart contract is organized around buckets. A bucket represents a logical container within the `axone-objectarium` smart contract instance that groups related Objects together. It acts as a storage unit for Objects and provides a context for managing and organizing them. Each bucket has a unique name and is associated with a set of configurations and limits that define its behaviour and characteristics.
 
 ### Pin
 
@@ -43,9 +43,9 @@ Pin refers to a mechanism that allows users to mark or "pin" specific objects wi
 
 The unstructured nature of the data stored in the chain opens up a plethora of possibilities for decentralized applications that require this type of versatile storage.
 
-### In the OKP4 protocol
+### In the AXONE protocol
 
-The primary function of this smart contract within the OKP4 protocol is to enable the persistence of governance rules, which are encoded in Prolog. These programs are stored in an immutable format within the protocol and can be referenced by their unique identifiers in situations where there is a need to refer to these rules.
+The primary function of this smart contract within the AXONE protocol is to enable the persistence of governance rules, which are encoded in Prolog. These programs are stored in an immutable format within the protocol and can be referenced by their unique identifiers in situations where there is a need to refer to these rules.
 
 ### In the wild world
 
@@ -55,10 +55,10 @@ A plethora of possibilities opens up for decentralized applications (dApps) that
 
 ### Instantiation
 
-The `okp4-objectarium` can be instantiated as follows, refer to the schema for more information on configuration, limits and pagination configuration:
+The `axone-objectarium` can be instantiated as follows, refer to the schema for more information on configuration, limits and pagination configuration:
 
 ```bash
-okp4d tx wasm instantiate $CODE_ID \
+axoned tx wasm instantiate $CODE_ID \
     --label "my-storage" \
     --from $ADDR \
     --admin $ADMIN_ADDR \
@@ -71,7 +71,7 @@ okp4d tx wasm instantiate $CODE_ID \
 We can store an object by providing its data in base64 encoded, we can pin the stored object to prevent it from being removed:
 
 ```bash
-okp4d tx wasm execute $CONTRACT_ADDR \
+axoned tx wasm execute $CONTRACT_ADDR \
     --from $ADDR \
     --gas 1000000 \
     "{\"store_object\":{\"data\": \"$(cat my-data | base64)\",\"pin\":true}}"
@@ -82,12 +82,12 @@ The object id is stable as it is a hash, we can't store an object twice.
 With the following commands we can pin and unpin existing objects:
 
 ```bash
-okp4d tx wasm execute $CONTRACT_ADDR \
+axoned tx wasm execute $CONTRACT_ADDR \
     --from $ADDR \
     --gas 1000000 \
     "{\"pin_object\":{\"id\": \"$OBJECT_ID\"}}"
 
-okp4d tx wasm execute $CONTRACT_ADDR \
+axoned tx wasm execute $CONTRACT_ADDR \
     --from $ADDR \
     --gas 1000000 \
     "{\"unpin_object\":{\"id\": \"$OBJECT_ID\"}}"
@@ -96,7 +96,7 @@ okp4d tx wasm execute $CONTRACT_ADDR \
 And if an object is not pinned, or pinned by the sender of transaction, we can remove it:
 
 ```bash
-okp4d tx wasm execute $CONTRACT_ADDR \
+axoned tx wasm execute $CONTRACT_ADDR \
     --from $ADDR \
     --gas 1000000 \
     "{\"forget_object\":{\"id\": \"$OBJECT_ID\"}}"
@@ -107,35 +107,35 @@ okp4d tx wasm execute $CONTRACT_ADDR \
 Query an object by its id:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     "{\"object\": {\"id\": \"$OBJECT_ID\"}}"
 ```
 
 Or its data:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     "{\"object_data\": {\"id\": \"$OBJECT_ID\"}}"
 ```
 
 We can also list the objects, eventually filtering on the object owner:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
-    "{\"objects\": {\"address\": \"okp41p8u47en82gmzfm259y6z93r9qe63l25dfwwng6\"}}"
+axoned query wasm contract-state smart $CONTRACT_ADDR \
+    "{\"objects\": {\"address\": \"axone1p8u47en82gmzfm259y6z93r9qe63l25d858vqu\"}}"
 ```
 
 And navigate in a cursor based pagination:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     "{\"objects\": {\"first\": 5, \"after\": \"23Y5t5DBe7DkPwfJo3Sd26Y8Z9epmtpA1FTpdG7DiG6MD8vPRTzzbQ9TccmyoBcePkPK6atUiqcAzJVo3TfYNBGY\"}}"
 ```
 
 We can also query object pins with the same cursor based pagination:
 
 ```bash
-okp4d query wasm contract-state smart $CONTRACT_ADDR \
+axoned query wasm contract-state smart $CONTRACT_ADDR \
     "{\"object_pins\": {\"id\": \"$OBJECT_ID\", \"first\": 5, \"after\": \"23Y5t5DBe7DkPwfJo3Sd26Y8Z9epmtpA1FTpdG7DiG6MD8vPRTzzbQ9TccmyoBcePkPK6atUiqcAzJVo3TfYNBGY\"}}"
 ```
 
@@ -511,4 +511,4 @@ A string containing a 128-bit integer in decimal representation.
 
 ---
 
-_Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `okp4-objectarium.json` (`dbf16753cc3b0930`)_
+_Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `axone-objectarium.json` (`85dc5626b1a36ca5`)_

@@ -41,7 +41,7 @@ Claims are submitted in the form of [Verifiable Presentations (VPs)](https://www
 
 ## Dependencies
 
-Given its role and status, this smart contract serves as the primary access point for the OKP4 protocol to manage all on-chain stored resources. To fulfill its tasks, the smart contract relies on other smart contracts within the OKP4 ecosystem. Notably, it uses the `Cognitarium` smart contract for persisting the Dataverse representation in an ontological form and the `Law Stone` smart contract to establish governance rules.
+Given its role and status, this smart contract serves as the primary access point for the AXONE protocol to manage all on-chain stored resources. To fulfill its tasks, the smart contract relies on other smart contracts within the AXONE ecosystem. Notably, it uses the `Cognitarium` smart contract for persisting the Dataverse representation in an ontological form and the `Law Stone` smart contract to establish governance rules.
 
 ## InstantiateMsg
 
@@ -70,7 +70,7 @@ The SubmitClaims message is a pivotal component in the dataverse, enabling entit
 
 Claims are injected into the dataverse through Verifiable Credentials (VCs).
 
-Primarily, the claims leverage the OKP4 ontology, which facilitates articulating assertions about widely acknowledged resources in the dataverse, including digital services, digital resources, zones, governance, and more.
+Primarily, the claims leverage the AXONE ontology, which facilitates articulating assertions about widely acknowledged resources in the dataverse, including digital services, digital resources, zones, governance, and more.
 
 Additionally, other schemas may also be employed to supplement and enhance the validated knowledge contributed to these resources.
 
@@ -238,5 +238,5 @@ let b = Uint64::from(70u32); assert_eq!(b.u64(), 70); ```
 
 ---
 
-*Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `okp4-dataverse.json` (`a97c971ff24c602b`)*
+*Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `axone-dataverse.json` (`daa1f5839f39568e`)*
 ````
