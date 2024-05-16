@@ -7,7 +7,7 @@ sidebar_position: 8
 
 > **Name**: `credential-orchestration-service-execution-order`
 >
-> **Namespace**: [https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/)
+> **Namespace**: [https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-orchestration-service-execution-order`: [https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/)
+- `credential-orchestration-service-execution-order`: [https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrderCredential](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrderCredential)
+> **IRI**: [credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrderCredential](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrderCredential)
 
 ### Description
 
@@ -37,11 +37,11 @@ These credentials function as directives for orchestrating service execution, ra
 
 #### Has execution order
 >
-> **IRI**: [credential-orchestration-service-execution-order:hasExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/hasExecutionOrder)
+> **IRI**: [credential-orchestration-service-execution-order:hasExecutionOrder](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/hasExecutionOrder)
 >
-> **Domain**:&nbsp;[credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrderCredential](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrderCredential)
+> **Domain**:&nbsp;[credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrderCredential](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrderCredential)
 >
-> **Range**:&nbsp;[credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrder)
+> **Range**:&nbsp;[credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrder](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrder)
 
 This property links an Orchestration Service Execution Order Credential to the specific Orchestration Execution Order it pertains to. It establishes a relationship indicating that the execution of the service, as detailed in the order, is authorized or mandated by the credential.
 
@@ -51,7 +51,7 @@ This schema defines 1 class.
 
 ### Orchestration service execution order
 >
-> **IRI**: [credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrder)
+> **IRI**: [credential-orchestration-service-execution-order:OrchestrationServiceExecutionOrder](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/OrchestrationServiceExecutionOrder)
 
 #### Description
 
@@ -61,7 +61,7 @@ Formal representation of the order in which an orchestration should be executed.
 
 ##### In zone
 >
-> **IRI**: [credential-orchestration-service-execution-order:inZone](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/inZone)
+> **IRI**: [credential-orchestration-service-execution-order:inZone](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/inZone)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -71,7 +71,7 @@ The zone must point to a valid zone identifier and is used to determine the gove
 
 ##### Placed on
 >
-> **IRI**: [credential-orchestration-service-execution-order:placedOn](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/placedOn)
+> **IRI**: [credential-orchestration-service-execution-order:placedOn](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/placedOn)
 >
 > **Range**:&nbsp;[schema:Date](http://schema.org/Date), [schema:DateTime](http://schema.org/DateTime)
 
@@ -79,7 +79,7 @@ The date and time when the order was placed.
 
 ##### With parameter
 >
-> **IRI**: [credential-orchestration-service-execution-order:withParameter](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution-order/withParameter)
+> **IRI**: [credential-orchestration-service-execution-order:withParameter](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution-order/withParameter)
 >
 > **Range**:&nbsp;[schema:PropertyValue](http://schema.org/PropertyValue)
 

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 > **Name**: `credential-digital-resource-publication`
 >
-> **Namespace**: [https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/)
+> **Namespace**: [https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-digital-resource-publication`: [https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/)
+- `credential-digital-resource-publication`: [https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
+> **IRI**: [credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
 
 ### Description
 
@@ -33,9 +33,9 @@ Digital Resource Publication Credentials confirm the publication and availabilit
 
 #### Has identifier
 >
-> **IRI**: [credential-digital-resource-publication:hasIdentifier](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/hasIdentifier)
+> **IRI**: [credential-digital-resource-publication:hasIdentifier](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/hasIdentifier)
 >
-> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
+> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -43,9 +43,9 @@ The URI that identifies the digital asset within the scope of a digital service 
 
 #### Served by
 >
-> **IRI**: [credential-digital-resource-publication:servedBy](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/servedBy)
+> **IRI**: [credential-digital-resource-publication:servedBy](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/servedBy)
 >
-> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
+> **Domain**:&nbsp;[credential-digital-resource-publication:DigitalResourcePublicationCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/publication/DigitalResourcePublicationCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 

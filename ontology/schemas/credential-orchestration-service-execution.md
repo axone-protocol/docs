@@ -7,7 +7,7 @@ sidebar_position: 7
 
 > **Name**: `credential-orchestration-service-execution`
 >
-> **Namespace**: [https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/)
+> **Namespace**: [https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-orchestration-service-execution`: [https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/)
+- `credential-orchestration-service-execution`: [https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
+> **IRI**: [credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
 
 ### Description
 
@@ -37,11 +37,11 @@ This credential is fundamental in providing a formal record of the execution of 
 
 #### Has execution result
 >
-> **IRI**: [credential-orchestration-service-execution:hasExecution](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecution)
+> **IRI**: [credential-orchestration-service-execution:hasExecution](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasExecution)
 >
-> **Domain**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
+> **Domain**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
 >
-> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
+> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
 
 The execution of the Orchestration Service.
 
@@ -51,7 +51,7 @@ This schema defines 1 class.
 
 ### Orchestration service execution
 >
-> **IRI**: [credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
+> **IRI**: [credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
 
 #### Description
 
@@ -61,15 +61,15 @@ Captures the details of the progress and outcomes of the execution of an Orchest
 
 ##### Execution of
 >
-> **IRI**: [credential-orchestration-service-execution:executionOf](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/executionOf)
+> **IRI**: [credential-orchestration-service-execution:executionOf](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/executionOf)
 >
-> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionOrder)
+> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionOrder](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionOrder)
 
 This relationship is pivotal for associating the formal execution request with the corresponding credential, providing the necessary authorization and detailed directives for service execution. This ensures a verifiable and formalized process for initiating and tracking the execution of orchestration services.
 
 ##### Has consumed resource
 >
-> **IRI**: [credential-orchestration-service-execution:hasConsumedResource](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasConsumedResource)
+> **IRI**: [credential-orchestration-service-execution:hasConsumedResource](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasConsumedResource)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -79,7 +79,7 @@ Multiple instances of `hasConsumedResource` can represent various resources cons
 
 ##### Has execution evidence
 >
-> **IRI**: [credential-orchestration-service-execution:hasExecutionEvidence](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionEvidence)
+> **IRI**: [credential-orchestration-service-execution:hasExecutionEvidence](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionEvidence)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -89,15 +89,15 @@ The evidence resource can be a URI pointing to a secure, immutable and verifiabl
 
 ##### Has execution status
 >
-> **IRI**: [credential-orchestration-service-execution:hasExecutionStatus](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionStatus)
+> **IRI**: [credential-orchestration-service-execution:hasExecutionStatus](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionStatus)
 >
-> **Range**:&nbsp;[ns1:digital-service-execution-status](https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status)
+> **Range**:&nbsp;[ns1:digital-service-execution-status](https://w3id.org/axone/ontology/v3/thesaurus/digital-service-execution-status)
 
 Indicates the status of the service execution.
 
 ##### Has execution time
 >
-> **IRI**: [credential-orchestration-service-execution:hasExecutionTime](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionTime)
+> **IRI**: [credential-orchestration-service-execution:hasExecutionTime](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasExecutionTime)
 >
 > **Range**:&nbsp;[schema:DateTime](http://schema.org/DateTime)
 
@@ -105,7 +105,7 @@ The time and date when the Digital Service was executed.
 
 ##### Has produced resource
 >
-> **IRI**: [credential-orchestration-service-execution:hasProducedResource](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/hasProducedResource)
+> **IRI**: [credential-orchestration-service-execution:hasProducedResource](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/hasProducedResource)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -113,9 +113,9 @@ Specify a resource produced during this Orchestration Service Execution, if any.
 
 ##### Part of execution
 >
-> **IRI**: [credential-orchestration-service-execution:partOfExecution](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/partOfExecution)
+> **IRI**: [credential-orchestration-service-execution:partOfExecution](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/partOfExecution)
 >
-> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/okp4/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
+> **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/axone/ontology/v3/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
 
 Links an Orchestration Service Execution to its parent Orchestration Service Execution, if any.
 
