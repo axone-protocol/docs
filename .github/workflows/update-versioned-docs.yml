@@ -14,7 +14,7 @@ on:
         description: "Set the repository that docs has been updated (axone-protocol/contracts | axone-protocol/axoned)"
         required: true
       section:
-        description: "Which section will be update (contracts | modules | commands)"
+        description: "Which section will be update (contracts | modules | commands | predicates)"
         required: true
       docs_directory:
         description: "On which directory documentation is located (docs/* | docs/proto/* | docs/command/*)"
