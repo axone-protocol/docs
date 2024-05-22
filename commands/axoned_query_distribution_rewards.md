@@ -1,19 +1,19 @@
 ## axoned query distribution rewards
 
-Query all distribution delegator rewards or rewards from a particular validator
+Query all distribution delegator rewards
 
 ### Synopsis
 
-Query all rewards earned by a delegator, optionally restrict to rewards from a single validator.
+Query all rewards earned by a delegator
 
 ```
-axoned query distribution rewards [delegator-addr] [validator-addr] [flags]
+axoned query distribution rewards [delegator-addr] [flags]
 ```
 
 ### Examples
 
 ```
-$ axoned query distribution rewards [delegator-address] [validator-address]
+$ axoned query distribution rewards [delegator-address]
 ```
 
 ### Options

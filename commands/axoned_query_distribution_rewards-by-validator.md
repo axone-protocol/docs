@@ -1,9 +1,15 @@
-## axoned query mint annual-provisions
+## axoned query distribution rewards-by-validator
 
-Execute the AnnualProvisions RPC method
+Query all distribution delegator from a particular validator
 
 ```
-axoned query mint annual-provisions [flags]
+axoned query distribution rewards-by-validator [delegator-addr] [validator-addr] [flags]
+```
+
+### Examples
+
+```
+$ axoned query distribution rewards [delegator-address] [validator-address]
 ```
 
 ### Options
@@ -12,7 +18,7 @@ axoned query mint annual-provisions [flags]
       --grpc-addr string   the gRPC endpoint to use for this chain
       --grpc-insecure      allow gRPC over insecure channels, if not the server must use TLS
       --height int         Use a specific height to query state at (this can error if the node is pruning state)
-  -h, --help               help for annual-provisions
+  -h, --help               help for rewards-by-validator
       --no-indent          Do not indent JSON output
       --node string        <host>:<port> to CometBFT RPC interface for this chain (default "tcp://localhost:26657")
   -o, --output string      Output format (text|json) (default "text")
@@ -20,4 +26,4 @@ axoned query mint annual-provisions [flags]
 
 ### SEE ALSO
 
-* [axoned query mint](axoned_query_mint.md)	 - Querying commands for the mint module
+* [axoned query distribution](axoned_query_distribution.md)	 - Querying commands for the distribution module
