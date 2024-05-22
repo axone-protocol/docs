@@ -1,0 +1,12 @@
+reviews:
+  path_filters:
+    - "!modules/**/*.md"
+    - "!modules_versioned_docs/**/*.md"
+    - "!predicates/**/*.md"
+    - "!predicates_versioned_docs/**/*.md"
+    - "!commands/**/*.md"
+    - "!commands_versioned_docs/**/*.md"
+    - "!contracts/**/*.md"
+    - "!contracts_versioned_docs/**/*.md"
+    - "!ontology/**/*.md"
+    - "!ontology_versioned_docs/**/*.md"
