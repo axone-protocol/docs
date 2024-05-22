@@ -1,8 +1,8 @@
 name: Update versioned docs
 
 concurrency:
-  group: update-docs-${{ github.ref }}
-  cancel-in-progress: false
+  group: update-docs-${{ github.ref }}-${{ github.event.inputs.section }}
+  cancel-in-progress: ${{ github.event.inputs.draft == 'true' }}
 
 on:
   workflow_dispatch:
