@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="/js/matomo.js"></script>
 <script src="/js/redirect.js"></script><link rel="stylesheet" href="/fr/assets/css/styles.b020a0e0.css">
-<script src="/fr/assets/js/runtime~main.4e2a3ca8.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.ca2a82f5.js" defer="defer"></script>
 <script src="/fr/assets/js/main.ba308d11.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -52,7 +52,7 @@
 purposes and obtaining the stream&#x27;s properties.</p>
 <p>Assuming the existence of a CosmWasm smart contract configured to store resources, we construct a URI to specifically
 identify the smart contract and pinpoint the resource we aim to retrieve via a query message.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the CosmWasm smart contract &quot;axone15ekvz3qdter33mdnk98v8whv5qdr53yusksnfgc08xd26fpdn3tsrhsdrk&quot; and the behavior:</li>
 </ul>
@@ -74,7 +74,7 @@ identify the smart contract and pinpoint the resource we aim to retrieve via a q
 <p>This scenario shows a more complex example of how to open an existing resource stored in a CosmWasm smart contract
 and read its content.</p>
 <p>The resource is opened for reading, and the content is read into a list of characters. Finally, the stream is closed.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the CosmWasm smart contract &quot;axone15ekvz3qdter33mdnk98v8whv5qdr53yusksnfgc08xd26fpdn3tsrhsdrk&quot; and the behavior:</li>
 </ul>
@@ -95,7 +95,7 @@ and read its content.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="open-an-existing-resource-and-read-its-content-base64-encoded">Open an existing resource and read its content (base64-encoded)<a class="hash-link" aria-label="Lien direct vers Open an existing resource and read its content (base64-encoded)" title="Lien direct vers Open an existing resource and read its content (base64-encoded)" href="/fr/predicates/next/open_4#open-an-existing-resource-and-read-its-content-base64-encoded">​</a></h3>
 <p>This scenario is a variation of the previous one. The difference is that the smart contract returns a base64-encoded
 response. For this reason, we set the <code>base64Decode</code> parameter to <code>true</code> in the query (the default value is <code>false</code>).</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the CosmWasm smart contract &quot;axone15ekvz3qdter33mdnk98v8whv5qdr53yusksnfgc08xd26fpdn3tsrhsdrk&quot; and the behavior:</li>
 </ul>
@@ -115,7 +115,7 @@ response. For this reason, we set the <code>base64Decode</code> parameter to <co
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">height</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">42</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">gas_used</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2224</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">answer</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">has_more</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean important" style="color:#36acaa">false</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">variables</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;Chars&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">results</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">substitutions</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">variable</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Chars</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token key atrule" style="color:#00a4db">expression</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;&#x27;Hello, World!&#x27;&quot;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-to-open-a-non-existing-resource">Try to open a non-existing resource<a class="hash-link" aria-label="Lien direct vers Try to open a non-existing resource" title="Lien direct vers Try to open a non-existing resource" href="/fr/predicates/next/open_4#try-to-open-a-non-existing-resource">​</a></h3>
 <p>This scenario demonstrates the system&#x27;s response to trying to open a non-existing resource.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -128,7 +128,7 @@ response. For this reason, we set the <code>base64Decode</code> parameter to <co
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-to-open-a-resource-for-writing">Try to open a resource for writing<a class="hash-link" aria-label="Lien direct vers Try to open a resource for writing" title="Lien direct vers Try to open a resource for writing" href="/fr/predicates/next/open_4#try-to-open-a-resource-for-writing">​</a></h3>
 <p>This scenario demonstrates the system&#x27;s response to opening a resource for writing, but the resource does not allow
 writing. This is the case for resources hosted in smart contracts which are read-only.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -141,7 +141,7 @@ writing. This is the case for resources hosted in smart contracts which are read
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-to-open-a-resource-for-appending">Try to open a resource for appending<a class="hash-link" aria-label="Lien direct vers Try to open a resource for appending" title="Lien direct vers Try to open a resource for appending" href="/fr/predicates/next/open_4#try-to-open-a-resource-for-appending">​</a></h3>
 <p>This scenario demonstrates the system&#x27;s response to opening a resource for appending, but the resource does not allow
 appending. This is the case for resources hosted in smart contracts which are read-only.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -153,7 +153,7 @@ appending. This is the case for resources hosted in smart contracts which are re
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">height</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">42</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">gas_used</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2222</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">answer</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">has_more</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean important" style="color:#36acaa">false</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">variables</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;Stream&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">results</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">error</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;error(permission_error(input,stream,cosmwasm:storage:axone15ekvz3qdter33mdnk98v8whv5qdr53yusksnfgc08xd26fpdn3tsrhsdrk?query=foo),open/4)&quot;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pass-incorrect-options-to-open4">Pass incorrect options to open/4<a class="hash-link" aria-label="Lien direct vers Pass incorrect options to open/4" title="Lien direct vers Pass incorrect options to open/4" href="/fr/predicates/next/open_4#pass-incorrect-options-to-open4">​</a></h3>
 <p>This scenario demonstrates the system&#x27;s response to opening a resource with incorrect options.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>

@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="/js/matomo.js"></script>
 <script src="/js/redirect.js"></script><link rel="stylesheet" href="/assets/css/styles.29d28d6c.css">
-<script src="/assets/js/runtime~main.055d4868.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.33067205.js" defer="defer"></script>
 <script src="/assets/js/main.dc089cbb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -35,7 +35,7 @@
 An <code>Address</code> is a compound term <code>-</code> with two arguments, the first being the human-readable part (Hrp) and the second
 being the numeric address as a list of integers ranging from 0 to 255 representing the bytes of the address in
 base 64.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -49,7 +49,7 @@ base 64.</p>
 <p>This scenario illustrates how to decode a bech32 address into the human-readable part (Hrp) and the numeric address.
 The process extracts these components from a given bech32 address string, showcasing the ability to parse and
 separate the address into its constituent parts.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -62,7 +62,7 @@ separate the address into its constituent parts.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="extract-address-only-for-axone-bech32-address">Extract Address only for AXONE bech32 address<a class="hash-link" aria-label="Direct link to Extract Address only for AXONE bech32 address" title="Direct link to Extract Address only for AXONE bech32 address" href="/predicates/next/bech32_address_2#extract-address-only-for-axone-bech32-address">​</a></h3>
 <p>This scenario demonstrates how to extract the address from a bech32 address string, specifically for a known
 protocol, in this case, the axone protocol.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -74,7 +74,7 @@ protocol, in this case, the axone protocol.</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">height</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">42</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">gas_used</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2222</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">answer</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">has_more</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean important" style="color:#36acaa">false</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">variables</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;Address&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">results</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">substitutions</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">variable</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Address</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token key atrule" style="color:#00a4db">expression</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;[163,167,23,244,162,175,49,162,170,15,181,141,68,134,141,168,18,56,247,30]&quot;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="encode-address-pair-into-bech32-address">Encode Address Pair into Bech32 Address<a class="hash-link" aria-label="Direct link to Encode Address Pair into Bech32 Address" title="Direct link to Encode Address Pair into Bech32 Address" href="/predicates/next/bech32_address_2#encode-address-pair-into-bech32-address">​</a></h3>
 <p>This scenario demonstrates how to encode an <code>Address</code> pair representation into a bech32 address string.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -86,7 +86,7 @@ protocol, in this case, the axone protocol.</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">height</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">42</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">gas_used</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2222</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">answer</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">has_more</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean important" style="color:#36acaa">false</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">variables</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;Bech32&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">results</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">substitutions</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">variable</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Bech32</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token key atrule" style="color:#00a4db">expression</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;axone15wn30a9z4uc692s0kkx5fp5d4qfr3ac77gvjg4&quot;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="check-if-a-bech32-address-is-part-of-the-axone-protocol">Check if a bech32 address is part of the axone protocol<a class="hash-link" aria-label="Direct link to Check if a bech32 address is part of the axone protocol" title="Direct link to Check if a bech32 address is part of the axone protocol" href="/predicates/next/bech32_address_2#check-if-a-bech32-address-is-part-of-the-axone-protocol">​</a></h3>
 <p>This scenario shows how to check if a bech32 address is part of the axone protocol.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the program:</li>
 </ul>
@@ -104,7 +104,7 @@ protocol, in this case, the axone protocol.</p>
 <p>This scenario demonstrates the system&#x27;s response to an incorrect bech32 address format.
 In this case, the system generates a <code>domain_error</code>, indicating that the provided argument does not meet the
 expected format for a bech32 address.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
@@ -118,7 +118,7 @@ expected format for a bech32 address.</p>
 <p>This scenario demonstrates the system&#x27;s response to an incorrect bech32 address type.
 In this case, the system generates a <code>type_error</code>, indicating that the provided argument does not meet the
 expected type.</p>
-<p>Here&#x27;s the steps of the scenario:</p>
+<p>Here are the steps of the scenario:</p>
 <ul>
 <li><strong>Given</strong> the query:</li>
 </ul>
