@@ -60,9 +60,9 @@ function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Axone Docs',
+  title: 'Axone Docs Staging',
   tagline: 'Unleash the Knowledge Economy 🚀',
-  url: 'https://docs.axone.xyz',
+  url: 'https://staging.docs.axone.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
