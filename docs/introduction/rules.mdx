@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-import Quiz from 'react-quiz-component';
-import * as quiz from './rules-quiz.json';
+import Quiz from 'react-quiz-component'
+import * as quiz from './rules-quiz.json'
 
 # Define any rule
 
@@ -77,14 +77,16 @@ In the Axone ecosystem, where decentralization is a crucial principle, Prolog is
 
 Here are some fundamental concepts and basics of the Prolog language:
 
-- <u>Declarative Style</u>:
-Prolog is a declarative language, meaning that you specify what you want to achieve rather than how to achieve it. Programs in Prolog describe relationships and rules rather than a sequence of steps.
+- <u>Declarative Style</u>: Prolog is a declarative language, meaning that you specify what you want
+  to achieve rather than how to achieve it. Programs in Prolog describe relationships and rules
+  rather than a sequence of steps.
 
-- <u>Logic Programming</u>:
-Prolog is a logic programming language. It is based on the principles of first-order logic, where statements are represented as logical predicates.
+- <u>Logic Programming</u>: Prolog is a logic programming language. It is based on the principles of
+  first-order logic, where statements are represented as logical predicates.
 
-- <u>Facts and Rules</u>:
-Prolog programs consist of facts and rules. Facts are statements about the world, and rules define relationships and conditions. These are the building blocks for creating a knowledge base.
+- <u>Facts and Rules</u>: Prolog programs consist of facts and rules. Facts are statements about the
+  world, and rules define relationships and conditions. These are the building blocks for creating a
+  knowledge base.
 
 ```prolog
 % Fact
@@ -92,12 +94,12 @@ Prolog programs consist of facts and rules. Facts are statements about the world
 likes(john, pizza).
 
 % Rule
-% X is hungry IF X likes pizza. 
+% X is hungry IF X likes pizza.
 hungry(X) :- likes(X, pizza).
 ```
 
-- <u>Predicates and Clauses</u>:
-In Prolog, statements are expressed as predicates. Predicates consist of a function (name) and arguments. Clauses are the combination of facts and rules.
+- <u>Predicates and Clauses</u>: In Prolog, statements are expressed as predicates. Predicates
+  consist of a function (name) and arguments. Clauses are the combination of facts and rules.
 
 ```prolog
 % Predicate
@@ -110,8 +112,8 @@ father(john, jim).
 sibling(X, Y) :- father(Z, X), father(Z, Y), X \= Y.
 ```
 
-- <u>Variables</u>:
-Prolog uses variables to represent unknown values. Variables are denoted with a capital letter or an underscore.
+- <u>Variables</u>: Prolog uses variables to represent unknown values. Variables are denoted with a
+  capital letter or an underscore.
 
 ```prolog
 % Variable
@@ -119,8 +121,8 @@ Prolog uses variables to represent unknown values. Variables are denoted with a 
 likes(john, X).
 ```
 
-- <u>Queries</u>:
-Prolog is interactive, and users can query the knowledge base. The system will attempt to find values for variables that satisfy the given conditions.
+- <u>Queries</u>: Prolog is interactive, and users can query the knowledge base. The system will
+  attempt to find values for variables that satisfy the given conditions.
 
 ```prolog
 % Query
@@ -128,8 +130,8 @@ Prolog is interactive, and users can query the knowledge base. The system will a
 ?- likes(john, What).
 ```
 
-- <u>Backtracking</u>:
-Prolog uses a backtracking mechanism to explore alternative solutions. If a query fails, Prolog will backtrack and explore other possibilities.
+- <u>Backtracking</u>: Prolog uses a backtracking mechanism to explore alternative solutions. If a
+  query fails, Prolog will backtrack and explore other possibilities.
 
 ```prolog
 % Backtracking example
@@ -139,12 +141,12 @@ parent(john, ann).
 parent(jim, tom).
 
 % Query: Who is Tom's parent?
-?- parent(X, tom). 
+?- parent(X, tom).
 % This will return X = jim, and upon backtracking, X = john.
 ```
 
-- <u>Recursion</u>:
-Prolog supports recursion, allowing functions to call themselves. Recursive structures are common in Prolog for expressing relationships that involve repetition.
+- <u>Recursion</u>: Prolog supports recursion, allowing functions to call themselves. Recursive
+  structures are common in Prolog for expressing relationships that involve repetition.
 
 ```prolog
 % Recursive rule for factorial
@@ -152,8 +154,8 @@ factorial(0, 1):-!.
 factorial(N, Result) :- N > 0, Prev is N - 1, factorial(Prev, PrevResult), Result is N * PrevResult.
 ```
 
-- <u>Cut Operator (!)</u>:
-The cut operator controls backtracking. It prunes the search space and commits Prolog to the choices made.
+- <u>Cut Operator (!)</u>: The cut operator controls backtracking. It prunes the search space and
+  commits Prolog to the choices made.
 
 ```prolog
 % Cut operator example
@@ -196,7 +198,7 @@ Given the interconnected nature of resources and their rules, Axone acknowledges
 
 **6. Transparency and Auditing**
 
-Axone places a premium on transparency in resource governance. Resource consents are designed to be transparent and auditable, allowing users and stakeholders to understand how each resource is governed.  This transparency fosters trust and contributes to the overall security and accountability within the Axone ecosystem.
+Axone places a premium on transparency in resource governance. Resource consents are designed to be transparent and auditable, allowing users and stakeholders to understand how each resource is governed. This transparency fosters trust and contributes to the overall security and accountability within the Axone ecosystem.
 
 **7. Let's practice**
 
@@ -248,4 +250,4 @@ Note: The Axone SDK contains templates of governance rules that you can use and 
 
 As we delve deeper into the Axone Academy, understanding the intricacies of resource rules becomes paramount. These rules serve as the backbone of the protocol, ensuring that off-chain resources are governed with precision, flexibility, and transparency. Join us as we unravel the complexities of resource rule management within the dynamic landscape of Axone.
 
-<Quiz quiz={quiz}/>
+<Quiz quiz={quiz} />

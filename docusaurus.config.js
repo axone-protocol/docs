@@ -86,7 +86,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: ({ docPath }) => `https://github.com/axone-protocol/docs/edit/main/docs/${docPath}`,
+          editUrl: ({ docPath }) =>
+            `https://github.com/axone-protocol/docs/edit/main/docs/${docPath}`,
           remarkPlugins: [
             readingTimeMDXPlugin,
             remarkMath,
@@ -129,47 +130,6 @@ const config = {
           srcDark: 'img/logo-axone-light.webp'
         },
         items: [
-          {
-            to: '/whitepaper/abstract',
-            position: 'left',
-            label: 'Whitepaper',
-            activeBasePath: '/whitepaper'
-          },
-          {
-            to: '/academy/overview',
-            position: 'left',
-            label: 'Academy',
-            activeBasePath: '/academy'
-          },
-          {
-            to: '/nodes/introduction',
-            position: 'left',
-            label: 'Nodes & Validators',
-            activeBasePath: '/nodes'
-          },
-          {
-            to: '/technical-documentation/overview',
-            position: 'left',
-            label: 'Technical documentation',
-            activeBasePath: '/technical-documentation'
-          },
-          {
-            to: '/tutorials/overview',
-            position: 'left',
-            label: 'Tutorials',
-            activeBasePath: '/tutorials'
-          },
-          {
-            to: '/faq',
-            position: 'left',
-            label: 'FAQ',
-            activeBasePath: '/faq'
-          },
-          {
-            href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta',
-            position: 'left',
-            label: 'Axone GPT'
-          },
           {
             type: 'docsVersionDropdown',
             position: 'right',
@@ -382,17 +342,6 @@ const config = {
         id: 'commands',
         path: 'commands',
         routeBasePath: 'commands/'
-      }
-    ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            to: '/academy/overview',
-            from: '/academy'
-          }
-        ]
       }
     ]
   ],
