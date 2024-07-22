@@ -4,8 +4,6 @@ sidebar_position: 7
 
 # Protocol concepts
 
-<i>Reading time: {readingTime} min</i>
-
 This section will provide an in-depth analysis of the core principles that form the protocol's foundation and how it presents an innovative solution to sharing digital resources by leveraging these principles. It's important to note that these concepts are often intertwined and mutually reliant to ensure the equilibrium of the protocol.
 We will also begin to address some essential technical components, such as smart contracts. We will delve deeper into these aspects in the second part of the academy.
 

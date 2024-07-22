@@ -2,18 +2,16 @@
 sidebar_position: 1
 ---
 
-import Quiz from 'react-quiz-component';
-import * as quiz from './decentralized-identity-quiz.json';
+import Quiz from 'react-quiz-component'
+import * as quiz from './decentralized-identity-quiz.json'
 
 # Decentralized identity
 
-<i>Reading time: {readingTime} min</i>
+Unlike traditional identity systems, where personal identification information is centralized and often managed by a single entity (such as a company or government), **decentralized identity** enables individuals to control and operate their own identification data. This model, also known as Self-Sovereign Identity (SSI), offers several key advantages.
 
-Unlike traditional identity systems, where personal identification information is centralized and often managed by a single entity (such as a company or government), **decentralized identity** enables individuals to control and operate their own identification data. This model, also known as Self-Sovereign Identity (SSI), offers several key advantages. 
-
-It enhances security and privacy, as data is not stored in a central location vulnerable to attack or abuse. 
-It increases transparency and trust, as users can choose how, when, and with whom to share their information without relying on intermediaries. 
-This reduces the risk of censorship or manipulation by third parties. 
+It enhances security and privacy, as data is not stored in a central location vulnerable to attack or abuse.
+It increases transparency and trust, as users can choose how, when, and with whom to share their information without relying on intermediaries.
+This reduces the risk of censorship or manipulation by third parties.
 
 The importance of decentralized identity lies in its ability to give individuals back the power over their personal information in an increasingly digital world, offering a new approach to identity management that is secure, transparent, and user-centric.
 
@@ -28,53 +26,58 @@ Axone integrates [W3C standards](https://www.w3.org/) for decentralized identity
 
 ## Decentralized identity roles
 
-Decentralized identity allows users to manage their personal information in their own wallet. This data, called **credentials**, is created, issued, and cryptographically signed by an entity called **Issuer** to a **Holder**. The Holder can share this data with a third party, called a Verifier. 
+Decentralized identity allows users to manage their personal information in their own wallet. This data, called **credentials**, is created, issued, and cryptographically signed by an entity called **Issuer** to a **Holder**. The Holder can share this data with a third party, called a Verifier.
 
 ### Issuers
 
-An Issuer is an entity that issues trustworthy data in the form of **Verifiable Credentials**. Issuers can be institutional organizations (government, bank, insurance company, etc.) or any other person or organization (a friend, a local business, a DAO, etc.). The only requirement for an issuer is its ability to certify a fact or characteristic relating to another person. 
+An Issuer is an entity that issues trustworthy data in the form of **Verifiable Credentials**. Issuers can be institutional organizations (government, bank, insurance company, etc.) or any other person or organization (a friend, a local business, a DAO, etc.). The only requirement for an issuer is its ability to certify a fact or characteristic relating to another person.
 
 ### Holders
 
-A Holder can be a person, organization, product, or object possessing a set of attributes certified by an Issuer. This holder can store and manage these attributes in the form of Verifiable Credentials and decide with whom to share this information. 
+A Holder can be a person, organization, product, or object possessing a set of attributes certified by an Issuer. This holder can store and manage these attributes in the form of Verifiable Credentials and decide with whom to share this information.
 
 ### Verifiers
 
 A Verifier is an entity empowered to authenticate the legitimacy and veracity of a Verifiable Credential through a Verifiable Presentation submitted to it. The verifier can confirm that the information presented originates from the correct and authorized Issuer and that the Verifiable Credential has not been altered in any way. Generally, the verifier can also check that the Verifiable Credential has not expired or been revoked.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/decentralized-identity-1.webp" alt="Decentralized Identity tryptic" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/decentralized-identity-1.webp"
+    alt="Decentralized Identity tryptic"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
-**Zero-knowledge proof** (ZKP) technology can be used to share proof of identity or authorization without revealing the complete identity of the holder. 
+**Zero-knowledge proof** (ZKP) technology can be used to share proof of identity or authorization without revealing the complete identity of the holder.
 
-Note that blockchain technologies generally support decentralized identity. Therefore, each data exchange between your wallet and an Issuer or Verifier may involve fees. 
+Note that blockchain technologies generally support decentralized identity. Therefore, each data exchange between your wallet and an Issuer or Verifier may involve fees.
 
 :::tip
 **Note on Blockchain Fees:** The fees associated with blockchain transactions can vary due to several factors, including network congestion and transaction complexity. As these fees are not fixed and can change over time, we recommend consulting the documentation of the relevant blockchain or your wallet provider to get the most current information on transaction fees.
 :::
 
-### Example: apply for a job 
+### Example: apply for a job
 
 **Issuer - University**:
 
-*Role*: Issues digital diplomas.
+_Role_: Issues digital diplomas.
 
-*Action*: A university (Issuer) issues a digital diploma to one of its former students. The university digitally signs the certificate, guaranteeing its authenticity.
+_Action_: A university (Issuer) issues a digital diploma to one of its former students. The university digitally signs the certificate, guaranteeing its authenticity.
 
 **Holder - Graduate**:
 
-*Role*: Receives and holds claims (attestations).
+_Role_: Receives and holds claims (attestations).
 
-*Action*: The graduate (Holder) receives the digital diploma and stores it in their digital wallet. This wallet enables him to manage his digital credentials and attestations securely.
+_Action_: The graduate (Holder) receives the digital diploma and stores it in their digital wallet. This wallet enables him to manage his digital credentials and attestations securely.
 
 **Verifier - Potential Employer**:
 
-*Role*: Verifies claims to confirm their validity.
+_Role_: Verifies claims to confirm their validity.
 
-*Action*: When the graduate applies for a job, the potential employer (Verifier) asks for proof of qualification. The graduate then shares his digital diploma with the employer. The employer can then verify the diploma's authenticity using the university's public key. If the digital signature matches, the employer can be sure that the diploma is genuine and has been issued by the university mentioned.
+_Action_: When the graduate applies for a job, the potential employer (Verifier) asks for proof of qualification. The graduate then shares his digital diploma with the employer. The employer can then verify the diploma's authenticity using the university's public key. If the digital signature matches, the employer can be sure that the diploma is genuine and has been issued by the university mentioned.
 
 **How the process works**:
+
 1. Diploma issuance: The university creates a digital diploma and digitally signs it.
 2. Diploma storage: The graduate receives and securely stores the diploma in their digital wallet.
 3. Sharing and verification: When applying for a job, the graduate shares the diploma with the employer. The employer then verifies the digital signature against the university's public key.
@@ -83,11 +86,11 @@ This scenario illustrates how decentralized identity systems facilitate the secu
 
 ## DID
 
-A **DID**, or **Decentralized Identifier**, is a unique identifier that enables sovereign, verifiable digital identification. Unlike traditional identifiers, such as those provided by online services like user accounts or social security numbers, DIDs are entirely controlled by the individual, organization, or entity they refer to. 
+A **DID**, or **Decentralized Identifier**, is a unique identifier that enables sovereign, verifiable digital identification. Unlike traditional identifiers, such as those provided by online services like user accounts or social security numbers, DIDs are entirely controlled by the individual, organization, or entity they refer to.
 
-A DID applies to anything that has an identity. An entity is something with a distinct and independent existence. It can be a person but also an organization, an animal, an object, and, in the case of the Axone protocol, a dataset or a digital service. 
+A DID applies to anything that has an identity. An entity is something with a distinct and independent existence. It can be a person but also an organization, an animal, an object, and, in the case of the Axone protocol, a dataset or a digital service.
 
-An infinite number of DIDs can be attached to the same identity, which offers several advantages: 
+An infinite number of DIDs can be attached to the same identity, which offers several advantages:
 
 1. **Separation of contexts**: An identity can have several DIDs, each used in a different context (professional, personal, leisure, etc.). This allows the individual or entity to present only the information relevant to each context without exposing the whole identity or other irrelevant information.
 2. **Privacy**: With multiple DIDs, controlling which information is shared with whom is possible. This reduces the risk of profiling or tracking by third parties. Using different DIDs in different contexts makes it more difficult for observers to correlate all actions and interactions to a single identity.
@@ -98,8 +101,12 @@ DIDs are managed by decentralized networks, notably blockchains. This means that
 
 The DID is a [W3C](https://www.w3.org/TR/did-core/) standard designed to be interoperable across different systems and networks, facilitating their use in diverse digital contexts.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/decentralized-identity-2.webp" alt="DID" style={{ maxHeight: "300px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/decentralized-identity-2.webp"
+    alt="DID"
+    style={{ maxHeight: '300px' }}
+  ></img>
 </div>
 
 ### Example: An Autonomous Vehicle as a DID Holder
@@ -107,6 +114,7 @@ The DID is a [W3C](https://www.w3.org/TR/did-core/) standard designed to be inte
 Soon, autonomous vehicles could be equipped with their own decentralized identity (DID). These DIDs enable the car to interact autonomously with various services and infrastructures without human intervention.
 
 **How the process works**:
+
 1. Identity creation: An autonomous vehicle manufacturer generates a DID for each vehicle it produces. This DID serves as a digital identifier for the vehicle.
 2. Autonomous Interactions: The vehicle uses its DID to authenticate itself and communicate with intelligent road infrastructures, recharging services, parking payment systems, etc.
 3. Security and Privacy Management: The DID enables the vehicle to maintain high security and privacy, as it can prove its identity without revealing sensitive information.
@@ -119,31 +127,32 @@ Soon, autonomous vehicles could be equipped with their own decentralized identit
 - Security and reliability: DIDs provide a secure framework for transactions and communications.
 - Traceability and Accountability: Every vehicle interaction can be traced through its DID, offering greater accountability in case of problems.
 
-
 ### DID Document
 
 A **Decentralized Identifier Document** contains key information that enables an entity (individual, organization, or object) to autonomously and securely manage its digital identity. Here are the typical elements found in a DID Document (not exclusive):
 
 1. **DID Identifier**
-This is the entity's unique identifier, typically in the form of a URI (Uniform Resource Identifier).
+   This is the entity's unique identifier, typically in the form of a URI (Uniform Resource Identifier).
 
 Example : "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3"
 
 2. **DID Context**
-It provides information about the DID context or schema, usually by referencing a URL where the DID specification is defined.
+   It provides information about the DID context or schema, usually by referencing a URL where the DID specification is defined.
 
 Example : "@context": "https://www.w3.org/ns/did/v1".
 
 3. **Verification Method**
-A DID document can include specific methods, such as public keys (a kind of digital key), that help verify the identity of the DID holder or authorize interactions with their digital identity. For example, a public key can validate a digital signature by ensuring it corresponds with the holder's private key, which is a unique digital key they possess. These verification methods can vary greatly.
+   A DID document can include specific methods, such as public keys (a kind of digital key), that help verify the identity of the DID holder or authorize interactions with their digital identity. For example, a public key can validate a digital signature by ensuring it corresponds with the holder's private key, which is a unique digital key they possess. These verification methods can vary greatly.
 
 Each Verification Key itself lists:
+
 - An **ID** for the specific key
 - The **controller**: the identifier of the person or company with control over that key
 - The **type of cryptographic key**
 - The verification key material such as **publicKeyMultibase**
 
 Example:
+
 ```json
 {
   "@context": [
@@ -192,31 +201,39 @@ Direct Incorporation of Public Key: In the did:key method, the DID directly enco
 
 A did:key DID looks like this: did:key:z12ab34cd56ef78gh90i...
 
-The limitations of the did:key method are: 
+The limitations of the did:key method are:
+
 - No Dynamic Updates: Since did:key DIDs are static and don't reference an external source for their DID document, they cannot be updated. Any change in the key or other details requires the generation of a new DID.
 - No Privacy Layer: The method exposes the public key openly, which might not be desirable in all scenarios, especially where privacy is a concern.
 
 # Decentralized identity in Axone Protocol
 
-The **[Axone ontology](/academy/part-1/resources#ontology-how-its-represented-semantic-description)** is used to describe the dataverse. In the dataverse, resources are identified by their DID. 
+The **[Axone ontology](/academy/part-1/resources#ontology-how-its-represented-semantic-description)** is used to describe the dataverse. In the dataverse, resources are identified by their DID.
 
 Understanding and distinguishing key roles is essential when claiming a resource in the Axone dataverse. Although these roles are distinct, they can be exercised by the same or different entities. Here's a detailed explanation of each role:
+
 - **Registrant**: This entity initiates the process of declaring the resource on the blockchain. It is also responsible for the financial aspects of the process, including transaction fees. It is important to note that the Declarer can be any entity that is able and willing to declare the resource in the Axone protocol.
 - **Holder**: This role is assigned to the DID of the resource itself. The holder embodies the digital identity of the resource in the dataverse, thus constituting a central point for any interaction or transaction concerning this resource.
 - **Issuer**: The issuer, whose DID is linked to creating the Verifiable Credential, plays a decisive role. It ensures the authenticity and legitimacy of the resource's claim, guaranteeing its official recognition in the protocol.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/decentralized-identity-3.webp" alt="Decentralized Identity and Axone" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/decentralized-identity-3.webp"
+    alt="Decentralized Identity and Axone"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
 In the case of the declaration of a digital resource in the Dataverse, the Provider has three roles at the same time:
+
 - Issuer as he declares the metadata of its resource
 - Holder as he is the owner of the resource
 - Registrant as he declares the verifiable presentations in the Axone Protocol so that it can be used
 
 In the case of a declaration of reputation, the roles are handled by distinct entities:
+
 - The Issuer is a trusted authority
 - The Holder is the Provider subject of the reputation claim
-- The Registrant can be the Provider, the Issuer, or a third-party 
+- The Registrant can be the Provider, the Issuer, or a third-party
 
-<Quiz quiz={quiz}/>
+<Quiz quiz={quiz} />
