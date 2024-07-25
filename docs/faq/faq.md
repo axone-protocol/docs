@@ -6,15 +6,17 @@ sidebar_position: 1
 
 ## What problem is Axone solving?
 
-Today's datasets are stored in silos, their potential and value stay untapped. This situation exists because of a substantial lack of trust and incentives to share data.
+Collaborative AI training is impossible today because of technical complexity, lack of trust and misaligned incentives.
 
-Many companies' products and crypto projects tried to tackle these issues through a similar approach: data marketplaces. But this approach is highly limiting because the exchanged data is accessible to the buyer, resulting in risks, and pricing mechanisms are disconnected from how data is used, which results in poor incentives.
+Right now, there's no infrastructure, centralized or decentralized, to easily share any resource and agree on rules to enable these resources to interact with each other.
 
-Today, there's no infrastructure, centralized or decentralized, to easily share any resource and agree on rules to enable these resources to interact with each other.
+Axone is a layer-1 designed for collaborative AI training, governance, and monetization at scale:
 
-## What solution is Axone providing?
-
-Axone is a Cosmos-based layer-1 for anyone to build applications based on shared data & services. Axone blockchain and no-code interfaces allows individuals and companies to build and join ecosystems where they can share anything (datasets, algorithms, software, computation...), define any rules (business models, workflow management...), and build applications on top of everything shared in the ecosystem. Axone aims to become the IBC-connected hub to value any existing web2 system.
+1. **Optimized for collaboration**: Access new data & resources to build and fine-tune new models, monetize anything, share the value created.
+2. **Simple**: no-code interfaces to build, own, govern AI across heterogeneous systems.
+3. **Agnostic**: any data, model, infra or API can be shared and orchestrated.
+4. **Unstoppable**: the orchestrator doesn’t rely on any trust-third party
+5. **Privacy-preserving**: data can be handled according to any condition
 
 ## What is trust-minimized data sharing?
 
@@ -50,11 +52,6 @@ The absence of a direct link between Zones and resources allows for significant 
 
 In summary, the distinction between Zones and resources enables the Axone ecosystem to be dynamic, scalable, and capable of accommodating a variety of rules and conditions for each Zone, thereby fostering value creation and free interaction among participants and digital resources.
 
-## What is the Dataverse?
-
-The Dataverse is an ever-expanding universe comprised of all the digital resources, such as datasets, and digital services such as infrastructure services, processing services or any other digital service referenced in the Axone Blockchain.
-All resources, services and Zones are found within the same universe, the Dataverse. The on-chain Ontology is the semantic representation of the Dataverse.
-
 ## How does Axone store the resources and services?
 
 As a protocol, Axone doesn't store them. It only references the resource/services where it is (wherever it is) and make it available to the network according to the permissions granted by the provider. It can be stored anywhere, with any kind of storage solution, either centralized or decentralized.
@@ -78,22 +75,6 @@ In Axone, this ontology is used to describe the metadata or characteristics of r
 Dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#ontology)
 
 And deep-dive article [here](https://blog.okp4.network/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
-
-## Who can share and consume these resources?
-
-Anyone can share resources and define associated consent rules. As an open and public protocol, everyone has access to the resources referenced in the protocol and can use them, according to the access rights and conditions defined in the rules of the concerned Zone and resources.
-
-## Is Axone private by design?
-
-No, Axone is agnostic by design. It provides the flexibility for privacy-focused applications to be built on top of it. This means that privacy-enhancing features and services can be implemented within Axone, allowing developers to tailor privacy settings to their specific needs and use cases. It's a versatile foundation that can support a wide range of applications, whether they prioritize privacy or other aspects of data sharing and orchestration.
-
-## Axone + AI?
-
-Axone does indeed have a unique relationship with the field of Artificial Intelligence. Axone's purpose is to provide an on-chain governance layer for off-chain digital resources. AI models are undoubtedly promising digital services and providing a "law framework" or a "framework for intervention" for AI models appears to be an inevitable step in their progress.
-
-Furthermore, to enhance their capabilities, AI models require data and computational power. Axone aims to become the go-to destination for collaboration in the AI field.
-
-Imagine an AI trained, owned and governed by a DAO with governance rules, like data requirements and contribution quantification mechanisms, inscribed on-chain.
 
 ## What is the web2 alternative today?
 
