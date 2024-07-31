@@ -206,10 +206,6 @@ const config = {
                 to: '/technical-documentation/overview'
               },
               {
-                label: 'Guides',
-                to: '/tutorials/overview'
-              },
-              {
                 label: 'FAQ',
                 to: '/faq'
               }

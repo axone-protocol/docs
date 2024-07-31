@@ -45,8 +45,8 @@ As a decentralized orchestration layer for off-chain resources, Axone must ensur
 - Interpret the rules to ensure the law enforcement
 - Execute workflow and orchestrate the resources according to the rules
 
-In [Rules](https://docs.okp4.network/academy/rules) section, we describe how the protocol allows you to **define and enforce any customized rules**.
-In [Consume Resources](https://docs.okp4.network/academy/consume-resources) section, we describe how the protocol **orchestrates the resources according to the rules**.
+In [Rules](https://docs.okp4.network/introduction/rules) section, we describe how the protocol allows you to **define and enforce any customized rules**.
+In [Workflows](https://docs.okp4.network/introduction/workflows) section, we describe how the protocol **orchestrates the resources according to the rules**.
 
 Here, we'll concentrate on how Axone enables its functionalities <u>**in the decentralized way**</u>.
 
