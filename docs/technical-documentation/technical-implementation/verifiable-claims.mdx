@@ -2,12 +2,10 @@
 sidebar_position: 2
 ---
 
-import Quiz from 'react-quiz-component';
-import * as quiz from './verifiable-claims-quiz.json';
+import Quiz from 'react-quiz-component'
+import * as quiz from './verifiable-claims-quiz.json'
 
 # Verifiable Claims Principles
-
-<i>Reading time: {readingTime} min</i>
 
 **Verifiable Credentials** are a key concept in the world of digital identity, particularly in decentralized identity systems. A Verifiable Credential is a form of digital evidence that attests to information or a characteristic about a person, organization, or object. A trusted entity that issues these credentials is called the **Issuer**.
 
@@ -21,8 +19,12 @@ A credential may contain several claims. For example, a diploma contains the cla
 
 In the [W3C standard](https://www.w3.org/TR/vc-data-model/), a credential is a set of one or more **claims** made by the same entity. Credentials include an identifier and metadata describing the credential's properties, such as the issuer, the expiry date and time, a representative image, a public key to use for verification purposes, the revocation mechanism, and so on. The issuer might sign the metadata. A verifiable credential is a set of tamper-evident claims and metadata that cryptographically prove who issued it.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/verifiable-claims-1.webp" alt="Verifiable claims W3C" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/verifiable-claims-1.webp"
+    alt="Verifiable claims W3C"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
 :::info
@@ -41,8 +43,12 @@ A **verifiable presentation** is a tamper-evident presentation encoded in such a
 
 A government authority issues a digital passport to a citizen.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/verifiable-claims-2.webp" alt="Verifiable claims passport example" style={{ maxHeight: "650px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/verifiable-claims-2.webp"
+    alt="Verifiable claims passport example"
+    style={{ maxHeight: '650px' }}
+  ></img>
 </div>
 
 Use when traveling :
@@ -54,7 +60,7 @@ The digital signature and metadata ensure enhanced security by preventing forger
 
 ## Verifiable claims in the Axone protocol
 
-The [Axone ontology](https://docs.okp4.network/academy/resources#ontology-how-its-represented-semantic-description) is used to describe the Dataverse. In the Dataverse, resources are identified by their DID. Resources are described by claims referenced in the ontology as Verifiable Presentations (VPs) whose subject is the resource's DID. In this way, each resource is described by a set of associated claims.
+The [Axone ontology](https://docs.okp4.network/introduction/resources#ontology-how-its-represented-semantic-description) is used to describe the Dataverse. In the Dataverse, resources are identified by their DID. Resources are described by claims referenced in the ontology as Verifiable Presentations (VPs) whose subject is the resource's DID. In this way, each resource is described by a set of associated claims.
 
 It's important to note that the existence of a resource is conditional on the presence of at least one relevant claim. In other words, although the universe of potential resources is infinite, a resource only becomes concrete and tangible when a corresponding claim is established.
 
@@ -64,8 +70,12 @@ This notion is analogous to that of cryptocurrency wallets. Although all address
 
 Verifiable Credentials obey schemas that describe a particular aspect of a resource. Certain VCs apply depending on the nature of the resource. A VC describing an entity or organization does not apply to the same resource as a VC describing a dataset. This is why VCs are organized in schemas.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/verifiable-claims-3.webp" alt="Verifiable claims attached to a resource" style={{ maxHeight: "400px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/verifiable-claims-3.webp"
+    alt="Verifiable claims attached to a resource"
+    style={{ maxHeight: '400px' }}
+  ></img>
 </div>
 
 ### Resource materiality
@@ -90,8 +100,12 @@ Once the Issuer successfully issues the Verifiable Credentials (VCs) associated 
 
 Recording VPs in the blockchain, rather than individual VCs, ensures the confidentiality of specific properties by only revealing a restricted set of properties on the public chain.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/verifiable-claims-4.webp" alt="Verifiable presentation W3C" style={{ maxHeight: "360px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/verifiable-claims-4.webp"
+    alt="Verifiable presentation W3C"
+    style={{ maxHeight: '360px' }}
+  ></img>
 </div>
 
-<Quiz quiz={quiz}/>
+<Quiz quiz={quiz} />

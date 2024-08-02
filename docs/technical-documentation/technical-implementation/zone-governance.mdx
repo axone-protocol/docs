@@ -4,10 +4,8 @@ sidebar_position: 6
 
 # Create the zone's governance
 
-<i>Reading time: {readingTime} min</i>
-
 :::info
-We recommend you first read the [Technical documentation of Governance](https://docs.okp4.network/technical-documentation/governance/introduction) before delving into practice in the Academy. 
+We recommend you first read the [Technical documentation of Governance](https://docs.okp4.network/technical-documentation/governance/introduction) before delving into practice in the Academy.
 :::
 
 Zone Rules establish the boundaries of a specific area in the Dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
@@ -23,31 +21,42 @@ In the protocol, governance structures are made up of two key elements:
 - A **VP** serves as proof of the existence of a governance by referencing the Codified Governance. This document plays a fundamental role in creating a zone within the dataverse.
 - **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing zone management.
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/zone-governance-1.webp" alt="Governance elements for Zone in Axone Protocol" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/zone-governance-1.webp"
+    alt="Governance elements for Zone in Axone Protocol"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
 Here are the five steps to create a zone governance in the Dataverse:
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/zone-governance-2.webp" alt="Steps to create a zone's governance" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/zone-governance-2.webp"
+    alt="Steps to create a zone's governance"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
-We'll take one simple example in this tutorial for the Collaborative AI zone.  
+We'll take one simple example in this tutorial for the Collaborative AI zone.
 
 :::info
-Prerequisite: 
+Prerequisite:
+
 - [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
 - Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
 - Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
+
 ```bash
 npm install -g jsonld-cli
 ```
+
 :::
 
-## Step 1: Define the governance of your zone 
+## Step 1: Define the governance of your zone
 
-First, you need to define the governance rules of your zone. 
+First, you need to define the governance rules of your zone.
 The governance content is systematically arranged into a hierarchical text structure comprising sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
@@ -55,27 +64,26 @@ The governance content is systematically arranged into a hierarchical text struc
 - **article**: The article is the basic unit in the formulation of rules. Each article sets out a specific rule or set of rules and is identified by a unique number or title for ease of reference.
 - **paragraph**: The paragraph is the element that contains the text of the rule itself. This translates into a clause defining a specific condition or rule in Prolog.
 
-You can use a template (coming soon) or begin from scratch. 
+You can use a template (coming soon) or begin from scratch.
 
-Governance rules of the Collaborative AI zone: 
+Governance rules of the Collaborative AI zone:
 
-| Division    | Ordinal number | Title                                                |
-|-------------|----------------|------------------------------------------------------|
-| Chapter     | 1              | Collaborative AI zone                                |
-| Section     | 1.1            | Zone Governance                                      |
-| Article     | 1.1.1          | Conditions to amend the rules                        |
-| Paragraph   | 1.1.1.1        | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`|
-| Article     | 1.1.2          | Conditions on authorized services                    |
-| Paragraph   | 1.1.1.1        | Only services of type 'Storage' or 'Machine Learning'|
-
+| Division  | Ordinal number | Title                                                                                                      |
+| --------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| Chapter   | 1              | Collaborative AI zone                                                                                      |
+| Section   | 1.1            | Zone Governance                                                                                            |
+| Article   | 1.1.1          | Conditions to amend the rules                                                                              |
+| Paragraph | 1.1.1.1        | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3` |
+| Article   | 1.1.2          | Conditions on authorized services                                                                          |
+| Paragraph | 1.1.1.1        | Only services of type 'Storage' or 'Machine Learning'                                                      |
 
 :::info
-The Axone Community will provide more and more templates over time. 
+The Axone Community will provide more and more templates over time.
 :::
 
-## Step 2: Create the Prolog program 
+## Step 2: Create the Prolog program
 
-### Introduction 
+### Introduction
 
 Codified Governance is based on the principles of Rules as Code (RaC), a powerful and innovative approach that reinvents a fundamental aspect of governance: the formulation of rules. This concept suggests that governance bodies implement official versions of rules (such as regulations) in a format that can be interpreted by both machines and humans.
 
@@ -85,7 +93,7 @@ In the context of the protocol, it enables autonomous and decentralized interpre
 
 ### The elements of law
 
-Several terminological elements are essential when expressing legal terms in Prolog for the construction of governance rules. These elements provide a structured framework, mirroring traditional legal documents, and facilitate the precise encoding of legal concepts and rules in the Prolog programming environment. 
+Several terminological elements are essential when expressing legal terms in Prolog for the construction of governance rules. These elements provide a structured framework, mirroring traditional legal documents, and facilitate the precise encoding of legal concepts and rules in the Prolog programming environment.
 
 #### Hierarchical elements
 
@@ -100,7 +108,7 @@ article(ArticleId).
 paragraph(ParagraphId, ...).
 ```
 
-To maintain the link between the different hierarchical elements, the binary predicate `partOf/2` is added to the system.   
+To maintain the link between the different hierarchical elements, the binary predicate `partOf/2` is added to the system.
 
 For example:
 
@@ -119,8 +127,12 @@ partOf(art1, sec1).
 partOf(sec1, chap1).
 ```
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/resource-governance-3.webp" alt="Governance elements for Resources in Axone Protocol" style={{ maxHeight: "340px" }}></img>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/img/content/academy/resource-governance-3.webp"
+    alt="Governance elements for Resources in Axone Protocol"
+    style={{ maxHeight: '340px' }}
+  ></img>
 </div>
 
 #### Elements of description
@@ -151,8 +163,8 @@ where
 
 - `ParagraphId` is the unique identifier of the paragraph.
 - `Modality` designates the modality, the interpretation under which the rule is to be considered. The possible values are:
-   - `permitted`: This modality expresses formal permission relating to the specified action, depending on the particular conditions or context taken into account. It is relevant to conditional clauses, highlighting situations where the action is explicitly permitted.
-   - `prohibited`: This modality expresses an explicit prohibition linked to the action mentioned, applicable in the specific context considered. It is also relevant for conditional clauses, marking circumstances where the action is formally prohibited.
+  - `permitted`: This modality expresses formal permission relating to the specified action, depending on the particular conditions or context taken into account. It is relevant to conditional clauses, highlighting situations where the action is explicitly permitted.
+  - `prohibited`: This modality expresses an explicit prohibition linked to the action mentioned, applicable in the specific context considered. It is also relevant for conditional clauses, marking circumstances where the action is formally prohibited.
 
 #### Elements of context
 
@@ -187,13 +199,14 @@ For a given standard, if an action is neither prohibited nor permitted by any ru
 
 **Priority principle**  
 For two standards under consideration, providing 2 different verdicts, the following priority principle is applied:
-- *prohibited* over *permitted*: If an action is both prohibited by one rule and permitted by another, the prohibition rule prevails.
-- *prohibited* over *unregulated*: If a rule prohibits an action, the prohibition prevails, regardless of whether other rules are neutral in this respect.
-- *permitted* over *unregulated*: If an action is explicitly permitted by a rule, this permission prevails over the absence of any indication (unregulated) in other rules.
+
+- _prohibited_ over _permitted_: If an action is both prohibited by one rule and permitted by another, the prohibition rule prevails.
+- _prohibited_ over _unregulated_: If a rule prohibits an action, the prohibition prevails, regardless of whether other rules are neutral in this respect.
+- _permitted_ over _unregulated_: If an action is explicitly permitted by a rule, this permission prevails over the absence of any indication (unregulated) in other rules.
 
 ### Examples
 
-Here is an example of the governance of Collaborative AI zone: 
+Here is an example of the governance of Collaborative AI zone:
 
 ```prolog
 :- discontiguous([title/2,partOf/2,chapter/1,section/1,article/1,paragraph/2]).
@@ -215,7 +228,7 @@ chapter('chap1').
 
 Create a Prolog file `my-zone-governance.pl` with the governance of your zone.
 
-Create a specific smart contrat Law Stone for your governance. 
+Create a specific smart contrat Law Stone for your governance.
 
 ```bash
 okp4d tx wasm instantiate 2 --label $UNIQUE_LABEL \
@@ -232,11 +245,12 @@ With:
 
 - `$UNIQUE_LABEL` : name of the smart contract. It must be unique. You can use a UUID.
 - `CONTRACT_ADDR` : Cognitarium contract address (always the same) okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj
-- from `$WALLET` : registrant okp4 address  
-- admin `$WALLET` : okp4 address which is allowed to update the contract 
-- `$MY-GOVERNANCE.pl` : Prolog file of the governance  
+- from `$WALLET` : registrant okp4 address
+- admin `$WALLET` : okp4 address which is allowed to update the contract
+- `$MY-GOVERNANCE.pl` : Prolog file of the governance
 
 Example:
+
 ```bash
 okp4d tx wasm instantiate 2 --label 4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae \
     --node "https://api.drunemeton.okp4.network:443/rpc" \
@@ -250,7 +264,7 @@ okp4d tx wasm instantiate 2 --label 4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae \
 
 txhash: 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
 
-Then you need to find the contract address which is necessary for the next step. You can use the following command: 
+Then you need to find the contract address which is necessary for the next step. You can use the following command:
 
 ```bash
 okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx $TX_HASH
@@ -261,13 +275,15 @@ With:
 - `$TX_HASH`: The hash of the transaction which instantiates the smart contract
 
 Example:
+
 ```bash
 okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
 ```
 
 Find the contract address in the transactions information:
 
-Example: 
+Example:
+
 ```bash
 - attributes:
   - index: true
@@ -287,126 +303,123 @@ The Governance VP is a specific type of VP that details the governance rules app
 
 This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for zone within the Axone dataverse.
 
-Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as datasets, services, and [zones](/academy/part-2/zone-governance).
+Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as datasets, services, and zones.
 
-Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/crime-dataset-governance.jsonld). 
+Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/crime-dataset-governance.jsonld).
 
-Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-zone). 
+Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-zone).
 
 The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl>` for which a text description is also provided.
 
 ```json
 {
-    "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
-    ],
-    "type": [
-        "VerifiableCredential",
-        "GovernanceTextCredential"
-    ],
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
-    "credentialSubject": {
-        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
-        "isGovernedBy": {
-            "type": "GovernanceText",
-            "fromGovernance": "cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22",
-            "hasChapter": {
-                "type": "Chapter",
-                "hasTitle": "Collaborative AI governance",
-                "hasOrdinalNumber": "1",
-                "hasSection": {
-                    "type": "Section",
-                    "hasTitle": "Zone Governance",
-                    "hasOrdinalNumber": "1.1",
-                    "hasArticle": {
-                        "type": "Article",
-                        "hasTitle": "Conditions to amend the rules",
-                        "hasOrdinalNumber": "1.1.1",
-                        "hasParagraph": {
-                            "type": "Paragraph",
-                            "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
-                            "hasOrdinalNumber": "1.1.1.1"
-                        }
-                    },
-                    "hasArticle": {
-                        "type": "Article",
-                        "hasTitle": "Conditions on authorized services",
-                        "hasOrdinalNumber": "1.1.2",
-                        "hasParagraph": {
-                            "type": "Paragraph",
-                            "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
-                            "hasOrdinalNumber": "1.1.2.1"
-                        }
-                    }
-                },
-                "hasSection": {
-                    "type": "Section",
-                    "hasTitle": "Zone Business Model",
-                    "hasOrdinalNumber": "1.2",
-                    "hasArticle": {
-                        "type": "Article",
-                        "hasTitle": "XXXX",
-                        "hasOrdinalNumber": "1.2.1",
-                        "hasParagraph": {
-                            "type": "Paragraph",
-                            "hasTitle": "XXXX",
-                            "hasOrdinalNumber": "1.2.1.1"
-                        }
-                    },
-                    "hasArticle": {
-                        "type": "Article",
-                        "hasTitle": "XXXX",
-                        "hasOrdinalNumber": "1.2.2",
-                        "hasParagraph": {
-                            "type": "Paragraph",
-                            "hasTitle": "XXXX",
-                            "hasOrdinalNumber": "1.2.2.1"
-                        }
-                    }
-                }
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
+  ],
+  "type": ["VerifiableCredential", "GovernanceTextCredential"],
+  "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
+  "credentialSubject": {
+    "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+    "isGovernedBy": {
+      "type": "GovernanceText",
+      "fromGovernance": "cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22",
+      "hasChapter": {
+        "type": "Chapter",
+        "hasTitle": "Collaborative AI governance",
+        "hasOrdinalNumber": "1",
+        "hasSection": {
+          "type": "Section",
+          "hasTitle": "Zone Governance",
+          "hasOrdinalNumber": "1.1",
+          "hasArticle": {
+            "type": "Article",
+            "hasTitle": "Conditions to amend the rules",
+            "hasOrdinalNumber": "1.1.1",
+            "hasParagraph": {
+              "type": "Paragraph",
+              "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+              "hasOrdinalNumber": "1.1.1.1"
             }
+          },
+          "hasArticle": {
+            "type": "Article",
+            "hasTitle": "Conditions on authorized services",
+            "hasOrdinalNumber": "1.1.2",
+            "hasParagraph": {
+              "type": "Paragraph",
+              "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+              "hasOrdinalNumber": "1.1.2.1"
+            }
+          }
+        },
+        "hasSection": {
+          "type": "Section",
+          "hasTitle": "Zone Business Model",
+          "hasOrdinalNumber": "1.2",
+          "hasArticle": {
+            "type": "Article",
+            "hasTitle": "XXXX",
+            "hasOrdinalNumber": "1.2.1",
+            "hasParagraph": {
+              "type": "Paragraph",
+              "hasTitle": "XXXX",
+              "hasOrdinalNumber": "1.2.1.1"
+            }
+          },
+          "hasArticle": {
+            "type": "Article",
+            "hasTitle": "XXXX",
+            "hasOrdinalNumber": "1.2.2",
+            "hasParagraph": {
+              "type": "Paragraph",
+              "hasTitle": "XXXX",
+              "hasOrdinalNumber": "1.2.2.1"
+            }
+          }
         }
-    },
-    "issuanceDate": "2024-06-06T15:45:00.475304+01:00",
-    "issuer": {
-        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
-        "name": "OKP4"
+      }
     }
+  },
+  "issuanceDate": "2024-06-06T15:45:00.475304+01:00",
+  "issuer": {
+    "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+    "name": "OKP4"
+  }
 }
 ```
 
 ## Step 5: Sign and register in the Blockchain
 
-Now that you have created the VC, you will sign it. 
+Now that you have created the VC, you will sign it.
 
 Signing a verifiable credential involves creating a digital signature using cryptographic techniques. This signature is unique to both the document (in this case, the credential) and the signer's private key, making it nearly impossible to forge. The private key is kept secret by the signer, while the corresponding public key is made available for anyone wishing to verify the signature's authenticity.
 
 By signing the credential, any alteration to the credential's data after it has been signed will invalidate the signature. This ensures the data has not been tampered with and remains as it was when issued.
 
-To sign your VC, use this command: 
+To sign your VC, use this command:
 
 ```bash
-okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld 
-    --keyring-backend test 
+okp4d credential sign $/MY-DIRECTORY/MY-DATASET.jsonld
+    --keyring-backend test
     --from $MY_ADDR | jsonld toRdf -q - > $MY-DATASET.nq
 ```
 
 With:
 
-- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address  
-- `MY_ADDR` : issuer address    
+- `/MY-DIRECTORY/MY-DATASET.jsonld` : credential file address
+- `MY_ADDR` : issuer address
 - `MY-DATASET.nq` : name of the file with the signed credential in RDF format
 
-Example: 
+Example:
 
 ```bash
-okp4d credential sign collab-ai-zone-governance.jsonld 
-    --from issuer-okp4 
+okp4d credential sign collab-ai-zone-governance.jsonld
+    --from issuer-okp4
     --keyring-backend test | jsonld toRdf -q - > collab-ai-zone-governance.nq
 ```
 
-You can see that there is new fields in the jsonld with the cryptographic proof. 
+You can see that there is new fields in the jsonld with the cryptographic proof.
 
 ```nquads
 <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
@@ -433,21 +446,21 @@ _:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrd
 _:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Zone Governance" .
 ```
 
-The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder. 
+The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder.
 
-The Axone blockchain can only register VCs in N-Quads format.   
+The Axone blockchain can only register VCs in N-Quads format.
 
-The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity). 
+The final step is to register the VCs in the Axone blockchain by submitting them to the Dataverse smart contract. It's the role of the Registrant (who can be the Holder or another entity).
 
 :::info
 Note that as you interact with the Axone blockchain, you must pay fees in $AXONE at each transaction.
-::: 
+:::
 
 ```bash
-okp4d tx wasm execute $CONTRACT_ADDR \ 
+okp4d tx wasm execute $CONTRACT_ADDR \
     --node "https://api.drunemeton.okp4.network:443/rpc" \
-    --chain-id okp4-drunemeton-1 \ 
-    --from $MY_ADDR \ 
+    --chain-id okp4-drunemeton-1 \
+    --from $MY_ADDR \
     --keyring-backend test
     --gas 10000000 \ "{\"submit_claims\":{\"metadata\": \"$(cat $MY-DATASET.nq | base64)\"}}"
 ```
@@ -456,31 +469,33 @@ With:
 
 - `CONTRACT_ADDR` : dataverse contract address (always the same) - For the Drunemeton testnet use okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du
 - `node "https://api.drunemeton.okp4.network:443/rpc"` : name of the node for the Drunemeton testnet
-- `MY_ADDR` : registrant okp4 address  
-- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format 
+- `MY_ADDR` : registrant okp4 address
+- `$MY-DATASET.nq` : name of the file with the signed credential in RDF format
 
-Example: 
-```bash
+Example:
+
+````bash
 okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qvya8du \
     --node "https://api.drunemeton.okp4.network:443/rpc" \
     --chain-id okp4-drunemeton-1 \
     --from issuer-okp4 \
-    --keyring-backend test 
+    --keyring-backend test
     --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat collab-ai-zone-governance.nq | base64)\"}}"
     ```
 
-The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium). 
+The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium).
 
-The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.  
+The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.
 
 Example:
 Hash: E6D18D38D5A54BC0C73084A047448216A238C69930908B16F11509E7877E0CF9
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <img src="/img/content/academy/transaction-explorer-4.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
-</div>  
+</div>
 
 ## Delete a zone in the Dataverse
 
 The deletion of a zone in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this zone. This deletion action can only be initiated following the rules established by the governance of the zone.
 It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying zones.
+````

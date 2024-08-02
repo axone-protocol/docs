@@ -1,10 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 # Protocol concepts
-
-<i>Reading time: {readingTime} min</i>
 
 This section will provide an in-depth analysis of the core principles that form the protocol's foundation and how it presents an innovative solution to sharing digital resources by leveraging these principles. It's important to note that these concepts are often intertwined and mutually reliant to ensure the equilibrium of the protocol.
 We will also begin to address some essential technical components, such as smart contracts. We will delve deeper into these aspects in the second part of the academy.
@@ -47,8 +45,8 @@ As a decentralized orchestration layer for off-chain resources, Axone must ensur
 - Interpret the rules to ensure the law enforcement
 - Execute workflow and orchestrate the resources according to the rules
 
-In [Rules](https://docs.okp4.network/academy/rules) section, we describe how the protocol allows you to **define and enforce any customized rules**.
-In [Consume Resources](https://docs.okp4.network/academy/consume-resources) section, we describe how the protocol **orchestrates the resources according to the rules**.
+In [Rules](https://docs.okp4.network/introduction/rules) section, we describe how the protocol allows you to **define and enforce any customized rules**.
+In [Workflows](https://docs.okp4.network/introduction/workflows) section, we describe how the protocol **orchestrates the resources according to the rules**.
 
 Here, we'll concentrate on how Axone enables its functionalities <u>**in the decentralized way**</u>.
 

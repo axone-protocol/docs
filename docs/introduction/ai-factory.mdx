@@ -1,19 +1,13 @@
 ---
-sidebar_position: 6
+sidebar_position: 9
 ---
 
-import Quiz from 'react-quiz-component';
-import * as quiz from './ai-factory-quiz.json';
+import Quiz from 'react-quiz-component'
+import * as quiz from './ai-factory-quiz.json'
 
 # AI Factory: A Use Case Unveiling
 
-<i>Reading time: {readingTime} min</i>
-
-In the previous section, we highlighted the target audience of the protocol using concise examples. To delve deeper into the power of this protocol, this section will examine the underlying motivations for its creation through more detailed and concrete case studies.
-
-## Context
-
-The rapid development of AI models redefines the boundaries of what is possible in many fields. Increasingly, the ability to use existing open-source models or create one's own AI models to meet specific needs is becoming accessible to everyone.
+The rapid development of AI models redefines the boundaries of what is possible in many fields. The ability to use existing open-source models or create one's own AI models to meet specific needs is becoming accessible to everyone.
 
 The swift adoption by users of applications such as ChatGPT has catalyzed innovations in fundamental model architectures and other techniques. Today, many small and medium-sized technology companies, individuals, and researchers are working on new ML models or improving existing ones.
 
@@ -31,9 +25,9 @@ Let's delve into the AI landscape and understand why Axone is a cutting-edge sol
 
 The AI factory is a decentralized framework where anyone can collaborate and govern models, datasets, and applications. It enables the creation of a zone where different identities can coordinate around blockchain-based governance rules enforced on-chain to train a model using the wealth of resources and services from the Dataverse.
 
-AI Factory is a set of : 
+AI Factory is a set of :
 
-- Rules & governance templates : data requirements definitions, contribution quantification, token factory for DAO's 
+- Rules & governance templates : data requirements definitions, contribution quantification, token factory for DAO's
 - Open-source algorithms ready to be trained and tailored services/workflows
 - Integrations and connectors
 
@@ -65,13 +59,25 @@ The zone creator can create his own template or reuse an existing one to deploy 
 
 ![ai-factory-3](/img/content/academy/ai-factory-3.webp)
 
-<u>Identity Management:</u> This refers to the various authentication methods used to manage access to the zone. It can range from key-based systems Self-Sovereign Identity (SSI) services like Cheqd to more conventional Single Sign-On (SSO) methods like Sign-in with Google. The choice may depend on the desired contributor engagement type or the disclosed information's granularity.
+<u>Identity Management:</u> This refers to the various authentication methods used to manage access
+to the zone. It can range from key-based systems Self-Sovereign Identity (SSI) services like Cheqd
+to more conventional Single Sign-On (SSO) methods like Sign-in with Google. The choice may depend on
+the desired contributor engagement type or the disclosed information's granularity.
 
-<u>Governance Model:</u> Determines how governance is exercised and expressed, ranging from a model with a single authority to a multi-sig or a DAO around a token model. All governance rules can be defined, allowing for a highly customizable governance structure.
+<u>Governance Model:</u> Determines how governance is exercised and expressed, ranging from a model
+with a single authority to a multi-sig or a DAO around a token model. All governance rules can be
+defined, allowing for a highly customizable governance structure.
 
-<u>Resource Management:</u> Define the conditions under which digital resources can be considered within the scope of an activity involving acting entities. Numerous rules can be expressed regarding the properties of the digital resources established by their metadata. Rules related to metadata requirements, format compatibility, size limitations, ownership and intellectual property rights, and quality assurance may be included.
+<u>Resource Management:</u> Define the conditions under which digital resources can be considered
+within the scope of an activity involving acting entities. Numerous rules can be expressed regarding
+the properties of the digital resources established by their metadata. Rules related to metadata
+requirements, format compatibility, size limitations, ownership and intellectual property rights,
+and quality assurance may be included.
 
-<u>Business Model:</u> The business model of the zone defines how contributions are quantified and how contributors are rewarded. This can range from a simple one-time payment for access to more complex business logic aiming to create an AI Factory with specific services that require a fair and sustainable compensation system for each contributor.
+<u>Business Model:</u> The business model of the zone defines how contributions are quantified and
+how contributors are rewarded. This can range from a simple one-time payment for access to more
+complex business logic aiming to create an AI Factory with specific services that require a fair and
+sustainable compensation system for each contributor.
 
 Once all defined, the zone is registered with a transaction to enforce the rules on-chain.
 
@@ -81,9 +87,18 @@ Once the governance framework is defined and live on-chain, the protocol can det
 
 ![ai-factory-4](/img/content/academy/ai-factory-4.webp)
 
-<u>All Resources and Services allowed by the Zone:</u>  The governance rules of the Zone help determine, within the set of resources referenced in the Dataverse, which ones can be used within the scope of this zone. All Dataverse resources adhering to these rules are allowed by the Zone.
+<u>All Resources and Services allowed by the Zone:</u> The governance rules of the Zone help
+determine, within the set of resources referenced in the Dataverse, which ones can be used within
+the scope of this zone. All Dataverse resources adhering to these rules are allowed by the Zone.
 
-<u>All Resources and Services compatible with the Zone:</u>  Resource Consent defines the conditions for including a resource in an activity involving entities operating within a Zone. While the Zone rules specify the regulations from the perspective of the Zone, the consent represents the rules from the perspective of the Resource. It serves as the expression of the resource owner's considerations regarding the terms of use for the Resource, providing guidelines for its proper use within the Dataverse. Rules may include aspects such as the business model, Zone licenses or labels, and regulations about any credentials, such as identity, reputation, qualification, or token-related credentials.
+<u>All Resources and Services compatible with the Zone:</u> Resource Consent defines the conditions
+for including a resource in an activity involving entities operating within a Zone. While the Zone
+rules specify the regulations from the perspective of the Zone, the consent represents the rules
+from the perspective of the Resource. It serves as the expression of the resource owner's
+considerations regarding the terms of use for the Resource, providing guidelines for its proper use
+within the Dataverse. Rules may include aspects such as the business model, Zone licenses or labels,
+and regulations about any credentials, such as identity, reputation, qualification, or token-related
+credentials.
 
 All Dataverse resources adhering to these rules are compatible with the Zone.
 
@@ -95,16 +110,35 @@ Understanding the unique relationship between the consent of resources and the z
 
 **Essential Types of Resources and Services:**
 
-- <u>Training Dataset:</u> Encompasses various forms of data and information expressed, carried, and stored in different formats (structured or unstructured data, data streams, etc.).
-- <u>AI Model:</u> Ranges from foundational models to specialized models, from LLM to SLM, with the choice typically depending on the type of task for which the model is to be trained. Any kind of model may be provided.
-- <u>Storage Infrastructure Provider:</u> Supports all storage options, ranging from local storage to cloud storage solutions provided by significant companies like Dropbox or AnyDrive. Additionally, decentralized storage networks such as Interplanetary File System (IPFS), Jackal, or Arweave can be connected to the Dataverse.
-- <u>Compute Infrastructure Provider:</u> The Dataverse is adaptable to various computation options, including APIs with their own computational resources, cloud services by commercial entities, or decentralized computing resources. This flexibility accommodates different types of computational tasks and workloads. Relevant general-purpose compute networks like Akash can be easily referenced in the protocol. Depending on the type of model to be trained, different kinds of components may be necessary, such as CPU, Gaming GPU, or AI-specialized GPU.
-- <u>Orchestration Service:</u> This crucial service orchestrates the invocations of other services. Notably, a decentralized mechanism is in place to ensure the correct instance of the appropriate type is executed, given the potential for multiple instances of the service and several kinds of orchestration services.
+- <u>Training Dataset:</u> Encompasses various forms of data and information expressed, carried, and
+  stored in different formats (structured or unstructured data, data streams, etc.).
+- <u>AI Model:</u> Ranges from foundational models to specialized models, from LLM to SLM, with the
+  choice typically depending on the type of task for which the model is to be trained. Any kind of
+  model may be provided.
+- <u>Storage Infrastructure Provider:</u> Supports all storage options, ranging from local storage
+  to cloud storage solutions provided by significant companies like Dropbox or AnyDrive.
+  Additionally, decentralized storage networks such as Interplanetary File System (IPFS), Jackal, or
+  Arweave can be connected to the Dataverse.
+- <u>Compute Infrastructure Provider:</u> The Dataverse is adaptable to various computation options,
+  including APIs with their own computational resources, cloud services by commercial entities, or
+  decentralized computing resources. This flexibility accommodates different types of computational
+  tasks and workloads. Relevant general-purpose compute networks like Akash can be easily referenced
+  in the protocol. Depending on the type of model to be trained, different kinds of components may
+  be necessary, such as CPU, Gaming GPU, or AI-specialized GPU.
+- <u>Orchestration Service:</u> This crucial service orchestrates the invocations of other services.
+  Notably, a decentralized mechanism is in place to ensure the correct instance of the appropriate
+  type is executed, given the potential for multiple instances of the service and several kinds of
+  orchestration services.
 
 **Integration and Connectors:**
 
-- <u>APIs and Connectors:</u> APIs provide a standardized interface for accessing and communicating with a service, while connectors are components that facilitate the connection between two distinct systems by overcoming potential differences in their protocols and communication methods. They are crucial for ensuring the connection between different services and the orchestrator.
-- <u>Front-end Interface:</u> It serves as the user-friendly entry point for interacting with the Zone. A front-end interface acts as a crucial bridge, enabling effective communication and interaction between users and the decentralized framework.
+- <u>APIs and Connectors:</u> APIs provide a standardized interface for accessing and communicating
+  with a service, while connectors are components that facilitate the connection between two
+  distinct systems by overcoming potential differences in their protocols and communication methods.
+  They are crucial for ensuring the connection between different services and the orchestrator.
+- <u>Front-end Interface:</u> It serves as the user-friendly entry point for interacting with the
+  Zone. A front-end interface acts as a crucial bridge, enabling effective communication and
+  interaction between users and the decentralized framework.
 
 As the Dataverse continues to expand, numerous interfaces and APIs will become available, created by the community or external contributors to facilitate accessibility and entry points.
 
@@ -180,4 +214,4 @@ It focuses on enhancing the transparency of AI models by providing explanations 
 
 This Zone can facilitate the management of complex datasets by reducing their dimensionality. Contributors collaborate to apply reduction techniques while preserving essential information.
 
-<Quiz quiz={quiz}/>
+<Quiz quiz={quiz} />

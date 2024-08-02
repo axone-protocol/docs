@@ -1,0 +1,112 @@
+---
+sidebar_position: 2
+---
+
+# Define any rule
+
+## Rules: what can be defined?
+
+The Axone protocol's core feature is defining rules for sharing and managing off-chain digital resources like datasets and algorithms. These rules define the parameters and conditions under which resource sharing and interactions occur. A [Zone](https://docs.okp4.network/whitepaper/solution#zone-overview), a conceptual framework defined by a set of rules, ensures resource compatibility through dynamic evaluation of rules and consents. Resources aren't attached to zones but are recognized based on their conformity to these rules and consents. Understanding these definitions is key to utilizing the protocol effectively.
+
+So how does Axone ensure law enforcement before execution?
+
+1. An Identity (human or bot) wants to interact with a Zone
+2. The Zone asks the dedicated smart contract if it's possible given the context and the defined rules
+3. The protocol employs logical inference to resolve matters based on the state of the blockchain
+4. The protocol yields a modality as a response ("prohibited", "permitted", "possible", etc). Depending on the answer, the execution process could start.
+
+## What kind of rules can be defined?
+
+1.  **Defining Access Permissions** - Axone allows you to set precise access permissions for off-chain resources, controlling who can view or manage them, from read-only access to full control.
+
+2.  **Resource Utilization Policies** - You can establish how resources are used, including setting duration limits and usage quotas, as well as temporal and spatial constraints for resource sharing.
+
+3.  **Business models** - Axone supports defining business models for value creation and distribution, ranging from simple transactions to complex performance-based incentives.
+
+4.  **Dynamic Rule Updates** - Rules can be updated in real-time to adapt to changing needs, providing flexibility and ensuring the system remains responsive.
+
+5.  **Inter-Rule Relationships** - Rules can interact with one another through dependencies, allowing for complex rule applications where conditions must be met before others are enforced.
+
+## Understanding Prolog in Axone
+
+Prolog, a logical and declarative programming language, plays a crucial role in managing Axone's complex logical scenarios. Its Turing completeness ensures it can handle diverse challenges, making it ideal for expressing governance and consent rules. Prolog's declarative nature allows users to specify desired outcomes, with Prolog determining the method to achieve them. This capability supports decentralized interpretation of rules, ensuring consistent application across the network. By leveraging Prolog, Axone offers a robust solution for dynamic and flexible rule management. To delve deeper into Prolog's role in Axone, read more **here**.
+
+## Resource's consents
+
+In the intricate web of the Axone protocol, the heartbeat of interaction lies within the rules governing each resource, also called consents. Understanding how these rules are defined and implemented is crucial for harnessing the true potential of Axone's off-chain resource sharing.
+
+**1. Defining Resource-Specific Rules**
+
+Every resource within the Axone ecosystem comes with its consent, a set of rules intricately defining how it can be accessed, utilized, and shared. These rules act as the blueprint for the resource's behavior, outlining the conditions under which it can be interacted with. Whether it's data, computational power, or any other off-chain asset, the rules are the guiding principles for their governance.
+
+**2. Access Permissions and Restrictions**
+
+At the core of resource consents are access permissions and restrictions. Axone allows resource owners to precisely dictate who can access their resources and under what circumstances. This includes specifying read or write permissions, setting limitations on the duration of access, and defining the geographical or network-based constraints for interaction. Such fine-grained control ensures that resource owners maintain sovereignty over their assets.
+
+**3. Resource Utilization Policies**
+
+Beyond mere access, Axone resource consents extend to resource utilization policies. Owners can define how their resources should be utilized by setting usage quotas, determining the conditions for resource sharing, or specifying the acceptable purposes for interaction. These policies contribute to the efficient and controlled utilization of resources within the decentralized Axone network.
+
+**4. Dynamic Rule Adaptation**
+
+Consents in Axone are not static; they adapt dynamically to the changing needs of the ecosystem. As conditions evolve, resource owners can update rules in real-time, ensuring that their assets remain responsive to the ever-shifting landscape of off-chain resource sharing. This dynamic adaptability is a key feature that aligns Axone with the fluid nature of decentralized networks.
+
+**5. Rule Interdependencies and Conflicts**
+
+Given the interconnected nature of resources and their rules, Axone acknowledges the potential for interdependencies and conflicts. The hierarchy of norms refers to the hierarchical structure of rules within the Axone governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard. Then, the rules of a Zone prevail on the resource consent (see technical doc).
+
+![rules-2](/img/content/academy/rules-2.webp)
+
+**6. Transparency and Auditing**
+
+Axone places a premium on transparency in resource governance. Resource consents are designed to be transparent and auditable, allowing users and stakeholders to understand how each resource is governed. This transparency fosters trust and contributes to the overall security and accountability within the Axone ecosystem.
+
+**Let's practice!**
+
+Let's consider a simple example of rules written in Prolog for a hypothetical resource-sharing scenario within the Axone context. In this example, we'll create rules for granting access to a specific dataset based on user roles and temporal constraints.
+
+```prolog
+% Define roles
+role(admin).
+role(user).
+role(guest).
+
+% Define users and their roles
+user_role(john, admin).
+user_role(susan, user).
+user_role(bob, guest).
+
+% Define access rules based on roles and time
+access_rule(admin, Dataset, _):- dataset(Dataset).
+access_rule(user, Dataset, Time):- dataset(Dataset), current_time(Time), Time < 18.00.
+access_rule(guest, public_data, _).
+
+% Define the dataset
+dataset(confidential_data).
+dataset(public_data).
+
+% Simulate the current time (for illustration purposes)
+current_time(15.30).
+
+% Example queries
+% Query: Can John access the confidential_data dataset at the current time?
+% Result: Yes, because John is an admin, and there's no temporal constraint for admins.
+?- user_role(john, Role), access_rule(Role, confidential_data, Time).
+
+% Query: Can Susan access the confidential_data dataset at the current time?
+% Result: Yes, because Susan is a user, and the current time is before 18.00.
+?- user_role(susan, Role), access_rule(Role, confidential_data, Time).
+
+% Query: Can Bob access the confidential_data dataset at the current time?
+% Result: No, because Bob is a guest, and the dataset is confidential with no specified temporal constraint for guests.
+?- user_role(bob, Role), access_rule(Role, confidential_data, Time).
+```
+
+In this Prolog example, we define roles (admin, user, guest) and associate users with roles.
+Access rules are determined based on roles and, in some cases, temporal constraints. For instance, admins have unrestricted access to any dataset, users have access before 18.00, and guests can access to the public_data dataset without time constraints.
+We define two datasets (confidential_data and public_data).
+The current time is simulated to illustrate temporal limitations.
+Example queries demonstrate how Prolog can be used to check if a user has access to a specific dataset at the current time based on the defined rules.
+Note: The Axone SDK contains templates of governance rules that you can use and adapt to your needs.
+
+As we delve deeper into the Axone Academy, understanding the intricacies of resource rules becomes paramount. These rules serve as the backbone of the protocol, ensuring that off-chain resources are governed with precision, flexibility, and transparency. Join us as we unravel the complexities of resource rule management within the dynamic landscape of Axone.

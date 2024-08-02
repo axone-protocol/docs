@@ -1,10 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Explorer
-
-![Axone with Keplr](/img/content/tutorials/explorer-0.webp)
 
 The ability to interact seamlessly with a blockchain is a crucial skill. Whether tracking transactions or executing smart contract messages, having the right tools at your disposal can make all the difference.
 
