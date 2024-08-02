@@ -27,21 +27,11 @@ Here are the namespaces used in this schema:
 
 ### Description
 
-The Digital Service Authentication Credential is a formal declaration used to authenticate a Digital Service against another in the purpose of fulfilling of a Digital Service Execution Order.
+The Digital Service Authentication Credential is a formal declaration used to authenticate a Digital Service against another.
 
-In these credentials, both the subject and the issuer are the Digital Service to be authenticated. The credential contains the needed element to verify the authentication has been requested.
+In these credentials, both the subject and the issuer are the Digital Service to be authenticated. The credential carries the needed element to verify the requested authentication.
 
 ### Properties
-
-#### For order
->
-> **IRI**: [credential-digital-service-authentication:forOrder](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/authentication/forOrder)
->
-> **Domain**:&nbsp;[credential-digital-service-authentication:DigitalServiceAuthenticationCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/authentication/DigitalServiceAuthenticationCredential)
->
-> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
-
-The Digital Service Execution Order served by this authentication.
 
 #### To service
 >
