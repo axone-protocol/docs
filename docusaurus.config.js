@@ -163,7 +163,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/commands/okp4d', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/commands/axoned', label: 'Latest version' }],
             docsPluginId: 'commands',
             dropdownActiveClassDisabled: true
           },
