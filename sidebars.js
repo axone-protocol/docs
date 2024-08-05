@@ -129,7 +129,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Commands line interface',
-          href: '/commands/okp4d'
+          href: '/commands/axoned'
         }
       ]
     }
