@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Describe a Zone
 
-A [zone](https://docs.okp4.network/whitepaper/solution#zone-overview) is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. A resource is not attached to a zone. The recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
+A [zone](../../whitepaper/solution#zone-overview) is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. A resource is not attached to a zone. The recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
 All the workflows initiated within the Axone protocol must be defined in the context of a specific Zone. When the workflow is submitted, the protocol will check if all rules of the zone and of the engaged resources are respected and will apply the business model of the zone.
 
@@ -23,7 +23,7 @@ We'll take the example of the Collaborative AI Zone in this tutorial.
 :::info
 Prerequisite:
 
-- [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- [Install the Axone CLI](../../tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
 - Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
 - Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
 
@@ -108,7 +108,7 @@ In the future, you will be able to use any key provider, such as Cheqd.
 
 ## Step 2: Create the credentials
 
-Find the credential templates you need in the [Ontology documentation](https://docs.okp4.network/ontology/schemas) according to the nature of the resource you describe.
+Find the credential templates you need in the [Ontology documentation](../../ontology/schemas/credential-dataset-description) according to the nature of the resource you describe.
 
 For the zone, instantiate the template [credential-zone-description](https://github.com/okp4/ontology/blob/main/src/example/zone/collab-ai-zone-description.jsonld).
 

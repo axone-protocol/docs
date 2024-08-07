@@ -175,7 +175,7 @@ To tackle this, Axone aims at providing a **reliable and secure mechanism** to e
 2. The Zone asks the dedicated smart contract if it's possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on.
-Depending on the answer, the execution process could start.
+   Depending on the answer, the execution process could start.
 
 ### Orchestrate the resources according to the rules
 
@@ -199,4 +199,4 @@ Once a workflow is completed, the information gained needs to be put to use. App
 
 For example, let's say a professional in healthcare uses the Axone protocol to combine various resources in a workflow. The output might be a comprehensive patient health report. This information can then be used by a healthcare application to provide more personalized care recommendations to patients.
 
-For more detailed information on the roles and various use-cases, refer to the [Roles](https://docs.okp4.network/whitepaper/roles) and [Use Cases](https://docs.okp4.network/whitepaper/use-cases) pages respectively.
+For more detailed information on the roles and various use-cases, refer to the [Roles](../whitepaper/roles) and [Use Cases](../whitepaper/use-cases) pages respectively.

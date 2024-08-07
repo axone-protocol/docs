@@ -28,7 +28,7 @@ A Zone is a conceptual framework defined by a set of rules, within which the rec
 
 The primary objective of Zones is to facilitate the coordination of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
 
-More information [here](https://docs.okp4.network/whitepaper/solution#protocol-overview)
+More information [here](./whitepaper/solution#protocol-overview)
 
 ## What types of resources can be shared?
 
@@ -41,7 +41,7 @@ For clarity, we categorize resources and services into different types:
 - Processing Services: Axone can manage various digital processing services, including algorithms and AI models.
 - Infrastructure Services: Additionally, Axone can handle any infrastructure services such as storage and computation or ID.
 
-For more in-depth information, you can refer to our dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#the-dataverse).
+For more in-depth information, you can refer to our dedicated documentation [here](./whitepaper/solution#the-dataverse).
 
 ## Why do you distinguish Zones and digital resources?
 
@@ -72,9 +72,9 @@ An ontology, in the context of Axone, refers to a structured representation of k
 
 In Axone, this ontology is used to describe the metadata or characteristics of resources and services. Think of it as the "data about the data." This structured information makes it easier for users and systems to understand and interact with resources and services within the Axone network. It ensures that everyone speaks the same language when it comes to sharing and accessing digital resources.
 
-Dedicated documentation [here](https://docs.okp4.network/whitepaper/solution#ontology)
+Dedicated documentation [here](./whitepaper/solution#ontology)
 
-And deep-dive article [here](https://blog.okp4.network/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
+And deep-dive article [here](https://blog.axone.xyz/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
 
 ## What is the web2 alternative today?
 
@@ -212,7 +212,7 @@ Beyond that, and more related to use cases, the $AXONE is used by default for va
 
 The $AXONE token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
 
-More details about Token Model [here](https://docs.okp4.network/whitepaper/token-model)
+More details about Token Model [here](./whitepaper/token-model)
 
 ## Can price volatility of the $AXONE token be a problem?
 
@@ -239,8 +239,8 @@ Axone is a sandbox for human coordination experiments in the off-chain world. Yo
 
 First, let me remind that the data is off-chain, only the data's metadata (its description) is on-chain and integrated in the ontology.
 
-When a consumer interacts with the Axone blockchain, they might request access to multiple datasets and algorithms. The protocol checks if the conditions set by the data or algorithm providers are satisfied. If they are, the transaction is validated on-chain (the [Pactum smart contract](https://docs.okp4.network/whitepaper/architecture#pactum-managing-agreements) ensures conditions are met, including retributions for providers), with the workflow being described like any service in the ontology (leveraging the [Cognitarium smart contract](https://docs.okp4.network/whitepaper/architecture#cognitarium-semantic-data-storage)).
-Subsequent to this validation, an [off-chain orchestration service](https://docs.okp4.network/whitepaper/architecture#orchestration), exemplified by workflow engines like [Argo](https://argoproj.github.io/argo-workflows/), takes over. This service acts as a gatekeeper for resources, relying exclusively on blockchain validation events to process the consumer's request. It's important to note that this orchestration service doesn't inherently trust any party; it solely trusts the blockchain's validation.
+When a consumer interacts with the Axone blockchain, they might request access to multiple datasets and algorithms. The protocol checks if the conditions set by the data or algorithm providers are satisfied. If they are, the transaction is validated on-chain (the [Pactum smart contract](./whitepaper/architecture#pactum-managing-agreements) ensures conditions are met, including retributions for providers), with the workflow being described like any service in the ontology (leveraging the [Cognitarium smart contract](./whitepaper/architecture#cognitarium-semantic-data-storage)).
+Subsequent to this validation, an [off-chain orchestration service](./whitepaper/architecture#orchestration), exemplified by workflow engines like [Argo](https://argoproj.github.io/argo-workflows/), takes over. This service acts as a gatekeeper for resources, relying exclusively on blockchain validation events to process the consumer's request. It's important to note that this orchestration service doesn't inherently trust any party; it solely trusts the blockchain's validation.
 
 The orchestration service's role is to create new insights or knowledge by utilizing resources from different providers. Once the processing is complete, the service reports back to the blockchain, ensuring that the execution status is logged reliably and that any due payments are processed.
 
@@ -272,7 +272,7 @@ Axone functions as a decentralized coordinator where:
 
 The protocol itself is primarily an infrastructure that allows a resource "provider" to reference and define usage rules (in Prolog, which offers better expressiveness compared to other languages), and for a "consumer" to make usage requests based on these rules. What the protocol guarantees is the transparency of the rules and the correct assessment (validation or not) of these rules. However, there is indeed the question of verifying the actual "real" sharing action. The current approach is an open-source off chain "orchestrator" developed by the Axone Association team that provides access to resources (based on requests validated onchain) and then reports the successful execution back on chain. So, yes, there's an element of centralization! We aim to have multiple orchestrators, deployed by external entities, and even decentralize that process at some point. Both "providers" and "consumers" will be able to choose the one they "trust" or deploy their own.
 
-More info [here](https://docs.okp4.network/whitepaper/architecture#trusted-parties-considerations)
+More info [here](./whitepaper/architecture#trusted-parties-considerations)
 
 ## How Axone ensures law enforcement BEFORE EXECUTION?
 
