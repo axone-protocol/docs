@@ -1,6 +1,6 @@
 # Axone documentation
 
-> Axone documentation repository, powered ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
+> Axone documentation repository, powered with ❤️ by [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 [![lint](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/build.yml)
