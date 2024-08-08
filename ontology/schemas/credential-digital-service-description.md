@@ -7,7 +7,7 @@ sidebar_position: 5
 
 > **Name**: `credential-digital-service-description`
 >
-> **Namespace**: [https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/)
+> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/)
 
 ## Namespaces
 
@@ -19,12 +19,12 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `thesaurus`: [https://w3id.org/axone/ontology/v3/thesaurus/](https://w3id.org/axone/ontology/v3/thesaurus/)
-- `credential-digital-service-description`: [https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/)
+- `thesaurus`: [https://w3id.org/axone/ontology/v4/thesaurus/](https://w3id.org/axone/ontology/v4/thesaurus/)
+- `credential-digital-service-description`: [https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **IRI**: [credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 
 ### Description
 
@@ -38,13 +38,13 @@ Their primary function is to simplify the process for users to grasp the service
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/"
+        "https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/"
     ],
     "type": ["VerifiableCredential","DigitalServiceDescriptionCredential"],
-    "id": "https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
+    "id": "https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
     "credentialSubject": {
         "id": "did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB",
-        "hasCategory": "https://w3id.org/axone/ontology/v3/thesaurus/digital-service-category/Storage",
+        "hasCategory": "https://w3id.org/axone/ontology/v4/thesaurus/digital-service-category/Storage",
         "hasDescription": "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale",
         "hasPublisher": "IPFS",
         "hasTag": [
@@ -68,19 +68,19 @@ Their primary function is to simplify the process for users to grasp the service
 
 #### Has category
 >
-> **IRI**: [credential-digital-service-description:hasCategory](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasCategory)
+> **IRI**: [credential-digital-service-description:hasCategory](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasCategory)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
-> **Range**:&nbsp;[thesaurus:service-category](https://w3id.org/axone/ontology/v3/thesaurus/service-category)
+> **Range**:&nbsp;[thesaurus:service-category](https://w3id.org/axone/ontology/v4/thesaurus/service-category)
 
 A category of the Digital Service.
 
 #### Has description
 >
-> **IRI**: [credential-digital-service-description:hasDescription](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasDescription)
+> **IRI**: [credential-digital-service-description:hasDescription](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasDescription)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -88,9 +88,9 @@ A description of the Digital Service.
 
 #### Has image
 >
-> **IRI**: [credential-digital-service-description:hasImage](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasImage)
+> **IRI**: [credential-digital-service-description:hasImage](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasImage)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -98,9 +98,9 @@ The image associated with the Digital Service.
 
 #### Has publisher
 >
-> **IRI**: [credential-digital-service-description:hasPublisher](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasPublisher)
+> **IRI**: [credential-digital-service-description:hasPublisher](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasPublisher)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
@@ -108,9 +108,9 @@ An entity primarily responsible for making the Digital Service available.
 
 #### Has tag
 >
-> **IRI**: [credential-digital-service-description:hasTag](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTag)
+> **IRI**: [credential-digital-service-description:hasTag](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasTag)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -118,9 +118,9 @@ A (free) keyword or term assigned to the Digital Service.
 
 #### Has title
 >
-> **IRI**: [credential-digital-service-description:hasTitle](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTitle)
+> **IRI**: [credential-digital-service-description:hasTitle](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasTitle)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -128,9 +128,9 @@ The title of the Digital Service.
 
 #### Has webpage
 >
-> **IRI**: [credential-digital-service-description:hasWebpage](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasWebpage)
+> **IRI**: [credential-digital-service-description:hasWebpage](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/hasWebpage)
 >
-> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
+> **Domain**:&nbsp;[credential-digital-service-description:DigitalServiceDescriptionCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/DigitalServiceDescriptionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 

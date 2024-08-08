@@ -7,7 +7,7 @@ sidebar_position: 3
 
 > **Name**: `credential-digital-resource-rights`
 >
-> **Namespace**: [https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/)
+> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/)
 
 ## Namespaces
 
@@ -18,11 +18,11 @@ Here are the namespaces used in this schema:
 - `skos`: [http://www.w3.org/2004/02/skos/core#](http://www.w3.org/2004/02/skos/core#)
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
-- `credential-digital-resource-rights`: [https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/)
+- `credential-digital-resource-rights`: [https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+> **IRI**: [credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 
 ### Description
 
@@ -34,9 +34,9 @@ These details are critical for understanding the Digital Resource's provenance, 
 
 #### Has author
 >
-> **IRI**: [credential-digital-resource-rights:hasAuthor](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/hasAuthor)
+> **IRI**: [credential-digital-resource-rights:hasAuthor](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/hasAuthor)
 >
-> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
@@ -44,9 +44,9 @@ The author(s) of the Digital Resource.
 
 #### Has creator
 >
-> **IRI**: [credential-digital-resource-rights:hasCreator](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/hasCreator)
+> **IRI**: [credential-digital-resource-rights:hasCreator](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/hasCreator)
 >
-> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
@@ -54,19 +54,19 @@ The creator or entity responsible for compiling or generating the Digital Resour
 
 #### Has license
 >
-> **IRI**: [credential-digital-resource-rights:hasLicense](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/hasLicense)
+> **IRI**: [credential-digital-resource-rights:hasLicense](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/hasLicense)
 >
-> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
-> **Range**:&nbsp;[ns1:license](https://w3id.org/axone/ontology/v3/thesaurus/license)
+> **Range**:&nbsp;[ns1:license](https://w3id.org/axone/ontology/v4/thesaurus/license)
 
 The licensing terms under which the Digital Resource is made available.
 
 #### Has publisher
 >
-> **IRI**: [credential-digital-resource-rights:hasPublisher](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/hasPublisher)
+> **IRI**: [credential-digital-resource-rights:hasPublisher](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/hasPublisher)
 >
-> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v3/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
+> **Domain**:&nbsp;[credential-digital-resource-rights:DigitalResourceRightsCredential](https://w3id.org/axone/ontology/v4/schema/credential/digital-resource/rights/DigitalResourceRightsCredential)
 >
 > **Range**:&nbsp;[schema:Organization](http://schema.org/Organization), [schema:Person](http://schema.org/Person)
 
