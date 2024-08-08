@@ -4,9 +4,7 @@ sidebar_position: 3
 
 # Describe a resource
 
-Now that you know what a DID and a Verifiable Credential are, and what they mean for the Axone protocol, let's put them into practice!
-
-You're a digital resource provider and you want to share a dataset or a service. First, you need to describe your resource and register it in the Dataverse (i.e. in the Axone protocol).
+Welcome to the Axone Quickstart Guide. In this guide, you'll learn how to interact with the Axone Protocol and harness its powerful features to manage and share AI resources effectively. We'll start by describing a resource—a fundamental step that allows you to define and register any digital asset within the Axone ecosystem. This process sets the foundation for resource governance, collaboration, and seamless integration into AI workflows. Let's begin by understanding how to describe a resource accurately to unlock the full potential of Axone Protocol.
 
 Here are the 4 steps involved:
 
@@ -26,7 +24,7 @@ We'll take 2 examples in this tutorial:
 :::info
 Prerequisite:
 
-- [Install the Axone CLI](https://docs.okp4.network/tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
+- [Install the Axone CLI](../../tutorials/cli-1#installing-the-okp4-cli) to interact with the protocol
 - Ensure you have `npm` installed on your system. You can follow the installation guide [here](https://www.npmjs.com/get-npm).
 - Install the [json-cli](https://github.com/digitalbazaar/jsonld-cli) with the following command:
 
@@ -114,7 +112,7 @@ In the future, you will be able to use any key provider, such as Cheqd.
 
 ## Step 2: Create the credentials
 
-Find the credential templates you need in the [Ontology documentation](https://docs.okp4.network/ontology/schemas) according to the nature of the resource you describe.
+Find the credential templates you need in the [Ontology documentation](../../ontology/schemas/credential-dataset-description) according to the nature of the resource you describe.
 
 For the dataset, instantiate the template [credential-dataset-description](https://github.com/okp4/ontology/blob/main/src/example/dataset/crime-dataset-description.jsonld).  
 For the service, instantiate the template [credential-digital-service-description](https://github.com/okp4/ontology/blob/main/src/example/digital-service/ipfs-digital-service-description.jsonld).

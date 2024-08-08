@@ -198,7 +198,7 @@ const config = {
                 to: '/whitepaper/abstract'
               },
               {
-                label: 'Nodes & Validators',
+                label: 'Run a Node',
                 to: '/nodes/introduction'
               },
               {
@@ -219,8 +219,8 @@ const config = {
                 href: 'https://discord.gg/axone'
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/axonexyz'
+                label: 'X',
+                href: 'https://x.com/axonexyz'
               },
               {
                 label: 'GitHub',
@@ -228,15 +228,7 @@ const config = {
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/okp4network'
-              },
-              {
-                label: 'Zealy Program',
-                href: 'https://zealy.io/c/okp4/questboard'
-              },
-              {
-                label: 'Community discussions',
-                href: 'https://github.com/axone-protocol/community/discussions'
+                href: 'https://t.me/axonexyz'
               }
             ]
           },
@@ -250,10 +242,6 @@ const config = {
               {
                 label: 'Axone.xyz',
                 href: 'https://axone.xyz'
-              },
-              {
-                label: 'OKP4 GPT',
-                href: 'https://chat.openai.com/g/g-zUzcYmVbX-okp4-druid-oracle-beta'
               }
             ]
           },

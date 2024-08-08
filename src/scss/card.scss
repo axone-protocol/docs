@@ -388,7 +388,8 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-image: url("/img/grain.webp"), linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
+  background-image: url("/img/grain.webp"),
+    linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
   background-clip: border-box;
   border-radius: 20px;
   color: var(--ifm-card-font-color);

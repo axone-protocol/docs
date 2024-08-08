@@ -33,7 +33,7 @@ Before moving on to transactions with smart contracts, let's begin with a basic 
 
 :::info
 
-You need to [set up a wallet with Keplr and own some $AXONE tokens](https://docs.okp4.network/tutorials/keplr-1).
+You need to [set up a wallet with Keplr and own some $AXONE tokens](../tutorials/keplr-1).
 
 :::
 
