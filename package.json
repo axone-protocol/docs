@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.4.0",
-    "@docusaurus/types": "^3.0.1",
+    "@docusaurus/types": "^3.5.1",
     "@nivo/line": "^0.87.0",
     "@okp4/eslint-config": "^2.0.0",
     "docusaurus-plugin-drawio": "^0.4.0",
