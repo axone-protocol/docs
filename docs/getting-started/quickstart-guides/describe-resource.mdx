@@ -64,8 +64,7 @@ If you create a new key pair, the terminal displays a list of 24 words. Store th
 Get the list of all your keys stored locally especially the new one. You can see that the DID related to this key is `did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5`.
 
 ```bash
-okp4d keys list --keyring-backend test
-
+> okp4d keys list --keyring-backend test
 address: okp413e4exyqr5chxz5qlg2wpqr5ehmq90q2dgy753z
   did: did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5
   name: crime-data-lapd
@@ -77,7 +76,7 @@ You can also use the command `okp4d show` to directly find information about a p
 
 ```bash
 # Replace "crime-data-lapd" with your wallet name
-okp4d keys show crime-data-lapd --keyring-backend test
+> okp4d keys show crime-data-lapd --keyring-backend test
 - address: okp413e4exyqr5chxz5qlg2wpqr5ehmq90q2dgy753z
   name: crime-data-lapd
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Aj8dI0OJWxTGM4gYd89cB8Qzi95DNxR/3F9DAPaNU0Mg"}'
