@@ -68,7 +68,7 @@ This will generate, in the `$HOME/.okp4d` folder, the following files:
 
 :::danger
 
-The generated `config/priv_validator_key` and `config/node_key.json` are very sensible, if stolen the entire stake delegated to the validator is at risk.
+The generated `config/priv_validator_key` and `config/node_key.json` are very sensitive, if stolen the entire stake delegated to the validator is at risk.
 ➡️ See the [Security](security.md) section.
 
 :::
