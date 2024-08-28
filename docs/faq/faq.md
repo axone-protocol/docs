@@ -22,11 +22,11 @@ Axone is a layer-1 designed for collaborative AI training, governance, and monet
 
 It is the ability to let data contribute to valuable knowledge and applications without ever exposing the data itself to other participants. Through a trustless network and privacy-preserving techniques, other parties never access the raw data that has been shared. End-users will access only the output (the indicator, the graph, the application...), not the data itself. Enabling value creation, value sharing, without the risks associated to exposing data.
 
-## What is a Zone?
+## What is a zone?
 
-A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, considering the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
+A zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, considering the associated consents. Thus, the recognition of resources within a zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
-The primary objective of Zones is to facilitate the coordination of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
+The primary objective of zones is to facilitate the coordination of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
 
 More information [here](./whitepaper/solution#protocol-overview)
 
@@ -43,14 +43,14 @@ For clarity, we categorize resources and services into different types:
 
 For more in-depth information, you can refer to our dedicated documentation [here](./whitepaper/solution#the-dataverse).
 
-## Why do you distinguish Zones and digital resources?
+## Why do you distinguish zones and digital resources?
 
-The distinction between Zones and resources is crucial to enable the flexibility and adaptability of the Axone ecosystem.
-Zones are conceptual frameworks defined by a set of rules. They determine the parameters and boundaries that define the territory of a given Zone. Zone rules can be either open, allowing broad interaction, or restrictive, limiting access and resource usage. By evaluating the compatibility of resources with Zone rules, the scope and coverage of that Zone are defined. Multiple Zones can share common resources and nest within each other based on the rules associated with each resource and Zone.
+The distinction between zones and resources is crucial to enable the flexibility and adaptability of the Axone ecosystem.
+Zones are conceptual frameworks defined by a set of rules. They determine the parameters and boundaries that define the territory of a given zone. Zone rules can be either open, allowing broad interaction, or restrictive, limiting access and resource usage. By evaluating the compatibility of resources with zone rules, the scope and coverage of that zone are defined. Multiple zones can share common resources and nest within each other based on the rules associated with each resource and zone.
 
-The absence of a direct link between Zones and resources allows for significant flexibility as Zones can evolve by adjusting their rules and conditions. This continuous evolution redefines the boundaries and characteristics of Zones, promoting adaptation to the changing needs of the Axone ecosystem.
+The absence of a direct link between zones and resources allows for significant flexibility as zones can evolve by adjusting their rules and conditions. This continuous evolution redefines the boundaries and characteristics of zones, promoting adaptation to the changing needs of the Axone ecosystem.
 
-In summary, the distinction between Zones and resources enables the Axone ecosystem to be dynamic, scalable, and capable of accommodating a variety of rules and conditions for each Zone, thereby fostering value creation and free interaction among participants and digital resources.
+In summary, the distinction between zones and resources enables the Axone ecosystem to be dynamic, scalable, and capable of accommodating a variety of rules and conditions for each zone, thereby fostering value creation and free interaction among participants and digital resources.
 
 ## How does Axone store the resources and services?
 
@@ -103,7 +103,7 @@ While Ocean Protocol focuses on tokenizing datasets, we're focused on building t
 
 Not at all! The protocol we've developed introduces innovative primitives suitable for a wide range of applications. Initially, we targeted B2B ones. While these have notable usage volume, they're not seamless and pose bootstrapping challenges.
 
-Consequently, we've prioritized no-code interfaces for data & service providers, Zone creators, governance participants, and workflow consumers. Our aim is to allow individuals to easily define rules and either contribute to or consume resources. These user-friendly interfaces empower developers to seamlessly experiment with off-chain coordination. While many community-driven innovations arise from our members (such as Marketplaces, Collaborative Research DAOs, Personal Data Vaults, etc.), our primary focus for adoption is collaborative AI training. The Axone Portal will feature what we term "AI Factory" templates.
+Consequently, we've prioritized no-code interfaces for data & service providers, zone creators, governance participants, and workflow consumers. Our aim is to allow individuals to easily define rules and either contribute to or consume resources. These user-friendly interfaces empower developers to seamlessly experiment with off-chain coordination. While many community-driven innovations arise from our members (such as Marketplaces, Collaborative Research DAOs, Personal Data Vaults, etc.), our primary focus for adoption is collaborative AI training. The Axone Portal will feature what we term "AI Factory" templates.
 
 These templates detail rules for data, algorithms, and infrastructure contributions. They can be customized to meet specific needs related to quality, privacy, transparency, or reliability. Furthermore, they introduce governance frameworks and custom tokens to manage or incentivize AI DAO participants.
 
@@ -178,7 +178,7 @@ The Cognitarium smart contract facilitates the storage and querying of semantic 
 
 ## What is the Law-Stone smart contract in a few words?
 
-The Law-Stone is a highly versatile smart contract designed to apply and enforce legislative rules, including Zone rules, Consents, and Agreements. It offers extraordinary adaptability and can be utilized in any blockchain within the Cosmos ecosystem that seeks to establish robust and flexible on-chain governance systems. With its exceptional proficiency in evaluating logical rules, Law-Stone can be applied across various use cases.
+The Law-Stone is a highly versatile smart contract designed to apply and enforce legislative rules, including zone rules, Consents, and Agreements. It offers extraordinary adaptability and can be utilized in any blockchain within the Cosmos ecosystem that seeks to establish robust and flexible on-chain governance systems. With its exceptional proficiency in evaluating logical rules, Law-Stone can be applied across various use cases.
 
 The smart contract has two sides:
 
@@ -206,9 +206,9 @@ Similar to other Proof-of-stake chains, the $AXONE secures the network through s
 
 The $AXONE is also a governance token. Anyone can do on-chain proposals, and $AXONE holders can vote yes, no, abstain or no with veto to these proposals.
 
-The $AXONE token can also be a governance token for any Zone if implemented that way.
+The $AXONE token can also be a governance token for any zone if implemented that way.
 
-Beyond that, and more related to use cases, the $AXONE is used by default for value sharing when a workflow is initiated according to the business model of the Zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
+Beyond that, and more related to use cases, the $AXONE is used by default for value sharing when a workflow is initiated according to the business model of the zone and of the resources invoked in the workflow. A 2% tax is applied on workflows to reduce the token supply in order compensate for inflation and another 1% tax is collected for the community to redistribute it and fund any initiative like contributing to public goods.
 
 The $AXONE token may also be used for security purposes, requiring data or service providers to lock some tokens in order to prove their good faith. The tokens may be used for curation on Datasets and Services, allowing users to lock tokens on specific resources to get a part of their revenue, when relevant.
 
@@ -276,7 +276,7 @@ More info [here](./whitepaper/architecture#trusted-parties-considerations)
 
 ## How Axone ensures law enforcement BEFORE EXECUTION?
 
-1. An Identity (human or bot) wants to interact with a Zone
-2. The Zone asks to the dedicated smart contract if its possible given the context and all the involved rules
+1. An Identity (human or bot) wants to interact with a zone
+2. The zone asks to the dedicated smart contract if its possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on. Depending on the answer, the execution process could start.

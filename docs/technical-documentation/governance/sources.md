@@ -12,11 +12,11 @@ Protocol Governance sets the fundamental rules and regulations governing the Axo
 
 ## Zone rules
 
-Rules establish the boundaries of a specific area in the dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
+Rules establish the boundaries of a specific area in the dataverse, termed a zone, within which governance is enforced. Each zone is governed by its unique set of Rules tailored to its particular function or purpose.
 
 ## Resource Consent
 
-Consents are agreements associated with the use of Resources within Zones. By resources, we mean Digital Resources (e.g. datasets) or Services. It goes beyond simple approval and encompasses the permissions and restrictions on resource owners' access, usage, sharing, management and handling of their resources. It allows parties to define boundaries and establish terms for others to interact with their digital resources. It's a crucial aspect of governance, ensuring resources are used appropriately per the relevant parties' expressed will and intentions.
+Consents are agreements associated with the use of Resources within zones. By resources, we mean Digital Resources (e.g. datasets) or Services. It goes beyond simple approval and encompasses the permissions and restrictions on resource owners' access, usage, sharing, management and handling of their resources. It allows parties to define boundaries and establish terms for others to interact with their digital resources. It's a crucial aspect of governance, ensuring resources are used appropriately per the relevant parties' expressed will and intentions.
 
 ## Agreement
 

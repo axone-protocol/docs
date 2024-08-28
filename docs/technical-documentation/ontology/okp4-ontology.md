@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Axone Ontology
 
-The Axone protocol orchestrates the various resources of the Dataverse (datasets and services) using different blockchain elements such as smart contracts, logic modules, and ontology. All these elements allow for fine management of dataset and service workflows for knowledge creation within a Zone with personalized governance. As seen previous sections, the ontology must stand for the different concepts of the protocol, their relationships, and their properties.
+The Axone protocol orchestrates the various resources of the Dataverse (datasets and services) using different blockchain elements such as smart contracts, logic modules, and ontology. All these elements allow for fine management of dataset and service workflows for knowledge creation within a zone with personalized governance. As seen previous sections, the ontology must stand for the different concepts of the protocol, their relationships, and their properties.
 
 ## The big picture
 
@@ -47,7 +47,7 @@ The following concepts and properties are found within the Axone ontology:
 
 ### Data
 
- This refers to the data contained within a dataset.
+This refers to the data contained within a dataset.
 
 ### Dataset
 
@@ -71,10 +71,10 @@ This is the description of a given dataset in metadata form.
 ### Zone
 
 Zone is a conceptual framework that is established based on a set of rules, within which recognized `Resources` must conform, considering associated consents.
-  
-Zones are described by a set of metadata providing information about various aspects of the Zone, such as the zone's name, general information about the provider, and more.
 
-Specific data description vocabularies and thesauri are used to structure this metadata. A dedicated metadata profile outlines the rules that govern the Zone, expressing its fundamental principles, intentions, scope, and ultimate objectives. These rules encompass the entities involved and the Resources that interact within the Zone.
+Zones are described by a set of metadata providing information about various aspects of the zone, such as the zone's name, general information about the provider, and more.
+
+Specific data description vocabularies and thesauri are used to structure this metadata. A dedicated metadata profile outlines the rules that govern the zone, expressing its fundamental principles, intentions, scope, and ultimate objectives. These rules encompass the entities involved and the Resources that interact within the zone.
 
 They can be customized to address specific use cases, industry sectors, partnership networks, or geographic regions, facilitating tailored governance arrangements within a specific context.
 
@@ -84,7 +84,7 @@ A decentralized identifier URI. A URI that identifies a subject in a decentraliz
 
 ### Metadata
 
-The information data about something (i.e. data about the data). This something can be a Zone, a Dataset, a Service, or any other entity that can be described.
+The information data about something (i.e. data about the data). This something can be a zone, a Dataset, a Service, or any other entity that can be described.
 
 Metadata is an abstract concept which is refined in Metadata Profiles used to provide a formal specification that defines the set of metadata elements, their semantics, and their syntax to be used in a particular context or application. The Axone protocol proposes several profiles at the core of the ontology, such as GeneralMetadata for describing services or datasets.
 
@@ -95,7 +95,7 @@ Services or datasets, a resource belongs to the Dataverse.
 ### Service
 
 - hasIdentifier
-A service consumes a resource and produces data.
+  A service consumes a resource and produces data.
 
 ## Conclusion
 

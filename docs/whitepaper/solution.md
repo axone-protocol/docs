@@ -48,33 +48,33 @@ In addition to addressing technical fragmentation, Axone also provides a **compr
 
 ### How does Axone work?
 
-Axone leverages the referenced resources into the protocol to construct digital commons, termed **Zones**, where digital resources can be shared and orchestrated to create knowledge. **To each zone and shared resource is attached customizable rules** concerning every facet of resource sharing. This includes aspects such as access control, data and service management, business models, governance frameworks for instance. The Axone protocol ensures proper compliance with the rules and the execution.
+Axone leverages the referenced resources into the protocol to construct digital commons, termed **zones**, where digital resources can be shared and orchestrated to create knowledge. **To each zone and shared resource is attached customizable rules** concerning every facet of resource sharing. This includes aspects such as access control, data and service management, business models, governance frameworks for instance. The Axone protocol ensures proper compliance with the rules and the execution.
 
 ### Zone overview
 
-The primary objective of Zones is to **facilitate the coordination** of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
+The primary objective of zones is to **facilitate the coordination** of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
 
-**What is a Zone ?**
-A Zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. Thus, the recognition of resources within a Zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
+**What is a zone ?**
+A zone is a conceptual framework defined by a set of rules, within which the recognized digital resources are compatible with these rules, taking into account the associated consents. Thus, the recognition of resources within a zone relies on the dynamic evaluation of the conformity of the rules and consents of the resources.
 
 ![solution-1](/img/content/whitepaper/solution-1.webp)
 
-Another way to perceive it is through the rules of the Zone which can be either open or on the contrary restrictive . The existence of these rules defines the reality of the Zone, and it is through the consideration (evaluation) of digital resources that are compatible with the Zone that the extent of the Zone's territory is defined. In other words, the rules establish the boundaries and parameters that determine which digital resources fall within the Zone and are recognized as part of it. By evaluating the compatibility of resources with the Zone's rules, the scope and coverage of the Zone can be determined. Multiple Zones may share common resources and can be nested or overlapped, based on the rules associated with each resource and zone.
+Another way to perceive it is through the rules of the zone which can be either open or on the contrary restrictive . The existence of these rules defines the reality of the zone, and it is through the consideration (evaluation) of digital resources that are compatible with the zone that the extent of the zone's territory is defined. In other words, the rules establish the boundaries and parameters that determine which digital resources fall within the zone and are recognized as part of it. By evaluating the compatibility of resources with the zone's rules, the scope and coverage of the zone can be determined. Multiple zones may share common resources and can be nested or overlapped, based on the rules associated with each resource and zone.
 
-There is then an endless combination of oftentimes interoperable Zones where participants and digital resources can interact freely and create value.
+There is then an endless combination of oftentimes interoperable zones where participants and digital resources can interact freely and create value.
 
 ![solution-2](/img/content/whitepaper/solution-2.webp)
 
-**Why no direct link between Zone and resources?**
-If there is no materialized link determining the belonging of a resource to a Zone, it is because Zones are designed to constantly evolve through their rules and conditions which continuously redefine their boundaries.
+**Why no direct link between zone and resources?**
+If there is no materialized link determining the belonging of a resource to a zone, it is because zones are designed to constantly evolve through their rules and conditions which continuously redefine their boundaries.
 
 ### The Dataverse
 
 The Dataverse is an ever-expanding universe comprised of all the digital resources, such as datasets, and digital services such as infrastructure services, processing services or any other digital service referenced in the Axone Blockchain.
 
-All resources, services and Zones are found within the same universe, the Dataverse.
+All resources, services and zones are found within the same universe, the Dataverse.
 
-Zones can be nested and overlapping, as one resource or service can participate in many Zones, and many applications can be built on top of one Zone. The whole is greater than the sum of its parts: **this is the Dataverse.**
+Zones can be nested and overlapping, as one resource or service can participate in many zones, and many applications can be built on top of one zone. The whole is greater than the sum of its parts: **this is the Dataverse.**
 
 **What's the purpose ?**
 **Creating a general purpose Ecosystem that enables XaaS integration**
@@ -124,7 +124,7 @@ BI tools can be effectively employed to comprehend the data shared within the zo
 
 ### Ontology
 
-Given that resources are not directly attached to a specific Zone, but rather deemed compatible with certain Zones based on their rules and conditions, it is crucial for the Axone protocol to accurately **represent and interpret** these diverse concepts within its framework. Furthermore, the protocol must efficiently distinguish and understand various consent rules, their dependencies, and hierarchies. Consequently, the protocol has to **express as clearly as possible the context**, the meaning of the concepts and their relationships.
+Given that resources are not directly attached to a specific zone, but rather deemed compatible with certain zones based on their rules and conditions, it is crucial for the Axone protocol to accurately **represent and interpret** these diverse concepts within its framework. Furthermore, the protocol must efficiently distinguish and understand various consent rules, their dependencies, and hierarchies. Consequently, the protocol has to **express as clearly as possible the context**, the meaning of the concepts and their relationships.
 
 To really leverage the power of knowledge, Axone protocol interprets all these entities and concept within a universal language taking into account **the semantic aspect** of each of them.
 Let's take an illustration to clearly understand.
@@ -145,10 +145,10 @@ The Axone ontology is stored on-chain as a smart contract, called Cognitarium. S
 Storing ontology on the blockchain and leveraging it to imbue resources and datasets with meaning carries significant implications for both execution and verification.
 
 **Execution:**
-The benefits of an ontology extend to both execution and interpretability. An ontology, acting as a shared semantic framework, enables standardization and interoperability among resources. **This makes it easier for diverse resources to connect and collaborate.** In addition, an ontology provides a comprehensive understanding of resources within a Zone and their applicable governance rules. By delivering a clear data lineage, it ensures each piece of data is **traceable** through various treatments
+The benefits of an ontology extend to both execution and interpretability. An ontology, acting as a shared semantic framework, enables standardization and interoperability among resources. **This makes it easier for diverse resources to connect and collaborate.** In addition, an ontology provides a comprehensive understanding of resources within a zone and their applicable governance rules. By delivering a clear data lineage, it ensures each piece of data is **traceable** through various treatments
 
 **Interpretability & Representation:**
-Ontology also provides a comprehensive and dynamic understanding of datasets within a Zone, their transformation (by services), and the applicable governance rules (data sharing, consents, policy rules). From this perspective, it delivers the data lineage (enabling traceability) for each piece of data within the Zones during various treatments, culminating in a knowledge graph of all used resources within the Dataverse. In addition to serving as an immutable source of truth, the blockchain will provide detailed insight into the knowledge generation process, thereby qualifying itself as an interpretable settlement layer.
+Ontology also provides a comprehensive and dynamic understanding of datasets within a zone, their transformation (by services), and the applicable governance rules (data sharing, consents, policy rules). From this perspective, it delivers the data lineage (enabling traceability) for each piece of data within the zones during various treatments, culminating in a knowledge graph of all used resources within the Dataverse. In addition to serving as an immutable source of truth, the blockchain will provide detailed insight into the knowledge generation process, thereby qualifying itself as an interpretable settlement layer.
 
 Below, an example of a workflow representation in the form of a knowledge graph, generated thanks to the information stored on-chain.
 
@@ -156,7 +156,7 @@ Below, an example of a workflow representation in the form of a knowledge graph,
 
 ## PROTOCOL FUNCTIONALITY
 
-Having established the various entities within the Axone protocol - Zones, resources, consent rules, governance rules, and others - it is clear that the protocol is capable of accurately representing and interpreting these diverse elements. Now, it's time to explore the functionality of the protocol, specifically the features that allow users to leverage its unique design to their advantage.
+Having established the various entities within the Axone protocol - zones, resources, consent rules, governance rules, and others - it is clear that the protocol is capable of accurately representing and interpreting these diverse elements. Now, it's time to explore the functionality of the protocol, specifically the features that allow users to leverage its unique design to their advantage.
 
 ### Share any resources
 
@@ -164,15 +164,15 @@ As an agnostic and interoperable infrastructure, **Axone enables the sharing** o
 
 ### Define and enforce any customized rules on-chain
 
-One of the primary functions of the Axone protocol is to facilitate a **broad spectrum of governance and consent rules.** However, with a wealth of digital resources, each with their own rules, the combination of multiple resources can lead to complex logical scenarios. Here's how it works in practice: a user wants to interact with a Zone, and the Zone refers to the protocol's rules to determine if the user's action is permitted. This takes into account the context at the time of the request, as the rules and digital resources registered in the blockchain are continuously evolving.
+One of the primary functions of the Axone protocol is to facilitate a **broad spectrum of governance and consent rules.** However, with a wealth of digital resources, each with their own rules, the combination of multiple resources can lead to complex logical scenarios. Here's how it works in practice: a user wants to interact with a zone, and the zone refers to the protocol's rules to determine if the user's action is permitted. This takes into account the context at the time of the request, as the rules and digital resources registered in the blockchain are continuously evolving.
 From a computer science perspective, the challenge lies in resolving occasionally **complex logical problems** among the different rules. This includes notions of hierarchy, inconsistency, dependency, and conflict resolution in terms of access, etc.
 
-To tackle this, Axone aims at providing a **reliable and secure mechanism** to ensure that all the invoked rules are correctly interpreted in a decentralized way. Each Zone's established rules determine whether a user's intended action is permissible or not. It's essential to note that these considerations must also account for the different contexts at the time of the request, as the state of the blockchain evolves.
+To tackle this, Axone aims at providing a **reliable and secure mechanism** to ensure that all the invoked rules are correctly interpreted in a decentralized way. Each zone's established rules determine whether a user's intended action is permissible or not. It's essential to note that these considerations must also account for the different contexts at the time of the request, as the state of the blockchain evolves.
 
 ![solution-8](/img/content/whitepaper/solution-8.webp)
 
-1. An Identity (human or bot) wants to interact with a Zone
-2. The Zone asks the dedicated smart contract if it's possible given the context and all the involved rules
+1. An Identity (human or bot) wants to interact with a zone
+2. The zone asks the dedicated smart contract if it's possible given the context and all the involved rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response, such as "prohibited", "permitted", "possible", and so on.
    Depending on the answer, the execution process could start.
@@ -187,9 +187,9 @@ The challenge here is to **ensure that all the events of the protocol are execut
 
 ![solution-9](/img/content/whitepaper/solution-9.webp)
 
-When an Identity wishes to engage a workflow within a Zone, a service execution agreement as a Pactum smart contract will be established among the involved participants.
+When an Identity wishes to engage a workflow within a zone, a service execution agreement as a Pactum smart contract will be established among the involved participants.
 
-1. This agreement verifies the alignment of governance rules of the Zone and the digital resources involved in the execution and also checks the conformity of all rules within the entire execution context. This context includes the resources and the Zone, as well as the user who initiated the workflow.
+1. This agreement verifies the alignment of governance rules of the zone and the digital resources involved in the execution and also checks the conformity of all rules within the entire execution context. This context includes the resources and the zone, as well as the user who initiated the workflow.
 2. Pactum then oversees the entire execution flow of all the resources.
 3. Lastly, the Pactum smart contract is able to apply retribution rules, ensuring distribution of rewards or compensation in accordance with defined retribution rules. Concretely, Pactum acts as a **decentralized regulator** coordinating the orchestration of digital resources and managing cases of error.
 
