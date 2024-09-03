@@ -1,45 +1,48 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-# Create the zone's governance
+# Create the resource's governance
 
 :::info
 We recommend you first read the [Technical documentation of Governance](../../technical-documentation/governance/introduction) before delving into practice in the Academy.
 :::
 
-Zone Rules establish the boundaries of a specific area in the Dataverse, termed a Zone, within which governance is enforced. Each Zone is governed by its unique set of Rules tailored to its particular function or purpose.
+Resource Consent is an agreement associated with the use of Resources within zones. By resources, we mean Digital Resources (e.g., datasets) or Digital Services. It goes beyond simple approval and encompasses the permissions and restrictions on resource owners' access, usage, sharing, management, and handling of their resources. It allows parties to define boundaries and establish terms for others to interact with their digital resources. This is crucial for governance, ensuring resources are used appropriately per the relevant parties' expressed will and intentions.
 
-The materialization of a zone in the Dataverse requires the creation of a Governance VP. According to a principle of self-determination, the zone itself must generate this VP, i.e., the issuer and the zone have the same identity.
+The materialization of a resource in the dataverse requires the creation of a Governance VP. According to a principle of self-determination, the resource itself must generate this VP, i.e., the issuer and the resource have the same identity.
 
-The impact of this VP of Governance is constitutional. Its implementation transfers authority from the issuer (i.e., the zone) to an autonomous governance system associated with the zone. This system is equipped with its own mechanisms and manages changes and revisions relating to the governance of the zone in an independent, self-regulated, and decentralized manner.
+The impact of this VP of Governance is constitutional. Its implementation transfers authority from the issuer (i.e., the resource) to an autonomous governance system associated with the resource. This system is equipped with its own mechanisms and manages changes and revisions relating to the governance of the resource in an independent, self-regulated, and decentralized manner.
 
-The zone Governance is contractual, defining the terms of use of the zone. For example, it can specify the conditions of access to a dataset for certain services with specific claims.
+The governance of a Dataset or Service Governance is contractual, defining the terms of access and use of the resource. For example, it can specify the conditions of access to a dataset for certain services with specific claims.
 
 In the protocol, governance structures are made up of two key elements:
 
-- A **VP** serves as proof of the existence of a governance by referencing the Codified Governance. This document plays a fundamental role in creating a zone within the dataverse.
-- **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing zone management.
+- A **VP** serves as proof of the existence of a governance by referencing the Codified Governance. This document plays a fundamental role in creating a resource within the dataverse.
+- **Governance as Code** is represented by a program written in Prolog. This program details and encodes the specific rules governing resource management.
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
   <img
-    src="/img/content/academy/zone-governance-1.webp"
-    alt="Governance elements for Zone in Axone Protocol"
+    src="/img/content/academy/resource-governance-1.webp"
+    alt="Governance elements for Resources in Axone Protocol"
     style={{ maxHeight: '340px' }}
   ></img>
 </div>
 
-Here are the five steps to create a zone governance in the Dataverse:
+Here are the five steps to create the governance of a resource in the Dataverse:
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
   <img
-    src="/img/content/academy/zone-governance-2.webp"
-    alt="Steps to create a zone's governance"
+    src="/img/content/academy/resource-governance-2.webp"
+    alt="Steps to create a resource's governance"
     style={{ maxHeight: '340px' }}
   ></img>
 </div>
 
-We'll take one simple example in this tutorial for the Collaborative AI zone.
+We'll take 2 simple examples in this tutorial:
+
+- The dataset [Crime Data from 2020 to Present](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
+- The storage service [IPFS](https://ipfs.tech)
 
 :::info
 Prerequisite:
@@ -54,9 +57,9 @@ npm install -g jsonld-cli
 
 :::
 
-## Step 1: Define the governance of your zone
+## Step 1: Define the governance of your resource
 
-First, you need to define the governance rules of your zone.
+First, you need to define the governance rules of your resource.
 The governance content is systematically arranged into a hierarchical text structure comprising sections, articles, and paragraphs.
 
 - **chapter**: This term represents a major division in structuring rules, similar to a chapter in a legislative text. It is used to group together articles dealing with related subjects or falling within the same thematic area.
@@ -66,16 +69,33 @@ The governance content is systematically arranged into a hierarchical text struc
 
 You can use a template (coming soon) or begin from scratch.
 
-Governance rules of the Collaborative AI zone:
+Governance rules of the dataset Crime Data from 2020 to Present:
 
-| Division  | Ordinal number | Title                                                                                                      |
-| --------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| Chapter   | 1              | Collaborative AI zone                                                                                      |
-| Section   | 1.1            | Zone Governance                                                                                            |
-| Article   | 1.1.1          | Conditions to amend the rules                                                                              |
-| Paragraph | 1.1.1.1        | Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3` |
-| Article   | 1.1.2          | Conditions on authorized services                                                                          |
-| Paragraph | 1.1.1.1        | Only services of type 'Storage' or 'Machine Learning'                                                      |
+| Division  | Ordinal number | Title                                                |
+| --------- | -------------- | ---------------------------------------------------- |
+| Chapter   | 1              | Crime data dataset governance                        |
+| Section   | 1.1            | Usage of the dataset                                 |
+| Article   | 1.1.1          | Conditions on consumers                              |
+| Paragraph | 1.1.1.1        | Everyone can use the dataset                         |
+| Article   | 1.1.2          | Conditions on services that consume the dataset      |
+| Paragraph | 1.1.2.1        | Only services of type "Storage" or "Data Processing" |
+| Section   | 1.2            | Conditions of usages                                 |
+| Article   | 1.2.1          | Price                                                |
+| Paragraph | 1.2.1.1        | Free                                                 |
+| Article   | 1.2.2          | Rate limiting                                        |
+| Paragraph | 1.2.2.1        | The rate limit is 2 months maximum                   |
+
+Governance rules of the service IPFS:
+
+| Division  | Ordinal number | Title                        |
+| --------- | -------------- | ---------------------------- |
+| Chapter   | 1              | IPFS governance              |
+| Section   | 1.1            | Usage of the dataset         |
+| Article   | 1.1.1          | Conditions on consumers      |
+| Paragraph | 1.1.1.1        | Everyone can use the dataset |
+| Section   | 1.2            | Conditions of usages         |
+| Article   | 1.2.1          | Price                        |
+| Paragraph | 1.2.1.1        | Free                         |
 
 :::info
 The Axone Community will provide more and more templates over time.
@@ -206,27 +226,26 @@ For two standards under consideration, providing 2 different verdicts, the follo
 
 ### Examples
 
-Here is an example of the governance of Collaborative AI zone:
+Here is an example of the consent attached to the Crime dataset:
 
 ```prolog
 :- discontiguous([title/2,partOf/2,chapter/1,section/1,article/1,paragraph/2]).
 chapter('chap1').
-     title('chap1', 'Collaborative AI zone governance').
+     title('chap1', 'Crime data governance').
      section('sec1.1').
          partOf('sec1.1', 'chap1').
-         title('sec1.1', 'Zone Governance').
+         title('sec1.1', 'Usage of the dataset').
              article('art1.1.1').
                  partOf('art1.1.1', 'sec1.1').
-                 title('art1.1.1', 'Conditions to amend the rules').
-                 paragraph('para1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
+                 title('art1.1.1', 'Conditions on consumers').
+                 paragraph('para1.1.1.1', permitted) :- action(A), A=='workflow:consume'.
                     partOf('para1.1.1.1', 'art1.1.1').
-                     description('para1.1.1.1', 'Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`').
-
+                     description('para1.1.1.1', 'Everyone can use the dataset').
 ```
 
 ## Step 3: Submit the Prolog program in the Dataverse
 
-Create a Prolog file `my-zone-governance.pl` with the governance of your zone.
+Create a Prolog file `my-resource-governance.pl` with the governance of your resource.
 
 Create a specific smart contrat Law Stone for your governance.
 
@@ -252,17 +271,17 @@ With:
 Example:
 
 ```bash
-okp4d tx wasm instantiate 2 --label 4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae \
+okp4d tx wasm instantiate 2 --label fea0312a-f4bb-449c-a736-7a16e7cc94c1 \
     --node "https://api.drunemeton.okp4.network:443/rpc" \
     --chain-id okp4-drunemeton-1 \
     --keyring-backend test \
     --from issuer-okp4 \
     --admin issuer-okp4 \
     --gas 20000000 \
-    "{\"program\":\"$(cat collab-ai-zone-governance.pl | base64)\", \"storage_address\": \"okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj\"}"
+    "{\"program\":\"$(cat crime-dataset-governance.pl | base64)\", \"storage_address\": \"okp41suhgf5svhu4usrurvxzlgn54ksxmn8gljarjtxqnapv8kjnp4nrscr7uaj\"}"
 ```
 
-txhash: 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
+txhash: 59AB4A2A7AD238AD55F75D5CB9B576FF92DDE39F1509442A74E6556A612591A6
 
 Then you need to find the contract address which is necessary for the next step. You can use the following command:
 
@@ -277,7 +296,7 @@ With:
 Example:
 
 ```bash
-okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx 19DA088BC86BFCFAB34846D44024464BDADF71B74EEB1C68AC7634DE393B043B
+okp4d --node "https://api.drunemeton.okp4.network:443/rpc" query tx 59AB4A2A7AD238AD55F75D5CB9B576FF92DDE39F1509442A74E6556A612591A6
 ```
 
 Find the contract address in the transactions information:
@@ -288,7 +307,7 @@ Example:
 - attributes:
   - index: true
     key: _contract_address
-    value: okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl
+    value: okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk
   - index: true
     key: code_id
     value: "2"
@@ -296,20 +315,20 @@ Example:
 
 ## Step 4: Create the Governance VC
 
-The Governance VP is a specific type of VP that details the governance rules applicable to a given zone, whether it is a Dataset, a Service, or a Zone. This VP addresses two key dimensions:
+The Governance VP is a specific type of VP that details the governance rules applicable to a given resource, whether it is a Dataset, a Service, or a Zone. This VP addresses two key dimensions:
 
-- Association with Codified Governance: It associates the zone with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
+- Association with Codified Governance: It associates the resource with a URI that refers to the codified governance rules (governance as code). This URI points to a program in Prolog language that explicitly defines the governance rules.
 - Textual Description of the Rules: In addition to the link to the codified rules, the VP provides a structured and hierarchical textual explanation of the governance rules, as set out in the Prolog program.
 
-This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for zone within the Axone dataverse.
+This bimodal approach not only guarantees the clarity and accessibility of the governance rules for human users but also ensures their direct and functional on-chain integration. The VP of Governance therefore plays a crucial role in clarifying and implementing governance guidelines for resources within the Axone dataverse.
 
 Governance VPs play an essential role in the dataverse, applying universally to various categories of resources, such as datasets, services, and zones.
 
 Instantiate the template [credential-governance-text](https://github.com/okp4/ontology/blob/main/src/example/governance/crime-dataset-governance.jsonld).
 
-Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-zone).
+Fill in the template with the elements you [precedently defined](#step-1-define-the-governance-of-your-resource).
 
-The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl>` for which a text description is also provided.
+The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5>` has a governance system that is described by the prolog program `<cosmwasm:okp4-objectarium:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk>` for which a text description is also provided.
 
 ```json
 {
@@ -318,62 +337,62 @@ The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3sh
     "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/"
   ],
   "type": ["VerifiableCredential", "GovernanceTextCredential"],
-  "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
+  "id": "https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1",
   "credentialSubject": {
-    "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+    "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
     "isGovernedBy": {
       "type": "GovernanceText",
-      "fromGovernance": "cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22",
+      "fromGovernance": "cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22",
       "hasChapter": {
         "type": "Chapter",
-        "hasTitle": "Collaborative AI governance",
+        "hasTitle": "Crime data dataset governance",
         "hasOrdinalNumber": "1",
         "hasSection": {
           "type": "Section",
-          "hasTitle": "Zone Governance",
+          "hasTitle": "Usage of the dataset",
           "hasOrdinalNumber": "1.1",
           "hasArticle": {
             "type": "Article",
-            "hasTitle": "Conditions to amend the rules",
+            "hasTitle": "Conditions on consumers",
             "hasOrdinalNumber": "1.1.1",
             "hasParagraph": {
               "type": "Paragraph",
-              "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+              "hasTitle": "Everyone can use the dataset",
               "hasOrdinalNumber": "1.1.1.1"
             }
           },
           "hasArticle": {
             "type": "Article",
-            "hasTitle": "Conditions on authorized services",
+            "hasTitle": "Conditions on services that consume the dataset",
             "hasOrdinalNumber": "1.1.2",
             "hasParagraph": {
               "type": "Paragraph",
-              "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+              "hasTitle": "Only services of type 'Storage' or 'Data Processing'",
               "hasOrdinalNumber": "1.1.2.1"
             }
           }
         },
         "hasSection": {
           "type": "Section",
-          "hasTitle": "Zone Business Model",
+          "hasTitle": "Conditions of usages",
           "hasOrdinalNumber": "1.2",
           "hasArticle": {
             "type": "Article",
-            "hasTitle": "XXXX",
+            "hasTitle": "Price",
             "hasOrdinalNumber": "1.2.1",
             "hasParagraph": {
               "type": "Paragraph",
-              "hasTitle": "XXXX",
+              "hasTitle": "Free",
               "hasOrdinalNumber": "1.2.1.1"
             }
           },
           "hasArticle": {
             "type": "Article",
-            "hasTitle": "XXXX",
+            "hasTitle": "Rate limiting",
             "hasOrdinalNumber": "1.2.2",
             "hasParagraph": {
               "type": "Paragraph",
-              "hasTitle": "XXXX",
+              "hasTitle": "The rate limit is 2 months maximum",
               "hasOrdinalNumber": "1.2.2.1"
             }
           }
@@ -381,7 +400,7 @@ The following code specifies that the Crime Dataset whose DID is `<did:key:zQ3sh
       }
     }
   },
-  "issuanceDate": "2024-06-06T15:45:00.475304+01:00",
+  "issuanceDate": "2024-02-06T13:29:00.475304+01:00",
   "issuer": {
     "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
     "name": "OKP4"
@@ -414,36 +433,36 @@ With:
 Example:
 
 ```bash
-okp4d credential sign collab-ai-zone-governance.jsonld
+okp4d credential sign crime-dataset-governance.jsonld
     --from issuer-okp4
-    --keyring-backend test | jsonld toRdf -q - > collab-ai-zone-governance.nq
+    --keyring-backend test | jsonld toRdf -q - > crime-dataset-governance.nq
 ```
 
 You can see that there is new fields in the jsonld with the cryptographic proof.
 
 ```nquads
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
-_:b1 <http://purl.org/dc/terms/created> "2024-04-03T11:34:29.724958+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
+<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-06T13:29:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+_:b1 <http://purl.org/dc/terms/created> "2024-04-03T10:45:45.644839+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
-_:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..WHnc8--Jo7GjhuN2HhO1bKE0EkfG8qVyl-M2k34hzmJsH6M4SfwtmocFPagvzFUu6upKM8mvt40Y2Hxz0cMKGg" _:b0 .
+_:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..VJ_c0Hn4N-Wlcdvqk5fHdWPFtUM3bxmPW_qM_9hUOsYxs5ucoB3S3y2837VgXO51Urv84Pv0o5wM0SNng7KPZQ" _:b0 .
 _:b1 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b0 .
 _:b1 <https://w3id.org/security#verificationMethod> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> _:b0 .
 _:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText> .
-_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22> .
+_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22> .
 _:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasChapter> _:b3 .
 _:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter> .
 _:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1" .
 _:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSection> _:b4 .
-_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Collaborative AI governance" .
+_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Crime data dataset governance" .
 _:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section> .
 _:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
-_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Zone Governance" .
+_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Usage of the dataset" .
 ```
 
 The VC is now in the hands of the Holder. Note that it is possible that the Issuer is also the Holder.
@@ -480,7 +499,7 @@ okp4d tx wasm execute okp418cszlvm6pze0x9sz32qnjq4vtd45xehqs8dq7cwy8yhq35wfnn3qv
     --chain-id okp4-drunemeton-1 \
     --from issuer-okp4 \
     --keyring-backend test
-    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat collab-ai-zone-governance.nq | base64)\"}}"
+    --gas 10000000 "{\"submit_claims\":{\"metadata\": \"$(cat crime-dataset-governance.nq | base64)\"}}"
     ```
 
 The Protocol will check the signature and if the public key corresponds to the proof in the VC, the VC is registered in the smart contract (Cognitarium).
@@ -488,14 +507,19 @@ The Protocol will check the signature and if the public key corresponds to the p
 The command returns the hash of the transaction. You can find more details of this transaction in the [Explorer](https://explore.okp4.network/). Select the network (Currently Drunemeton-Testnet), click on the Search icon, and paste the transaction hash.
 
 Example:
-Hash: E6D18D38D5A54BC0C73084A047448216A238C69930908B16F11509E7877E0CF9
+Hash: 4192587E13FF1A1530B0FFE88A80EACE4954374AE9A2789462E0372CC49E1A47
 
 <div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/academy/transaction-explorer-4.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
+  <img src="/img/content/academy/transaction-explorer-3.webp" alt="Axone explorer" style={{ maxHeight: "340px" }}></img>
 </div>
 
-## Delete a zone in the Dataverse
+## Delete a resource in the Dataverse
 
-The deletion of a zone in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this zone. This deletion action can only be initiated following the rules established by the governance of the zone.
-It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the zone remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying zones.
+The deletion of a resource in the Axone Dataverse is carried out exclusively by deleting the governance VP associated with this resource. This deletion action can only be initiated following the rules established by the governance of the resource.
+It is essential to stress the primacy of governance in this context. Suppose the established governance system does not designate a specific authority empowered to revoke the VP of Governance (or, more generally, the conditions that must be satisfied for its realization). In that case, the result is that the resource remains irrevocably integrated into the dataverse. This provision highlights the crucial importance of a systematic design of governance rules, particularly concerning the mechanisms for modifying and revoking resources.
+
+## Extinction of a resource in the Dataverse
+
+VPs can be issued with predefined validity periods. When these durations expire, the VPs concerned are automatically revoked, rendering them null and void. This feature is crucial for managing situations where a resource becomes obsolete or loses relevance.
+When the governance VP expires, the resource concerned is nullified in the dataverse. As a result, the resource loses its recognition and validity within the system, rendering it unusable and unreferenced. In this context, it is essential to highlight the principle that governance does not have absolute primacy: governance regulations cannot prevent resource revocation. Indeed, the decision to revoke a resource falls exclusively within the authority of the entity that issued the resource's initial governance VP. However, extending these expirations through a governance amendment process is possible following the terms established by the governance itself.
 ````

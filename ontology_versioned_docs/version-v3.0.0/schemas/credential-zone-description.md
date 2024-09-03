@@ -1,7 +1,8 @@
 ---
 sidebar_position: 7
 ---
-[//]: # (This file is auto-generated. Please do not modify it yourself.)
+
+[//]: # 'This file is auto-generated. Please do not modify it yourself.'
 
 # Zone description credential
 
@@ -36,45 +37,40 @@ The primary objective of this credentials is to provide a broad overview of the 
 
 ```json title="collab-ai-zone-description.jsonld"
 {
-    "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/"
-    ],
-    "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
-    "credentialSubject": {
-        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
-        "type": "ZoneDescriptionCredential",
-        "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
-        "hasTag": [
-            "AI",
-            "Collaboration",
-            "Machine Learning"
-        ],
-        "hasTitle": "Collaborative AI Zone",
-        "hasTopic": "https://w3id.org/okp4/ontology/v3/thesaurus/topic/other"
-    },
-    "issuanceDate": "2024-02-02T15:40:43.475304+01:00",
-    "issuer": {
-        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
-        "name": "OKP4"
-    }
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/"
+  ],
+  "type": "VerifiableCredential",
+  "id": "https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
+  "credentialSubject": {
+    "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+    "type": "ZoneDescriptionCredential",
+    "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
+    "hasTag": ["AI", "Collaboration", "Machine Learning"],
+    "hasTitle": "Collaborative AI Zone",
+    "hasTopic": "https://w3id.org/okp4/ontology/v3/thesaurus/topic/other"
+  },
+  "issuanceDate": "2024-02-02T15:40:43.475304+01:00",
+  "issuer": {
+    "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+    "name": "OKP4"
+  }
 }
-
 ```
 
 ### Properties
 
 #### Has description
->
+
 > **IRI**: [credential-zone-description:hasDescription](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasDescription)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
-A description of the Zone.
+A description of the zone.
 
 #### Has image
->
+
 > **IRI**: [credential-zone-description:hasImage](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasImage)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
@@ -82,7 +78,7 @@ A description of the Zone.
 The image associated with the Zone.
 
 #### Has tag
->
+
 > **IRI**: [credential-zone-description:hasTag](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
@@ -90,17 +86,17 @@ The image associated with the Zone.
 A (free) keyword or term assigned to the Zone.
 
 #### Has title
->
+
 > **IRI**: [credential-zone-description:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
-The title of the Zone.
+The title of the zone.
 
 #### Has topic
->
+
 > **IRI**: [credential-zone-description:hasTopic](https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTopic)
 >
 > **Range**:&nbsp;[thesaurus:topic](https://w3id.org/okp4/ontology/v3/thesaurus/topic)
 
-A topic of the Zone.
+A topic of the zone.

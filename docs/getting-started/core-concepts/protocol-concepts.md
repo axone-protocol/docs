@@ -53,7 +53,7 @@ Here, we'll concentrate on how Axone enables its functionalities <u>**in the dec
 Let's take up and illustrate the previous example :
 ![consume-resources-2](/img/content/academy/consume-resources-2.webp)
 
-Let's take the example of a Zone "Z1".
+Let's take the example of a zone "Z1".
 Thanks to its governance rules, this zone can use various services, in particular datasets D1 / D2 / D3, as well as services S1 / S2 / S3.
 
 A consumer wishes to interact with this zone, using this sequence of activities to produce new knowledge.
@@ -76,9 +76,9 @@ Execution involves coordinating resources and carrying out the workflow to gener
 
 Hence, the most effective approach involves entrusting the execution of workflows to a dedicated off-chain resource: the Orchestration Service. This specific resource assumes the orchestration role, while the protocol retains its status as the source of truth and ultimate authority. This shift in approach allows workflows to be initiated in the protocol as a Service, integrating them into the anything-as-a-service paradigm.
 
-Within the ecosystem, multiple instances of diverse Orchestration Services can operate, and the choice of which one to use can be assessed based on various criteria, as articulated within a Zone governance framework, for instance. This implies that different orchestration implementations may be authorized for the same zone.
+Within the ecosystem, multiple instances of diverse Orchestration Services can operate, and the choice of which one to use can be assessed based on various criteria, as articulated within a zone governance framework, for instance. This implies that different orchestration implementations may be authorized for the same zone.
 
-In our example, when the user is authorized to interact with a Zone, an off-chain Orchestration Service interprets the instructions recorded on-chain and coordinates communication with different off-chain resources and services to execute the workflow.
+In our example, when the user is authorized to interact with a zone, an off-chain Orchestration Service interprets the instructions recorded on-chain and coordinates communication with different off-chain resources and services to execute the workflow.
 
 ![consume-resources-2](/img/content/academy/consume-resources-2.webp)
 
@@ -90,9 +90,9 @@ The workflow engines serve as Orchestrator services to execute the on-chain inst
 The challenge lies in ensuring that all protocol events unfold in a dependable environment so that all involved parties witness their conditions being upheld through a trust-minimized process, allowing them to monitor the workflow's progress.
 
 To address this challenge, a Service Execution Agreement is established through a smart contract named PACTUM. This contract delineates the terms that bind the stakeholders—the consumers and providers. It doesn't execute the workflows per se; instead, it ensures their composability and integrity by explicitly defining the contractual terms.
-When an identity seeks to initiate a workflow within a Zone, as exemplified, a service execution agreement in the form of a Pactum smart contract is initiated among the participating entities.
+When an identity seeks to initiate a workflow within a zone, as exemplified, a service execution agreement in the form of a Pactum smart contract is initiated among the participating entities.
 
-1. This agreement verifies the alignment of governance rules for the Zone and the digital resources involved in the execution, also confirming the conformity of all rules within the entire execution context. This context encompasses the resources, the Zone, and the user who initiated the workflow.
+1. This agreement verifies the alignment of governance rules for the zone and the digital resources involved in the execution, also confirming the conformity of all rules within the entire execution context. This context encompasses the resources, the zone, and the user who initiated the workflow.
 2. Pactum oversees the entire execution flow of all resources.
 3. Finally, the Pactum smart contract applies retribution rules, ensuring the distribution of rewards or compensation in accordance with defined retribution rules. In practical terms, Pactum functions as a decentralized regulator, coordinating the orchestration of digital resources and managing instances of error.
 
@@ -166,9 +166,9 @@ Here are examples of rules that can be defined for a resource:
 
 Zone governance, also recorded and executed on-chain, offers exceptional flexibility. Each zone is defined by specific governance rules, enabling complete customization of sharing conditions. This customization fosters collaboration between different resources and zones, making it possible to create specific rules for each community or business domain.
 
-Furthermore, Zones are not just entities governing interactions between resources, but also economic zones. They can define not only exchanges of value, but also the monetary unit and its specificities. By anticipating this economic dimension of zones, contributors broaden the understanding of governance rules to include aspects linked to financial exchanges, value creation, the management of monetary units and the business model governing the zone.
+Furthermore, zones are not just entities governing interactions between resources, but also economic zones. They can define not only exchanges of value, but also the monetary unit and its specificities. By anticipating this economic dimension of zones, contributors broaden the understanding of governance rules to include aspects linked to financial exchanges, value creation, the management of monetary units and the business model governing the zone.
 
-It is important to understand that each Zone will define rules to respond most effectively to its objective. Some zones will organize under a more democratic vision (Coreum/DAO) to create a virtuous economy within the Zone. Others will have a more autocratic vision, wishing to retain more rights over the governance of the Zone.
+It is important to understand that each zone will define rules to respond most effectively to its objective. Some zones will organize under a more democratic vision (Coreum/DAO) to create a virtuous economy within the zone. Others will have a more autocratic vision, wishing to retain more rights over the governance of the zone.
 
 Here are some examples of rules that can be defined within a zone:
 
@@ -177,7 +177,7 @@ Here are some examples of rules that can be defined within a zone:
 - Access modalities for users.
 - Procedures for modifying zone rules
 
-### Why Distinguish Between Resources and Zones?
+### Why Distinguish Between Resources and zones?
 
 The distinction between resources and zones is crucial, particularly regarding governance. By allowing zones to redefine their rules continually, Axone offers exceptional flexibility in how resources can be used and shared. This encourages more flexible governance, enabling participants to actively shape how resources are coordinated and used within each zone, while promoting adaptability to the community's evolving needs and the digital environment. Ultimately, this dynamic approach contributes to creating an ecosystem where governance is agile, transparent, and aligned with the values and goals of each specific zone.
 
@@ -197,9 +197,9 @@ This distinction significantly contributes to reducing the storage and execution
 
 ### Protocol Design: Zones and Dataverse
 
-The protocol's design is grounded in the concepts of Zones and Dataverse. Zones function as decentralized autonomous spaces within the network. Each Zone in Axone is designed to operate independently with its own governance rules. This independence allows each Zone to adapt effectively to the specific needs of its users. For instance, a Zone dedicated to finance can integrate data and algorithms specific to that sector, while another Zone focused on AI training can concentrate on managing large-scale data and specific data processing algorithms.
+The protocol's design is grounded in the concepts of zones and Dataverse. Zones function as decentralized autonomous spaces within the network. Each zone in Axone is designed to operate independently with its own governance rules. This independence allows each zone to adapt effectively to the specific needs of its users. For instance, a zone dedicated to finance can integrate data and algorithms specific to that sector, while another zone focused on AI training can concentrate on managing large-scale data and specific data processing algorithms.
 
-The Dataverse represents the aggregate of these Zones and referenced resources in the protocol, forming a dynamic ecosystem where participants have access to various data and services. They can compose solutions tailored to their needs without being constrained by the rules of a single Zone. This distinction and interoperability of Zones and resources within the Dataverse offer myriad possibilities without limitation.
+The Dataverse represents the aggregate of these zones and referenced resources in the protocol, forming a dynamic ecosystem where participants have access to various data and services. They can compose solutions tailored to their needs without being constrained by the rules of a single zone. This distinction and interoperability of zones and resources within the Dataverse offer myriad possibilities without limitation.
 
 ### Underlying Infrastructure
 
@@ -207,4 +207,4 @@ Underpinning this structure, the Cosmos technology with Tendermint Core and the 
 
 Furthermore, integrating the Inter-Blockchain Communication (IBC) module paves the way for horizontal scalability by enabling native communication between different blockchains. This functionality is crucial for focusing on developing specific applications while benefiting from the advantages and specificities of other systems.
 
-Axone, with its unique architecture, modular approach, and strategic use of blockchain technology, positions itself as a robust solution to address the scalability challenges imposed by the ever-evolving digital world. Its decentralized orchestration approach for off-chain resources, combined with the benefits of Zones and the Dataverse, along with the underlying infrastructure based on Cosmos and IBC, creates an ecosystem where the exponential growth of data and digital resources can be managed effectively, flexibly, and scalably.
+Axone, with its unique architecture, modular approach, and strategic use of blockchain technology, positions itself as a robust solution to address the scalability challenges imposed by the ever-evolving digital world. Its decentralized orchestration approach for off-chain resources, combined with the benefits of zones and the Dataverse, along with the underlying infrastructure based on Cosmos and IBC, creates an ecosystem where the exponential growth of data and digital resources can be managed effectively, flexibly, and scalably.

@@ -6,12 +6,12 @@ sidebar_position: 2
 
 ## Rules: what can be defined?
 
-The Axone protocol's core feature is defining rules for sharing and managing off-chain digital resources like datasets and algorithms. These rules define the parameters and conditions under which resource sharing and interactions occur. A [Zone](../../whitepaper/solution#zone-overview), a conceptual framework defined by a set of rules, ensures resource compatibility through dynamic evaluation of rules and consents. Resources aren't attached to zones but are recognized based on their conformity to these rules and consents. Understanding these definitions is key to utilizing the protocol effectively.
+The Axone protocol's core feature is defining rules for sharing and managing off-chain digital resources like datasets and algorithms. These rules define the parameters and conditions under which resource sharing and interactions occur. A [zone](../../whitepaper/solution#zone-overview), a conceptual framework defined by a set of rules, ensures resource compatibility through dynamic evaluation of rules and consents. Resources aren't attached to zones but are recognized based on their conformity to these rules and consents. Understanding these definitions is key to utilizing the protocol effectively.
 
 So how does Axone ensure law enforcement before execution?
 
-1. An Identity (human or bot) wants to interact with a Zone
-2. The Zone asks the dedicated smart contract if it's possible given the context and the defined rules
+1. An Identity (human or bot) wants to interact with a zone
+2. The zone asks the dedicated smart contract if it's possible given the context and the defined rules
 3. The protocol employs logical inference to resolve matters based on the state of the blockchain
 4. The protocol yields a modality as a response ("prohibited", "permitted", "possible", etc). Depending on the answer, the execution process could start.
 
@@ -29,7 +29,7 @@ So how does Axone ensure law enforcement before execution?
 
 ## Understanding Prolog in Axone
 
-Prolog, a logical and declarative programming language, plays a crucial role in managing Axone's complex logical scenarios. Its Turing completeness ensures it can handle diverse challenges, making it ideal for expressing governance and consent rules. Prolog's declarative nature allows users to specify desired outcomes, with Prolog determining the method to achieve them. This capability supports decentralized interpretation of rules, ensuring consistent application across the network. By leveraging Prolog, Axone offers a robust solution for dynamic and flexible rule management. To delve deeper into Prolog's role in Axone, read more **here**.
+Prolog, a logical and declarative programming language, plays a crucial role in managing Axone's complex logical scenarios. Its Turing completeness ensures it can handle diverse challenges, making it ideal for expressing governance and consent rules. Prolog's declarative nature allows users to specify desired outcomes, with Prolog determining the method to achieve them. This capability supports decentralized interpretation of rules, ensuring consistent application across the network. By leveraging Prolog, Axone offers a robust solution for dynamic and flexible rule management. To delve deeper into Prolog's role in Axone, read more [here](../../tutorials/prolog-1).
 
 ## Resource's consents
 
@@ -53,7 +53,7 @@ Consents in Axone are not static; they adapt dynamically to the changing needs o
 
 **5. Rule Interdependencies and Conflicts**
 
-Given the interconnected nature of resources and their rules, Axone acknowledges the potential for interdependencies and conflicts. The hierarchy of norms refers to the hierarchical structure of rules within the Axone governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard. Then, the rules of a Zone prevail on the resource consent (see technical doc).
+Given the interconnected nature of resources and their rules, Axone acknowledges the potential for interdependencies and conflicts. The hierarchy of norms refers to the hierarchical structure of rules within the Axone governance framework. It establishes the order of precedence among the different norms so that a higher norm prevails over a lower standard. Then, the rules of a zone prevail on the resource consent (see technical doc).
 
 ![rules-2](/img/content/academy/rules-2.webp)
 

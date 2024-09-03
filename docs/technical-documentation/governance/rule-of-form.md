@@ -14,11 +14,11 @@ In a somewhat canonical way, the Axone governances are structured as follows.
 
 The preamble sets the stage for the rest of the rules. It introduces and briefly explains the underlying philosophy and objectives of the governance framework. It might also define key terms to ensure a common understanding among acting entities. The warm-up is crucial for establishing context and purpose and is meant to guide the interpretation and application of the rules.
 
-This is typically the case with zone rules, which materialize the extent of zones by defining the specific regulations enforced within them. These rules embody the respective Zone's essence, intent, reach, and ultimate objective.
+This is typically the case with zone rules, which materialize the extent of zones by defining the specific regulations enforced within them. These rules embody the respective zone's essence, intent, reach, and ultimate objective.
 
 ## Content
 
-The content specifies the rules for the governance framework. They elaborate on the structures, processes, and standards protocol entities must comply with. Regarding Zones and Consents, the content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
+The content specifies the rules for the governance framework. They elaborate on the structures, processes, and standards protocol entities must comply with. Regarding zones and Consents, the content is systematically arranged into a hierarchical text structure comprising sections, sub-sections, articles, and paragraphs.
 
 ### Section
 
