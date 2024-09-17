@@ -1,8 +1,7 @@
 ---
 sidebar_position: 7
 ---
-
-[//]: # 'This file is auto-generated. Please do not modify it yourself.'
+[//]: # (This file is auto-generated. Please do not modify it yourself.)
 
 # Orchestration service execution credential
 
@@ -37,7 +36,7 @@ This credential is fundamental in providing a formal record of the execution of 
 ### Properties
 
 #### Has execution result
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasExecution](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasExecution)
 >
 > **Domain**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionCredential](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionCredential)
@@ -51,7 +50,7 @@ The execution of the Orchestration Service.
 This schema defines 1 class.
 
 ### Orchestration service execution
-
+>
 > **IRI**: [credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
 
 #### Description
@@ -61,7 +60,7 @@ Captures the details of the progress and outcomes of the execution of an Orchest
 #### Properties
 
 ##### Execution of
-
+>
 > **IRI**: [credential-orchestration-service-execution:executionOf](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/executionOf)
 >
 > **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecutionOrder](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/OrchestrationServiceExecutionOrder)
@@ -69,7 +68,7 @@ Captures the details of the progress and outcomes of the execution of an Orchest
 This relationship is pivotal for associating the formal execution request with the corresponding credential, providing the necessary authorization and detailed directives for service execution. This ensures a verifiable and formalized process for initiating and tracking the execution of orchestration services.
 
 ##### Has consumed resource
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasConsumedResource](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasConsumedResource)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
@@ -79,17 +78,17 @@ Specifies a resource consumed during this Orchestration Service Execution. The r
 Multiple instances of `hasConsumedResource` can represent various resources consumed during the execution. Accessing a Digital Resource may require the use of multiple Digital Services, reflecting the complexity and interdependencies of digital service orchestration.
 
 ##### Has execution evidence
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasExecutionEvidence](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasExecutionEvidence)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
-Links the Orchestration Service Execution to a resource that provides evidence of the execution, such as logs, transaction records, or other forms of auditable data. This evidence supports the verification of the execution's integrity, completeness, and compliance with the specified execution parameters and governance rules of all the involved resources within the zone.
+Links the Orchestration Service Execution to a resource that provides evidence of the execution, such as logs, transaction records, or other forms of auditable data. This evidence supports the verification of the execution's integrity, completeness, and compliance with the specified execution parameters and governance rules of all the involved resources within the Zone.
 
 The evidence resource can be a URI pointing to a secure, immutable and verifiable location where the evidence is stored, like IPFS, a blockchain, or an immutable database.
 
 ##### Has execution status
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasExecutionStatus](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasExecutionStatus)
 >
 > **Range**:&nbsp;[ns1:digital-service-execution-status](https://w3id.org/axone/ontology/v4/thesaurus/digital-service-execution-status)
@@ -97,7 +96,7 @@ The evidence resource can be a URI pointing to a secure, immutable and verifiabl
 Indicates the status of the service execution.
 
 ##### Has execution time
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasExecutionTime](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasExecutionTime)
 >
 > **Range**:&nbsp;[schema:DateTime](http://schema.org/DateTime)
@@ -105,7 +104,7 @@ Indicates the status of the service execution.
 The time and date when the Digital Service was executed.
 
 ##### Has produced resource
-
+>
 > **IRI**: [credential-orchestration-service-execution:hasProducedResource](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/hasProducedResource)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
@@ -113,7 +112,7 @@ The time and date when the Digital Service was executed.
 Specify a resource produced during this Orchestration Service Execution, if any. The resource can be any URI denoting a Digital Resource (such as a dataset), or a Digital Service (such as a Storage Service or a Processing Service).
 
 ##### Part of execution
-
+>
 > **IRI**: [credential-orchestration-service-execution:partOfExecution](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/partOfExecution)
 >
 > **Range**:&nbsp;[credential-orchestration-service-execution:OrchestrationServiceExecution](https://w3id.org/axone/ontology/v4/schema/credential/orchestration-service/execution/OrchestrationServiceExecution)
