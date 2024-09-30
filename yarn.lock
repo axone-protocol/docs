@@ -8739,10 +8739,10 @@ react-loadable-ssr-addon-v5-slorber@^1.0.1:
   dependencies:
     "@types/react" "*"
 
-react-quiz-component@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/react-quiz-component/-/react-quiz-component-0.8.2.tgz#e541efe7a1f239a20f78ea82c00845a2357520b6"
-  integrity sha512-bFMzfvHsCjMdlpNQ569n0vacXMoT/W/CDGMP7/PjPgrUgZbZRj7shlhVBuOUIB34bN42jHDlwtIDTirqHAQLew==
+react-quiz-component@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/react-quiz-component/-/react-quiz-component-0.9.1.tgz#a8401c07ffda4170a9a384c21d0b6235a86270a1"
+  integrity sha512-6LOZwh6kipsMgYrgBs/U77LIsc+/qzNmzDYss4lX4ZJEGelj181NfpTeMnoUCgudYoQt8Hdc4fTlhyGy2Hwlkg==
   dependencies:
     dompurify "^3.0.0"
     nanoid "^5.0.5"
