@@ -250,16 +250,16 @@ const config = {
             items: [
               {
                 label: 'Blockchain Explorer',
-                href: 'https://explore.okp4.network/OKP4%20testnet'
+                href: 'https://explore.axone.xyz/Axone%20testnet'
               },
               {
                 label: 'Testnet Faucet',
-                href: 'https://faucet.okp4.network'
+                href: 'https://faucet.axone.xyz'
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} OKP4`
+        copyright: `Copyright © ${new Date().getFullYear()} Axone`
       },
       prism: {
         theme: prismThemes.github,
