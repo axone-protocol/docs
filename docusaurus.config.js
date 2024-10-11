@@ -203,7 +203,7 @@ const config = {
               },
               {
                 label: 'Technical documentation',
-                to: '/technical-documentation/overview'
+                to: '/architecture/overview'
               },
               {
                 label: 'FAQ',
