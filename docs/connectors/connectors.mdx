@@ -1,0 +1,35 @@
+---
+sidebar_position: 1
+---
+
+# Connectors
+
+This section aims to describe how to connect external resources (e.g. storage service, computation resources) with the Axone protocol.
+
+## Overview
+
+The Axone protocol is designed to be a general-purpose protocol that can be used to connect various resources, we talk about XaaS (i.e. Anything as a Service).
+
+Each resource shall be referenced and described in the protocol through verifiable credential carrying claims aligned with the [Axone Ontology](/architecture/ontology/axone-ontology), along with and their [Governance](/architecture/governance/introduction) rules expressed as Prolog programs.
+
+When multiple resources must interact with each other, they shall be exposed and communicate in a way that allows them to authorize access after verifying:
+
+- The authenticity of their claimed identity;
+- The rules under which they're governed allows the requested interactions;
+
+This authentication & authorization is the responsibility of `Connectors`, that will act as authentication & authorization gateways for the resources.
+
+## Axone SDK
+
+To ease the development of connectors, and more generally interact with the Axone protocol in a programmatic way, we provide an [SDK](https://github.com/axone-protocol/axone-sdk) in Golang.
+
+The SDK provides a set of tools covering different aspects of the Axone Architecture:
+
+- `Verifiable Credentials`: issuance, parsing and verification;
+- `Dataverse`: Submit claims & retrieve information on resources;
+- `Authentication`: Authenticate identities against the Axone protocol;
+- `Authorization`: Query resources governance for authorization purposes by evaluating on-chain Prolog rules;
+- `Keys`: Helper primitives to manage cryptographic keys, used to sign/verify claims.
+- `Proxy`: Provide connectors logic to wire them with the Axone protocol, along with means to expose them through APIs.
+
+To give you an exhaustive idea of the features it offers here is its [documentation](https://pkg.go.dev/github.com/axone-protocol/axone-sdk).
