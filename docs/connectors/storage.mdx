@@ -1,0 +1,174 @@
+---
+sidebar_position: 2
+---
+
+# Storage Connector
+
+This section aims to describe how you can build a storage provider connector for the Axone protocol. We will implement here a simple storage proxy using the Axone SDK and expose it over HTTP.
+
+## Functional Specification
+
+The storage proxy will allow the following features:
+
+- `Authentication`: Given an authentication verifiable credential, the proxy will authenticate the identity;
+- `Read`: Allow or not read access to a stored resource based on the governance rules of both the storage service & the requested resource;
+- `Store`: Allow or not to store a resource based on the governance rules of the storage service, issuing a verifiable credential expressing the publication of the stored resource;
+
+## Proxy implementation
+
+To instantiate the proxy we'll need first some element to provide.
+
+In order to issue credentials verifiable on-chain, the storage service must have a set of keys to provide cryptographic proofs, let's create them:
+
+```go
+key, err := keys.NewKeyFromMnemonic(mnemonic)
+```
+
+It'll need also to establish a connection with the Axone blockchain to be able to interact with it, let's create a client for that purpose:
+
+```go
+dataverseClient, err := dataverse.NewQueryClient(
+    context.Background(),
+    nodeGrpcAddr, // The gRPC address of an Axone node
+    dataverseAddr, // The address of the dataverse smart contract
+    grpc.WithTransportCredentials(insecure.NewCredentials()), // Use insecure credentials for demo purposes
+)
+```
+
+For the management of verifiable credentials the proxy will need to resolve JSON-LD contexts, let's create a resolver for that purpose:
+
+```go
+documentLoader := ld.NewCachingDocumentLoader( // Let's cache the resolved documents
+    ld.NewDefaultDocumentLoader(nil), // The default document loader will fetch documents using an HTTP client
+)
+```
+
+We now have all the elements to instantiate the proxy:
+
+```go
+storageProxy, err := storage.NewProxy(
+    ctx,
+    key,
+    baseURL, // the base URL on which the proxy will be exposed, it'll be used to issue publication credentials
+    dataverseClient,
+    documentLoader,
+    func(ctx context.Context, resourceID string) (io.Reader, error) {
+        // Here should lie the logic to retrieve a resource from the storage service.
+        // At this point, the proxy has already authenticated and authorize the identity and checked the governance rules.
+        // You can implement the read logic with a database, a file system or whatever suits your needs.
+    },
+    func(ctx context.Context, resourceID string, data io.Reader) error {
+        // Here should lie the logic to store a resource in the storage service.
+        // At this point, the proxy has already authenticated and authorize the identity and checked the governance rules.
+        // You can implement the store logic with a database, a file system or whatever suits your needs.
+        // The issuance of the publication credential is handled by the proxy. You do not need to manage that.
+    },
+)
+```
+
+## Expose over HTTP
+
+At this point we have a fully functional storage proxy, but it is not available through any communication protocol, let's expose it over HTTP.
+
+We'll expose an API with three endpoints:
+
+- `POST /authenticate`: Authenticate an identity given a verifiable credential and return a JWT token that must be used to access other endpoints;
+- `GET /{resourceID}`: Read a resource given its DID, the JWT token must be provided in the `Authorization` header as a bearer token;
+- `POST /{resourceID}`: Store a resource given its DID, the JWT token must be provided in the `Authorization` header as a bearer token;
+
+```go
+err := http.NewServer( // The sdk provide a configurable HTTP server
+    listenAddr, // The address on which the server will listen (e.g. "0.0.0.0:8080")
+    storageProxy.HTTPConfigurator( // the proxy will provide the necessary options to properly configure the server, you can combine them with your own
+        jwtSecretKey, // The secret key used to sign the JWT tokens
+        jwtDuration, // The duration of the JWT token validity
+    ),
+).Listen() // Start the server, returning an error if something went wrong
+```
+
+## Full source
+
+Until now we saw only separate snippets for pedagogic purpose, let's see what it looks like when we put everything together in a single `main.go`:
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"io"
+	"os"
+	"time"
+
+	"github.com/axone-protocol/axone-sdk/dataverse"
+	"github.com/axone-protocol/axone-sdk/http"
+	"github.com/axone-protocol/axone-sdk/keys"
+	"github.com/axone-protocol/axone-sdk/provider/storage"
+	"github.com/piprate/json-gold/ld"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
+)
+
+func main() {
+	mnemonic := os.Args[1]
+	nodeGrpcAddr := os.Args[2]
+	dataverseAddr := os.Args[3]
+	baseURL := os.Args[4]
+	listenAddr := os.Args[5]
+	jwtSecretKey := []byte(os.Args[6])
+	jwtDuration, err := time.ParseDuration(os.Args[7])
+	if err != nil {
+		panic(err)
+	}
+
+	key, err := keys.NewKeyFromMnemonic(mnemonic)
+	if err != nil {
+		panic(err)
+	}
+
+	dataverseClient, err := dataverse.NewQueryClient(
+		context.Background(),
+		nodeGrpcAddr,
+		dataverseAddr,
+		grpc.WithTransportCredentials(insecure.NewCredentials()),
+	)
+	if err != nil {
+		panic(err)
+	}
+
+	storageProxy, err := storage.NewProxy(
+		context.Background(),
+		key,
+		baseURL,
+		dataverseClient,
+		ld.NewCachingDocumentLoader(ld.NewDefaultDocumentLoader(nil)),
+		func(ctx context.Context, id string) (io.Reader, error) {
+			return os.Open("/data/" + id)
+		},
+		func(ctx context.Context, s string, reader io.Reader) error {
+			content, err := io.ReadAll(reader) // Don't do that...
+			if err != nil {
+				return err
+			}
+
+			return os.WriteFile("/data/"+s, content, 0o644)
+		},
+	)
+	if err != nil {
+		panic(err)
+	}
+
+	err = http.NewServer(
+		listenAddr,
+		storageProxy.HTTPConfigurator(jwtSecretKey, jwtDuration),
+	).Listen()
+
+	fmt.Println("Server stopped:", err)
+}
+```
+
+Don't take this implementation as production-grade, it suffers from many issues. It is only a starting point to build your own storage connector.
+
+## Real-world example
+
+As an example, and reference implementation of a complete storage connector, we provide a simple implementation of a connector for an S3 storage service: https://github.com/axone-protocol/s3-auth-proxy.
