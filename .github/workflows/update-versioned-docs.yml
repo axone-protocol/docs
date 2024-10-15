@@ -64,7 +64,7 @@ jobs:
       - name: Setup node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18.19
+          node-version: 20.18
           cache: yarn
 
       - name: Bump new version
