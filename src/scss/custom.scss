@@ -5,44 +5,39 @@
 @import "quiz";
 
 @font-face {
-  font-family: "Barlow bold";
-  src: url("/static/fonts/Barlow/Barlow-Bold.ttf");
+  font-family: anton;
+  src: url("/static/fonts/Anton/Anton-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Barlow regular";
-  src: url("/static/fonts/Barlow/Barlow-Regular.ttf");
+  font-family: "Helvetica bold";
+  src: url("/static/fonts/Helvetica/HelveticaNeueBold.otf");
 }
 
 @font-face {
-  font-family: "Norse regular";
-  src: url("/static/fonts/Norse/Norse.woff");
-}
-
-@font-face {
-  font-family: "Norse bold";
-  src: url("/static/fonts/Norse/Norse-Bold.woff");
+  font-family: "Helvetica regular";
+  src: url("/static/fonts/Helvetica/HelveticaNeueRoman.otf");
 }
 
 :root {
-  --ifm-color-primary: #ff9500;
+  --ifm-color-primary: #ff773d;
   --ifm-hover-overlay: rgb(255 149 0 / 12%);
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Barlow regular", sans-serif;
-  --ifm-heading-font-family: "Barlow regular", sans-serif;
-  --ifm-h1-font-family: "Barlow regular", sans-serif;
-  --ifm-font-color-base: #181c49;
-  --ifm-menu-color: #181c49;
-  --ifm-heading-color: #181c49;
-  --ifm-card-font-color: #15233d;
+  --ifm-font-family-base: "Helvetica regular", sans-serif;
+  --ifm-heading-font-family: "Helvetica bold", sans-serif;
+  --ifm-h1-font-family: anton, sans-serif;
+  --ifm-font-color-base: #0d0d0d;
+  --ifm-menu-color: #0d0d0d;
+  --ifm-heading-color: #0d0d0d;
+  --ifm-card-font-color: #0d0d0d;
   --ifm-background-color-main: transparent linear-gradient(180deg, #faf8f46c 0%, white 0%) 0% 0%
     no-repeat padding-box;
   --ifm-footer-background-color-main: white;
   --ifm-navbar-background-color: #f2f6f9;
   --ifm-navbar-item-color: linear-gradient(39.81deg, #006796 21.82%, #00b6b7 98.43%);
-  --ifm-article-anchor-color: #ff9500;
+  --ifm-article-anchor-color: #ff773d;
   --ifm-graph-svg-background-color: #ecf0f1;
-  --ifm-knowledge-graph-data-fill-color: #f3a83f;
+  --ifm-knowledge-graph-data-fill-color: #ff773d;
   --ifm-knowledge-graph-service-fill-color: #bf0000;
   --ifm-knowledge-graph-base-stroke-color: #433d32;
   --ifm-knowledge-graph-edge-stroke-color: #b5b5b5;
