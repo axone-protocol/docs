@@ -4,7 +4,7 @@
   "private": false,
   "repository": "git@github.com:axone-protocol/docs.git",
   "license": "BSD-3-Clause",
-  "description": "OKP4 procotol documentation",
+  "description": "Axone procotol documentation",
   "homepage": "https://axone-protocol.github.io/docs",
   "author": {
     "name": "AXONE",
