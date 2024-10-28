@@ -29,7 +29,7 @@ Several languages are used to express the Axone ontologies:
 - [SKOS (Simple Knowledge Organization System)](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System): a language for representing ontology that allows the description of classification systems and thesauri. SKOS allows the definition of concepts, relationships, and properties.
 
 <div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/img/content/architecture/semantic-stack.webp" style={{ maxHeight: "335px" }}></img>
+  <img src="/img/content/technical-documentation/semantic-stack.webp" style={{ maxHeight: "335px" }}></img>
 </div>
 
 ## Ontology at the heart of the blockchain
