@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.5.2",
-    "@docusaurus/types": "^3.5.2",
+    "@docusaurus/types": "^3.6.1",
     "@nivo/line": "^0.87.0",
     "docusaurus-plugin-drawio": "^0.4.0",
     "graphviz-react": "^1.2.5",
