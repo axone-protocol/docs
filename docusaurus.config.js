@@ -79,6 +79,9 @@ const config = {
     locales: ['en', 'fr']
   },
   themes: ['@docusaurus/theme-mermaid'],
+  future: {
+    experimental_faster: true,
+  },
   presets: [
     [
       'classic',
