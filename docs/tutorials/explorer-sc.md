@@ -49,7 +49,9 @@ You'll see your Axone wallet address if you click again on the wallet button. Cl
 - Send a few $AXONE tokens to another Axone wallet, `axone1jkullqh0dzn6ye6whfytd5dm0l04ksm3lzcq78` as the recipient for example.
 - Click on "Send" and "Approve" to confirm the transfer.
 
-<div style={{ display: "flex", justifyContent: "center" }}><img src="/img/content/tutorials/explorermaj-1.webp"></img></div>
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/img/content/tutorials/explorermaj-1.webp" style={{ maxHeight: '600px' }}></img>
+</div>
 
 Once completed, click on "View transaction".
 
