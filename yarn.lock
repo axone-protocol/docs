@@ -1875,7 +1875,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/module-type-aliases@^3.7.0":
+"@docusaurus/module-type-aliases@3.7.0", "@docusaurus/module-type-aliases@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.7.0.tgz#15c0745b829c6966c5b3b2c2527c72b54830b0e5"
   integrity sha512-g7WdPqDNaqA60CmBrr0cORTrsOit77hbsTj7xE2l71YhBn79sxdm7WMK7wfhcaafkbpIh7jv5ef5TOpf1Xv9Lg==
@@ -1888,16 +1888,16 @@
     react-helmet-async "npm:@slorber/react-helmet-async@*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/plugin-client-redirects@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-3.7.0.tgz#b5cf92529768c457c01ad350bfc50862c6149463"
-  integrity sha512-6B4XAtE5ZVKOyhPgpgMkb7LwCkN+Hgd4vOnlbwR8nCdTQhLjz8MHbGlwwvZ/cay2SPNRX5KssqKAlcHVZP2m8g==
+"@docusaurus/plugin-client-redirects@^3.6.3":
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-3.6.3.tgz#a641fc8c6ab3a2afec183d57de7e12d8b5d6ec9f"
+  integrity sha512-fQDCxoJCO1jXNQGQmhgYoX3Yx+Z2xSbrLf3PBET6pHnsRk6gGW/VuCHcfQuZlJzbTxN0giQ5u3XcQQ/LzXftJA==
   dependencies:
-    "@docusaurus/core" "3.7.0"
-    "@docusaurus/logger" "3.7.0"
-    "@docusaurus/utils" "3.7.0"
-    "@docusaurus/utils-common" "3.7.0"
-    "@docusaurus/utils-validation" "3.7.0"
+    "@docusaurus/core" "3.6.3"
+    "@docusaurus/logger" "3.6.3"
+    "@docusaurus/utils" "3.6.3"
+    "@docusaurus/utils-common" "3.6.3"
+    "@docusaurus/utils-validation" "3.6.3"
     eta "^2.2.0"
     fs-extra "^11.1.1"
     lodash "^4.17.21"
@@ -2091,16 +2091,34 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-mermaid@^3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-mermaid/-/theme-mermaid-3.6.3.tgz#4bb0b4940b39cc855626a23190aa45928aa168b4"
-  integrity sha512-kIqpjNCP/9R2GGf8UmiDxD3CkOAEJuJIEFlaKMgQtjVxa/vH+9PLI1+DFbArGoG4+0ENTYUq8phHPW7SeL36uQ==
+"@docusaurus/theme-common@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-common/-/theme-common-3.7.0.tgz#18bf5c6b149a701f4bd865715ee8b595aa40b354"
+  integrity sha512-8eJ5X0y+gWDsURZnBfH0WabdNm8XMCXHv8ENy/3Z/oQKwaB/EHt5lP9VsTDTf36lKEp0V6DjzjFyFIB+CetL0A==
   dependencies:
-    "@docusaurus/core" "3.6.3"
-    "@docusaurus/module-type-aliases" "3.6.3"
-    "@docusaurus/theme-common" "3.6.3"
-    "@docusaurus/types" "3.6.3"
-    "@docusaurus/utils-validation" "3.6.3"
+    "@docusaurus/mdx-loader" "3.7.0"
+    "@docusaurus/module-type-aliases" "3.7.0"
+    "@docusaurus/utils" "3.7.0"
+    "@docusaurus/utils-common" "3.7.0"
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    "@types/react-router-config" "*"
+    clsx "^2.0.0"
+    parse-numeric-range "^1.3.0"
+    prism-react-renderer "^2.3.0"
+    tslib "^2.6.0"
+    utility-types "^3.10.0"
+
+"@docusaurus/theme-mermaid@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-mermaid/-/theme-mermaid-3.7.0.tgz#1bc4307e09886186ed6e51607bf43c5089f35de5"
+  integrity sha512-7kNDvL7hm+tshjxSxIqYMtsLUPsEBYnkevej/ext6ru9xyLgCed+zkvTfGzTWNeq8rJIEe2YSS8/OV5gCVaPCw==
+  dependencies:
+    "@docusaurus/core" "3.7.0"
+    "@docusaurus/module-type-aliases" "3.7.0"
+    "@docusaurus/theme-common" "3.7.0"
+    "@docusaurus/types" "3.7.0"
+    "@docusaurus/utils-validation" "3.7.0"
     mermaid ">=10.4"
     tslib "^2.6.0"
 
@@ -2164,7 +2182,7 @@
     webpack "^5.95.0"
     webpack-merge "^5.9.0"
 
-"@docusaurus/utils-common@3.6.3":
+"@docusaurus/utils-common@3.6.3", "@docusaurus/utils-common@^2 || ^3":
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-3.6.3.tgz#57f840bd6f0928cf10060198cb421f1b9212c8f5"
   integrity sha512-v4nKDaANLgT3pMBewHYEMAl/ufY0LkXao1QkFWzI5huWFOmNQ2UFzv2BiKeHX5Ownis0/w6cAyoxPhVdDonlSQ==
@@ -2172,7 +2190,7 @@
     "@docusaurus/types" "3.6.3"
     tslib "^2.6.0"
 
-"@docusaurus/utils-common@3.7.0", "@docusaurus/utils-common@^2 || ^3":
+"@docusaurus/utils-common@3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-3.7.0.tgz#1bef52837d321db5dd2361fc07f3416193b5d029"
   integrity sha512-IZeyIfCfXy0Mevj6bWNg7DG7B8G+S6o6JVpddikZtWyxJguiQ7JYr0SIZ0qWd8pGNuMyVwriWmbWqMnK7Y5PwA==
@@ -2208,7 +2226,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils@3.6.3":
+"@docusaurus/utils@3.6.3", "@docusaurus/utils@^2 || ^3":
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.6.3.tgz#8dcb1969e4011a84dfb0a031da806dadddebf0ea"
   integrity sha512-0R/FR3bKVl4yl8QwbL4TYFfR+OXBRpVUaTJdENapBGR3YMwfM6/JnhGilWQO8AOwPJGtGoDK7ib8+8UF9f3OZQ==
@@ -2235,7 +2253,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/utils@3.7.0", "@docusaurus/utils@^2 || ^3":
+"@docusaurus/utils@3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.7.0.tgz#dfdebd63524c52b498f36b2907a3b2261930b9bb"
   integrity sha512-e7zcB6TPnVzyUaHMJyLSArKa2AG3h9+4CfvKXKKWNx6hRs+p0a+u7HHTJBgo6KW2m+vqDnuIHK4X+bhmoghAFA==
