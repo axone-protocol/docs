@@ -1670,14 +1670,6 @@
     tslib "^2.6.0"
     webpack "^5.95.0"
 
-"@docusaurus/logger@3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-3.6.3.tgz#c6e514c9429487ef38be2f2129b2b842740d92fd"
-  integrity sha512-xSubJixcNyMV9wMV4q0s47CBz3Rlc5jbcCCuij8pfQP8qn/DIpt0ks8W6hQWzHAedg/J/EwxxUOUrnEoKzJo8g==
-  dependencies:
-    chalk "^4.1.2"
-    tslib "^2.6.0"
-
 "@docusaurus/logger@3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-3.7.0.tgz#07ecc2f460c4d2382df4991f9ce4e348e90af04c"
@@ -1982,36 +1974,13 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-translations@3.7.0":
+"@docusaurus/theme-translations@3.7.0", "@docusaurus/theme-translations@^2 || ^3":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.7.0.tgz#0891aedc7c7040afcb3a1b34051d3a69096d0d25"
   integrity sha512-Ewq3bEraWDmienM6eaNK7fx+/lHMtGDHQyd1O+4+3EsDxxUmrzPkV7Ct3nBWTuE0MsoZr3yNwQVKjllzCMuU3g==
   dependencies:
     fs-extra "^11.1.1"
     tslib "^2.6.0"
-
-"@docusaurus/theme-translations@^2 || ^3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.6.3.tgz#6e473835ea016ce4acd7d2997f411811db8c4f6b"
-  integrity sha512-Gb0regclToVlngSIIwUCtBMQBq48qVUaN1XQNKW4XwlsgUyk0vP01LULdqbem7czSwIeBAFXFoORJ0RPX7ht/w==
-  dependencies:
-    fs-extra "^11.1.1"
-    tslib "^2.6.0"
-
-"@docusaurus/types@3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.6.3.tgz#e87592e31616da1b8dc473e4c8205c61885a1518"
-  integrity sha512-xD9oTGDrouWzefkhe9ogB2fDV96/82cRpNGx2HIvI5L87JHNhQVIWimQ/3JIiiX/TEd5S9s+VO6FFguwKNRVow==
-  dependencies:
-    "@mdx-js/mdx" "^3.0.0"
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    commander "^5.1.0"
-    joi "^17.9.2"
-    react-helmet-async "^1.3.0"
-    utility-types "^3.10.0"
-    webpack "^5.95.0"
-    webpack-merge "^5.9.0"
 
 "@docusaurus/types@3.7.0", "@docusaurus/types@^3.5.2":
   version "3.7.0"
@@ -2028,15 +1997,7 @@
     webpack "^5.95.0"
     webpack-merge "^5.9.0"
 
-"@docusaurus/utils-common@3.6.3", "@docusaurus/utils-common@^2 || ^3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-3.6.3.tgz#57f840bd6f0928cf10060198cb421f1b9212c8f5"
-  integrity sha512-v4nKDaANLgT3pMBewHYEMAl/ufY0LkXao1QkFWzI5huWFOmNQ2UFzv2BiKeHX5Ownis0/w6cAyoxPhVdDonlSQ==
-  dependencies:
-    "@docusaurus/types" "3.6.3"
-    tslib "^2.6.0"
-
-"@docusaurus/utils-common@3.7.0":
+"@docusaurus/utils-common@3.7.0", "@docusaurus/utils-common@^2 || ^3":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-3.7.0.tgz#1bef52837d321db5dd2361fc07f3416193b5d029"
   integrity sha512-IZeyIfCfXy0Mevj6bWNg7DG7B8G+S6o6JVpddikZtWyxJguiQ7JYr0SIZ0qWd8pGNuMyVwriWmbWqMnK7Y5PwA==
@@ -2044,7 +2005,7 @@
     "@docusaurus/types" "3.7.0"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@3.7.0":
+"@docusaurus/utils-validation@3.7.0", "@docusaurus/utils-validation@^2 || ^3":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.7.0.tgz#dc0786fb633ae5cef8e93337bf21c2a826c7ecbd"
   integrity sha512-w8eiKk8mRdN+bNfeZqC4nyFoxNyI1/VExMKAzD9tqpJfLLbsa46Wfn5wcKH761g9WkKh36RtFV49iL9lh1DYBA==
@@ -2058,48 +2019,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@^2 || ^3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.6.3.tgz#3eca7125235eb90983ff660b97a71f331e331f57"
-  integrity sha512-bhEGGiN5BE38h21vjqD70Gxg++j+PfYVddDUE5UFvLDup68QOcpD33CLr+2knPorlxRbEaNfz6HQDUMQ3HuqKw==
-  dependencies:
-    "@docusaurus/logger" "3.6.3"
-    "@docusaurus/utils" "3.6.3"
-    "@docusaurus/utils-common" "3.6.3"
-    fs-extra "^11.2.0"
-    joi "^17.9.2"
-    js-yaml "^4.1.0"
-    lodash "^4.17.21"
-    tslib "^2.6.0"
-
-"@docusaurus/utils@3.6.3", "@docusaurus/utils@^2 || ^3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.6.3.tgz#8dcb1969e4011a84dfb0a031da806dadddebf0ea"
-  integrity sha512-0R/FR3bKVl4yl8QwbL4TYFfR+OXBRpVUaTJdENapBGR3YMwfM6/JnhGilWQO8AOwPJGtGoDK7ib8+8UF9f3OZQ==
-  dependencies:
-    "@docusaurus/logger" "3.6.3"
-    "@docusaurus/types" "3.6.3"
-    "@docusaurus/utils-common" "3.6.3"
-    "@svgr/webpack" "^8.1.0"
-    escape-string-regexp "^4.0.0"
-    file-loader "^6.2.0"
-    fs-extra "^11.1.1"
-    github-slugger "^1.5.0"
-    globby "^11.1.0"
-    gray-matter "^4.0.3"
-    jiti "^1.20.0"
-    js-yaml "^4.1.0"
-    lodash "^4.17.21"
-    micromatch "^4.0.5"
-    prompts "^2.4.2"
-    resolve-pathname "^3.0.0"
-    shelljs "^0.8.5"
-    tslib "^2.6.0"
-    url-loader "^4.1.1"
-    utility-types "^3.10.0"
-    webpack "^5.88.1"
-
-"@docusaurus/utils@3.7.0":
+"@docusaurus/utils@3.7.0", "@docusaurus/utils@^2 || ^3":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.7.0.tgz#dfdebd63524c52b498f36b2907a3b2261930b9bb"
   integrity sha512-e7zcB6TPnVzyUaHMJyLSArKa2AG3h9+4CfvKXKKWNx6hRs+p0a+u7HHTJBgo6KW2m+vqDnuIHK4X+bhmoghAFA==
@@ -2133,10 +2053,10 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@^0.46.1":
-  version "0.46.1"
-  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.46.1.tgz#7fac1a14417de680b5af7088814192a153d7334d"
-  integrity sha512-kgenn5+pctVlJg8s1FOAm9KuZLRZvkBTMMGJvTTcvNTmnFIHVVYzYfA2Eg+yVefzsC8/cSZGKKJ0kLf8I+mQyw==
+"@easyops-cn/docusaurus-search-local@^0.48.4":
+  version "0.48.4"
+  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.48.4.tgz#a834e57bec7946674009f3a7592d629676b2bedc"
+  integrity sha512-QgVHbGFOASFZHZdFz9NsnzsU6VRki+Mq+qd1RIDxMK3lQ7uz2cLE5MnvBfpzTmC5Ea5JF2YdMibgPechLr5uiw==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2 || ^3"
     "@docusaurus/theme-translations" "^2 || ^3"
@@ -2146,7 +2066,7 @@
     "@easyops-cn/autocomplete.js" "^0.38.1"
     "@node-rs/jieba" "^1.6.0"
     cheerio "^1.0.0"
-    clsx "^1.1.1"
+    clsx "^2.1.1"
     comlink "^4.4.2"
     debug "^4.2.0"
     fs-extra "^10.0.0"
@@ -4553,11 +4473,6 @@ clone-deep@^4.0.1:
     is-plain-object "^2.0.4"
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
-
-clsx@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
-  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 clsx@^2.0.0, clsx@^2.1.1:
   version "2.1.1"
@@ -10016,7 +9931,7 @@ react-fast-compare@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
-react-helmet-async@^1.3.0, "react-helmet-async@npm:@slorber/react-helmet-async@*", "react-helmet-async@npm:@slorber/react-helmet-async@1.3.0":
+"react-helmet-async@npm:@slorber/react-helmet-async@*", "react-helmet-async@npm:@slorber/react-helmet-async@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@slorber/react-helmet-async/-/react-helmet-async-1.3.0.tgz#11fbc6094605cf60aa04a28c17e0aab894b4ecff"
   integrity sha512-e9/OK8VhwUSc67diWI8Rb3I0YgI9/SBQtnhe9aEuK6MhZm7ntZZimXgwXnd8W96YTmSOb9M4d8LwhRZyhWr/1A==
