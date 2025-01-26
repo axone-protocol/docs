@@ -310,14 +310,14 @@ Smart contract instantiation is creating and deploying a smart contract instance
 
 | CODE_ID | Smart contract                                                                          | Description                         |
 | ------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
-| 4       | [`objectarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-objectarium) | Unstructured object storage         |
-| 5       | [`law-stone`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-law-stone)     | Source of rules                     |
-| 7       | [`cognitarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-cognitarium) | Structured object storage, ontology |
+| 2       | [`objectarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-objectarium) | Unstructured object storage         |
+| 1       | [`law-stone`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-law-stone)     | Source of rules                     |
+| 3       | [`cognitarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-cognitarium) | Structured object storage, ontology |
 
 Let's create a new `objectarium` instance. The [msg.rs](https://github.com/axone-protocol/contracts/blob/main/contracts/axone-objectarium/src/msg.rs) source file indicates we only need to provide a bucket name.
 
 ```bash
-axoned tx wasm instantiate 4 \
+axoned tx wasm instantiate 2 \
 --label "cli-tuto" \
 --from axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
 --admin axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
@@ -392,7 +392,7 @@ axoned query wasm contract-state smart axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwv
 
 ```bash
 axoned query txs \
---events 'instantiate.code_id=5' \
+--events 'instantiate.code_id=1' \
 --chain-id axone-dentrite-1 \
 --node https://api.dentrite.axone.xyz:443/rpc --output json | jq \
 '{total_count: .total_count, txs: [.txs[] | {date: .timestamp, sc_addr: .logs[0].events[] | select (.type == "instantiate").attributes[0].value  , txdata: .tx.body.messages[0] | { sender: .sender, program: .msg.program }}]}'
