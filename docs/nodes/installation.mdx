@@ -27,7 +27,7 @@ You'll find the released binaries on the [GitHub repository](https://github.com/
 To easily install `okp4d` from a GitHub release you can use this [oneliner script](https://github.com/jpillora/installer):
 
 <CodeBlock language="bash">
-curl https://i.jpillora.com/okp4/okp4d@{data.axonedVersion}! | bash
+  {`curl https://i.jpillora.com/okp4/okp4d@${data.axonedVersion}! | bash`}
 </CodeBlock>
 
 :::caution
@@ -41,7 +41,7 @@ By principle, take the time to verify the checksum manually.
 The `okp4d` binary can be invoked directly through the following docker image:
 
 <CodeBlock language="bash">
-docker run -ti --rm okp4/okp4d:{data.axonedVersion} --help
+  docker run -ti --rm okp4/okp4d:{data.axonedVersion} --help
 </CodeBlock>
 
 :::tip

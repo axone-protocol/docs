@@ -25,7 +25,7 @@ You'll need the [`axoned`](https://github.com/axone-protocol/axoned) binary on y
 ### `axoned` one-liner installer script
 
 <CodeBlock language="bash">
-  curl https://i.jpillora.com/axone-protocol/axoned@{data.axonedVersion}! | bash
+  {`curl https://i.jpillora.com/axone-protocol/axoned@${data.axonedVersion}! | bash`}
 </CodeBlock>
 
 Verify the installation:
@@ -57,8 +57,8 @@ export PATH=${PATH}:`go env GOPATH`/bin
 3. Build and install:
 
 <CodeBlock language="bash">
-  {`git checkout ${data.axonedVersion}
-make install`}
+  git checkout {data.axonedVersion}
+  make install
 </CodeBlock>
 
 4. Verify the installation:
