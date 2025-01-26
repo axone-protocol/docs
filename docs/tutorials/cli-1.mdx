@@ -13,16 +13,16 @@ Let's explore the core concepts of the Axone blockchain and list the most crucia
 
 ## Installing the Axone CLI
 
-The `okp4d` is a text-based interface that allows users to interact with and query the Axone blockchain directly through commands typed in a terminal. The CLI serves as a tool for executing transactions and retrieving information from the blockchain.
+The `axoned` is a text-based interface that allows users to interact with and query the Axone blockchain directly through commands typed in a terminal. The CLI serves as a tool for executing transactions and retrieving information from the blockchain.
 
-You'll need the [`okp4d`](https://github.com/okp4/okp4d) binary on your machine before we can start playing around with the CLI.
+You'll need the [`axoned`](https://github.com/axone-protocol/axoned) binary on your machine before we can start playing around with the CLI.
 
-### `okp4d` requirements
+### `axoned` requirements
 
 1. You can install the CLI on your Mac or Linux distribution (arm64 & amd64), but there's no available Windows build yet.
 2. Ensure that Go is installed on your machine. You can download it from [Go's official website](https://golang.org/dl/) if it isn't.
 
-### `okp4d` one-liner installer script
+### `axoned` one-liner installer script
 
 <CodeBlock language="bash">
   curl https://i.jpillora.com/axone-protocol/axoned@{data.axonedVersion}! | bash
@@ -31,7 +31,7 @@ You'll need the [`okp4d`](https://github.com/okp4/okp4d) binary on your machine 
 Verify the installation:
 
 ```bash
-okp4d version
+axoned version
 ```
 
 :::note
@@ -40,12 +40,12 @@ Certain aspects, such as your computer's unique characteristics (particularly fo
 
 :::
 
-### Build the `okp4d` CLI from source
+### Build the `axoned` CLI from source
 
 1. Clone the Axone repository from GitHub:
 
 ```bash
-git clone https://github.com/okp4/okp4d.git && cd okp4d
+git clone https://github.com/axone-protocol/axoned.git && cd axoned
 ```
 
 2. Make sure `$GOPATH/bin` is set on the $PATH environment variable. You can add it like this:
@@ -64,7 +64,7 @@ make install`}
 4. Verify the installation:
 
 ```bash
-okp4d version
+axoned version
 ```
 
 ## Get started with the Axone CLI
@@ -81,10 +81,10 @@ The mnemonic serves as a backup mechanism for the wallet. You can regenerate the
 
 ```bash
 # Import from a mnemonic. You can replace "mywallet" with another wallet name
-okp4d keys add --recover mywallet
+axoned keys add --recover mywallet
 
 # Or create a new one. You can replace "mywallet" with another wallet name
-okp4d keys add mywallet
+axoned keys add mywallet
 ```
 
 :::danger
@@ -99,27 +99,27 @@ The public key is used to generate the wallet address. It functions similarly to
 
 ```bash
 # Replace "mywallet" with your wallet name
-okp4d keys show mywallet
+axoned keys show mywallet
 
 : '
-- address: okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5
+- address: axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj
   name: mywallet
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A5wBjmKRVyE5lwqRmCF0v7MNTqR1/vm8WkkoPLQR03JN"}'
   type: local
 '
 ```
 
-Here the terminal returns `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` as the Axone address.
+Here the terminal returns `axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj` as the Axone address.
 
 ### Check your wallet balance
 
 A wallet balance refers to the amount of cryptocurrency or digital assets held in a specific wallet address. It represents the total value of funds that are available for spending or transferring from that particular wallet.
 
-The following command indicates that `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` Axone wallet holds 1 $AXONE (1 $AXONE = 1,000,000 uAXON).
+The following command indicates that `axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj` Axone wallet holds 1 $AXONE (1 $AXONE = 1,000,000 uAXON).
 
 ```bash
-okp4d query bank balances okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
---node https://api.testnet.okp4.network:443/rpc
+axoned query bank balances axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
+--node https://api.dentrite.axone.xyz:443/rpc
 
 : '
 balances:
@@ -133,27 +133,27 @@ pagination:
 
 :::tip
 
-Provide your Axone address to the [faucet](https://faucet.okp4.network/) to receive 1 $AXONE (test tokens).
+Provide your Axone address to the [faucet](https://faucet.axone.xyz/) to receive 1 $AXONE (test tokens).
 
 :::
 
 ### Get the total supply of $AXON
 
-Wondering about the number of coins in circulation? Watch out for the inflation rate with the `okp4d query bank total` command.
+Wondering about the number of coins in circulation? Watch out for the inflation rate with the `axoned query bank total` command.
 
 ```bash
-okp4d query bank total \
---node https://api.testnet.okp4.network:443/rpc
+axoned query bank total \
+--node https://api.dentrite.axone.xyz:443/rpc
 ```
 
 ### Send some $AXONE to another wallet
 
-Here is the command to send 0.5 $AXONE (`500000 $uAXONE`) from the wallet `mywallet` you control to the wallet with the Axone address `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg`:
+Here is the command to send 0.5 $AXONE (`500000 $uAXONE`) from the wallet `mywallet` you control to the wallet with the Axone address `axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw`:
 
 ```bash
-okp4d tx bank send mywallet okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg \
+axoned tx bank send mywallet axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw \
 500000 $uAXONE \
---chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc
+--chain-id axone-dentrite-1 --node https://api.dentrite.axone.xyz:443/rpc
 ```
 
 You should type `y` to confirm the transaction. Then the terminal returns a `txhash`, a unique identifier that helps track and verify the transaction on the Axone blockchain.
@@ -165,8 +165,8 @@ A transaction hash, also AXONn as a transaction ID or TXID, is a string of alpha
 Let's analyze a transaction executed for the previous part of this tutorial, `txhash = 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1`:
 
 ```bash
-okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
---node https://api.testnet.okp4.network:443/rpc
+axoned query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
+--node https://api.dentrite.axone.xyz:443/rpc
 
 : '
 ...
@@ -178,8 +178,8 @@ body:
       amount:
       - amount: "500000"
         denom: uAXON
-      from_address: okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5
-      to_address: okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg
+      from_address: axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj
+      to_address: axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw
 ...
 '
 ```
@@ -187,16 +187,16 @@ body:
 As a lot of data is returned, you can ask for a JSON output and use [jq](https://jqlang.github.io/jq/) to display only what you need:
 
 ```bash
-okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
---node https://api.testnet.okp4.network:443/rpc \
+axoned query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
+--node https://api.dentrite.axone.xyz:443/rpc \
 --output json | jq '.tx.body.messages[0]'
 
 : '
 ...
 {
   "@type": "/cosmos.bank.v1beta1.MsgSend",
-  "from_address": "okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5",
-  "to_address": "okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg",
+  "from_address": "axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj",
+  "to_address": "axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw",
   "amount": [
     {
       "denom": "uAXON",
@@ -229,24 +229,24 @@ Are you now comfortable with the CLI? Let's go further so that the Axone blockch
 
 ### Get all transactions from a filter function
 
-You can search for specific transactions and filter according to transaction event values with the [`okp4d query txs` command](https://docs.okp4.network/commands/okp4d_query_txs).
+You can search for specific transactions and filter according to transaction event values with the [`axoned query txs` command](https://docs.axone.xyz/commands/axoned_query_txs).
 
 For example, if we analyze the log events for the transaction `txhash = 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1`, we notice that we can have the `recipient`, `sender` and `amount` from the event type `transfer`:
 
 ```bash
-okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
---node https://api.testnet.okp4.network:443/rpc \
+axoned query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 \
+--node https://api.dentrite.axone.xyz:443/rpc \
 --output json | jq '.logs[0].events[] | select(.type == "transfer").attributes'
 
 : '
 [
   {
     "key": "recipient",
-    "value": "okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg"
+    "value": "axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw"
   },
   {
     "key": "sender",
-    "value": "okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5"
+    "value": "axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj"
   },
   {
     "key": "amount",
@@ -256,12 +256,12 @@ okp4d query tx 4DB4644E6146DE0E7239C5273F79C931193F542D62979ACB907C9368A315DCE1 
 '
 ```
 
-Thus we can get all transfer transactions where the recipient is `okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg` and the amount is `500000uAXON`:
+Thus we can get all transfer transactions where the recipient is `axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw` and the amount is `500000uAXON`:
 
 ```bash
-okp4d query txs \
---events 'transfer.recipient=okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg&transfer.amount=500000uAXON' \
---node https://api.testnet.okp4.network:443/rpc \
+axoned query txs \
+--events 'transfer.recipient=axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw&transfer.amount=500000uAXON' \
+--node https://api.dentrite.axone.xyz:443/rpc \
 --page 1 --limit 1000 \
 --output json | jq '{total_count: .total_count, txs: [.txs[] | {txhash: .txhash, date: .timestamp, txdata: .logs[0].events[] | select(.type == "transfer").attributes}]}'
 
@@ -275,11 +275,11 @@ okp4d query txs \
       "txdata": [
         {
           "key": "recipient",
-          "value": "okp41r0pf2d78w8w29sm9a6qm8x6yqshezm0k6vwcrg"
+          "value": "axone1r0pf2d78w8w29sm9a6qm8x6yqshezm0k5k88tw"
         },
         {
           "key": "sender",
-          "value": "okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5"
+          "value": "axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj"
         },
         {
           "key": "amount",
@@ -304,48 +304,48 @@ Smart contract instantiation is creating and deploying a smart contract instance
 
 | CODE_ID | Smart contract                                                                          | Description                         |
 | ------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
-| 4       | [`objectarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-objectarium) | Unstructured object storage         |
-| 5       | [`law-stone`](https://github.com/okp4/contracts/tree/main/contracts/okp4-law-stone)     | Source of rules                     |
-| 7       | [`cognitarium`](https://github.com/okp4/contracts/tree/main/contracts/okp4-cognitarium) | Structured object storage, ontology |
+| 4       | [`objectarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-objectarium) | Unstructured object storage         |
+| 5       | [`law-stone`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-law-stone)     | Source of rules                     |
+| 7       | [`cognitarium`](https://github.com/axone-protocol/contracts/tree/main/contracts/axone-cognitarium) | Structured object storage, ontology |
 
-Let's create a new `objectarium` instance. The [msg.rs](https://github.com/okp4/contracts/blob/main/contracts/okp4-objectarium/src/msg.rs) source file indicates we only need to provide a bucket name.
+Let's create a new `objectarium` instance. The [msg.rs](https://github.com/axone-protocol/contracts/blob/main/contracts/axone-objectarium/src/msg.rs) source file indicates we only need to provide a bucket name.
 
 ```bash
-okp4d tx wasm instantiate 4 \
+axoned tx wasm instantiate 4 \
 --label "cli-tuto" \
---from okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
---admin okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5 \
+--from axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
+--admin axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj \
 --gas 1000000 \
---chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc \
+--chain-id axone-dentrite-1 --node https://api.dentrite.axone.xyz:443/rpc \
 '{"bucket":"cli-tutorial-bucket"}'
 ```
 
 :::caution
-Replace `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` with the Axone wallet you control!
+Replace `axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj` with the Axone wallet you control!
 :::
 
 You get a new `txhash`; let's get the created smart contract address:
 
 ```bash
-okp4d query tx CB200354719B58A990A077337686CFAF64E95893037AF599DABC2E3B72297FD9 \
---node https://api.testnet.okp4.network:443/rpc \
+axoned query tx CB200354719B58A990A077337686CFAF64E95893037AF599DABC2E3B72297FD9 \
+--node https://api.dentrite.axone.xyz:443/rpc \
 --output json | jq '.logs[0].events[] | select(.type == "instantiate").attributes[] | select(.key == "_contract_address").value'
 
-# "okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85"
+# "axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf"
 ```
 
 #### Smart contract execution
 
 Once a smart contract is instantiated, it can be executed or triggered to perform specific actions or transactions. This can involve invoking functions within the contract's code, which may update data, transfer assets, or trigger other operations on the app chain.
 
-Let's add a text object to the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`). The [msg.rs](https://github.com/okp4/contracts/blob/main/contracts/okp4-objectarium/src/msg.rs) source file indicates we can use the `store_object` method with `data` and `pin` arguments.
+Let's add a text object to the `objectarium` instance we just created (address = `axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf`). The [msg.rs](https://github.com/axone-protocol/contracts/blob/main/contracts/axone-objectarium/src/msg.rs) source file indicates we can use the `store_object` method with `data` and `pin` arguments.
 
 ```bash
 echo "Hello Axone Builders" > text-ex.txt && \
-okp4d tx wasm execute okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85 \
+axoned tx wasm execute axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf \
 --from mywallet \
 --gas 1000000 \
---chain-id okp4-nemeton-1 --node https://api.testnet.okp4.network:443/rpc \
+--chain-id axone-dentrite-1 --node https://api.dentrite.axone.xyz:443/rpc \
 "{\"store_object\":{\"data\": \"$(cat text-ex.txt | base64 | tr -d '\n\r')\", \"pin\":true}}"
 ```
 
@@ -356,8 +356,8 @@ Replace `mywallet` with the name of the Axone wallet you control!
 You get a new `txhash`; let's get the created object `id`:
 
 ```bash
-okp4d query tx F945A917D3B0E013FD0870B5CFDA23FB00ED8C985030D1C9DD262D71F4BCA50A \
---node https://api.testnet.okp4.network:443/rpc \
+axoned query tx F945A917D3B0E013FD0870B5CFDA23FB00ED8C985030D1C9DD262D71F4BCA50A \
+--node https://api.dentrite.axone.xyz:443/rpc \
 --output json | jq '.logs[0].events[].attributes[] | select(.key == "id").value'
 
 # "71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213"
@@ -367,13 +367,13 @@ okp4d query tx F945A917D3B0E013FD0870B5CFDA23FB00ED8C985030D1C9DD262D71F4BCA50A 
 
 A query gives the ability to retrieve data or information from a smart contract without modifying the state of the blockchain. Queries allow users or applications to fetch specific data or execute read-only functions from the smart contract to gather information.
 
-Let's check the text is correctly stored on-chain, with an `object_data` query to the `objectarium` instance we just created (address = `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`, id = `71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213`).
+Let's check the text is correctly stored on-chain, with an `object_data` query to the `objectarium` instance we just created (address = `axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf`, id = `71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213`).
 
 ```bash
-okp4d query wasm contract-state smart okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85 \
+axoned query wasm contract-state smart axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf \
 --output json \
---chain-id okp4-nemeton-1 \
---node https://api.testnet.okp4.network:443/rpc \
+--chain-id axone-dentrite-1 \
+--node https://api.dentrite.axone.xyz:443/rpc \
 "{\"object_data\": {\"id\":\"71f9954abebbd23da1664914cd599f8039585fa3d81735b4abe20893abd32213\"}}" \
 | jq '.data' | tr -d '"' | base64 -d
 
@@ -385,29 +385,29 @@ okp4d query wasm contract-state smart okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdd
 - Wondering how many `law-stone` are instantiated, and for each instance what are its contract address, the Axone address of the creator, and the rules program?
 
 ```bash
-okp4d query txs \
+axoned query txs \
 --events 'instantiate.code_id=5' \
---chain-id okp4-nemeton-1 \
---node https://api.testnet.okp4.network:443/rpc --output json | jq \
+--chain-id axone-dentrite-1 \
+--node https://api.dentrite.axone.xyz:443/rpc --output json | jq \
 '{total_count: .total_count, txs: [.txs[] | {date: .timestamp, sc_addr: .logs[0].events[] | select (.type == "instantiate").attributes[0].value  , txdata: .tx.body.messages[0] | { sender: .sender, program: .msg.program }}]}'
 ```
 
-- Did the wallet `okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5` execute transactions to the smart contract `okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85`?
+- Did the wallet `axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj` execute transactions to the smart contract `axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf`?
 
 ```bash
-okp4d query txs \
---events 'message.sender=okp41cu9wzlcyyxpek20jaqfwzu3llzjgx34cwnv2v5&execute._contract_address=okp41tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7q8jja85' \
---chain-id okp4-nemeton-1 \
---node https://api.testnet.okp4.network:443/rpc --output json | jq \
+axoned query txs \
+--events 'message.sender=axone1cu9wzlcyyxpek20jaqfwzu3llzjgx34cqf94yj&execute._contract_address=axone1tca04wdta7pyzzyetgqyl2rn9v5vgxq0cwvdduel8sgw4g64at7qrd0anf' \
+--chain-id axone-dentrite-1 \
+--node https://api.dentrite.axone.xyz:443/rpc --output json | jq \
 '{total_count: .total_count, txs: [.txs[] | {date: .timestamp, wasm_action: [ .logs[0].events[] | select(.type == "wasm").attributes[] ] }]}'
 ```
 
 ## Recap'
 
 - The CLI allows you to communicate with the Axone blockchain
-- To get started, you should install the `okp4d` CLI and create (or import) a wallet
+- To get started, you should install the `axoned` CLI and create (or import) a wallet
 - Both native and smart contracts transactions are supported
 
-We've just scratched the surface of what's possible with the Axone CLI! For a more detailed look at available commands, please check our full documentation at [Axone Documentation](https://docs.okp4.network/commands/okp4d).
+We've just scratched the surface of what's possible with the Axone CLI! For a more detailed look at available commands, please check our full documentation at [Axone Documentation](https://docs.axone.xyz/commands/axoned).
 
 Remember, the blockchain space moves quickly, and Axone is no exception. Stay in touch with our updates and feel free to join our active developer community. We're thrilled to have you on board!
