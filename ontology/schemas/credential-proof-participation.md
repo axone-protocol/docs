@@ -5,9 +5,9 @@ sidebar_position: 9
 
 # Proof of participation credential
 
-> **Name**: `credential-proof-of-participation`
+> **Name**: `credential-proof-participation`
 >
-> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/](https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/)
+> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/](https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/)
 
 ## Namespaces
 
@@ -18,11 +18,11 @@ Here are the namespaces used in this schema:
 - `skos`: [http://www.w3.org/2004/02/skos/core#](http://www.w3.org/2004/02/skos/core#)
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
-- `credential-proof-of-participation`: [https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/](https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/)
+- `credential-proof-participation`: [https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/](https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-proof-of-participation:ProofOfParticipationCredential](https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/ProofOfParticipationCredential)
+> **IRI**: [credential-proof-participation:ProofOfParticipationCredential](https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/ProofOfParticipationCredential)
 
 ### Description
 
@@ -33,11 +33,11 @@ The event is linked using `:participatedIn`, which references an instance of [sc
 
 ### Examples
 
-```json title="katai-proof-of-participation.jsonld"
+```json title="katai-proof-participation.jsonld"
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/",
+        "https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/",
         "https://schema.org"
     ],
     "type": [
@@ -67,9 +67,9 @@ The event is linked using `:participatedIn`, which references an instance of [sc
 
 #### Participated in
 >
-> **IRI**: [credential-proof-of-participation:participatedIn](https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/participatedIn)
+> **IRI**: [credential-proof-participation:participatedIn](https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/participatedIn)
 >
-> **Domain**:&nbsp;[credential-proof-of-participation:ProofOfParticipationCredential](https://w3id.org/axone/ontology/v4/schema/credential/proof-of-participation/ProofOfParticipationCredential)
+> **Domain**:&nbsp;[credential-proof-participation:ProofOfParticipationCredential](https://w3id.org/axone/ontology/v4/schema/credential/proof/participation/ProofOfParticipationCredential)
 >
 > **Range**:&nbsp;[schema:Event](http://schema.org/Event)
 
