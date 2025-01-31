@@ -49,7 +49,14 @@ The event is linked using `:participatedIn`, which references an instance of [sc
         "id": "urn:addr:axone1y6wwdp0gmgnj6hf0jt0r67axhw0fp5dsq37ccv",
         "participatedIn": {
             "id": "https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918",
+            "@type": "ExhibitionEvent",
             "name": "KatAI | Community-Driven Kat Art, AI & Rewards",
+            "organizer": {
+                "@type": "Organization",
+                "name": "Axone",
+                "url": "https://axone.xyz"
+            },
+            "url": "https://play.katai.axone.xyz",
             "startDate": "2025-01-08T17:00:00.000Z",
             "endDate": "2025-01-29T16:59:59.000Z"
         }
