@@ -34,10 +34,7 @@ function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage
                 declarations: [
                   {
                     type: 'VariableDeclarator',
-                    id: {
-                      type: 'Identifier',
-                      name: variable
-                    },
+                    id: { type: 'Identifier', name: variable },
                     init: {
                       type: 'Literal',
                       value: adjustedReadingTime,
@@ -71,17 +68,10 @@ const config = {
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
-  markdown: {
-    mermaid: true
-  },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr']
-  },
+  markdown: { mermaid: true },
+  i18n: { defaultLocale: 'en', locales: ['en', 'fr'] },
   themes: ['@docusaurus/theme-mermaid'],
-  future: {
-    experimental_faster: true,
-  },
+  future: { experimental_faster: true },
   presets: [
     [
       'classic',
@@ -108,9 +98,7 @@ const config = {
           showLastUpdateTime: true
         },
         blog: false,
-        theme: {
-          customCss: require.resolve('./src/scss/custom.scss')
-        }
+        theme: { customCss: require.resolve('./src/scss/custom.scss') }
       })
     ]
   ],
@@ -196,69 +184,33 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Whitepaper',
-                to: '/whitepaper/abstract'
-              },
-              {
-                label: 'Run a Node',
-                to: '/nodes/introduction'
-              },
-              {
-                label: 'Technical documentation',
-                to: '/architecture/overview'
-              },
-              {
-                label: 'FAQ',
-                to: '/faq'
-              }
+              { label: 'Whitepaper', to: '/whitepaper/abstract' },
+              { label: 'Run a Node', to: '/nodes/installation' },
+              { label: 'Technical documentation', to: '/architecture/overview' },
+              { label: 'FAQ', to: '/faq' }
             ]
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/axone'
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/axonexyz'
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/axone-protocol'
-              },
-              {
-                label: 'Telegram',
-                href: 'https://t.me/axonexyz'
-              }
+              { label: 'Discord', href: 'https://discord.gg/axone' },
+              { label: 'X', href: 'https://x.com/axonexyz' },
+              { label: 'GitHub', href: 'https://github.com/axone-protocol' },
+              { label: 'Telegram', href: 'https://t.me/axonexyz' }
             ]
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Medium',
-                href: 'https://blog.axone.xyz/'
-              },
-              {
-                label: 'Axone.xyz',
-                href: 'https://axone.xyz'
-              }
+              { label: 'Medium', href: 'https://blog.axone.xyz/' },
+              { label: 'Axone.xyz', href: 'https://axone.xyz' }
             ]
           },
           {
             title: 'Tools',
             items: [
-              {
-                label: 'Blockchain Explorer',
-                href: 'https://explore.axone.xyz/Axone%20testnet'
-              },
-              {
-                label: 'Testnet Faucet',
-                href: 'https://faucet.axone.xyz'
-              }
+              { label: 'Blockchain Explorer', href: 'https://explore.axone.xyz/Axone%20testnet' },
+              { label: 'Testnet Faucet', href: 'https://faucet.axone.xyz' }
             ]
           }
         ],
@@ -269,67 +221,32 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['prolog', 'turtle', 'bash', 'json', 'sparql']
       },
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false
-      },
-      docs: {
-        sidebar: {
-          hideable: false,
-          autoCollapseCategories: true
-        }
-      }
+      colorMode: { defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false },
+      docs: { sidebar: { hideable: false, autoCollapseCategories: true } }
     }),
   plugins: [
     'docusaurus-plugin-sass',
     ['drawio', {}],
+    ['@easyops-cn/docusaurus-search-local', { hashed: true, docsRouteBasePath: '/' }],
     [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        docsRouteBasePath: '/'
-      }
+      '@docusaurus/plugin-content-docs',
+      { id: 'contracts', path: 'contracts', routeBasePath: 'contracts/' }
     ],
     [
       '@docusaurus/plugin-content-docs',
-      {
-        id: 'contracts',
-        path: 'contracts',
-        routeBasePath: 'contracts/'
-      }
+      { id: 'ontology', path: 'ontology', routeBasePath: 'ontology/' }
     ],
     [
       '@docusaurus/plugin-content-docs',
-      {
-        id: 'ontology',
-        path: 'ontology',
-        routeBasePath: 'ontology/'
-      }
+      { id: 'predicates', path: 'predicates', routeBasePath: 'predicates/' }
     ],
     [
       '@docusaurus/plugin-content-docs',
-      {
-        id: 'predicates',
-        path: 'predicates',
-        routeBasePath: 'predicates/'
-      }
+      { id: 'modules', path: 'modules', routeBasePath: 'modules/' }
     ],
     [
       '@docusaurus/plugin-content-docs',
-      {
-        id: 'modules',
-        path: 'modules',
-        routeBasePath: 'modules/'
-      }
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'commands',
-        path: 'commands',
-        routeBasePath: 'commands/'
-      }
+      { id: 'commands', path: 'commands', routeBasePath: 'commands/' }
     ]
   ],
   scripts: ['/js/matomo.js', '/js/redirect.js']
