@@ -65,16 +65,16 @@ axoned init YOUR_MONIKER --chain-id axone-dentrite-1
 
 ### Download Genesis
 
-The genesis file link below is Polkachu's mirror download. The best practice is to find the official genesis download link.
+The genesis file link below is the official genesis download link.
 
 ```bash
-wget -O genesis.json https://snapshots.polkachu.com/testnet-genesis/axone/genesis.json --inet4-only
+wget -O genesis.json https://raw.githubusercontent.com/axone-protocol/networks/911b2d34631ac242e9ef3be577163653ed644726/chains/dentrite-1/genesis.json --inet4-only
 mv genesis.json ~/.axoned/config
 ```
 
 ### Configure Seed
 
-Using a seed node to bootstrap is the best practice in our view. Alternatively, you can use addrbook or persistent_peers.
+Using a seed node to bootstrap is the best practice.
 
 ```bash
 sed -i 's/seeds = ""/seeds = "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:17656"/' ~/.axoned/config/config.toml
@@ -122,7 +122,7 @@ WantedBy=multi-user.target
 
 ### Download Snapshot
 
-Please use our popular snapshot download service to download and extract Axone snapshot.
+Use this popular download service to download and extract Axone snapshot.
 
 ### Start Node Service
 
