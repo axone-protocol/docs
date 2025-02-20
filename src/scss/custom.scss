@@ -5,11 +5,6 @@
 @import "quiz";
 
 @font-face {
-  font-family: anton;
-  src: url("/static/fonts/Anton/Anton-Regular.ttf");
-}
-
-@font-face {
   font-family: "Helvetica bold";
   src: url("/static/fonts/Helvetica/HelveticaNeueBold.otf");
 }
@@ -19,13 +14,18 @@
   src: url("/static/fonts/Helvetica/HelveticaNeueRoman.otf");
 }
 
+@font-face {
+  font-family: "Vanguard CF";
+  src: url("/static/fonts/VanguardCF/VanguardCF-Bold.otf");
+}
+
 :root {
   --ifm-color-primary: #ff773d;
   --ifm-hover-overlay: rgb(255 149 0 / 12%);
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Helvetica regular", sans-serif;
   --ifm-heading-font-family: "Helvetica bold", sans-serif;
-  --ifm-h1-font-family: anton, sans-serif;
+  --ifm-h1-font-family: "Vanguard CF", sans-serif;
   --ifm-font-color-base: #0d0d0d;
   --ifm-menu-color: #0d0d0d;
   --ifm-heading-color: #0d0d0d;
