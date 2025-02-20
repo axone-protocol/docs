@@ -80,7 +80,7 @@ const config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
   future: {
-    experimental_faster: true,
+    experimental_faster: true
   },
   presets: [
     [
@@ -202,7 +202,7 @@ const config = {
               },
               {
                 label: 'Run a Node',
-                to: '/nodes/introduction'
+                to: '/nodes/installation'
               },
               {
                 label: 'Technical documentation',
