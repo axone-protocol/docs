@@ -51,7 +51,7 @@ In [Workflows](./workflows) section, we describe how the protocol **orchestrates
 Here, we'll concentrate on how Axone enables its functionalities <u>**in the decentralized way**</u>.
 
 Let's take up and illustrate the previous example :
-![consume-resources-2](/img/content/academy/consume-resources-2.webp)
+![workflows-2](/img/content/core-concepts/workflows-2.webp)
 
 Let's take the example of a zone "Z1".
 Thanks to its governance rules, this zone can use various services, in particular datasets D1 / D2 / D3, as well as services S1 / S2 / S3.
@@ -64,7 +64,7 @@ At the beginning of the example, we have three datasets (D1, D2, D3) that are pr
 We therefore understand that to carry out this sequence of activities, we need the consent rules for resources D1 / D2 / D3, service S1 and zone governance rules, all stored on-chain, must be met.
 So, before the execution, the first step is to ensure that the users are authorized to perform the sequence of activities they wish.
 
-![rules-1](/img/content/academy/rules-1.webp)
+![rules-1](/img/content/core-concepts/rules-1.webp)
 
 Although resources and services are stored off-chain, they are referenced within the protocol with on-chain stored consent rules, allowing them to make sense when linked to zones and their governance rules.
 Connecting user requests with resource consent rules and zone governance rules to ensure law enforcement and solve intricate logical problems requires the use of a robust logical problem-solving capability language such as Prolog. However, this also necessitates its direct integration on-chain. Prolog is integrated into an on-chain module, serving as a trustworthy interpreter of rules. Each zone, with its established rules, can leverage Prolog to determine the permissibility of a user's actions. This decentralized interpretation ensures that governance and consent rules are consistently and reliably applied across the network.
@@ -80,7 +80,7 @@ Within the ecosystem, multiple instances of diverse Orchestration Services can o
 
 In our example, when the user is authorized to interact with a zone, an off-chain Orchestration Service interprets the instructions recorded on-chain and coordinates communication with different off-chain resources and services to execute the workflow.
 
-![consume-resources-2](/img/content/academy/consume-resources-2.webp)
+![workflows-2](/img/content/core-concepts/workflows-2.webp)
 
 Nb : As a service, workflows can invoke other workflows as sub-services, forming a multi-level hierarchy to facilitate the composition and reuse of more complex processes. This workflow could invoke one or several orchestration services to perform the entire sequence.
 
@@ -102,7 +102,7 @@ Interoperability, a critical aspect of the Axone protocol, enables seamless inte
 
 ### Technical Aspect
 
-![protocol-concept-1](/img/content/academy/protocol-concept-1.webp)
+![protocol-concept-1](/img/content/core-concepts/protocol-concept-1.webp)
 
 Within the context of Axone, interoperability encompasses more than simply connecting digital resources. Axone relies on fundamental components such as APIs (Application Programming Interfaces) and connectors to facilitate seamless collaboration. These components are indispensable in synchronizing and exchanging digital resources within the protocol. Application Programming Interfaces (APIs) serve as standardized gateways, facilitating seamless communication between digital resources. In this context, Axone ensures that diverse systems and services can interact seamlessly within its ecosystem. This enables developers to design applications and services that effectively harness a range of resources, seamlessly connecting them through Axone's APIs. By providing this cohesive framework, Axone offers a robust and flexible protocol for developing innovative solutions that leverage the power of diverse digital resources in a streamlined and efficient manner.
 
@@ -144,7 +144,7 @@ An example of relevant applications that Axone could leverage is Interchain Acco
 
 ## Governance
 
-![rules-2](/img/content/academy/rules-2.webp)
+![rules-2](/img/content/core-concepts/rules-2.webp)
 
 In the Axone ecosystem, governance takes the form of an essential triptych, extending to the governance of the protocol, resources and zones. This governance trinity represents an integrated and decentralized mechanism that defines how participants interact, share, and coordinate digital resources within the network. Each level of governance contributes to establishing a balance between protocol stability, customization of consent rules, and coordination within different zones. Let's explore in detail how these forms of governance translate and why they are fundamental to Axone's mission.
 

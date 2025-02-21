@@ -16,13 +16,13 @@ From this perspective, Digital Resource Processing Services serve as the structu
 
 This can be formalized very simply, with a set of resources as input and a set of produced resources as output:
 
-![consume-resources-1](/img/content/academy/consume-resources-1.webp)
+![workflows-1](/img/content/core-concepts/workflows-1.webp)
 
 Once we have defined the elementary processing unit, we can combine them to form a more complex processing structure called a Workflow.
 A workflow is a plan that outlines a series of activities, where some activities depend on the output of others. These interdependencies form a Directed Acyclic Graph (DAG) structure, ensuring that the workflow progresses without circular references or loops.
 Let's consider an example to illustrate this concept:
 
-![consume-resources-2](/img/content/academy/consume-resources-2.webp)
+![workflows-2](/img/content/core-concepts/workflows-2.webp)
 
 In the example above, we have a simple use case which involves three datasets (D1, D2, D3) that are used to produce the final knowledge (D7) after a series of transformations (S1, S2, S3).
 
@@ -49,7 +49,7 @@ Here's a detailed breakdown:
 An important concept to understand is that interacting with any digital resource requires a service. In the previous examples, we mentioned a specific digital resource being presented as input to a service. Still, the digital resource can only exist with the service that makes it available within the workflow. This is typically the role of Storage Services, which provides access to digital resources under specific terms and conditions.
 In the following example, the dataset D1 is accessed via the service S1, and the processing result is generated using S2, ultimately produced on S3.
 
-![consume-resources-3](/img/content/academy/consume-resources-3.webp)
+![workflows-3](/img/content/core-concepts/workflows-3.webp)
 
 A workflow is merely a sequence of activities, taking inputs and producing outputs. So, it can be conceptualized as a Service capable of performing specific functions, just like traditional services. This paradigm shift enables Workflows to be invoked in the protocol as a Service and to join the anything-as-a-service family.
 

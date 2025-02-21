@@ -11,9 +11,18 @@ html {
 
   h1 {
     font-family: var(--ifm-h1-font-family);
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
   }
 
   .footer__title {
