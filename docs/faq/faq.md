@@ -28,8 +28,6 @@ A zone is a conceptual framework defined by a set of rules, within which the rec
 
 The primary objective of zones is to facilitate the coordination of heterogeneous systems and resources. Zones aim to integrate all systems, both on-chain and off-chain.
 
-More information [here](./whitepaper/solution#protocol-overview)
-
 ## What types of resources can be shared?
 
 As an agnostic infrastructure, Axone has no limitations on the types of resources it can be referenced, it opens doors to a wide range of possibilities.
@@ -40,8 +38,6 @@ For clarity, we categorize resources and services into different types:
 - Unbounded Resources: This category is dedicated to data streams, allowing real-time data processing.
 - Processing Services: Axone can manage various digital processing services, including algorithms and AI models.
 - Infrastructure Services: Additionally, Axone can handle any infrastructure services such as storage and computation or ID.
-
-For more in-depth information, you can refer to our dedicated documentation [here](./whitepaper/solution#the-dataverse).
 
 ## Why do you distinguish zones and digital resources?
 
@@ -72,9 +68,7 @@ An ontology, in the context of Axone, refers to a structured representation of k
 
 In Axone, this ontology is used to describe the metadata or characteristics of resources and services. Think of it as the "data about the data." This structured information makes it easier for users and systems to understand and interact with resources and services within the Axone network. It ensures that everyone speaks the same language when it comes to sharing and accessing digital resources.
 
-Dedicated documentation [here](./whitepaper/solution#ontology)
-
-And deep-dive article [here](https://blog.axone.xyz/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
+Please refer to this deep-dive article [here](https://blog.axone.xyz/okp4-knowledge-sharing-through-ontology-driven-dataverse-a-new-approach-to-knowledge-description-f9b81d4484c8)
 
 ## What is the web2 alternative today?
 
