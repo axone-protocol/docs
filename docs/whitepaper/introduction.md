@@ -70,9 +70,10 @@ Axone Protocol addresses these systemic challenges by introducing a comprehensiv
 
 The protocol's architecture rests on three fundamental pillars:
 
-- **Semantic Ontology** A standardized semantic layer that enables resource structuring and interoperability across the ecosystem. This foundation ensures that all participants - whether human or machine - can effectively discover, understand, and interact with available resources.
+- **Ontology**: A structured semantic layer enriched with Verifiable Credentials (VCs) to ensure both interoperability and trust. This approach enables resources to carry cryptographically verifiable attributes, ensuring their integrity and provenance. By embedding VCs, the protocol allows participants—whether human or machine—to assert, verify, and reason about resource properties transparently across both on-chain and off-chain environments.
 
-- **Decentralized Governance** A sophisticated governance framework that enables large-scale collaboration while preserving resource sovereignty. This system allows participants to define and enforce rules for resource sharing, ensuring fair and transparent collaboration across the network.
+- **Decentralized Governance**: A sophisticated governance framework that enables large-scale collaboration while preserving resource sovereignty. This system allows participants to define and enforce rules for resource sharing, ensuring fair and transparent collaboration across the network.
 
-- **Resource Orchestration** An intelligent orchestration mechanism that optimizes resource allocation and workflow execution. This layer coordinates the interaction between different components of the ecosystem, from data and compute resources to AI models and agents.
-  Together, these pillars create an open ecosystem where AI resources can be efficiently shared, combined, and optimized. This architecture lays the foundation for a new paradigm of collaboration in AI development and deployment, one that aligns with the principles of decentralization while addressing the practical challenges of resource optimization and trust.
+- **Resource Orchestration**: An intelligent orchestration mechanism that optimizes resource allocation and workflow execution. This layer coordinates the interaction between different components of the ecosystem, from data and compute resources to AI models and agents.
+
+Together, these pillars create an open ecosystem where AI resources can be efficiently shared, combined, and optimized. This architecture lays the foundation for a new paradigm of collaboration in AI development and deployment, one that aligns with the principles of decentralization while addressing the practical challenges of resource optimization and trust.

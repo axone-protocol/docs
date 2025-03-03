@@ -10,31 +10,31 @@ sidebar_position: 3
 
 Axone is a layer-1 blockchain protocol specifically designed to connect, share, and monetize resources within the AI stack. It operates as an open network dedicated to the collaborative management of AI workflows, universally compatible with all data, models, and infrastructure.
 
-At its core, Axone represents a fundamental shift in how AI resources are organized and utilized. Rather than operating in isolated silos, resources in the Axone ecosystem exist within a semantic framework that enables dynamic discovery, composition, and orchestration. The Axone Protocol is built on three foundational pillars - Ontology, Governance, and Orchestration - each addressing specific challenges in the AI landscape while working in concert to enable new forms of collaboration.
+At its core, Axone represents a fundamental shift in how AI resources are organized and utilized. Rather than operating in isolated silos, resources in the Axone ecosystem exist within a semantic framework that enables transparent governance, composition, and orchestration. The Axone Protocol is built on three foundational pillars - Ontology, Governance, and Orchestration - each addressing specific challenges in the AI landscape while working in concert to enable new forms of collaboration.
 
 ### Key Points
 
 **Technical Foundation**:
 
-- Built on Cosmos SDK and Tendermint consensus
-- CosmWasm compatibility for smart contract functionality
+- Built on [Cosmos SDK](https://docs.cosmos.network/) and [CometBFT](https://cometbft.com/) consensus
+- [CosmWasm](https://cosmwasm.com/) for smart contract functionality
 - Native support for both on-chain and off-chain resources
 
 **Core Capabilities**:
 
-- Universal compatibility with diverse data types and AI models
-- Seamless integration with any infra and service providers
-- Automated workflow orchestration and resource optimization
-- Decentralized governance and collaborative environment
-- Economic incentives for resource sharing and collaboration
+- Universal compatibility with diverse data types and AI models.
+- Seamless integration with any infra and service providers.
+- Automated workflow orchestration and resource optimization.
+- Decentralized governance and collaborative environment.
+- Economic incentives for resource sharing and collaboration.
 
 **Key Innovations**:
 
-- **Semantic Resource Managemen**t: Unique approach to resource description and discovery using W3C standards
-- **Zone-Based Governance**: Flexible governance framework for managing resource access, condition and business model
-- **Workflow Orchestration**: Advanced mechanisms for coordinating and handling complex AI workflows across distributed resources
+- **Semantic Resource Management**: Unique approach to resource description using W3C standards.
+- **Zone-Based Governance**: Flexible framework for regulating resource usage, rights, and economic models.
+- **Workflow Orchestration**: Advanced mechanisms for coordinating and managing complex AI workflows across distributed resources.
 
-The protocol enables a new paradigm of AI development where resources can be freely shared, discovered, and combined while maintaining security and sovereignty. This architecture supports everything from simple data sharing to complex multi-step AI workflows, creating an ecosystem where innovation can flourish through collaboration rather than competition.
+The protocol enables a new paradigm of AI development where resources can be freely shared, described, and combined while maintaining security and sovereignty. This architecture supports everything from simple data sharing to complex multi-step AI workflows, creating an ecosystem where innovation can flourish through collaboration rather than competition.
 
 ### The Interplay of Ontology, Governance, and Orchestration: A Holistic Protocol Architecture
 
@@ -44,19 +44,19 @@ The Axone protocol's power emerges from the intricate interaction between three 
 
 ## Ontology: The Semantic Foundation of Resource Management
 
-The Axone ontology represents a fundamental innovation in how AI resources are described, discovered, and utilized within a decentralized ecosystem. Built on established W3C standards, this semantic layer creates a universal language for resource interaction that enables unprecedented levels of automation and interoperability.
+The Axone ontology represents a fundamental innovation in how AI resources are described, and utilized within a decentralized ecosystem. Built on established W3C standards, this semantic layer creates a universal language for resource interaction that enables unprecedented levels of automation and interoperability.
 
 ### Semantic Foundation and Standards
 
-At its core, the Axone ontology leverages RDF (Resource Description Framework) and OWL (Web Ontology Language) to create a comprehensive semantic framework. This foundation enables not just basic resource description, but sophisticated semantic relationships and automated reasoning capabilities. By adopting these established standards, Axone ensures compatibility with existing semantic web technologies while extending their capabilities for AI-specific use cases.
+The Axone ontology is built on W3C RDF and RDFS models, integrating established schemas like [Schema.org](https://schema.org) to form a comprehensive semantic framework.
 
-The semantic architecture implements multiple layers of abstraction, from basic resource descriptions to complex relationship modeling. This layered approach allows for precise resource specification while maintaining the flexibility needed for diverse AI applications. Through JSON-LD integration, the system maintains lightweight data exchange capabilities crucial for real-world performance.
+This foundation enables not just basic resource description, but sophisticated semantic information and automated reasoning capabilities. By adopting these established standards, Axone ensures compatibility with existing semantic web technologies while extending their capabilities for AI-specific use cases.
 
-### Structural Components and Resource Management
+### The Proof Dimension
 
-The ontology's structure is organized around three primary components: resources, relationships, and metadata. Each resource in the Axone ecosystem, whether it's a dataset, computation service, or AI model, is described through a rich semantic framework that captures both its technical specifications and operational characteristics.
+The ontological space is structured around Verifiable Credentials (VC), which enables resources to carry verifiable, tamper-evident claims about their attributes and status in the Axone protocol. These resources can take various forms, such as zones, dataset, computation service, or AI model.
 
-The relationship layer defines how resources can interact, establishing clear patterns for service composition and workflow definition. This enables automated discovery of compatible resources and verification of their interoperability. The metadata layer provides crucial context about resource quality, usage policies, and provenance, enabling informed decision-making in resource selection and composition.
+VCs play a crucial role in regulating and managing resources by defining the parameters for control, interaction, and governance. They establish a framework for resource usage, sharing, and modification within the dataverse, ensuring compliance with established governance and resource management standards.
 
 ### Interoperability and Extensibility
 
@@ -76,11 +76,11 @@ The protocol introduces the innovative concept of "Zones" - distinct governance 
 
 Zones can define their own:
 
-- Resource validation requirements
-- Access control mechanisms
-- Quality standards
-- Economic models
-- Compliance frameworks
+- Resource validation requirements.
+- Access control mechanisms.
+- Quality standards.
+- Economic models.
+- Compliance frameworks.
 
 This flexibility enables the creation of highly specialized collaboration environments while maintaining interoperability with the broader network.
 
@@ -90,30 +90,30 @@ A key technological innovation in Axone's governance framework is the use of a c
 
 By leveraging Prolog, Axone Protocol can:
 
-- Express complex governance rules with high precision
-- Dynamically evaluate consent and access conditions
-- Implement multi-step verification protocols
-- Automate compliance checking across different resource interactions
+- Express complex governance rules with high precision.
+- Dynamically evaluate consent and access conditions.
+- Implement multi-step verification protocols.
+- Automate compliance checking across different resource interactions.
 
-The Prolog implementation includes critical adaptations such as bounded variable allocation, deterministic execution through ordered maps, and secure arithmetic handling. This allows for nuanced, context-aware governance rules that can be evaluated efficiently and transparently across the network.
+The Axone Prolog VM is designed for secure, deterministic execution, ensuring compliance with blockchain constraints while enabling expressive governance rules. It enforces controlled resource policies, guaranteeing execution integrity within a decentralized environment. Optimized for performance, the VM is as compliant as possible with ISO Prolog standards while being enhanced with blockchain-specific predicates, enabling seamless interoperability between smart contracts and on-chain logic.
 
 ## The Interplay of Governance and Ontology: On-Chain Semantic Harmony
 
-The governance and ontology pillars of the Axone protocol are fundamentally interconnected, creating a symbiotic relationship that enables a rich, contextual understanding of the “Dataverse”. The ontology provides the semantic framework that allows the protocol to comprehend the nature of resources, identities, and consent rules, while the governance mechanisms implement and enforce these semantic definitions.
+The governance and ontology pillars of the Axone protocol are fundamentally interconnected, creating a symbiotic relationship that enables a rich, contextual understanding of the "Dataverse". The ontology provides the semantic framework that allows the protocol to comprehend the nature of resources, identities, and consent rules, while the governance mechanisms implement and enforce these semantic definitions.
 
 By implementing both ontology and governance directly on-chain, Axone creates a fully transparent and verifiable ecosystem where:
 
-- Resources are semantically defined and understood
-- Identities are contextually recognized
-- Consent rules are precisely articulated and enforced
-- The entire protocol maintains a consistent, machine-readable understanding of its components
+- Resources are semantically defined, verifiable, and interpretable.
+- Identities are contextually recognized and cryptographically verifiable.
+- Consent rules are precisely articulated and enforced.
+- The entire protocol maintains a consistent, machine-readable understanding of its components.
 
 This on-chain semantic and governance integration ensures that:
 
-- Every interaction is semantically meaningful
-- Governance rules can be expressed with unprecedented precision
-- The protocol can dynamically adapt to complex, nuanced scenarios
-- Transparency and verifiability are maintained at every level of interaction
+- Every interaction is semantically meaningful.
+- Governance rules can be expressed with unambiguous exactitude and verifiable correctness.
+- The protocol can dynamically adapt to complex, nuanced scenarios.
+- Transparency and verifiability are maintained at every level of interaction.
 
 The seamless interplay between ontology and governance represents a significant advancement in decentralized protocol design, enabling a more intelligent, flexible, and context-aware system for managing digital resources and interactions.
 
