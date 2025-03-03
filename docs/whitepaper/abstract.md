@@ -4,19 +4,10 @@ sidebar_position: 1
 
 # Abstract
 
-In our digitalized world, one of the most efficient ways to unlock knowledge is through data. But data is rarely shared. It stays in silos, isolated and protected. As such, data is under-used and under-valued. But generating knowledge from data is theoretically infinite. That's why an incommensurable amount of value could be unlocked through data sharing. Today's problem is that individuals and companies restrict access to data and information, mostly because of a lack of trust and poor incentives.
+Axone Protocol introduces a novel framework for collaborative intelligence in the AI ecosystem, addressing fundamental challenges in current AI development paradigms. This whitepaper identifies critical limitations in today's AI landscape: the centralization of data and computational resources, inherent constraints in existing model architectures, and fragmentation across decentralized technologies.
 
-Axone is designed to bring the tools for builders and communities to solve trust and incentive issues and unlock value through applications based on shared datasets and algorithms.
+Axone offers a comprehensive solution through a Layer-1 blockchain protocol built on three foundational pillars: a semantic ontology enabling standardized resource structuring and interoperability, decentralized governance facilitating resource sovereignty and collaboration, and intelligent orchestration optimizing resource allocation across workflows.
 
-Axone is a public blockchain built to share and orchestrate any off-chain resource. Its architecture is specifically designed to:
+Built with the [Cosmos SDK](https://docs.cosmos.network/), Axone creates an open network where any digital resource like AI, data or infrastructure components can be universally connected, shared, and monetized. The protocol's innovative zone-based governance model enables flexible domain-specific environments while maintaining cross-ecosystem interoperability. Its economic design incorporates the $AXONE token as both infrastructural utility and value exchange mechanism, with a sustainable revenue model tied directly to protocol utilization.
 
-- Share any off-chain resource (datasets, algorithms, services...).
-- Define and enforce highly customized rules on-chain (access rights, business models, governance models...).
-- Build applications leveraging the shared resources according to the on-chain rules.
-
-Axone brings new opportunities for real-world coordination. It allows Smart Contracts to orchestrate off-chain data, from access management to highly complex workflows involving many shared datasets and services. This design opens the gates for the next generation of applications while keeping complete sovereignty over shared data and resources.
-
-Builders can benefit from the Axone SDK to create zones with customized rules, attract contributors and innovate on coordination mechanisms where the need for trust is minimized.
-Data and services providers can reference and describe their resources in the blockchain to contribute within a safe and fair environment. They are guaranteed that the on-chain rules will be enforced, including the value they will get from their contribution.
-
-All these shared resources and rules shape the Dataverse, an ever-expanding universe of datasets, algorithms and all other resources referenced and interconnected in the blockchain. Leveraging IBC (Inter-Blockchain Communication), Axone aims to become the governance hub for all off-chain resources shared through all IBC-connected chains.
+By establishing a universal environment for resource sharing and orchestration, Axone aims to transform the AI landscape from isolated competition to collaborative intelligence, unlocking new possibilities for distributed innovation while ensuring transparency, trust, and fair value distribution across the ecosystem.
