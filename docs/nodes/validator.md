@@ -87,7 +87,7 @@ To establish a validator with an initial self-delegation, prepare a `validator.j
    }
    ```
 
-   Max-change-rate, set the initial self-delegation (`amount`), and must replace the key field with your own validator `key` from earlier.
+   Max-change-rate, set the initial self-delegation `amount`, and must replace the key field with your own validator `key` from earlier.
 
   :::warning
   When setting commission parameters, the `commission-max-change-rate` is measured **in percentage points** of the `commission-rate`.  
