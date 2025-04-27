@@ -96,22 +96,22 @@ To establish a validator with an initial self-delegation, prepare a `validator.j
   :::
 
 
-4. Finally, you're ready to submit the transaction to create the validator:
+4. You're now ready to submit the transaction and create your validator
    ```bash
-   wardend tx staking create-validator validator.json \
+   axoned tx staking create-validator validator.json \
      --from=WALLET_NAME \
-     --chain-id=chiado_10010-1 \
-     --fees=250000000000000award \
+     --chain-id=axone-dentrite-1 \
+     --fees=900000uaxone \
      --gas auto \
      --gas-adjustment 1.6
    ```
    :::tip
-   This transaction is just an example. If you want to see an explanation of the parameters values or see all the available flags that can be set to customize your validators you can enter this command: `wardend tx staking create-validator --help`
+   This is just a sample transaction. To explore all available parameters and customization flags for your validator, run: `axoned tx staking create-validator --help`
    :::
 
-## 3. Back up critical files
+## 3. Make sure to create backups of all important files before proceeding
 
-There are certain files you need to back up to be able to restore your validator if, for some reason, it’s damaged or lost. Please make a secure, encrypted backup of the following files:
+To ensure validator recovery in case of failure or data loss, you must create encrypted backups of these critical files:
 
 - `priv_validator_key.json`
 - `node_key.json`
@@ -121,7 +121,7 @@ There are certain files you need to back up to be able to restore your validator
 Check if your validator is in the active set by running this command:
 
 ```bash
-axoned query comet-validator-set | grep "$(axonedd comet show-address)"
+axoned query comet-validator-set | grep "$(axoned comet show-address)"
 ```
 
-If the output is empty, your validator isn't in the active set.
+An empty output indicates your validator is not currently in the active set.
