@@ -12,7 +12,7 @@ We've sunsetted [Buenavista](buenavista-testnet/join-buenavista). Please join ou
 
 ## Prerequisites
 
-The following instructions assume you have already set up a full node and are synchronized to the latest block height. If you haven’t done so, please follow the [Join Chiado](chiado-testnet/join-chiado) instructions.
+The following instructions assume you have already set up a full node and are synchronized to the latest block height. If you haven’t done so, please follow the [Node Installation Guide](chiado-testnet/join-chiado) instructions.
 
 ## 1. Create/restore a key pair
 
