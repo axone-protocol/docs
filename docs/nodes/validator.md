@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Node Installation Guide
+# Create a validator
 
 ## Install Go and Cosmovisor
 
