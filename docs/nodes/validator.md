@@ -118,15 +118,7 @@ There are certain files you need to back up to be able to restore your validator
 Check if your validator is in the active set by running this command:
 
 ```bash
-wardend query comet-validator-set | grep "$(wardend comet show-address)"
+axoned query comet-validator-set | grep "$(axonedd comet show-address)"
 ```
 
 If the output is empty, your validator isn't in the active set.
-
-## Next steps
-
-You're now all set to start validating! You can take these next steps:
-
-- To learn how to operate an oracle service, see [Operate Skip:Connect](operate-skip-connect).
-- To learn more about `wardend` commands for interacting with the node, see [Node commands](node-commands).
-- Don't forget to join our community in [Discord](https://discord.com/invite/wardenprotocol).
