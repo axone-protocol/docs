@@ -41,7 +41,7 @@ The validator registration process involves sending a create-validator transacti
 You can get testnet $AXONE tokens from faucet:
 
 - [Axone testnet faucet](https://faucet.axone.xyz)
-- 
+  
 To verify your balance, use this command:
 
 ```bash
