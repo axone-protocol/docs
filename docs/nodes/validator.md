@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Create a validator
 
+This guide walks you through the basic steps to set up a validator on the Axone testnet. It focuses on the setup process and does not discuss validator architecture or security measures.
+
 ## Install Go and Cosmovisor
 
 :::tip
