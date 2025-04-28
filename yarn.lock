@@ -2316,51 +2316,49 @@
     "@emnapi/runtime" "^1.1.0"
     "@tybys/wasm-util" "^0.9.0"
 
-"@nivo/annotations@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/annotations/-/annotations-0.88.0.tgz#96830d735331dea2b60e66ce3971ef43b45cca8c"
-  integrity sha512-NXE+1oIUn+EGWMQpnpeRMLgi2wyuzhGDoJQY4OUHissCUiNotid2oNQ/PXJwN0toiu+/j9SyhzI32xr70OPi7Q==
+"@nivo/annotations@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/annotations/-/annotations-0.91.0.tgz#6f153448e66ab112f883077434edf78a4bea8214"
+  integrity sha512-6xLcfmAq9LLXSN4En73nXtXg6QI89DUxJ60M6Fi3M8js02OatTdRD93xUvvQbaUb8jfVAn+dGkCrXp4Oyi6i7Q==
   dependencies:
-    "@nivo/colors" "0.88.0"
-    "@nivo/core" "0.88.0"
+    "@nivo/colors" "0.91.0"
+    "@nivo/core" "0.91.0"
     "@react-spring/web" "9.4.5 || ^9.7.2"
     lodash "^4.17.21"
 
-"@nivo/axes@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/axes/-/axes-0.88.0.tgz#b773efb217fc0faedbb5f8bc458f4b78820e2761"
-  integrity sha512-jF7aIxzTNayV5cI1J/b9Q1FfpMBxTXGk3OwSigXMSfYWlliskDn2u0qGRLiYhuXFdQAWIp4oXsO1GcAQ0eRVdg==
+"@nivo/axes@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/axes/-/axes-0.91.0.tgz#9be67474c60a748b7d51043a6bf2ac136a409793"
+  integrity sha512-gJY5WjCqJ3LfpJnh6jXIccmdy6t1GBM3UxPfvohD2O0bTTSydOoAU1mqasdxv7YI5E3YujHBKn0eVtwuBQhDgQ==
   dependencies:
-    "@nivo/core" "0.88.0"
-    "@nivo/scales" "0.88.0"
+    "@nivo/core" "0.91.0"
+    "@nivo/scales" "0.91.0"
     "@react-spring/web" "9.4.5 || ^9.7.2"
     "@types/d3-format" "^1.4.1"
     "@types/d3-time-format" "^2.3.1"
     d3-format "^1.4.4"
     d3-time-format "^3.0.0"
 
-"@nivo/colors@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/colors/-/colors-0.88.0.tgz#2790ac0607381800270f2902e4d957e65e2cad70"
-  integrity sha512-IZ+leYIqAlo7dyLHmsQwujanfRgXyoQ5H7PU3RWLEn1PP0zxDKLgEjFEDADpDauuslh2Tx0L81GNkWR6QSP0Mw==
+"@nivo/colors@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/colors/-/colors-0.91.0.tgz#fbfa51fcdf325e1fca821bcc771ffba94fb3b9b3"
+  integrity sha512-MW1PZ9+1fhGBZTmrQfxZs1Trbav0ewGX9qpGcE8q9ySEZmAiCIIqr6zZvZSdMDTScpslCRcdR7ustUnc0qHUbA==
   dependencies:
-    "@nivo/core" "0.88.0"
+    "@nivo/core" "0.91.0"
     "@types/d3-color" "^3.0.0"
     "@types/d3-scale" "^4.0.8"
     "@types/d3-scale-chromatic" "^3.0.0"
-    "@types/prop-types" "^15.7.2"
     d3-color "^3.1.0"
     d3-scale "^4.0.2"
     d3-scale-chromatic "^3.0.0"
     lodash "^4.17.21"
-    prop-types "^15.7.2"
 
-"@nivo/core@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/core/-/core-0.88.0.tgz#ec79c7d63311473f15a463fd78274d9971a52848"
-  integrity sha512-XjUkA5MmwjLP38bdrJwn36Gj7T5SYMKD55LYQp/1nIJPdxqJ38dUfE4XyBDfIEgfP6yrHOihw3C63cUdnUBoiw==
+"@nivo/core@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/core/-/core-0.91.0.tgz#3e5fdfef0c483314a001affc2af57ea354eaa984"
+  integrity sha512-ZtyNTGGCb7J6JvAvVwCZ1qpWBAwilmlY6RGZtmVseOMooM/hu4qCtWRbpfRRecM6l3hqtPuswJuDnjH+SgYVrA==
   dependencies:
-    "@nivo/tooltip" "0.88.0"
+    "@nivo/tooltip" "0.91.0"
     "@react-spring/web" "9.4.5 || ^9.7.2"
     "@types/d3-shape" "^3.1.6"
     d3-color "^3.1.0"
@@ -2371,62 +2369,64 @@
     d3-shape "^3.2.0"
     d3-time-format "^3.0.0"
     lodash "^4.17.21"
-    prop-types "^15.7.2"
 
-"@nivo/legends@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/legends/-/legends-0.88.0.tgz#a6007492048358a14bd061472a117ed34e7b0c81"
-  integrity sha512-d4DF9pHbD8LmGJlp/Gp1cF4e8y2wfQTcw3jVhbZj9zkb7ZWB7JfeF60VHRfbXNux9bjQ9U78/SssQqueVDPEmg==
+"@nivo/legends@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/legends/-/legends-0.91.0.tgz#694bda3170fe6d4d6d15f60e87df5d50951037bc"
+  integrity sha512-lYFEHJBkKMnLvkCvu0xZdT1bpvKxNzf6sAPgGdnm+dBxTs+MorduXUZoreJcDCzAB0B2bgpx6boBIo+pt8V7aw==
   dependencies:
-    "@nivo/colors" "0.88.0"
-    "@nivo/core" "0.88.0"
+    "@nivo/colors" "0.91.0"
+    "@nivo/core" "0.91.0"
     "@types/d3-scale" "^4.0.8"
     d3-scale "^4.0.2"
 
-"@nivo/line@^0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/line/-/line-0.88.0.tgz#145b194f2c1bff2dd6071ab46fe114f9c4237811"
-  integrity sha512-hFTyZ3BdAZvq2HwdwMj2SJGUeodjEW+7DLtFMIIoVIxmjZlAs3z533HcJ9cJd3it928fDm8SF/rgHs0TztYf9Q==
+"@nivo/line@^0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/line/-/line-0.91.0.tgz#1da591d89fcd9a86b4eb82788705ebd4502c9015"
+  integrity sha512-MOP9hZUl5sCMJG2XGKGMjwOjknATBm70TPeq30curScsUKGhof865W+AoA97FSkbXdQKpn9MLVnGaIoRRwE3Pw==
   dependencies:
-    "@nivo/annotations" "0.88.0"
-    "@nivo/axes" "0.88.0"
-    "@nivo/colors" "0.88.0"
-    "@nivo/core" "0.88.0"
-    "@nivo/legends" "0.88.0"
-    "@nivo/scales" "0.88.0"
-    "@nivo/tooltip" "0.88.0"
-    "@nivo/voronoi" "0.88.0"
+    "@nivo/annotations" "0.91.0"
+    "@nivo/axes" "0.91.0"
+    "@nivo/colors" "0.91.0"
+    "@nivo/core" "0.91.0"
+    "@nivo/legends" "0.91.0"
+    "@nivo/scales" "0.91.0"
+    "@nivo/tooltip" "0.91.0"
+    "@nivo/voronoi" "0.91.0"
     "@react-spring/web" "9.4.5 || ^9.7.2"
+    "@types/d3-shape" "^3.1.6"
     d3-shape "^3.2.0"
 
-"@nivo/scales@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/scales/-/scales-0.88.0.tgz#c69110b5ab504debb80a5a01a7824780af241ffb"
-  integrity sha512-HbpxkQp6tHCltZ1yDGeqdLcaJl5ze54NPjurfGtx/Uq+H5IQoBd4Tln49bUar5CsFAMsXw8yF1HQvASr7I1SIA==
+"@nivo/scales@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/scales/-/scales-0.91.0.tgz#fa4efa7f6fd272f6ca3659b3f1718fc648687d0d"
+  integrity sha512-Sk8fwduAbmiv7zEUaNglp5INOJmD4blrZlC341CGlOcVEvGXrjKa62PWLI23ZrQv0jJ7HorHgqn2SIfXHFt9zA==
   dependencies:
+    "@types/d3-interpolate" "^3.0.4"
     "@types/d3-scale" "^4.0.8"
     "@types/d3-time" "^1.1.1"
     "@types/d3-time-format" "^3.0.0"
+    d3-interpolate "^3.0.1"
     d3-scale "^4.0.2"
     d3-time "^1.0.11"
     d3-time-format "^3.0.0"
     lodash "^4.17.21"
 
-"@nivo/tooltip@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/tooltip/-/tooltip-0.88.0.tgz#b98348c0d617fea09c1bbddccc443c12ca697620"
-  integrity sha512-iEjVfQA8gumAzg/yUinjTwswygCkE5Iwuo8opwnrbpNIqMrleBV+EAKIgB0PrzepIoW8CFG/SJhoiRfbU8jhOw==
+"@nivo/tooltip@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/tooltip/-/tooltip-0.91.0.tgz#f5a5ad1f5f9719645403e4bd5a434573a635dc64"
+  integrity sha512-M5FcccIE92l02/62mFbaNwoNwuf/4pQLkRk4Ckk4vxu8Mmd0GJztC/bdW+2bFufc0RN18RcEKouyX2LlhLjPOA==
   dependencies:
-    "@nivo/core" "0.88.0"
+    "@nivo/core" "0.91.0"
     "@react-spring/web" "9.4.5 || ^9.7.2"
 
-"@nivo/voronoi@0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@nivo/voronoi/-/voronoi-0.88.0.tgz#029f984ccb6e72b415f398e1bd74c572960197ae"
-  integrity sha512-MyiNLvODthFoMjQ7Wjp693nogbTmVEx8Yn/7QkJhyPQbFyyA37TF/D1a/ox4h2OslXtP6K9QFN+42gB/zu7ixw==
+"@nivo/voronoi@0.91.0":
+  version "0.91.0"
+  resolved "https://registry.yarnpkg.com/@nivo/voronoi/-/voronoi-0.91.0.tgz#2945e28c730b05fffaf70dea820081ae9c57aaaa"
+  integrity sha512-HeztkL+wpVqelhu0TRFp/OvXrnPyvDTwBLxBlZzZRzO4ZyG08q46qW4w67IY/S/WCSNIHz1Kh2DcOtbJK6Iriw==
   dependencies:
-    "@nivo/core" "0.88.0"
-    "@nivo/tooltip" "0.88.0"
+    "@nivo/core" "0.91.0"
+    "@nivo/tooltip" "0.91.0"
     "@types/d3-delaunay" "^6.0.4"
     "@types/d3-scale" "^4.0.8"
     d3-delaunay "^6.0.4"
@@ -3229,7 +3229,7 @@
   resolved "https://registry.yarnpkg.com/@types/d3-hierarchy/-/d3-hierarchy-3.1.7.tgz#6023fb3b2d463229f2d680f9ac4b47466f71f17b"
   integrity sha512-tJFtNoYBtRtkNysX1Xq4sxtjK8YgoWUNpIiUee0/jHGRwqvzYxkq0hGVbbOGSz+JgFxxRu4K8nb3YpG3CMARtg==
 
-"@types/d3-interpolate@*":
+"@types/d3-interpolate@*", "@types/d3-interpolate@^3.0.4":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz#412b90e84870285f2ff8a846c6eb60344f12a41c"
   integrity sha512-mgLPETlrpVV1YRJIglr4Ez47g7Yxjl1lj7YKsiMCb27VJH9W8NVM6Bb9d8kkpG/uAQS5AmbA48q2IAolKKo1MA==
@@ -3577,7 +3577,7 @@
   resolved "https://registry.yarnpkg.com/@types/prismjs/-/prismjs-1.26.4.tgz#1a9e1074619ce1d7322669e5b46fbe823925103a"
   integrity sha512-rlAnzkW2sZOjbqZ743IHUhFcvzaGbqijwOu8QZnZCjfQzBqFE3s4lOTJEsxikImav9uzz/42I+O7YUs1mWgMlg==
 
-"@types/prop-types@*", "@types/prop-types@^15.7.2":
+"@types/prop-types@*":
   version "15.7.13"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.13.tgz#2af91918ee12d9d32914feb13f5326658461b451"
   integrity sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==
