@@ -109,14 +109,14 @@ To establish a validator with an initial self-delegation, prepare a `validator.j
    This is just a sample transaction. To explore all available parameters and customization flags for your validator, run: `axoned tx staking create-validator --help`
    :::
 
-## 3. Make sure to create backups of all important files before proceeding
+## 4. Make sure to create backups of all important files before proceeding
 
 To ensure validator recovery in case of failure or data loss, you must create encrypted backups of these critical files:
 
 - `priv_validator_key.json`
 - `node_key.json`
 
-## 4. Check your validator
+## 5. Check your validator
 
 Check if your validator is in the active set by running this command:
 
