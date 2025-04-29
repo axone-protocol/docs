@@ -121,7 +121,7 @@ To ensure validator recovery in case of failure or data loss, you must create en
 Check if your validator is in the active set by running this command:
 
 ```bash
-axoned query comet-validator-set | grep "$(axoned comet show-address)"
+axoned query consensus comet validator-set | grep "$(axoned comet show-address)"
 ```
 
 An empty output indicates your validator is not currently in the active set.
