@@ -63,7 +63,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/types": "^3.5.2",
-    "@nivo/line": "^0.93.0",
+    "@nivo/line": "^0.94.0",
     "docusaurus-plugin-drawio": "^0.4.0",
     "graphviz-react": "^1.2.5",
     "markdownlint-cli": "^0.44.0",
