@@ -76,11 +76,20 @@ const config = {
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en']
   },
   themes: ['@docusaurus/theme-mermaid'],
   future: {
-    experimental_faster: true
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true
+    }
   },
   presets: [
     [
