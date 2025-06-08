@@ -89,6 +89,10 @@ const config = {
       rspackPersistentCache: true,
       ssgWorkerThreads: true,
       mdxCrossCompilerCache: true
+    },
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+      useCssCascadeLayers: true
     }
   },
   presets: [
