@@ -33,7 +33,7 @@ jobs:
           fix: true
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_user_name: ${{ vars.BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ vars.BOT_GIT_COMMITTER_EMAIL }}
