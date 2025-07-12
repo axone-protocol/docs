@@ -34,7 +34,7 @@ jobs:
           rm -f "$tmpFile"
 
       - name: Commit axoned version change
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_user_name: ${{ vars.BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ vars.BOT_GIT_COMMITTER_EMAIL }}
