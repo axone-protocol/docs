@@ -5,20 +5,20 @@ updates:
     schedule:
       interval: weekly
     reviewers:
-      - amimart
       - ccamel
     assignees:
-      - amimart
       - ccamel
     open-pull-requests-limit: 5
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly
+    groups:
+      docusaurus:
+        patterns:
+          - '@docusaurus/*'
     reviewers:
-      - amimart
       - ccamel
     assignees:
-      - amimart
       - ccamel
     open-pull-requests-limit: 5
