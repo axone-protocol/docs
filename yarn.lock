@@ -1916,7 +1916,7 @@
     webpack "^5.95.0"
     webpackbar "^6.0.1"
 
-"@docusaurus/core@3.8.0", "@docusaurus/core@^3.8.0":
+"@docusaurus/core@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.8.0.tgz#79d5e1084415c8834a8a5cb87162ca13f52fe147"
   integrity sha512-c7u6zFELmSGPEP9WSubhVDjgnpiHgDqMh1qVdCB7rTflh4Jx0msTYmMiO91Ez0KtHj4sIsDsASnjwfJ2IZp3Vw==
@@ -1964,7 +1964,7 @@
     webpack-dev-server "^4.15.2"
     webpack-merge "^6.0.1"
 
-"@docusaurus/core@3.8.1":
+"@docusaurus/core@3.8.1", "@docusaurus/core@^3.8.1":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.8.1.tgz#c22e47c16a22cb7d245306c64bc54083838ff3db"
   integrity sha512-ENB01IyQSqI2FLtOzqSI3qxG2B/jP4gQPahl2C3XReiLebcVh5B5cB9KYFvdoOqOWPyr5gXK4sjgTKv7peXCrA==
@@ -2476,7 +2476,7 @@
     "@docusaurus/types" "3.8.1"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@3.8.0", "@docusaurus/utils-validation@^2 || ^3":
+"@docusaurus/utils-validation@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.8.0.tgz#aa02e9d998e20998fbcaacd94873878bc3b9a4cd"
   integrity sha512-MrnEbkigr54HkdFeg8e4FKc4EF+E9dlVwsY3XQZsNkbv3MKZnbHQ5LsNJDIKDROFe8PBf5C4qCAg5TPBpsjrjg==
@@ -2490,7 +2490,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@3.8.1":
+"@docusaurus/utils-validation@3.8.1", "@docusaurus/utils-validation@^2 || ^3":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.8.1.tgz#0499c0d151a4098a0963237057993282cfbd538e"
   integrity sha512-gs5bXIccxzEbyVecvxg6upTwaUbfa0KMmTj7HhHzc016AGyxH2o73k1/aOD0IFrdCsfJNt37MqNI47s2MgRZMA==
@@ -2504,7 +2504,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils@3.8.0", "@docusaurus/utils@^2 || ^3":
+"@docusaurus/utils@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.8.0.tgz#92bad89d2a11f5f246196af153093b12cd79f9ac"
   integrity sha512-2wvtG28ALCN/A1WCSLxPASFBFzXCnP0YKCAFIPcvEb6imNu1wg7ni/Svcp71b3Z2FaOFFIv4Hq+j4gD7gA0yfQ==
@@ -2531,7 +2531,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/utils@3.8.1":
+"@docusaurus/utils@3.8.1", "@docusaurus/utils@^2 || ^3":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.8.1.tgz#2ac1e734106e2f73dbd0f6a8824d525f9064e9f0"
   integrity sha512-P1ml0nvOmEFdmu0smSXOqTS1sxU5tqvnc0dA4MTKV39kye+bhQnjkIKEE18fNOvxjyB86k8esoCIFM3x4RykOQ==
