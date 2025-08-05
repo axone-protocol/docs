@@ -2414,18 +2414,10 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-translations@3.8.0":
+"@docusaurus/theme-translations@3.8.0", "@docusaurus/theme-translations@^2 || ^3":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.8.0.tgz#deb64dccab74361624c3cb352a4949a7ac868c74"
   integrity sha512-1DTy/snHicgkCkryWq54fZvsAglTdjTx4qjOXgqnXJ+DIty1B+aPQrAVUu8LiM+6BiILfmNxYsxhKTj+BS3PZg==
-  dependencies:
-    fs-extra "^11.1.1"
-    tslib "^2.6.0"
-
-"@docusaurus/theme-translations@^2 || ^3":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.7.0.tgz#0891aedc7c7040afcb3a1b34051d3a69096d0d25"
-  integrity sha512-Ewq3bEraWDmienM6eaNK7fx+/lHMtGDHQyd1O+4+3EsDxxUmrzPkV7Ct3nBWTuE0MsoZr3yNwQVKjllzCMuU3g==
   dependencies:
     fs-extra "^11.1.1"
     tslib "^2.6.0"
@@ -2476,7 +2468,7 @@
     "@docusaurus/types" "3.8.1"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@3.8.0", "@docusaurus/utils-validation@^2 || ^3":
+"@docusaurus/utils-validation@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.8.0.tgz#aa02e9d998e20998fbcaacd94873878bc3b9a4cd"
   integrity sha512-MrnEbkigr54HkdFeg8e4FKc4EF+E9dlVwsY3XQZsNkbv3MKZnbHQ5LsNJDIKDROFe8PBf5C4qCAg5TPBpsjrjg==
@@ -2490,7 +2482,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@3.8.1":
+"@docusaurus/utils-validation@3.8.1", "@docusaurus/utils-validation@^2 || ^3":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-3.8.1.tgz#0499c0d151a4098a0963237057993282cfbd538e"
   integrity sha512-gs5bXIccxzEbyVecvxg6upTwaUbfa0KMmTj7HhHzc016AGyxH2o73k1/aOD0IFrdCsfJNt37MqNI47s2MgRZMA==
@@ -2504,7 +2496,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils@3.8.0", "@docusaurus/utils@^2 || ^3":
+"@docusaurus/utils@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.8.0.tgz#92bad89d2a11f5f246196af153093b12cd79f9ac"
   integrity sha512-2wvtG28ALCN/A1WCSLxPASFBFzXCnP0YKCAFIPcvEb6imNu1wg7ni/Svcp71b3Z2FaOFFIv4Hq+j4gD7gA0yfQ==
@@ -2531,7 +2523,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/utils@3.8.1":
+"@docusaurus/utils@3.8.1", "@docusaurus/utils@^2 || ^3":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.8.1.tgz#2ac1e734106e2f73dbd0f6a8824d525f9064e9f0"
   integrity sha512-P1ml0nvOmEFdmu0smSXOqTS1sxU5tqvnc0dA4MTKV39kye+bhQnjkIKEE18fNOvxjyB86k8esoCIFM3x4RykOQ==
@@ -2566,10 +2558,10 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@^0.49.2":
-  version "0.49.2"
-  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.49.2.tgz#20c2b0ab3f58222b7e88335121b467c0e85259a2"
-  integrity sha512-ytXxbtpJ2gVECWrsdc6Wx7bPanueLQ95lLdR9n/tHKEPBm5d1v/vAsx487iUGVXYwzeEO8W/BQJ66Fcdvpq6xg==
+"@easyops-cn/docusaurus-search-local@^0.52.1":
+  version "0.52.1"
+  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.52.1.tgz#b2ba5007472ec9d30572228fc1368f03a4404dbb"
+  integrity sha512-pwfANjTLOQyAPc2Iz93WbG4OQM5C4COCWARbLAs79FIpIS38gHq3PrbDIX8f7oDhGQp1u6f8fr3K3u3+yZXZTA==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2 || ^3"
     "@docusaurus/theme-translations" "^2 || ^3"
@@ -5937,14 +5929,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.0, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1, debug@^4.3.4:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
-  integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
-  dependencies:
-    ms "^2.1.3"
-
-debug@^4.4.0:
+debug@4, debug@^4.0.0, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1, debug@^4.3.4, debug@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.1.tgz#e5a8bc6cbc4c6cd3e64308b0693a3d4fa550189b"
   integrity sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==
