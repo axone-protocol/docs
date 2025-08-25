@@ -30,7 +30,7 @@ jobs:
               - "docs/tutorials/cli-1.mdx"
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
         uses: actions/setup-python@v5
