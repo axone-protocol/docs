@@ -5,3 +5,5 @@ no-emphasis-as-header: false
 no-duplicate-header: false
 ol-prefix: false
 no-emphasis-as-heading: false
+MD024:
+  siblings_only: true
