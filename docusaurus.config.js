@@ -71,6 +71,30 @@ const config = {
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+      }
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'true'
+      }
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap'
+      }
+    }
+  ],
   markdown: {
     mermaid: true
   },
@@ -198,7 +222,7 @@ const config = {
         ]
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         logo: {
           alt: 'Axone Logo',
           src: 'img/logo-axone-dark.webp',
@@ -278,12 +302,12 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Axone`
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.vsDark,
+        darkTheme: prismThemes.vsDark,
         additionalLanguages: ['prolog', 'turtle', 'bash', 'json', 'sparql']
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         disableSwitch: true,
         respectPrefersColorScheme: false
       },
