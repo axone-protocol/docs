@@ -27,12 +27,12 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
 
   return (
     <figure>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div className="plot" style={{ height: '380px', width: '570px', maxWidth: '100%' }}>
           <ResponsiveLine
             data={data}
             margin={{ top: 20, right: 20, bottom: 50, left: 80 }}
-            lineWidth={3}
+            lineWidth={2}
             curve="linear"
             xScale={{
               type: 'linear',
@@ -73,10 +73,10 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
                 lineStyle: {
                   stroke: '#b0413e',
                   strokeDasharray: '4 4',
-                  strokeWidth: 1
+                  strokeWidth: 15
                 },
                 textStyle: {
-                  fill: '#b0413e' // TODO: use theme color
+                  fill: '#e0e0e0'
                 },
                 value: c
               }
@@ -89,17 +89,38 @@ export const LinePlot = ({ caption, xLegend, yLegend, xFormat, yFormat, data }) 
             pointLabelYOffset={-12}
             useMesh={true}
             theme={{
-              textColor: prismTheme.plain.color,
+              text: {
+                fontSize: '0.775rem'
+              },
+              axis: {
+                ticks: {
+                  text: {
+                    fill: '#e0e0e0'
+                  }
+                },
+                legend: {
+                  text: {
+                    fill: '#e0e0e0'
+                  }
+                }
+              },
+              crosshair: {
+                line: {
+                  stroke: '#e0e0e0',
+                  strokeWidth: 1
+                }
+              },
               tooltip: {
                 container: {
-                  background: prismTheme.plain.backgroundColor
+                  background: 'rgb(50, 50, 50)',
+                  fontSize: '0.775rem'
                 }
               }
             }}
           />
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <figcaption>
           <span className="math math-inline">{caption}</span>
         </figcaption>
