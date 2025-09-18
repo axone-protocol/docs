@@ -166,7 +166,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Axone Logo',
-          src: 'img/logo-axone-dark.webp',
+          src: 'img/logo-axone-light.webp',
           srcDark: 'img/logo-axone-light.webp'
         },
         items: [
@@ -225,7 +225,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'Axone Logo',
-          src: 'img/logo-axone-dark.webp',
+          src: 'img/logo-axone-light.webp',
           href: 'https://axone.xyz',
           width: 160
         },
