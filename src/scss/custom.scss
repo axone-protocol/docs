@@ -3,6 +3,7 @@
 @use "animation";
 @use "card";
 
+// Keep existing custom fonts as fallbacks
 @font-face {
   font-family: "Helvetica bold";
   src: url("/static/fonts/Helvetica/HelveticaNeueBold.otf");
@@ -18,75 +19,189 @@
   src: url("/static/fonts/VanguardCF/VanguardCF-Bold.otf");
 }
 
+// Dark-only theme with axone.xyz color palette
 :root {
-  --ifm-color-primary: #ff773d;
-  --ifm-hover-overlay: rgb(255 149 0 / 12%);
+  // Axone.xyz reference colors
+  --axone-background: #191716;
+  --axone-text-primary: #d9d9d9;
+  --axone-text-muted: #959595;
+  --axone-primary-accent: #ff773d;
+  --axone-brand-blue: #044da2;
+  --axone-success: #13ce66;
+  --axone-accent-alt: #00ff95;
+  --axone-danger-bg: #661d1d;
+
+  // Typography - Inter for body, Montserrat for headings
+  --ifm-font-family-base: "Inter", "Helvetica regular", helvetica, arial, sans-serif;
+  --ifm-heading-font-family: "Montserrat", "Helvetica bold", helvetica, arial, sans-serif;
+  --ifm-h1-font-family: "Montserrat", "Vanguard CF", helvetica, arial, sans-serif;
+
+  // Core colors
+  --ifm-color-primary: var(--axone-primary-accent);
+  --ifm-color-primary-dark: #e56834;
+  --ifm-color-primary-darker: #d85f2f;
+  --ifm-color-primary-darkest: #b34e26;
+  --ifm-color-primary-light: #ff8b5a;
+  --ifm-color-primary-lighter: #ff9467;
+  --ifm-color-primary-lightest: #ffb08a;
+
+  // Background and layout
+  --ifm-background-color: var(--axone-background);
+  --ifm-background-surface-color: #212020;
+  --ifm-background-color-main: var(--axone-background);
+  --ifm-footer-background-color-main: #141313;
+  --ifm-navbar-background-color: var(--axone-background);
+
+  // Text colors
+  --ifm-font-color-base: var(--axone-text-primary);
+  --ifm-font-color-secondary: var(--axone-text-muted);
+  --ifm-heading-color: var(--axone-text-primary);
+  --ifm-menu-color: var(--axone-text-primary);
+
+  // Interactive elements
+  --ifm-hover-overlay: rgb(255 119 61 / 12%);
+  --ifm-article-anchor-color: var(--axone-primary-accent);
+  --ifm-link-color: var(--axone-primary-accent);
+  --ifm-link-hover-color: var(--axone-accent-alt);
+
+  // Code and syntax highlighting
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Helvetica regular", sans-serif;
-  --ifm-heading-font-family: "Helvetica bold", sans-serif;
-  --ifm-h1-font-family: "Vanguard CF", sans-serif;
-  --ifm-font-color-base: #0d0d0d;
-  --ifm-menu-color: #0d0d0d;
-  --ifm-heading-color: #0d0d0d;
-  --ifm-card-font-color: #0d0d0d;
-  --ifm-background-color-main: transparent linear-gradient(180deg, #faf8f46c 0%, white 0%) 0% 0%
-    no-repeat padding-box;
-  --ifm-footer-background-color-main: white;
-  --ifm-navbar-background-color: #f2f6f9;
-  --ifm-navbar-item-color: linear-gradient(39.81deg, #006796 21.82%, #00b6b7 98.43%);
-  --ifm-article-anchor-color: #ff773d;
-  --ifm-graph-svg-background-color: #ecf0f1;
-  --ifm-knowledge-graph-data-fill-color: #ff773d;
-  --ifm-knowledge-graph-service-fill-color: #bf0000;
-  --ifm-knowledge-graph-base-stroke-color: #433d32;
-  --ifm-knowledge-graph-edge-stroke-color: #b5b5b5;
+  --ifm-code-background: #282828;
+  --ifm-code-color: var(--axone-text-primary);
+  --ifm-pre-background: #1e1e1e;
+  --ifm-pre-color: var(--axone-text-primary);
+
+  // Borders and separators
+  --ifm-color-emphasis-100: #2a2a2a;
+  --ifm-color-emphasis-200: #333333;
+  --ifm-color-emphasis-300: #404040;
+  --ifm-color-emphasis-400: #565656;
+  --ifm-color-emphasis-500: #6d6d6d;
+  --ifm-color-emphasis-600: #8a8a8a;
+  --ifm-color-emphasis-700: #a8a8a8;
+  --ifm-color-emphasis-800: #c7c7c7;
+  --ifm-color-emphasis-900: var(--axone-text-primary);
+
+  // Table of contents
+  --ifm-toc-border-color: var(--ifm-color-emphasis-300);
+
+  // Search
+  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 60%);
+  --search-local-highlight-color: var(--axone-primary-accent);
+
+  // Knowledge graph colors
+  --ifm-knowledge-graph-data-fill-color: var(--axone-primary-accent);
+  --ifm-knowledge-graph-service-fill-color: var(--axone-brand-blue);
+  --ifm-knowledge-graph-base-stroke-color: var(--axone-text-muted);
+  --ifm-knowledge-graph-edge-stroke-color: var(--axone-text-muted);
   --ifm-knowledge-graph-base-stroke-width: 3px;
-  --ifm-navbar-search-input-background-color: rgb(0 0 0 / 4%);
+  --ifm-graph-svg-background-color: var(--axone-background);
+
+  // Success and danger colors
+  --ifm-color-success: var(--axone-success);
+  --ifm-color-success-dark: #11b85a;
+  --ifm-color-success-darker: #10ad55;
+  --ifm-color-success-darkest: #0d8f46;
+  --ifm-color-danger: #ff6b6b;
+  --ifm-color-danger-dark: #ff5252;
+  --ifm-color-danger-darker: #ff4444;
+  --ifm-color-danger-darkest: #cc0000;
+
+  // Admonition colors for dark theme
+  --ifm-color-info: var(--axone-brand-blue);
+  --ifm-color-warning: #ffb74d;
+  --ifm-color-warning-dark: #ffa726;
+  --ifm-color-warning-darker: #ff9800;
+  --ifm-color-warning-darkest: #f57c00;
+
+  // Scrollbar (webkit)
+  --ifm-scrollbar-track-background-color: #2a2a2a;
+  --ifm-scrollbar-thumb-background-color: #555555;
+  --ifm-scrollbar-thumb-hover-background-color: #777777;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+// Override any remaining light theme styles
+html[data-theme="light"] {
+  // Force all light theme elements to use dark theme
+  --ifm-background-color: var(--axone-background);
+  --ifm-background-surface-color: #212020;
+  --ifm-font-color-base: var(--axone-text-primary);
+  --ifm-heading-color: var(--axone-text-primary);
+  --ifm-navbar-background-color: var(--axone-background);
+  --ifm-footer-background-color-main: #141313;
+  --ifm-menu-color: var(--axone-text-primary);
+}
+
+// Ensure dark theme is consistent
 [data-theme="dark"] {
-  --ifm-color-primary: #f79413;
-  --ifm-font-color-base: white;
-  --ifm-menu-color: #ced2d9;
-  --ifm-heading-color: white;
-  --ifm-background-color-main: transparent linear-gradient(180deg, #0c1529 0%, #0f224a 100%) 0% 0%
-    no-repeat padding-box;
-  --ifm-footer-background-color-main: transparent linear-gradient(180deg, #102040 0%, #061126 100%)
-    0% 0% no-repeat padding-box;
-  --ifm-navbar-background-color: #0f1e3d;
-  --search-local-highlight-color: #877b65;
-  --ifm-knowledge-graph-base-stroke-color: white;
-  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 4%);
+  // These should match :root but ensuring consistency
+  --ifm-color-primary: var(--axone-primary-accent);
+  --ifm-font-color-base: var(--axone-text-primary);
+  --ifm-menu-color: var(--axone-text-primary);
+  --ifm-heading-color: var(--axone-text-primary);
+  --ifm-background-color-main: var(--axone-background);
+  --ifm-footer-background-color-main: #141313;
+  --ifm-navbar-background-color: var(--axone-background);
+  --search-local-highlight-color: var(--axone-primary-accent);
+  --ifm-knowledge-graph-base-stroke-color: var(--axone-text-muted);
+  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 60%);
 }
 
+// Interactive elements styling
+.menu a:hover,
 [data-theme="dark"] .menu a:hover {
-  background-color: rgb(255 149 0 / 12%);
+  background-color: var(--ifm-hover-overlay);
 }
 
+// Code highlighting
+.docusaurus-highlight-code-line,
 [data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgb(0 0 0 / 30%);
+  background-color: rgb(255 119 61 / 20%);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
 }
 
+// Ensure drawio backgrounds are transparent
 .docusaurus-plugin-drawio {
   background-color: transparent;
   border: none;
 }
 
+// Graph container styling
 .graph-svg-container {
   margin-bottom: var(--ifm-leading);
 }
 
+// Utility classes
 .hide {
   display: none;
 }
 
+// Plot styling for charts
 .plot {
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: var(--ifm-pagination-nav-border-radius);
+  background-color: var(--ifm-background-surface-color);
 }
 
+// Figure styling
 figure {
   margin-left: 0;
   margin-right: 0;
+}
+
+// Ensure all text remains readable with proper contrast
+body {
+  background-color: var(--axone-background);
+  color: var(--axone-text-primary);
+}
+
+// Footer link styling for dark theme
+.footer .footer__link-item {
+  color: var(--axone-text-primary);
+
+  &:hover {
+    color: var(--axone-primary-accent);
+  }
 }

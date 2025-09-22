@@ -1,5 +1,5 @@
 .docs-card-container {
-  background: var(--primary-color);
+  background: var(--ifm-background-color);
   margin: 30px auto;
   padding: 0;
 }
@@ -388,14 +388,18 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-image: url("/img/grain.webp"),
-    linear-gradient(222.68deg, #f9f9f9 13.75%, #d3defa 76.51%);
-  background-clip: border-box;
-  border-radius: 20px;
-  color: var(--ifm-card-font-color);
+  background: var(--ifm-color-emphasis-800);
+  border-radius: 10px;
+  color: var(--ifm-color-emphasis-100);
+  font-weight: 700;
 
   h2 {
-    color: var(--ifm-card-font-color);
+    color: var(--ifm-color-emphasis-100);
+
+    &:hover {
+      color: var(--ifm-color-emphasis-400);
+    }
+
     font-size: 20px;
   }
 }
