@@ -65,7 +65,6 @@ const config = {
   url: 'https://docs.axone.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'Axone',
   projectName: 'docs',
@@ -96,7 +95,10 @@ const config = {
     }
   ],
   markdown: {
-    mermaid: true
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'throw'
+    }
   },
   i18n: {
     defaultLocale: 'en',
