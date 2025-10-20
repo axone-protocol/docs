@@ -29,7 +29,7 @@ jobs:
           git_commit_gpgsign: true
 
       - name: Setup node environment
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 20.18
           # don't use cache as it may interfere with other jobs
