@@ -207,6 +207,10 @@ jobs:
         run: |
           yarn
 
+      - name: Check SCSS formatting
+        run: |
+          npx prettier src/scss --check
+
       - name: Lint scss
         run: |
           yarn stylelint '**/*.scss'
