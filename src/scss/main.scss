@@ -52,7 +52,7 @@ html {
     display: flex;
     flex-direction: row-reverse;
 
-    @media (max-width: 996px) {
+    @media (width <= 996px) {
       position: absolute;
       right: 55px;
       top: 40px;
@@ -101,7 +101,7 @@ html {
   .navbar__items {
     font-size: 18px;
 
-    @media (max-width: 996px) {
+    @media (width <= 996px) {
       flex-direction: row-reverse;
 
       .navbar__brand {
@@ -163,12 +163,12 @@ html {
       flex: 0 0 100%;
       max-width: 100%;
 
-      @media (min-width: 320px) {
+      @media (width >= 320px) {
         flex: 0 0 50%;
         max-width: 50%;
       }
 
-      @media (min-width: 768px) {
+      @media (width >= 768px) {
         flex: 0 0 25%;
         max-width: 25%;
       }
@@ -272,7 +272,7 @@ svg {
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .breadcrumbs {
     display: none;
   }
