@@ -77,7 +77,7 @@ jobs:
           print(f"📦 bundle {output_filename} generated")
 
       - name: Upload Documentation Bundle as Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ matrix.bundles.name }}-bundle
           path: ${{ matrix.bundles.name }}-bundle.md
