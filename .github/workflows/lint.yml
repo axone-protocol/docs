@@ -134,7 +134,7 @@ jobs:
           gitHubAccessToken: ${{ secrets.OPS_TOKEN }}
 
       - name: Upload lighthouse reports
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: Lighthouse reports
           path: ${{ github.workspace }}/tmp/artifacts
