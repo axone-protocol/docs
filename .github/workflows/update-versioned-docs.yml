@@ -91,7 +91,7 @@ jobs:
           commit_message: "feat(${{ github.event.inputs.section }}): update ${{ github.event.inputs.repository }} ${{ github.event.inputs.section }} documentation"
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         if: ${{ github.event.inputs.draft == 'false' && steps.changed-files.outputs.any_changed }}
         with:
           token: ${{ secrets.OPS_TOKEN }}
