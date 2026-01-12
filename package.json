@@ -45,7 +45,7 @@
     "reading-time": "^2.0.0-1",
     "rehype-katex": "7",
     "remark-math": "6",
-    "sass": "^1.97.1",
+    "sass": "^1.97.2",
     "unist-builder": "^4.0.0",
     "unist-util-visit": "^5.0.0"
   },
