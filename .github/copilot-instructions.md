@@ -150,7 +150,7 @@ Modify or extend workflows **only when explicitly requested**.
 - **Workflow Modifications**: Only when explicitly requested by users
 - **Quality Gates**: All checks must pass before merge to main branch
 - **Auto-fixes**: Utilize available auto-fix commands when appropriate
-- **Node.js Version**: Locked to v20.18 across all workflows for consistency
+- **Node.js Version**: Locked to v20.20 across all workflows for consistency
 - **Cache Strategy**: Yarn cache enabled for faster CI runs
 - **Concurrency**: Group management to cancel in-progress runs on new commits  
 

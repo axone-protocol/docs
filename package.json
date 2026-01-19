@@ -11,7 +11,7 @@
     "web": "https://axone.xyz"
   },
   "engines": {
-    "node": "^20.18",
+    "node": "~20.20",
     "yarn": "~1.22.17"
   },
   "scripts": {
