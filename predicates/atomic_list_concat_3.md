@@ -58,7 +58,7 @@ atomic_list_concat([cosmos, hub, 4], '-', Atom).
 
 ```  yaml
 height: 42
-gas_used: 4147
+gas_used: 3920
 answer:
   has_more: false
   variables: ["Atom"]
@@ -91,7 +91,7 @@ atomic_list_concat([scheme, host, path], '://', URI).
 
 ```  yaml
 height: 42
-gas_used: 4179
+gas_used: 3952
 answer:
   has_more: false
   variables: ["URI"]
