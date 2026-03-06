@@ -1,5 +1,5 @@
 ---
-sidebar_position: 82
+sidebar_position: 83
 ---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
@@ -57,7 +57,7 @@ Result = ok.
 
 ```  yaml
 height: 42
-gas_used: 3788
+gas_used: 4068
 answer:
   has_more: false
   variables: ["Result"]
@@ -91,7 +91,7 @@ must_be(atom, X).
 
 ```  yaml
 height: 42
-gas_used: 3799
+gas_used: 4262
 answer:
   has_more: false
   variables: ["X"]

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 64
+sidebar_position: 65
 ---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
@@ -65,7 +65,7 @@ header_info(HeaderInfo).
 
 ```  yaml
 height: 42
-gas_used: 3793
+gas_used: 4091
 answer:
   has_more: false
   variables: ["HeaderInfo"]
@@ -109,7 +109,7 @@ height(Height).
 
 ```  yaml
 height: 100
-gas_used: 3796
+gas_used: 4173
 answer:
   has_more: false
   variables: ["Height"]
@@ -152,7 +152,7 @@ time(Time).
 
 ```  yaml
 height: 42
-gas_used: 3796
+gas_used: 4161
 answer:
   has_more: false
   variables: ["Time"]
@@ -198,7 +198,7 @@ evaluate.
 
 ```  yaml
 height: 42
-gas_used: 3793
+gas_used: 4195
 answer:
   has_more: false
   results:
