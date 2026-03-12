@@ -81,7 +81,7 @@ bank_spendable_balances('axone1ffd5wx65l407yvm478cxzlgygw07h79sw4jwpa', Balances
 
 ```  yaml
 height: 42
-gas_used: 9026
+gas_used: 9163
 answer:
   has_more: false
   variables: ["Balances"]
@@ -120,7 +120,7 @@ bank_spendable_balances('axone1wze8mn5nsgl9qrgazq6a92fvh7m5e6ps372aep', Balances
 
 ```  yaml
 height: 42
-gas_used: 8785
+gas_used: 8924
 answer:
   has_more: false
   variables: ["Balances"]
@@ -165,7 +165,7 @@ spendable_has_coin('axone1ffd5wx65l407yvm478cxzlgygw07h79sw4jwpa', uaxone, Amoun
 
 ```  yaml
 height: 42
-gas_used: 9259
+gas_used: 9396
 answer:
   has_more: false
   variables: ["Amount"]
@@ -198,7 +198,7 @@ bank_spendable_balances(Address, Balances).
 
 ```  yaml
 height: 42
-gas_used: 4478
+gas_used: 4476
 answer:
   has_more: false
   variables: ["Address", "Balances"]
@@ -229,7 +229,7 @@ bank_spendable_balances('invalid_address', Balances).
 
 ```  yaml
 height: 42
-gas_used: 9183
+gas_used: 9275
 answer:
   has_more: false
   variables: ["Balances"]
@@ -260,7 +260,7 @@ bank_spendable_balances(42, _).
 
 ```  yaml
 height: 42
-gas_used: 4825
+gas_used: 4823
 answer:
   has_more: false
   results:
