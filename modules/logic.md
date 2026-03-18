@@ -593,7 +593,7 @@ MsgStoreProgram defines a Msg for storing a Prolog program source as a user libr
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `publisher` | [string](#string) |  | publisher is the bech32 account address publishing the program artifact. After publication, this exact address is used as the <identity> path segment in the logic module virtual file system path /v1/var/lib/logic/users/<identity>/programs/<program_id>.pl. This is the path that Prolog code can load through consult/1. |
+| `publisher` | [string](#string) |  | publisher is the bech32 account address publishing the program artifact. After publication, this exact address is used as the `<identity>` path segment in the logic module virtual file system path `/v1/var/lib/logic/users/<identity>/programs/<program_id>.pl`. This is the path that Prolog code can load through `consult/1`. |
 | `source` | [string](#string) |  | source is the Prolog program source to parse and store. |
 
 <a name="logic.v1beta3.MsgStoreProgramResponse"></a>
@@ -604,7 +604,7 @@ MsgStoreProgramResponse defines the response for executing a MsgStoreProgram.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `program_id` | [string](#string) |  | program_id is the SHA-256 hash of the program source (lowercase hexadecimal). After publication, this exact identifier is used as the <program_id> path segment in the logic module virtual file system path /v1/var/lib/logic/users/<identity>/programs/<program_id>.pl. This is the path that Prolog code can load through consult/1. |
+| `program_id` | [string](#string) |  | program_id is the SHA-256 hash of the program source (lowercase hexadecimal). After publication, this exact identifier is used as the `<program_id>` path segment in the logic module virtual file system path `/v1/var/lib/logic/users/<identity>/programs/<program_id>.pl`. This is the path that Prolog code can load through `consult/1`. |
 
 <a name="logic.v1beta3.MsgUpdateParams"></a>
 
@@ -639,7 +639,7 @@ MsgService defines the transaction service for the logic module.
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
 | `UpdateParams` | [MsgUpdateParams](#logic.v1beta3.MsgUpdateParams) | [MsgUpdateParamsResponse](#logic.v1beta3.MsgUpdateParamsResponse) | UpdateParams defined a governance operation for updating the x/logic module parameters. The authority is hard-coded to the Cosmos SDK x/gov module account | |
-| `StoreProgram` | [MsgStoreProgram](#logic.v1beta3.MsgStoreProgram) | [MsgStoreProgramResponse](#logic.v1beta3.MsgStoreProgramResponse) | StoreProgram validates a Prolog user library source and stores its canonical artifact if needed. Artifact identity is content-addressed: program_id = sha256(source). The endpoint is idempotent for the same publisher + same source, and also when different publishers submit the same source. After a successful call, the published program is exposed through the logic module virtual file system at the immutable path /v1/var/lib/logic/users/<identity>/programs/<program_id>.pl. This path is intended to be loaded from Prolog, for example with consult/1. | |
+| `StoreProgram` | [MsgStoreProgram](#logic.v1beta3.MsgStoreProgram) | [MsgStoreProgramResponse](#logic.v1beta3.MsgStoreProgramResponse) | StoreProgram validates a Prolog user library source and stores its canonical artifact if needed. Artifact identity is content-addressed: program_id = sha256(source). The endpoint is idempotent for the same publisher + same source, and also when different publishers submit the same source. After a successful call, the published program is exposed through the logic module virtual file system at the immutable path `/v1/var/lib/logic/users/<identity>/programs/<program_id>.pl`. This path is intended to be loaded from Prolog, for example with `consult/1`. | |
 
  [//]: # (end services)
 
