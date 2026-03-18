@@ -175,7 +175,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/contracts/axone-cognitarium', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/contracts/axone-gov', label: 'Latest version' }],
             docsPluginId: 'contracts',
             dropdownActiveClassDisabled: true
           },

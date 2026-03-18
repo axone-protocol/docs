@@ -34,7 +34,7 @@ and rejects any further write attempts with a permission error.
 
 ## Protocol Flow
 
-```
+```text
 1. open device stream in read_write mode
 2. run WriteGoal(Stream)  ← builds request
 3. run ReadGoal(Stream)   ← commits & reads response
