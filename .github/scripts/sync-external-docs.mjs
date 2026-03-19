@@ -74,9 +74,7 @@ async function getPendingTags(source) {
       .at(-1)
 
     if (!latestTracked) {
-      log(
-        `[${source.id}] tracked versions for family "${family}" are not parseable, skipping it`
-      )
+      log(`[${source.id}] tracked versions for family "${family}" are not parseable, skipping it`)
       continue
     }
 
@@ -208,7 +206,7 @@ function parseVersionTag(rawTag, source) {
   const tagPatterns =
     source.tag_scheme === 'semver'
       ? ['^(?<family>v)(?<version>\\d+\\.\\d+\\.\\d+)$']
-      : source.tag_patterns ?? []
+      : (source.tag_patterns ?? [])
 
   for (const pattern of tagPatterns) {
     const match = new RegExp(pattern).exec(rawTag)

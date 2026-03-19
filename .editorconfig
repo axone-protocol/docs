@@ -20,6 +20,10 @@ indent_size = 2
 trim_trailing_whitespace = false
 indent_size = 2
 
+[*.{js,mjs,cjs}]
+trim_trailing_whitespace = false
+indent_size = 2
+
 [*.scss]
 trim_trailing_whitespace = false
 indent_size = 2
