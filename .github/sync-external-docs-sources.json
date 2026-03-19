@@ -29,7 +29,16 @@
     "section": "contracts",
     "live_ref": "main",
     "docs_path": "docs",
-    "tag_patterns": ["^(?<family>axone-[a-z0-9-]+-v)(?<version>\\d+\\.\\d+\\.\\d+)$"]
+    "tag_patterns": ["^(?<family>axone-[a-z0-9-]+-v)(?<version>\\d+\\.\\d+\\.\\d+)$"],
+    "excluded_families": [
+      "axone-cognitarium-client-v",
+      "axone-dataverse-v",
+      "axone-law-stone-v",
+      "axone-logic-bindings-v",
+      "axone-objectarium-client-v",
+      "axone-rdf-v",
+      "axone-wasm-v"
+    ]
   },
   {
     "id": "ontology",

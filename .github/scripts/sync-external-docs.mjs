@@ -48,7 +48,7 @@ async function syncSource(source) {
 }
 
 async function getPendingTags(source) {
-  const remoteTags = await fetchTags(source)
+  const remoteTags = filterExcludedFamilies(await fetchTags(source), source)
   const trackedVersions = readTrackedVersions(source.section)
   const pendingTags = []
 
@@ -86,6 +86,15 @@ async function getPendingTags(source) {
   }
 
   return pendingTags
+}
+
+function filterExcludedFamilies(tags, source) {
+  if (!Array.isArray(source.excluded_families) || source.excluded_families.length === 0) {
+    return tags
+  }
+
+  const excludedFamilies = new Set(source.excluded_families)
+  return tags.filter(tag => !excludedFamilies.has(tag.family))
 }
 
 async function fetchTags(source) {
