@@ -43,7 +43,7 @@ jobs:
       - name: Sync upstream documentation
         env:
           GITHUB_TOKEN: ${{ secrets.OPS_TOKEN }}
-        run: node .github/scripts/sync-external-docs.mjs
+        run: yarn sync:external-docs
 
       - name: Detect repository changes
         id: changes
