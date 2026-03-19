@@ -198,8 +198,20 @@ function readTrackedVersions(section) {
     return []
   }
 
-  const parsed = JSON.parse(readFileSync(versionsPath, 'utf8'))
+  const parsed = readJsonFile(versionsPath, `${section} versions`)
   return Array.isArray(parsed) ? parsed : []
+}
+
+function readJsonFile(filePath, label) {
+  try {
+    return JSON.parse(readFileSync(filePath, 'utf8'))
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      throw new Error(`Unable to parse ${label} JSON at ${filePath}: ${error.message}`)
+    }
+
+    throw error
+  }
 }
 
 function buildHeaders() {
