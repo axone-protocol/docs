@@ -43,6 +43,14 @@ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+## Documentation sources
+
+This portal assembles documentation maintained in this repository together with documentation coming from related AXONE projects.
+
+- [`commands`](./commands), [`modules`](./modules) and [`predicates`](./predicates) are sourced from [`axone-protocol/axoned`](https://github.com/axone-protocol/axoned)
+- [`contracts`](./contracts) is sourced from [`axone-protocol/contracts`](https://github.com/axone-protocol/contracts)
+- [`ontology`](./ontology) is sourced from [`axone-protocol/ontology`](https://github.com/axone-protocol/ontology)
+
 ## Code Quality
 
 The coding style rules are enforced by the following tools:

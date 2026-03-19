@@ -1,0 +1,51 @@
+[
+  {
+    "id": "axoned-commands",
+    "repository": "axone-protocol/axoned",
+    "section": "commands",
+    "live_ref": "main",
+    "docs_path": "docs/command",
+    "tag_scheme": "semver"
+  },
+  {
+    "id": "axoned-modules",
+    "repository": "axone-protocol/axoned",
+    "section": "modules",
+    "live_ref": "main",
+    "docs_path": "docs/proto",
+    "tag_scheme": "semver"
+  },
+  {
+    "id": "axoned-predicates",
+    "repository": "axone-protocol/axoned",
+    "section": "predicates",
+    "live_ref": "main",
+    "docs_path": "docs/predicate",
+    "tag_scheme": "semver"
+  },
+  {
+    "id": "contracts",
+    "repository": "axone-protocol/contracts",
+    "section": "contracts",
+    "live_ref": "main",
+    "docs_path": "docs",
+    "tag_patterns": ["^(?<family>axone-[a-z0-9-]+-v)(?<version>\\d+\\.\\d+\\.\\d+)$"],
+    "excluded_families": [
+      "axone-cognitarium-client-v",
+      "axone-dataverse-v",
+      "axone-law-stone-v",
+      "axone-logic-bindings-v",
+      "axone-objectarium-client-v",
+      "axone-rdf-v",
+      "axone-wasm-v"
+    ]
+  },
+  {
+    "id": "ontology",
+    "repository": "axone-protocol/ontology",
+    "section": "ontology",
+    "live_ref": "main",
+    "docs_path": "docs",
+    "tag_scheme": "semver"
+  }
+]
