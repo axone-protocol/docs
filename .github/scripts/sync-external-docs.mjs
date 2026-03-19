@@ -1,22 +1,26 @@
 import { execFileSync } from 'node:child_process'
-import { mkdtempSync, readFileSync, existsSync, readdirSync } from 'node:fs'
+import { mkdtempSync, readFileSync, existsSync, readdirSync, rmSync } from 'node:fs'
 import fs from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 
 const workspace = process.cwd()
 const manifestPath = path.join(workspace, '.github', 'sync-external-docs-sources.json')
-const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
+const manifest = readJsonFile(manifestPath, 'sync manifest')
 const dryRun = process.argv.slice(2).includes('--dry-run')
 const apiToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env.OPS_TOKEN || ''
 const tagCache = new Map()
 const snapshotCache = new Map()
 const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'docs-sync-'))
 
-main().catch(error => {
+try {
+  await main()
+} catch (error) {
   console.error(error instanceof Error ? error.message : String(error))
   process.exitCode = 1
-})
+} finally {
+  cleanupTempRoot()
+}
 
 async function main() {
   log(`Selected ${manifest.length} documentation source(s).`)
@@ -272,4 +276,8 @@ function run(command, commandArgs) {
 
 function log(message) {
   console.log(message)
+}
+
+function cleanupTempRoot() {
+  rmSync(tempRoot, { recursive: true, force: true })
 }
