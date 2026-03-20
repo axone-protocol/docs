@@ -3,6 +3,7 @@ import { mkdtempSync, readFileSync, existsSync, readdirSync, rmSync } from 'node
 import fs from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
+import { setTimeout as sleep } from 'node:timers/promises'
 
 const workspace = process.cwd()
 const manifestPath = path.join(workspace, '.github', 'sync-external-docs-sources.json')
@@ -12,11 +13,13 @@ const apiToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env
 const tagCache = new Map()
 const snapshotCache = new Map()
 const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'docs-sync-'))
+const fetchRetryCount = 3
+const fetchTimeoutMs = 30000
 
 try {
   await main()
 } catch (error) {
-  console.error(error instanceof Error ? error.message : String(error))
+  console.error(formatError(error))
   process.exitCode = 1
 } finally {
   cleanupTempRoot()
@@ -31,24 +34,28 @@ async function main() {
 }
 
 async function syncSource(source) {
-  log(`[${source.id}] syncing live docs from ${source.repository}@${source.live_ref}`)
+  try {
+    log(`[${source.id}] syncing live docs from ${source.repository}@${source.live_ref}`)
 
-  const pendingTags = await getPendingTags(source)
+    const pendingTags = await getPendingTags(source)
 
-  if (pendingTags.length > 0) {
-    log(
-      `[${source.id}] creating ${pendingTags.length} missing version(s): ${pendingTags.join(', ')}`
-    )
+    if (pendingTags.length > 0) {
+      log(
+        `[${source.id}] creating ${pendingTags.length} missing version(s): ${pendingTags.join(', ')}`
+      )
+    }
+
+    for (const tag of pendingTags) {
+      const snapshotPath = await materializeSnapshot(source.repository, tag)
+      syncDocs(snapshotPath, source.docs_path, source.section)
+      run('yarn', ['run', 'docusaurus', `docs:version:${source.section}`, tag])
+    }
+
+    const liveSnapshotPath = await materializeSnapshot(source.repository, source.live_ref)
+    syncDocs(liveSnapshotPath, source.docs_path, source.section)
+  } catch (error) {
+    throw new Error(`[${source.id}] sync failed`, { cause: error })
   }
-
-  for (const tag of pendingTags) {
-    const snapshotPath = await materializeSnapshot(source.repository, tag)
-    syncDocs(snapshotPath, source.docs_path, source.section)
-    run('yarn', ['run', 'docusaurus', `docs:version:${source.section}`, tag])
-  }
-
-  const liveSnapshotPath = await materializeSnapshot(source.repository, source.live_ref)
-  syncDocs(liveSnapshotPath, source.docs_path, source.section)
 }
 
 async function getPendingTags(source) {
@@ -134,18 +141,8 @@ async function materializeSnapshot(repository, ref) {
     return snapshotCache.get(cacheKey)
   }
 
-  const response = await fetch(`https://api.github.com/repos/${repository}/tarball/${ref}`, {
-    headers: buildHeaders()
-  })
-
-  if (!response.ok) {
-    throw new Error(
-      `Unable to download ${repository}@${ref}: ${response.status} ${response.statusText}`
-    )
-  }
-
   const archivePath = path.join(tempRoot, `${cacheKey.replace(/[\\/]/g, '_')}.tar.gz`)
-  await fs.writeFile(archivePath, Buffer.from(await response.arrayBuffer()))
+  await downloadSnapshotArchive(repository, ref, archivePath)
 
   const extractDir = path.join(tempRoot, cacheKey.replace(/[\\/]/g, '_'))
   await fs.mkdir(extractDir, { recursive: true })
@@ -161,6 +158,47 @@ async function materializeSnapshot(repository, ref) {
   snapshotCache.set(cacheKey, snapshotPath)
 
   return snapshotPath
+}
+
+async function downloadSnapshotArchive(repository, ref, archivePath) {
+  const url = `https://api.github.com/repos/${repository}/tarball/${ref}`
+
+  for (let attempt = 1; attempt <= fetchRetryCount; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: buildHeaders(),
+        signal: AbortSignal.timeout(fetchTimeoutMs)
+      })
+
+      if (!response.ok) {
+        const details = await readResponseDetails(response)
+        const message = `Unable to download ${repository}@${ref}: GitHub API returned ${response.status} ${response.statusText}${details ? ` (${details})` : ''}`
+
+        if (attempt < fetchRetryCount && isRetryableStatus(response.status)) {
+          log(
+            `[download] ${message}. Retrying (${attempt}/${fetchRetryCount - 1})...`
+          )
+          await sleep(attempt * 1000)
+          continue
+        }
+
+        throw new Error(message)
+      }
+
+      await fs.writeFile(archivePath, Buffer.from(await response.arrayBuffer()))
+      return
+    } catch (error) {
+      const message = describeFetchError(error, repository, ref)
+
+      if (attempt < fetchRetryCount && isRetryableFetchError(error)) {
+        log(`[download] ${message}. Retrying (${attempt}/${fetchRetryCount - 1})...`)
+        await sleep(attempt * 1000)
+        continue
+      }
+
+      throw new Error(message, { cause: error })
+    }
+  }
 }
 
 function syncDocs(snapshotRoot, docsPath, section) {
@@ -212,6 +250,16 @@ function readJsonFile(filePath, label) {
 
     throw error
   }
+}
+
+async function readResponseDetails(response) {
+  const body = (await response.text()).trim()
+
+  if (!body) {
+    return ''
+  }
+
+  return body.replace(/\s+/g, ' ').slice(0, 300)
 }
 
 function buildHeaders() {
@@ -288,6 +336,56 @@ function run(command, commandArgs) {
 
 function log(message) {
   console.log(message)
+}
+
+function isRetryableStatus(status) {
+  return status === 408 || status === 429 || status >= 500
+}
+
+function isRetryableFetchError(error) {
+  if (!(error instanceof Error)) {
+    return false
+  }
+
+  if (error.name === 'TimeoutError') {
+    return true
+  }
+
+  const causeCode =
+    error.cause && typeof error.cause === 'object' && 'code' in error.cause ? error.cause.code : null
+
+  return ['ECONNRESET', 'ECONNREFUSED', 'EHOSTUNREACH', 'ENETUNREACH', 'ETIMEDOUT'].includes(
+    causeCode
+  )
+}
+
+function describeFetchError(error, repository, ref) {
+  if (error instanceof Error) {
+    const cause =
+      error.cause && typeof error.cause === 'object' && 'message' in error.cause
+        ? ` (${error.cause.message})`
+        : ''
+
+    return `Unable to download ${repository}@${ref}: ${error.message}${cause}`
+  }
+
+  return `Unable to download ${repository}@${ref}: ${String(error)}`
+}
+
+function formatError(error) {
+  if (!(error instanceof Error)) {
+    return String(error)
+  }
+
+  const lines = [error.message]
+  let current = error.cause
+
+  while (current instanceof Error) {
+    lines.push(`caused by: ${current.message}`)
+    current = current.cause
+  }
+
+  return lines.join('\n')
 }
 
 function cleanupTempRoot() {
