@@ -106,19 +106,10 @@ const config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
   future: {
-    experimental_faster: {
-      swcJsLoader: true,
-      swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      rspackBundler: true,
-      rspackPersistentCache: true,
-      ssgWorkerThreads: true,
-      mdxCrossCompilerCache: true
-    },
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
-      useCssCascadeLayers: true
+      useCssCascadeLayers: true,
+      fasterByDefault: true
     }
   },
   presets: [
