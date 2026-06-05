@@ -191,7 +191,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/predicates/bank_balances_2', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/predicates/apply/foldl_4', label: 'Latest version' }],
             docsPluginId: 'predicates',
             dropdownActiveClassDisabled: true
           },
