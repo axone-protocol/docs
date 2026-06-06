@@ -248,12 +248,6 @@ svg {
   }
 }
 
-.docs-doc-id-faq\/faq {
-  .markdown > h2 {
-    font-size: var(--ifm-h3-font-size);
-  }
-}
-
 .markdown > h3 {
   display: flex;
   gap: 5px;
@@ -280,4 +274,112 @@ svg {
 
 .hidden {
   display: none !important;
+}
+
+.technical-home {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+.technical-home__hero {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.technical-home__title {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+.technical-home__eyebrow {
+  margin-bottom: 12px;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-base);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.technical-home__intro {
+  color: var(--ifm-font-color-secondary);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.technical-home__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.technical-home__card {
+  display: flex;
+  min-height: 220px;
+  padding: 20px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  flex-direction: column;
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+
+  &:hover {
+    border-color: var(--ifm-color-primary);
+    color: var(--ifm-font-color-base);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+}
+
+.technical-home__card-title {
+  margin-bottom: 10px;
+  color: var(--ifm-heading-color);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.technical-home__card-source {
+  margin-bottom: 18px;
+  color: var(--ifm-color-primary);
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.technical-home__card-description {
+  color: var(--ifm-font-color-secondary);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (width <= 1100px) {
+  .technical-home__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 760px) {
+  .technical-home {
+    width: min(100% - 28px, 620px);
+    padding-top: 48px;
+  }
+
+  .technical-home__title {
+    font-size: 34px;
+  }
+
+  .technical-home__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-home__card {
+    min-height: 160px;
+  }
 }

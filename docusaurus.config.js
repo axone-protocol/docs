@@ -3,65 +3,27 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import { remarkKroki } from 'remark-kroki'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
-import readingTime from 'reading-time'
-import { u } from 'unist-builder'
-import { visit } from 'unist-util-visit'
 
-function readingTimeMDXPlugin({ variable = 'readingTime', additionalTimePerImage = 1 } = {}) {
-  return async function transformer(tree, vfile) {
-    let imageCount = 0
-
-    visit(tree, 'jsx', node => {
-      if (node.value.includes('img')) {
-        imageCount++
+const technicalDocsOptions = {
+  remarkPlugins: [
+    remarkMath,
+    [
+      remarkKroki,
+      {
+        server: 'https://kroki.io/',
+        output: 'inline-svg',
+        alias: ['plantuml', 'structurizr', 'bpmn', 'graphviz']
       }
-    })
-
-    const baseReadingTime = readingTime(vfile.value).minutes
-    const adjustedReadingTime = baseReadingTime + imageCount * additionalTimePerImage
-
-    tree.children.unshift({
-      type: 'mdxjsEsm',
-      value: `export const ${variable} = ${adjustedReadingTime};`,
-      data: {
-        estree: {
-          type: 'Program',
-          body: [
-            {
-              type: 'ExportNamedDeclaration',
-              declaration: {
-                type: 'VariableDeclaration',
-                declarations: [
-                  {
-                    type: 'VariableDeclarator',
-                    id: {
-                      type: 'Identifier',
-                      name: variable
-                    },
-                    init: {
-                      type: 'Literal',
-                      value: adjustedReadingTime,
-                      raw: `${adjustedReadingTime}`
-                    }
-                  }
-                ],
-                kind: 'const'
-              },
-              specifiers: [],
-              source: null
-            }
-          ],
-          sourceType: 'module'
-        }
-      }
-    })
-  }
+    ]
+  ],
+  rehypePlugins: [rehypeKatex],
+  showLastUpdateTime: true
 }
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Axone Docs',
-  tagline: 'Unleash the Knowledge Economy 🚀',
+  title: 'Axone Technical Reference',
+  tagline: 'Versioned technical reference for the Axone protocol',
   url: 'https://docs.axone.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -119,26 +81,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: ({ docPath }) =>
-            `https://github.com/axone-protocol/docs/edit/main/docs/${docPath}`,
-          remarkPlugins: [
-            readingTimeMDXPlugin,
-            remarkMath,
-            [
-              remarkKroki,
-              {
-                server: 'https://kroki.io/',
-                output: 'inline-svg',
-                alias: ['plantuml', 'structurizr', 'bpmn', 'graphviz']
-              }
-            ]
-          ],
-          rehypePlugins: [rehypeKatex],
-          routeBasePath: '/',
-          showLastUpdateTime: true
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: require.resolve('./src/scss/custom.scss')
@@ -165,6 +108,32 @@ const config = {
           srcDark: 'img/logo-axone-light.webp'
         },
         items: [
+          {
+            label: 'Reference',
+            position: 'left',
+            items: [
+              {
+                label: 'Commands',
+                to: '/commands/axoned'
+              },
+              {
+                label: 'Contracts',
+                to: '/contracts/axone-gov'
+              },
+              {
+                label: 'Modules',
+                to: '/modules/logic'
+              },
+              {
+                label: 'Ontology',
+                to: '/ontology/schemas/credential-dataset-description'
+              },
+              {
+                label: 'Predicates',
+                to: '/predicates/next'
+              }
+            ]
+          },
           {
             type: 'docsVersionDropdown',
             position: 'right',
@@ -226,23 +195,27 @@ const config = {
         },
         links: [
           {
-            title: 'Docs',
+            title: 'Technical Reference',
             items: [
               {
-                label: 'Whitepaper',
-                to: '/whitepaper/abstract'
+                label: 'Commands',
+                to: '/commands/axoned'
               },
               {
-                label: 'Run a Node',
-                to: '/nodes/installation'
+                label: 'Contracts',
+                to: '/contracts/axone-gov'
               },
               {
-                label: 'Technical documentation',
-                to: '/architecture/overview'
+                label: 'Modules',
+                to: '/modules/logic'
               },
               {
-                label: 'FAQ',
-                to: '/faq'
+                label: 'Ontology',
+                to: '/ontology/schemas/credential-dataset-description'
+              },
+              {
+                label: 'Predicates',
+                to: '/predicates/next'
               }
             ]
           },
@@ -268,15 +241,15 @@ const config = {
             ]
           },
           {
-            title: 'More',
+            title: 'Project',
             items: [
-              {
-                label: 'Medium',
-                href: 'https://blog.axone.xyz/'
-              },
               {
                 label: 'Axone.xyz',
                 href: 'https://axone.xyz'
+              },
+              {
+                label: 'GitHub Organization',
+                href: 'https://github.com/axone-protocol'
               }
             ]
           },
@@ -320,12 +293,16 @@ const config = {
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        docsRouteBasePath: '/'
+        indexBlog: false,
+        docsPluginIdForPreferredVersion: 'commands',
+        docsDir: ['commands', 'contracts', 'modules', 'ontology', 'predicates'],
+        docsRouteBasePath: ['commands', 'contracts', 'modules', 'ontology', 'predicates']
       }
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
+        ...technicalDocsOptions,
         id: 'contracts',
         path: 'contracts',
         routeBasePath: 'contracts/'
@@ -334,6 +311,7 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        ...technicalDocsOptions,
         id: 'ontology',
         path: 'ontology',
         routeBasePath: 'ontology/'
@@ -342,6 +320,7 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        ...technicalDocsOptions,
         id: 'predicates',
         path: 'predicates',
         routeBasePath: 'predicates'
@@ -350,6 +329,7 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        ...technicalDocsOptions,
         id: 'modules',
         path: 'modules',
         routeBasePath: 'modules/'
@@ -358,6 +338,7 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        ...technicalDocsOptions,
         id: 'commands',
         path: 'commands',
         routeBasePath: 'commands/'
