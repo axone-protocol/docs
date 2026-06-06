@@ -109,6 +109,8 @@ const config = {
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
       useCssCascadeLayers: true,
+      siteStorageNamespacing: true,
+      mdx1CompatDisabledByDefault: true,
       fasterByDefault: true
     }
   },
