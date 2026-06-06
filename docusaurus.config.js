@@ -184,7 +184,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownItemsAfter: [{ to: '/predicates/apply/foldl_4', label: 'Latest version' }],
+            dropdownItemsAfter: [{ to: '/predicates/next', label: 'Latest version' }],
             docsPluginId: 'predicates',
             dropdownActiveClassDisabled: true
           },
@@ -344,7 +344,7 @@ const config = {
       {
         id: 'predicates',
         path: 'predicates',
-        routeBasePath: 'predicates/'
+        routeBasePath: 'predicates'
       }
     ],
     [
