@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "docusaurus-config-setup": {
+      "source": "jeremylongshore/claude-code-plugins-plus-skills",
+      "sourceType": "github",
+      "skillPath": "skills/17-technical-docs/docusaurus-config-setup/SKILL.md",
+      "computedHash": "36b8c6ec5da3263fc97d20e6246b6f225b3ab094a036ceb3a0a3fccfc37ed383"
+    },
+    "lighthouse": {
+      "source": "onnokh/lighthouse",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "94bf9e0d6c9d8489d53d378a81584ca75df11c29f255feb6351292e02e839097"
+    }
+  }
+}
