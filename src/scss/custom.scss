@@ -1,22 +1,24 @@
 @use "community";
 @use "main";
 @use "animation";
-@use "card";
 
 // Keep existing custom fonts as fallbacks
 @font-face {
   font-family: "Helvetica bold";
-  src: url("/static/fonts/Helvetica/HelveticaNeueBold.otf");
+  src: url("/fonts/Helvetica/HelveticaNeueBold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Helvetica regular";
-  src: url("/static/fonts/Helvetica/HelveticaNeueRoman.otf");
+  src: url("/fonts/Helvetica/HelveticaNeueRoman.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Vanguard CF";
-  src: url("/static/fonts/VanguardCF/VanguardCF-Bold.otf");
+  src: url("/fonts/VanguardCF/VanguardCF-Bold.otf");
+  font-display: swap;
 }
 
 // Dark-only theme with axone.xyz color palette
@@ -30,11 +32,15 @@
   --axone-success: #13ce66;
   --axone-accent-alt: #00ff95;
   --axone-danger-bg: #661d1d;
+  --axone-surface: #201e1d;
+  --axone-surface-raised: #292625;
+  --axone-border-subtle: rgb(217 217 217 / 18%);
+  --axone-border-muted: rgb(217 217 217 / 10%);
 
-  // Typography - Inter for body, Montserrat for headings
-  --ifm-font-family-base: "Inter", "Helvetica regular", helvetica, arial, sans-serif;
-  --ifm-heading-font-family: "Montserrat", "Helvetica bold", helvetica, arial, sans-serif;
-  --ifm-h1-font-family: "Montserrat", "Vanguard CF", helvetica, arial, sans-serif;
+  // Typography - local Axone fallbacks first.
+  --ifm-font-family-base: "Helvetica regular", "Inter", helvetica, arial, sans-serif;
+  --ifm-heading-font-family: "Helvetica bold", "Montserrat", helvetica, arial, sans-serif;
+  --ifm-h1-font-family: "Vanguard CF", "Montserrat", impact, sans-serif;
 
   // Core colors
   --ifm-color-primary: var(--axone-primary-accent);
@@ -47,7 +53,7 @@
 
   // Background and layout
   --ifm-background-color: var(--axone-background);
-  --ifm-background-surface-color: #212020;
+  --ifm-background-surface-color: var(--axone-surface);
   --ifm-background-color-main: var(--axone-background);
   --ifm-footer-background-color-main: #141313;
   --ifm-navbar-background-color: var(--axone-background);
@@ -86,7 +92,7 @@
   --ifm-toc-border-color: var(--ifm-color-emphasis-300);
 
   // Search
-  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 60%);
+  --ifm-navbar-search-input-background-color: rgb(217 217 217 / 8%);
   --search-local-highlight-color: var(--axone-primary-accent);
 
   // Knowledge graph colors
@@ -124,7 +130,7 @@
 html[data-theme="light"] {
   // Force all light theme elements to use dark theme
   --ifm-background-color: var(--axone-background);
-  --ifm-background-surface-color: #212020;
+  --ifm-background-surface-color: var(--axone-surface);
   --ifm-font-color-base: var(--axone-text-primary);
   --ifm-heading-color: var(--axone-text-primary);
   --ifm-navbar-background-color: var(--axone-background);
@@ -144,7 +150,7 @@ html[data-theme="light"] {
   --ifm-navbar-background-color: var(--axone-background);
   --search-local-highlight-color: var(--axone-primary-accent);
   --ifm-knowledge-graph-base-stroke-color: var(--axone-text-muted);
-  --ifm-navbar-search-input-background-color: rgb(255 255 255 / 60%);
+  --ifm-navbar-search-input-background-color: rgb(217 217 217 / 8%);
 }
 
 // Interactive elements styling
