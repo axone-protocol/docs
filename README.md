@@ -1,6 +1,6 @@
 # Axone technical reference
 
-> Versioned technical reference for the Axone protocol, built with [Docusaurus](https://docusaurus.io/).
+> Versioned technical reference for the Axone protocol, powered with ❤️ by [Docusaurus](https://docusaurus.io/).
 
 [![lint](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/build.yml)
@@ -11,6 +11,8 @@
 ## Overview
 
 This repository hosts <https://docs.axone.xyz>. It is scoped to deep technical reference material that is versioned with, and synchronized from, Axone implementation repositories.
+
+[![docs.axone.xyz](./screenshot.webp)](https://docs.axone.xyz)
 
 The Docusaurus site exposes five technical sections:
 
