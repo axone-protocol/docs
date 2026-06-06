@@ -308,60 +308,141 @@ svg {
   line-height: 1.6;
 }
 
-.technical-home__grid {
+.technical-home__layers {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
-.technical-home__card {
+.technical-home__layer {
   display: flex;
-  min-height: 220px;
-  padding: 20px;
+  min-height: 260px;
+  padding: 24px;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   background: var(--ifm-background-surface-color);
-  color: var(--ifm-font-color-base);
   flex-direction: column;
-  text-decoration: none;
-  transition:
-    border-color 160ms ease,
-    transform 160ms ease;
-
-  &:hover {
-    border-color: var(--ifm-color-primary);
-    color: var(--ifm-font-color-base);
-    text-decoration: none;
-    transform: translateY(-2px);
-  }
+  justify-content: space-between;
 }
 
-.technical-home__card-title {
-  margin-bottom: 10px;
-  color: var(--ifm-heading-color);
-  font-family: var(--ifm-heading-font-family);
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
+.technical-home__layer:nth-child(1) {
+  grid-column: 1 / -1;
+  min-height: 220px;
 }
 
-.technical-home__card-source {
-  margin-bottom: 18px;
+.technical-home__layer-source {
+  margin-bottom: 12px;
   color: var(--ifm-color-primary);
   font-size: 13px;
   font-weight: 700;
   overflow-wrap: anywhere;
 }
 
-.technical-home__card-description {
+.technical-home__layer-title {
+  margin-bottom: 12px;
+  color: var(--ifm-heading-color);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.technical-home__layer-description {
+  max-width: 620px;
+  margin-bottom: 24px;
+  color: var(--ifm-font-color-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.technical-home__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technical-home__link,
+.technical-home__raw-link {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.technical-home__link {
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.technical-home__raw {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 24px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.technical-home__raw-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.technical-home__raw-description {
   color: var(--ifm-font-color-secondary);
   font-size: 15px;
   line-height: 1.5;
 }
 
+.technical-home__raw-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.technical-home__raw-link {
+  display: flex;
+  min-height: 84px;
+  padding: 14px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  span:last-child {
+    color: var(--ifm-font-color-secondary);
+    font-size: 13px;
+  }
+}
+
+.technical-home__link:hover,
+.technical-home__raw-link:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
 @media (width <= 1100px) {
-  .technical-home__grid {
+  .technical-home__raw-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 900px) {
+  .technical-home__layers,
+  .technical-home__raw {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-home__layer:nth-child(1) {
+    grid-column: auto;
   }
 }
 
@@ -375,11 +456,12 @@ svg {
     font-size: 34px;
   }
 
-  .technical-home__grid {
-    grid-template-columns: 1fr;
+  .technical-home__layer {
+    min-height: 0;
+    padding: 18px;
   }
 
-  .technical-home__card {
-    min-height: 160px;
+  .technical-home__raw-list {
+    grid-template-columns: 1fr;
   }
 }
