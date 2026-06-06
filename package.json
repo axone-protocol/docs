@@ -4,7 +4,7 @@
   "private": false,
   "repository": "git@github.com:axone-protocol/docs.git",
   "license": "BSD-3-Clause",
-  "description": "Axone protocol documentation",
+  "description": "Versioned technical reference for the Axone protocol",
   "homepage": "https://docs.axone.xyz/",
   "author": {
     "name": "AXONE",
@@ -26,8 +26,8 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "sync:external-docs": "node .github/scripts/sync-external-docs.mjs",
     "sync:external-docs:dry-run": "node .github/scripts/sync-external-docs.mjs --dry-run",
-    "lint": "stylelint '**/*.scss' && markdownlint README.md 'docs/**/*.md'",
-    "lint:fix": "stylelint '**/*.scss' --fix && markdownlint --fix README.md 'docs/**/*.md'"
+    "lint": "stylelint '**/*.scss' && markdownlint README.md",
+    "lint:fix": "stylelint '**/*.scss' --fix && markdownlint --fix README.md"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",
