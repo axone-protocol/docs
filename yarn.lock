@@ -1332,6 +1332,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/css-calc/-/css-calc-2.1.4.tgz#8473f63e2fcd6e459838dd412401d5948f224c65"
   integrity sha512-3N8oaj+0juUw/1H3YwmDDJXCgTB1gKU6Hc/bB502u9zR0q2vd786XJH9QfrKIEgFlZmhZiq6epXl4rHqhzsIgQ==
 
+"@csstools/css-calc@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@csstools/css-calc/-/css-calc-3.2.1.tgz#b30e061ca9f297ccb2b3b032bfee32fda02b1b27"
+  integrity sha512-DtdHlgXh5ZkA43cwBcAm+huzgJiwx3ZTWVjBs94kwz2xKqSimDA3lBgCjphYgwgVUMWatSM0pDd8TILB1yrVVg==
+
 "@csstools/css-color-parser@^3.0.10":
   version "3.0.10"
   resolved "https://registry.yarnpkg.com/@csstools/css-color-parser/-/css-color-parser-3.0.10.tgz#79fc68864dd43c3b6782d2b3828bc0fa9d085c10"
@@ -1345,15 +1350,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/css-parser-algorithms/-/css-parser-algorithms-3.0.5.tgz#5755370a9a29abaec5515b43c8b3f2cf9c2e3076"
   integrity sha512-DaDeUkXZKjdGhgYaHNJTV9pV7Y9B3b644jCLs9Upc3VeNGg6LWARAT6O+Q+/COo+2gg/bM5rhpMAtf70WqfBdQ==
 
-"@csstools/css-syntax-patches-for-csstree@^1.0.19":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@csstools/css-syntax-patches-for-csstree/-/css-syntax-patches-for-csstree-1.0.20.tgz#b14db34a759b3446b01d7981b4765f92b2d420ae"
-  integrity sha512-8BHsjXfSciZxjmHQOuVdW2b8WLUPts9a+mfL13/PzEviufUEW2xnvQuOlKs9dRBHgRqJ53SF/DUoK9+MZk72oQ==
+"@csstools/css-parser-algorithms@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@csstools/css-parser-algorithms/-/css-parser-algorithms-4.0.0.tgz#e1c65dc09378b42f26a111fca7f7075fc2c26164"
+  integrity sha512-+B87qS7fIG3L5h3qwJ/IFbjoVoOe/bpOdh9hAjXbvx0o8ImEmUsGXN0inFOnk2ChCFgqkkGFQ+TpM5rbhkKe4w==
+
+"@csstools/css-syntax-patches-for-csstree@^1.0.19", "@csstools/css-syntax-patches-for-csstree@^1.1.4":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@csstools/css-syntax-patches-for-csstree/-/css-syntax-patches-for-csstree-1.1.5.tgz#b8e26e0fe25e9a6ec607d045470cc46d2f62731e"
+  integrity sha512-oNjBvzLq2GPZtJphCjLqXow/cHySHSgtxvKZb7OqSZ/xHgw6NWNhfad+6AB9cLeVm6eA9d/qMll3JdEHjy6M+A==
 
 "@csstools/css-tokenizer@^3.0.4":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@csstools/css-tokenizer/-/css-tokenizer-3.0.4.tgz#333fedabc3fd1a8e5d0100013731cf19e6a8c5d3"
   integrity sha512-Vd/9EVDiu6PPJt9yAh6roZP6El1xHrdvIVGjyBsHR0RYwNHgL7FJPyIIW4fANJNG6FtyZfvlRPpFI4ZM/lubvw==
+
+"@csstools/css-tokenizer@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@csstools/css-tokenizer/-/css-tokenizer-4.0.0.tgz#798a33950d11226a0ebb6acafa60f5594424967f"
+  integrity sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA==
 
 "@csstools/media-query-list-parser@^4.0.3":
   version "4.0.3"
@@ -5307,13 +5322,13 @@ css-tree@^2.3.1:
     mdn-data "2.0.30"
     source-map-js "^1.0.1"
 
-css-tree@^3.0.1, css-tree@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-3.1.0.tgz#7aabc035f4e66b5c86f54570d55e05b1346eb0fd"
-  integrity sha512-0eW44TGN5SQXU1mWSkKwFstI/22X2bG1nYzZTYMAWjylYURhse752YgbE4Cx46AC+bAvI+/dYTPRk1LqSUnu6w==
+css-tree@^3.0.1, css-tree@^3.1.0, css-tree@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-3.2.1.tgz#86cac7011561272b30e6b1e042ba6ce047aa7518"
+  integrity sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==
   dependencies:
-    mdn-data "2.12.2"
-    source-map-js "^1.0.1"
+    mdn-data "2.27.1"
+    source-map-js "^1.2.1"
 
 css-tree@~2.2.0:
   version "2.2.1"
@@ -8320,15 +8335,10 @@ mdn-data@2.0.30:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.30.tgz#ce4df6f80af6cfbe218ecd5c552ba13c4dfa08cc"
   integrity sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==
 
-mdn-data@2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.12.2.tgz#9ae6c41a9e65adf61318b32bff7b64fbfb13f8cf"
-  integrity sha512-IEn+pegP1aManZuckezWCO+XZQDplx1366JoVhTpMpBB1sPey/SbveZQUosKiKiGYjg1wH4pMlNgXbCiYgihQA==
-
-mdn-data@^2.25.0:
-  version "2.25.0"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.25.0.tgz#d45610fae17b222d600bbef3136bd6155ac9cc16"
-  integrity sha512-T2LPsjgUE/tgMmRXREVmwsux89DwWfNjiynOeXuLd2mX6jphGQ2YE3Ukz7LQ2VOFKiVZU/Ee1GqzHiipZCjymw==
+mdn-data@2.27.1, mdn-data@^2.25.0:
+  version "2.27.1"
+  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.27.1.tgz#e37b9c50880b75366c4d40ac63d9bbcacdb61f0e"
+  integrity sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==
 
 mdurl@^2.0.0:
   version "2.0.0"
@@ -11306,15 +11316,18 @@ stylelint-scss@^6.12.1:
     postcss-selector-parser "^7.1.1"
     postcss-value-parser "^4.2.0"
 
-stylelint-scss@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-7.0.0.tgz#fae9346e6a1e15039422a7e46b3390e39508218d"
-  integrity sha512-H88kCC+6Vtzj76NsC8rv6x/LW8slBzIbyeSjsKVlS+4qaEJoDrcJR4L+8JdrR2ORdTscrBzYWiiT2jq6leYR1Q==
+stylelint-scss@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-7.2.0.tgz#2a5f7a7e210254f927bbc3e8145245abedd9e390"
+  integrity sha512-6E79Bachv0Iz0gqRUZgdqdXCsiq26DWBWIBNHYtjTmAp3wJu6cp/I37VfW7BPntmh2puF3bY09XWl4HZGrLhzw==
   dependencies:
-    css-tree "^3.0.1"
+    "@csstools/css-calc" "^3.2.1"
+    "@csstools/css-parser-algorithms" "^4.0.0"
+    "@csstools/css-syntax-patches-for-csstree" "^1.1.4"
+    "@csstools/css-tokenizer" "^4.0.0"
+    css-tree "^3.2.1"
     is-plain-object "^5.0.0"
     known-css-properties "^0.37.0"
-    mdn-data "^2.25.0"
     postcss-media-query-parser "^0.2.3"
     postcss-resolve-nested-selector "^0.1.6"
     postcss-selector-parser "^7.1.1"
