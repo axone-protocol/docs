@@ -105,7 +105,9 @@ const config = {
         logo: {
           alt: 'Axone Logo',
           src: 'img/logo-axone-light.webp',
-          srcDark: 'img/logo-axone-light.webp'
+          srcDark: 'img/logo-axone-light.webp',
+          href: 'https://axone.xyz',
+          target: '_self'
         },
         items: [
           {
