@@ -59,9 +59,7 @@ html {
     flex-direction: row-reverse;
 
     @media (width <= 996px) {
-      position: absolute;
-      right: 55px;
-      top: 40px;
+      display: none;
     }
   }
 
@@ -107,7 +105,10 @@ html {
     height: 72px;
     border-bottom: 1px solid var(--axone-border-muted);
     background: rgb(25 23 22 / 92%);
-    backdrop-filter: blur(12px);
+
+    @media (width > 996px) {
+      backdrop-filter: blur(12px);
+    }
   }
 
   .navbar__items {
@@ -120,6 +121,11 @@ html {
 
       .navbar__brand {
         width: 100%;
+      }
+
+      .navbar__item,
+      .navbar__link:not(.navbar__brand) {
+        display: none;
       }
     }
 
@@ -184,7 +190,7 @@ html {
       flex: 0 0 100%;
       max-width: 100%;
 
-      @media (width >= 320px) {
+      @media (width >= 480px) {
         flex: 0 0 50%;
         max-width: 50%;
       }
