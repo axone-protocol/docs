@@ -128,7 +128,7 @@ const config = {
               },
               {
                 label: 'Ontology',
-                to: '/ontology/schemas/credential-dataset-description'
+                to: '/ontology/next/schemas/credential-assertion'
               },
               {
                 label: 'Predicates',
@@ -147,7 +147,7 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownItemsAfter: [
-              { to: '/ontology/schemas/credential-dataset-description', label: 'Latest version' }
+              { to: '/ontology/next/schemas/credential-assertion', label: 'Latest version' }
             ],
             docsPluginId: 'ontology',
             dropdownActiveClassDisabled: true
@@ -213,7 +213,7 @@ const config = {
               },
               {
                 label: 'Ontology',
-                to: '/ontology/schemas/credential-dataset-description'
+                to: '/ontology/next/schemas/credential-assertion'
               },
               {
                 label: 'Predicates',

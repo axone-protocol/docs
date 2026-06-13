@@ -46,20 +46,16 @@ const layers = [
     category: 'Semantics',
     title: 'Credentials & Ontology',
     description:
-      'Credential schemas for resources, services, rights, execution, zones, and participation.',
+      'Core credential schemas for subject profiles and factual assertions.',
     source: 'axone-protocol/ontology',
     links: [
       {
-        label: 'Dataset description',
-        href: '/ontology/schemas/credential-dataset-description'
+        label: 'Assertion credential',
+        href: '/ontology/next/schemas/credential-assertion'
       },
       {
-        label: 'Digital service description',
-        href: '/ontology/schemas/credential-digital-service-description'
-      },
-      {
-        label: 'Digital resource rights',
-        href: '/ontology/schemas/credential-digital-resource-rights'
+        label: 'Profile credential',
+        href: '/ontology/next/schemas/credential-profile'
       }
     ]
   },
@@ -68,15 +64,15 @@ const layers = [
     category: 'Policy',
     title: 'Governance',
     description:
-      'Programmable constitutions, zone membership, and decision logic for governed resources.',
+      'Programmable constitutions, scoped assertions, and decision logic for governed resources.',
     source: 'contracts + ontology + predicates',
     links: [
       { label: 'Governance contract', href: '/contracts/axone-gov' },
       {
-        label: 'Zone membership credential',
-        href: '/ontology/next/schemas/credential-zone-membership'
+        label: 'Assertion credential',
+        href: '/ontology/next/schemas/credential-assertion'
       },
-      { label: 'Zone description credential', href: '/ontology/schemas/credential-zone-description' }
+      { label: 'Predicate reference', href: '/predicates/next' }
     ]
   }
 ]
@@ -85,7 +81,7 @@ const rawReferences = [
   { label: 'Commands', href: '/commands/axoned', source: 'axoned' },
   { label: 'Contracts', href: '/contracts/axone-gov', source: 'contracts' },
   { label: 'Modules', href: '/modules/logic', source: 'axoned' },
-  { label: 'Ontology', href: '/ontology/schemas/credential-dataset-description', source: 'ontology' },
+  { label: 'Ontology', href: '/ontology/next/schemas/credential-assertion', source: 'ontology' },
   { label: 'Predicates', href: '/predicates/next', source: 'axoned' }
 ]
 
