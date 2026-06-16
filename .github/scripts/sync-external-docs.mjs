@@ -565,8 +565,9 @@ function escapeAttribute(value) {
 }
 
 function generatedHeader(title, sidebarPosition) {
+  const safeTitle = JSON.stringify(String(title ?? ''))
   return `---
-title: ${title}
+title: ${safeTitle}
 sidebar_position: ${sidebarPosition}
 ---
 {/* generated file - do not edit */}

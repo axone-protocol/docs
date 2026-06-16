@@ -133,6 +133,10 @@ const config = {
               {
                 label: 'Predicates',
                 to: '/predicates/next'
+              },
+              {
+                label: 'Networks',
+                to: '/networks'
               }
             ]
           },
@@ -218,6 +222,10 @@ const config = {
               {
                 label: 'Predicates',
                 to: '/predicates/next'
+              },
+              {
+                label: 'Networks',
+                to: '/networks'
               }
             ]
           },
@@ -297,8 +305,17 @@ const config = {
         hashed: true,
         indexBlog: false,
         docsPluginIdForPreferredVersion: 'commands',
-        docsDir: ['commands', 'contracts', 'modules', 'ontology', 'predicates'],
-        docsRouteBasePath: ['commands', 'contracts', 'modules', 'ontology', 'predicates']
+        docsDir: ['commands', 'contracts', 'modules', 'ontology', 'predicates', 'networks'],
+        docsRouteBasePath: ['commands', 'contracts', 'modules', 'ontology', 'predicates', 'networks']
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        ...technicalDocsOptions,
+        id: 'networks',
+        path: 'networks',
+        routeBasePath: 'networks/'
       }
     ],
     [
