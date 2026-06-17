@@ -47,5 +47,27 @@
     "live_ref": "main",
     "docs_path": "docs",
     "tag_scheme": "semver"
+  },
+  {
+    "id": "networks",
+    "repository": "axone-protocol/networks",
+    "section": "networks",
+    "live_ref": "main",
+    "strategy": "generate_networks",
+    "networks": [
+      {
+        "source_path": "chains/1",
+        "slug": "axone-1",
+        "type": "mainnet",
+        "explorer_url": "https://explorer.aknodes.com/AXONE-MAINNET"
+      },
+      {
+        "source_path": "chains/dendrite-2",
+        "slug": "axone-dendrite-2",
+        "type": "testnet",
+        "explorer_url": "https://explorer.aknodes.com/AXONE-TESTNET",
+        "faucet_url": "https://faucet.axone.xyz"
+      }
+    ]
   }
 ]

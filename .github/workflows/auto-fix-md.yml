@@ -29,7 +29,7 @@ jobs:
         continue-on-error: true
         with:
           args: "**/*.md"
-          ignore: commands/**/*.md commands_versioned_docs/**/*.md contracts/**/*.md contracts_versioned_docs/**/*.md modules/**/*.md modules_versioned_docs/**/*.md ontology/**/*.md ontology_versioned_docs/**/*.md predicates/**/*.md predicates_versioned_docs/**/*.md
+          ignore: commands/**/*.md commands_versioned_docs/**/*.md contracts/**/*.md contracts_versioned_docs/**/*.md modules/**/*.md modules_versioned_docs/**/*.md ontology/**/*.md ontology_versioned_docs/**/*.md predicates/**/*.md predicates_versioned_docs/**/*.md networks/**/*.md
           fix: true
 
       - name: Commit changes

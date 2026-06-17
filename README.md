@@ -14,11 +14,12 @@ This repository hosts <https://docs.axone.xyz>. It is scoped to deep technical r
 
 [![docs.axone.xyz](./screenshot.webp)](https://docs.axone.xyz)
 
-The Docusaurus site exposes five technical sections:
+The Docusaurus site exposes six technical sections:
 
 - [`commands`](./commands), [`modules`](./modules), and [`predicates`](./predicates), sourced from [`axone-protocol/axoned`](https://github.com/axone-protocol/axoned)
 - [`contracts`](./contracts), sourced from [`axone-protocol/contracts`](https://github.com/axone-protocol/contracts)
 - [`ontology`](./ontology), sourced from [`axone-protocol/ontology`](https://github.com/axone-protocol/ontology)
+- [`networks`](./networks), generated from [`axone-protocol/networks`](https://github.com/axone-protocol/networks)
 
 Editorial, onboarding, tutorial, FAQ, and whitepaper content are intentionally out of scope for this repository.
 
