@@ -1,5 +1,5 @@
 ---
-title: axone-dendrite-2
+title: "axone-dendrite-2"
 sidebar_position: 2
 ---
 {/* generated file - do not edit */}
