@@ -51,7 +51,9 @@ The submitted payload must match the declared `format` and must describe exactly
 
 The credential is accepted only if it provides: - an identifier - either no issuer or an issuer equal to the authority DID exposed by this contract - a subject identifier - at least one type, including `VerifiableCredential` - optional `validFrom` and `validUntil` claims, when present, encoded as `xsd:dateTimeStamp` instants with `validFrom &lt; validUntil`
 
-The submitted payload may omit the issuer. In that case, the contract treats the credential as issued by its authority DID.
+When the submitted payload omits the issuer, the contract adds its authority DID as the credential issuer.
+
+The registered credential therefore always contains the effective issuer.
 
 Issuance fails if the payload format is not supported, if the credential representation cannot be interpreted according to that format, or if a credential with the same identifier has already been issued by this authority.
 
@@ -121,6 +123,34 @@ This query fails when the identifier is unknown or the credential has been revok
 | `credential_raw`            | _(Required.) _ **object**.                                           |
 | `credential_raw.identifier` | _(Required.) _ **string**. Identifier of the credential to retrieve. |
 
+### QueryMsg::credential
+
+Return an active issued credential with its RDF dataset.
+
+The returned metadata is reconstructed from the credential RDF dataset accepted at issuance. The `quads` field contains the canonical dataset as structured RDF quads.
+
+This query fails when the identifier is unknown or the credential has been revoked.
+
+| parameter               | description                                                          |
+| ----------------------- | -------------------------------------------------------------------- |
+| `credential`            | _(Required.) _ **object**.                                           |
+| `credential.identifier` | _(Required.) _ **string**. Identifier of the credential to retrieve. |
+
+### QueryMsg::credentials
+
+Return active credential identifiers matching all provided filters.
+
+An empty filter returns active credentials issued by this authority, ordered by credential identifier and paginated with `start_after`.
+
+Revoked credentials are excluded because they are no longer part of the active credential set.
+
+| parameter                 | description                                                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `credentials`             | _(Required.) _ **object**.                                                                                                                                       |
+| `credentials.filter`      | _(Required.) _ **[CredentialFilter](#credentialfilter)**. Filters applied conjunctively to the active credential set.                                            |
+| `credentials.limit`       | **integer\|null**. Maximum number of identifiers to return.<br /><br />When omitted, the contract default is used. Values above the contract maximum are capped. |
+| `credentials.start_after` | **string\|null**. Exclusive pagination cursor using a credential identifier returned by a previous page.                                                         |
+
 ## MigrateMsg
 
 Migrate message.
@@ -146,6 +176,20 @@ Response returned by `AxoneVcQueryMsg::Authority`.
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `did`    | _(Required.) _ **string**. The authority DID recognized by this contract.<br /><br />This representation uses the `did:pkh` method over the on-chain address of the host Abstract Account, rendered as a CAIP-compatible canonical Cosmos Bech32 account address.<br /><br />Form:<br /><br />`did:pkh:cosmos:&lt;chain_id&gt;:cosmos1...` |
 
+### credential
+
+Response returned by `AxoneVcQueryMsg::Credential`.
+
+| property      | description                                                                                                      |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `identifier`  | _(Required.) _ **string**. Credential identifier extracted from the VC `id`.                                     |
+| `issuer`      | _(Required.) _ **string**. Authority DID recorded as the credential issuer.                                      |
+| `quads`       | _(Required.) _ **Array&lt;[Quad](#quad)&gt;**. Canonical credential RDF dataset represented as structured quads. |
+| `subject`     | _(Required.) _ **string**. Credential subject identifier.                                                        |
+| `types`       | _(Required.) _ **Array&lt;string&gt;**. Credential type URIs extracted from the VC `type` values.                |
+| `valid_from`  | **[Timestamp](#timestamp)\|null**. Optional lower bound of the credential validity interval.                     |
+| `valid_until` | **[Timestamp](#timestamp)\|null**. Optional exclusive upper bound of the credential validity interval.           |
+
 ### credential_raw
 
 Response returned by `AxoneVcQueryMsg::CredentialRaw`.
@@ -153,6 +197,14 @@ Response returned by `AxoneVcQueryMsg::CredentialRaw`.
 | property     | description                                                                                                                                                                                                                                                                   |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `credential` | _(Required.) _ **[Binary](#binary)**. Canonical serialized credential representation persisted by the contract.<br /><br />This binary value is base64-encoded in JSON responses and is independent from the format and presentation of the credential submitted at issuance. |
+
+### credentials
+
+Response returned by `AxoneVcQueryMsg::Credentials`.
+
+| property      | description                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| `identifiers` | _(Required.) _ **Array&lt;string&gt;**. Active credential identifiers matching the requested filters. |
 
 ### verify_credential
 
@@ -173,6 +225,16 @@ A string containing Base64-encoded data.
 | ----------- |
 | **string**. |
 
+### CredentialFilter
+
+Filter accepted by `AxoneVcQueryMsg::Credentials`.
+
+| property          | description                                                                                                                                                                                                                                   |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `credential_type` | **string\|null**. Credential type URI to match against the VC `type` values.                                                                                                                                                                  |
+| `subject`         | **string\|null**. Credential subject identifier to match.                                                                                                                                                                                     |
+| `valid_at`        | **[Timestamp](#timestamp)\|null**. Instant that must be contained by the credential validity interval.<br /><br />`validFrom` is inclusive when present, `validUntil` is exclusive when present, and missing bounds are treated as unbounded. |
+
 ### CredentialInputFormat
 
 Supported credential input encodings.
@@ -180,6 +242,17 @@ Supported credential input encodings.
 | variant   | description                                                                                                                                                                                                                                                      |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | undefined | **string**: `n_quads`. UTF-8 RDF dataset serialized as N-Quads.<br /><br />N-Quads extends N-Triples to represent RDF datasets by allowing an optional fourth term that carries the graph name. See the [N-Quads specification](https://www.w3.org/TR/n-quads/). |
+
+### Quad
+
+RDF quad returned by `AxoneVcQueryMsg::Credential`.
+
+| property     | description                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------ |
+| `graph_name` | **string\|null**. RDF graph name serialized with N-Quads term syntax, or `None` for the default graph. |
+| `object`     | _(Required.) _ **string**. RDF object term serialized with N-Quads term syntax.                        |
+| `predicate`  | _(Required.) _ **string**. RDF predicate IRI serialized with N-Quads term syntax.                      |
+| `subject`    | _(Required.) _ **string**. RDF subject term serialized with N-Quads term syntax.                       |
 
 ### Timestamp
 
@@ -223,5 +296,5 @@ N-Quads extends N-Triples to represent RDF datasets by allowing an optional four
 
 ---
 
-*Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `axone-vc.json` (`dd24f8a7a1cbe498`)*
+*Rendered by [Fadroma](https://fadroma.tech) ([@fadroma/schema 1.1.0](https://www.npmjs.com/package/@fadroma/schema)) from `axone-vc.json` (`fd0c7f3e46a589f3`)*
 ````
