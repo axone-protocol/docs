@@ -69,7 +69,7 @@
     "@nivo/line": "^0.99.0",
     "docusaurus-plugin-drawio": "^0.4.0",
     "graphviz-react": "^1.2.5",
-    "markdownlint-cli": "^0.49.0",
+    "markdownlint-cli": "^0.49.1",
     "prettier": "^3.9.5",
     "remark-kroki": "^0.3.8",
     "stylelint": "^16.26.1",
