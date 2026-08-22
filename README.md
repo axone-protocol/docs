@@ -4,6 +4,7 @@
 
 [![lint](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/actions/workflow/status/axone-protocol/docs/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/axone-protocol/docs/actions/workflows/build.yml)
+[![Built with Nix](https://img.shields.io/badge/Built_With-Nix-5277C3.svg?style=for-the-badge&logo=nixos&logoColor=white)](https://nixos.org/)
 [![vercel deploy](https://deploy-badge.vercel.app/vercel/docs-bgu5cuq5p-axone?style=for-the-badge)](https://docs.axone.xyz/)
 [![license][bsd-3-clause-image]][bsd-3-clause]
 [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
