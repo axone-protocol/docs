@@ -15,7 +15,6 @@ Here are the namespaces used in this schema:
 
 - `rdf`: [http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns#)
 - `rdfs`: [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)
-- `skos`: [http://www.w3.org/2004/02/skos/core#](http://www.w3.org/2004/02/skos/core#)
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
