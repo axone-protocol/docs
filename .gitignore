@@ -22,3 +22,7 @@ yarn-error.log*
 
 # misc
 engine.bin
+
+# Nix
+.direnv/
+result
