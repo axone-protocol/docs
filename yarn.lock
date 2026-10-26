@@ -2500,10 +2500,10 @@
   dependencies:
     "@types/mdx" "^2.0.0"
 
-"@mermaid-js/layout-elk@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mermaid-js/layout-elk/-/layout-elk-1.0.0.tgz#23f108274586116b5bec4b47f40939a764832c6a"
-  integrity sha512-1p3/erQRpVhyNve+ISVO0QdWAOi+EAQD/TnEv+go8J4okSpI7x9may2EZYvTNoI1IlYB+tYpq+LR4gIDQEldyQ==
+"@mermaid-js/layout-elk@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mermaid-js/layout-elk/-/layout-elk-1.0.1.tgz#b1b3bc82cb462c13c01d6ec7ff0b79075e2da129"
+  integrity sha512-6KzQTCAy4lSlETy5fBOYyUD0JQtZk/ihacVHSmAyo00hW7REOhKQGjNIxVwAnI+HtJdfpGnSMxkp9qnJDijppw==
   dependencies:
     d3 "^7.9.0"
     dagre-d3-es "7.0.14"
