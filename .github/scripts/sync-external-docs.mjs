@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process'
-import { mkdtempSync, readFileSync, existsSync, readdirSync, rmSync } from 'node:fs'
+import { mkdtempSync, readFileSync, existsSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import fs from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
@@ -233,6 +233,118 @@ function syncDocs(snapshotRoot, docsPath, section) {
     `${sourcePath}/`,
     `${destinationPath}/`
   ])
+
+  const escapedFiles = sanitizeMdxExpressions(destinationPath)
+  if (escapedFiles > 0) {
+    log(`[${section}] escaped MDX expressions in ${escapedFiles} Markdown file(s)`)
+  }
+}
+
+function sanitizeMdxExpressions(directory) {
+  let escapedFiles = 0
+
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const entryPath = path.join(directory, entry.name)
+
+    if (entry.isDirectory()) {
+      escapedFiles += sanitizeMdxExpressions(entryPath)
+      continue
+    }
+
+    if (!entry.isFile() || !/\.(md|mdx)$/.test(entry.name)) {
+      continue
+    }
+
+    const source = readFileSync(entryPath, 'utf8')
+    const sanitized = escapeMdxExpressions(source)
+
+    if (sanitized === source) {
+      continue
+    }
+
+    writeFileSync(entryPath, sanitized, 'utf8')
+    escapedFiles += 1
+  }
+
+  return escapedFiles
+}
+
+function escapeMdxExpressions(markdown) {
+  const lines = markdown.split('\n')
+  let inFrontmatter = lines[0] === '---'
+  let fence = null
+
+  return lines
+    .map((line, index) => {
+      if (inFrontmatter) {
+        if (index > 0 && line === '---') {
+          inFrontmatter = false
+        }
+
+        return line
+      }
+
+      const fenceMatch = /^\s*(`{3,}|~{3,})/.exec(line)
+
+      if (fenceMatch) {
+        const marker = fenceMatch[1]
+
+        if (!fence) {
+          fence = marker
+        } else if (marker[0] === fence[0] && marker.length >= fence.length) {
+          fence = null
+        }
+
+        return line
+      }
+
+      if (fence) {
+        return line
+      }
+
+      return escapeMdxBracesOutsideInlineCode(line)
+    })
+    .join('\n')
+}
+
+function escapeMdxBracesOutsideInlineCode(line) {
+  let result = ''
+  let inlineCodeDelimiter = ''
+
+  for (let index = 0; index < line.length; index += 1) {
+    if (line[index] === '`') {
+      const start = index
+
+      while (line[index] === '`') {
+        index += 1
+      }
+
+      const delimiter = line.slice(start, index)
+
+      if (!inlineCodeDelimiter) {
+        inlineCodeDelimiter = delimiter
+      } else if (delimiter === inlineCodeDelimiter) {
+        inlineCodeDelimiter = ''
+      }
+
+      result += delimiter
+      index -= 1
+      continue
+    }
+
+    const isBrace = line[index] === '{' || line[index] === '}'
+    let backslashCount = 0
+
+    for (let previousIndex = index - 1; previousIndex >= 0 && line[previousIndex] === '\\'; previousIndex -= 1) {
+      backslashCount += 1
+    }
+
+    const isEscaped = backslashCount % 2 === 1
+
+    result += isBrace && !inlineCodeDelimiter && !isEscaped ? `\\${line[index]}` : line[index]
+  }
+
+  return result
 }
 
 async function generateNetworksReference(snapshotRoot, source) {
