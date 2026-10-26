@@ -18,7 +18,7 @@ Load this module before using the predicate:
 ## Description
 
 Unifies Validators with validators having bond Status: bonded, unbonding, or unbonded.
-Status must be an atom. Each item is validator{operator: Operator, status: Status}.
+Status must be an atom. Each item is validator\{operator: Operator, status: Status\}.
 Operator is a validator operator address atom. Bond status is independent of jailed status:
 bonded means membership in the active staking validator set, not an unjailed guarantee.
 
